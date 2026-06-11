@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>dbcl · Legal Ops BI</title>
+<script src="data.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root{
+  --g1:#003C28;--g2:#0F6E56;--g4:#D4EDE5;
+  --bege:#FAF7EC;--neon:#CCFF00;--preto:#23282E;
+  --c1:#F4F3EF;--c2:#E6E5DF;--c3:#AEADA5;--c4:#6B6A62;
+  --red:#B33030;--red2:#FDECEC;--amb:#B56C00;--amb2:#FEF3E0;
+  --vc:#C0392B;--ac:#C47A00;--gc:#2E7D32;--dc:#546E7A;
+  --white:#FFF;--r:8px;--r2:12px;--sh:0 1px 3px rgba(0,0,0,.09);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bege)}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--preto);font-size:13px;line-height:1.45;display:flex}
+.sb{width:212px;min-height:100vh;background:var(--g1);flex-shrink:0;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow-y:auto}
+.sb-logo{padding:18px 16px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.sb-logo .d{font-size:22px;font-weight:700;color:#fff;letter-spacing:-.4px}
+.sb-logo .s{font-size:9px;letter-spacing:2.5px;color:rgba(255,255,255,.3);text-transform:uppercase;margin-top:2px}
+.sb-body{flex:1;padding:10px 8px}
+.sb-sec{font-size:9px;letter-spacing:2px;color:rgba(255,255,255,.28);text-transform:uppercase;padding:10px 8px 4px}
+.sb-btn{display:flex;align-items:center;gap:8px;padding:7px 10px;border-radius:6px;cursor:pointer;color:rgba(255,255,255,.58);font-size:12px;font-weight:500;border:none;background:none;width:100%;text-align:left;transition:all .12s}
+.sb-btn:hover{background:rgba(255,255,255,.07);color:#fff}
+.sb-btn.active{background:rgba(204,255,0,.14);color:var(--neon)}
+.sb-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.sb-foot{padding:10px 12px;border-top:1px solid rgba(255,255,255,.07);font-size:10px;color:rgba(255,255,255,.25);text-align:center}
+.main{flex:1;min-width:0;padding:24px;overflow-x:hidden}
+.screen{display:none}.screen.active{display:block}
+/* PERIOD FILTER */
+.period-bar{background:var(--white);border:1px solid var(--c2);border-radius:var(--r2);padding:10px 14px;margin-bottom:16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;box-shadow:var(--sh)}
+.period-label{font-size:11px;font-weight:600;color:var(--c3);white-space:nowrap}
+.period-quick{display:flex;gap:4px}
+.pq-btn{padding:3px 10px;border-radius:5px;border:1px solid var(--c2);background:var(--white);font-size:11px;font-weight:500;color:var(--c3);cursor:pointer;transition:all .12s;white-space:nowrap}
+.pq-btn.active{background:var(--g1);color:var(--white);border-color:var(--g1)}
+.period-sep{color:var(--c2);font-size:16px}
+.period-dates{display:flex;align-items:center;gap:6px}
+.period-dates input{padding:4px 8px;border:1px solid var(--c2);border-radius:5px;font-size:11px;color:var(--preto);outline:none;width:110px}
+.period-dates input:focus{border-color:var(--g2)}
+.period-note{font-size:10px;color:var(--c3);background:var(--c1);border-radius:4px;padding:3px 8px}
+/* PH */
+.ph{margin-bottom:16px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.ph h1{font-size:20px;font-weight:600;color:var(--g1);letter-spacing:-.3px}
+.ph p{font-size:12px;color:var(--c3);margin-top:3px}
+.toggle-group{display:flex;gap:2px;background:var(--c1);padding:3px;border-radius:7px}
+.tgl{padding:5px 14px;border-radius:5px;border:none;background:none;font-size:12px;font-weight:500;color:var(--c3);cursor:pointer;transition:all .14s}
+.tgl.active{background:var(--white);color:var(--preto);box-shadow:var(--sh)}
+.fb{display:flex;gap:6px;align-items:center;margin-bottom:14px;flex-wrap:wrap}
+.fb-lbl{font-size:11px;color:var(--c3);white-space:nowrap}
+.fb-btn{padding:4px 12px;border-radius:5px;border:1px solid var(--c2);background:var(--white);font-size:11px;font-weight:500;color:var(--c3);cursor:pointer;transition:all .12s;white-space:nowrap}
+.fb-btn.active{background:var(--g1);color:var(--white);border-color:var(--g1)}
+.fb-btn:hover:not(.active){border-color:var(--g2);color:var(--g2)}
+.kg{display:grid;gap:12px;margin-bottom:20px}
+.kg2{grid-template-columns:1fr 1fr}.kg3{grid-template-columns:repeat(3,1fr)}.kg4{grid-template-columns:repeat(4,1fr)}
+.kc{background:var(--white);border-radius:var(--r2);padding:16px 18px;border:1px solid var(--c2);box-shadow:var(--sh)}
+.kc-l{font-size:10px;color:var(--c3);text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px}
+.kc-v{font-size:22px;font-weight:600;letter-spacing:-.5px;line-height:1}
+.kc-s{font-size:11px;color:var(--c3);margin-top:4px}
+.kc-v.g{color:var(--g2)}.kc-v.a{color:var(--amb)}.kc-v.r{color:var(--red)}
+.panel{background:var(--white);border-radius:var(--r2);border:1px solid var(--c2);box-shadow:var(--sh);overflow:hidden;margin-bottom:16px}
+.ph2{padding:13px 16px;border-bottom:1px solid var(--c2);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
+.ph2 .t{font-size:13px;font-weight:600}.ph2 .s{font-size:11px;color:var(--c3)}
+.pb{padding:16px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cw{position:relative;height:240px}.cw.t{height:320px}
+.ow{overflow-x:auto}
+table.t{width:100%;border-collapse:collapse;font-size:12px}
+table.t th{font-size:10px;font-weight:600;color:var(--c3);text-align:left;padding:6px 10px;border-bottom:1px solid var(--c2);background:var(--c1);white-space:nowrap}
+table.t th.r{text-align:right}
+table.t td{padding:7px 10px;border-bottom:1px solid var(--c2);vertical-align:middle}
+table.t tr:last-child td{border-bottom:none}
+table.t tr:hover td{background:#f8f8f5}
+.tr{text-align:right}.tm{color:var(--c3)}
+.badge{display:inline-flex;align-items:center;font-size:10px;padding:2px 7px;border-radius:4px;font-weight:600;white-space:nowrap}
+.bg{background:var(--g4);color:var(--g1)}.ba{background:var(--amb2);color:#7B4C00}.br{background:var(--red2);color:#7F1D1D}.bc{background:var(--c1);color:var(--c4)}
+.hcell{text-align:center;display:inline-flex;align-items:center;justify-content:center;width:60px;height:34px;border-radius:5px;font-size:12px;font-weight:600;position:relative}
+.hcell sup{font-size:9px;position:absolute;top:2px;right:3px}
+.grow{background:var(--c1);font-size:10px;font-weight:600;color:var(--c3);padding:4px 10px;border-bottom:1px solid var(--c2)}
+.sbar{height:8px;border-radius:4px;overflow:hidden;display:flex}
+.sv{background:var(--vc)}.sa{background:var(--ac)}.sg{background:var(--gc)}.sd{background:var(--dc)}
+.alert{border-radius:var(--r);padding:10px 14px;font-size:12px;border:1px solid;margin-bottom:14px;line-height:1.5}
+.alert-r{background:var(--red2);border-color:#F5B5B5;color:#7F1D1D}
+.alert-a{background:var(--amb2);border-color:#FFD54F;color:#7B4C00}
+.tb{display:inline-block;font-size:9px;padding:1px 6px;border-radius:3px;font-weight:500}
+.tb-s{background:#E8F5E9;color:#1B5E20}.tb-t{background:#FFF3E0;color:#7B3F00}
+.tb-co{background:#E3F2FD;color:#0D47A1}.tb-cs{background:#F3E5F5;color:#4A148C}
+.tb-tr{background:#E0F2F1;color:#004D40}.tb-a{background:var(--c1);color:var(--c3)}
+.det{background:var(--c1);border-radius:var(--r);padding:12px 16px;margin-top:0;display:none}
+.det.open{display:block}
+.note{font-size:11px;color:var(--c3);background:var(--c1);border-radius:6px;padding:8px 12px;margin-bottom:12px;border-left:3px solid var(--c2)}
+.leg{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--c3);margin-bottom:10px}
+.le{display:flex;align-items:center;gap:4px}
+.ld{width:9px;height:9px;border-radius:2px;flex-shrink:0}
+/* DETAIL PAGE */
+.detail-page{display:none;position:fixed;inset:0;background:var(--bege);z-index:200;overflow-y:auto}
+.detail-page.open{display:block}
+.det-header{background:var(--g1);color:#fff;padding:16px 24px;display:flex;align-items:center;gap:16px;position:sticky;top:0;z-index:10}
+.det-back{background:rgba(255,255,255,.15);border:none;color:#fff;padding:6px 14px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:500}
+.det-title{font-size:18px;font-weight:600}
+.det-sub{font-size:12px;color:rgba(255,255,255,.6);margin-top:2px}
+.det-body{padding:24px;max-width:1200px}
+.link-btn{background:none;border:none;color:var(--g2);font-size:12px;font-weight:500;cursor:pointer;text-decoration:underline;padding:0}
+.link-btn:hover{color:var(--g1)}
+</style>
+</head>
+<body>
+
+<nav class="sb">
+  <div class="sb-logo"><div class="d">dbcl</div><div class="s">Legal Ops · BI</div></div>
+  <div class="sb-body">
+    <div class="sb-sec">Produtividade</div>
+    <button class="sb-btn active" onclick="go('times')"><span class="sb-dot" style="background:#64B5F6"></span>Times</button>
+    <button class="sb-btn" onclick="go('heatmap')"><span class="sb-dot" style="background:#F9A825"></span>Mapa de Calor</button>
+    <button class="sb-btn" onclick="go('pessoas')"><span class="sb-dot" style="background:#A5D6A7"></span>Pessoas</button>
+    <div class="sb-sec">Lucratividade</div>
+    <button class="sb-btn" onclick="go('mensalistas')"><span class="sb-dot" style="background:#CE93D8"></span>Mensalistas</button>
+    <button class="sb-btn" onclick="go('projetos')"><span class="sb-dot" style="background:#80CBC4"></span>Projetos &amp; Avulsos</button>
+    <button class="sb-btn" onclick="go('judicial')"><span class="sb-dot" style="background:#EF9A9A"></span>Judicial</button>
+  </div>
+  <div class="sb-foot" id="sb-periodo">fev – mai 2026</div>
+</nav>
+
+<main class="main" id="main-content">
+
+<!-- PERIOD BAR (shared) -->
+<div class="period-bar" id="period-bar">
+  <span class="period-label">Período:</span>
+  <div class="period-quick">
+    <button class="pq-btn" onclick="setPeriod('fev',this)">Fev</button>
+    <button class="pq-btn" onclick="setPeriod('mar',this)">Mar</button>
+    <button class="pq-btn" onclick="setPeriod('abr',this)">Abr</button>
+    <button class="pq-btn" onclick="setPeriod('mai',this)">Mai</button>
+    <button class="pq-btn active" onclick="setPeriod('all',this)">Todos</button>
+  </div>
+  <span class="period-sep">|</span>
+  <div class="period-dates">
+    <input type="date" id="dt-from" value="2026-02-01" onchange="setPeriodCustom()">
+    <span style="color:var(--c3);font-size:11px">até</span>
+    <input type="date" id="dt-to" value="2026-05-31" onchange="setPeriodCustom()">
+  </div>
+  <span class="period-note" id="period-note">fev–mai 2026 · todos os meses</span>
+</div>
+
+<!-- ===== TIMES ===== -->
+<section class="screen active" id="screen-times">
+  <div class="ph">
+    <div><h1>Times</h1><p>Volume e distribuição de horas por time</p></div>
+    <div class="toggle-group">
+      <button class="tgl active" onclick="tmToggle('sem',this)">Sem sócios</button>
+      <button class="tgl" onclick="tmToggle('com',this)">Com sócios</button>
+    </div>
+  </div>
+  <div class="kg kg4" id="t-kpis"></div>
+  <div class="note" id="t-note"></div>
+  <div class="g2">
+    <div class="panel"><div class="ph2"><span class="t">Horas por time · mês a mês</span></div><div class="pb"><div class="cw"><canvas id="c-tm-evol"></canvas></div></div></div>
+    <div class="panel"><div class="ph2"><span class="t">Composição por sinaleira</span></div><div class="pb" id="t-bars"></div></div>
+  </div>
+  <div class="panel"><div class="ph2"><span class="t">Tabela de times</span></div><div class="pb ow"><table class="t" id="t-table"></table></div></div>
+</section>
+
+<!-- ===== HEATMAP ===== -->
+<section class="screen" id="screen-heatmap">
+  <div class="ph"><div><h1>Mapa de Calor</h1><p>% do tempo por sinaleira vs. benchmark · ⬇ abaixo · ⬆ acima · clique para detalhe</p></div></div>
+  <div class="fb">
+    <span class="fb-lbl">Time:</span>
+    <button class="fb-btn active" onclick="hmF('todos',this)">Todos</button>
+    <button class="fb-btn" onclick="hmF('Trabalhista',this)">Trabalhista</button>
+    <button class="fb-btn" onclick="hmF('Contencioso',this)">Contencioso</button>
+    <button class="fb-btn" onclick="hmF('Consultivo',this)">Consultivo</button>
+    <button class="fb-btn" onclick="hmF('Cons. Tributária',this)">Tributária</button>
+    <button class="fb-btn" onclick="hmF('Sócios',this)">Sócios</button>
+    <span class="fb-lbl" style="margin-left:8px">Status:</span>
+    <button class="fb-btn active" onclick="hmA('ativo',this)">Ativos</button>
+    <button class="fb-btn" onclick="hmA('todos',this)">Todos</button>
+  </div>
+  <div class="leg">
+    <div class="le"><div class="ld" style="background:var(--vc)"></div>🔴 Vermelho/Alta</div>
+    <div class="le"><div class="ld" style="background:var(--ac)"></div>🟡 Amarelo/Média</div>
+    <div class="le"><div class="ld" style="background:var(--gc)"></div>🟢 Verde/Baixa</div>
+    <div class="le"><div class="ld" style="background:var(--dc)"></div>⬜ Admin</div>
+  </div>
+  <div class="panel ow"><table class="t" id="hm-tbl">
+    <thead><tr>
+      <th style="width:18%">Colaborador</th><th style="width:13%">Função · Time</th>
+      <th style="width:7%;text-align:center">Total h</th>
+      <th style="width:13%;text-align:center">🔴 Vermelho</th>
+      <th style="width:13%;text-align:center">🟡 Amarelo</th>
+      <th style="width:13%;text-align:center">🟢 Verde</th>
+      <th style="width:13%;text-align:center">⬜ Admin</th>
+      <th style="width:10%">Barra</th>
+    </tr></thead>
+    <tbody id="hm-body"></tbody>
+  </table></div>
+  <div class="det" id="hm-det"></div>
+</section>
+
+<!-- ===== PESSOAS ===== -->
+<section class="screen" id="screen-pessoas">
+  <div class="ph"><div><h1>Pessoas</h1><p>Horas totais por colaborador · todas as horas (ativos e baixados)</p></div></div>
+  <div class="kg kg4" id="p-kpis"></div>
+  <div class="g2">
+    <div class="panel"><div class="ph2"><span class="t">Ranking por horas · sinaleira</span></div><div class="pb"><div class="cw t"><canvas id="c-p-rank"></canvas></div></div></div>
+    <div class="panel"><div class="ph2"><span class="t">Escritório · horas mensais</span></div><div class="pb"><div class="cw t"><canvas id="c-p-mes"></canvas></div></div></div>
+  </div>
+  <div class="panel"><div class="ph2"><span class="t">Horas por pessoa · mês a mês</span><span class="s">clique para ver detalhe completo</span></div>
+    <div class="pb ow"><table class="t"><thead id="pt-head"></thead><tbody id="pt-body"></tbody></table></div>
+  </div>
+</section>
+
+<!-- ===== MENSALISTAS ===== -->
+<section class="screen" id="screen-mensalistas">
+  <div class="ph"><div><h1>Mensalistas</h1><p>Receita (planilha de fixos) × custo técnico · inclui serviços inclusos no mensal</p></div></div>
+  <div id="m-alert"></div>
+  <div class="kg kg4" id="m-kpis"></div>
+  <div class="g2">
+    <div class="panel"><div class="ph2"><span class="t">Margem por cliente</span><span class="s">pior ao melhor</span></div><div class="pb"><div class="cw t"><canvas id="c-m-rank"></canvas></div></div></div>
+    <div class="panel"><div class="ph2"><span class="t">Receita × custo</span><span class="s">tamanho = horas</span></div><div class="pb"><div class="cw t"><canvas id="c-m-scat"></canvas></div></div></div>
+  </div>
+  <div class="fb">
+    <span class="fb-lbl">Ver:</span>
+    <button class="fb-btn active" onclick="mF('todos',this)">Todos</button>
+    <button class="fb-btn" onclick="mF('com_rec',this)">Com receita</button>
+    <button class="fb-btn" onclick="mF('neg',this)">Negativos</button>
+    <button class="fb-btn" onclick="mF('sem_rec',this)">Sem receita cadastrada</button>
+    <button class="fb-btn" onclick="mF('inc',this)">Com inclusos</button>
+  </div>
+  <div class="panel ow"><table class="t">
+    <thead><tr>
+      <th style="width:16%">Cliente</th><th style="width:6%">Resp.</th>
+      <th class="r" style="width:8%">Rec./mês</th><th class="r" style="width:8%">Rec. total</th>
+      <th class="r" style="width:6%">H. total</th><th class="r" style="width:6%">H. judicial</th><th class="r" style="width:5%">H. inclusos</th>
+      <th class="r" style="width:8%">Custo</th><th class="r" style="width:8%">Margem</th><th class="r" style="width:5%">%</th>
+      <th style="width:14%">Fev·Mar·Abr·Mai (h)</th><th style="width:10%"></th>
+    </tr></thead>
+    <tbody id="m-body"></tbody>
+  </table></div>
+</section>
+
+<!-- ===== PROJETOS ===== -->
+<section class="screen" id="screen-projetos">
+  <div class="ph"><div><h1>Projetos &amp; Avulsos Consultivos</h1><p>Receita individual × custo técnico · apenas ativos no CRM</p></div></div>
+  <div id="pr-alert"></div>
+  <div class="kg kg4" id="pr-kpis"></div>
+  <div class="g2">
+    <div class="panel"><div class="ph2"><span class="t">Top 12 margem bruta (com horas)</span></div><div class="pb"><div class="cw t"><canvas id="c-pr-top"></canvas></div></div></div>
+    <div class="panel"><div class="ph2"><span class="t">Receita × custo · scatter</span></div><div class="pb"><div class="cw t"><canvas id="c-pr-scat"></canvas></div></div></div>
+  </div>
+  <div class="fb">
+    <span class="fb-lbl">Ver:</span>
+    <button class="fb-btn active" onclick="prF('todos',this)">Todos</button>
+    <button class="fb-btn" onclick="prF('com_h',this)">Com horas</button>
+    <button class="fb-btn" onclick="prF('sem_h',this)">Sem horas</button>
+    <button class="fb-btn" onclick="prF('neg',this)">Negativos</button>
+  </div>
+  <div class="panel ow"><table class="t">
+    <thead><tr>
+      <th style="width:20%">Caso</th><th style="width:14%">Cliente</th>
+      <th style="width:6%">Resp.</th><th style="width:8%">Área</th>
+      <th class="r" style="width:8%">Receita</th><th class="r" style="width:8%">Custo</th>
+      <th class="r" style="width:8%">Margem</th><th class="r" style="width:5%">%</th>
+      <th class="r" style="width:5%">Horas</th><th class="r" style="width:7%">R$/h</th>
+      <th style="width:11%"></th>
+    </tr></thead>
+    <tbody id="pr-body"></tbody>
+  </table></div>
+</section>
+
+<!-- ===== JUDICIAL ===== -->
+<section class="screen" id="screen-judicial">
+  <div class="ph"><div><h1>Judicial</h1><p>Break-even: entrada paga × custo acumulado × êxito mínimo para lucro · apenas ativos · excluídos inclusos no mensal</p></div></div>
+  <div class="note"><strong>Como ler:</strong> <em>Entrada</em> = honorários pagos · <em>Custo acum.</em> = horas × valor/hora · <em>Break-even êxito</em> = quanto o êxito precisa render para cobrir o deficit · <em>Êxito est.</em> = estimativa no CRM · <em>Margem total</em> = entrada + êxito − custo.</div>
+  <div id="j-alert"></div>
+  <div class="kg kg4" id="j-kpis"></div>
+  <div class="g2">
+    <div class="panel"><div class="ph2"><span class="t">Custo acum. vs. entrada paga · top 20</span></div><div class="pb"><div class="cw t"><canvas id="c-j-top"></canvas></div></div></div>
+    <div class="panel"><div class="ph2"><span class="t">Entrada × custo · posição de cada caso</span></div><div class="pb"><div class="cw t"><canvas id="c-j-scat"></canvas></div></div></div>
+  </div>
+  <div class="fb">
+    <span class="fb-lbl">Ver:</span>
+    <button class="fb-btn active" onclick="jF('todos',this)">Com horas</button>
+    <button class="fb-btn" onclick="jF('deficit',this)">Custo &gt; entrada</button>
+    <button class="fb-btn" onclick="jF('ok',this)">Entrada cobre</button>
+    <button class="fb-btn" onclick="jF('ganhar',this)">Viável com êxito</button>
+    <button class="fb-btn" onclick="jF('inviavel',this)">Inviável</button>
+  </div>
+  <div class="panel ow"><table class="t">
+    <thead><tr>
+      <th style="width:18%">Processo</th><th style="width:12%">Cliente</th><th style="width:6%">Resp.</th>
+      <th class="r" style="width:7%">Entrada</th><th class="r" style="width:8%">Custo acum.</th>
+      <th class="r" style="width:8%">Margem s/êxito</th><th class="r" style="width:8%">Break-even</th>
+      <th class="r" style="width:8%">Êxito est.</th><th class="r" style="width:8%">Margem total</th>
+      <th style="width:9%">Status</th><th style="width:8%"></th>
+    </tr></thead>
+    <tbody id="j-body"></tbody>
+  </table></div>
+</section>
+
+</main>
+
+<!-- DETAIL PAGES -->
+<div class="detail-page" id="page-pessoa">
+  <div class="det-header">
+    <button class="det-back" onclick="closeDet('pessoa')">← Voltar</button>
+    <div><div class="det-title" id="dp-title"></div><div class="det-sub" id="dp-sub"></div></div>
+  </div>
+  <div class="det-body" id="dp-body"></div>
+</div>
+
+<div class="detail-page" id="page-cliente">
+  <div class="det-header">
+    <button class="det-back" onclick="closeDet('cliente')">← Voltar</button>
+    <div><div class="det-title" id="dc-title"></div><div class="det-sub" id="dc-sub"></div></div>
+  </div>
+  <div class="det-body" id="dc-body"></div>
+</div>
+
+<script>
+// ── HELPERS ──────────────────────────────────────────────────────────────────
+const brl=v=>'R$\u00A0'+Math.round(Math.abs(v)).toLocaleString('pt-BR');
+const brlK=v=>v>=1000?'R$\u00A0'+(v/1000).toFixed(v>=10000?0:1)+'k':brl(v);
+const sN=n=>{if(!n)return'';const p=n.split(' ');return p[0]+' '+p[p.length-1]};
+const ML={'2026-02':'Fev','2026-03':'Mar','2026-04':'Abr','2026-05':'Mai'};
+const TC={'Trabalhista':'tb-t','Contencioso':'tb-co','Consultivo':'tb-cs','Cons. Tributária':'tb-tr','Sócios':'tb-s','Administrativo':'tb-a'};
+const TIMES=['Trabalhista','Contencioso','Consultivo','Cons. Tributária'];
+const TCLR={'Trabalhista':'#EF6C00','Contencioso':'#1565C0','Consultivo':'#6A1B9A','Cons. Tributária':'#00695C','Sócios':'#003C28'};
+
+// ── PERIOD FILTER ─────────────────────────────────────────────────────────────
+let activeMeses=D.meses.slice();
+const PERIOD_MAP={fev:['2026-02'],mar:['2026-03'],abr:['2026-04'],mai:['2026-05'],all:D.meses};
+function setPeriod(key,el){
+  activeMeses=PERIOD_MAP[key]||D.meses;
+  document.querySelectorAll('.pq-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  const lbl=key==='all'?'fev–mai 2026 · todos os meses':`${ML[activeMeses[0]]}${activeMeses.length>1?' – '+ML[activeMeses[activeMeses.length-1]]:''} 2026`;
+  document.getElementById('period-note').textContent=lbl;
+  document.getElementById('sb-periodo').textContent=lbl;
+  refreshAll();
+}
+function setPeriodCustom(){
+  const from=document.getElementById('dt-from').value;
+  const to=document.getElementById('dt-to').value;
+  if(!from||!to) return;
+  activeMeses=D.meses.filter(m=>{
+    const md=m+'-01';
+    return md>=from&&md<=to;
+  });
+  document.querySelectorAll('.pq-btn').forEach(b=>b.classList.remove('active'));
+  const lbl=`${from} → ${to}`;
+  document.getElementById('period-note').textContent=lbl;
+  document.getElementById('sb-periodo').textContent=lbl;
+  refreshAll();
+}
+function filterPM(pm){
+  const out={};
+  activeMeses.forEach(m=>{if(pm[m])out[m]=pm[m];});
+  return out;
+}
+function sumH(pm){return activeMeses.reduce((a,m)=>a+(pm[m]?.tot||pm[m]?.h||0),0);}
+function sumC(pm,key='c'){return activeMeses.reduce((a,m)=>a+(pm[m]?.[key]||0),0);}
+
+// ── NAV ──────────────────────────────────────────────────────────────────────
+function go(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.sb-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('screen-'+id).classList.add('active');
+  const btn=document.querySelector(`[onclick="go('${id}')"]`);
+  if(btn) btn.classList.add('active');
+}
+function closeDet(type){document.getElementById('page-'+type).classList.remove('open');}
+
+// ── DETAIL: PESSOA ────────────────────────────────────────────────────────────
+function openPessoa(adv){
+  const det=D.pessoas_det[adv];
+  const hm=D.hm.find(p=>p.adv===adv);
+  if(!det||!hm) return;
+  document.getElementById('dp-title').textContent=adv;
+  const info=`${hm.fn} · ${hm.time} · ${hm.cargo}`;
+  document.getElementById('dp-sub').textContent=info+(hm.ativo?'':'  (saiu)');
+  
+  // KPIs pessoa
+  const tot=hm.tot;
+  const pv=hm.pct.v,pa=hm.pct.a,pg=hm.pct.g,padm=hm.pct.adm;
+  
+  // Casos por mês (usando activeMeses)
+  const casosHTML=det.casos.map(c=>{
+    const h_per=activeMeses.reduce((a,m)=>a+(c.pm[m]||0),0);
+    if(h_per===0&&activeMeses.length<4) return '';
+    const h_show=activeMeses.length===4?c.h:h_per;
+    return `<tr>
+      <td><strong>${c.nm}</strong></td>
+      <td><button class="link-btn" onclick="openCliente(\'${c.cli.replace(/'/g,"\\'")}\')">${c.cli}</button></td>
+      <td><span class="badge bc" style="font-size:9px">${c.tp}</span></td>
+      <td class="tr">${h_show>0?h_show+'h':'—'}</td>
+      <td class="tr tm">${h_show>0?brl(h_show*(D.hm.find(p=>p.adv===adv)?.cargo?.includes('Sócio')?750:h_show>0?450:0)):'—'}</td>
+      ${activeMeses.map(m=>`<td class="tr tm">${c.pm[m]>0?c.pm[m]:'—'}</td>`).join('')}
+    </tr>`;
+  }).filter(Boolean).join('');
+  
+  // Evolução mensal
+  const mesRows=activeMeses.map(m=>{
+    const d=hm.pm[m]||{};
+    return `<tr><td><strong>${ML[m]}</strong></td><td class="tr">${d.tot||0}h</td>
+      <td class="tr" style="color:var(--vc)">${d.v||0}h</td>
+      <td class="tr" style="color:var(--ac)">${d.a||0}h</td>
+      <td class="tr" style="color:var(--gc)">${d.g||0}h</td>
+      <td class="tr" style="color:var(--dc)">${d.adm||0}h</td></tr>`;
+  }).join('');
+  
+  document.getElementById('dp-body').innerHTML=`
+    <div class="kg kg4" style="margin-bottom:20px">
+      <div class="kc"><div class="kc-l">Total de horas</div><div class="kc-v">${tot}h</div><div class="kc-s">${det.tot_casos} casos/processos</div></div>
+      <div class="kc"><div class="kc-l">🔴 Vermelho</div><div class="kc-v" style="color:var(--vc)">${pv}%</div><div class="kc-s">${hm.h.v}h</div></div>
+      <div class="kc"><div class="kc-l">🟡 Amarelo</div><div class="kc-v" style="color:var(--ac)">${pa}%</div><div class="kc-s">${hm.h.a}h</div></div>
+      <div class="kc"><div class="kc-l">⬜ Admin</div><div class="kc-v" style="color:var(--dc)">${padm}%</div><div class="kc-s">${hm.h.adm}h</div></div>
+    </div>
+    <div class="g2" style="margin-bottom:20px">
+      <div class="panel"><div class="ph2"><span class="t">Evolução mensal</span></div><div class="pb ow">
+        <table class="t"><thead><tr><th>Mês</th><th class="r">Total</th><th class="r">🔴</th><th class="r">🟡</th><th class="r">🟢</th><th class="r">⬜</th></tr></thead>
+        <tbody>${mesRows}</tbody></table>
+      </div></div>
+      <div class="panel"><div class="ph2"><span class="t">Distribuição de horas</span></div><div class="pb">
+        <div class="sbar" style="height:16px;margin-bottom:8px">
+          <div class="sv" style="width:${pv}%"></div><div class="sa" style="width:${pa}%"></div>
+          <div class="sg" style="width:${pg}%"></div><div class="sd" style="width:${padm}%"></div>
+        </div>
+        <div style="font-size:12px;line-height:2">
+          <div>🔴 Vermelho: <strong>${pv}%</strong> (${hm.h.v}h)</div>
+          <div>🟡 Amarelo: <strong>${pa}%</strong> (${hm.h.a}h)</div>
+          <div>🟢 Verde: <strong>${pg}%</strong> (${hm.h.g}h)</div>
+          <div>⬜ Admin: <strong>${padm}%</strong> (${hm.h.adm}h)</div>
+        </div>
+        ${hm.trbd&&Object.keys(hm.trbd).length>0?'<div style="margin-top:12px;font-size:11px;color:var(--c3)"><strong>Por time real:</strong> '+Object.entries(hm.trbd).filter(([,v])=>v>0).map(([t,v])=>`${t}: ${v}h`).join(' · ')+'</div>':''} 
+      </div></div>
+    </div>
+    <div class="panel"><div class="ph2"><span class="t">Todos os casos e processos trabalhados</span><span class="s">${det.tot_casos} total · clique no cliente para ver detalhe</span></div>
+      <div class="pb ow"><table class="t">
+        <thead><tr><th>Caso / processo</th><th>Cliente</th><th>Tipo</th><th class="r">Horas</th><th class="r">Custo</th>${activeMeses.map(m=>`<th class="r">${ML[m]}</th>`).join('')}</tr></thead>
+        <tbody>${casosHTML||'<tr><td colspan="8" class="tm" style="text-align:center;padding:20px">Nenhum caso no período selecionado</td></tr>'}</tbody>
+      </table></div>
+    </div>
+  `;
+  document.getElementById('page-pessoa').classList.add('open');
+}
+
+// ── DETAIL: CLIENTE ───────────────────────────────────────────────────────────
+function openCliente(cli){
+  const det=D.cli_det[cli];
+  if(!det){alert('Sem dados para '+cli);return;}
+  document.getElementById('dc-title').textContent=cli;
+  const svcsAtivos=det.svcs.filter(s=>s.ativo);
+  const svcsInativos=det.svcs.filter(s=>!s.ativo);
+  document.getElementById('dc-sub').textContent=`${svcsAtivos.length} serviços ativos · ${svcsInativos.length} encerrados · ${det.h_tot}h lançadas`;
+  
+  const svcsHTML=(svcs,titulo)=>{
+    if(!svcs.length) return '';
+    const rows=svcs.map((s,i)=>`<tr style="${i%2?'':' background:#fafaf8'}">
+      <td><strong>${s.nm}</strong></td>
+      <td><span class="badge bc" style="font-size:9px">${s.tp}</span>${s.inc?'<span class="badge bg" style="font-size:9px;margin-left:4px">incluso mensal</span>':''}</td>
+      <td class="tr">${s.h>0?s.h+'h':'—'}</td>
+      <td class="tr tm">${s.c>0?brl(s.c):'—'}</td>
+    </tr>`).join('');
+    return `<div class="panel" style="margin-bottom:16px"><div class="ph2"><span class="t">${titulo}</span><span class="s">${svcs.length} serviços</span></div>
+      <div class="pb ow"><table class="t"><thead><tr><th>Serviço / caso</th><th>Tipo</th><th class="r">Horas</th><th class="r">Custo</th></tr></thead>
+      <tbody>${rows}</tbody></table></div></div>`;
+  };
+  
+  // Mensal info
+  const mRow=D.mensal.find(m=>m.cli===cli.slice(0,28));
+  const mensalInfo=mRow?`
+    <div class="panel" style="margin-bottom:16px"><div class="ph2"><span class="t">Mensalista — evolução mensal</span></div><div class="pb ow">
+      <table class="t"><thead><tr><th>Mês</th><th class="r">Receita</th><th class="r">Horas</th><th class="r">H. Judicial</th><th class="r">H. Inclusos</th><th class="r">Custo</th><th class="r">Margem</th></tr></thead>
+      <tbody>${D.meses.map(m=>{
+        const d=mRow.pm[m]; if(!d) return '';
+        const mg=d.r-d.c;
+        return `<tr><td><strong>${ML[m]}</strong></td><td class="tr">${d.r>0?brl(d.r):'—'}</td><td class="tr">${d.h}h</td><td class="tr tm">${d.hp||0}h</td><td class="tr tm">${d.hi||0}h</td><td class="tr tm">${brl(d.c)}</td><td class="tr" style="${mg>=0?'color:var(--g2)':' color:var(--red)'}">${(mg<0?'−':'')+brl(mg)}</td></tr>`;
+      }).join('')}</tbody></table>
+    </div></div>`:'';
+  
+  document.getElementById('dc-body').innerHTML=`
+    <div class="kg kg3" style="margin-bottom:20px">
+      <div class="kc"><div class="kc-l">Receita total</div><div class="kc-v g">${det.rec_tot>0?brl(det.rec_tot):'—'}</div><div class="kc-s">mensal + projetos ativos</div></div>
+      <div class="kc"><div class="kc-l">Custo técnico</div><div class="kc-v a">${brl(det.c_tot)}</div><div class="kc-s">${det.h_tot}h lançadas</div></div>
+      <div class="kc"><div class="kc-l">Margem estimada</div><div class="kc-v ${det.margem>=0?'g':'r'}">${det.rec_tot>0?(det.margem<0?'−':'')+brl(det.margem):'s/receita'}</div></div>
+    </div>
+    ${mensalInfo}
+    ${svcsHTML(svcsAtivos,'Serviços ativos')}
+    ${svcsHTML(svcsInativos,'Histórico — encerrados')}
+  `;
+  document.getElementById('page-cliente').classList.add('open');
+}
+
+// ── TIMES ─────────────────────────────────────────────────────────────────────
+let tmMode='sem',chartTmEvol=null;
+function buildTimes(){
+  const td=D.times[tmMode+'_socios'];
+  const tms=Object.keys(td).filter(t=>t!=='Administrativo');
+  // Filter by period
+  const totH=tms.reduce((a,t)=>a+activeMeses.reduce((b,m)=>b+(td[t].pm[m]?.tot||0),0),0);
+  document.getElementById('t-kpis').innerHTML=`
+    <div class="kc"><div class="kc-l">Horas no período</div><div class="kc-v">${totH.toFixed(0)}h</div><div class="kc-s">${D.kpis.pct_c}% em clientes</div></div>
+    <div class="kc"><div class="kc-l">Pessoas ativas</div><div class="kc-v">${D.kpis.pessoas}</div></div>
+    <div class="kc"><div class="kc-l">Custo técnico</div><div class="kc-v a">${brl(D.kpis.ct)}</div><div class="kc-s">período completo</div></div>
+    <div class="kc"><div class="kc-l">Times analisados</div><div class="kc-v">${tms.length}</div></div>
+  `;
+  document.getElementById('t-note').textContent=tmMode==='sem'?'Sócios excluídos. Use o toggle "Com sócios" para incluí-los alocados por time real de cada lançamento.':'Sócios incluídos e alocados pelo TIME CASO/PROCESSO de cada lançamento.';
+  document.getElementById('t-bars').innerHTML=tms.map(t=>{
+    const d=td[t];
+    const tot=activeMeses.reduce((a,m)=>a+(d.pm[m]?.tot||0),0);
+    if(!tot) return '';
+    const dv=activeMeses.reduce((a,m)=>a+(d.pm[m]?.v||0),0);
+    const da=activeMeses.reduce((a,m)=>a+(d.pm[m]?.a||0),0);
+    const dg=activeMeses.reduce((a,m)=>a+(d.pm[m]?.g||0),0);
+    const dd=activeMeses.reduce((a,m)=>a+(d.pm[m]?.adm||0),0);
+    const bv=(dv/tot*100).toFixed(1),ba=(da/tot*100).toFixed(1),bg=(dg/tot*100).toFixed(1),bd=(dd/tot*100).toFixed(1);
+    return `<div style="margin-bottom:14px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+        <span style="font-size:12px;font-weight:600">${t}</span>
+        <span style="font-size:11px;color:var(--c3)">${tot.toFixed(0)}h · ${d.pessoas}p</span>
+      </div>
+      <div class="sbar" style="height:10px"><div class="sv" style="width:${bv}%"></div><div class="sa" style="width:${ba}%"></div><div class="sg" style="width:${bg}%"></div><div class="sd" style="width:${bd}%"></div><div style="flex:1;background:var(--c2)"></div></div>
+      <div style="display:flex;gap:10px;margin-top:3px;font-size:10px;color:var(--c3)">
+        <span style="color:var(--vc)">🔴 ${bv}%</span><span style="color:var(--ac)">🟡 ${ba}%</span><span style="color:var(--gc)">🟢 ${bg}%</span><span style="color:var(--dc)">⬜ ${bd}%</span>
+      </div></div>`;
+  }).join('');
+  document.getElementById('t-table').innerHTML=`<thead><tr><th>Time</th><th class="r">Pessoas</th><th class="r">Horas</th>${activeMeses.map(m=>`<th class="r">${ML[m]}</th>`).join('')}<th class="r">🔴%</th><th class="r">🟡%</th><th class="r">🟢%</th><th class="r">⬜%</th></tr></thead><tbody>${tms.map((t,i)=>{
+    const d=td[t];
+    const tot=activeMeses.reduce((a,m)=>a+(d.pm[m]?.tot||0),0);
+    if(!tot) return '';
+    const dv=activeMeses.reduce((a,m)=>a+(d.pm[m]?.v||0),0);
+    const da=activeMeses.reduce((a,m)=>a+(d.pm[m]?.a||0),0);
+    const dg=activeMeses.reduce((a,m)=>a+(d.pm[m]?.g||0),0);
+    const dd=activeMeses.reduce((a,m)=>a+(d.pm[m]?.adm||0),0);
+    return `<tr style="${i%2?'':' background:#fafaf8'}"><td><strong>${t}</strong></td><td class="tr">${d.pessoas}</td><td class="tr"><strong>${tot.toFixed(0)}h</strong></td>${activeMeses.map(m=>`<td class="tr">${d.pm[m]?.tot||0}h</td>`).join('')}<td class="tr" style="color:var(--vc);font-weight:600">${(dv/tot*100).toFixed(1)}%</td><td class="tr" style="color:var(--ac)">${(da/tot*100).toFixed(1)}%</td><td class="tr" style="color:var(--gc)">${(dg/tot*100).toFixed(1)}%</td><td class="tr tm">${(dd/tot*100).toFixed(1)}%</td></tr>`;
+  }).join('')}</tbody>`;
+  if(chartTmEvol) chartTmEvol.destroy();
+  chartTmEvol=new Chart(document.getElementById('c-tm-evol'),{type:'bar',
+    data:{labels:activeMeses.map(m=>ML[m]),datasets:TIMES.filter(t=>td[t]).map(t=>({label:t,data:activeMeses.map(m=>td[t]?.pm[m]?.tot||0),backgroundColor:TCLR[t]+'80',borderColor:TCLR[t],borderWidth:1.5,stack:'s'}))},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{font:{size:10}}}},scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{size:10}}}}}
+  });
+}
+function tmToggle(v,el){tmMode=v;document.querySelectorAll('#screen-times .toggle-group .tgl').forEach(b=>b.classList.remove('active'));el.classList.add('active');buildTimes();}
+buildTimes();
+
+// ── HEATMAP ───────────────────────────────────────────────────────────────────
+let hmFil='todos',hmAt='ativo',hmOpen=null;
+function renderHM(){
+  let data=D.hm;
+  if(hmFil!=='todos') data=data.filter(p=>p.time===hmFil);
+  if(hmAt==='ativo') data=data.filter(p=>p.ativo);
+  let html='',lt='';
+  data.forEach(p=>{
+    if(p.time!==lt){html+=`<tr><td colspan="8" class="grow">${p.time}</td></tr>`;lt=p.time;}
+    // Recalcular pct pelo período filtrado
+    const tot_p=activeMeses.reduce((a,m)=>a+(p.pm[m]?.tot||0),0);
+    const pct_p=tot_p>0?{v:+(activeMeses.reduce((a,m)=>a+(p.pm[m]?.v||0),0)/tot_p*100).toFixed(1),a:+(activeMeses.reduce((a,m)=>a+(p.pm[m]?.a||0),0)/tot_p*100).toFixed(1),g:+(activeMeses.reduce((a,m)=>a+(p.pm[m]?.g||0),0)/tot_p*100).toFixed(1),adm:+(activeMeses.reduce((a,m)=>a+(p.pm[m]?.adm||0),0)/tot_p*100).toFixed(1)}:p.pct;
+    function hc(c,d){
+      const pct=pct_p[c],a2=Math.min(.88,.1+pct/100*.8);
+      const bg={v:`rgba(192,57,43,${a2})`,a:`rgba(196,122,0,${a2})`,g:`rgba(46,125,50,${a2})`,adm:`rgba(84,110,122,${a2*.7})`}[c];
+      const tc=pct>18?'#fff':'var(--preto)';
+      const icon=d==='low'?'⬇':d==='high'?'⬆':'';
+      return `<td style="text-align:center;padding:5px 6px"><div class="hcell" style="background:${bg};color:${tc}">${pct}%${icon?`<sup>${icon}</sup>`:''}</div></td>`;
+    }
+    const bar=['v','a','g','adm'].map(c=>`<div class="s${c[0]}" style="width:${pct_p[c]}%;height:100%"></div>`).join('');
+    const nd=Object.values(p.dev).filter(d=>d!=='ok').length;
+    html+=`<tr style="${nd>1?'background:#fffbee':''};cursor:pointer" onclick="hmDet('${p.adv.replace(/'/g,"\'")}')">
+      <td><div style="font-weight:500;font-size:12px"><button class="link-btn" onclick="event.stopPropagation();openPessoa('${p.adv.replace(/'/g,"\'")}')">${sN(p.adv)}</button>${!p.ativo?'<span style="font-size:9px;color:var(--c3);margin-left:4px">saiu</span>':''}</div><div style="font-size:10px;color:var(--c3)">${p.fn}</div></td>
+      <td><span class="tb ${TC[p.time]||''}">${p.time}</span></td>
+      <td style="text-align:center;font-weight:600">${tot_p.toFixed(1)}h</td>
+      ${hc('v',p.dev.v)}${hc('a',p.dev.a)}${hc('g',p.dev.g)}${hc('adm',p.dev.adm)}
+      <td><div class="sbar" style="min-width:60px">${bar}<div style="flex:1;background:var(--c2)"></div></div></td>
+    </tr>`;
+  });
+  document.getElementById('hm-body').innerHTML=html;
+}
+function hmDet(adv){
+  const p=D.hm.find(x=>x.adv===adv);
+  const el=document.getElementById('hm-det');
+  if(!p||hmOpen===adv){el.classList.remove('open');hmOpen=null;return;}
+  hmOpen=adv;
+  const rows=activeMeses.map(m=>{
+    const d=p.pm[m]; if(!d||d.tot===0) return '';
+    return `<tr><td>${ML[m]}</td><td class="tr">${d.tot}h</td><td class="tr" style="color:var(--vc)">${d.v}h (${(d.v/d.tot*100).toFixed(0)}%)</td><td class="tr" style="color:var(--ac)">${d.a}h (${(d.a/d.tot*100).toFixed(0)}%)</td><td class="tr" style="color:var(--gc)">${d.g}h (${(d.g/d.tot*100).toFixed(0)}%)</td><td class="tr" style="color:var(--dc)">${d.adm}h (${(d.adm/d.tot*100).toFixed(0)}%)</td></tr>`;
+  }).join('');
+  el.innerHTML=`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><strong>${p.adv}</strong><button class="link-btn" onclick="openPessoa('${p.adv.replace(/'/g,"\'")}')">→ Ver detalhe completo</button></div>
+    <table class="t"><thead><tr><th>Mês</th><th class="r">Total</th><th class="r">🔴</th><th class="r">🟡</th><th class="r">🟢</th><th class="r">⬜</th></tr></thead>
+    <tbody>${rows}</tbody></table>`;
+  el.classList.add('open');
+}
+function hmF(v,el){hmFil=v;document.querySelectorAll('#screen-heatmap .fb .fb-btn').slice(0,6).forEach(b=>b.classList.remove('active'));el.classList.add('active');renderHM();}
+function hmA(v,el){hmAt=v;document.querySelectorAll('#screen-heatmap .fb .fb-btn').slice(6).forEach(b=>b.classList.remove('active'));el.classList.add('active');renderHM();}
+renderHM();
+
+// ── PESSOAS ───────────────────────────────────────────────────────────────────
+let chartPRank=null,chartPMes=null;
+function buildPessoas(){
+  // Calcular horas por período filtrado
+  const sorted=D.hm.map(p=>({...p,h_per:activeMeses.reduce((a,m)=>a+(p.pm[m]?.tot||0),0)})).sort((a,b)=>b.h_per-a.h_per).filter(p=>p.h_per>0);
+  const totPer=activeMeses.reduce((a,m)=>a+D.kpm[m].h,0);
+  const hcPer=activeMeses.reduce((a,m)=>a+D.kpm[m].hc,0);
+  document.getElementById('p-kpis').innerHTML=`
+    <div class="kc"><div class="kc-l">Horas totais</div><div class="kc-v">${totPer.toFixed(0)}h</div><div class="kc-s">${activeMeses.length} meses selecionados</div></div>
+    <div class="kc"><div class="kc-l">Em clientes</div><div class="kc-v g">${hcPer.toFixed(0)}h</div><div class="kc-s">${(hcPer/totPer*100).toFixed(1)}% do total</div></div>
+    <div class="kc"><div class="kc-l">Admin / interno</div><div class="kc-v a">${(totPer-hcPer).toFixed(0)}h</div></div>
+    <div class="kc"><div class="kc-l">Pessoas ativas</div><div class="kc-v">${D.kpis.pessoas}</div></div>
+  `;
+  if(chartPRank) chartPRank.destroy();
+  chartPRank=new Chart(document.getElementById('c-p-rank'),{type:'bar',
+    data:{labels:sorted.map(p=>sN(p.adv)),datasets:[
+      {label:'🔴',data:sorted.map(p=>activeMeses.reduce((a,m)=>a+(p.pm[m]?.v||0),0)),backgroundColor:'#C0392B',stack:'s'},
+      {label:'🟡',data:sorted.map(p=>activeMeses.reduce((a,m)=>a+(p.pm[m]?.a||0),0)),backgroundColor:'#C47A00',stack:'s'},
+      {label:'🟢',data:sorted.map(p=>activeMeses.reduce((a,m)=>a+(p.pm[m]?.g||0),0)),backgroundColor:'#2E7D32',stack:'s'},
+      {label:'⬜',data:sorted.map(p=>activeMeses.reduce((a,m)=>a+(p.pm[m]?.adm||0),0)),backgroundColor:'#546E7A',stack:'s'},
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{labels:{font:{size:10}}}},scales:{x:{stacked:true,grid:{color:'rgba(0,0,0,.05)'}},y:{stacked:true,grid:{display:false},ticks:{font:{size:10}}}}}
+  });
+  if(chartPMes) chartPMes.destroy();
+  chartPMes=new Chart(document.getElementById('c-p-mes'),{type:'bar',
+    data:{labels:activeMeses.map(m=>ML[m]),datasets:[
+      {label:'Total',data:activeMeses.map(m=>D.kpm[m].h),backgroundColor:'rgba(0,60,40,.12)',borderColor:'#003C28',borderWidth:1.5,order:2},
+      {label:'Em clientes',data:activeMeses.map(m=>D.kpm[m].hc),backgroundColor:'#0F6E56',borderRadius:4,order:1},
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{font:{size:11}}}},scales:{x:{grid:{display:false}},y:{grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{size:10}}}}}
+  });
+  const ativos=sorted.filter(p=>p.ativo);
+  document.getElementById('pt-head').innerHTML=`<tr><th>Colaborador</th><th>Time</th>${activeMeses.map(m=>`<th class="r">${ML[m]}</th>`).join('')}<th class="r">Total</th><th class="r">Média</th><th></th></tr>`;
+  document.getElementById('pt-body').innerHTML=ativos.map(p=>{
+    const mc=activeMeses.map(m=>{const h=p.pm[m]?.tot||0;const s=h>130?'style="color:var(--g2);font-weight:600"':'';return `<td class="tr" ${s}>${h>0?h+'h':'-'}</td>`;}).join('');
+    return `<tr><td><button class="link-btn" onclick="openPessoa('${p.adv.replace(/'/g,"\'")}')"><strong>${sN(p.adv)}</strong></button></td><td><span class="tb ${TC[p.time]||''}">${p.time}</span></td>${mc}<td class="tr" style="font-weight:600">${p.h_per.toFixed(1)}h</td><td class="tr tm">${(p.h_per/activeMeses.length).toFixed(1)}h</td><td><button class="link-btn" onclick="openPessoa('${p.adv.replace(/'/g,"\'")}')" style="font-size:10px">→ detalhe</button></td></tr>`;
+  }).join('');
+}
+buildPessoas();
+
+// ── MENSALISTAS ───────────────────────────────────────────────────────────────
+let mFil='todos',chartMRank=null,chartMScat=null;
+function buildMensal(){
+  // Recalcular pelo período filtrado
+  const data2=D.mensal.map(d=>{
+    const r=activeMeses.reduce((a,m)=>a+(d.pm[m]?.r||0),0);
+    const h=activeMeses.reduce((a,m)=>a+(d.pm[m]?.h||0),0);
+    const hp=activeMeses.reduce((a,m)=>a+(d.pm[m]?.hp||0),0);
+    const hi=activeMeses.reduce((a,m)=>a+(d.pm[m]?.hi||0),0);
+    const c=activeMeses.reduce((a,m)=>a+(d.pm[m]?.c||0),0);
+    const mg=r-c;
+    return {...d,r_per:round0(r),h_per:roundH(h),hp_per:roundH(hp),hi_per:roundH(hi),c_per:round0(c),mg_per:round0(mg),mpct_per:r>0?+(mg/r*100).toFixed(1):null};
+  });
+  const com=data2.filter(x=>x.r_per>0);
+  const totR=com.reduce((a,d)=>a+d.r_per,0);
+  const totC=com.reduce((a,d)=>a+d.c_per,0);
+  const totM=totR-totC;
+  const neg=data2.filter(x=>x.mg_per<0&&x.r_per>0);
+  const semR=data2.filter(x=>x.r_per===0);
+  document.getElementById('m-kpis').innerHTML=`
+    <div class="kc"><div class="kc-l">Receita no período</div><div class="kc-v g">${brl(totR)}</div><div class="kc-s">${com.length} clientes com receita</div></div>
+    <div class="kc"><div class="kc-l">Custo técnico</div><div class="kc-v a">${brl(totC)}</div></div>
+    <div class="kc"><div class="kc-l">Margem bruta</div><div class="kc-v ${totM>=0?'g':'r'}">${brl(totM)}</div><div class="kc-s">${totR>0?(totM/totR*100).toFixed(1)+'%':'—'}</div></div>
+    <div class="kc"><div class="kc-l">Negativos · Sem receita</div><div class="kc-v ${neg.length>3?'r':''}">${neg.length} <span style="font-size:13px;color:var(--c3)">/ ${semR.length}</span></div></div>
+  `;
+  if(neg.length){const pior=neg.sort((a,b)=>a.mpct_per-b.mpct_per)[0];document.getElementById('m-alert').innerHTML=`<div class="alert alert-r"><strong>${neg.length} mensalistas negativos no período.</strong> Pior: ${pior.cli} (${pior.mpct_per}% · ${brl(pior.mg_per)}). ${semR.length} sem valor na planilha de fixos.</div>`;}
+  else document.getElementById('m-alert').innerHTML='';
+  const ranked=com.sort((a,b)=>a.mg_per-b.mg_per).slice(0,15);
+  if(chartMRank) chartMRank.destroy();
+  chartMRank=new Chart(document.getElementById('c-m-rank'),{type:'bar',
+    data:{labels:ranked.map(d=>d.cli.slice(0,16)),datasets:[{label:'Receita',data:ranked.map(d=>d.r_per),backgroundColor:'rgba(15,110,86,.2)',borderColor:'#0F6E56',borderWidth:1},{label:'Custo',data:ranked.map(d=>d.c_per),backgroundColor:'rgba(192,57,43,.35)',borderColor:'#C0392B',borderWidth:1}]},
+    options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{labels:{font:{size:10}}}},scales:{x:{ticks:{callback:v=>brlK(v),font:{size:9}},grid:{color:'rgba(0,0,0,.05)'}},y:{grid:{display:false},ticks:{font:{size:9}}}}}
+  });
+  const pts=com.map(d=>({x:d.r_per,y:d.c_per,r:Math.max(4,Math.min(22,Math.sqrt(d.h_per)*1.8)),label:d.cli,mp:d.mpct_per}));
+  if(chartMScat) chartMScat.destroy();
+  chartMScat=new Chart(document.getElementById('c-m-scat'),{type:'bubble',
+    data:{datasets:[{label:'≥50%',data:pts.filter(p=>p.mp&&p.mp>=50),backgroundColor:'rgba(15,110,86,.5)',borderColor:'#0F6E56',borderWidth:1},{label:'0–50%',data:pts.filter(p=>p.mp&&p.mp<50&&p.mp>=0),backgroundColor:'rgba(196,122,0,.45)',borderColor:'#C47A00',borderWidth:1},{label:'Negativo',data:pts.filter(p=>!p.mp||p.mp<0),backgroundColor:'rgba(192,57,43,.5)',borderColor:'#C0392B',borderWidth:1}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{font:{size:10}}},tooltip:{callbacks:{label:c=>[c.raw.label,`Rec: ${brl(c.raw.x)}`,`Margem: ${c.raw.mp}%`]}}},scales:{x:{title:{display:true,text:'Receita',font:{size:10}},ticks:{callback:v=>brlK(v),font:{size:9}},grid:{color:'rgba(0,0,0,.05)'}},y:{title:{display:true,text:'Custo',font:{size:10}},ticks:{callback:v=>brlK(v),font:{size:9}},grid:{color:'rgba(0,0,0,.05)'}}}}
+  });
+  renderMTable(data2);
+}
+function renderMTable(data2){
+  let d2=data2||D.mensal.map(d=>{
+    const r=activeMeses.reduce((a,m)=>a+(d.pm[m]?.r||0),0);
+    const c=activeMeses.reduce((a,m)=>a+(d.pm[m]?.c||0),0);
+    return {...d,r_per:round0(r),h_per:roundH(activeMeses.reduce((a,m)=>a+(d.pm[m]?.h||0),0)),hp_per:roundH(activeMeses.reduce((a,m)=>a+(d.pm[m]?.hp||0),0)),hi_per:roundH(activeMeses.reduce((a,m)=>a+(d.pm[m]?.hi||0),0)),c_per:round0(c),mg_per:round0(r-c),mpct_per:r>0?+(((r-c)/r)*100).toFixed(1):null};
+  });
+  if(mFil==='com_rec') d2=d2.filter(x=>x.r_per>0);
+  else if(mFil==='neg') d2=d2.filter(x=>x.mg_per<0&&x.r_per>0);
+  else if(mFil==='sem_rec') d2=d2.filter(x=>x.r_per===0);
+  else if(mFil==='inc') d2=d2.filter(x=>x.n_inc>0);
+  document.getElementById('m-body').innerHTML=d2.map((d,i)=>{
+    const mc=d.mg_per>=0?'color:var(--g2)':'color:var(--red)';
+    const bc=d.mpct_per===null?'bc':d.mpct_per>=50?'bg':d.mpct_per>=0?'ba':'br';
+    const pmCells=activeMeses.map(m=>{const h=d.pm[m]?.h||0;return `<span style="color:${h>0?'var(--preto)':'var(--c2)'};display:inline-block;min-width:28px;text-align:right">${h>0?h:'-'}</span>`;}).join('·');
+    const incBadge=d.n_inc>0?`<span class="badge bg" style="font-size:9px">${d.n_inc} inc.</span>`:'';
+    return `<tr style="${i%2?'':' background:#fafaf8'}">
+      <td><button class="link-btn" onclick="openCliente('${d.cli.replace(/'/g,"\'")}')"><strong>${d.cli}</strong></button>${incBadge}</td>
+      <td class="tm">${d.resp}</td>
+      <td class="tr">${d.r_per>0?brl(d.r_per/activeMeses.length):'—'}</td>
+      <td class="tr">${d.r_per>0?brl(d.r_per):'—'}</td>
+      <td class="tr">${d.h_per>0?d.h_per+'h':'—'}</td>
+      <td class="tr tm">${d.hp_per>0?d.hp_per+'h':'—'}</td>
+      <td class="tr tm">${d.hi_per>0?d.hi_per+'h':'—'}</td>
+      <td class="tr tm">${d.c_per>0?brl(d.c_per):'—'}</td>
+      <td class="tr" style="${mc}">${d.r_per>0?(d.mg_per<0?'−':'')+brl(d.mg_per):'s/rec'}</td>
+      <td class="tr"><span class="badge ${bc}">${d.mpct_per!==null?d.mpct_per+'%':'s/d'}</span></td>
+      <td style="font-size:11px;white-space:nowrap">${pmCells}</td>
+      <td><button class="link-btn" onclick="openCliente('${d.cli.replace(/'/g,"\'")}')">→ detalhe</button></td>
+    </tr>`;
+  }).join('');
+}
+function mF(v,el){mFil=v;document.querySelectorAll('#screen-mensalistas .fb .fb-btn').forEach(b=>b.classList.remove('active'));el.classList.add('active');renderMTable();}
+buildMensal();
+
+// ── PROJETOS ──────────────────────────────────────────────────────────────────
+let prFil='todos',chartPrTop=null,chartPrScat=null;
+function buildProjetos(){
+  const data2=D.lc.map(d=>{
+    const h=activeMeses.reduce((a,m)=>a+(d.pm[m]?.h||0),0);
+    const c=activeMeses.reduce((a,m)=>a+(d.pm[m]?.c||0),0);
+    return {...d,h_per:+(h.toFixed(2)),c_per:round0(c),ok_per:h>0};
+  });
+  const com=data2.filter(x=>x.ok_per);
+  const totR=com.reduce((a,x)=>a+x.rec,0);
+  const totC=com.reduce((a,x)=>a+x.c_per,0);
+  const totM=totR-totC;
+  const neg=data2.filter(x=>x.m<0&&x.ok_per);
+  const semH=data2.filter(x=>!x.ok_per);
+  document.getElementById('pr-kpis').innerHTML=`
+    <div class="kc"><div class="kc-l">Receita (c/ horas)</div><div class="kc-v g">${brl(totR)}</div><div class="kc-s">${com.length} casos</div></div>
+    <div class="kc"><div class="kc-l">Custo no período</div><div class="kc-v a">${brl(totC)}</div></div>
+    <div class="kc"><div class="kc-l">Margem bruta</div><div class="kc-v ${totM>=0?'g':'r'}">${brl(totM)}<span style="font-size:13px;font-weight:400;color:var(--c3)"> ${totR>0?(totM/totR*100).toFixed(1)+'%':''}</span></div></div>
+    <div class="kc"><div class="kc-l">Sem horas · Negativos</div><div class="kc-v">${semH.length} <span style="font-size:13px;color:var(--c3)">/ ${neg.length}</span></div></div>
+  `;
+  if(neg.length){const p=neg.sort((a,b)=>a.m-b.m)[0];document.getElementById('pr-alert').innerHTML=`<div class="alert alert-r"><strong>${neg.length} casos com margem negativa.</strong> Pior: ${p.cli} · ${p.lbl} (${p.mp}%). ${semH.filter(x=>x.rec>15000).length} casos com receita &gt;R$15k sem hora registrada.</div>`;}
+  else document.getElementById('pr-alert').innerHTML='';
+  const top12=com.sort((a,b)=>b.m-a.m).slice(0,12);
+  if(chartPrTop) chartPrTop.destroy();
+  chartPrTop=new Chart(document.getElementById('c-pr-top'),{type:'bar',
+    data:{labels:top12.map(d=>`${d.cli.slice(0,10)} · ${d.lbl.slice(0,12)}`),datasets:[{label:'Receita',data:top12.map(d=>d.rec),backgroundColor:'rgba(15,110,86,.2)',borderColor:'#0F6E56',borderWidth:1},{label:'Custo',data:top12.map(d=>d.custo),backgroundColor:'rgba(192,57,43,.3)',borderColor:'#C0392B',borderWidth:1}]},
+    options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{labels:{font:{size:10}}}},scales:{x:{ticks:{callback:v=>brlK(v),font:{size:9}},grid:{color:'rgba(0,0,0,.05)'}},y:{grid:{display:false},ticks:{font:{size:9}}}}}
+  });
+  const pts2=com.map(d=>({x:d.rec,y:d.custo,r:Math.max(4,Math.min(24,Math.sqrt(Math.abs(d.m))/14)),label:`${d.cli} — ${d.lbl}`,mp:d.mp}));
+  if(chartPrScat) chartPrScat.destroy();
+  chartPrScat=new Chart(document.getElementById('c-pr-scat'),{type:'bubble',
+    data:{datasets:[{label:'≥70%',data:pts2.filter(p=>p.mp>=70),backgroundColor:'rgba(15,110,86,.55)',borderColor:'#0F6E56',borderWidth:1},{label:'0–70%',data:pts2.filter(p=>p.mp>=0&&p.mp<70),backgroundColor:'rgba(196,122,0,.45)',borderColor:'#C47A00',borderWidth:1},{label:'Negativo',data:pts2.filter(p=>p.mp<0),backgroundColor:'rgba(192,57,43,.5)',borderColor:'#C0392B',borderWidth:1}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{font:{size:10}}},tooltip:{callbacks:{label:c=>[c.raw.label,`Rec: ${brl(c.raw.x)}`,`Margem: ${c.raw.mp}%`]}}},scales:{x:{title:{display:true,text:'Receita',font:{size:10}},ticks:{callback:v=>brlK(v),font:{size:9}},grid:{color:'rgba(0,0,0,.05)'}},y:{title:{display:true,text:'Custo',font:{size:10}},ticks:{callback:v=>brlK(v),font:{size:9}},grid:{color:'rgba(0,0,0,.05)'}}}}
+  });
+  renderPR(data2);
+}
+function renderPR(data2){
+  let d2=(data2||D.lc.map(d=>({...d,h_per:activeMeses.reduce((a,m)=>a+(d.pm[m]?.h||0),0),ok_per:activeMeses.reduce((a,m)=>a+(d.pm[m]?.h||0),0)>0})));
+  if(prFil==='com_h') d2=d2.filter(x=>x.ok_per);
+  else if(prFil==='sem_h') d2=d2.filter(x=>!x.ok_per);
+  else if(prFil==='neg') d2=d2.filter(x=>x.m<0);
+  document.getElementById('pr-body').innerHTML=d2.map((d,i)=>{
+    const mc=d.m>=0?'color:var(--g2)':'color:var(--red)';
+    const bc=d.mp>=70?'bg':d.mp>=40?'ba':d.mp<0?'br':'bc';
+    const h_show=d.h_per!==undefined?d.h_per:d.h;
+    return `<tr style="${i%2?'':' background:#fafaf8'}">
+      <td style="font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:0" title="${d.lbl}">${d.lbl}</td>
+      <td><button class="link-btn" onclick="openCliente('${d.cli.replace(/'/g,"\'")}')"><strong>${d.cli}</strong></button></td>
+      <td class="tm">${d.resp}</td>
+      <td><span class="badge bc" style="font-size:9px">${d.area}</span></td>
+      <td class="tr">${brl(d.rec)}</td>
+      <td class="tr tm">${d.ok_per?brl(d.custo):'—'}</td>
+      <td class="tr" style="${mc}">${d.ok_per?(d.m<0?'−':'')+brl(d.m):'—'}</td>
+      <td class="tr">${d.ok_per?`<span class="badge ${bc}">${d.mp}%</span>`:'—'}</td>
+      <td class="tr tm">${h_show>0?h_show+'h':'—'}</td>
+      <td class="tr tm">${d.rph>0?brlK(d.rph):'—'}</td>
+      <td><button class="link-btn" onclick="openCliente('${d.cli.replace(/'/g,"\'")}')">→ detalhe</button></td>
+    </tr>`;
+  }).join('');
+}
+function prF(v,el){prFil=v;document.querySelectorAll('#screen-projetos .fb .fb-btn').forEach(b=>b.classList.remove('active'));el.classList.add('active');renderPR();}
+buildProjetos();
+
+// ── JUDICIAL ──────────────────────────────────────────────────────────────────
+let jFil='todos',chartJTop=null,chartJScat=null;
+function buildJudicial(){
+  const com=D.jud.filter(x=>x.ok);
+  const totE=com.reduce((a,d)=>a+d.e,0);
+  const totC=com.reduce((a,d)=>a+d.ca,0);
+  const totX=com.reduce((a,d)=>a+d.x,0);
+  const deficit=com.filter(x=>x.mse<0).length;
+  const inviavel=com.filter(x=>x.mt<0).length;
+  const viavel=com.filter(x=>x.mse<0&&x.mt>=0).length;
+  document.getElementById('j-kpis').innerHTML=`
+    <div class="kc"><div class="kc-l">Entradas pagas</div><div class="kc-v g">${brl(totE)}</div><div class="kc-s">${com.length} processos com horas</div></div>
+    <div class="kc"><div class="kc-l">Custo acumulado</div><div class="kc-v a">${brl(totC)}</div></div>
+    <div class="kc"><div class="kc-l">Êxito estimado total</div><div class="kc-v">${brl(totX)}</div><div class="kc-s">se todos confirmados</div></div>
+    <div class="kc"><div class="kc-l">Custo > entrada · Inviável</div><div class="kc-v r">${deficit} <span style="font-size:13px;color:var(--c3)">/ ${inviavel}</span></div><div class="kc-s">${viavel} viáveis com êxito</div></div>
+  `;
+  if(inviavel>0) document.getElementById('j-alert').innerHTML=`<div class="alert alert-r"><strong>${inviavel} processos inviáveis mesmo com êxito estimado.</strong> ${deficit} com custo acima da entrada. Verifique sub-registro de honorários no CRM.</div>`;
+  const top20=com.sort((a,b)=>b.ca-a.ca).slice(0,20);
+  if(chartJTop) chartJTop.destroy();
+  chartJTop=new Chart(document.getElementById('c-j-top'),{type:'bar',
+    data:{labels:top20.map(d=>`${d.cli.slice(0,10)} · ${d.lbl.slice(0,12)}`),datasets:[{label:'Entrada',data:top20.map(d=>d.e),backgroundColor:'rgba(15,110,86,.6)',borderColor:'#0F6E56',borderWidth:1},{label:'Custo acum.',data:top20.map(d=>d.ca),backgroundColor:'rgba(192,57,43,.45)',borderColor:'#C0392B',borderWidth:1}]},
+    options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{labels:{font:{size:10}}}},scales:{x:{ticks:{callback:v=>brlK(v),font:{size:9}},grid:{color:'rgba(0,0,0,.05)'}},y:{grid:{display:false},ticks:{font:{size:9}}}}}
+  });
+  const jpts=com.map(d=>({x:d.e,y:d.ca,r:Math.max(3,Math.min(20,Math.sqrt(d.horas)*2)),label:`${d.cli} — ${d.lbl}`,mse:d.mse,mt:d.mt}));
+  if(chartJScat) chartJScat.destroy();
+  chartJScat=new Chart(document.getElementById('c-j-scat'),{type:'bubble',
+    data:{datasets:[{label:'Entrada cobre',data:jpts.filter(p=>p.mse>=0),backgroundColor:'rgba(15,110,86,.5)',borderColor:'#0F6E56',borderWidth:1},{label:'Viável c/ êxito',data:jpts.filter(p=>p.mse<0&&p.mt>=0),backgroundColor:'rgba(196,122,0,.45)',borderColor:'#C47A00',borderWidth:1},{label:'Inviável',data:jpts.filter(p=>p.mt<0),backgroundColor:'rgba(192,57,43,.5)',borderColor:'#C0392B',borderWidth:1}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{font:{size:10}}},tooltip:{callbacks:{label:c=>[c.raw.label,`Entrada: ${brl(c.raw.x)}`,`Custo: ${brl(c.raw.y)}`,`Marg. s/êxito: ${brl(c.raw.mse)}`,`Marg. total: ${brl(c.raw.mt)}`]}}},scales:{x:{title:{display:true,text:'Entrada paga',font:{size:10}},ticks:{callback:v=>brlK(v),font:{size:9}},grid:{color:'rgba(0,0,0,.05)'}},y:{title:{display:true,text:'Custo acumulado',font:{size:10}},ticks:{callback:v=>brlK(v),font:{size:9}},grid:{color:'rgba(0,0,0,.05)'}}}}
+  });
+  renderJ();
+}
+function renderJ(){
+  let d=D.jud.filter(x=>x.ok);
+  if(jFil==='deficit') d=d.filter(x=>x.mse<0);
+  else if(jFil==='ok') d=d.filter(x=>x.mse>=0);
+  else if(jFil==='ganhar') d=d.filter(x=>x.mse<0&&x.mt>=0);
+  else if(jFil==='inviavel') d=d.filter(x=>x.mt<0);
+  document.getElementById('j-body').innerHTML=d.map((j,i)=>{
+    let sb,sc;
+    if(j.mse>=0){sb='✓ entrada cobre';sc='bg';}
+    else if(j.mt>=0){sb='⚠ precisa êxito';sc='ba';}
+    else{sb='✗ inviável';sc='br';}
+    return `<tr style="${i%2?'':' background:#fafaf8'}">
+      <td style="font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:0" title="${j.lbl}">${j.lbl}</td>
+      <td><button class="link-btn" onclick="openCliente('${j.cli.replace(/'/g,"\'")}')"><strong>${j.cli}</strong></button></td>
+      <td class="tm">${j.resp}</td>
+      <td class="tr">${j.e>0?brl(j.e):'—'}</td>
+      <td class="tr">${brl(j.ca)}</td>
+      <td class="tr" style="${j.mse>=0?'color:var(--g2)':'color:var(--red)'}">${j.mse<0?'−':'+''}${brl(j.mse)}</td>
+      <td class="tr" style="${j.be>0?'color:var(--red)':'color:var(--c3)'}">${j.be>0?brl(j.be):'—'}</td>
+      <td class="tr" style="color:${j.x>0?'var(--g2)':'var(--c3)'}">${j.x>0?brl(j.x):'—'}</td>
+      <td class="tr" style="${j.mt>=0?'color:var(--g2)':'color:var(--red)'}">${j.mt<0?'−':'+''}${brl(j.mt)}</td>
+      <td><span class="badge ${sc}">${sb}</span></td>
+      <td><button class="link-btn" onclick="openCliente('${j.cli.replace(/'/g,"\'")}')">→ detalhe</button></td>
+    </tr>`;
+  }).join('');
+}
+function jF(v,el){jFil=v;document.querySelectorAll('#screen-judicial .fb .fb-btn').forEach(b=>b.classList.remove('active'));el.classList.add('active');renderJ();}
+buildJudicial();
+
+// ── REFRESH ALL ───────────────────────────────────────────────────────────────
+function refreshAll(){
+  buildTimes();
+  renderHM();
+  buildPessoas();
+  buildMensal();
+  buildProjetos();
+  buildJudicial();
+}
+
+// ── UTILS ─────────────────────────────────────────────────────────────────────
+function round0(v){return Math.round(v);}
+function roundH(v){return Math.round(v*10)/10;}
+</script>
+</body>
+</html>
