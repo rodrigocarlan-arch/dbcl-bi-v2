@@ -253,8 +253,8 @@ table.t tbody tr:hover td{background:#f4f8f4}
 
 <!-- ═══════════ SERVIÇOS & ÁREAS ═══════════ -->
 <section class="screen" id="screen-servicos">
-  <div class="ph"><div><h1>Serviços &amp; Áreas</h1><p>Rentabilidade dos trabalhos cobrados separadamente · mensalistas dependem de rateio de receita no pipeline</p></div></div>
-  <div class="note"><strong>Escopo:</strong> esta visão compara projetos, avulsos e judiciais não inclusos no mensal. Contratos recorrentes não são distribuídos por serviço porque o data.js atual não contém regra de rateio do fee. No judicial, a receita inclui entrada e êxito estimado.</div>
+  <div class="ph"><div><h1>Serviços &amp; Áreas</h1><p>Rentabilidade por contrato, área e tipo de receita</p></div></div>
+  <div class="note"><strong>Escopo:</strong> mensalistas entram como contrato consolidado e preservam a área Full Service. Geração sem êxito sustenta a margem-base; êxito estimado aparece separado e não é tratado como receita garantida.</div>
   <div class="kg kg4" id="sa-kpis"></div>
   <div class="g2">
     <div class="panel"><div class="ph2"><span class="t">Resultado por área do direito</span><span class="s">receita x custo</span></div><div class="pb metric-bars" id="sa-area-bars"></div></div>
@@ -271,10 +271,6 @@ table.t tbody tr:hover td{background:#f4f8f4}
 <section class="screen" id="screen-times">
   <div class="ph">
     <div><h1>Times</h1><p>Volume e distribuição de horas por time</p></div>
-    <div class="toggle-group">
-      <button class="tgl active" onclick="tmTgl('sem',this)">Sem sócios</button>
-      <button class="tgl" onclick="tmTgl('com',this)">Com sócios</button>
-    </div>
   </div>
   <div class="kg kg4" id="t-kpis"></div>
   <div class="g2">
@@ -326,6 +322,10 @@ table.t tbody tr:hover td{background:#f4f8f4}
     <div class="panel"><div class="ph2"><span class="t">Ranking de horas · por sinaleira</span></div><div class="pb"><div class="cw t"><canvas id="c-p-rank"></canvas></div></div></div>
     <div class="panel"><div class="ph2"><span class="t">Evolução mensal do escritório</span></div><div class="pb"><div class="cw t"><canvas id="c-p-evo"></canvas></div></div></div>
   </div>
+  <div class="g2">
+    <div class="panel"><div class="ph2"><span class="t">Como o tempo é utilizado</span><span class="s">categoria do lançamento</span></div><div class="pb metric-bars" id="p-cats"></div></div>
+    <div class="panel"><div class="ph2"><span class="t">Distribuição por área</span><span class="s">horas técnicas</span></div><div class="pb metric-bars" id="p-areas"></div></div>
+  </div>
   <div class="panel"><div class="ph2"><span class="t">Horas por pessoa × mês</span><span class="s">clique para abrir o perfil</span></div><div class="pb ow"><table class="t" id="p-table"></table></div></div>
 </section>
 
@@ -352,7 +352,7 @@ table.t tbody tr:hover td{background:#f4f8f4}
 
 <!-- ═══════════ PROJETOS ═══════════ -->
 <section class="screen" id="screen-projetos">
-  <div class="ph"><div><h1>Projetos &amp; Avulsos</h1><p>Apenas contratos ativos · excluídos inclusos no mensal</p></div></div>
+  <div class="ph"><div><h1>Projetos &amp; Avulsos</h1><p id="pr-subtitle">Contratos ativos · geração sem êxito separada da expectativa contingente</p></div></div>
   <div class="kg kg4" id="pr-kpis"></div>
   <div class="g2">
     <div class="panel"><div class="ph2"><span class="t">Top 12 margem bruta</span></div><div class="pb"><div class="cw t"><canvas id="c-pr-top"></canvas></div></div></div>
@@ -372,7 +372,7 @@ table.t tbody tr:hover td{background:#f4f8f4}
 
 <!-- ═══════════ JUDICIAL ═══════════ -->
 <section class="screen" id="screen-judicial">
-  <div class="ph"><div><h1>Judicial</h1><p>Break-even por processo · apenas ativos · excluídos inclusos no mensal</p></div></div>
+  <div class="ph"><div><h1>Judicial</h1><p id="j-subtitle">Break-even por processo · ativos · excluídos inclusos no mensal</p></div></div>
   <div class="note"><strong>Como ler:</strong> Entrada = honorários não contingentes · Custo acum. = horas × valor/hora · Break-even = êxito mínimo para cobrir o déficit · Margem total = entrada + êxito est. − custo.</div>
   <div class="kg kg4" id="j-kpis"></div>
   <div class="g2">
@@ -394,7 +394,7 @@ table.t tbody tr:hover td{background:#f4f8f4}
 
 <!-- ═══════════ PORTFOLIO ═══════════ -->
 <section class="screen" id="screen-portfolio">
-  <div class="ph"><div><h1>Saúde do Portfólio</h1><p>Concentração, risco e atividade da carteira</p></div></div>
+  <div class="ph"><div><h1>Saúde do Portfólio</h1><p>Contratos saudáveis e não saudáveis por tipo, área e relevância</p></div></div>
   <div class="kg kg4" id="pf-kpis"></div>
   <div class="g2">
     <div class="panel"><div class="ph2"><span class="t">Concentração de receita mensal</span><span class="s">% da carteira de mensalistas</span></div><div class="pb" id="pf-conc"></div></div>
@@ -403,6 +403,14 @@ table.t tbody tr:hover td{background:#f4f8f4}
   <div class="g2">
     <div class="panel"><div class="ph2"><span class="t">Clientes pagantes sem atividade no período</span><span class="s">churn risk ou margem livre</span></div><div class="pb ow"><table class="t" id="pf-idle"></table></div></div>
     <div class="panel"><div class="ph2"><span class="t">Clientes com horas e sem receita cadastrada</span><span class="s">preencher planilha de fixos</span></div><div class="pb ow"><table class="t" id="pf-norec"></table></div></div>
+  </div>
+  <div class="g2">
+    <div class="panel"><div class="ph2"><span class="t">Saúde por tipo contratual</span><span class="s">receita sem êxito × custo</span></div><div class="pb metric-bars" id="pf-types"></div></div>
+    <div class="panel"><div class="ph2"><span class="t">Resultado por área</span><span class="s">margem sem êxito</span></div><div class="pb metric-bars" id="pf-areas"></div></div>
+  </div>
+  <div class="g2">
+    <div class="panel"><div class="ph2"><span class="t">Carteira por cluster</span><span class="s">horas e resultado</span></div><div class="pb metric-bars" id="pf-clusters"></div></div>
+    <div class="panel"><div class="ph2"><span class="t">Geração comercial</span><span class="s">contratada sem êxito × êxito estimado</span></div><div class="pb" id="pf-generation"></div></div>
   </div>
 </section>
 

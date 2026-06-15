@@ -11,8 +11,8 @@ const S = {
   tmMode: 'sem',                   // times: sem/com sócios
   hmTime: 'todos', hmAtivo: 'ativo',
   mFilter: 'todos', mSortK: 'margem', mSortAsc: true,
-  prFilter: 'todos', prSortK: 'm', prSortAsc: false,
-  jFilter: 'horas', jSortK: 'ca', jSortAsc: false,
+  prFilter: 'todos', prStatus: 'ativos', prSortK: 'm', prSortAsc: false,
+  jFilter: 'horas', jStatus: 'ativos', jSortK: 'ca', jSortAsc: false,
   saFilter: 'todos',
   auditFilter: 'todos',
   charts: {},
@@ -115,15 +115,16 @@ function mensalCalc(){
     return {...m, _h:h,_hp:hp,_hi:hi,_cRaw:cRaw,_custo:custo,_rec:rec,_margem:margem,_mpct:mpct,_recM:rec/Math.max(1,S.meses.length)};
   });
 }
-function lcCalc(){
-  return D.lc.map(p => {
+function lcCalc(base=D.lc){
+  return base.map(p => {
     const h = sumPM(p.pm,'h'), cRaw = sumPM(p.pm,'c');
-    const custo = C(cRaw), margem = (p.rec||0) - custo;
-    return {...p, _h:h,_cRaw:cRaw,_custo:custo,_margem:margem,_mp:p.rec>0?margem/p.rec*100:null,_rph:h>0?(p.rec||0)/h:null};
+    const receita = p.rec_sem_exito==null?(p.rec||0):p.rec_sem_exito;
+    const custo = C(cRaw), margem = receita - custo;
+    return {...p, _receita:receita,_h:h,_cRaw:cRaw,_custo:custo,_margem:margem,_mp:receita>0?margem/receita*100:null,_rph:h>0?receita/h:null};
   });
 }
-function judCalc(){
-  return D.jud.map(j => {
+function judCalc(base=D.jud){
+  return base.map(j => {
     const h = sumPM(j.pm,'h'), cRaw = sumPM(j.pm,'c');
     const ca = C(cRaw);
     const mse = (j.e||0) - ca;
@@ -344,28 +345,30 @@ function renderPainel(){
 }
 
 /* ───────── TIMES ───────── */
-function tmTgl(mode, btn){
-  S.tmMode = mode;
-  btn.parentElement.querySelectorAll('.tgl').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  renderTimes();
-}
 function renderTimes(){
-  const td = D.times[S.tmMode==='sem'?'sem_socios':'com_socios'];
-  const names = Object.keys(td);
-  // KPIs from filtered months
-  let hTot=0, hCli=0, pessoas = new Set();
-  names.forEach(n=>{ for(const m of S.meses){ const pm=td[n].pm[m]; if(pm){ hTot+=pm.tot; hCli+=pm.v+pm.a+pm.g; } } });
-  const hmAll = hmCalc();
-  const ct = hmAll.reduce((s,p)=>s+0,0);
+  const people=hmCalc().filter(p=>p._tot>0);
+  const td={};
+  people.forEach(p=>{
+    const name=p.time||'Não informado';
+    const x=td[name]||(td[name]={pm:{},h:{v:0,a:0,g:0,adm:0},people:0});
+    x.people++;
+    for(const m of S.meses){
+      const source=p.pm[m]||{tot:0,v:0,a:0,g:0,adm:0};
+      const target=x.pm[m]||(x.pm[m]={tot:0,v:0,a:0,g:0,adm:0});
+      ['tot','v','a','g','adm'].forEach(k=>target[k]+=source[k]||0);
+    }
+  });
+  const names=Object.keys(td).sort((a,b)=>a==='Sócios'?1:b==='Sócios'?-1:a.localeCompare(b));
+  let hTot=0,hCli=0;
+  names.forEach(n=>S.meses.forEach(m=>{const pm=td[n].pm[m];if(pm){hTot+=pm.tot;hCli+=pm.v+pm.a+pm.g;}}));
   document.getElementById('t-kpis').innerHTML = `
     <div class="kc"><div class="kc-l">Horas no período</div><div class="kc-v">${fmtH(hTot)}</div></div>
     <div class="kc"><div class="kc-l">% em clientes</div><div class="kc-v g">${hTot>0?fmtP(hCli/hTot*100):'—'}</div></div>
-    <div class="kc"><div class="kc-l">Times técnicos</div><div class="kc-v">${names.filter(n=>n!=='Administrativo').length}</div></div>
-    <div class="kc"><div class="kc-l">Pessoas no período</div><div class="kc-v">${D.kpis.pessoas}</div></div>`;
+    <div class="kc"><div class="kc-l">Times independentes</div><div class="kc-v">${names.length}</div><div class="kc-s">Sócios permanecem em time próprio</div></div>
+    <div class="kc"><div class="kc-l">Pessoas no período</div><div class="kc-v">${people.length}</div></div>`;
 
   // Stacked bar by month
-  const colors = {'Trabalhista':'#64B5F6','Contencioso':'#EF9A9A','Consultivo':'#80CBC4','Cons. Tributária':'#CE93D8','Administrativo':'#B0BEC5'};
+  const colors = {'Trabalhista':'#64B5F6','Contencioso':'#EF9A9A','Consultivo':'#80CBC4','Consultoria Tributária':'#CE93D8','Administrativo':'#B0BEC5','Sócios':'#455A64'};
   mkChart('c-tm',{type:'bar',data:{labels:S.meses.map(mLbl),datasets:names.map(n=>({label:n,data:S.meses.map(m=>td[n].pm[m]?td[n].pm[m].tot:0),backgroundColor:colors[n]||'#999'}))},
     options:{maintainAspectRatio:false,scales:{x:{stacked:true},y:{stacked:true}},plugins:{legend:{position:'bottom'}}}});
 
@@ -466,11 +469,23 @@ function renderPessoas(){
     {type:'line',label:'Pessoas lançando',data:nVals,borderColor:'#C47A00',yAxisID:'y2',tension:.3}
   ]},options:{maintainAspectRatio:false,plugins:{legend:{position:'bottom'}},scales:{y:{position:'left'},y2:{position:'right',grid:{display:false}}}}});
 
+  const aggregateDimension=(field)=>{
+    const totals={};
+    rows.forEach(p=>S.meses.forEach(m=>Object.entries((p[field]&&p[field][m])||{}).forEach(([k,v])=>totals[k]=(totals[k]||0)+v)));
+    return Object.entries(totals).sort((a,b)=>b[1]-a[1]);
+  };
+  const renderDimension=(id,data,limit=12)=>{
+    const max=Math.max(1,...data.map(x=>x[1]));
+    document.getElementById(id).innerHTML=data.slice(0,limit).map(([name,value])=>`<div class="metric-row"><div class="metric-name" title="${esc(name)}">${esc(name)}</div><div class="metric-track"><div class="metric-fill revenue" style="width:${value/max*100}%"></div></div><div class="metric-value">${fmtH(value)}h</div></div>`).join('')||'<div class="empty-state">Sem dados no período.</div>';
+  };
+  renderDimension('p-cats',aggregateDimension('cats_pm'));
+  renderDimension('p-areas',aggregateDimension('areas_pm'));
+
   let html = `<thead><tr><th>Colaborador</th><th>Time</th>${S.meses.map(m=>`<th class="r">${mLbl(m)}</th>`).join('')}<th class="r">Total</th><th class="r">Média/mês</th></tr></thead><tbody>`;
   hmCalc().filter(p=>p._tot>0.5&&p.ativo).sort((a,b)=>b._tot-a._tot).forEach(p=>{
     const cells = S.meses.map(m=>`<td class="tr">${fmtH(p.pm[m]?p.pm[m].tot:0)}</td>`).join('');
     const nm = S.meses.filter(m=>p.pm[m]&&p.pm[m].tot>0).length||1;
-    html += `<tr onclick="openPessoa('${esc(p.adv)}')"><td class="lk">${esc(p.adv)}${p.ativo?'':' <span class="badge bc">saiu</span>'}</td><td class="tm">${p.time}</td>${cells}<td class="tr"><b>${fmtH(p._tot)}</b></td><td class="tr">${fmtH(p._tot/nm)}</td></tr>`;
+    html += `<tr onclick='openPessoa(${js(p.adv)})'><td class="lk">${esc(p.adv)}${p.ativo?'':' <span class="badge bc">saiu</span>'}</td><td class="tm">${p.time}</td>${cells}<td class="tr"><b>${fmtH(p._tot)}</b></td><td class="tr">${fmtH(p._tot/nm)}</td></tr>`;
   });
   document.getElementById('p-table').innerHTML = html + '</tbody>';
 }
@@ -515,7 +530,12 @@ function renderMensalistas(){
     onClick:(e,el)=>{if(el.length)openCliente(sc[el[0].index].cli);}}});
 
   // Table
-  rows.sort((a,b)=>{const va=a['_'+S.mSortK]??a[S.mSortK]??0, vb=b['_'+S.mSortK]??b[S.mSortK]??0; return S.mSortAsc?(va-vb):(vb-va);});
+  const mSortValue=(row,key)=>({cli:row.cli,rec_m:row._recM,rec_tot:row._rec,h_tot:row._h,custo:row._custo,margem:row._margem,mpct:row._mpct}[key]??0);
+  rows.sort((a,b)=>{
+    const va=mSortValue(a,S.mSortK),vb=mSortValue(b,S.mSortK);
+    if(typeof va==='string'||typeof vb==='string') return (S.mSortAsc?1:-1)*String(va).localeCompare(String(vb),'pt-BR');
+    return S.mSortAsc?va-vb:vb-va;
+  });
   document.getElementById('m-body').innerHTML = rows.map(m=>{
     const margVals = S.meses.map(mo=>{const pm=m.pm[mo];return pm?(pm.r||0)-C(pm.c||0):0;});
     return `<tr onclick="openCliente('${esc(m.cli)}')">
@@ -533,33 +553,35 @@ function renderMensalistas(){
 
 /* ───────── PROJETOS ───────── */
 function prF(f,b){S.prFilter=f;b.parentElement.querySelectorAll('.fb-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderProjetos();}
+function prStatus(status){S.prStatus=status;S.prFilter='todos';renderProjetos();}
 function prSort(k){ if(S.prSortK===k){S.prSortAsc=!S.prSortAsc;}else{S.prSortK=k;S.prSortAsc=false;} renderProjetos(); }
 function buildPrFilters(){
   const opts=[['todos','Todos'],['com_h','Com horas'],['sem_h','Sem horas'],['neg','Negativos']];
-  document.getElementById('pr-filters').innerHTML = `<span class="fb-lbl">Ver:</span>`+opts.map(([k,l])=>`<button class="fb-btn ${k===S.prFilter?'active':''}" onclick="prF('${k}',this)">${l}</button>`).join('');
+  document.getElementById('pr-filters').innerHTML = `<span class="fb-lbl">Carteira:</span><button class="fb-btn ${S.prStatus==='ativos'?'active':''}" onclick="prStatus('ativos')">Ativos</button><button class="fb-btn ${S.prStatus==='concluidos'?'active':''}" onclick="prStatus('concluidos')">Concluídos</button><span class="fb-lbl" style="margin-left:8px">Ver:</span>`+opts.map(([k,l])=>`<button class="fb-btn ${k===S.prFilter?'active':''}" onclick="prF('${k}',this)">${l}</button>`).join('');
 }
 function renderProjetos(){
   buildPrFilters();
-  const all = lcCalc();
+  const all = lcCalc(S.prStatus==='ativos'?D.lc:(D.lc_done||[]));
+  document.getElementById('pr-subtitle').textContent=S.prStatus==='ativos'?'Contratos ativos · geração sem êxito separada da expectativa contingente':'Contratos concluídos · leitura do serviço do início ao fim';
   let rows = all;
   if(S.prFilter==='com_h') rows=rows.filter(p=>p._h>0);
   if(S.prFilter==='sem_h') rows=rows.filter(p=>p._h===0);
   if(S.prFilter==='neg') rows=rows.filter(p=>p._margem<0);
 
-  const recT=all.reduce((s,p)=>s+(p.rec||0),0), cusT=all.reduce((s,p)=>s+p._custo,0);
+  const recT=all.reduce((s,p)=>s+p._receita,0), successT=all.reduce((s,p)=>s+(p.exito||0),0), cusT=all.reduce((s,p)=>s+p._custo,0);
   const semH=all.filter(p=>p._h===0).length, negN=all.filter(p=>p._margem<0).length;
   document.getElementById('pr-kpis').innerHTML = `
-    <div class="kc"><div class="kc-l">Receita contratada</div><div class="kc-v">${fmtK(recT)}</div></div>
+    <div class="kc"><div class="kc-l">Geração sem êxito</div><div class="kc-v">${fmtK(recT)}</div><div class="kc-s">receita não contingente</div></div>
+    <div class="kc"><div class="kc-l">Êxito estimado</div><div class="kc-v a">${fmtK(successT)}</div><div class="kc-s">não compõe a margem-base</div></div>
     <div class="kc"><div class="kc-l">Custo (${S.rate})</div><div class="kc-v">${fmtK(cusT)}</div></div>
-    <div class="kc"><div class="kc-l">Margem</div><div class="kc-v g">${fmtK(recT-cusT)}</div></div>
-    <div class="kc"><div class="kc-l">Sem horas / Negativos</div><div class="kc-v ${negN>0?'a':''}">${semH} <span style="font-size:14px;color:var(--c3)">/ ${negN}</span></div></div>`;
+    <div class="kc"><div class="kc-l">Margem sem êxito</div><div class="kc-v ${recT-cusT>=0?'g':'r'}">${fmtK(recT-cusT)}</div><div class="kc-s">${semH} sem horas · ${negN} negativos</div></div>`;
 
   const top = all.filter(p=>p._h>0).sort((a,b)=>b._margem-a._margem).slice(0,12);
-  mkChart('c-pr-top',{type:'bar',data:{labels:top.map(p=>p.lbl.slice(0,20)),datasets:[{label:'Margem',data:top.map(p=>p._margem),backgroundColor:top.map(p=>p._margem<0?'#C0392B':'#0F6E56')}]},
+  mkChart('c-pr-top',{type:'bar',data:{labels:top.map(p=>p.cli.slice(0,24)),datasets:[{label:'Margem sem êxito',data:top.map(p=>p._margem),backgroundColor:top.map(p=>p._margem<0?'#C0392B':'#0F6E56')}]},
     options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{callback:v=>'R$'+(v/1000)+'k'}}},onClick:(e,el)=>{if(el.length)openServico(top[el[0].index].cod);}}});
 
   const sc = all.filter(p=>p._h>0);
-  mkChart('c-pr-scat',{type:'bubble',data:{datasets:[{data:sc.map(p=>({x:p.rec||0,y:p._custo,r:Math.max(4,Math.min(16,Math.sqrt(Math.abs(p._margem))/20)),lbl:p.lbl,cli:p.cli})),
+  mkChart('c-pr-scat',{type:'bubble',data:{datasets:[{data:sc.map(p=>({x:p._receita,y:p._custo,r:Math.max(4,Math.min(16,Math.sqrt(Math.abs(p._margem))/20)),lbl:p.lbl,cli:p.cli})),
     backgroundColor:sc.map(p=>p._margem>=0?'rgba(15,110,86,.55)':'rgba(192,57,43,.6)')}]},
     options:{maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.raw.cli} · ${c.raw.lbl}`}}},
     scales:{x:{title:{display:true,text:'Receita'},ticks:{callback:v=>'R$'+(v/1000)+'k'}},y:{title:{display:true,text:'Custo'},ticks:{callback:v=>'R$'+(v/1000)+'k'}}},
@@ -569,7 +591,7 @@ function renderProjetos(){
   document.getElementById('pr-body').innerHTML = rows.map(p=>`<tr onclick="openServico('${p.cod}')">
     <td class="lk">${esc(p.lbl)}</td><td><span class="lk" onclick="event.stopPropagation();openCliente('${esc(p.cli)}')">${esc(p.cli)}</span></td>
     <td class="tm">${p.resp||''}</td><td><span class="badge bc">${p.area||''}</span></td>
-    <td class="tr">${fmtK(p.rec)}</td><td class="tr">${fmtK(p._custo)}</td>
+    <td class="tr">${fmtK(p._receita)}</td><td class="tr">${fmtK(p._custo)}</td>
     <td class="tr" style="font-weight:600;color:${p._margem<0?'var(--red)':'var(--g2)'}">${fmtK(p._margem)}</td>
     <td class="tr">${fmtP(p._mp)}</td><td class="tr">${fmtH(p._h)}</td><td class="tr tm">${p._rph?fmtK(p._rph):'—'}</td>
   </tr>`).join('');
@@ -577,16 +599,18 @@ function renderProjetos(){
 
 /* ───────── JUDICIAL ───────── */
 function jF(f,b){S.jFilter=f;b.parentElement.querySelectorAll('.fb-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderJudicial();}
+function jStatus(status){S.jStatus=status;S.jFilter=status==='concluidos'?'todos':'horas';renderJudicial();}
 function jSort(k){ if(S.jSortK===k){S.jSortAsc=!S.jSortAsc;}else{S.jSortK=k;S.jSortAsc=false;} renderJudicial(); }
 function buildJFilters(){
-  const opts=[['horas','Com horas'],['deficit','Custo > entrada'],['ok','Entrada cobre'],['ganhar','Viável c/ êxito'],['inviavel','Inviável']];
-  document.getElementById('j-filters').innerHTML = `<span class="fb-lbl">Ver:</span>`+opts.map(([k,l])=>`<button class="fb-btn ${k===S.jFilter?'active':''}" onclick="jF('${k}',this)">${l}</button>`).join('');
+  const opts=[['todos','Todos'],['horas','Com horas'],['deficit','Custo > entrada'],['ok','Entrada cobre'],['ganhar','Viável c/ êxito'],['inviavel','Inviável']];
+  document.getElementById('j-filters').innerHTML = `<span class="fb-lbl">Carteira:</span><button class="fb-btn ${S.jStatus==='ativos'?'active':''}" onclick="jStatus('ativos')">Ativos</button><button class="fb-btn ${S.jStatus==='concluidos'?'active':''}" onclick="jStatus('concluidos')">Concluídos</button><span class="fb-lbl" style="margin-left:8px">Ver:</span>`+opts.map(([k,l])=>`<button class="fb-btn ${k===S.jFilter?'active':''}" onclick="jF('${k}',this)">${l}</button>`).join('');
 }
 const J_STATUS = {ok:['Entrada cobre','bg'],ganhar:['Viável c/ êxito','ba'],inviavel:['Inviável','br']};
 function renderJudicial(){
   buildJFilters();
-  const all = judCalc().filter(j=>j._h>0);
-  let rows = all;
+  const all = judCalc(S.jStatus==='ativos'?D.jud:(D.jud_done||[]));
+  document.getElementById('j-subtitle').textContent=S.jStatus==='ativos'?'Break-even por processo · ativos · êxito apresentado separadamente':'Processos concluídos · leitura econômica do início ao fim';
+  let rows = S.jFilter==='todos'?all:all.filter(j=>j._h>0);
   if(S.jFilter==='deficit') rows=rows.filter(j=>j._mse<0);
   if(S.jFilter==='ok') rows=rows.filter(j=>j._status==='ok');
   if(S.jFilter==='ganhar') rows=rows.filter(j=>j._status==='ganhar');
@@ -596,22 +620,23 @@ function renderJudicial(){
   const invN=all.filter(j=>j._status==='inviavel').length;
   document.getElementById('j-kpis').innerHTML = `
     <div class="kc"><div class="kc-l">Entradas (não contingente)</div><div class="kc-v">${fmtK(eT)}</div></div>
-    <div class="kc"><div class="kc-l">Custo acumulado (${S.rate})</div><div class="kc-v">${fmtK(caT)}</div></div>
+    <div class="kc"><div class="kc-l">Custo no período (${S.rate})</div><div class="kc-v">${fmtK(caT)}</div></div>
     <div class="kc"><div class="kc-l">Êxito estimado total</div><div class="kc-v g">${fmtK(xT)}</div></div>
     <div class="kc click" onclick="S.jFilter='inviavel';renderJudicial()"><div class="kc-l">Inviáveis</div><div class="kc-v ${invN>0?'r':'g'}">${invN}</div></div>`;
 
-  const top = all.slice().sort((a,b)=>b._ca-a._ca).slice(0,20);
+  const chartRows=all.filter(j=>j._h>0);
+  const top = chartRows.slice().sort((a,b)=>b._ca-a._ca).slice(0,20);
   mkChart('c-j-top',{type:'bar',data:{labels:top.map(j=>(j.cli+' · '+j.lbl).slice(0,24)),datasets:[
     {label:'Custo acum.',data:top.map(j=>j._ca),backgroundColor:'#C0392B'},
     {label:'Entrada',data:top.map(j=>j.e||0),backgroundColor:'#0F6E56'}
   ]},options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{position:'bottom'}},scales:{x:{ticks:{callback:v=>'R$'+(v/1000)+'k'}}},onClick:(e,el)=>{if(el.length)openServico(top[el[0].index].cod);}}});
 
   const stColor = {ok:'rgba(15,110,86,.6)',ganhar:'rgba(196,122,0,.65)',inviavel:'rgba(192,57,43,.65)'};
-  mkChart('c-j-scat',{type:'scatter',data:{datasets:[{data:all.map(j=>({x:j.e||0,y:j._ca,lbl:j.lbl,cli:j.cli})),
-    backgroundColor:all.map(j=>stColor[j._status]),pointRadius:5,pointHoverRadius:7}]},
+  mkChart('c-j-scat',{type:'scatter',data:{datasets:[{data:chartRows.map(j=>({x:j.e||0,y:j._ca,lbl:j.lbl,cli:j.cli})),
+    backgroundColor:chartRows.map(j=>stColor[j._status]),pointRadius:5,pointHoverRadius:7}]},
     options:{maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.raw.cli} · ${c.raw.lbl}`}}},
     scales:{x:{title:{display:true,text:'Entrada'},ticks:{callback:v=>'R$'+(v/1000)+'k'}},y:{title:{display:true,text:'Custo acum.'},ticks:{callback:v=>'R$'+(v/1000)+'k'}}},
-    onClick:(e,el)=>{if(el.length)openServico(all[el[0].index].cod);}}});
+    onClick:(e,el)=>{if(el.length)openServico(chartRows[el[0].index].cod);}}});
 
   rows = rows.slice().sort((a,b)=>{const va=a['_'+S.jSortK]??a[S.jSortK]??0,vb=b['_'+S.jSortK]??b[S.jSortK]??0;return S.jSortAsc?va-vb:vb-va;});
   document.getElementById('j-body').innerHTML = rows.map(j=>{
@@ -630,12 +655,17 @@ function renderJudicial(){
 /* ───────── SERVIÇOS & ÁREAS ───────── */
 function serviceProfitRows(){
   const details=Object.values(D.servicos_det||{});
-  const areaByCode=new Map([...D.lc,...D.jud].map(x=>[String(x.cod),x.area||'Não informada']));
-  return details.filter(s=>s.ativo&&!s.incluso&&['Projeto consultivo','Avulso consultivo','Judicial'].includes(s.tipo)).map(s=>{
-    const h=sumPM(s.pm,'h'), rawCost=sumPM(s.pm,'c'), cost=C(rawCost), revenue=s.rec||0, margin=revenue-cost;
-    return {cod:String(s.cod),label:s.lbl||`Serviço ${s.cod}`,client:s.cli||'Cliente não informado',type:s.tipo,area:areaByCode.get(String(s.cod))||'Não informada',h,cost,revenue,margin,mpct:revenue>0?margin/revenue*100:null,rph:h>0?revenue/h:null};
+  const transactional=details.filter(s=>s.ativo&&!s.incluso&&['Projeto consultivo','Avulso consultivo','Judicial'].includes(s.tipo)).map(s=>{
+    const h=sumPM(s.pm,'h'),rawCost=sumPM(s.pm,'c'),cost=C(rawCost),revenue=s.entrada||0,success=s.exito||0,margin=revenue-cost;
+    return {cod:String(s.cod),label:s.lbl||`Serviço ${s.cod}`,client:s.cli||'Cliente não informado',type:s.tipo,area:s.area||'Não informada',cluster:s.cluster||'',h,cost,revenue,success,margin,mpct:revenue>0?margin/revenue*100:null,rph:h>0?revenue/h:null};
   });
+  const recurring=mensalCalc().map(m=>{
+    const codes=m.codes||[],service=codes.map(c=>D.servicos_det&&D.servicos_det[c]).find(Boolean),revenue=m._rec,cost=m._custo;
+    return {cod:`mensal:${m.cli}`,label:'Contrato mensal',client:m.cli,type:'Mensalista',area:(service&&service.area)||'Full Service',cluster:(service&&service.cluster)||'',h:m._h,cost,revenue,success:0,margin:revenue-cost,mpct:revenue>0?(revenue-cost)/revenue*100:null,rph:m._h>0?revenue/m._h:null,clientOnly:true};
+  });
+  return [...recurring,...transactional];
 }
+function saSet(filter){S.saFilter=filter;renderServices();}
 function saF(filter,btn){
   S.saFilter=filter;
   btn.parentElement.querySelectorAll('.fb-btn').forEach(x=>x.classList.remove('active'));
@@ -651,12 +681,13 @@ function renderServices(){
   document.getElementById('sa-filters').innerHTML = `<span class="fb-lbl">Ver:</span>`+
     [['todos','Todos'],['neg','Atenção'],['lucrativos','Mais lucrativos'],['rentaveis','Maior R$/h']].map(([k,l])=>`<button class="fb-btn ${S.saFilter===k?'active':''}" onclick="saF('${k}',this)">${l}</button>`).join('');
 
-  const active=all.filter(x=>x.h>0), revenue=active.reduce((s,x)=>s+x.revenue,0), cost=active.reduce((s,x)=>s+x.cost,0), hours=active.reduce((s,x)=>s+x.h,0), negatives=active.filter(x=>x.margin<0).length;
+  const active=all.filter(x=>x.h>0||x.revenue>0), revenue=active.reduce((s,x)=>s+x.revenue,0), success=active.reduce((s,x)=>s+x.success,0), cost=active.reduce((s,x)=>s+x.cost,0), hours=active.reduce((s,x)=>s+x.h,0), negatives=active.filter(x=>x.margin<0&&x.h>0).length;
   document.getElementById('sa-kpis').innerHTML = `
-    <div class="kc"><div class="kc-l">Receita contratada/esperada</div><div class="kc-v">${fmtK(revenue)}</div><div class="kc-s">${active.length} trabalhos com horas</div></div>
-    <div class="kc"><div class="kc-l">Margem estimada</div><div class="kc-v ${revenue-cost>=0?'g':'r'}">${fmtK(revenue-cost)}</div><div class="kc-s">${revenue?fmtP((revenue-cost)/revenue*100):'—'}</div></div>
+    <div class="kc"><div class="kc-l">Geração sem êxito</div><div class="kc-v">${fmtK(revenue)}</div><div class="kc-s">${active.length} contratos analisados</div></div>
+    <div class="kc"><div class="kc-l">Êxito estimado</div><div class="kc-v a">${fmtK(success)}</div><div class="kc-s">expectativa separada da margem</div></div>
+    <div class="kc"><div class="kc-l">Margem sem êxito</div><div class="kc-v ${revenue-cost>=0?'g':'r'}">${fmtK(revenue-cost)}</div><div class="kc-s">${revenue?fmtP((revenue-cost)/revenue*100):'—'}</div></div>
     <div class="kc"><div class="kc-l">R$/hora realizado</div><div class="kc-v">${hours?fmtK(revenue/hours):'—'}</div><div class="kc-s">receita contratada/esperada ÷ horas</div></div>
-    <div class="kc click" onclick="S.saFilter='neg';renderServices()"><div class="kc-l">Trabalhos negativos</div><div class="kc-v ${negatives?'r':'g'}">${negatives}</div><div class="kc-s">exigem revisão de preço ou escopo</div></div>`;
+    <div class="kc click" onclick="saSet('neg')"><div class="kc-l">Trabalhos negativos</div><div class="kc-v ${negatives?'r':'g'}">${negatives}</div><div class="kc-s">clique para revisar</div></div>`;
 
   const group=(key)=>Object.values(active.reduce((acc,row)=>{const k=row[key]||'Não informada';const x=acc[k]||(acc[k]={name:k,revenue:0,cost:0,h:0,count:0});x.revenue+=row.revenue;x.cost+=row.cost;x.h+=row.h;x.count++;return acc;},{}));
   const areas=group('area').sort((a,b)=>(b.revenue-b.cost)-(a.revenue-a.cost));
@@ -666,8 +697,8 @@ function renderServices(){
   const typeMax=Math.max(1,...types.map(x=>x.rph));
   document.getElementById('sa-type-bars').innerHTML=types.map(x=>`<div class="metric-row"><div class="metric-name">${esc(x.name)}</div><div class="metric-track"><div class="metric-fill ${x.revenue-x.cost<0?'negative':'revenue'}" style="width:${x.rph/typeMax*100}%"></div></div><div class="metric-value">${fmtK(x.rph)}/h<div class="metric-sub">${fmtH(x.h)}h</div></div></div>`).join('');
 
-  rows=rows.slice().sort((a,b)=>S.saFilter==='todos'?b.margin-a.margin:0);
-  document.getElementById('sa-body').innerHTML = rows.map(x=>`<tr onclick="openServico(${js(x.cod)})">
+  rows=rows.slice().sort((a,b)=>S.saFilter==='todos'?(a.client.localeCompare(b.client,'pt-BR')||a.label.localeCompare(b.label,'pt-BR')):0);
+  document.getElementById('sa-body').innerHTML = rows.map(x=>`<tr onclick="${x.clientOnly?`openCliente(${js(x.client)})`:`openServico(${js(x.cod)})`}">
     <td><div class="row-title"><span class="lk">${esc(x.client)}</span></div><div class="row-sub">${esc(x.label)}</div></td><td><span class="badge bc">${esc(x.area)}</span></td><td class="tm">${esc(x.type)}</td>
     <td class="tr">${fmtK(x.revenue)}</td><td class="tr">${fmtK(x.cost)}</td><td class="tr" style="font-weight:700;color:${x.margin<0?'var(--red)':'var(--g2)'}">${fmtK(x.margin)}</td><td class="tr">${fmtP(x.mpct)}</td><td class="tr">${fmtH(x.h)}</td><td class="tr">${x.rph?fmtK(x.rph):'—'}</td></tr>`).join('') || '<tr><td colspan="9" class="empty-state">Nenhum trabalho neste filtro.</td></tr>';
 }
@@ -755,6 +786,22 @@ function renderPortfolio(){
 
   document.getElementById('pf-norec').innerHTML = `<thead><tr><th>Cliente</th><th class="r">Horas</th><th class="r">Custo invisível</th></tr></thead><tbody>`+
     (norec.length?norec.map(m=>`<tr onclick="openCliente('${esc(m.cli)}')"><td class="lk">${esc(m.cli)}</td><td class="tr">${fmtH(m._h)}</td><td class="tr" style="color:var(--amb);font-weight:600">${fmtK(m._custo)}</td></tr>`).join(''):'<tr><td colspan="3" class="tm">Nenhum.</td></tr>')+'</tbody>';
+
+  const contracts=serviceProfitRows().filter(x=>x.h>0||x.revenue>0);
+  const grouped=(key)=>Object.values(contracts.reduce((acc,row)=>{const name=row[key]||'Não informado';const x=acc[name]||(acc[name]={name,revenue:0,success:0,cost:0,h:0,count:0});x.revenue+=row.revenue;x.success+=row.success||0;x.cost+=row.cost;x.h+=row.h;x.count++;return acc;},{}));
+  const renderHealthBars=(id,data,value='margin')=>{
+    const prepared=data.map(x=>({...x,margin:x.revenue-x.cost})).sort((a,b)=>b[value]-a[value]);
+    const max=Math.max(1,...prepared.map(x=>Math.abs(x[value])));
+    document.getElementById(id).innerHTML=prepared.slice(0,12).map(x=>`<div class="metric-row"><div class="metric-name" title="${esc(x.name)}">${esc(x.name)}</div><div class="metric-track"><div class="metric-fill ${x.margin<0?'negative':'revenue'}" style="width:${Math.abs(x[value])/max*100}%"></div></div><div class="metric-value ${x.margin<0?'r':''}">${value==='h'?fmtH(x.h)+'h':fmtK(x.margin)}<div class="metric-sub">${x.count} contratos</div></div></div>`).join('');
+  };
+  renderHealthBars('pf-types',grouped('type'));
+  renderHealthBars('pf-areas',grouped('area'));
+  const clusterNames={'VERMELHO - ALTA':'Vermelho','AMARELO - MÉDIA':'Amarelo','VERDE - BAIXA':'Verde','':'Não informado'};
+  const clusterRows=grouped('cluster').map(x=>({...x,name:clusterNames[x.name]||x.name}));
+  renderHealthBars('pf-clusters',clusterRows,'h');
+  const generation=contracts.reduce((x,row)=>{x.revenue+=row.revenue;x.success+=row.success||0;x.cost+=row.cost;return x;},{revenue:0,success:0,cost:0});
+  const maxGeneration=Math.max(1,generation.revenue,generation.success,generation.cost);
+  document.getElementById('pf-generation').innerHTML=[['Contratada sem êxito',generation.revenue,'revenue'],['Êxito estimado',generation.success,'cost'],['Custo técnico',generation.cost,'negative']].map(([name,value,cls])=>`<div class="metric-row"><div class="metric-name">${name}</div><div class="metric-track"><div class="metric-fill ${cls}" style="width:${value/maxGeneration*100}%"></div></div><div class="metric-value">${fmtK(value)}</div></div>`).join('')+`<div class="note" style="margin-top:14px"><strong>Leitura executiva:</strong> margem sem êxito ${fmtK(generation.revenue-generation.cost)}. O êxito de ${fmtK(generation.success)} é potencial adicional, não resultado realizado.</div>`;
 }
 
 /* ───────── OVERLAY: PESSOA ───────── */
@@ -772,6 +819,14 @@ function openPessoa(nome){
     <div class="kc"><div class="kc-l">⬜ Admin</div><div class="kc-v">${fmtP(calc._pct.adm)}</div><div class="kc-s">${fmtH(calc._h.adm)}h ${p.dev.adm==='high'?'⬆ acima do máximo':''}</div></div>
   </div>
   <div class="panel"><div class="ph2"><span class="t">Evolução mensal por sinaleira</span></div><div class="pb"><div class="cw"><canvas id="c-ovp"></canvas></div></div></div>`;
+
+  const dimensionRows=(field)=>{
+    const totals={};
+    S.meses.forEach(m=>Object.entries((p[field]&&p[field][m])||{}).forEach(([k,v])=>totals[k]=(totals[k]||0)+v));
+    const rows=Object.entries(totals).sort((a,b)=>b[1]-a[1]),max=Math.max(1,...rows.map(x=>x[1]));
+    return rows.map(([name,value])=>`<div class="metric-row"><div class="metric-name" title="${esc(name)}">${esc(name)}</div><div class="metric-track"><div class="metric-fill revenue" style="width:${value/max*100}%"></div></div><div class="metric-value">${fmtH(value)}h<div class="metric-sub">${calc._tot?fmtP(value/calc._tot*100):'—'}</div></div></div>`).join('');
+  };
+  html += `<div class="g2"><div class="panel"><div class="ph2"><span class="t">Categoria da alocação</span></div><div class="pb metric-bars">${dimensionRows('cats_pm')}</div></div><div class="panel"><div class="ph2"><span class="t">Áreas atendidas</span></div><div class="pb metric-bars">${dimensionRows('areas_pm')}</div></div></div>`;
 
   if(det && det.casos && det.casos.length){
     const casos = det.casos.filter(c=>c.nm);
@@ -852,7 +907,7 @@ function openCliente(nome){
 function openServico(cod){
   const sd = D.servicos_det[cod];
   if(!sd){ return; }
-  const jud = judCalc().find(j=>j.cod===String(cod));
+  const jud = judCalc([...(D.jud||[]),...(D.jud_done||[])]).find(j=>j.cod===String(cod));
   document.getElementById('ovs-title').textContent = sd.lbl || ('Serviço '+cod);
   document.getElementById('ovs-sub').innerHTML = `${sd.tipo||''} · <span class="lk" style="color:#fff;text-decoration:underline;cursor:pointer" onclick="closeOv('servico');openCliente('${esc(sd.cli)}')">${esc(sd.cli)}</span> · cód. ${cod}${sd.ativo?'':' · BAIXADO'}${sd.incluso?' · incluso no mensal':''}`;
   const h = sumPM(sd.pm,'h'), cRaw = sumPM(sd.pm,'c'), custo = C(cRaw);
@@ -860,16 +915,17 @@ function openServico(cod){
   if(jud){
     html += `<div class="kg kg4">
       <div class="kc"><div class="kc-l">Entrada</div><div class="kc-v">${fmtK(jud.e)}</div></div>
-      <div class="kc"><div class="kc-l">Custo acumulado</div><div class="kc-v">${fmtK(jud._ca)}</div></div>
+      <div class="kc"><div class="kc-l">Custo no período</div><div class="kc-v">${fmtK(jud._ca)}</div></div>
       <div class="kc"><div class="kc-l">Break-even de êxito</div><div class="kc-v ${jud._be>0?'a':'g'}">${jud._be>0?fmtK(jud._be):'coberto'}</div></div>
       <div class="kc"><div class="kc-l">Margem total estimada</div><div class="kc-v ${jud._mt>=0?'g':'r'}">${fmtK(jud._mt)}</div><div class="kc-s">êxito est. ${fmtK(jud.x)}</div></div>
     </div>`;
   } else {
-    const margem = (sd.rec||0) - custo;
+    const revenue=sd.entrada==null?(sd.rec||0):sd.entrada,success=sd.exito||0,margem=revenue-custo;
     html += `<div class="kg kg4">
-      <div class="kc"><div class="kc-l">Receita</div><div class="kc-v">${fmtK(sd.rec)}</div></div>
+      <div class="kc"><div class="kc-l">Geração sem êxito</div><div class="kc-v">${fmtK(revenue)}</div></div>
+      <div class="kc"><div class="kc-l">Êxito estimado</div><div class="kc-v a">${fmtK(success)}</div></div>
       <div class="kc"><div class="kc-l">Custo (${S.rate})</div><div class="kc-v">${fmtK(custo)}</div></div>
-      <div class="kc"><div class="kc-l">Margem</div><div class="kc-v ${margem>=0?'g':'r'}">${fmtK(margem)}</div></div>
+      <div class="kc"><div class="kc-l">Margem sem êxito</div><div class="kc-v ${margem>=0?'g':'r'}">${fmtK(margem)}</div></div>
       <div class="kc"><div class="kc-l">Horas no período</div><div class="kc-v">${fmtH(h)}</div></div>
     </div>`;
   }
@@ -891,11 +947,11 @@ function openServico(cod){
 
 /* ───────── SIDEBAR LISTS ───────── */
 function buildSidebarLists(){
-  document.getElementById('pl-items').innerHTML = D.hm.filter(p=>p.ativo).sort((a,b)=>a.adv.localeCompare(b.adv)).map(p=>`<button class="sb-list-item" onclick="openPessoa(${js(p.adv)})">${esc(p.adv)}</button>`).join('');
+  document.getElementById('pl-items').innerHTML = D.hm.filter(p=>p.ativo).sort((a,b)=>a.adv.localeCompare(b.adv)).map(p=>`<button class="sb-list-item" onclick='openPessoa(${js(p.adv)})'>${esc(p.adv)}</button>`).join('');
   const clientes = Object.keys(D.cli_det).sort((a,b)=>a.localeCompare(b));
-  document.getElementById('cl-items').innerHTML = clientes.map(c=>`<button class="sb-list-item" onclick="openCliente('${esc(c)}')">${esc(c)}</button>`).join('');
-  const svcs = Object.values(D.servicos_det).filter(s=>s.lbl).sort((a,b)=>(a.lbl||'').localeCompare(b.lbl||''));
-  document.getElementById('sl-items').innerHTML = svcs.map(s=>`<button class="sb-list-item" onclick="openServico('${s.cod}')">${esc(s.lbl)} · ${esc(s.cli)}</button>`).join('');
+  document.getElementById('cl-items').innerHTML = clientes.map(c=>`<button class="sb-list-item" onclick='openCliente(${js(c)})'>${esc(c)}</button>`).join('');
+  const svcs = Object.values(D.servicos_det).filter(s=>s.lbl).sort((a,b)=>(a.cli||'').localeCompare(b.cli||'','pt-BR')||(a.lbl||'').localeCompare(b.lbl||'','pt-BR'));
+  document.getElementById('sl-items').innerHTML = svcs.map(s=>`<button class="sb-list-item" onclick="openServico('${s.cod}')">${esc(s.cli)} · ${esc(s.lbl)}</button>`).join('');
 }
 
 /* ───────── RENDER MASTER ───────── */
