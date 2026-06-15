@@ -134,6 +134,9 @@ function judCalc(base=D.jud){
     return {...j, _h:h,_ca:ca,_mse:mse,_be:be,_mt:mt,_status:status};
   });
 }
+function judViability(base=D.jud){
+  return judCalc(base).filter(j=>!j.incluso);
+}
 function hmCalc(){
   return D.hm.map(p => {
     let tot=0,v=0,a=0,g=0,adm=0;
@@ -162,7 +165,7 @@ function buildAlerts(){
     alerts.push({sev:'r',ico:'🔻',tit:`${neg.length} mensalista${neg.length>1?'s':''} com margem negativa · pior: ${pior.cli} (${fmt(pior._margem)})`,act:`<b>Ação:</b> renegociar valor, reduzir escopo ou rever alocação do time nesses clientes`,go:()=>{S.mFilter='neg';go('mensalistas');}});
   }
   // 3. Judiciais inviáveis
-  const jud = judCalc().filter(j=>j._h>0);
+  const jud = judViability().filter(j=>j._h>0);
   const inv = jud.filter(j=>j._status==='inviavel');
   if(inv.length){
     const custoInv = inv.reduce((s,j)=>s+j._ca,0);
@@ -262,7 +265,7 @@ function setRate(r){
 
 /* ───────── PAINEL GERAL ───────── */
 function renderPainel(){
-  const men = mensalCalc(), lc = lcCalc(), jud = judCalc();
+  const men = mensalCalc(), lc = lcCalc(), jud = judViability();
   // KPIs
   const hVals = S.meses.map(m=>D.kpm[m]?D.kpm[m].h:0);
   const hcVals = S.meses.map(m=>D.kpm[m]?D.kpm[m].hc:0);
@@ -608,7 +611,9 @@ function buildJFilters(){
 const J_STATUS = {ok:['Entrada cobre','bg'],ganhar:['Viável c/ êxito','ba'],inviavel:['Inviável','br']};
 function renderJudicial(){
   buildJFilters();
-  const all = judCalc(S.jStatus==='ativos'?D.jud:(D.jud_done||[]));
+  // Processos inclusos são custo do contrato mensalista, não trabalhos com
+  // receita própria. Mantê-los aqui produziria falsos casos inviáveis.
+  const all = judViability(S.jStatus==='ativos'?D.jud:(D.jud_done||[]));
   document.getElementById('j-subtitle').textContent=S.jStatus==='ativos'?'Break-even por processo · ativos · êxito apresentado separadamente':'Processos concluídos · leitura econômica do início ao fim';
   let rows = S.jFilter==='todos'?all:all.filter(j=>j._h>0);
   if(S.jFilter==='deficit') rows=rows.filter(j=>j._mse<0);
