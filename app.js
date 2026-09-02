@@ -11,10 +11,8 @@ const S = {
   tmMode: 'sem',                   // times: sem/com sócios
   hmTime: 'todos', hmAtivo: 'ativo',
   mFilter: 'todos', mSortK: 'margem', mSortAsc: true,
-  prFilter: 'todos', prStatus: 'ativos', prSortK: 'm', prSortAsc: false,
-  jFilter: 'horas', jStatus: 'ativos', jSortK: 'ca', jSortAsc: false,
-  saFilter: 'todos',
-  auditFilter: 'todos',
+  prFilter: 'todos', prSortK: 'm', prSortAsc: false,
+  jFilter: 'horas', jSortK: 'ca', jSortAsc: false,
   charts: {},
 };
 
@@ -29,14 +27,8 @@ const RATE_LABEL = {
   pontual: 'Tabela Pontual estimada (≈160% da mensal)'
 };
 
-const mLbl = m => {
-  const [year, month] = String(m).split('-').map(Number);
-  return new Intl.DateTimeFormat('pt-BR',{month:'short'}).format(new Date(year,month-1,1)).replace('.','').replace(/^./,c=>c.toUpperCase());
-};
-const mLong = m => {
-  const [year, month] = String(m).split('-').map(Number);
-  return new Intl.DateTimeFormat('pt-BR',{month:'short',year:'numeric'}).format(new Date(year,month-1,1)).replace('.','');
-};
+const MESES_PT = {'2026-02':'Fev','2026-03':'Mar','2026-04':'Abr','2026-05':'Mai','2026-06':'Jun','2026-07':'Jul','2026-08':'Ago','2026-09':'Set','2026-10':'Out','2026-11':'Nov','2026-12':'Dez','2026-01':'Jan'};
+const mLbl = m => MESES_PT[m] || m.slice(5);
 
 /* ───────── HELPERS ───────── */
 const F = RATE_FACTOR; 
@@ -46,36 +38,12 @@ const fmtK = v => v==null ? '—' : (Math.abs(v)>=1000 ? 'R$ '+(v/1000).toFixed(
 const fmtH = v => v==null ? '—' : v.toLocaleString('pt-BR',{maximumFractionDigits:1});
 const fmtP = v => v==null ? '—' : v.toFixed(1).replace('.',',')+'%';
 const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
-const js = s => JSON.stringify(String(s||''));
 const cm = (v,inv) => v==null ? '' : (inv ? (v<0?'g':v>0?'r':'') : (v>0?'g':v<0?'r':''));
 
 // custo ajustado pela tabela ativa
 const C = v => (v||0) * rf();
 // margem ajustada: receita - custo*fator
 const M = (rec, custo) => (rec||0) - C(custo);
-
-function periodLabel(months=S.meses){
-  if(!months.length) return 'Sem período';
-  if(months.length===1) return mLong(months[0]);
-  return `${mLong(months[0])} – ${mLong(months[months.length-1])}`;
-}
-
-function previousMonths(){
-  const first = D.meses.indexOf(S.meses[0]);
-  if(first<=0) return [];
-  const start = Math.max(0, first-S.meses.length);
-  return D.meses.slice(start, first);
-}
-
-function deltaHTML(current, previous, invert=false){
-  if(!previous || previous.length===0) return '<span class="trend flat">sem comparativo</span>';
-  const a=previous.reduce((x,y)=>x+y,0), b=current.reduce((x,y)=>x+y,0);
-  if(a===0 && b===0) return '<span class="trend flat">estável</span>';
-  const d=a===0?100:(b-a)/Math.abs(a)*100;
-  const good=invert?d<0:d>0;
-  const bad=invert?d>0:d<0;
-  return `<span class="trend ${good?'up':bad?'down':'flat'}">${d>2?'▲':d<-2?'▼':'■'} ${Math.abs(d).toFixed(0)}%</span>`;
-}
 
 // soma pm de um objeto {mes:{h,c}} apenas nos meses ativos
 function sumPM(pm, key){ let s=0; for(const m of S.meses){ if(pm && pm[m]) s += pm[m][key]||0; } return s; }
@@ -115,16 +83,15 @@ function mensalCalc(){
     return {...m, _h:h,_hp:hp,_hi:hi,_cRaw:cRaw,_custo:custo,_rec:rec,_margem:margem,_mpct:mpct,_recM:rec/Math.max(1,S.meses.length)};
   });
 }
-function lcCalc(base=D.lc){
-  return base.map(p => {
+function lcCalc(){
+  return D.lc.map(p => {
     const h = sumPM(p.pm,'h'), cRaw = sumPM(p.pm,'c');
-    const receita = p.rec_sem_exito==null?(p.rec||0):p.rec_sem_exito;
-    const custo = C(cRaw), margem = receita - custo;
-    return {...p, _receita:receita,_h:h,_cRaw:cRaw,_custo:custo,_margem:margem,_mp:receita>0?margem/receita*100:null,_rph:h>0?receita/h:null};
+    const custo = C(cRaw), margem = (p.rec||0) - custo;
+    return {...p, _h:h,_cRaw:cRaw,_custo:custo,_margem:margem,_mp:p.rec>0?margem/p.rec*100:null,_rph:h>0?(p.rec||0)/h:null};
   });
 }
-function judCalc(base=D.jud){
-  return base.map(j => {
+function judCalc(){
+  return D.jud.map(j => {
     const h = sumPM(j.pm,'h'), cRaw = sumPM(j.pm,'c');
     const ca = C(cRaw);
     const mse = (j.e||0) - ca;
@@ -133,9 +100,6 @@ function judCalc(base=D.jud){
     const status = mse>=0 ? 'ok' : (mt>=0 ? 'ganhar' : 'inviavel');
     return {...j, _h:h,_ca:ca,_mse:mse,_be:be,_mt:mt,_status:status};
   });
-}
-function judViability(base=D.jud){
-  return judCalc(base).filter(j=>!j.incluso);
 }
 function hmCalc(){
   return D.hm.map(p => {
@@ -165,7 +129,7 @@ function buildAlerts(){
     alerts.push({sev:'r',ico:'🔻',tit:`${neg.length} mensalista${neg.length>1?'s':''} com margem negativa · pior: ${pior.cli} (${fmt(pior._margem)})`,act:`<b>Ação:</b> renegociar valor, reduzir escopo ou rever alocação do time nesses clientes`,go:()=>{S.mFilter='neg';go('mensalistas');}});
   }
   // 3. Judiciais inviáveis
-  const jud = judViability().filter(j=>j._h>0);
+  const jud = judCalc().filter(j=>j._h>0);
   const inv = jud.filter(j=>j._status==='inviavel');
   if(inv.length){
     const custoInv = inv.reduce((s,j)=>s+j._ca,0);
@@ -212,49 +176,16 @@ function closeOv(t){ document.getElementById('ov-'+t).classList.remove('open'); 
 
 /* ───────── PERÍODO ───────── */
 function buildPeriodBar(){
-  const years = [...new Set(D.meses.map(m=>m.slice(0,4)))];
-  const preset = document.getElementById('period-preset');
-  preset.innerHTML = `<option value="all">Todo o período disponível</option>
-    <option value="latest">Mês mais recente</option>
-    <option value="last3">Últimos 3 meses</option>
-    <option value="ytd">Acumulado do ano</option>`+
-    years.map(y=>`<option value="year:${y}">Ano ${y}</option>`).join('')+
-    `<option value="custom">Intervalo personalizado</option>`;
-  const options = D.meses.map(m=>`<option value="${m}">${mLong(m)}</option>`).join('');
-  document.getElementById('period-start').innerHTML = options;
-  document.getElementById('period-end').innerHTML = options;
-  document.getElementById('period-start').value = D.meses[0];
-  document.getElementById('period-end').value = D.meses[D.meses.length-1];
-  updatePeriodMeta();
+  const el = document.getElementById('period-btns');
+  let html = D.meses.map(m=>`<button class="pq" data-m="${m}" onclick="setPeriod('${m}')">${mLbl(m)}</button>`).join('');
+  html += `<button class="pq active" data-m="all" onclick="setPeriod('all')">Todos</button>`;
+  el.innerHTML = html;
 }
-function applyPeriod(months){
-  S.meses = months.length ? months : D.meses.slice();
-  updatePeriodMeta();
+function setPeriod(m){
+  S.meses = m==='all' ? D.meses.slice() : [m];
+  document.querySelectorAll('.pq').forEach(b=>b.classList.toggle('active', b.dataset.m===m));
+  document.getElementById('period-note').textContent = m==='all' ? `${mLbl(D.meses[0])}–${mLbl(D.meses[D.meses.length-1])} 2026 · todos os meses` : `${mLbl(m)} 2026`;
   render();
-}
-function setPeriodPreset(value){
-  const latest = D.meses[D.meses.length-1];
-  if(value==='custom') return;
-  if(value==='latest') return applyPeriod([latest]);
-  if(value==='last3') return applyPeriod(D.meses.slice(-3));
-  if(value==='ytd') return applyPeriod(D.meses.filter(m=>m.startsWith(latest.slice(0,4))));
-  if(value.startsWith('year:')) return applyPeriod(D.meses.filter(m=>m.startsWith(value.slice(5))));
-  applyPeriod(D.meses.slice());
-}
-function togglePeriodCustom(){ document.getElementById('period-custom').classList.toggle('open'); }
-function applyCustomPeriod(){
-  const start=document.getElementById('period-start').value, end=document.getElementById('period-end').value;
-  const a=D.meses.indexOf(start), b=D.meses.indexOf(end);
-  if(a<0||b<0) return;
-  const from=Math.min(a,b), to=Math.max(a,b);
-  document.getElementById('period-preset').value='custom';
-  document.getElementById('period-custom').classList.remove('open');
-  applyPeriod(D.meses.slice(from,to+1));
-}
-function updatePeriodMeta(){
-  document.getElementById('period-note').textContent = periodLabel();
-  const latest=D.meses[D.meses.length-1];
-  document.getElementById('data-status-text').textContent = `Base até ${mLong(latest)} · geração não informada`;
 }
 function setRate(r){
   S.rate = r;
@@ -265,7 +196,7 @@ function setRate(r){
 
 /* ───────── PAINEL GERAL ───────── */
 function renderPainel(){
-  const men = mensalCalc(), lc = lcCalc(), jud = judViability();
+  const men = mensalCalc(), lc = lcCalc(), jud = judCalc();
   // KPIs
   const hVals = S.meses.map(m=>D.kpm[m]?D.kpm[m].h:0);
   const hcVals = S.meses.map(m=>D.kpm[m]?D.kpm[m].hc:0);
@@ -288,27 +219,6 @@ function renderPainel(){
     <div class="kc click" onclick="go('mensalistas')"><div class="kc-l">Margem mensalistas</div><div class="kc-v ${margM>=0?'g':'r'}">${fmtK(margM)}</div><div class="kc-s">${trendHTML(margVals)} ${negN>0?`· <span style="color:var(--red);font-weight:600">${negN} negativos</span>`:''}</div></div>
     <div class="kc click" onclick="go('judicial')"><div class="kc-l">Judicial · inviáveis</div><div class="kc-v ${invN>0?'r':'g'}">${invN}</div><div class="kc-s">processos onde êxito não cobre custo</div></div>`;
 
-  const audit = auditSummary();
-  const serviceRows = serviceProfitRows().filter(x=>x.h>0);
-  const best = serviceRows.filter(x=>x.type!=='Judicial'&&x.h>=2&&x.margin>0).sort((a,b)=>(b.rph||0)-(a.rph||0))[0];
-  const worstClient = men.filter(m=>m._rec>0).sort((a,b)=>a._margem-b._margem)[0];
-  document.getElementById('pg-command').innerHTML = `
-    <div class="command-card" onclick="go('auditoria')">
-      <div class="command-kicker">Primeiro, confiar</div>
-      <div class="command-title">${audit.critical} inconsistências críticas afetam ${fmtK(audit.cost)} em custo técnico</div>
-      <div class="command-copy">Corrija a fonte antes de usar margens e rankings em decisões comerciais.</div><span class="command-link">abrir auditoria →</span>
-    </div>
-    <div class="command-card secondary" onclick="${worstClient?`openCliente(${js(worstClient.cli)})`:`go('mensalistas')`}">
-      <div class="command-kicker">Proteger margem</div>
-      <div class="command-title">${worstClient?`${esc(worstClient.cli)} é o mensalista de maior perda no período`:'Nenhum mensalista negativo'}</div>
-      <div class="command-copy">${worstClient?`${fmtK(worstClient._margem)} de margem · ${fmtH(worstClient._h)} horas consumidas.`:'A carteira recorrente está positiva no recorte.'}</div><span class="command-link">ver diagnóstico →</span>
-    </div>
-    <div class="command-card secondary" onclick="${best?`openServico('${best.cod}')`:`go('servicos')`}">
-      <div class="command-kicker">Escalar o que funciona</div>
-      <div class="command-title">${best?`${esc(best.label)} se destaca em eficiência econômica`:'Serviços sem base comparável'}</div>
-      <div class="command-copy">${best?`${fmtK(best.margin)} de margem · ${best.rph?fmtK(best.rph)+'/h':'R$/h indisponível'} · ${fmtH(best.h)} horas.`:'O pipeline precisa exportar receita por serviço.'}</div><span class="command-link">ver serviços →</span>
-    </div>`;
-
   // Alertas
   const alerts = buildAlerts();
   const badge = document.getElementById('sb-alert-n');
@@ -316,7 +226,7 @@ function renderPainel(){
   badge.style.display = crit>0 ? '' : 'none';
   badge.textContent = crit;
   window._alerts = alerts;
-  document.getElementById('pg-alerts').innerHTML = alerts.slice(0,4).map((a,i)=>
+  document.getElementById('pg-alerts').innerHTML = alerts.map((a,i)=>
     `<div class="al sev-${a.sev}" onclick="window._alerts[${i}].go()"><span class="al-ico">${a.ico}</span><div><div class="al-tit">${a.tit}</div><div class="al-act">${a.act}</div></div><span class="al-go">abrir →</span></div>`).join('') || '<div class="note">Nenhum alerta no período. Carteira sob controle.</div>';
 
   // Chart horas
@@ -348,30 +258,28 @@ function renderPainel(){
 }
 
 /* ───────── TIMES ───────── */
+function tmTgl(mode, btn){
+  S.tmMode = mode;
+  btn.parentElement.querySelectorAll('.tgl').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderTimes();
+}
 function renderTimes(){
-  const people=hmCalc().filter(p=>p._tot>0);
-  const td={};
-  people.forEach(p=>{
-    const name=p.time||'Não informado';
-    const x=td[name]||(td[name]={pm:{},h:{v:0,a:0,g:0,adm:0},people:0});
-    x.people++;
-    for(const m of S.meses){
-      const source=p.pm[m]||{tot:0,v:0,a:0,g:0,adm:0};
-      const target=x.pm[m]||(x.pm[m]={tot:0,v:0,a:0,g:0,adm:0});
-      ['tot','v','a','g','adm'].forEach(k=>target[k]+=source[k]||0);
-    }
-  });
-  const names=Object.keys(td).sort((a,b)=>a==='Sócios'?1:b==='Sócios'?-1:a.localeCompare(b));
-  let hTot=0,hCli=0;
-  names.forEach(n=>S.meses.forEach(m=>{const pm=td[n].pm[m];if(pm){hTot+=pm.tot;hCli+=pm.v+pm.a+pm.g;}}));
+  const td = D.times[S.tmMode==='sem'?'sem_socios':'com_socios'];
+  const names = Object.keys(td);
+  // KPIs from filtered months
+  let hTot=0, hCli=0, pessoas = new Set();
+  names.forEach(n=>{ for(const m of S.meses){ const pm=td[n].pm[m]; if(pm){ hTot+=pm.tot; hCli+=pm.v+pm.a+pm.g; } } });
+  const hmAll = hmCalc();
+  const ct = hmAll.reduce((s,p)=>s+0,0);
   document.getElementById('t-kpis').innerHTML = `
     <div class="kc"><div class="kc-l">Horas no período</div><div class="kc-v">${fmtH(hTot)}</div></div>
     <div class="kc"><div class="kc-l">% em clientes</div><div class="kc-v g">${hTot>0?fmtP(hCli/hTot*100):'—'}</div></div>
-    <div class="kc"><div class="kc-l">Times independentes</div><div class="kc-v">${names.length}</div><div class="kc-s">Sócios permanecem em time próprio</div></div>
-    <div class="kc"><div class="kc-l">Pessoas no período</div><div class="kc-v">${people.length}</div></div>`;
+    <div class="kc"><div class="kc-l">Times técnicos</div><div class="kc-v">${names.filter(n=>n!=='Administrativo').length}</div></div>
+    <div class="kc"><div class="kc-l">Pessoas no período</div><div class="kc-v">${D.kpis.pessoas}</div></div>`;
 
   // Stacked bar by month
-  const colors = {'Trabalhista':'#64B5F6','Contencioso':'#EF9A9A','Consultivo':'#80CBC4','Consultoria Tributária':'#CE93D8','Administrativo':'#B0BEC5','Sócios':'#455A64'};
+  const colors = {'Trabalhista':'#64B5F6','Contencioso':'#EF9A9A','Consultivo':'#80CBC4','Cons. Tributária':'#CE93D8','Administrativo':'#B0BEC5'};
   mkChart('c-tm',{type:'bar',data:{labels:S.meses.map(mLbl),datasets:names.map(n=>({label:n,data:S.meses.map(m=>td[n].pm[m]?td[n].pm[m].tot:0),backgroundColor:colors[n]||'#999'}))},
     options:{maintainAspectRatio:false,scales:{x:{stacked:true},y:{stacked:true}},plugins:{legend:{position:'bottom'}}}});
 
@@ -405,28 +313,10 @@ function buildHmFilters(){
      <button class="fb-btn ${S.hmAtivo==='todos'?'active':''}" data-g="a" onclick="hmA('todos',this)">Todos</button>`;
 }
 const HM_COLORS = {v:'192,57,43',a:'196,122,0',g:'46,125,50',adm:'84,110,122'};
-const BENCHMARKS = {
-  'Sócio gestão/técnico':{v:['min',20],a:['min',10]},
-  'Sócio técnico':{v:['min',35],a:['min',20],g:['max',10],adm:['max',15]},
-  'Sócio comercial':{v:['min',10],a:['min',10]},
-  'Coord. estratégico':{v:['min',70],a:['max',20],adm:['max',10]},
-  'Sênior estratégico':{v:['min',35],a:['min',25],g:['max',10],adm:['max',5]},
-  'Coord. trabalhista':{v:['min',20],a:['min',30],g:['max',20],adm:['max',15]},
-  'Júnior trab.':{v:['max',10],a:['min',30],g:['min',35],adm:['max',10]},
-  'Sênior':{v:['min',20],a:['min',30],g:['max',20],adm:['max',15]},
-  'Pleno':{v:['min',10],a:['min',35],g:['max',30],adm:['max',10]},
-  'Júnior':{v:['max',10],a:['min',30],g:['min',35],adm:['max',10]},
-  'Estagiário':{a:['max',20],g:['min',50],adm:['max',30]},
-  'Admin':{}
-};
-function benchmarkText(fn,key){
-  const rule=BENCHMARKS[fn]&&BENCHMARKS[fn][key];
-  return rule ? `${rule[0]==='min'?'mín.':'máx.'} ${rule[1]}%` : 'neutro';
-}
-function hcell(pct, dev, key, fn){
+function hcell(pct, dev, key){
   const op = Math.min(.85, .08 + pct/100*.9);
   const arrow = dev==='low'?'<sup>⬇</sup>':dev==='high'?'<sup>⬆</sup>':'';
-  return `<td style="text-align:center"><span class="hcell" title="Benchmark: ${benchmarkText(fn,key)}" style="background:rgba(${HM_COLORS[key]},${op});color:${pct>35?'#fff':'#333'}"><span>${pct.toFixed(0)}%${arrow}</span><span class="bench">${benchmarkText(fn,key)}</span></span></td>`;
+  return `<td style="text-align:center"><span class="hcell" style="background:rgba(${HM_COLORS[key]},${op});color:${pct>35?'#fff':'#333'}">${pct.toFixed(0)}%${arrow}</span></td>`;
 }
 function renderHeatmap(){
   buildHmFilters();
@@ -445,7 +335,7 @@ function renderHeatmap(){
         <td class="lk">${esc(p.adv)}${p.ativo?'':' <span class="badge bc">saiu</span>'}</td>
         <td class="tm">${p.fn} · ${p.cargo}</td>
         <td style="text-align:center"><b>${fmtH(t2)}</b></td>
-        ${hcell(p._pct.v,p.dev.v,'v',p.fn)}${hcell(p._pct.a,p.dev.a,'a',p.fn)}${hcell(p._pct.g,p.dev.g,'g',p.fn)}${hcell(p._pct.adm,p.dev.adm,'adm',p.fn)}
+        ${hcell(p._pct.v,p.dev.v,'v')}${hcell(p._pct.a,p.dev.a,'a')}${hcell(p._pct.g,p.dev.g,'g')}${hcell(p._pct.adm,p.dev.adm,'adm')}
         <td><div class="sbar"><div class="sv" style="width:${p._pct.v}%"></div><div class="sa" style="width:${p._pct.a}%"></div><div class="sg" style="width:${p._pct.g}%"></div><div class="sd" style="width:${p._pct.adm}%"></div></div></td>
       </tr>`;
     });
@@ -472,23 +362,11 @@ function renderPessoas(){
     {type:'line',label:'Pessoas lançando',data:nVals,borderColor:'#C47A00',yAxisID:'y2',tension:.3}
   ]},options:{maintainAspectRatio:false,plugins:{legend:{position:'bottom'}},scales:{y:{position:'left'},y2:{position:'right',grid:{display:false}}}}});
 
-  const aggregateDimension=(field)=>{
-    const totals={};
-    rows.forEach(p=>S.meses.forEach(m=>Object.entries((p[field]&&p[field][m])||{}).forEach(([k,v])=>totals[k]=(totals[k]||0)+v)));
-    return Object.entries(totals).sort((a,b)=>b[1]-a[1]);
-  };
-  const renderDimension=(id,data,limit=12)=>{
-    const max=Math.max(1,...data.map(x=>x[1]));
-    document.getElementById(id).innerHTML=data.slice(0,limit).map(([name,value])=>`<div class="metric-row"><div class="metric-name" title="${esc(name)}">${esc(name)}</div><div class="metric-track"><div class="metric-fill revenue" style="width:${value/max*100}%"></div></div><div class="metric-value">${fmtH(value)}h</div></div>`).join('')||'<div class="empty-state">Sem dados no período.</div>';
-  };
-  renderDimension('p-cats',aggregateDimension('cats_pm'));
-  renderDimension('p-areas',aggregateDimension('areas_pm'));
-
   let html = `<thead><tr><th>Colaborador</th><th>Time</th>${S.meses.map(m=>`<th class="r">${mLbl(m)}</th>`).join('')}<th class="r">Total</th><th class="r">Média/mês</th></tr></thead><tbody>`;
-  hmCalc().filter(p=>p._tot>0.5&&p.ativo).sort((a,b)=>b._tot-a._tot).forEach(p=>{
+  hmCalc().filter(p=>p._tot>0.5).sort((a,b)=>b._tot-a._tot).forEach(p=>{
     const cells = S.meses.map(m=>`<td class="tr">${fmtH(p.pm[m]?p.pm[m].tot:0)}</td>`).join('');
     const nm = S.meses.filter(m=>p.pm[m]&&p.pm[m].tot>0).length||1;
-    html += `<tr onclick='openPessoa(${js(p.adv)})'><td class="lk">${esc(p.adv)}${p.ativo?'':' <span class="badge bc">saiu</span>'}</td><td class="tm">${p.time}</td>${cells}<td class="tr"><b>${fmtH(p._tot)}</b></td><td class="tr">${fmtH(p._tot/nm)}</td></tr>`;
+    html += `<tr onclick="openPessoa('${esc(p.adv)}')"><td class="lk">${esc(p.adv)}${p.ativo?'':' <span class="badge bc">saiu</span>'}</td><td class="tm">${p.time}</td>${cells}<td class="tr"><b>${fmtH(p._tot)}</b></td><td class="tr">${fmtH(p._tot/nm)}</td></tr>`;
   });
   document.getElementById('p-table').innerHTML = html + '</tbody>';
 }
@@ -533,12 +411,7 @@ function renderMensalistas(){
     onClick:(e,el)=>{if(el.length)openCliente(sc[el[0].index].cli);}}});
 
   // Table
-  const mSortValue=(row,key)=>({cli:row.cli,rec_m:row._recM,rec_tot:row._rec,h_tot:row._h,custo:row._custo,margem:row._margem,mpct:row._mpct}[key]??0);
-  rows.sort((a,b)=>{
-    const va=mSortValue(a,S.mSortK),vb=mSortValue(b,S.mSortK);
-    if(typeof va==='string'||typeof vb==='string') return (S.mSortAsc?1:-1)*String(va).localeCompare(String(vb),'pt-BR');
-    return S.mSortAsc?va-vb:vb-va;
-  });
+  rows.sort((a,b)=>{const va=a['_'+S.mSortK]??a[S.mSortK]??0, vb=b['_'+S.mSortK]??b[S.mSortK]??0; return S.mSortAsc?(va-vb):(vb-va);});
   document.getElementById('m-body').innerHTML = rows.map(m=>{
     const margVals = S.meses.map(mo=>{const pm=m.pm[mo];return pm?(pm.r||0)-C(pm.c||0):0;});
     return `<tr onclick="openCliente('${esc(m.cli)}')">
@@ -556,35 +429,33 @@ function renderMensalistas(){
 
 /* ───────── PROJETOS ───────── */
 function prF(f,b){S.prFilter=f;b.parentElement.querySelectorAll('.fb-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderProjetos();}
-function prStatus(status){S.prStatus=status;S.prFilter='todos';renderProjetos();}
 function prSort(k){ if(S.prSortK===k){S.prSortAsc=!S.prSortAsc;}else{S.prSortK=k;S.prSortAsc=false;} renderProjetos(); }
 function buildPrFilters(){
   const opts=[['todos','Todos'],['com_h','Com horas'],['sem_h','Sem horas'],['neg','Negativos']];
-  document.getElementById('pr-filters').innerHTML = `<span class="fb-lbl">Carteira:</span><button class="fb-btn ${S.prStatus==='ativos'?'active':''}" onclick="prStatus('ativos')">Ativos</button><button class="fb-btn ${S.prStatus==='concluidos'?'active':''}" onclick="prStatus('concluidos')">Concluídos</button><span class="fb-lbl" style="margin-left:8px">Ver:</span>`+opts.map(([k,l])=>`<button class="fb-btn ${k===S.prFilter?'active':''}" onclick="prF('${k}',this)">${l}</button>`).join('');
+  document.getElementById('pr-filters').innerHTML = `<span class="fb-lbl">Ver:</span>`+opts.map(([k,l])=>`<button class="fb-btn ${k===S.prFilter?'active':''}" onclick="prF('${k}',this)">${l}</button>`).join('');
 }
 function renderProjetos(){
   buildPrFilters();
-  const all = lcCalc(S.prStatus==='ativos'?D.lc:(D.lc_done||[]));
-  document.getElementById('pr-subtitle').textContent=S.prStatus==='ativos'?'Contratos ativos · geração sem êxito separada da expectativa contingente':'Contratos concluídos · leitura do serviço do início ao fim';
+  const all = lcCalc();
   let rows = all;
   if(S.prFilter==='com_h') rows=rows.filter(p=>p._h>0);
   if(S.prFilter==='sem_h') rows=rows.filter(p=>p._h===0);
   if(S.prFilter==='neg') rows=rows.filter(p=>p._margem<0);
 
-  const recT=all.reduce((s,p)=>s+p._receita,0), successT=all.reduce((s,p)=>s+(p.exito||0),0), cusT=all.reduce((s,p)=>s+p._custo,0);
+  const recT=all.reduce((s,p)=>s+(p.rec||0),0), cusT=all.reduce((s,p)=>s+p._custo,0);
   const semH=all.filter(p=>p._h===0).length, negN=all.filter(p=>p._margem<0).length;
   document.getElementById('pr-kpis').innerHTML = `
-    <div class="kc"><div class="kc-l">Geração sem êxito</div><div class="kc-v">${fmtK(recT)}</div><div class="kc-s">receita não contingente</div></div>
-    <div class="kc"><div class="kc-l">Êxito estimado</div><div class="kc-v a">${fmtK(successT)}</div><div class="kc-s">não compõe a margem-base</div></div>
+    <div class="kc"><div class="kc-l">Receita contratada</div><div class="kc-v">${fmtK(recT)}</div></div>
     <div class="kc"><div class="kc-l">Custo (${S.rate})</div><div class="kc-v">${fmtK(cusT)}</div></div>
-    <div class="kc"><div class="kc-l">Margem sem êxito</div><div class="kc-v ${recT-cusT>=0?'g':'r'}">${fmtK(recT-cusT)}</div><div class="kc-s">${semH} sem horas · ${negN} negativos</div></div>`;
+    <div class="kc"><div class="kc-l">Margem</div><div class="kc-v g">${fmtK(recT-cusT)}</div></div>
+    <div class="kc"><div class="kc-l">Sem horas / Negativos</div><div class="kc-v ${negN>0?'a':''}">${semH} <span style="font-size:14px;color:var(--c3)">/ ${negN}</span></div></div>`;
 
   const top = all.filter(p=>p._h>0).sort((a,b)=>b._margem-a._margem).slice(0,12);
-  mkChart('c-pr-top',{type:'bar',data:{labels:top.map(p=>p.cli.slice(0,24)),datasets:[{label:'Margem sem êxito',data:top.map(p=>p._margem),backgroundColor:top.map(p=>p._margem<0?'#C0392B':'#0F6E56')}]},
+  mkChart('c-pr-top',{type:'bar',data:{labels:top.map(p=>p.lbl.slice(0,20)),datasets:[{label:'Margem',data:top.map(p=>p._margem),backgroundColor:top.map(p=>p._margem<0?'#C0392B':'#0F6E56')}]},
     options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{callback:v=>'R$'+(v/1000)+'k'}}},onClick:(e,el)=>{if(el.length)openServico(top[el[0].index].cod);}}});
 
   const sc = all.filter(p=>p._h>0);
-  mkChart('c-pr-scat',{type:'bubble',data:{datasets:[{data:sc.map(p=>({x:p._receita,y:p._custo,r:Math.max(4,Math.min(16,Math.sqrt(Math.abs(p._margem))/20)),lbl:p.lbl,cli:p.cli})),
+  mkChart('c-pr-scat',{type:'bubble',data:{datasets:[{data:sc.map(p=>({x:p.rec||0,y:p._custo,r:Math.max(4,Math.min(16,Math.sqrt(Math.abs(p._margem))/20)),lbl:p.lbl,cli:p.cli})),
     backgroundColor:sc.map(p=>p._margem>=0?'rgba(15,110,86,.55)':'rgba(192,57,43,.6)')}]},
     options:{maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.raw.cli} · ${c.raw.lbl}`}}},
     scales:{x:{title:{display:true,text:'Receita'},ticks:{callback:v=>'R$'+(v/1000)+'k'}},y:{title:{display:true,text:'Custo'},ticks:{callback:v=>'R$'+(v/1000)+'k'}}},
@@ -594,7 +465,7 @@ function renderProjetos(){
   document.getElementById('pr-body').innerHTML = rows.map(p=>`<tr onclick="openServico('${p.cod}')">
     <td class="lk">${esc(p.lbl)}</td><td><span class="lk" onclick="event.stopPropagation();openCliente('${esc(p.cli)}')">${esc(p.cli)}</span></td>
     <td class="tm">${p.resp||''}</td><td><span class="badge bc">${p.area||''}</span></td>
-    <td class="tr">${fmtK(p._receita)}</td><td class="tr">${fmtK(p._custo)}</td>
+    <td class="tr">${fmtK(p.rec)}</td><td class="tr">${fmtK(p._custo)}</td>
     <td class="tr" style="font-weight:600;color:${p._margem<0?'var(--red)':'var(--g2)'}">${fmtK(p._margem)}</td>
     <td class="tr">${fmtP(p._mp)}</td><td class="tr">${fmtH(p._h)}</td><td class="tr tm">${p._rph?fmtK(p._rph):'—'}</td>
   </tr>`).join('');
@@ -602,20 +473,16 @@ function renderProjetos(){
 
 /* ───────── JUDICIAL ───────── */
 function jF(f,b){S.jFilter=f;b.parentElement.querySelectorAll('.fb-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderJudicial();}
-function jStatus(status){S.jStatus=status;S.jFilter=status==='concluidos'?'todos':'horas';renderJudicial();}
 function jSort(k){ if(S.jSortK===k){S.jSortAsc=!S.jSortAsc;}else{S.jSortK=k;S.jSortAsc=false;} renderJudicial(); }
 function buildJFilters(){
-  const opts=[['todos','Todos'],['horas','Com horas'],['deficit','Custo > entrada'],['ok','Entrada cobre'],['ganhar','Viável c/ êxito'],['inviavel','Inviável']];
-  document.getElementById('j-filters').innerHTML = `<span class="fb-lbl">Carteira:</span><button class="fb-btn ${S.jStatus==='ativos'?'active':''}" onclick="jStatus('ativos')">Ativos</button><button class="fb-btn ${S.jStatus==='concluidos'?'active':''}" onclick="jStatus('concluidos')">Concluídos</button><span class="fb-lbl" style="margin-left:8px">Ver:</span>`+opts.map(([k,l])=>`<button class="fb-btn ${k===S.jFilter?'active':''}" onclick="jF('${k}',this)">${l}</button>`).join('');
+  const opts=[['horas','Com horas'],['deficit','Custo > entrada'],['ok','Entrada cobre'],['ganhar','Viável c/ êxito'],['inviavel','Inviável']];
+  document.getElementById('j-filters').innerHTML = `<span class="fb-lbl">Ver:</span>`+opts.map(([k,l])=>`<button class="fb-btn ${k===S.jFilter?'active':''}" onclick="jF('${k}',this)">${l}</button>`).join('');
 }
 const J_STATUS = {ok:['Entrada cobre','bg'],ganhar:['Viável c/ êxito','ba'],inviavel:['Inviável','br']};
 function renderJudicial(){
   buildJFilters();
-  // Processos inclusos são custo do contrato mensalista, não trabalhos com
-  // receita própria. Mantê-los aqui produziria falsos casos inviáveis.
-  const all = judViability(S.jStatus==='ativos'?D.jud:(D.jud_done||[]));
-  document.getElementById('j-subtitle').textContent=S.jStatus==='ativos'?'Break-even por processo · ativos · êxito apresentado separadamente':'Processos concluídos · leitura econômica do início ao fim';
-  let rows = S.jFilter==='todos'?all:all.filter(j=>j._h>0);
+  const all = judCalc().filter(j=>j._h>0);
+  let rows = all;
   if(S.jFilter==='deficit') rows=rows.filter(j=>j._mse<0);
   if(S.jFilter==='ok') rows=rows.filter(j=>j._status==='ok');
   if(S.jFilter==='ganhar') rows=rows.filter(j=>j._status==='ganhar');
@@ -625,23 +492,22 @@ function renderJudicial(){
   const invN=all.filter(j=>j._status==='inviavel').length;
   document.getElementById('j-kpis').innerHTML = `
     <div class="kc"><div class="kc-l">Entradas (não contingente)</div><div class="kc-v">${fmtK(eT)}</div></div>
-    <div class="kc"><div class="kc-l">Custo no período (${S.rate})</div><div class="kc-v">${fmtK(caT)}</div></div>
+    <div class="kc"><div class="kc-l">Custo acumulado (${S.rate})</div><div class="kc-v">${fmtK(caT)}</div></div>
     <div class="kc"><div class="kc-l">Êxito estimado total</div><div class="kc-v g">${fmtK(xT)}</div></div>
     <div class="kc click" onclick="S.jFilter='inviavel';renderJudicial()"><div class="kc-l">Inviáveis</div><div class="kc-v ${invN>0?'r':'g'}">${invN}</div></div>`;
 
-  const chartRows=all.filter(j=>j._h>0);
-  const top = chartRows.slice().sort((a,b)=>b._ca-a._ca).slice(0,20);
+  const top = all.slice().sort((a,b)=>b._ca-a._ca).slice(0,20);
   mkChart('c-j-top',{type:'bar',data:{labels:top.map(j=>(j.cli+' · '+j.lbl).slice(0,24)),datasets:[
     {label:'Custo acum.',data:top.map(j=>j._ca),backgroundColor:'#C0392B'},
     {label:'Entrada',data:top.map(j=>j.e||0),backgroundColor:'#0F6E56'}
   ]},options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{position:'bottom'}},scales:{x:{ticks:{callback:v=>'R$'+(v/1000)+'k'}}},onClick:(e,el)=>{if(el.length)openServico(top[el[0].index].cod);}}});
 
   const stColor = {ok:'rgba(15,110,86,.6)',ganhar:'rgba(196,122,0,.65)',inviavel:'rgba(192,57,43,.65)'};
-  mkChart('c-j-scat',{type:'scatter',data:{datasets:[{data:chartRows.map(j=>({x:j.e||0,y:j._ca,lbl:j.lbl,cli:j.cli})),
-    backgroundColor:chartRows.map(j=>stColor[j._status]),pointRadius:5,pointHoverRadius:7}]},
+  mkChart('c-j-scat',{type:'scatter',data:{datasets:[{data:all.map(j=>({x:j.e||0,y:j._ca,lbl:j.lbl,cli:j.cli})),
+    backgroundColor:all.map(j=>stColor[j._status]),pointRadius:5,pointHoverRadius:7}]},
     options:{maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.raw.cli} · ${c.raw.lbl}`}}},
     scales:{x:{title:{display:true,text:'Entrada'},ticks:{callback:v=>'R$'+(v/1000)+'k'}},y:{title:{display:true,text:'Custo acum.'},ticks:{callback:v=>'R$'+(v/1000)+'k'}}},
-    onClick:(e,el)=>{if(el.length)openServico(chartRows[el[0].index].cod);}}});
+    onClick:(e,el)=>{if(el.length)openServico(all[el[0].index].cod);}}});
 
   rows = rows.slice().sort((a,b)=>{const va=a['_'+S.jSortK]??a[S.jSortK]??0,vb=b['_'+S.jSortK]??b[S.jSortK]??0;return S.jSortAsc?va-vb:vb-va;});
   document.getElementById('j-body').innerHTML = rows.map(j=>{
@@ -655,111 +521,6 @@ function renderJudicial(){
       <td><span class="badge ${cls}">${lbl}</span></td>
     </tr>`;
   }).join('');
-}
-
-/* ───────── SERVIÇOS & ÁREAS ───────── */
-function serviceProfitRows(){
-  const details=Object.values(D.servicos_det||{});
-  const transactional=details.filter(s=>s.ativo&&!s.incluso&&['Projeto consultivo','Avulso consultivo','Judicial'].includes(s.tipo)).map(s=>{
-    const h=sumPM(s.pm,'h'),rawCost=sumPM(s.pm,'c'),cost=C(rawCost),revenue=s.entrada||0,success=s.exito||0,margin=revenue-cost;
-    return {cod:String(s.cod),label:s.lbl||`Serviço ${s.cod}`,client:s.cli||'Cliente não informado',type:s.tipo,area:s.area||'Não informada',cluster:s.cluster||'',h,cost,revenue,success,margin,mpct:revenue>0?margin/revenue*100:null,rph:h>0?revenue/h:null};
-  });
-  const recurring=mensalCalc().map(m=>{
-    const codes=m.codes||[],service=codes.map(c=>D.servicos_det&&D.servicos_det[c]).find(Boolean),revenue=m._rec,cost=m._custo;
-    return {cod:`mensal:${m.cli}`,label:'Contrato mensal',client:m.cli,type:'Mensalista',area:(service&&service.area)||'Full Service',cluster:(service&&service.cluster)||'',h:m._h,cost,revenue,success:0,margin:revenue-cost,mpct:revenue>0?(revenue-cost)/revenue*100:null,rph:m._h>0?revenue/m._h:null,clientOnly:true};
-  });
-  return [...recurring,...transactional];
-}
-function saSet(filter){S.saFilter=filter;renderServices();}
-function saF(filter,btn){
-  S.saFilter=filter;
-  btn.parentElement.querySelectorAll('.fb-btn').forEach(x=>x.classList.remove('active'));
-  btn.classList.add('active');
-  renderServices();
-}
-function renderServices(){
-  const all=serviceProfitRows();
-  let rows=all.filter(x=>x.h>0||x.revenue>0);
-  if(S.saFilter==='neg') rows=rows.filter(x=>x.margin<0&&x.h>0);
-  if(S.saFilter==='rentaveis') rows=rows.filter(x=>x.rph!=null).sort((a,b)=>b.rph-a.rph).slice(0,40);
-  if(S.saFilter==='lucrativos') rows=rows.sort((a,b)=>b.margin-a.margin).slice(0,40);
-  document.getElementById('sa-filters').innerHTML = `<span class="fb-lbl">Ver:</span>`+
-    [['todos','Todos'],['neg','Atenção'],['lucrativos','Mais lucrativos'],['rentaveis','Maior R$/h']].map(([k,l])=>`<button class="fb-btn ${S.saFilter===k?'active':''}" onclick="saF('${k}',this)">${l}</button>`).join('');
-
-  const active=all.filter(x=>x.h>0||x.revenue>0), revenue=active.reduce((s,x)=>s+x.revenue,0), success=active.reduce((s,x)=>s+x.success,0), cost=active.reduce((s,x)=>s+x.cost,0), hours=active.reduce((s,x)=>s+x.h,0), negatives=active.filter(x=>x.margin<0&&x.h>0).length;
-  document.getElementById('sa-kpis').innerHTML = `
-    <div class="kc"><div class="kc-l">Geração sem êxito</div><div class="kc-v">${fmtK(revenue)}</div><div class="kc-s">${active.length} contratos analisados</div></div>
-    <div class="kc"><div class="kc-l">Êxito estimado</div><div class="kc-v a">${fmtK(success)}</div><div class="kc-s">expectativa separada da margem</div></div>
-    <div class="kc"><div class="kc-l">Margem sem êxito</div><div class="kc-v ${revenue-cost>=0?'g':'r'}">${fmtK(revenue-cost)}</div><div class="kc-s">${revenue?fmtP((revenue-cost)/revenue*100):'—'}</div></div>
-    <div class="kc"><div class="kc-l">R$/hora realizado</div><div class="kc-v">${hours?fmtK(revenue/hours):'—'}</div><div class="kc-s">receita contratada/esperada ÷ horas</div></div>
-    <div class="kc click" onclick="saSet('neg')"><div class="kc-l">Trabalhos negativos</div><div class="kc-v ${negatives?'r':'g'}">${negatives}</div><div class="kc-s">clique para revisar</div></div>`;
-
-  const group=(key)=>Object.values(active.reduce((acc,row)=>{const k=row[key]||'Não informada';const x=acc[k]||(acc[k]={name:k,revenue:0,cost:0,h:0,count:0});x.revenue+=row.revenue;x.cost+=row.cost;x.h+=row.h;x.count++;return acc;},{}));
-  const areas=group('area').sort((a,b)=>(b.revenue-b.cost)-(a.revenue-a.cost));
-  const areaMax=Math.max(1,...areas.flatMap(x=>[x.revenue,x.cost]));
-  document.getElementById('sa-area-bars').innerHTML=areas.map(x=>`<div class="metric-row"><div class="metric-name" title="${esc(x.name)}">${esc(x.name)}</div><div><div class="metric-track"><div class="metric-fill revenue" style="width:${x.revenue/areaMax*100}%"></div></div><div class="metric-track" style="height:6px;margin-top:3px"><div class="metric-fill cost" style="width:${x.cost/areaMax*100}%"></div></div></div><div class="metric-value ${x.revenue-x.cost<0?'r':''}">${fmtK(x.revenue-x.cost)}<div class="metric-sub">${x.count} trabalhos</div></div></div>`).join('');
-  const types=group('type').map(x=>({...x,rph:x.h?x.revenue/x.h:0})).sort((a,b)=>b.rph-a.rph);
-  const typeMax=Math.max(1,...types.map(x=>x.rph));
-  document.getElementById('sa-type-bars').innerHTML=types.map(x=>`<div class="metric-row"><div class="metric-name">${esc(x.name)}</div><div class="metric-track"><div class="metric-fill ${x.revenue-x.cost<0?'negative':'revenue'}" style="width:${x.rph/typeMax*100}%"></div></div><div class="metric-value">${fmtK(x.rph)}/h<div class="metric-sub">${fmtH(x.h)}h</div></div></div>`).join('');
-
-  rows=rows.slice().sort((a,b)=>S.saFilter==='todos'?(a.client.localeCompare(b.client,'pt-BR')||a.label.localeCompare(b.label,'pt-BR')):0);
-  document.getElementById('sa-body').innerHTML = rows.map(x=>`<tr onclick="${x.clientOnly?`openCliente(${js(x.client)})`:`openServico(${js(x.cod)})`}">
-    <td><div class="row-title"><span class="lk">${esc(x.client)}</span></div><div class="row-sub">${esc(x.label)}</div></td><td><span class="badge bc">${esc(x.area)}</span></td><td class="tm">${esc(x.type)}</td>
-    <td class="tr">${fmtK(x.revenue)}</td><td class="tr">${fmtK(x.cost)}</td><td class="tr" style="font-weight:700;color:${x.margin<0?'var(--red)':'var(--g2)'}">${fmtK(x.margin)}</td><td class="tr">${fmtP(x.mpct)}</td><td class="tr">${fmtH(x.h)}</td><td class="tr">${x.rph?fmtK(x.rph):'—'}</td></tr>`).join('') || '<tr><td colspan="9" class="empty-state">Nenhum trabalho neste filtro.</td></tr>';
-}
-
-/* ───────── AUDITORIA DE DADOS ───────── */
-function buildAuditRows(){
-  const rows=[];
-  const add=(sev,type,item,source,h,cost,owner,action,link={})=>rows.push({sev,type,item,source,h:h||0,cost:cost||0,owner,action,...link});
-  if(!D.meses.some(m=>m.startsWith('2025-'))){
-    add('critical','Histórico de 2025 ausente do BI','data.js contém apenas '+periodLabel(D.meses),'Pipeline',0,0,'Operação de dados','Integrar a base Eleven e regenerar o data.js.');
-  }
-  add('high','Tabela de hora aproximada','Custo e Pontual usam fatores médios, não valores por cargo','Pipeline',0,0,'Operação de dados','Exportar custo nas três tabelas por lançamento e remover fatores aproximados.');
-  mensalCalc().filter(m=>m._h>2&&m._rec===0).forEach(m=>add('critical','Mensalista com horas e receita zero',m.cli,'Mensalistas / cruzamento',m._h,m._custo,'Financeiro','Preencher vigência ou corrigir vínculo do contrato.',{client:m.cli}));
-
-  const areaByCode=new Map([...D.lc,...D.jud].map(x=>[String(x.cod),x.area||'']));
-  Object.values(D.servicos_det||{}).forEach(s=>{
-    const h=sumPM(s.pm,'h'), cost=C(sumPM(s.pm,'c'));
-    if(!s.ativo&&h<=0) return;
-    if(!String(s.lbl||'').trim()) add('high','Serviço sem identificação',`Código ${s.cod}`,'CRM',h,cost,'CRM','Preencher nome do caso/processo.',{cod:String(s.cod)});
-    if(!String(s.cli||'').trim()) add('critical','Serviço sem cliente',`Código ${s.cod}`,'CRM',h,cost,'CRM','Vincular cliente ao contrato.',{cod:String(s.cod)});
-    if(!String(s.tipo||'').trim()) add('high','Serviço sem tipo de contrato',`${s.cli||'Cliente não informado'} · ${s.lbl||s.cod}`,'CRM',h,cost,'CRM','Classificar o tipo de caso no CRM.',{cod:String(s.cod)});
-    const separatelyBilled=['Projeto consultivo','Avulso consultivo','Judicial'].includes(s.tipo)&&!s.incluso;
-    if(s.ativo&&separatelyBilled&&h>0&&!(s.rec>0)) add('critical',`${s.tipo} com horas e receita zero`,`${s.cli||'Cliente não informado'} · ${s.lbl||s.cod}`,'CRM / Themis',h,cost,'CRM','Revisar honorários ou flag Incluso no Mensal.',{cod:String(s.cod)});
-    const area=areaByCode.get(String(s.cod));
-    if(s.ativo&&['Projeto consultivo','Avulso consultivo','Judicial'].includes(s.tipo)&&String(area).toLowerCase()==='full service') add('medium','Full Service em trabalho específico',`${s.cli||''} · ${s.lbl||s.cod}`,'CRM',h,cost,'CRM','Substituir Full Service pela área principal específica.',{cod:String(s.cod)});
-  });
-  const order={critical:0,high:1,medium:2,low:3};
-  return rows.sort((a,b)=>(order[a.sev]-order[b.sev])||b.cost-a.cost);
-}
-function auditSummary(){
-  const rows=buildAuditRows(), critical=rows.filter(x=>x.sev==='critical').length, cost=rows.reduce((s,x)=>s+x.cost,0), hours=rows.reduce((s,x)=>s+x.h,0);
-  const base=Math.max(1,D.kpis.ct*rf()), score=Math.max(0,Math.round(100-Math.min(85,cost/base*100)-rows.filter(x=>x.sev==='critical'&&x.cost===0).length*2));
-  return {rows,critical,cost,hours,score};
-}
-function auF(filter,btn){S.auditFilter=filter;btn.parentElement.querySelectorAll('.fb-btn').forEach(x=>x.classList.remove('active'));btn.classList.add('active');renderAudit();}
-function openAuditItem(index){
-  const row=window._auditRows&&window._auditRows[index]; if(!row) return;
-  if(row.cod) openServico(row.cod); else if(row.client) openCliente(row.client);
-}
-function renderAudit(){
-  const summary=auditSummary(); let rows=summary.rows;
-  if(S.auditFilter!=='todos') rows=rows.filter(x=>x.sev===S.auditFilter);
-  window._auditRows=rows;
-  const high=summary.rows.filter(x=>x.sev==='high').length, medium=summary.rows.filter(x=>x.sev==='medium').length;
-  document.getElementById('sb-audit-n').style.display=summary.critical?'':'none';
-  document.getElementById('sb-audit-n').textContent=summary.critical;
-  document.getElementById('au-quality').innerHTML=`<div><div class="quality-score">${summary.score}/100</div><div class="quality-copy"><strong>Índice operacional de confiança.</strong> Considera inconsistências detectáveis no data.js atual. Erros de código, sinaleira, time e classificação Themis × CRM exigem que o pipeline exporte a auditoria de registros brutos.</div></div><span class="sev-pill ${summary.critical?'sev-critical':'sev-low'}">${summary.critical?'Ação necessária':'Base sem críticos'}</span>`;
-  document.getElementById('au-kpis').innerHTML=`
-    <div class="kc"><div class="kc-l">Erros críticos</div><div class="kc-v ${summary.critical?'r':'g'}">${summary.critical}</div></div>
-    <div class="kc"><div class="kc-l">Horas afetadas</div><div class="kc-v">${fmtH(summary.hours)}</div></div>
-    <div class="kc"><div class="kc-l">Custo afetado</div><div class="kc-v a">${fmtK(summary.cost)}</div></div>
-    <div class="kc"><div class="kc-l">Altos / Médios</div><div class="kc-v">${high} <span style="font-size:14px;color:var(--c3)">/ ${medium}</span></div></div>`;
-  document.getElementById('au-filters').innerHTML=`<span class="fb-lbl">Severidade:</span>`+[['todos','Todas'],['critical','Crítico'],['high','Alto'],['medium','Médio']].map(([k,l])=>`<button class="fb-btn ${S.auditFilter===k?'active':''}" onclick="auF('${k}',this)">${l}</button>`).join('');
-  const sevLabel={critical:'Crítico',high:'Alto',medium:'Médio',low:'Baixo'};
-  document.getElementById('au-body').innerHTML=rows.map((x,i)=>`<tr ${x.cod||x.client?`onclick="openAuditItem(${i})"`:''}>
-    <td><span class="sev-pill sev-${x.sev}">${sevLabel[x.sev]}</span></td><td class="row-title">${esc(x.type)}</td><td>${esc(x.item)}</td><td class="tm">${esc(x.source)}</td><td class="tr">${x.h?fmtH(x.h):'—'}</td><td class="tr">${x.cost?fmtK(x.cost):'—'}</td><td>${esc(x.owner)}</td><td>${esc(x.action)}</td></tr>`).join('')||'<tr><td colspan="8" class="empty-state">Nenhuma inconsistência neste filtro.</td></tr>';
 }
 
 /* ───────── PORTFOLIO ───────── */
@@ -791,22 +552,6 @@ function renderPortfolio(){
 
   document.getElementById('pf-norec').innerHTML = `<thead><tr><th>Cliente</th><th class="r">Horas</th><th class="r">Custo invisível</th></tr></thead><tbody>`+
     (norec.length?norec.map(m=>`<tr onclick="openCliente('${esc(m.cli)}')"><td class="lk">${esc(m.cli)}</td><td class="tr">${fmtH(m._h)}</td><td class="tr" style="color:var(--amb);font-weight:600">${fmtK(m._custo)}</td></tr>`).join(''):'<tr><td colspan="3" class="tm">Nenhum.</td></tr>')+'</tbody>';
-
-  const contracts=serviceProfitRows().filter(x=>x.h>0||x.revenue>0);
-  const grouped=(key)=>Object.values(contracts.reduce((acc,row)=>{const name=row[key]||'Não informado';const x=acc[name]||(acc[name]={name,revenue:0,success:0,cost:0,h:0,count:0});x.revenue+=row.revenue;x.success+=row.success||0;x.cost+=row.cost;x.h+=row.h;x.count++;return acc;},{}));
-  const renderHealthBars=(id,data,value='margin')=>{
-    const prepared=data.map(x=>({...x,margin:x.revenue-x.cost})).sort((a,b)=>b[value]-a[value]);
-    const max=Math.max(1,...prepared.map(x=>Math.abs(x[value])));
-    document.getElementById(id).innerHTML=prepared.slice(0,12).map(x=>`<div class="metric-row"><div class="metric-name" title="${esc(x.name)}">${esc(x.name)}</div><div class="metric-track"><div class="metric-fill ${x.margin<0?'negative':'revenue'}" style="width:${Math.abs(x[value])/max*100}%"></div></div><div class="metric-value ${x.margin<0?'r':''}">${value==='h'?fmtH(x.h)+'h':fmtK(x.margin)}<div class="metric-sub">${x.count} contratos</div></div></div>`).join('');
-  };
-  renderHealthBars('pf-types',grouped('type'));
-  renderHealthBars('pf-areas',grouped('area'));
-  const clusterNames={'VERMELHO - ALTA':'Vermelho','AMARELO - MÉDIA':'Amarelo','VERDE - BAIXA':'Verde','':'Não informado'};
-  const clusterRows=grouped('cluster').map(x=>({...x,name:clusterNames[x.name]||x.name}));
-  renderHealthBars('pf-clusters',clusterRows,'h');
-  const generation=contracts.reduce((x,row)=>{x.revenue+=row.revenue;x.success+=row.success||0;x.cost+=row.cost;return x;},{revenue:0,success:0,cost:0});
-  const maxGeneration=Math.max(1,generation.revenue,generation.success,generation.cost);
-  document.getElementById('pf-generation').innerHTML=[['Contratada sem êxito',generation.revenue,'revenue'],['Êxito estimado',generation.success,'cost'],['Custo técnico',generation.cost,'negative']].map(([name,value,cls])=>`<div class="metric-row"><div class="metric-name">${name}</div><div class="metric-track"><div class="metric-fill ${cls}" style="width:${value/maxGeneration*100}%"></div></div><div class="metric-value">${fmtK(value)}</div></div>`).join('')+`<div class="note" style="margin-top:14px"><strong>Leitura executiva:</strong> margem sem êxito ${fmtK(generation.revenue-generation.cost)}. O êxito de ${fmtK(generation.success)} é potencial adicional, não resultado realizado.</div>`;
 }
 
 /* ───────── OVERLAY: PESSOA ───────── */
@@ -824,14 +569,6 @@ function openPessoa(nome){
     <div class="kc"><div class="kc-l">⬜ Admin</div><div class="kc-v">${fmtP(calc._pct.adm)}</div><div class="kc-s">${fmtH(calc._h.adm)}h ${p.dev.adm==='high'?'⬆ acima do máximo':''}</div></div>
   </div>
   <div class="panel"><div class="ph2"><span class="t">Evolução mensal por sinaleira</span></div><div class="pb"><div class="cw"><canvas id="c-ovp"></canvas></div></div></div>`;
-
-  const dimensionRows=(field)=>{
-    const totals={};
-    S.meses.forEach(m=>Object.entries((p[field]&&p[field][m])||{}).forEach(([k,v])=>totals[k]=(totals[k]||0)+v));
-    const rows=Object.entries(totals).sort((a,b)=>b[1]-a[1]),max=Math.max(1,...rows.map(x=>x[1]));
-    return rows.map(([name,value])=>`<div class="metric-row"><div class="metric-name" title="${esc(name)}">${esc(name)}</div><div class="metric-track"><div class="metric-fill revenue" style="width:${value/max*100}%"></div></div><div class="metric-value">${fmtH(value)}h<div class="metric-sub">${calc._tot?fmtP(value/calc._tot*100):'—'}</div></div></div>`).join('');
-  };
-  html += `<div class="g2"><div class="panel"><div class="ph2"><span class="t">Categoria da alocação</span></div><div class="pb metric-bars">${dimensionRows('cats_pm')}</div></div><div class="panel"><div class="ph2"><span class="t">Áreas atendidas</span></div><div class="pb metric-bars">${dimensionRows('areas_pm')}</div></div></div>`;
 
   if(det && det.casos && det.casos.length){
     const casos = det.casos.filter(c=>c.nm);
@@ -912,7 +649,7 @@ function openCliente(nome){
 function openServico(cod){
   const sd = D.servicos_det[cod];
   if(!sd){ return; }
-  const jud = judCalc([...(D.jud||[]),...(D.jud_done||[])]).find(j=>j.cod===String(cod));
+  const jud = judCalc().find(j=>j.cod===String(cod));
   document.getElementById('ovs-title').textContent = sd.lbl || ('Serviço '+cod);
   document.getElementById('ovs-sub').innerHTML = `${sd.tipo||''} · <span class="lk" style="color:#fff;text-decoration:underline;cursor:pointer" onclick="closeOv('servico');openCliente('${esc(sd.cli)}')">${esc(sd.cli)}</span> · cód. ${cod}${sd.ativo?'':' · BAIXADO'}${sd.incluso?' · incluso no mensal':''}`;
   const h = sumPM(sd.pm,'h'), cRaw = sumPM(sd.pm,'c'), custo = C(cRaw);
@@ -920,17 +657,16 @@ function openServico(cod){
   if(jud){
     html += `<div class="kg kg4">
       <div class="kc"><div class="kc-l">Entrada</div><div class="kc-v">${fmtK(jud.e)}</div></div>
-      <div class="kc"><div class="kc-l">Custo no período</div><div class="kc-v">${fmtK(jud._ca)}</div></div>
+      <div class="kc"><div class="kc-l">Custo acumulado</div><div class="kc-v">${fmtK(jud._ca)}</div></div>
       <div class="kc"><div class="kc-l">Break-even de êxito</div><div class="kc-v ${jud._be>0?'a':'g'}">${jud._be>0?fmtK(jud._be):'coberto'}</div></div>
       <div class="kc"><div class="kc-l">Margem total estimada</div><div class="kc-v ${jud._mt>=0?'g':'r'}">${fmtK(jud._mt)}</div><div class="kc-s">êxito est. ${fmtK(jud.x)}</div></div>
     </div>`;
   } else {
-    const revenue=sd.entrada==null?(sd.rec||0):sd.entrada,success=sd.exito||0,margem=revenue-custo;
+    const margem = (sd.rec||0) - custo;
     html += `<div class="kg kg4">
-      <div class="kc"><div class="kc-l">Geração sem êxito</div><div class="kc-v">${fmtK(revenue)}</div></div>
-      <div class="kc"><div class="kc-l">Êxito estimado</div><div class="kc-v a">${fmtK(success)}</div></div>
+      <div class="kc"><div class="kc-l">Receita</div><div class="kc-v">${fmtK(sd.rec)}</div></div>
       <div class="kc"><div class="kc-l">Custo (${S.rate})</div><div class="kc-v">${fmtK(custo)}</div></div>
-      <div class="kc"><div class="kc-l">Margem sem êxito</div><div class="kc-v ${margem>=0?'g':'r'}">${fmtK(margem)}</div></div>
+      <div class="kc"><div class="kc-l">Margem</div><div class="kc-v ${margem>=0?'g':'r'}">${fmtK(margem)}</div></div>
       <div class="kc"><div class="kc-l">Horas no período</div><div class="kc-v">${fmtH(h)}</div></div>
     </div>`;
   }
@@ -952,11 +688,11 @@ function openServico(cod){
 
 /* ───────── SIDEBAR LISTS ───────── */
 function buildSidebarLists(){
-  document.getElementById('pl-items').innerHTML = D.hm.filter(p=>p.ativo).sort((a,b)=>a.adv.localeCompare(b.adv)).map(p=>`<button class="sb-list-item" onclick='openPessoa(${js(p.adv)})'>${esc(p.adv)}</button>`).join('');
+  document.getElementById('pl-items').innerHTML = D.hm.slice().sort((a,b)=>a.adv.localeCompare(b.adv)).map(p=>`<button class="sb-list-item" onclick="openPessoa('${esc(p.adv)}')">${esc(p.adv)}</button>`).join('');
   const clientes = Object.keys(D.cli_det).sort((a,b)=>a.localeCompare(b));
-  document.getElementById('cl-items').innerHTML = clientes.map(c=>`<button class="sb-list-item" onclick='openCliente(${js(c)})'>${esc(c)}</button>`).join('');
-  const svcs = Object.values(D.servicos_det).filter(s=>s.lbl).sort((a,b)=>(a.cli||'').localeCompare(b.cli||'','pt-BR')||(a.lbl||'').localeCompare(b.lbl||'','pt-BR'));
-  document.getElementById('sl-items').innerHTML = svcs.map(s=>`<button class="sb-list-item" onclick="openServico('${s.cod}')">${esc(s.cli)} · ${esc(s.lbl)}</button>`).join('');
+  document.getElementById('cl-items').innerHTML = clientes.map(c=>`<button class="sb-list-item" onclick="openCliente('${esc(c)}')">${esc(c)}</button>`).join('');
+  const svcs = Object.values(D.servicos_det).filter(s=>s.lbl).sort((a,b)=>(a.lbl||'').localeCompare(b.lbl||''));
+  document.getElementById('sl-items').innerHTML = svcs.map(s=>`<button class="sb-list-item" onclick="openServico('${s.cod}')">${esc(s.lbl)} · ${esc(s.cli)}</button>`).join('');
 }
 
 /* ───────── RENDER MASTER ───────── */
@@ -969,17 +705,13 @@ function render(){
     case 'mensalistas': renderMensalistas(); break;
     case 'projetos': renderProjetos(); break;
     case 'judicial': renderJudicial(); break;
-    case 'servicos': renderServices(); break;
     case 'portfolio': renderPortfolio(); break;
-    case 'auditoria': renderAudit(); break;
   }
 }
 
 /* ───────── INIT ───────── */
 buildPeriodBar();
+document.getElementById('period-note').textContent = `${mLbl(D.meses[0])}–${mLbl(D.meses[D.meses.length-1])} 2026 · todos os meses`;
 document.getElementById('sb-per').textContent = D.meta.periodo || '';
 buildSidebarLists();
-const initialAudit=auditSummary();
-document.getElementById('sb-audit-n').style.display=initialAudit.critical?'':'none';
-document.getElementById('sb-audit-n').textContent=initialAudit.critical;
 render();

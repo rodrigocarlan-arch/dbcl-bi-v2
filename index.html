@@ -12,20 +12,20 @@
   --c1:#F4F3EF;--c2:#E6E5DF;--c3:#AEADA5;--c4:#6B6A62;
   --red:#B33030;--red2:#FDECEC;--amb:#B56C00;--amb2:#FEF3E0;--ok2:#E6F4EA;
   --vc:#C0392B;--ac:#C47A00;--gc:#2E7D32;--dc:#546E7A;
-  --white:#FFF;--r:9px;--r2:14px;--sh:0 1px 3px rgba(17,35,28,.07);--sh2:0 10px 30px rgba(0,60,40,.12);
+  --white:#FFF;--r:8px;--r2:12px;--sh:0 1px 3px rgba(0,0,0,.09);--sh2:0 4px 16px rgba(0,60,40,.10);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;background:#F7F8F5}
+html,body{height:100%;background:var(--bege)}
 body{font-family:'Inter',system-ui,sans-serif;color:var(--preto);font-size:13px;line-height:1.45;display:flex;font-variant-numeric:tabular-nums}
 button{font-family:inherit}
 /* ───────── SIDEBAR ───────── */
-.sb{width:232px;min-height:100vh;background:linear-gradient(180deg,#063D2D 0%,#022B20 100%);flex-shrink:0;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow-y:auto;z-index:50}
+.sb{width:216px;min-height:100vh;background:var(--g1);flex-shrink:0;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow-y:auto;z-index:50}
 .sb-logo{padding:18px 16px 14px;border-bottom:1px solid rgba(255,255,255,.08);cursor:pointer}
 .sb-logo .d{font-size:22px;font-weight:700;color:#fff;letter-spacing:-.4px}
 .sb-logo .s{font-size:9px;letter-spacing:2.5px;color:rgba(255,255,255,.3);text-transform:uppercase;margin-top:2px}
 .sb-body{flex:1;padding:10px 8px;overflow-y:auto}
 .sb-sec{font-size:9px;letter-spacing:2px;color:rgba(255,255,255,.28);text-transform:uppercase;padding:12px 8px 4px}
-.sb-btn{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:7px;cursor:pointer;color:rgba(255,255,255,.64);font-size:12px;font-weight:500;border:none;background:none;width:100%;text-align:left;transition:all .12s}
+.sb-btn{display:flex;align-items:center;gap:8px;padding:7px 10px;border-radius:6px;cursor:pointer;color:rgba(255,255,255,.58);font-size:12px;font-weight:500;border:none;background:none;width:100%;text-align:left;transition:all .12s}
 .sb-btn:hover{background:rgba(255,255,255,.07);color:#fff}
 .sb-btn.active{background:rgba(204,255,0,.14);color:var(--neon)}
 .sb-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
@@ -39,29 +39,22 @@ button{font-family:inherit}
 .sb-list-search input{width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:5px;color:#fff;font-size:11px;padding:4px 8px;outline:none}
 .sb-list-search input::placeholder{color:rgba(255,255,255,.3)}
 /* ───────── MAIN ───────── */
-.main{flex:1;min-width:0;padding:22px 28px 40px;overflow-x:hidden;max-width:1600px}
+.main{flex:1;min-width:0;padding:20px 24px;overflow-x:hidden}
 .screen{display:none}.screen.active{display:block;animation:fadein .18s ease}
 @keyframes fadein{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}
 /* ───────── TOPBAR ───────── */
-.topbar{background:rgba(255,255,255,.96);border:1px solid var(--c2);border-radius:var(--r2);padding:10px 12px;margin-bottom:22px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;box-shadow:var(--sh);position:sticky;top:10px;z-index:40;backdrop-filter:blur(12px)}
+.topbar{background:var(--white);border:1px solid var(--c2);border-radius:var(--r2);padding:10px 14px;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;box-shadow:var(--sh)}
 .tb-label{font-size:11px;font-weight:600;color:var(--c3)}
-.period-select,.period-mini{height:30px;border:1px solid var(--c2);border-radius:7px;background:#fff;color:var(--preto);font-size:11px;font-weight:600;padding:0 28px 0 10px;outline:none}
-.period-select:focus,.period-mini:focus{border-color:var(--g3);box-shadow:0 0 0 3px rgba(27,138,107,.1)}
-.period-custom-btn{height:30px;padding:0 10px;border:1px solid var(--c2);border-radius:7px;background:#fff;color:var(--c4);font-size:11px;font-weight:600;cursor:pointer}
-.period-custom{display:none;align-items:center;gap:6px;padding-left:4px}
-.period-custom.open{display:flex}
-.period-apply{height:30px;padding:0 11px;border:0;border-radius:7px;background:var(--g1);color:#fff;font-size:11px;font-weight:700;cursor:pointer}
+.pq{padding:4px 11px;border-radius:5px;border:1px solid var(--c2);background:var(--white);font-size:11px;font-weight:500;color:var(--c3);cursor:pointer;transition:all .12s}
 .pq.active{background:var(--g1);color:var(--white);border-color:var(--g1)}
 .tb-sep{color:var(--c2);font-size:14px}
 .rate-toggle{display:flex;gap:2px;background:var(--c1);padding:3px;border-radius:7px;margin-left:auto}
 .rt-btn{padding:5px 13px;border-radius:5px;border:none;background:none;font-size:11px;font-weight:600;color:var(--c3);cursor:pointer;transition:all .14s}
 .rt-btn.active{background:var(--g1);color:var(--neon);box-shadow:var(--sh)}
-.rt-note{font-size:9px;color:var(--c3);max-width:170px;line-height:1.25}
-.data-status{display:flex;align-items:center;gap:7px;border-left:1px solid var(--c2);padding-left:11px;font-size:10px;color:var(--c4);white-space:nowrap}
-.status-dot{width:7px;height:7px;border-radius:50%;background:var(--amb);box-shadow:0 0 0 3px var(--amb2)}
+.rt-note{font-size:9px;color:var(--c3);max-width:140px;line-height:1.25}
 /* ───────── PAGE HEADER ───────── */
 .ph{margin-bottom:16px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.ph h1{font-size:24px;font-weight:750;color:var(--g1);letter-spacing:-.6px}
+.ph h1{font-size:21px;font-weight:700;color:var(--g1);letter-spacing:-.4px}
 .ph p{font-size:12px;color:var(--c3);margin-top:3px}
 .toggle-group{display:flex;gap:2px;background:var(--c1);padding:3px;border-radius:7px}
 .tgl{padding:5px 14px;border-radius:5px;border:none;background:none;font-size:12px;font-weight:500;color:var(--c3);cursor:pointer;transition:all .14s}
@@ -70,11 +63,11 @@ button{font-family:inherit}
 .kg{display:grid;gap:12px;margin-bottom:18px}
 .kg2{grid-template-columns:1fr 1fr}.kg3{grid-template-columns:repeat(3,1fr)}.kg4{grid-template-columns:repeat(4,1fr)}
 @media(max-width:1100px){.kg4{grid-template-columns:1fr 1fr}.kg3{grid-template-columns:1fr 1fr}}
-.kc{background:var(--white);border-radius:var(--r2);padding:17px 18px;border:1px solid #E7E9E4;box-shadow:var(--sh);position:relative;transition:all .15s}
+.kc{background:var(--white);border-radius:var(--r2);padding:15px 17px;border:1px solid var(--c2);box-shadow:var(--sh);position:relative;transition:all .15s}
 .kc.click{cursor:pointer}
 .kc.click:hover{box-shadow:var(--sh2);transform:translateY(-1px);border-color:var(--g3)}
 .kc-l{font-size:10px;color:var(--c3);text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px}
-.kc-v{font-size:25px;font-weight:750;letter-spacing:-.6px;line-height:1}
+.kc-v{font-size:23px;font-weight:700;letter-spacing:-.5px;line-height:1}
 .kc-s{font-size:11px;color:var(--c3);margin-top:5px;display:flex;align-items:center;gap:6px}
 .kc-v.g{color:var(--g2)}.kc-v.a{color:var(--amb)}.kc-v.r{color:var(--red)}
 .trend{font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px}
@@ -82,28 +75,17 @@ button{font-family:inherit}
 .trend.down{background:var(--red2);color:var(--red)}
 .trend.flat{background:var(--c1);color:var(--c4)}
 /* ───────── ALERTS ───────── */
-.alerts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:18px}
-.al{background:var(--white);border:1px solid var(--c2);border-left:4px solid var(--c3);border-radius:var(--r2);padding:12px 14px;display:flex;align-items:flex-start;gap:11px;cursor:pointer;transition:all .13s;min-height:76px}
+.alerts{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.al{background:var(--white);border:1px solid var(--c2);border-left:4px solid var(--c3);border-radius:var(--r);padding:11px 14px;display:flex;align-items:center;gap:12px;cursor:pointer;transition:all .13s}
 .al:hover{box-shadow:var(--sh2);transform:translateX(2px)}
 .al.sev-r{border-left-color:var(--red)}
 .al.sev-a{border-left-color:var(--amb)}
 .al.sev-g{border-left-color:var(--gc)}
-.al-ico{width:9px;height:9px;border-radius:50%;background:var(--c3);font-size:0;flex-shrink:0;margin-top:5px}
-.sev-r .al-ico{background:var(--red)}.sev-a .al-ico{background:var(--amb)}.sev-g .al-ico{background:var(--gc)}
+.al-ico{font-size:17px;flex-shrink:0}
 .al-tit{font-size:12.5px;font-weight:600}
 .al-act{font-size:11px;color:var(--c4);margin-top:1px}
 .al-act b{color:var(--g2)}
-.al-go{margin-left:auto;font-size:10px;font-weight:700;color:var(--g2);white-space:nowrap}
-.command-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:12px;margin-bottom:18px}
-.command-card{background:var(--g1);color:#fff;border-radius:var(--r2);padding:17px 18px;min-height:112px;position:relative;overflow:hidden;cursor:pointer}
-.command-card.secondary{background:#fff;color:var(--preto);border:1px solid var(--c2)}
-.command-kicker{font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:var(--neon);font-weight:750;margin-bottom:9px}
-.command-card.secondary .command-kicker{color:var(--g2)}
-.command-title{font-size:15px;font-weight:700;line-height:1.3;margin-bottom:6px}
-.command-copy{font-size:11px;color:rgba(255,255,255,.65);max-width:95%}
-.command-card.secondary .command-copy{color:var(--c4)}
-.command-link{position:absolute;right:16px;bottom:13px;font-size:10px;font-weight:700;color:var(--neon)}
-.command-card.secondary .command-link{color:var(--g2)}
+.al-go{margin-left:auto;font-size:11px;font-weight:600;color:var(--g2);white-space:nowrap}
 /* ───────── PANELS ───────── */
 .panel{background:var(--white);border-radius:var(--r2);border:1px solid var(--c2);box-shadow:var(--sh);overflow:hidden;margin-bottom:16px}
 .ph2{padding:12px 16px;border-bottom:1px solid var(--c2);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
@@ -140,9 +122,8 @@ table.t tbody tr:hover td{background:#f4f8f4}
 .fb-btn.active{background:var(--g1);color:var(--white);border-color:var(--g1)}
 .fb-btn:hover:not(.active){border-color:var(--g2);color:var(--g2)}
 /* ───────── HEATMAP ───────── */
-.hcell{text-align:center;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;width:76px;min-height:42px;border-radius:6px;font-size:12px;font-weight:700;position:relative;padding:4px 2px}
+.hcell{text-align:center;display:inline-flex;align-items:center;justify-content:center;width:60px;height:32px;border-radius:5px;font-size:12px;font-weight:600;position:relative}
 .hcell sup{font-size:9px;position:absolute;top:1px;right:3px}
-.hcell .bench{font-size:8px;font-weight:600;opacity:.78;margin-top:1px;white-space:nowrap}
 .grow td{background:var(--c1)!important;font-size:10px;font-weight:600;color:var(--c3)}
 /* ───────── NOTES / LEGEND ───────── */
 .note{font-size:11px;color:var(--c3);background:var(--c1);border-radius:6px;padding:8px 12px;margin-bottom:12px;border-left:3px solid var(--c2)}
@@ -166,20 +147,6 @@ table.t tbody tr:hover td{background:#f4f8f4}
 .conc-bar{flex:1;height:16px;background:var(--c1);border-radius:4px;overflow:hidden}
 .conc-fill{height:100%;background:var(--g3);border-radius:4px}
 .conc-val{width:120px;text-align:right;font-size:12px;font-weight:600}
-.quality-banner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 16px;background:#fff;border:1px solid var(--c2);border-radius:var(--r2);margin-bottom:14px}
-.quality-score{font-size:26px;font-weight:750;color:var(--g1)}
-.quality-copy{font-size:11px;color:var(--c4);max-width:720px}
-.sev-pill{display:inline-flex;align-items:center;border-radius:999px;padding:3px 8px;font-size:9px;font-weight:750;text-transform:uppercase;letter-spacing:.4px}
-.sev-critical{background:var(--red2);color:var(--red)}.sev-high{background:var(--amb2);color:var(--amb)}.sev-medium{background:#EEF2F6;color:#52606D}.sev-low{background:var(--ok2);color:var(--g2)}
-.empty-state{padding:28px;text-align:center;color:var(--c3);font-size:12px}
-.row-title{font-weight:650;color:var(--preto)}.row-sub{font-size:10px;color:var(--c3);margin-top:2px}
-.metric-bars{display:flex;flex-direction:column;gap:12px}
-.metric-row{display:grid;grid-template-columns:minmax(110px,1.1fr) 2fr 96px;align-items:center;gap:10px}
-.metric-name{font-size:11px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.metric-track{height:18px;background:var(--c1);border-radius:5px;overflow:hidden;display:flex}
-.metric-fill{height:100%;min-width:2px}.metric-fill.revenue{background:var(--g3)}.metric-fill.cost{background:#D9A441}.metric-fill.negative{background:var(--red)}
-.metric-value{text-align:right;font-size:11px;font-weight:700}.metric-value.r{color:var(--red)}.metric-sub{font-size:9px;color:var(--c3);font-weight:500}
-@media(max-width:900px){.sb{width:190px}.main{padding:16px}.alerts,.command-grid{grid-template-columns:1fr}.data-status{display:none}}
 </style>
 </head>
 <body>
@@ -198,9 +165,7 @@ table.t tbody tr:hover td{background:#f4f8f4}
     <button class="sb-btn" data-s="projetos" onclick="go('projetos')"><span class="sb-dot" style="background:#80CBC4"></span>Projetos &amp; Avulsos</button>
     <button class="sb-btn" data-s="judicial" onclick="go('judicial')"><span class="sb-dot" style="background:#EF9A9A"></span>Judicial</button>
     <div class="sb-sec">Negócio</div>
-    <button class="sb-btn" data-s="servicos" onclick="go('servicos')"><span class="sb-dot" style="background:#72D6B9"></span>Serviços &amp; Áreas</button>
     <button class="sb-btn" data-s="portfolio" onclick="go('portfolio')"><span class="sb-dot" style="background:#FFCC80"></span>Saúde do Portfólio</button>
-    <button class="sb-btn" data-s="auditoria" onclick="go('auditoria')"><span class="sb-dot" style="background:#FF8A80"></span>Auditoria de Dados<span class="sb-badge" id="sb-audit-n" style="display:none"></span></button>
     <div class="sb-sec">Buscar</div>
     <button class="sb-btn" onclick="toggleList('pl',this)"><span class="sb-dot" style="background:#A5D6A7"></span>Pessoas <span style="margin-left:auto;font-size:10px">▾</span></button>
     <div class="sb-list" id="pl"><div class="sb-list-search"><input placeholder="Buscar pessoa..." oninput="filterList('pl',this.value)"></div><div id="pl-items"></div></div>
@@ -217,14 +182,8 @@ table.t tbody tr:hover td{background:#f4f8f4}
 <!-- ═══════════ TOPBAR ═══════════ -->
 <div class="topbar">
   <span class="tb-label">Período</span>
-  <select class="period-select" id="period-preset" onchange="setPeriodPreset(this.value)"></select>
-  <button class="period-custom-btn" onclick="togglePeriodCustom()">Intervalo</button>
-  <div class="period-custom" id="period-custom">
-    <select class="period-mini" id="period-start"></select>
-    <span class="tb-label">até</span>
-    <select class="period-mini" id="period-end"></select>
-    <button class="period-apply" onclick="applyCustomPeriod()">Aplicar</button>
-  </div>
+  <span id="period-btns"></span>
+  <span class="tb-sep">|</span>
   <span class="tb-label" id="period-note"></span>
   <div class="rate-toggle">
     <button class="rt-btn" data-rt="custo" onclick="setRate('custo')">Custo</button>
@@ -232,14 +191,12 @@ table.t tbody tr:hover td{background:#f4f8f4}
     <button class="rt-btn" data-rt="pontual" onclick="setRate('pontual')">Pontual</button>
   </div>
   <span class="rt-note" id="rt-note">Tabela de hora ativa: Mensal (base do pipeline)</span>
-  <div class="data-status"><span class="status-dot"></span><span id="data-status-text"></span></div>
 </div>
 
 <!-- ═══════════ PAINEL GERAL ═══════════ -->
 <section class="screen active" id="screen-painel">
   <div class="ph"><div><h1 id="pg-saud">Painel Geral</h1><p id="pg-sub"></p></div></div>
   <div class="kg kg4" id="pg-kpis"></div>
-  <div class="command-grid" id="pg-command"></div>
   <div class="alerts" id="pg-alerts"></div>
   <div class="g2">
     <div class="panel"><div class="ph2"><span class="t">Horas do escritório · evolução</span><span class="s">total vs. em clientes</span></div><div class="pb"><div class="cw"><canvas id="c-pg-horas"></canvas></div></div></div>
@@ -251,26 +208,14 @@ table.t tbody tr:hover td{background:#f4f8f4}
   </div>
 </section>
 
-<!-- ═══════════ SERVIÇOS & ÁREAS ═══════════ -->
-<section class="screen" id="screen-servicos">
-  <div class="ph"><div><h1>Serviços &amp; Áreas</h1><p>Rentabilidade por contrato, área e tipo de receita</p></div></div>
-  <div class="note"><strong>Escopo:</strong> mensalistas entram como contrato consolidado e preservam a área Full Service. Geração sem êxito sustenta a margem-base; êxito estimado aparece separado e não é tratado como receita garantida.</div>
-  <div class="kg kg4" id="sa-kpis"></div>
-  <div class="g2">
-    <div class="panel"><div class="ph2"><span class="t">Resultado por área do direito</span><span class="s">receita x custo</span></div><div class="pb metric-bars" id="sa-area-bars"></div></div>
-    <div class="panel"><div class="ph2"><span class="t">Eficiência por tipo de contrato</span><span class="s">R$/hora realizado</span></div><div class="pb metric-bars" id="sa-type-bars"></div></div>
-  </div>
-  <div class="fb" id="sa-filters"></div>
-  <div class="panel ow"><table class="t">
-    <thead><tr><th>Cliente &amp; trabalho</th><th>Área</th><th>Tipo</th><th class="r">Receita</th><th class="r">Custo</th><th class="r">Margem</th><th class="r">%</th><th class="r">Horas</th><th class="r">R$/h</th></tr></thead>
-    <tbody id="sa-body"></tbody>
-  </table></div>
-</section>
-
 <!-- ═══════════ TIMES ═══════════ -->
 <section class="screen" id="screen-times">
   <div class="ph">
     <div><h1>Times</h1><p>Volume e distribuição de horas por time</p></div>
+    <div class="toggle-group">
+      <button class="tgl active" onclick="tmTgl('sem',this)">Sem sócios</button>
+      <button class="tgl" onclick="tmTgl('com',this)">Com sócios</button>
+    </div>
   </div>
   <div class="kg kg4" id="t-kpis"></div>
   <div class="g2">
@@ -278,18 +223,6 @@ table.t tbody tr:hover td{background:#f4f8f4}
     <div class="panel"><div class="ph2"><span class="t">Composição por sinaleira</span></div><div class="pb" id="t-bars"></div></div>
   </div>
   <div class="panel"><div class="ph2"><span class="t">Tabela de times</span></div><div class="pb ow"><table class="t" id="t-table"></table></div></div>
-</section>
-
-<!-- ═══════════ AUDITORIA ═══════════ -->
-<section class="screen" id="screen-auditoria">
-  <div class="ph"><div><h1>Auditoria de Dados</h1><p>Fila operacional para corrigir a fonte antes de confiar nas análises</p></div></div>
-  <div class="quality-banner" id="au-quality"></div>
-  <div class="kg kg4" id="au-kpis"></div>
-  <div class="fb" id="au-filters"></div>
-  <div class="panel ow"><table class="t">
-    <thead><tr><th>Severidade</th><th>Inconsistência</th><th>Item afetado</th><th>Fonte</th><th class="r">Horas</th><th class="r">Custo afetado</th><th>Responsável</th><th>Ação recomendada</th></tr></thead>
-    <tbody id="au-body"></tbody>
-  </table></div>
 </section>
 
 <!-- ═══════════ HEATMAP ═══════════ -->
@@ -322,10 +255,6 @@ table.t tbody tr:hover td{background:#f4f8f4}
     <div class="panel"><div class="ph2"><span class="t">Ranking de horas · por sinaleira</span></div><div class="pb"><div class="cw t"><canvas id="c-p-rank"></canvas></div></div></div>
     <div class="panel"><div class="ph2"><span class="t">Evolução mensal do escritório</span></div><div class="pb"><div class="cw t"><canvas id="c-p-evo"></canvas></div></div></div>
   </div>
-  <div class="g2">
-    <div class="panel"><div class="ph2"><span class="t">Como o tempo é utilizado</span><span class="s">categoria do lançamento</span></div><div class="pb metric-bars" id="p-cats"></div></div>
-    <div class="panel"><div class="ph2"><span class="t">Distribuição por área</span><span class="s">horas técnicas</span></div><div class="pb metric-bars" id="p-areas"></div></div>
-  </div>
   <div class="panel"><div class="ph2"><span class="t">Horas por pessoa × mês</span><span class="s">clique para abrir o perfil</span></div><div class="pb ow"><table class="t" id="p-table"></table></div></div>
 </section>
 
@@ -352,7 +281,7 @@ table.t tbody tr:hover td{background:#f4f8f4}
 
 <!-- ═══════════ PROJETOS ═══════════ -->
 <section class="screen" id="screen-projetos">
-  <div class="ph"><div><h1>Projetos &amp; Avulsos</h1><p id="pr-subtitle">Contratos ativos · geração sem êxito separada da expectativa contingente</p></div></div>
+  <div class="ph"><div><h1>Projetos &amp; Avulsos</h1><p>Apenas contratos ativos · excluídos inclusos no mensal</p></div></div>
   <div class="kg kg4" id="pr-kpis"></div>
   <div class="g2">
     <div class="panel"><div class="ph2"><span class="t">Top 12 margem bruta</span></div><div class="pb"><div class="cw t"><canvas id="c-pr-top"></canvas></div></div></div>
@@ -372,7 +301,7 @@ table.t tbody tr:hover td{background:#f4f8f4}
 
 <!-- ═══════════ JUDICIAL ═══════════ -->
 <section class="screen" id="screen-judicial">
-  <div class="ph"><div><h1>Judicial</h1><p id="j-subtitle">Break-even por processo · ativos · excluídos inclusos no mensal</p></div></div>
+  <div class="ph"><div><h1>Judicial</h1><p>Break-even por processo · apenas ativos · excluídos inclusos no mensal</p></div></div>
   <div class="note"><strong>Como ler:</strong> Entrada = honorários não contingentes · Custo acum. = horas × valor/hora · Break-even = êxito mínimo para cobrir o déficit · Margem total = entrada + êxito est. − custo.</div>
   <div class="kg kg4" id="j-kpis"></div>
   <div class="g2">
@@ -394,7 +323,7 @@ table.t tbody tr:hover td{background:#f4f8f4}
 
 <!-- ═══════════ PORTFOLIO ═══════════ -->
 <section class="screen" id="screen-portfolio">
-  <div class="ph"><div><h1>Saúde do Portfólio</h1><p>Contratos saudáveis e não saudáveis por tipo, área e relevância</p></div></div>
+  <div class="ph"><div><h1>Saúde do Portfólio</h1><p>Concentração, risco e atividade da carteira</p></div></div>
   <div class="kg kg4" id="pf-kpis"></div>
   <div class="g2">
     <div class="panel"><div class="ph2"><span class="t">Concentração de receita mensal</span><span class="s">% da carteira de mensalistas</span></div><div class="pb" id="pf-conc"></div></div>
@@ -403,14 +332,6 @@ table.t tbody tr:hover td{background:#f4f8f4}
   <div class="g2">
     <div class="panel"><div class="ph2"><span class="t">Clientes pagantes sem atividade no período</span><span class="s">churn risk ou margem livre</span></div><div class="pb ow"><table class="t" id="pf-idle"></table></div></div>
     <div class="panel"><div class="ph2"><span class="t">Clientes com horas e sem receita cadastrada</span><span class="s">preencher planilha de fixos</span></div><div class="pb ow"><table class="t" id="pf-norec"></table></div></div>
-  </div>
-  <div class="g2">
-    <div class="panel"><div class="ph2"><span class="t">Saúde por tipo contratual</span><span class="s">receita sem êxito × custo</span></div><div class="pb metric-bars" id="pf-types"></div></div>
-    <div class="panel"><div class="ph2"><span class="t">Resultado por área</span><span class="s">margem sem êxito</span></div><div class="pb metric-bars" id="pf-areas"></div></div>
-  </div>
-  <div class="g2">
-    <div class="panel"><div class="ph2"><span class="t">Carteira por cluster</span><span class="s">horas e resultado</span></div><div class="pb metric-bars" id="pf-clusters"></div></div>
-    <div class="panel"><div class="ph2"><span class="t">Geração comercial</span><span class="s">contratada sem êxito × êxito estimado</span></div><div class="pb" id="pf-generation"></div></div>
   </div>
 </section>
 
