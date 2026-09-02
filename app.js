@@ -6,7 +6,9 @@
 /* ───────── ESTADO ───────── */
 const S = {
   screen: 'painel',
-  meses: D.meses.slice(),          // meses ativos no filtro
+  meses: [D.meses[D.meses.length-1]], // abre no mês mais recente
+  periodKind: 'month',
+  carteira: 'ativos',              // inativos só aparecem sob escolha explícita
   rate: 'mensal',                  // custo | mensal | pontual
   tmMode: 'sem',                   // times: sem/com sócios
   hmTime: 'todos', hmAtivo: 'ativo',
@@ -27,8 +29,9 @@ const RATE_LABEL = {
   pontual: 'Tabela Pontual estimada (≈160% da mensal)'
 };
 
-const MESES_PT = {'2026-02':'Fev','2026-03':'Mar','2026-04':'Abr','2026-05':'Mai','2026-06':'Jun','2026-07':'Jul','2026-08':'Ago','2026-09':'Set','2026-10':'Out','2026-11':'Nov','2026-12':'Dez','2026-01':'Jan'};
-const mLbl = m => MESES_PT[m] || m.slice(5);
+const monthDate = m => new Date(Number(m.slice(0,4)),Number(m.slice(5,7))-1,1);
+const mLbl = m => monthDate(m).toLocaleDateString('pt-BR',{month:'short'}).replace('.','').replace(/^./,c=>c.toUpperCase());
+const mFullLbl = m => monthDate(m).toLocaleDateString('pt-BR',{month:'long',year:'numeric'}).replace(/^./,c=>c.toUpperCase());
 
 /* ───────── HELPERS ───────── */
 const F = RATE_FACTOR; 
@@ -44,6 +47,24 @@ const cm = (v,inv) => v==null ? '' : (inv ? (v<0?'g':v>0?'r':'') : (v>0?'g':v<0?
 const C = v => (v||0) * rf();
 // margem ajustada: receita - custo*fator
 const M = (rec, custo) => (rec||0) - C(custo);
+
+function isActive(item){
+  if(typeof item.ativo==='boolean') return item.ativo;
+  if(typeof item.ok==='boolean') return item.ok;
+  const detail = item.cod ? D.servicos_det[item.cod] : null;
+  return detail ? detail.ativo!==false : true;
+}
+function carteiraRows(rows){
+  if(S.carteira==='todos') return rows;
+  return rows.filter(item=>S.carteira==='ativos' ? isActive(item) : !isActive(item));
+}
+function clientIsActive(name){
+  const services = D.cli_det[name]?.svcs || [];
+  return services.some(service=>service.ativo!==false);
+}
+function carteiraDescription(){
+  return S.carteira==='ativos' ? 'carteira ativa' : S.carteira==='inativos' ? 'histórico inativo' : 'ativos e inativos';
+}
 
 // soma pm de um objeto {mes:{h,c}} apenas nos meses ativos
 function sumPM(pm, key){ let s=0; for(const m of S.meses){ if(pm && pm[m]) s += pm[m][key]||0; } return s; }
@@ -87,7 +108,7 @@ function lcCalc(){
   return D.lc.map(p => {
     const h = sumPM(p.pm,'h'), cRaw = sumPM(p.pm,'c');
     const custo = C(cRaw), margem = (p.rec||0) - custo;
-    return {...p, _h:h,_cRaw:cRaw,_custo:custo,_margem:margem,_mp:p.rec>0?margem/p.rec*100:null,_rph:h>0?(p.rec||0)/h:null};
+    return {...p, ativo:isActive(p), _h:h,_cRaw:cRaw,_custo:custo,_margem:margem,_mp:p.rec>0?margem/p.rec*100:null,_rph:h>0?(p.rec||0)/h:null};
   });
 }
 function judCalc(){
@@ -98,7 +119,7 @@ function judCalc(){
     const be = Math.max(0, ca - (j.e||0));
     const mt = (j.e||0) + (j.x||0) - ca;
     const status = mse>=0 ? 'ok' : (mt>=0 ? 'ganhar' : 'inviavel');
-    return {...j, _h:h,_ca:ca,_mse:mse,_be:be,_mt:mt,_status:status};
+    return {...j, ativo:isActive(j), _h:h,_ca:ca,_mse:mse,_be:be,_mt:mt,_status:status};
   });
 }
 function hmCalc(){
@@ -113,7 +134,7 @@ function hmCalc(){
 /* ───────── ALERTAS DO PAINEL ───────── */
 function buildAlerts(){
   const alerts = [];
-  const men = mensalCalc();
+  const men = carteiraRows(mensalCalc());
   const recTot = men.reduce((s,m)=>s+m._rec,0);
 
   // 1. Concentração
@@ -129,7 +150,7 @@ function buildAlerts(){
     alerts.push({sev:'r',ico:'🔻',tit:`${neg.length} mensalista${neg.length>1?'s':''} com margem negativa · pior: ${pior.cli} (${fmt(pior._margem)})`,act:`<b>Ação:</b> renegociar valor, reduzir escopo ou rever alocação do time nesses clientes`,go:()=>{S.mFilter='neg';go('mensalistas');}});
   }
   // 3. Judiciais inviáveis
-  const jud = judCalc().filter(j=>j._h>0);
+  const jud = carteiraRows(judCalc()).filter(j=>j._h>0);
   const inv = jud.filter(j=>j._status==='inviavel');
   if(inv.length){
     const custoInv = inv.reduce((s,j)=>s+j._ca,0);
@@ -142,7 +163,7 @@ function buildAlerts(){
     alerts.push({sev:'a',ico:'📋',tit:`${semRec.length} clientes com horas lançadas e sem receita na planilha de fixos (${fmt(custoSR)} de custo invisível)`,act:`<b>Ação:</b> financeiro preenche valores na planilha de mensalistas — a margem real está distorcida`,go:()=>{S.mFilter='sem_rec';go('mensalistas');}});
   }
   // 5. Projetos vendidos sem execução
-  const lc = lcCalc();
+  const lc = carteiraRows(lcCalc());
   const parados = lc.filter(p=>(p.rec||0)>=10000 && p._h===0);
   if(parados.length){
     const recPar = parados.reduce((s,p)=>s+p.rec,0);
@@ -175,16 +196,85 @@ function filterList(id, q){
 function closeOv(t){ document.getElementById('ov-'+t).classList.remove('open'); }
 
 /* ───────── PERÍODO ───────── */
-function buildPeriodBar(){
-  const el = document.getElementById('period-btns');
-  let html = D.meses.map(m=>`<button class="pq" data-m="${m}" onclick="setPeriod('${m}')">${mLbl(m)}</button>`).join('');
-  html += `<button class="pq active" data-m="all" onclick="setPeriod('all')">Todos</button>`;
-  el.innerHTML = html;
+let PERIOD_GROUPS = {};
+
+function periodRangeLabel(months){
+  if(months.length===1) return mFullLbl(months[0]);
+  const first=months[0], last=months[months.length-1];
+  const fy=first.slice(0,4), ly=last.slice(0,4);
+  return fy===ly ? `${mLbl(first)}–${mLbl(last)} ${fy}` : `${mLbl(first)} ${fy}–${mLbl(last)} ${ly}`;
 }
-function setPeriod(m){
-  S.meses = m==='all' ? D.meses.slice() : [m];
-  document.querySelectorAll('.pq').forEach(b=>b.classList.toggle('active', b.dataset.m===m));
-  document.getElementById('period-note').textContent = m==='all' ? `${mLbl(D.meses[0])}–${mLbl(D.meses[D.meses.length-1])} 2026 · todos os meses` : `${mLbl(m)} 2026`;
+function periodGroups(kind){
+  const grouped = new Map();
+  D.meses.forEach(month=>{
+    const year=month.slice(0,4), number=Number(month.slice(5,7));
+    let key, label;
+    if(kind==='month'){key=month;label=mFullLbl(month);}
+    if(kind==='quarter'){
+      const quarter=Math.ceil(number/3);key=`${year}-Q${quarter}`;label=`${quarter}º trimestre de ${year}`;
+    }
+    if(kind==='semester'){
+      const semester=number<=6?1:2;key=`${year}-S${semester}`;label=`${semester}º semestre de ${year}`;
+    }
+    if(kind==='year'){key=year;label=year;}
+    if(!grouped.has(key)) grouped.set(key,{key,label,months:[]});
+    grouped.get(key).months.push(month);
+  });
+  return [...grouped.values()].reverse();
+}
+function applyPeriod(months,label){
+  S.meses=months.slice();
+  document.getElementById('period-note').textContent=label || periodRangeLabel(S.meses);
+  render();
+}
+function buildPeriodBar(){
+  const options=D.meses.map(m=>`<option value="${m}">${mFullLbl(m)}</option>`).join('');
+  document.getElementById('period-start').innerHTML=options;
+  document.getElementById('period-end').innerHTML=options;
+  setPeriodKind('month');
+}
+function setPeriodKind(kind){
+  S.periodKind=kind;
+  document.querySelectorAll('[data-kind]').forEach(b=>b.classList.toggle('active',b.dataset.kind===kind));
+  const selector=document.getElementById('period-select');
+  const custom=document.getElementById('custom-period');
+  custom.classList.toggle('open',kind==='custom');
+  selector.style.display=kind==='custom'?'none':'';
+
+  if(kind==='custom'){
+    document.getElementById('period-start').value=S.meses[0]||D.meses[D.meses.length-1];
+    document.getElementById('period-end').value=S.meses[S.meses.length-1]||D.meses[D.meses.length-1];
+    applyCustomPeriod();
+    return;
+  }
+  if(kind==='all'){
+    selector.innerHTML='<option>Todo o histórico disponível</option>';
+    applyPeriod(D.meses,periodRangeLabel(D.meses));
+    return;
+  }
+  const groups=periodGroups(kind);
+  PERIOD_GROUPS=Object.fromEntries(groups.map(group=>[group.key,group]));
+  selector.innerHTML=groups.map(group=>`<option value="${group.key}">${group.label}</option>`).join('');
+  selector.value=groups[0].key;
+  applyPeriodChoice();
+}
+function applyPeriodChoice(){
+  const group=PERIOD_GROUPS[document.getElementById('period-select').value];
+  if(group) applyPeriod(group.months,S.periodKind==='month' ? group.label : `${group.label} · ${periodRangeLabel(group.months)}`);
+}
+function applyCustomPeriod(){
+  const start=document.getElementById('period-start').value;
+  const end=document.getElementById('period-end').value;
+  const low=Math.min(D.meses.indexOf(start),D.meses.indexOf(end));
+  const high=Math.max(D.meses.indexOf(start),D.meses.indexOf(end));
+  if(low<0||high<0) return;
+  const months=D.meses.slice(low,high+1);
+  applyPeriod(months,periodRangeLabel(months));
+}
+function setCarteira(value){
+  S.carteira=value;
+  document.querySelectorAll('[data-carteira]').forEach(b=>b.classList.toggle('active',b.dataset.carteira===value));
+  buildSidebarLists();
   render();
 }
 function setRate(r){
@@ -196,7 +286,7 @@ function setRate(r){
 
 /* ───────── PAINEL GERAL ───────── */
 function renderPainel(){
-  const men = mensalCalc(), lc = lcCalc(), jud = judCalc();
+  const men = carteiraRows(mensalCalc()), lc = carteiraRows(lcCalc()), jud = carteiraRows(judCalc());
   // KPIs
   const hVals = S.meses.map(m=>D.kpm[m]?D.kpm[m].h:0);
   const hcVals = S.meses.map(m=>D.kpm[m]?D.kpm[m].hc:0);
@@ -211,7 +301,7 @@ function renderPainel(){
   const projM = lc.reduce((s,p)=>s+p._margem,0);
   const invN = jud.filter(j=>j._h>0&&j._status==='inviavel').length;
 
-  document.getElementById('pg-sub').textContent = `${D.kpis.pessoas} pessoas ativas · ${men.length} mensalistas · ${lc.length} projetos · ${jud.filter(j=>j._h>0).length} processos com horas no período`;
+  document.getElementById('pg-sub').textContent = `${carteiraDescription()} · ${D.kpis.pessoas} pessoas ativas · ${men.length} mensalistas · ${lc.length} projetos · ${jud.filter(j=>j._h>0).length} processos com horas no período`;
 
   document.getElementById('pg-kpis').innerHTML = `
     <div class="kc click" onclick="go('pessoas')"><div class="kc-l">Horas totais</div><div class="kc-v">${fmtH(hTot)}</div><div class="kc-s">${trendHTML(hVals)} vs. mês anterior</div></div>
@@ -380,7 +470,7 @@ function buildMFilters(){
 }
 function renderMensalistas(){
   buildMFilters();
-  let rows = mensalCalc();
+  let rows = carteiraRows(mensalCalc());
   const all = rows;
   if(S.mFilter==='com_rec') rows=rows.filter(m=>m._rec>0);
   if(S.mFilter==='neg') rows=rows.filter(m=>m._rec>0&&m._margem<0);
@@ -436,7 +526,7 @@ function buildPrFilters(){
 }
 function renderProjetos(){
   buildPrFilters();
-  const all = lcCalc();
+  const all = carteiraRows(lcCalc());
   let rows = all;
   if(S.prFilter==='com_h') rows=rows.filter(p=>p._h>0);
   if(S.prFilter==='sem_h') rows=rows.filter(p=>p._h===0);
@@ -481,7 +571,7 @@ function buildJFilters(){
 const J_STATUS = {ok:['Entrada cobre','bg'],ganhar:['Viável c/ êxito','ba'],inviavel:['Inviável','br']};
 function renderJudicial(){
   buildJFilters();
-  const all = judCalc().filter(j=>j._h>0);
+  const all = carteiraRows(judCalc()).filter(j=>j._h>0);
   let rows = all;
   if(S.jFilter==='deficit') rows=rows.filter(j=>j._mse<0);
   if(S.jFilter==='ok') rows=rows.filter(j=>j._status==='ok');
@@ -525,7 +615,7 @@ function renderJudicial(){
 
 /* ───────── PORTFOLIO ───────── */
 function renderPortfolio(){
-  const men = mensalCalc();
+  const men = carteiraRows(mensalCalc());
   const recT = men.reduce((s,m)=>s+m._rec,0);
   const sorted = men.filter(m=>m._rec>0).sort((a,b)=>b._rec-a._rec);
   const top1 = sorted[0], top3 = sorted.slice(0,3).reduce((s,m)=>s+m._rec,0);
@@ -689,9 +779,12 @@ function openServico(cod){
 /* ───────── SIDEBAR LISTS ───────── */
 function buildSidebarLists(){
   document.getElementById('pl-items').innerHTML = D.hm.slice().sort((a,b)=>a.adv.localeCompare(b.adv)).map(p=>`<button class="sb-list-item" onclick="openPessoa('${esc(p.adv)}')">${esc(p.adv)}</button>`).join('');
-  const clientes = Object.keys(D.cli_det).sort((a,b)=>a.localeCompare(b));
+  const clientes = Object.keys(D.cli_det).filter(name=>{
+    if(S.carteira==='todos') return true;
+    return S.carteira==='ativos' ? clientIsActive(name) : !clientIsActive(name);
+  }).sort((a,b)=>a.localeCompare(b));
   document.getElementById('cl-items').innerHTML = clientes.map(c=>`<button class="sb-list-item" onclick="openCliente('${esc(c)}')">${esc(c)}</button>`).join('');
-  const svcs = Object.values(D.servicos_det).filter(s=>s.lbl).sort((a,b)=>(a.lbl||'').localeCompare(b.lbl||''));
+  const svcs = carteiraRows(Object.values(D.servicos_det)).filter(s=>s.lbl).sort((a,b)=>(a.lbl||'').localeCompare(b.lbl||''));
   document.getElementById('sl-items').innerHTML = svcs.map(s=>`<button class="sb-list-item" onclick="openServico('${s.cod}')">${esc(s.lbl)} · ${esc(s.cli)}</button>`).join('');
 }
 
@@ -711,7 +804,5 @@ function render(){
 
 /* ───────── INIT ───────── */
 buildPeriodBar();
-document.getElementById('period-note').textContent = `${mLbl(D.meses[0])}–${mLbl(D.meses[D.meses.length-1])} 2026 · todos os meses`;
 document.getElementById('sb-per').textContent = D.meta.periodo || '';
 buildSidebarLists();
-render();

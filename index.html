@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>dbcl · Legal Ops BI</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-<script src="data.js"></script>
+<script src="data.js?v=20260902-3"></script>
 <style>
 :root{
   --g1:#003C28;--g2:#0F6E56;--g3:#1B8A6B;--g4:#D4EDE5;--bege:#FAF7EC;--neon:#CCFF00;--preto:#23282E;
@@ -45,9 +45,19 @@ button{font-family:inherit}
 /* ───────── TOPBAR ───────── */
 .topbar{background:var(--white);border:1px solid var(--c2);border-radius:var(--r2);padding:10px 14px;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;box-shadow:var(--sh)}
 .tb-label{font-size:11px;font-weight:600;color:var(--c3)}
+.period-control{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.period-granularity{display:flex;gap:2px;background:var(--c1);padding:3px;border-radius:7px}
 .pq{padding:4px 11px;border-radius:5px;border:1px solid var(--c2);background:var(--white);font-size:11px;font-weight:500;color:var(--c3);cursor:pointer;transition:all .12s}
 .pq.active{background:var(--g1);color:var(--white);border-color:var(--g1)}
+.period-select{height:31px;min-width:190px;padding:0 30px 0 10px;border:1px solid var(--c2);border-radius:6px;background:var(--white);color:var(--preto);font:600 11px inherit;cursor:pointer;outline:none}
+.period-select:focus{border-color:var(--g2);box-shadow:0 0 0 2px var(--g4)}
+.custom-period{display:none;align-items:center;gap:6px}.custom-period.open{display:flex}
+.custom-period .period-select{min-width:130px}
+.period-note{font-size:11px;color:var(--g2);font-weight:600;white-space:nowrap}
 .tb-sep{color:var(--c2);font-size:14px}
+.portfolio-toggle{display:flex;gap:2px;background:var(--c1);padding:3px;border-radius:7px}
+.portfolio-btn{padding:5px 11px;border-radius:5px;border:none;background:none;font-size:11px;font-weight:600;color:var(--c3);cursor:pointer}
+.portfolio-btn.active{background:var(--white);color:var(--g1);box-shadow:var(--sh)}
 .rate-toggle{display:flex;gap:2px;background:var(--c1);padding:3px;border-radius:7px;margin-left:auto}
 .rt-btn{padding:5px 13px;border-radius:5px;border:none;background:none;font-size:11px;font-weight:600;color:var(--c3);cursor:pointer;transition:all .14s}
 .rt-btn.active{background:var(--g1);color:var(--neon);box-shadow:var(--sh)}
@@ -182,9 +192,30 @@ table.t tbody tr:hover td{background:#f4f8f4}
 <!-- ═══════════ TOPBAR ═══════════ -->
 <div class="topbar">
   <span class="tb-label">Período</span>
-  <span id="period-btns"></span>
+  <div class="period-control">
+    <div class="period-granularity" id="period-btns">
+      <button class="pq active" data-kind="month" onclick="setPeriodKind('month',this)">Mês</button>
+      <button class="pq" data-kind="quarter" onclick="setPeriodKind('quarter',this)">Trimestre</button>
+      <button class="pq" data-kind="semester" onclick="setPeriodKind('semester',this)">Semestre</button>
+      <button class="pq" data-kind="year" onclick="setPeriodKind('year',this)">Ano</button>
+      <button class="pq" data-kind="custom" onclick="setPeriodKind('custom',this)">Personalizado</button>
+      <button class="pq" data-kind="all" onclick="setPeriodKind('all',this)">Histórico</button>
+    </div>
+    <select class="period-select" id="period-select" aria-label="Escolha o período" onchange="applyPeriodChoice()"></select>
+    <div class="custom-period" id="custom-period">
+      <select class="period-select" id="period-start" aria-label="Mês inicial" onchange="applyCustomPeriod()"></select>
+      <span class="tb-label">até</span>
+      <select class="period-select" id="period-end" aria-label="Mês final" onchange="applyCustomPeriod()"></select>
+    </div>
+  </div>
+  <span class="period-note" id="period-note"></span>
   <span class="tb-sep">|</span>
-  <span class="tb-label" id="period-note"></span>
+  <span class="tb-label">Carteira</span>
+  <div class="portfolio-toggle">
+    <button class="portfolio-btn active" data-carteira="ativos" onclick="setCarteira('ativos')">Ativos</button>
+    <button class="portfolio-btn" data-carteira="inativos" onclick="setCarteira('inativos')">Inativos</button>
+    <button class="portfolio-btn" data-carteira="todos" onclick="setCarteira('todos')">Todos</button>
+  </div>
   <div class="rate-toggle">
     <button class="rt-btn" data-rt="custo" onclick="setRate('custo')">Custo</button>
     <button class="rt-btn active" data-rt="mensal" onclick="setRate('mensal')">Mensal</button>
@@ -342,6 +373,6 @@ table.t tbody tr:hover td{background:#f4f8f4}
 <div class="overlay" id="ov-cliente"><div class="ov-header"><button class="ov-back" onclick="closeOv('cliente')">← Voltar</button><div><div class="ov-title" id="ovc-title"></div><div class="ov-sub" id="ovc-sub"></div></div></div><div class="ov-body" id="ovc-body"></div></div>
 <div class="overlay" id="ov-servico"><div class="ov-header"><button class="ov-back" onclick="closeOv('servico')">← Voltar</button><div><div class="ov-title" id="ovs-title"></div><div class="ov-sub" id="ovs-sub"></div></div></div><div class="ov-body" id="ovs-body"></div></div>
 
-<script src="app.js"></script>
+<script src="app.js?v=20260902-3"></script>
 </body>
 </html>

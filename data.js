@@ -2,7 +2,7 @@ const D = {
   "meta": {
     "periodo": "2024-07 a 2026-08",
     "nota": "Jan/2026 ausente (transição de sistemas). Dados Eleven: 2024-07 a 2025-12. Alocação: 2026-02 em diante.",
-    "gerado_em": "2026-09-02 10:48",
+    "gerado_em": "2026-09-02 11:33",
     "auditoria": {
       "themis_alocacao": {
         "linhas_themis": 23050,
@@ -7502,6 +7502,7 @@ const D = {
       "cli": "Expert Integrado",
       "lbl": "Notificação Extrajudicial — Negociação e Documento Principal",
       "rec": 4000.0,
+      "ativo": true,
       "ok": true,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -7512,6 +7513,7 @@ const D = {
       "cli": "Rioli Participações Societárias",
       "lbl": "Planejamento Societário — Governança e Alinhamento Familiar",
       "rec": 77808.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Felipe",
@@ -7522,6 +7524,7 @@ const D = {
       "cli": "THIAGO RODRIGO FLORES DA CRUZ",
       "lbl": "Reunião Presencial Consultiva — Processo 5000274-78.2016.8.21.0058",
       "rec": 700.0,
+      "ativo": true,
       "ok": true,
       "area": "Empresarial",
       "resp": "Equipe",
@@ -7532,6 +7535,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Notificação Extrajudicial — Descumprimento Contrato G4 e NIUCO",
       "rec": 3500.0,
+      "ativo": true,
       "ok": true,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -7542,6 +7546,7 @@ const D = {
       "cli": "Helio Heluane",
       "lbl": "Planejamento Sucessório — HT Comunicação e HT Corp",
       "rec": 14000.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Gerson",
@@ -7552,6 +7557,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Parecer Contratual — Rescisão Niuco",
       "rec": 7000.0,
+      "ativo": true,
       "ok": true,
       "area": "Contratual",
       "resp": "Thomaz",
@@ -7562,6 +7568,7 @@ const D = {
       "cli": "Guilherme Proença",
       "lbl": "Consulta — Simples",
       "rec": 250.0,
+      "ativo": true,
       "ok": true,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -7572,6 +7579,7 @@ const D = {
       "cli": "Marcio Bitencourte",
       "lbl": "Mudança Regime de Bens — União Estável",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Gerson",
@@ -7582,6 +7590,7 @@ const D = {
       "cli": "Nexia Engenharia",
       "lbl": "Planejamento Tributário — Planejamento Tributário",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Yago",
@@ -7592,6 +7601,7 @@ const D = {
       "cli": "Nexia Engenharia",
       "lbl": "Planejamento Trabalhista — Planejamento",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Trabalhista",
       "resp": "Yago",
@@ -7602,6 +7612,7 @@ const D = {
       "cli": "Texian",
       "lbl": "Elaboração/Revisão Contrato — Rescisão Braskem",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Contratual",
       "resp": "Yago",
@@ -7612,6 +7623,7 @@ const D = {
       "cli": "Paulo Jotz",
       "lbl": "Elaboração/Revisão Contrato — Cessão e Doação",
       "rec": 4800.0,
+      "ativo": true,
       "ok": true,
       "area": "Contratual",
       "resp": "Felipe",
@@ -7622,6 +7634,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Parecer Simples — Rescisão Contrato Think",
       "rec": 7000.0,
+      "ativo": true,
       "ok": true,
       "area": "Contratual",
       "resp": "Thomaz",
@@ -7632,6 +7645,7 @@ const D = {
       "cli": "IMCELER",
       "lbl": "Estruturação de Vesting — Programa de Partnership",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -7642,6 +7656,7 @@ const D = {
       "cli": "IMCELER",
       "lbl": "Planejamento Tributário — Enquadramento e Regimes",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Gerson",
@@ -7652,6 +7667,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Contranotificação — Andrea de Melo Santilli Chanquetti",
       "rec": 2000.0,
+      "ativo": true,
       "ok": true,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -7662,6 +7678,7 @@ const D = {
       "cli": "Bia Baule,Thanks Produções",
       "lbl": "Transação Tributária — Débitos PGFN",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Yago",
@@ -7672,6 +7689,7 @@ const D = {
       "cli": "Austral",
       "lbl": "Registro de Marca — Campus League",
       "rec": 500.0,
+      "ativo": true,
       "ok": true,
       "area": "PI, LGPD e Digital",
       "resp": "Equipe",
@@ -7682,6 +7700,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Contranotificação — Juliana Rodrigues",
       "rec": 2000.0,
+      "ativo": true,
       "ok": true,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -7692,6 +7711,7 @@ const D = {
       "cli": "Produtora Ara",
       "lbl": "Planejamento Tributário — Estrutura Tributária",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Gerson",
@@ -7702,6 +7722,7 @@ const D = {
       "cli": "Produtora Ara",
       "lbl": "Planejamento Trabalhista — Planejamento Trabalhista",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -7712,6 +7733,7 @@ const D = {
       "cli": "Bianca Weiss",
       "lbl": "Revisão Contratual — Parceria Hospitalar",
       "rec": 23000.0,
+      "ativo": true,
       "ok": true,
       "area": "Contratual",
       "resp": "Rodrigo",
@@ -7722,6 +7744,7 @@ const D = {
       "cli": "Welucci",
       "lbl": "Contrato de Investimento — Entrada de Novo Sócio",
       "rec": 25000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -7732,6 +7755,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Afonso Gomes Araujo Santana",
       "rec": 600.0,
+      "ativo": true,
       "ok": true,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -7742,6 +7766,7 @@ const D = {
       "cli": "Andrei Sanson",
       "lbl": "Compra e Venda Imóvel — Consulta",
       "rec": 5500.0,
+      "ativo": true,
       "ok": true,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -7752,6 +7777,7 @@ const D = {
       "cli": "Augusto Heinen",
       "lbl": "Planejamento Sucessório — Patrimônio",
       "rec": 14000.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Felipe",
@@ -7762,6 +7788,7 @@ const D = {
       "cli": "Yuv",
       "lbl": "Alteração Contrato Social — Ajustes em Acordo de Sócios",
       "rec": 2000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Equipe",
@@ -7772,6 +7799,7 @@ const D = {
       "cli": "Luciano Tonetto Feltraco",
       "lbl": "Planejamento Patrimonial e Sucessório — Estrutura Tributária",
       "rec": 10000.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Felipe",
@@ -7782,6 +7810,7 @@ const D = {
       "cli": "Mariana Azambuja",
       "lbl": "Due Diligence e Assessoria Contratual — Operação Imobiliária",
       "rec": 25000.0,
+      "ativo": true,
       "ok": true,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -7792,6 +7821,7 @@ const D = {
       "cli": "Boss4u",
       "lbl": "Análise Processual — Carteira Judicial",
       "rec": 12000.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Gerson",
@@ -7802,6 +7832,7 @@ const D = {
       "cli": "Cromal",
       "lbl": "Revisão Contrato Social — Contratos Societários Simples",
       "rec": 4000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Yago",
@@ -7812,6 +7843,7 @@ const D = {
       "cli": "Skeps",
       "lbl": "Procedimentos Administrativos — Fiscalização MTE",
       "rec": 3000.0,
+      "ativo": true,
       "ok": true,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -7822,6 +7854,7 @@ const D = {
       "cli": "Marcel Collin",
       "lbl": "Elaboração Contrato — Locação Padrão",
       "rec": 4000.0,
+      "ativo": true,
       "ok": true,
       "area": "Contratual",
       "resp": "Felipe",
@@ -7832,6 +7865,7 @@ const D = {
       "cli": "Polpa Brasil",
       "lbl": "Planejamento Patrimonial e Tributário — Reforma Tributária",
       "rec": 35800.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -7842,6 +7876,7 @@ const D = {
       "cli": "Jaime Mattos",
       "lbl": "Elaboração Contrato — Comodato",
       "rec": 2800.0,
+      "ativo": true,
       "ok": true,
       "area": "Imobiliário",
       "resp": "Felipe",
@@ -7852,6 +7887,7 @@ const D = {
       "cli": "Familia Figueira",
       "lbl": "Planejamento Sucessório — Organização Patrimonial",
       "rec": 36000.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Gerson",
@@ -7862,6 +7898,7 @@ const D = {
       "cli": "Fred G Castro (UGAH!)",
       "lbl": "Reestruturação Societária — Governança e Dissolução",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -7872,6 +7909,7 @@ const D = {
       "cli": "Tiago da Veiga Lima Prosperi",
       "lbl": "Compra e Venda Imóvel — Rua Uruguai 277, Conj. 1.041",
       "rec": 4100.0,
+      "ativo": true,
       "ok": true,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -7882,6 +7920,7 @@ const D = {
       "cli": "Lumens Atuarial",
       "lbl": "Planejamento Tributário — Fase 2 Otimização",
       "rec": 18000.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Yago",
@@ -7892,6 +7931,7 @@ const D = {
       "cli": "Eduardo Kappel",
       "lbl": "Consultoria Imobiliária — Avulso",
       "rec": 1621.0,
+      "ativo": true,
       "ok": true,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -7902,6 +7942,7 @@ const D = {
       "cli": "Polpa Brasil",
       "lbl": "Planejamento Societário — Regimento Interno",
       "rec": 15000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -7912,6 +7953,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Contranotificação — Group Contadores Visionários",
       "rec": 2000.0,
+      "ativo": true,
       "ok": true,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -7922,6 +7964,7 @@ const D = {
       "cli": "Bia Baule,Thanks Produções",
       "lbl": "Planejamento Tributário — Dívida Ativa PGFN",
       "rec": 4500.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Yago",
@@ -7932,6 +7975,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Defesa Reclamação Procon — CIP 1491727/2026",
       "rec": 600.0,
+      "ativo": true,
       "ok": true,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -7942,6 +7986,7 @@ const D = {
       "cli": "the 4am culture",
       "lbl": "Planejamento Tributário — Reforma Tributária",
       "rec": 24000.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Yago",
@@ -7952,6 +7997,7 @@ const D = {
       "cli": "Michele Freitag",
       "lbl": "Due Diligence Imobiliária — Operações Complexas",
       "rec": 2000.0,
+      "ativo": true,
       "ok": true,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -7962,6 +8008,7 @@ const D = {
       "cli": "JLP Participações",
       "lbl": "Consulta sobre herança",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -7972,6 +8019,7 @@ const D = {
       "cli": "CELSO OVALLE",
       "lbl": "Planejamento Sucessório — Diagnóstico Patrimonial",
       "rec": 25000.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -7982,6 +8030,7 @@ const D = {
       "cli": "Oranggi Viagens",
       "lbl": "Planejamento Tributário — Reestruturação Regime",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Gerson",
@@ -7992,6 +8041,7 @@ const D = {
       "cli": "Oranggi Viagens",
       "lbl": "Planejamento Societário — Holding e Governança",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8002,6 +8052,7 @@ const D = {
       "cli": "Oranggi Viagens",
       "lbl": "Planejamento Tributário — Dividendos e Proteção Patrimonial",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Gerson",
@@ -8012,6 +8063,7 @@ const D = {
       "cli": "Oranggi Viagens",
       "lbl": "Partnership e Vesting — Retenção de Talentos",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8022,6 +8074,7 @@ const D = {
       "cli": "Oranggi Viagens",
       "lbl": "Revisão Contratual e Compliance — LGPD",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Contratual",
       "resp": "Gerson",
@@ -8032,6 +8085,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Alteração Contratual — OBK Comunicações",
       "rec": 2500.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Equipe",
@@ -8042,6 +8096,7 @@ const D = {
       "cli": "Maurício Azevedo",
       "lbl": "Procuração Pública — Gestão de Ativos",
       "rec": 2500.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Thomaz",
@@ -8052,6 +8107,7 @@ const D = {
       "cli": "CGH Esquina Gaúcha",
       "lbl": "Análise Preliminar M&A — Solidez Comprador",
       "rec": 5000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -8062,6 +8118,7 @@ const D = {
       "cli": "\"Carol Bolina Industria\n\"",
       "lbl": "Procedimentos Administrativos — MPT4",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Trabalhista",
       "resp": "Equipe",
@@ -8072,6 +8129,7 @@ const D = {
       "cli": "MOBYLOG TECNOLOGIA DA INFORMACAO LTDA (CREARE)",
       "lbl": "Defesa Administrativa — MPT15",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Trabalhista",
       "resp": "Equipe",
@@ -8082,6 +8140,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Defesa Reclamação Procon — TIM",
       "rec": 600.0,
+      "ativo": true,
       "ok": true,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8092,6 +8151,7 @@ const D = {
       "cli": "Randoncorp",
       "lbl": "Procedimentos Administrativos — Municípios",
       "rec": 10000.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Rodrigo",
@@ -8102,6 +8162,7 @@ const D = {
       "cli": "TM Serviços Médicos Ltda",
       "lbl": "Planejamento Tributário — Análise Estrutura e Dividendos",
       "rec": 12000.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Yago",
@@ -8112,6 +8173,7 @@ const D = {
       "cli": "Hug Engenharia",
       "lbl": "Defesa Prévia — MPT",
       "rec": 6000.0,
+      "ativo": true,
       "ok": true,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -8122,6 +8184,7 @@ const D = {
       "cli": "Adv Karinne Stahlke",
       "lbl": "Consulta tributária",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Gerson",
@@ -8132,6 +8195,7 @@ const D = {
       "cli": "Rodrigo Carlan",
       "lbl": "Defesa Administrativa — OAB/RS",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Publico",
       "resp": "Rodrigo",
@@ -8142,6 +8206,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Defesa Reclamação Procon — CIP 1391596/2026",
       "rec": 600.0,
+      "ativo": true,
       "ok": true,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8152,6 +8217,7 @@ const D = {
       "cli": "Pedro Lima Vieira",
       "lbl": "Planejamento Patrimonial — Fase 1 Estudo",
       "rec": 14000.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -8162,6 +8228,7 @@ const D = {
       "cli": "Helio Luiz Prosperi",
       "lbl": "Serviços Imobiliários — Contrato Locação 1.041",
       "rec": 3000.0,
+      "ativo": true,
       "ok": true,
       "area": "Contratual",
       "resp": "Thomaz",
@@ -8172,6 +8239,7 @@ const D = {
       "cli": "Forigo Park Tur",
       "lbl": "Planejamento Patrimonial Sucessório — Holding Familiar",
       "rec": 6370.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Gerson",
@@ -8182,6 +8250,7 @@ const D = {
       "cli": "Lumens Atuarial",
       "lbl": "Planejamento Tributário — Análise Preliminar",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Yago",
@@ -8209,6 +8278,7 @@ const D = {
       "cli": "Oak's Burritos",
       "lbl": "Livros Societários — Organização e Formalização",
       "rec": 5000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Felipe",
@@ -8219,6 +8289,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Procon - RENATA SOUZA",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8229,6 +8300,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Procon - ARIEL SIMAO",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8239,6 +8311,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Procon - WELLINGTON JACOB",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8249,6 +8322,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "EXTRAJUDICIAL – Contranotificação – G4 Skills",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8259,6 +8333,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Parecer sobre Validade de Assinatura por meio de Check Box",
       "rec": 16000.0,
+      "ativo": false,
       "ok": false,
       "area": "Contratual",
       "resp": "Thomaz",
@@ -8269,6 +8344,7 @@ const D = {
       "cli": "Genova IA For Business",
       "lbl": "Operações Societárias — Constituição e Acordo de Vesting",
       "rec": 16800.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8279,6 +8355,7 @@ const D = {
       "cli": "Rhello RH (Ecco Talent)",
       "lbl": "Notificação Extrajudicial — Inadimplemento Contratual",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -8289,6 +8366,7 @@ const D = {
       "cli": "G3 CONSTRUÇÕES",
       "lbl": "Revisão Contratual — Loteamento",
       "rec": 3000.0,
+      "ativo": true,
       "ok": true,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -8299,6 +8377,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Defesa Procon G4 - Rodolfo Palma",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8309,6 +8388,7 @@ const D = {
       "cli": "Helio Heluane",
       "lbl": "Consulta Imobiliária — Registral",
       "rec": 900.0,
+      "ativo": true,
       "ok": true,
       "area": "Imobiliário",
       "resp": "Gerson",
@@ -8319,6 +8399,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Defesa Reclamação Procon",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8329,6 +8410,7 @@ const D = {
       "cli": "A Mentoria",
       "lbl": "Planejamento Trabalhista — Finalização de Projeto",
       "rec": 1621.0,
+      "ativo": true,
       "ok": true,
       "area": "Trabalhista",
       "resp": "Equipe",
@@ -8339,6 +8421,7 @@ const D = {
       "cli": "\"Severas Merchandising\n\"",
       "lbl": "Procedimentos Administrativos — Acompanhamento Fiscalizatório",
       "rec": 2000.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Felipe",
@@ -8349,6 +8432,7 @@ const D = {
       "cli": "\"Severas Merchandising\n\"",
       "lbl": "Defesa Administrativa — PIS/COFINS Mão de Obra Temporária",
       "rec": 18000.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Felipe",
@@ -8359,6 +8443,7 @@ const D = {
       "cli": "Vinteo",
       "lbl": "Partnership Vesting — Estruturação Societária",
       "rec": 16000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8369,6 +8454,7 @@ const D = {
       "cli": "Modale",
       "lbl": "Vesting — Planejamento Societário",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8379,6 +8465,7 @@ const D = {
       "cli": "Ortoradio",
       "lbl": "DISTRATO PJ",
       "rec": 500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Equipe",
@@ -8389,6 +8476,7 @@ const D = {
       "cli": "Ronaldo Carvalho",
       "lbl": "Planejamento Sucessório — Levantamento e Estruturação Patrimonial",
       "rec": 14000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Yago",
@@ -8399,6 +8487,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Instrumento de Acordo",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8409,6 +8498,7 @@ const D = {
       "cli": "Universo ABA",
       "lbl": "Consulta Tributária — Processo 5025447-56.2025.4.02.5101",
       "rec": 1500.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Felipe",
@@ -8419,6 +8509,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Procon Matheus Druzian",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8429,6 +8520,7 @@ const D = {
       "cli": "Ortoradio",
       "lbl": "Consultoria Contratual — Cláusula PJ",
       "rec": 500.0,
+      "ativo": true,
       "ok": true,
       "area": "Trabalhista",
       "resp": "Equipe",
@@ -8439,6 +8531,7 @@ const D = {
       "cli": "Beeno",
       "lbl": "Acordo de Sócios — Vitor e Alan",
       "rec": 10000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8449,6 +8542,7 @@ const D = {
       "cli": "WBP",
       "lbl": "Planejamento Societário — Governança",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8459,6 +8553,7 @@ const D = {
       "cli": "Flavia Poletto",
       "lbl": "Planejamento Tributário — Reforma Tributária CBS/IBS",
       "rec": 40800.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Gerson",
@@ -8469,6 +8564,7 @@ const D = {
       "cli": "V4 Peretto (POA)",
       "lbl": "Planejamento Patrimonial — Reorganização Empresarial",
       "rec": 12000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8479,6 +8575,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Notif. Extrajudicial",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Equipe",
@@ -8489,6 +8586,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Procon Marcos Vinicius Cavalcante",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8499,6 +8597,7 @@ const D = {
       "cli": "Randoncorp",
       "lbl": "M&A Estruturação Societária — Fundituba",
       "rec": 39200.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -8509,6 +8608,7 @@ const D = {
       "cli": "Blow Escova",
       "lbl": "Partnership Vesting — Franqueados e PJs",
       "rec": 18000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8519,6 +8619,7 @@ const D = {
       "cli": "Organica Digital",
       "lbl": "Revisão Contrato — Cláusula Comercial",
       "rec": 1500.0,
+      "ativo": true,
       "ok": true,
       "area": "Contratual",
       "resp": "Gerson",
@@ -8529,6 +8630,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Defesa Procon",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8539,6 +8641,7 @@ const D = {
       "cli": "Bripaza",
       "lbl": "Planejamento Tributário — Reestruturação",
       "rec": 36000.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Rodrigo",
@@ -8549,6 +8652,7 @@ const D = {
       "cli": "Bripaza",
       "lbl": "Planejamento Sucessório — Estruturação de Holdings",
       "rec": 36000.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Rodrigo",
@@ -8559,6 +8663,7 @@ const D = {
       "cli": "Carolina Merten",
       "lbl": "Consultoria Trabalhista — Desligamento de Secretária",
       "rec": 4000.0,
+      "ativo": true,
       "ok": true,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -8569,6 +8674,7 @@ const D = {
       "cli": "Henrique Beier",
       "lbl": "Revisão Contrato — Cessão Direitos Autorais",
       "rec": 1600.0,
+      "ativo": true,
       "ok": true,
       "area": "Contratual",
       "resp": "Felipe",
@@ -8579,6 +8685,7 @@ const D = {
       "cli": "Randoncorp",
       "lbl": "M&A com Due Diligence — Aquisição de Ativos",
       "rec": 36000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -8589,6 +8696,7 @@ const D = {
       "cli": "4C Digital",
       "lbl": "M&A Sell Side — Entrada de Sócio",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8599,6 +8707,7 @@ const D = {
       "cli": "4C Digital",
       "lbl": "Operações Societárias — Participação Acionária e M&A",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8609,6 +8718,7 @@ const D = {
       "cli": "Rômulo Gottlieb",
       "lbl": "Reestruturação de Passivos — Reorganização Empresarial",
       "rec": 36000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8619,6 +8729,7 @@ const D = {
       "cli": "Contraste",
       "lbl": "Acordo de Sócios — Guilherme",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8629,6 +8740,7 @@ const D = {
       "cli": "Contraste",
       "lbl": "Planejamento Tributário — Reforma Fiscal",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8639,6 +8751,7 @@ const D = {
       "cli": "Península Arquitetura",
       "lbl": "Planejamento Tributário — Distribuição de Lucros",
       "rec": 19950.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Gerson",
@@ -8649,6 +8762,7 @@ const D = {
       "cli": "Roberto André Poli Kopper,Cláudio Rangel Codorniz,Paulo Renato Mothes de Moraes",
       "lbl": "Operações Imobiliárias — Gazzola Incorporadora",
       "rec": 16500.0,
+      "ativo": true,
       "ok": true,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -8659,6 +8773,7 @@ const D = {
       "cli": "Rafael Wassler",
       "lbl": "Planejamento Patrimonial — Holding Imobiliária",
       "rec": 50904.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Thomaz",
@@ -8669,6 +8784,7 @@ const D = {
       "cli": "Vibees",
       "lbl": "Planejamento Trabalhista — PJ",
       "rec": 5000.0,
+      "ativo": true,
       "ok": true,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -8679,6 +8795,7 @@ const D = {
       "cli": "Maria Amenaide de Oliveira",
       "lbl": "Parcelamento débito",
       "rec": 1200.0,
+      "ativo": false,
       "ok": false,
       "area": "Publico",
       "resp": "Thomaz",
@@ -8689,6 +8806,7 @@ const D = {
       "cli": "Akroz Telematics",
       "lbl": "Consultoria Tributária — TTD",
       "rec": 3200.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Felipe",
@@ -8699,6 +8817,7 @@ const D = {
       "cli": "Vanessa da Veiga Lima",
       "lbl": "PCV sem due",
       "rec": 2900.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -8709,6 +8828,7 @@ const D = {
       "cli": "Modale",
       "lbl": "Tributário ebook",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Rodrigo",
@@ -8719,6 +8839,7 @@ const D = {
       "cli": "Happy House",
       "lbl": "Planejamento Tributário — Ebook",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Rodrigo",
@@ -8729,6 +8850,7 @@ const D = {
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "Trabalhista",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Equipe",
@@ -8739,6 +8861,7 @@ const D = {
       "cli": "Fibraconecta",
       "lbl": "M&A Tributário — Estruturação Alienação",
       "rec": 50000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8749,6 +8872,7 @@ const D = {
       "cli": "StaffRH",
       "lbl": "Saída da Sócia",
       "rec": 9000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -8759,6 +8883,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — MLB Acessórios Automotivos",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8769,6 +8894,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Consultoria Societária — G4 Holding",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Equipe",
@@ -8779,6 +8905,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Defesa Reclamação Procon — Douglas Henrique Lima de Paula",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -8789,6 +8916,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Aprovação de Contas — 5 CNPJs",
       "rec": 10000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Equipe",
@@ -8799,6 +8927,7 @@ const D = {
       "cli": "Carine de Pauli",
       "lbl": "Planejamento Sucessório — Herança Iloir de Pauli",
       "rec": 18000.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Gerson",
@@ -8809,6 +8938,7 @@ const D = {
       "cli": "Welucci",
       "lbl": "Vesting — Contrato de Parceria",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8819,6 +8949,7 @@ const D = {
       "cli": "4C Digital",
       "lbl": "Planejamento Sucessório — Estruturação Societária e Tributária",
       "rec": 13680.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8829,6 +8960,7 @@ const D = {
       "cli": "\"Severas Merchandising\n\"",
       "lbl": "Planejamento Tributário — Distribuição de Lucros",
       "rec": 72000.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Gerson",
@@ -8839,6 +8971,7 @@ const D = {
       "cli": "\"Severas Merchandising\n\"",
       "lbl": "Planejamento Patrimonial e Sucessório — Empresa",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8849,6 +8982,7 @@ const D = {
       "cli": "\"Severas Merchandising\n\"",
       "lbl": "Planejamento Sucessório — Sócios",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8859,6 +8993,7 @@ const D = {
       "cli": "Dataglass",
       "lbl": "Consultoria — Alteração Contrato Social",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -8869,6 +9004,7 @@ const D = {
       "cli": "Oak's Burritos",
       "lbl": "Consultivo — Aumento de Capital e Alteração JUCIS",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -8879,6 +9015,7 @@ const D = {
       "cli": "Roberto André Poli Kopper",
       "lbl": "Consulta Jurídica — Mandato RSP",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -8889,6 +9026,7 @@ const D = {
       "cli": "Família de Pauli",
       "lbl": "Planejamento Sucessório — Inventário e Holding Patrimonial",
       "rec": 25000.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Gerson",
@@ -8899,6 +9037,7 @@ const D = {
       "cli": "Pneumolab",
       "lbl": "Consultoria — Trespasse Clínica HMV",
       "rec": 15000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -8909,6 +9048,7 @@ const D = {
       "cli": "Estudio Nomade",
       "lbl": "Consultivo — Notificação Ifood",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -8919,6 +9059,7 @@ const D = {
       "cli": "Vecor",
       "lbl": "Acordo de Sócios — Consultivo",
       "rec": 12000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -8929,6 +9070,7 @@ const D = {
       "cli": "Universo ABA",
       "lbl": "Trabalhista",
       "rec": 16200.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -8939,6 +9081,7 @@ const D = {
       "cli": "Mariangela Couto",
       "lbl": "Parecer Consultivo — Aditivo Compra e Venda",
       "rec": 10000.0,
+      "ativo": true,
       "ok": true,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -8949,6 +9092,7 @@ const D = {
       "cli": "Roberto Bertó",
       "lbl": "Constituição Empresarial — Roberto",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -8959,6 +9103,7 @@ const D = {
       "cli": "Comercial Martini",
       "lbl": "Assessoria Rescisão — Acordo Extrajudicial",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -8969,6 +9114,7 @@ const D = {
       "cli": "Eliseth Laitano",
       "lbl": "Assessoria Imobiliária — Cobrança de Honorários",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -8979,6 +9125,7 @@ const D = {
       "cli": "Yuv",
       "lbl": "M&A — Avaliação de Comprador",
       "rec": 25000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Felipe",
@@ -8989,6 +9136,7 @@ const D = {
       "cli": "Arqexpress",
       "lbl": "Parecer — Distrato B3P",
       "rec": 1250.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -8999,6 +9147,7 @@ const D = {
       "cli": "Catena Seguros",
       "lbl": "Assessoria Prévia — Acidente e Seguro",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -9009,6 +9158,7 @@ const D = {
       "cli": "Brasil Paralelo",
       "lbl": "Alvará Judicial — Menores",
       "rec": 25000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -9019,6 +9169,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Defesa Procon — DIVS Segurança e Tecnologia",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -9029,6 +9180,7 @@ const D = {
       "cli": "Maria Amenaide de Oliveira",
       "lbl": "Levantamento Certidões — SC/RS",
       "rec": 840.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -9039,6 +9191,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Leticia Santos Cavalcante",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -9049,6 +9202,7 @@ const D = {
       "cli": "Paulo Renato Jotz",
       "lbl": "Constituição Societária — Holding de Ativos",
       "rec": 8000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -9059,6 +9213,7 @@ const D = {
       "cli": "Providence Radiologia",
       "lbl": "Contrato — Ernesto Dorneles",
       "rec": 5400.0,
+      "ativo": false,
       "ok": false,
       "area": "Contratual",
       "resp": "Rodrigo",
@@ -9069,6 +9224,7 @@ const D = {
       "cli": "Konrad Georg",
       "lbl": "Parecer Consultivo — Direito de Passagem",
       "rec": 1518.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -9079,6 +9235,7 @@ const D = {
       "cli": "YUOOL",
       "lbl": "Consultoria Jurídica — Demissão",
       "rec": 3036.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -9089,6 +9246,7 @@ const D = {
       "cli": "Kit Lanche Express",
       "lbl": "Estruturação de Precificação",
       "rec": 27000.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Gerson",
@@ -9099,6 +9257,7 @@ const D = {
       "cli": "André Ribeiro",
       "lbl": "Consultoria — Constituição de Holding e Veículo de Investimento",
       "rec": 8000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -9109,6 +9268,7 @@ const D = {
       "cli": "Fernando Toschi",
       "lbl": "Constituição de Holding — Concentração de Bens e Ações",
       "rec": 8000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -9119,6 +9279,7 @@ const D = {
       "cli": "Quater Comunicacao",
       "lbl": "Consultoria Cobrança Extrajudicial — D.G.I Assessoria",
       "rec": 1518.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -9129,6 +9290,7 @@ const D = {
       "cli": "Lisandro (reclamante)",
       "lbl": "Consulta Processual Trabalhista",
       "rec": 300.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Equipe",
@@ -9139,6 +9301,7 @@ const D = {
       "cli": "Grupo TRV",
       "lbl": "Assessoria IPO — Validação Jurídica",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -9149,6 +9312,7 @@ const D = {
       "cli": "Rudi Morandini",
       "lbl": "Acompanhamento Reunião — Haus Incorporadora",
       "rec": 2083.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Equipe",
@@ -9159,6 +9323,7 @@ const D = {
       "cli": "Rudi Morandini",
       "lbl": "Consultoria — Aditivo Contratual Obra",
       "rec": 4200.0,
+      "ativo": false,
       "ok": false,
       "area": "Contratual",
       "resp": "Thomaz",
@@ -9169,6 +9334,7 @@ const D = {
       "cli": "Fly 51",
       "lbl": "Operações Societárias — Estruturação e Acordo de Sócios",
       "rec": 42000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -9179,6 +9345,7 @@ const D = {
       "cli": "Laçador de Ofertas",
       "lbl": "Defesa Tributária — Procedimento Administrativo",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Bruno",
@@ -9189,6 +9356,7 @@ const D = {
       "cli": "Randoncorp",
       "lbl": "M&A Due Diligence — Aquisição de Bens",
       "rec": 26000.0,
+      "ativo": true,
       "ok": true,
       "area": "Imobiliário",
       "resp": "Gerson",
@@ -9199,6 +9367,7 @@ const D = {
       "cli": "Guilherme Proença",
       "lbl": "Guilherme Proença",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -9209,6 +9378,7 @@ const D = {
       "cli": "Edy Tozzo",
       "lbl": "Edy Tozzo",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -9219,6 +9389,7 @@ const D = {
       "cli": "Arqexpress",
       "lbl": "Defesa Administrativa — CAU Processo 43126",
       "rec": 4050.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Thomaz",
@@ -9229,6 +9400,7 @@ const D = {
       "cli": "Lumens Atuarial",
       "lbl": "Lumens Atuarial",
       "rec": 3600.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -9239,6 +9411,7 @@ const D = {
       "cli": "Espaço Jabuticá",
       "lbl": "Espaço Jabuticá",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -9249,6 +9422,7 @@ const D = {
       "cli": "Clinica Gestare",
       "lbl": "Acordo de Sócios — Constituição",
       "rec": 9000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Thomaz",
@@ -9259,6 +9433,7 @@ const D = {
       "cli": "Rafael Wassler",
       "lbl": "Rafael Wassler",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -9269,6 +9444,7 @@ const D = {
       "cli": "Estudio Nomade",
       "lbl": "Revisão Contratual — Disney",
       "rec": 4800.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -9279,6 +9455,7 @@ const D = {
       "cli": "Movarte",
       "lbl": "Movarte",
       "rec": 18000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -9289,6 +9466,7 @@ const D = {
       "cli": "Rafael Wassler",
       "lbl": "Rafael Wassler",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -9299,6 +9477,7 @@ const D = {
       "cli": "Orla Construtora",
       "lbl": "Orla Construtora",
       "rec": 2277.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Rodrigo",
@@ -9309,6 +9488,7 @@ const D = {
       "cli": "Márcio Furtado",
       "lbl": "Márcio Furtado",
       "rec": 2140.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -9319,6 +9499,7 @@ const D = {
       "cli": "Barauna",
       "lbl": "Barauna",
       "rec": 10500.0,
+      "ativo": false,
       "ok": false,
       "area": "Contratual",
       "resp": "Gerson",
@@ -9329,6 +9510,7 @@ const D = {
       "cli": "Organica Digital",
       "lbl": "Trabalhista",
       "rec": 13300.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Equipe",
@@ -9339,6 +9521,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -9349,6 +9532,7 @@ const D = {
       "cli": "Lucimar Oliveira",
       "lbl": "Lucimar Oliveira",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Felipe",
@@ -9359,6 +9543,7 @@ const D = {
       "cli": "Solid Arquitetura de Vidros",
       "lbl": "Solid Arquitetura de Vidros",
       "rec": 2700.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -9369,6 +9554,7 @@ const D = {
       "cli": "Suli Participações",
       "lbl": "Suli Participações",
       "rec": 10000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Gerson",
@@ -9379,6 +9565,7 @@ const D = {
       "cli": "JFS Produtos Alimentícios",
       "lbl": "JFS Produtos Alimentícios",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -9389,6 +9576,7 @@ const D = {
       "cli": "Kesh Bank",
       "lbl": "Kesh Bank",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Contratual",
       "resp": "Gerson",
@@ -9399,6 +9587,7 @@ const D = {
       "cli": "João Felipe Osório Justo",
       "lbl": "João Felipe Osório Justo",
       "rec": 4320.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -9409,6 +9598,7 @@ const D = {
       "cli": "Daniel Pocztaruk",
       "lbl": "Daniel Pocztaruk",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -9419,6 +9609,7 @@ const D = {
       "cli": "Daniel Pocztaruk",
       "lbl": "Daniel Pocztaruk",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -9429,6 +9620,7 @@ const D = {
       "cli": "Daniel Pocztaruk",
       "lbl": "Daniel Pocztaruk",
       "rec": 4500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -9439,6 +9631,7 @@ const D = {
       "cli": "DBI Contabilidade",
       "lbl": "DBI Contabilidade",
       "rec": 750.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -9449,6 +9642,7 @@ const D = {
       "cli": "Gestão DS",
       "lbl": "Gestão DS",
       "rec": 14900.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -9459,6 +9653,7 @@ const D = {
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "Trabalhista",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Equipe",
@@ -9494,6 +9689,7 @@ const D = {
       "cli": "Wine Locals",
       "lbl": "Wine Locals",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Equipe",
@@ -9504,6 +9700,7 @@ const D = {
       "cli": "A Mentoria",
       "lbl": "Acordo de Sócios — Consultivo",
       "rec": 5000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Thomaz",
@@ -9543,6 +9740,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Equipe",
@@ -9553,6 +9751,7 @@ const D = {
       "cli": "Ziel",
       "lbl": "Ziel",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Contratual",
       "resp": "Felipe",
@@ -9563,6 +9762,7 @@ const D = {
       "cli": "StaffRH",
       "lbl": "StaffRH",
       "rec": 900.0,
+      "ativo": false,
       "ok": false,
       "area": "Contratual",
       "resp": "Gerson",
@@ -9573,6 +9773,7 @@ const D = {
       "cli": "Jaime Mattos",
       "lbl": "Planejamento Sucessório — Testamentos",
       "rec": 11400.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Felipe",
@@ -9583,6 +9784,7 @@ const D = {
       "cli": "Marcelo Castellani",
       "lbl": "Marcelo Castellani",
       "rec": 1200.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -9593,6 +9795,7 @@ const D = {
       "cli": "Mesa",
       "lbl": "Mesa",
       "rec": 1850.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -9603,6 +9806,7 @@ const D = {
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -9613,6 +9817,7 @@ const D = {
       "cli": "Libel Kitchen",
       "lbl": "Libel Kitchen",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Equipe",
@@ -9623,6 +9828,7 @@ const D = {
       "cli": "Wine Locals",
       "lbl": "Wine Locals",
       "rec": 2518.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Equipe",
@@ -9633,6 +9839,7 @@ const D = {
       "cli": "Paipe",
       "lbl": "Paipe",
       "rec": 12000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -9643,6 +9850,7 @@ const D = {
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
       "rec": 7800.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -9653,6 +9861,7 @@ const D = {
       "cli": "A Mentoria",
       "lbl": "Contratos de Investimento — Mútuo Conversível",
       "rec": 24740.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Thomaz",
@@ -9663,6 +9872,7 @@ const D = {
       "cli": "Rhello RH (Ecco Talent)",
       "lbl": "Rhello RH (Ecco Talent)",
       "rec": 4250.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -9673,6 +9883,7 @@ const D = {
       "cli": "Mesa",
       "lbl": "Mesa",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Contratual",
       "resp": "Thomaz",
@@ -9683,6 +9894,7 @@ const D = {
       "cli": "Rhello RH (Ecco Talent)",
       "lbl": "Rhello RH (Ecco Talent)",
       "rec": 4250.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -9693,6 +9905,7 @@ const D = {
       "cli": "Daricanela",
       "lbl": "Daricanela",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -9703,6 +9916,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Contratual",
       "resp": "Thomaz",
@@ -9713,6 +9927,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
       "rec": 2277.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Equipe",
@@ -9723,6 +9938,7 @@ const D = {
       "cli": "Rafael Wassler",
       "lbl": "Rafael Wassler",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -9733,6 +9949,7 @@ const D = {
       "cli": "Estudio Nomade",
       "lbl": "Estudio Nomade",
       "rec": 1250.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -9743,6 +9960,7 @@ const D = {
       "cli": "Skeps",
       "lbl": "Skeps",
       "rec": 15000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -9753,6 +9971,7 @@ const D = {
       "cli": "Paulo Satt",
       "lbl": "Paulo Satt",
       "rec": 1200.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -9763,6 +9982,7 @@ const D = {
       "cli": "Ortoradio",
       "lbl": "Ortoradio",
       "rec": 7500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -9773,6 +9993,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
       "rec": 3800.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Equipe",
@@ -9783,6 +10004,7 @@ const D = {
       "cli": "TEXS",
       "lbl": "Acordo de Sócios Bootis",
       "rec": 22200.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -9793,6 +10015,7 @@ const D = {
       "cli": "Andrei Sanson",
       "lbl": "Andrei Sanson",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -9803,6 +10026,7 @@ const D = {
       "cli": "CB Saneamento",
       "lbl": "CB Saneamento",
       "rec": 13000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Bruno",
@@ -9813,6 +10037,7 @@ const D = {
       "cli": "Frutas Brauna",
       "lbl": "Frutas Brauna",
       "rec": 9000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -9823,6 +10048,7 @@ const D = {
       "cli": "RS Recicla",
       "lbl": "RS Recicla",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Penal",
       "resp": "Thomaz",
@@ -9833,6 +10059,7 @@ const D = {
       "cli": "Join Marketing",
       "lbl": "Consultoria por Horas — Assessoria Geral",
       "rec": 0.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -9843,6 +10070,7 @@ const D = {
       "cli": "Kit Lanche Express",
       "lbl": "Kit Lanche Express",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Gerson",
@@ -9853,6 +10081,7 @@ const D = {
       "cli": "Ocupe Digital",
       "lbl": "Acordo de Sócios",
       "rec": 7500.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -9884,6 +10113,7 @@ const D = {
       "cli": "R3versa",
       "lbl": "R3versa",
       "rec": 500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Equipe",
@@ -9894,6 +10124,7 @@ const D = {
       "cli": "\"Dev.io (DEVIO SOFTWARES INTELIGENTES LTDA)\n\n\"",
       "lbl": "\"Dev.io (DEVIO SOFTWARES INTELIGENTES LTDA)\n\n\"",
       "rec": 9000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -9904,6 +10135,7 @@ const D = {
       "cli": "Jaime Mattos",
       "lbl": "Planejamento Sucessório — Patrimonial",
       "rec": 14000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Felipe",
@@ -9947,6 +10179,7 @@ const D = {
       "cli": "Multi Solution",
       "lbl": "Retirada de Sócio",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -9957,6 +10190,7 @@ const D = {
       "cli": "Edy Sczepanik",
       "lbl": "Edy Sczepanik",
       "rec": 20000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Bruno",
@@ -9967,6 +10201,7 @@ const D = {
       "cli": "Daniel Pocztaruk",
       "lbl": "Daniel Pocztaruk",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -9977,6 +10212,7 @@ const D = {
       "cli": "Cultura na Prática (CNP)",
       "lbl": "Cultura na Prática (CNP)",
       "rec": 15080.0,
+      "ativo": false,
       "ok": false,
       "area": "Full service",
       "resp": "Gerson",
@@ -9987,6 +10223,7 @@ const D = {
       "cli": "YUOOL",
       "lbl": "YUOOL",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -9997,6 +10234,7 @@ const D = {
       "cli": "Akroz Telematics",
       "lbl": "Akroz Telematics",
       "rec": 14400.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Equipe",
@@ -10007,6 +10245,7 @@ const D = {
       "cli": "Acqua Nobilis",
       "lbl": "Vesting Cleriston",
       "rec": 10500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -10017,6 +10256,7 @@ const D = {
       "cli": "Acqua Nobilis",
       "lbl": "Trabalhista",
       "rec": 10500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -10027,6 +10267,7 @@ const D = {
       "cli": "Gabriel Bressani",
       "lbl": "Gabriel Bressani",
       "rec": 750.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -10037,6 +10278,7 @@ const D = {
       "cli": "Estudio Nomade",
       "lbl": "Estudio Nomade",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Contratual",
       "resp": "Rodrigo",
@@ -10047,6 +10289,7 @@ const D = {
       "cli": "Daniel Pocztaruk",
       "lbl": "Daniel Pocztaruk",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -10057,6 +10300,7 @@ const D = {
       "cli": "Valkiria",
       "lbl": "Valkiria",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Bruno",
@@ -10067,6 +10311,7 @@ const D = {
       "cli": "Rodl e Partner",
       "lbl": "Rodl e Partner",
       "rec": 22000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -10077,6 +10322,7 @@ const D = {
       "cli": "Austral",
       "lbl": "Austral",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -10087,6 +10333,7 @@ const D = {
       "cli": "Cassiano Vilar",
       "lbl": "Cassiano Vilar",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -10097,6 +10344,7 @@ const D = {
       "cli": "Pedro Stephanou",
       "lbl": "Planejamento Sucessório — Irakles",
       "rec": 14000.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Thomaz",
@@ -10107,6 +10355,7 @@ const D = {
       "cli": "Rafael Melo",
       "lbl": "Rafael Melo",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -10117,6 +10366,7 @@ const D = {
       "cli": "Daniel Pocztaruk",
       "lbl": "Daniel Pocztaruk",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -10127,6 +10377,7 @@ const D = {
       "cli": "Odair Busoli Filho",
       "lbl": "Notificação Extrajudicial — XP",
       "rec": 3036.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -10137,6 +10388,7 @@ const D = {
       "cli": "Pedro Stephanou",
       "lbl": "Pedro Stephanou",
       "rec": 6375.0,
+      "ativo": false,
       "ok": false,
       "area": "Penal",
       "resp": "Thomaz",
@@ -10147,6 +10399,7 @@ const D = {
       "cli": "Gyn Resíduos/Bio Resíduos",
       "lbl": "Gyn Resíduos/Bio Resíduos",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -10157,6 +10410,7 @@ const D = {
       "cli": "Pedro Stephanou",
       "lbl": "Pedro Stephanou",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Penal",
       "resp": "Thomaz",
@@ -10167,6 +10421,7 @@ const D = {
       "cli": "Bruna Bortolato",
       "lbl": "Bruna Bortolato",
       "rec": 4500.0,
+      "ativo": false,
       "ok": false,
       "area": "Contratual",
       "resp": "Bruno",
@@ -10177,6 +10432,7 @@ const D = {
       "cli": "Flowork",
       "lbl": "Flowork",
       "rec": 18600.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -10187,6 +10443,7 @@ const D = {
       "cli": "Smart Neorama",
       "lbl": "Smart Neorama",
       "rec": 18000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -10197,6 +10454,7 @@ const D = {
       "cli": "Piece Digital",
       "lbl": "Piece Digital",
       "rec": 25000.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Gerson",
@@ -10207,6 +10465,7 @@ const D = {
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
       "rec": 15000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Bruno",
@@ -10217,6 +10476,7 @@ const D = {
       "cli": "Leads For You",
       "lbl": "Revisão Contratual — Comercial",
       "rec": 10500.0,
+      "ativo": true,
       "ok": true,
       "area": "Contratual",
       "resp": "Gerson",
@@ -10227,6 +10487,7 @@ const D = {
       "cli": "Leads For You",
       "lbl": "Planejamento Tributário — Estudo Consultivo",
       "rec": 10500.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Gerson",
@@ -10237,6 +10498,7 @@ const D = {
       "cli": "Leads For You",
       "lbl": "Partnership/Vesting — Estruturação Societária",
       "rec": 10500.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -10247,6 +10509,7 @@ const D = {
       "cli": "Leads For You",
       "lbl": "Trabalhista",
       "rec": 10500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -10257,6 +10520,7 @@ const D = {
       "cli": "Leads For You",
       "lbl": "Acordo de Sócios — Vesting",
       "rec": 10500.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -10267,6 +10531,7 @@ const D = {
       "cli": "Austral",
       "lbl": "Austral",
       "rec": 5800.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -10277,6 +10542,7 @@ const D = {
       "cli": "BBA Mentorias e Cursos",
       "lbl": "Partnership e Vesting — Acordo de Sócios",
       "rec": 24000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -10328,6 +10594,7 @@ const D = {
       "cli": "VS Holding",
       "lbl": "VS Holding",
       "rec": 15000.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Rodrigo",
@@ -10338,6 +10605,7 @@ const D = {
       "cli": "VS Holding",
       "lbl": "VS Holding",
       "rec": 12000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Rodrigo",
@@ -10348,6 +10616,7 @@ const D = {
       "cli": "Valkiria",
       "lbl": "Valkiria",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Bruno",
@@ -10358,6 +10627,7 @@ const D = {
       "cli": "Valkiria",
       "lbl": "Valkiria",
       "rec": 12000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Bruno",
@@ -10368,6 +10638,7 @@ const D = {
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Felipe",
@@ -10378,6 +10649,7 @@ const D = {
       "cli": "Catena Seguros",
       "lbl": "Catena Seguros",
       "rec": 8500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -10388,6 +10660,7 @@ const D = {
       "cli": "Lucimar Oliveira",
       "lbl": "Lucimar Oliveira",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Felipe",
@@ -10398,6 +10671,7 @@ const D = {
       "cli": "DBI Contabilidade",
       "lbl": "DBI Contabilidade",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Contratual",
       "resp": "Rodrigo",
@@ -10408,6 +10682,7 @@ const D = {
       "cli": "Daniel Pocztaruk",
       "lbl": "Daniel Pocztaruk",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -10418,6 +10693,7 @@ const D = {
       "cli": "João Felipe Ribeiro",
       "lbl": "João Felipe Ribeiro",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -10428,6 +10704,7 @@ const D = {
       "cli": "Pedro Stephanou",
       "lbl": "Pedro Stephanou",
       "rec": 750.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -10438,6 +10715,7 @@ const D = {
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -10448,6 +10726,7 @@ const D = {
       "cli": "Família Oliveira",
       "lbl": "Planejamento Sucessório — Luiz Felipe",
       "rec": 28000.0,
+      "ativo": true,
       "ok": true,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -10458,6 +10737,7 @@ const D = {
       "cli": "Bruno Moroni",
       "lbl": "Bruno Moroni",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -10468,6 +10748,7 @@ const D = {
       "cli": "Vitta",
       "lbl": "Vitta",
       "rec": 4500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -10478,6 +10759,7 @@ const D = {
       "cli": "\"Twin Set\n\"",
       "lbl": "\"Twin Set\n\"",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Bruno",
@@ -10488,6 +10770,7 @@ const D = {
       "cli": "Daniel Pocztaruk",
       "lbl": "Daniel Pocztaruk",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -10498,6 +10781,7 @@ const D = {
       "cli": "Eduardo Braga",
       "lbl": "Eduardo Braga",
       "rec": 750.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -10508,6 +10792,7 @@ const D = {
       "cli": "Rafael Wassler",
       "lbl": "Rafael Wassler",
       "rec": 3456.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -10518,6 +10803,7 @@ const D = {
       "cli": "Rafael Wassler",
       "lbl": "Rafael Wassler",
       "rec": 800.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -10528,6 +10814,7 @@ const D = {
       "cli": "Rodl e Partner",
       "lbl": "Rodl e Partner",
       "rec": 1650.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -10538,6 +10825,7 @@ const D = {
       "cli": "Rodl e Partner",
       "lbl": "Rodl e Partner",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Felipe",
@@ -10548,6 +10836,7 @@ const D = {
       "cli": "Soma Auto Posto",
       "lbl": "Soma Auto Posto",
       "rec": 750.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -10558,6 +10847,7 @@ const D = {
       "cli": "Flowork",
       "lbl": "Flowork",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -10568,6 +10858,7 @@ const D = {
       "cli": "Rafael Wassler",
       "lbl": "Rafael Wassler",
       "rec": 4300.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -10578,6 +10869,7 @@ const D = {
       "cli": "Ziel",
       "lbl": "Ziel",
       "rec": 1300.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -10588,6 +10880,7 @@ const D = {
       "cli": "Leaders Consultoria",
       "lbl": "Leaders Consultoria",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -10598,6 +10891,7 @@ const D = {
       "cli": "Austral",
       "lbl": "Austral",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -10608,6 +10902,7 @@ const D = {
       "cli": "Kit Lanche Express",
       "lbl": "Kit Lanche Express",
       "rec": 12000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -10618,6 +10913,7 @@ const D = {
       "cli": "Arqexpress",
       "lbl": "Arqexpress",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -10628,6 +10924,7 @@ const D = {
       "cli": "Estudio Nomade",
       "lbl": "Estudio Nomade",
       "rec": 12800.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -10638,6 +10935,7 @@ const D = {
       "cli": "Rodl e Partner",
       "lbl": "Rodl e Partner",
       "rec": 2250.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -10648,6 +10946,7 @@ const D = {
       "cli": "Vinicius Garcia",
       "lbl": "Vinicius Garcia",
       "rec": 1412.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -10658,6 +10957,7 @@ const D = {
       "cli": "Organica Digital",
       "lbl": "Planejamento Tributário — Holding e Acordo de Sócios",
       "rec": 30000.0,
+      "ativo": true,
       "ok": true,
       "area": "Tributário",
       "resp": "Bruno",
@@ -10668,6 +10968,7 @@ const D = {
       "cli": "\"R M N Cardoso e Cia (Meta Analisys)\n\"",
       "lbl": "\"R M N Cardoso e Cia (Meta Analisys)\n\"",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -10678,6 +10979,7 @@ const D = {
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
       "rec": 4600.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -10688,6 +10990,7 @@ const D = {
       "cli": "Thiago Carvalho",
       "lbl": "Thiago Carvalho",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -10698,6 +11001,7 @@ const D = {
       "cli": "Pedro Mendes",
       "lbl": "Planejamento Sucessório — Holding Familiar",
       "rec": 15000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Felipe",
@@ -10708,6 +11012,7 @@ const D = {
       "cli": "Guilherme Schneider",
       "lbl": "Guilherme Schneider",
       "rec": 1400.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -10718,6 +11023,7 @@ const D = {
       "cli": "Vinicius Zampieron",
       "lbl": "Vinicius Zampieron",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Bruno",
@@ -10728,6 +11034,7 @@ const D = {
       "cli": "Marcel Collin",
       "lbl": "Marcel Collin",
       "rec": 12000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Gerson",
@@ -10738,6 +11045,7 @@ const D = {
       "cli": "Okidoki",
       "lbl": "Okidoki",
       "rec": 300.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -10748,6 +11056,7 @@ const D = {
       "cli": "Nomad (NOMAD SPORTS COMERCIO S.A.)",
       "lbl": "Nomad (NOMAD SPORTS COMERCIO S.A.)",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -10758,6 +11067,7 @@ const D = {
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
       "rec": 8000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -10768,6 +11078,7 @@ const D = {
       "cli": "Emikatê",
       "lbl": "Emikatê",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -10778,6 +11089,7 @@ const D = {
       "cli": "IAPI Records",
       "lbl": "IAPI Records",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -10788,6 +11100,7 @@ const D = {
       "cli": "Agência Combo",
       "lbl": "Agência Combo",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -10798,6 +11111,7 @@ const D = {
       "cli": "Gladis Piccini",
       "lbl": "Gladis Piccini",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -10808,6 +11122,7 @@ const D = {
       "cli": "Thiago Carvalho",
       "lbl": "Thiago Carvalho",
       "rec": 300.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -10818,6 +11133,7 @@ const D = {
       "cli": "Brenda Souza",
       "lbl": "Brenda Souza",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -10828,6 +11144,7 @@ const D = {
       "cli": "Mauricio Silva",
       "lbl": "Mauricio Silva",
       "rec": 1412.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Bruno",
@@ -10838,6 +11155,7 @@ const D = {
       "cli": "Emikatê",
       "lbl": "Emikatê",
       "rec": 2824.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Carol",
@@ -10848,6 +11166,7 @@ const D = {
       "cli": "Larca Capital",
       "lbl": "Larca Capital",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -10858,6 +11177,7 @@ const D = {
       "cli": "Juri Capital",
       "lbl": "Juri Capital",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -10868,6 +11188,7 @@ const D = {
       "cli": "Adapa Bio",
       "lbl": "Adapa Bio",
       "rec": 4500.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -10878,6 +11199,7 @@ const D = {
       "cli": "Lamp MKT (ROCKET MARKETING DIGITAL LTDA)",
       "lbl": "Lamp MKT (ROCKET MARKETING DIGITAL LTDA)",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -10888,6 +11210,7 @@ const D = {
       "cli": "Creare",
       "lbl": "Creare",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -10898,6 +11221,7 @@ const D = {
       "cli": "Gyn Resíduos/Bio Resíduos",
       "lbl": "Gyn Resíduos/Bio Resíduos",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -10908,6 +11232,7 @@ const D = {
       "cli": "Gabriel Schuvartz",
       "lbl": "Gabriel Schuvartz",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -10918,6 +11243,7 @@ const D = {
       "cli": "Daniel Pocztaruk",
       "lbl": "Daniel Pocztaruk",
       "rec": 1412.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -10928,6 +11254,7 @@ const D = {
       "cli": "Emikatê",
       "lbl": "Emikatê",
       "rec": 500.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -10938,6 +11265,7 @@ const D = {
       "cli": "Alexandre Schujmann",
       "lbl": "Alexandre Schujmann",
       "rec": 9120.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -10948,6 +11276,7 @@ const D = {
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Gerson",
@@ -10958,6 +11287,7 @@ const D = {
       "cli": "Spectrun",
       "lbl": "Spectrun",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Gerson",
@@ -10968,6 +11298,7 @@ const D = {
       "cli": "Mateus Eirich",
       "lbl": "Mateus Eirich",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -10978,6 +11309,7 @@ const D = {
       "cli": "Familia Lacerda",
       "lbl": "Familia Lacerda",
       "rec": 1925.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -10988,6 +11320,7 @@ const D = {
       "cli": "Montes Altos Incorporadora",
       "lbl": "Montes Altos Incorporadora",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -10998,6 +11331,7 @@ const D = {
       "cli": "Wine Locals",
       "lbl": "Wine Locals",
       "rec": 2824.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Carol",
@@ -11008,6 +11342,7 @@ const D = {
       "cli": "\"Escola do Mecânico (E.M EXPANSAO FRANQUIA E CONSULTORIA LTDA)\n\"",
       "lbl": "Acordo de Sócios — Vesting",
       "rec": 15300.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -11018,6 +11353,7 @@ const D = {
       "cli": "Libel Kitchen",
       "lbl": "Libel Kitchen",
       "rec": 1412.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -11028,6 +11364,7 @@ const D = {
       "cli": "Renan Schaefer",
       "lbl": "Renan Schaefer",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -11038,6 +11375,7 @@ const D = {
       "cli": "Daniel Pocztaruk",
       "lbl": "Daniel Pocztaruk",
       "rec": 1412.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -11048,6 +11386,7 @@ const D = {
       "cli": "Nomad (NOMAD SPORTS COMERCIO S.A.)",
       "lbl": "Nomad (NOMAD SPORTS COMERCIO S.A.)",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -11058,6 +11397,7 @@ const D = {
       "cli": "JLP Participações",
       "lbl": "JLP Participações",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11068,6 +11408,7 @@ const D = {
       "cli": "\"Pedro Ranieri\n\"",
       "lbl": "\"Pedro Ranieri\n\"",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11078,6 +11419,7 @@ const D = {
       "cli": "Familia Fenner",
       "lbl": "Familia Fenner",
       "rec": 760.28,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -11088,6 +11430,7 @@ const D = {
       "cli": "Larca Capital",
       "lbl": "Larca Capital",
       "rec": 14000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -11098,6 +11441,7 @@ const D = {
       "cli": "Rodrigo Camerim",
       "lbl": "Rodrigo Camerim",
       "rec": 275.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Felipe",
@@ -11108,6 +11452,7 @@ const D = {
       "cli": "JLP Participações",
       "lbl": "JLP Participações",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11118,6 +11463,7 @@ const D = {
       "cli": "Ana Paula Rubbo",
       "lbl": "Ana Paula Rubbo",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -11128,6 +11474,7 @@ const D = {
       "cli": "Ercilda Luzia Souza",
       "lbl": "Ercilda Luzia Souza",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -11138,6 +11485,7 @@ const D = {
       "cli": "Renata Hoff Eventos",
       "lbl": "Renata Hoff Eventos",
       "rec": 900.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -11148,6 +11496,7 @@ const D = {
       "cli": "Mauricio Klein",
       "lbl": "Mauricio Klein",
       "rec": 3600.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11158,6 +11507,7 @@ const D = {
       "cli": "DBI Contabilidade",
       "lbl": "DBI Contabilidade",
       "rec": 11500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -11168,6 +11518,7 @@ const D = {
       "cli": "Thanks Produções",
       "lbl": "Thanks Produções",
       "rec": 11700.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -11178,6 +11529,7 @@ const D = {
       "cli": "Alexandre Schujmann",
       "lbl": "Alexandre Schujmann",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11188,6 +11540,7 @@ const D = {
       "cli": "Alvaro Bertani",
       "lbl": "Alvaro Bertani",
       "rec": 16000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Bruno",
@@ -11198,6 +11551,7 @@ const D = {
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
       "rec": 700.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Bruno",
@@ -11208,6 +11562,7 @@ const D = {
       "cli": "Paulina Saraiva",
       "lbl": "Paulina Saraiva",
       "rec": 10000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Bruno",
@@ -11218,6 +11573,7 @@ const D = {
       "cli": "Mauricio Silva",
       "lbl": "Mauricio Silva",
       "rec": 7000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Bruno",
@@ -11228,6 +11584,7 @@ const D = {
       "cli": "Villa Pandora",
       "lbl": "Villa Pandora",
       "rec": 500.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Rodrigo",
@@ -11238,6 +11595,7 @@ const D = {
       "cli": "Gabriel Schuvartz",
       "lbl": "Gabriel Schuvartz",
       "rec": 3850.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11248,6 +11606,7 @@ const D = {
       "cli": "Villa Pandora",
       "lbl": "Villa Pandora",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -11258,6 +11617,7 @@ const D = {
       "cli": "Marcel Collin",
       "lbl": "Planejamento Sucessório — Holding Familiar",
       "rec": 60000.0,
+      "ativo": true,
       "ok": true,
       "area": "Societário",
       "resp": "Gerson",
@@ -11325,6 +11685,7 @@ const D = {
       "cli": "Helade Azevedo",
       "lbl": "Helade Azevedo",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -11335,6 +11696,7 @@ const D = {
       "cli": "Lucimar Oliveira",
       "lbl": "Lucimar Oliveira",
       "rec": 24000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -11345,6 +11707,7 @@ const D = {
       "cli": "Alexandre (indic. Ailime)",
       "lbl": "Alexandre (indic. Ailime)",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Felipe",
@@ -11355,6 +11718,7 @@ const D = {
       "cli": "Libel Kitchen",
       "lbl": "Libel Kitchen",
       "rec": 2658.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -11365,6 +11729,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -11375,6 +11740,7 @@ const D = {
       "cli": "Ana Paula Olentino",
       "lbl": "Ana Paula Olentino",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -11385,6 +11751,7 @@ const D = {
       "cli": "Clinica Truss",
       "lbl": "Clinica Truss",
       "rec": 1805.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -11395,6 +11762,7 @@ const D = {
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -11405,6 +11773,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -11415,6 +11784,7 @@ const D = {
       "cli": "Siga Soluções em Telemetria",
       "lbl": "Siga Soluções em Telemetria",
       "rec": 6300.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Felipe",
@@ -11425,6 +11795,7 @@ const D = {
       "cli": "Renan Schaefer",
       "lbl": "Renan Schaefer",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -11435,6 +11806,7 @@ const D = {
       "cli": "YUOOL",
       "lbl": "YUOOL",
       "rec": 9000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -11445,6 +11817,7 @@ const D = {
       "cli": "Estudio Nomade",
       "lbl": "Estudio Nomade",
       "rec": 1925.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -11455,6 +11828,7 @@ const D = {
       "cli": "Daniel Pocztaruk",
       "lbl": "Daniel Pocztaruk",
       "rec": 3500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -11465,6 +11839,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 2400.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -11475,6 +11850,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -11485,6 +11861,7 @@ const D = {
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
       "rec": 3800.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -11495,6 +11872,7 @@ const D = {
       "cli": "\"Rede Mais Saude (JOSEANE DOS SANTOS PENHA LTDA)\n\"",
       "lbl": "\"Rede Mais Saude (JOSEANE DOS SANTOS PENHA LTDA)\n\"",
       "rec": 12000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -11505,6 +11883,7 @@ const D = {
       "cli": "Jimi IoT Brasil",
       "lbl": "Jimi IoT Brasil",
       "rec": 5800.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -11515,6 +11894,7 @@ const D = {
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
       "rec": 7500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -11525,6 +11905,7 @@ const D = {
       "cli": "Andrei Sanson",
       "lbl": "Andrei Sanson",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -11535,6 +11916,7 @@ const D = {
       "cli": "José Fontes",
       "lbl": "José Fontes",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -11545,6 +11927,7 @@ const D = {
       "cli": "Osmar/Lisiane Marcon",
       "lbl": "Osmar/Lisiane Marcon",
       "rec": 2118.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -11555,6 +11938,7 @@ const D = {
       "cli": "Iago Family Office",
       "lbl": "Iago Family Office",
       "rec": 9000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -11565,6 +11949,7 @@ const D = {
       "cli": "Thiago Soares",
       "lbl": "Thiago Soares",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -11575,6 +11960,7 @@ const D = {
       "cli": "Vera Germani",
       "lbl": "Vera Germani",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11585,6 +11971,7 @@ const D = {
       "cli": "Dotkon",
       "lbl": "Dotkon",
       "rec": 2400.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -11595,6 +11982,7 @@ const D = {
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Bruno",
@@ -11605,6 +11993,7 @@ const D = {
       "cli": "Vinicius Garcia",
       "lbl": "Vinicius Garcia",
       "rec": 1412.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11615,6 +12004,7 @@ const D = {
       "cli": "JLP Participações",
       "lbl": "JLP Participações",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11625,6 +12015,7 @@ const D = {
       "cli": "Lix Plásticos",
       "lbl": "Lix Plásticos",
       "rec": 20000.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Bruno",
@@ -11635,6 +12026,7 @@ const D = {
       "cli": "Air Fluide",
       "lbl": "Air Fluide",
       "rec": 1412.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Felipe",
@@ -11645,6 +12037,7 @@ const D = {
       "cli": "Flowork",
       "lbl": "Flowork",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -11655,6 +12048,7 @@ const D = {
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
       "rec": 12000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -11665,6 +12059,7 @@ const D = {
       "cli": "Mercado Brasco",
       "lbl": "Mercado Brasco",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Bruno",
@@ -11675,6 +12070,7 @@ const D = {
       "cli": "Rafael Wassler",
       "lbl": "Rafael Wassler",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -11685,6 +12081,7 @@ const D = {
       "cli": "Laura Motta",
       "lbl": "Laura Motta",
       "rec": 4500.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -11695,6 +12092,7 @@ const D = {
       "cli": "Paulo Spectrun",
       "lbl": "Paulo Spectrun",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -11705,6 +12103,7 @@ const D = {
       "cli": "Austral",
       "lbl": "Austral",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -11715,6 +12114,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 15675.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -11725,6 +12125,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -11735,6 +12136,7 @@ const D = {
       "cli": "Terence BC",
       "lbl": "Terence BC",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11745,6 +12147,7 @@ const D = {
       "cli": "Laura Busato",
       "lbl": "Laura Busato",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -11755,6 +12158,7 @@ const D = {
       "cli": "YUOOL",
       "lbl": "YUOOL",
       "rec": 8000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Felipe",
@@ -11765,6 +12169,7 @@ const D = {
       "cli": "Família Oliveira",
       "lbl": "Consultoria Quilombola — BARUFALDI",
       "rec": 4500.0,
+      "ativo": true,
       "ok": true,
       "area": "Publico",
       "resp": "Rodrigo",
@@ -11775,6 +12180,7 @@ const D = {
       "cli": "ProjeteBem",
       "lbl": "ProjeteBem",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -11785,6 +12191,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -11795,6 +12202,7 @@ const D = {
       "cli": "Mix Natural",
       "lbl": "Mix Natural",
       "rec": 275.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -11805,6 +12213,7 @@ const D = {
       "cli": "Céu",
       "lbl": "Céu",
       "rec": 500.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -11815,6 +12224,7 @@ const D = {
       "cli": "Amanda Dins",
       "lbl": "Amanda Dins",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -11825,6 +12235,7 @@ const D = {
       "cli": "Felissimo",
       "lbl": "Felissimo",
       "rec": 5684.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Rodrigo",
@@ -11835,6 +12246,7 @@ const D = {
       "cli": "Magazord",
       "lbl": "Magazord",
       "rec": 706.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -11845,6 +12257,7 @@ const D = {
       "cli": "Céu",
       "lbl": "Céu",
       "rec": 10000.0,
+      "ativo": false,
       "ok": false,
       "area": "Publico",
       "resp": "Rodrigo",
@@ -11855,6 +12268,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 7000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -11865,6 +12279,7 @@ const D = {
       "cli": "Pedro Henrique de Sá",
       "lbl": "Pedro Henrique de Sá",
       "rec": 3500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -11875,6 +12290,7 @@ const D = {
       "cli": "Rafael Wassler",
       "lbl": "Rafael Wassler",
       "rec": 38000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -11885,6 +12301,7 @@ const D = {
       "cli": "Banca do Holandês",
       "lbl": "Banca do Holandês",
       "rec": 4320.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Bruno",
@@ -11895,6 +12312,7 @@ const D = {
       "cli": "Tomás Lima",
       "lbl": "Tomás Lima",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11905,6 +12323,7 @@ const D = {
       "cli": "Roberto Bertó",
       "lbl": "Roberto Bertó",
       "rec": 6500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11915,6 +12334,7 @@ const D = {
       "cli": "Vera Germani",
       "lbl": "Vera Germani",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11925,6 +12345,7 @@ const D = {
       "cli": "Diego Vinhas",
       "lbl": "Diego Vinhas",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -11935,6 +12356,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11945,6 +12367,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 2200.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -11955,6 +12378,7 @@ const D = {
       "cli": "Rodrigo Castilhos",
       "lbl": "Rodrigo Castilhos",
       "rec": 22000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -11965,6 +12389,7 @@ const D = {
       "cli": "Austral",
       "lbl": "Austral",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -11975,6 +12400,7 @@ const D = {
       "cli": "Kahio Kuntz",
       "lbl": "Kahio Kuntz",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -11985,6 +12411,7 @@ const D = {
       "cli": "Thiago Cruz",
       "lbl": "Thiago Cruz",
       "rec": 8250.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -11995,6 +12422,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 1499.06,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -12005,6 +12433,7 @@ const D = {
       "cli": "Renato Guerra",
       "lbl": "Renato Guerra",
       "rec": 750.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -12015,6 +12444,7 @@ const D = {
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
       "rec": 8100.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Gerson",
@@ -12025,6 +12455,7 @@ const D = {
       "cli": "Tania Moreira",
       "lbl": "Tania Moreira",
       "rec": 3800.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -12035,6 +12466,7 @@ const D = {
       "cli": "Webglobal",
       "lbl": "Webglobal",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -12045,6 +12477,7 @@ const D = {
       "cli": "Mirian Dorneles",
       "lbl": "Mirian Dorneles",
       "rec": 14800.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -12055,6 +12488,7 @@ const D = {
       "cli": "Austral",
       "lbl": "Austral",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -12065,6 +12499,7 @@ const D = {
       "cli": "Ziel",
       "lbl": "Ziel",
       "rec": 4700.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -12075,6 +12510,7 @@ const D = {
       "cli": "Rafael Wassler",
       "lbl": "Rafael Wassler",
       "rec": 2750.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -12085,6 +12521,7 @@ const D = {
       "cli": "Cabanna",
       "lbl": "Cabanna",
       "rec": 2450.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -12095,6 +12532,7 @@ const D = {
       "cli": "Ades Construções",
       "lbl": "Ades Construções",
       "rec": 1320.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Bruno",
@@ -12105,6 +12543,7 @@ const D = {
       "cli": "Vera Germani",
       "lbl": "Vera Germani",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12115,6 +12554,7 @@ const D = {
       "cli": "\"Twin Set\n\"",
       "lbl": "\"Twin Set\n\"",
       "rec": 750.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Bruno",
@@ -12125,6 +12565,7 @@ const D = {
       "cli": "Antonio Paulo",
       "lbl": "Antonio Paulo",
       "rec": 21000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -12135,6 +12576,7 @@ const D = {
       "cli": "Urban Farmcy",
       "lbl": "Urban Farmcy",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Bruno",
@@ -12145,6 +12587,7 @@ const D = {
       "cli": "Vacinas.net",
       "lbl": "Vacinas.net",
       "rec": 12300.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -12155,6 +12598,7 @@ const D = {
       "cli": "Andrei Sanson",
       "lbl": "Andrei Sanson",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -12165,6 +12609,7 @@ const D = {
       "cli": "Boske",
       "lbl": "Boske",
       "rec": 10000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -12175,6 +12620,7 @@ const D = {
       "cli": "Milton Barros",
       "lbl": "Milton Barros",
       "rec": 1650.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -12185,6 +12631,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12195,6 +12642,7 @@ const D = {
       "cli": "Dr. Emidio",
       "lbl": "Dr. Emidio",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -12205,6 +12653,7 @@ const D = {
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "rec": 293.33,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -12215,6 +12664,7 @@ const D = {
       "cli": "Kruger construtora/incorporadora",
       "lbl": "Kruger construtora/incorporadora",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12225,6 +12675,7 @@ const D = {
       "cli": "Kruger construtora/incorporadora",
       "lbl": "Kruger construtora/incorporadora",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12235,6 +12686,7 @@ const D = {
       "cli": "Tania Moreira",
       "lbl": "Tania Moreira",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Felipe",
@@ -12245,6 +12697,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 2225.88,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -12255,6 +12708,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12265,6 +12719,7 @@ const D = {
       "cli": "Luciano Morganti",
       "lbl": "Luciano Morganti",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -12275,6 +12730,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 14000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -12285,6 +12741,7 @@ const D = {
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "rec": 6968.5,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -12295,6 +12752,7 @@ const D = {
       "cli": "YUOOL",
       "lbl": "YUOOL",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -12305,6 +12763,7 @@ const D = {
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "rec": 2025.83,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -12315,6 +12774,7 @@ const D = {
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -12325,6 +12785,7 @@ const D = {
       "cli": "Paulo Pompermayer",
       "lbl": "Paulo Pompermayer",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12335,6 +12796,7 @@ const D = {
       "cli": "Rodrigo de Oliveira (SC)",
       "lbl": "Rodrigo de Oliveira (SC)",
       "rec": 12500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -12345,6 +12807,7 @@ const D = {
       "cli": "Orulo",
       "lbl": "Orulo",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -12355,6 +12818,7 @@ const D = {
       "cli": "Providence Radiologia",
       "lbl": "Providence Radiologia",
       "rec": 6375.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -12365,6 +12829,7 @@ const D = {
       "cli": "Orulo",
       "lbl": "Orulo",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -12375,6 +12840,7 @@ const D = {
       "cli": "Gestão DS",
       "lbl": "Gestão DS",
       "rec": 20100.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -12385,6 +12851,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -12395,6 +12862,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 4646.27,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -12405,6 +12873,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12415,6 +12884,7 @@ const D = {
       "cli": "Renata Hoff Eventos",
       "lbl": "Renata Hoff Eventos",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -12425,6 +12895,7 @@ const D = {
       "cli": "HUB Prática Creativa",
       "lbl": "HUB Prática Creativa",
       "rec": 500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -12435,6 +12906,7 @@ const D = {
       "cli": "Smart Neorama",
       "lbl": "Smart Neorama",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Bruno",
@@ -12445,6 +12917,7 @@ const D = {
       "cli": "Dwayne Fagundes",
       "lbl": "Dwayne Fagundes",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -12455,6 +12928,7 @@ const D = {
       "cli": "Private Imóveis",
       "lbl": "Private Imóveis",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -12465,6 +12939,7 @@ const D = {
       "cli": "Thiago Gehres",
       "lbl": "Thiago Gehres",
       "rec": 6100.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12475,6 +12950,7 @@ const D = {
       "cli": "\"Twin Set\n\"",
       "lbl": "\"Twin Set\n\"",
       "rec": 500.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Bruno",
@@ -12485,6 +12961,7 @@ const D = {
       "cli": "Lucia Franke",
       "lbl": "Lucia Franke",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12495,6 +12972,7 @@ const D = {
       "cli": "Smart Neorama",
       "lbl": "Smart Neorama",
       "rec": 37500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Bruno",
@@ -12505,6 +12983,7 @@ const D = {
       "cli": "Casa Conceito BT",
       "lbl": "Casa Conceito BT",
       "rec": 7500.0,
+      "ativo": false,
       "ok": false,
       "area": "Full service",
       "resp": "Gerson",
@@ -12515,6 +12994,7 @@ const D = {
       "cli": "Mahalo",
       "lbl": "Mahalo",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -12525,6 +13005,7 @@ const D = {
       "cli": "Flavia (Messem)",
       "lbl": "Flavia (Messem)",
       "rec": 20000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -12535,6 +13016,7 @@ const D = {
       "cli": "JLP Participações",
       "lbl": "JLP Participações",
       "rec": 14500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12545,6 +13027,7 @@ const D = {
       "cli": "Tobias Chanan",
       "lbl": "Tobias Chanan",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Carlos",
@@ -12555,6 +13038,7 @@ const D = {
       "cli": "Maria Alice Kappel",
       "lbl": "Maria Alice Kappel",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -12565,6 +13049,7 @@ const D = {
       "cli": "VS Holding",
       "lbl": "VS Holding",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Full service",
       "resp": "Rodrigo",
@@ -12575,6 +13060,7 @@ const D = {
       "cli": "Lumens Atuarial",
       "lbl": "Lumens Atuarial",
       "rec": 6230.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -12585,6 +13071,7 @@ const D = {
       "cli": "Talo Serviços",
       "lbl": "Talo Serviços",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -12595,6 +13082,7 @@ const D = {
       "cli": "VS Holding",
       "lbl": "VS Holding",
       "rec": 4800.0,
+      "ativo": false,
       "ok": false,
       "area": "Full service",
       "resp": "Rodrigo",
@@ -12605,6 +13093,7 @@ const D = {
       "cli": "Robson",
       "lbl": "Robson",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -12615,6 +13104,7 @@ const D = {
       "cli": "Luciana (Bluts)",
       "lbl": "Luciana (Bluts)",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -12625,6 +13115,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -12635,6 +13126,7 @@ const D = {
       "cli": "Talo Serviços",
       "lbl": "Talo Serviços",
       "rec": 1283.33,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -12645,6 +13137,7 @@ const D = {
       "cli": "Tomás Lima",
       "lbl": "Tomás Lima",
       "rec": 20000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Bruno",
@@ -12655,6 +13148,7 @@ const D = {
       "cli": "V4 Lisboa",
       "lbl": "V4 Lisboa",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -12665,6 +13159,7 @@ const D = {
       "cli": "YUOOL",
       "lbl": "YUOOL",
       "rec": 5092.96,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Felipe",
@@ -12675,6 +13170,7 @@ const D = {
       "cli": "\"Twin Set\n\"",
       "lbl": "\"Twin Set\n\"",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Bruno",
@@ -12685,6 +13181,7 @@ const D = {
       "cli": "Rafael Weber",
       "lbl": "Rafael Weber",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12695,6 +13192,7 @@ const D = {
       "cli": "Thiago Gehres",
       "lbl": "Thiago Gehres",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12705,6 +13203,7 @@ const D = {
       "cli": "Vinicius Perondi",
       "lbl": "Vinicius Perondi",
       "rec": 1400.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -12715,6 +13214,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 550.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12725,6 +13225,7 @@ const D = {
       "cli": "Bhava Empreendimentos",
       "lbl": "Bhava Empreendimentos",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Felipe",
@@ -12735,6 +13236,7 @@ const D = {
       "cli": "Patrícia Camerim",
       "lbl": "Patrícia Camerim",
       "rec": 2925.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Felipe",
@@ -12745,6 +13247,7 @@ const D = {
       "cli": "Jorge Elias",
       "lbl": "Jorge Elias",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -12755,6 +13258,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12765,6 +13269,7 @@ const D = {
       "cli": "Thiago Gehres",
       "lbl": "Thiago Gehres",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -12775,6 +13280,7 @@ const D = {
       "cli": "Prime Clínica",
       "lbl": "Prime Clínica",
       "rec": 500.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -12785,6 +13291,7 @@ const D = {
       "cli": "GC Engenharia",
       "lbl": "GC Engenharia",
       "rec": 20000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -12795,6 +13302,7 @@ const D = {
       "cli": "Céu",
       "lbl": "Céu",
       "rec": 3966.28,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -12805,6 +13313,7 @@ const D = {
       "cli": "Viktorya Ornau",
       "lbl": "Viktorya Ornau",
       "rec": 700.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -12815,6 +13324,7 @@ const D = {
       "cli": "Origem Coffe",
       "lbl": "Origem Coffe",
       "rec": 1750.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Felipe",
@@ -12825,6 +13335,7 @@ const D = {
       "cli": "Private Imóveis",
       "lbl": "Private Imóveis",
       "rec": 1687.5,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Felipe",
@@ -12835,6 +13346,7 @@ const D = {
       "cli": "Klooks",
       "lbl": "Klooks",
       "rec": 2600.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -12845,6 +13357,7 @@ const D = {
       "cli": "Renata Hoff e Gio Ruaro",
       "lbl": "Renata Hoff e Gio Ruaro",
       "rec": 500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -12855,6 +13368,7 @@ const D = {
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
       "rec": 60000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Felipe",
@@ -12865,6 +13379,7 @@ const D = {
       "cli": "YUOOL",
       "lbl": "YUOOL",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -12875,6 +13390,7 @@ const D = {
       "cli": "Brenda Terra",
       "lbl": "Brenda Terra",
       "rec": 800.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Gerson",
@@ -12885,6 +13401,7 @@ const D = {
       "cli": "Mint",
       "lbl": "Mint",
       "rec": 3200.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -12895,6 +13412,7 @@ const D = {
       "cli": "V4 Matriz",
       "lbl": "V4 Matriz",
       "rec": 13250.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -12905,6 +13423,7 @@ const D = {
       "cli": "Flowork",
       "lbl": "Flowork",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -12915,6 +13434,7 @@ const D = {
       "cli": "Ampulheta",
       "lbl": "Ampulheta",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -12925,6 +13445,7 @@ const D = {
       "cli": "V4 Alfradique",
       "lbl": "V4 Alfradique",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -12935,6 +13456,7 @@ const D = {
       "cli": "Elizeth Laitano",
       "lbl": "Elizeth Laitano",
       "rec": 2262.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -12945,6 +13467,7 @@ const D = {
       "cli": "Elton Fenner",
       "lbl": "Elton Fenner",
       "rec": 3500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -12955,6 +13478,7 @@ const D = {
       "cli": "R3versa",
       "lbl": "R3versa",
       "rec": 4800.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -12965,6 +13489,7 @@ const D = {
       "cli": "Unianest",
       "lbl": "Unianest",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -12975,6 +13500,7 @@ const D = {
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
       "rec": 20000.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Felipe",
@@ -12985,6 +13511,7 @@ const D = {
       "cli": "Beck & Mottin Arquitetura",
       "lbl": "Beck & Mottin Arquitetura",
       "rec": 4800.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -12995,6 +13522,7 @@ const D = {
       "cli": "Paipe",
       "lbl": "Paipe",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Bruno",
@@ -13005,6 +13533,7 @@ const D = {
       "cli": "JLP Participações",
       "lbl": "JLP Participações",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13015,6 +13544,7 @@ const D = {
       "cli": "Natasha Lima",
       "lbl": "Natasha Lima",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13025,6 +13555,7 @@ const D = {
       "cli": "Kruger construtora/incorporadora",
       "lbl": "Kruger construtora/incorporadora",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13035,6 +13566,7 @@ const D = {
       "cli": "Luciana (Bluts)",
       "lbl": "Luciana (Bluts)",
       "rec": 400.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -13045,6 +13577,7 @@ const D = {
       "cli": "The B Burguer Iguatemi",
       "lbl": "The B Burguer Iguatemi",
       "rec": 1192.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -13055,6 +13588,7 @@ const D = {
       "cli": "Liberta",
       "lbl": "Liberta",
       "rec": 30000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -13065,6 +13599,7 @@ const D = {
       "cli": "Fabio Ribas",
       "lbl": "Fabio Ribas",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -13075,6 +13610,7 @@ const D = {
       "cli": "SPE Bordini",
       "lbl": "SPE Bordini",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13085,6 +13621,7 @@ const D = {
       "cli": "Cido Martins",
       "lbl": "Cido Martins",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -13095,6 +13632,7 @@ const D = {
       "cli": "Isabel Chaves",
       "lbl": "Isabel Chaves",
       "rec": 3165.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -13105,6 +13643,7 @@ const D = {
       "cli": "Eduardo Braga",
       "lbl": "Eduardo Braga",
       "rec": 1400.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -13115,6 +13654,7 @@ const D = {
       "cli": "Klooks",
       "lbl": "Klooks",
       "rec": 750.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13125,6 +13665,7 @@ const D = {
       "cli": "Klooks",
       "lbl": "Klooks",
       "rec": 225.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13135,6 +13676,7 @@ const D = {
       "cli": "Sambô",
       "lbl": "Sambô",
       "rec": 1800.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -13145,6 +13687,7 @@ const D = {
       "cli": "Austral",
       "lbl": "Austral",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Thomaz",
@@ -13155,6 +13698,7 @@ const D = {
       "cli": "Mariangela Couto",
       "lbl": "Mariangela Couto",
       "rec": 15000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13165,6 +13709,7 @@ const D = {
       "cli": "JLP Participações",
       "lbl": "JLP Participações",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13175,6 +13720,7 @@ const D = {
       "cli": "JLP Participações",
       "lbl": "JLP Participações",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13185,6 +13731,7 @@ const D = {
       "cli": "Frederico Holtz",
       "lbl": "Frederico Holtz",
       "rec": 400.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -13195,6 +13742,7 @@ const D = {
       "cli": "Talo Serviços",
       "lbl": "Talo Serviços",
       "rec": 2250.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -13205,6 +13753,7 @@ const D = {
       "cli": "Bewiki",
       "lbl": "Bewiki",
       "rec": 1800.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -13215,6 +13764,7 @@ const D = {
       "cli": "Klooks",
       "lbl": "Klooks",
       "rec": 300.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13225,6 +13775,7 @@ const D = {
       "cli": "Cido Martins",
       "lbl": "Cido Martins",
       "rec": 350.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -13235,6 +13786,7 @@ const D = {
       "cli": "Bewiki",
       "lbl": "Bewiki",
       "rec": 400.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -13245,6 +13797,7 @@ const D = {
       "cli": "JFS Produtos Alimentícios",
       "lbl": "JFS Produtos Alimentícios",
       "rec": 8550.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -13255,6 +13808,7 @@ const D = {
       "cli": "GAV Construtora",
       "lbl": "GAV Construtora",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -13265,6 +13819,7 @@ const D = {
       "cli": "VS Holding",
       "lbl": "VS Holding",
       "rec": 29000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -13275,6 +13830,7 @@ const D = {
       "cli": "Klooks",
       "lbl": "Klooks",
       "rec": 2250.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -13285,6 +13841,7 @@ const D = {
       "cli": "Klooks",
       "lbl": "Klooks",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13295,6 +13852,7 @@ const D = {
       "cli": "Caio Abichequer",
       "lbl": "Caio Abichequer",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13305,6 +13863,7 @@ const D = {
       "cli": "Klooks",
       "lbl": "Klooks",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13315,6 +13874,7 @@ const D = {
       "cli": "Austral",
       "lbl": "Austral",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -13325,6 +13885,7 @@ const D = {
       "cli": "GC Engenharia",
       "lbl": "GC Engenharia",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13335,6 +13896,7 @@ const D = {
       "cli": "GC Engenharia",
       "lbl": "GC Engenharia",
       "rec": 8500.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13345,6 +13907,7 @@ const D = {
       "cli": "Tomás Lima",
       "lbl": "Tomás Lima",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13355,6 +13918,7 @@ const D = {
       "cli": "Klooks",
       "lbl": "Klooks",
       "rec": 375.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13365,6 +13929,7 @@ const D = {
       "cli": "Luiz Grasso",
       "lbl": "Luiz Grasso",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -13375,6 +13940,7 @@ const D = {
       "cli": "Klooks",
       "lbl": "Klooks",
       "rec": 337.5,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13385,6 +13951,7 @@ const D = {
       "cli": "MKS EMPREENDIMENTOS",
       "lbl": "MKS EMPREENDIMENTOS",
       "rec": 8350.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Thomaz",
@@ -13395,6 +13962,7 @@ const D = {
       "cli": "JLP Participações",
       "lbl": "JLP Participações",
       "rec": 606.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13405,6 +13973,7 @@ const D = {
       "cli": "Klooks",
       "lbl": "Klooks",
       "rec": 675.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13415,6 +13984,7 @@ const D = {
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -13425,6 +13995,7 @@ const D = {
       "cli": "Bewiki",
       "lbl": "Bewiki",
       "rec": 200.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -13435,6 +14006,7 @@ const D = {
       "cli": "YUOOL",
       "lbl": "YUOOL",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -13445,6 +14017,7 @@ const D = {
       "cli": "Kruger construtora/incorporadora",
       "lbl": "Kruger construtora/incorporadora",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13455,6 +14028,7 @@ const D = {
       "cli": "Braun Gin",
       "lbl": "Braun Gin",
       "rec": 4800.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -13465,6 +14039,7 @@ const D = {
       "cli": "BRAZAH",
       "lbl": "BRAZAH",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -13475,6 +14050,7 @@ const D = {
       "cli": "Veggie",
       "lbl": "Veggie",
       "rec": 2250.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Thomaz",
@@ -13485,6 +14061,7 @@ const D = {
       "cli": "\"Twin Set\n\"",
       "lbl": "\"Twin Set\n\"",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Bruno",
@@ -13495,6 +14072,7 @@ const D = {
       "cli": "\"Twin Set\n\"",
       "lbl": "\"Twin Set\n\"",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Bruno",
@@ -13505,6 +14083,7 @@ const D = {
       "cli": "Clinica Truss",
       "lbl": "Clinica Truss",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Bruno",
@@ -13515,6 +14094,7 @@ const D = {
       "cli": "Creare",
       "lbl": "Creare",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Felipe",
@@ -13525,6 +14105,7 @@ const D = {
       "cli": "The B Burguer Iguatemi",
       "lbl": "The B Burguer Iguatemi",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -13535,6 +14116,7 @@ const D = {
       "cli": "KS Arquitetos",
       "lbl": "KS Arquitetos",
       "rec": 1800.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -13545,6 +14127,7 @@ const D = {
       "cli": "Quater Comunicacao",
       "lbl": "Quater Comunicacao",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -13555,6 +14138,7 @@ const D = {
       "cli": "\"Twin Set\n\"",
       "lbl": "\"Twin Set\n\"",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Bruno",
@@ -13565,6 +14149,7 @@ const D = {
       "cli": "Pedro Hoppe de Lima",
       "lbl": "Pedro Hoppe de Lima",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -13575,6 +14160,7 @@ const D = {
       "cli": "Klooks",
       "lbl": "Klooks",
       "rec": 525.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13585,6 +14171,7 @@ const D = {
       "cli": "Tomas - Céu",
       "lbl": "Tomas - Céu",
       "rec": 1600.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13595,6 +14182,7 @@ const D = {
       "cli": "KS Arquitetos",
       "lbl": "KS Arquitetos",
       "rec": 400.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13605,6 +14193,7 @@ const D = {
       "cli": "Vox",
       "lbl": "Vox",
       "rec": 7000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Bruno",
@@ -13615,6 +14204,7 @@ const D = {
       "cli": "Adriane Kauer",
       "lbl": "Adriane Kauer",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13625,6 +14215,7 @@ const D = {
       "cli": "\"Twin Set\n\"",
       "lbl": "\"Twin Set\n\"",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Bruno",
@@ -13635,6 +14226,7 @@ const D = {
       "cli": "Rappi Bank (Rappipay)",
       "lbl": "Rappi Bank (Rappipay)",
       "rec": 10000.0,
+      "ativo": false,
       "ok": false,
       "area": "Full service",
       "resp": "Carlos",
@@ -13645,6 +14237,7 @@ const D = {
       "cli": "Tobias Chanan",
       "lbl": "Tobias Chanan",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Bruno",
@@ -13655,6 +14248,7 @@ const D = {
       "cli": "Felipe Porfíro",
       "lbl": "Felipe Porfíro",
       "rec": 1212.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Felipe",
@@ -13665,6 +14259,7 @@ const D = {
       "cli": "Alfredo Luvison",
       "lbl": "Alfredo Luvison",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13675,6 +14270,7 @@ const D = {
       "cli": "YUOOL",
       "lbl": "YUOOL",
       "rec": 1800.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -13685,6 +14281,7 @@ const D = {
       "cli": "V4 Matriz",
       "lbl": "V4 Matriz",
       "rec": 9600.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Gerson",
@@ -13695,6 +14292,7 @@ const D = {
       "cli": "Susan Matchinske",
       "lbl": "Susan Matchinske",
       "rec": 5185.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Bruno",
@@ -13705,6 +14303,7 @@ const D = {
       "cli": "Master RS",
       "lbl": "Master RS",
       "rec": 4500.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Bruno",
@@ -13715,6 +14314,7 @@ const D = {
       "cli": "Patricia Loschpe Gus",
       "lbl": "Patricia Loschpe Gus",
       "rec": 750.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Carlos",
@@ -13725,6 +14325,7 @@ const D = {
       "cli": "Flowork",
       "lbl": "Flowork",
       "rec": 5400.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13735,6 +14336,7 @@ const D = {
       "cli": "Lucas Canabarro",
       "lbl": "Lucas Canabarro",
       "rec": 12000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13745,6 +14347,7 @@ const D = {
       "cli": "Prime Clínica",
       "lbl": "Prime Clínica",
       "rec": 11000.0,
+      "ativo": false,
       "ok": false,
       "area": "Publico",
       "resp": "Rodrigo",
@@ -13755,6 +14358,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -13765,6 +14369,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 15000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -13775,6 +14380,7 @@ const D = {
       "cli": "Organismo Equity Crowdfunding",
       "lbl": "Organismo Equity Crowdfunding",
       "rec": 2500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13785,6 +14391,7 @@ const D = {
       "cli": "JLP Participações",
       "lbl": "JLP Participações",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -13795,6 +14402,7 @@ const D = {
       "cli": "YUOOL",
       "lbl": "YUOOL",
       "rec": 1800.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13805,6 +14413,7 @@ const D = {
       "cli": "Orulo",
       "lbl": "Orulo",
       "rec": 27000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Bruno",
@@ -13815,6 +14424,7 @@ const D = {
       "cli": "Tobias Chanan",
       "lbl": "Tobias Chanan",
       "rec": 5000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Bruno",
@@ -13825,6 +14435,7 @@ const D = {
       "cli": "Paula Henriqson",
       "lbl": "Paula Henriqson",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -13835,6 +14446,7 @@ const D = {
       "cli": "Meltz Hidromel",
       "lbl": "Meltz Hidromel",
       "rec": 1212.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Bruno",
@@ -13845,6 +14457,7 @@ const D = {
       "cli": "Renata Hoff Eventos",
       "lbl": "Renata Hoff Eventos",
       "rec": 4800.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -13855,6 +14468,7 @@ const D = {
       "cli": "V4 Matriz",
       "lbl": "V4 Matriz",
       "rec": 44100.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -13865,6 +14479,7 @@ const D = {
       "cli": "Hug Engenharia",
       "lbl": "Hug Engenharia",
       "rec": 12000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -13875,6 +14490,7 @@ const D = {
       "cli": "Z Tráfego",
       "lbl": "Z Tráfego",
       "rec": 400.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Thomaz",
@@ -13885,6 +14501,7 @@ const D = {
       "cli": "Eduardo Serrano",
       "lbl": "Eduardo Serrano",
       "rec": 10000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Thomaz",
@@ -13895,6 +14512,7 @@ const D = {
       "cli": "\"Ariel B (DJB PRODUCOES LTDA)\n\"",
       "lbl": "\"Ariel B (DJB PRODUCOES LTDA)\n\"",
       "rec": 15000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -13905,6 +14523,7 @@ const D = {
       "cli": "Família Barbosa",
       "lbl": "Família Barbosa",
       "rec": 35000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Felipe",
@@ -13915,6 +14534,7 @@ const D = {
       "cli": "JLP Participações",
       "lbl": "JLP Participações",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -13925,6 +14545,7 @@ const D = {
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
       "rec": 2800.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -13935,6 +14556,7 @@ const D = {
       "cli": "Milton Barros",
       "lbl": "Milton Barros",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -13945,6 +14567,7 @@ const D = {
       "cli": "V4 Matriz",
       "lbl": "V4 Matriz",
       "rec": 9000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -13955,6 +14578,7 @@ const D = {
       "cli": "Milton Barros",
       "lbl": "Milton Barros",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -13965,6 +14589,7 @@ const D = {
       "cli": "Everlog",
       "lbl": "Everlog",
       "rec": 17500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -13975,6 +14600,7 @@ const D = {
       "cli": "Percap",
       "lbl": "Percap",
       "rec": 300.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Rodrigo",
@@ -13985,6 +14611,7 @@ const D = {
       "cli": "Hug Engenharia",
       "lbl": "Hug Engenharia",
       "rec": 26400.0,
+      "ativo": false,
       "ok": false,
       "area": "Full service",
       "resp": "Gerson",
@@ -13995,6 +14622,7 @@ const D = {
       "cli": "Soma Auto Posto",
       "lbl": "Soma Auto Posto",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "João",
@@ -14005,6 +14633,7 @@ const D = {
       "cli": "Ezequiel Suleto",
       "lbl": "Ezequiel Suleto",
       "rec": 7000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -14015,6 +14644,7 @@ const D = {
       "cli": "Gaspar Tartari Jr.",
       "lbl": "Gaspar Tartari Jr.",
       "rec": 2750.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Felipe",
@@ -14025,6 +14655,7 @@ const D = {
       "cli": "Adriane Kauer",
       "lbl": "Adriane Kauer",
       "rec": 600.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -14035,6 +14666,7 @@ const D = {
       "cli": "José Fontes",
       "lbl": "José Fontes",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -14045,6 +14677,7 @@ const D = {
       "cli": "Vaitel",
       "lbl": "Vaitel",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Gerson",
@@ -14055,6 +14688,7 @@ const D = {
       "cli": "KS Arquitetos",
       "lbl": "KS Arquitetos",
       "rec": 350.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -14065,6 +14699,7 @@ const D = {
       "cli": "Garra Engenharia/LBF",
       "lbl": "Garra Engenharia/LBF",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -14075,6 +14710,7 @@ const D = {
       "cli": "Hugo Oliveira",
       "lbl": "Hugo Oliveira",
       "rec": 12600.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Gerson",
@@ -14085,6 +14721,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 8600.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -14095,6 +14732,7 @@ const D = {
       "cli": "Daniel Ferreira",
       "lbl": "Daniel Ferreira",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Rodrigo",
@@ -14105,6 +14743,7 @@ const D = {
       "cli": "Casa Holtz",
       "lbl": "Casa Holtz",
       "rec": 350.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -14115,6 +14754,7 @@ const D = {
       "cli": "Emanuelle Cristine dos Santos",
       "lbl": "Emanuelle Cristine dos Santos",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -14125,6 +14765,7 @@ const D = {
       "cli": "Norton Witeck",
       "lbl": "Norton Witeck",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Consumidor",
       "resp": "Carlos",
@@ -14135,6 +14776,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Gerson",
@@ -14145,6 +14787,7 @@ const D = {
       "cli": "Adapa Bio",
       "lbl": "Adapa Bio",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Bruno",
@@ -14155,6 +14798,7 @@ const D = {
       "cli": "Bernardo Oliveira",
       "lbl": "Bernardo Oliveira",
       "rec": 8000.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Gerson",
@@ -14165,6 +14809,7 @@ const D = {
       "cli": "Soma Auto Posto",
       "lbl": "Soma Auto Posto",
       "rec": 4500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "João",
@@ -14175,6 +14820,7 @@ const D = {
       "cli": "Timwe",
       "lbl": "Timwe",
       "rec": 19968.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -14185,6 +14831,7 @@ const D = {
       "cli": "Creare",
       "lbl": "Creare",
       "rec": 30000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Bruno",
@@ -14195,6 +14842,7 @@ const D = {
       "cli": "Gestão DS",
       "lbl": "Gestão DS",
       "rec": 4700.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -14205,6 +14853,7 @@ const D = {
       "cli": "Contador Revoltado",
       "lbl": "Contador Revoltado",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Bruno",
@@ -14215,6 +14864,7 @@ const D = {
       "cli": "Lucianne Canto",
       "lbl": "Lucianne Canto",
       "rec": 1350.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -14225,6 +14875,7 @@ const D = {
       "cli": "MKS EMPREENDIMENTOS",
       "lbl": "MKS EMPREENDIMENTOS",
       "rec": 6300.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -14235,6 +14886,7 @@ const D = {
       "cli": "MKS EMPREENDIMENTOS",
       "lbl": "MKS EMPREENDIMENTOS",
       "rec": 2250.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -14245,6 +14897,7 @@ const D = {
       "cli": "MKS EMPREENDIMENTOS",
       "lbl": "MKS EMPREENDIMENTOS",
       "rec": 1700.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -14255,6 +14908,7 @@ const D = {
       "cli": "MKS EMPREENDIMENTOS",
       "lbl": "MKS EMPREENDIMENTOS",
       "rec": 450.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -14265,6 +14919,7 @@ const D = {
       "cli": "Roberto Bertó",
       "lbl": "Roberto Bertó",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -14275,6 +14930,7 @@ const D = {
       "cli": "Roberto Bertó",
       "lbl": "Roberto Bertó",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -14285,6 +14941,7 @@ const D = {
       "cli": "Café Late",
       "lbl": "Café Late",
       "rec": 1800.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Carlos",
@@ -14295,6 +14952,7 @@ const D = {
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "rec": 5280.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -14305,6 +14963,7 @@ const D = {
       "cli": "Passadia",
       "lbl": "Passadia",
       "rec": 4500.0,
+      "ativo": false,
       "ok": false,
       "area": "Cível",
       "resp": "Rodrigo",
@@ -14315,6 +14974,7 @@ const D = {
       "cli": "Anecon",
       "lbl": "Anecon",
       "rec": 1000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Felipe",
@@ -14325,6 +14985,7 @@ const D = {
       "cli": "Mix Natural",
       "lbl": "Mix Natural",
       "rec": 1800.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -14335,6 +14996,7 @@ const D = {
       "cli": "Bookmark",
       "lbl": "Bookmark",
       "rec": 9268.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -14345,6 +15007,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -14355,6 +15018,7 @@ const D = {
       "cli": "Soma Auto Posto",
       "lbl": "Soma Auto Posto",
       "rec": 16980.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Bruno",
@@ -14365,6 +15029,7 @@ const D = {
       "cli": "Desafios Do Aprender",
       "lbl": "Desafios Do Aprender",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -14375,6 +15040,7 @@ const D = {
       "cli": "Dataglass",
       "lbl": "Dataglass",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -14385,6 +15051,7 @@ const D = {
       "cli": "Leticia - Hypnus",
       "lbl": "Leticia - Hypnus",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -14395,6 +15062,7 @@ const D = {
       "cli": "Hugo Oliveira",
       "lbl": "Hugo Oliveira",
       "rec": 1100.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Carlos",
@@ -14405,6 +15073,7 @@ const D = {
       "cli": "Mariangela Couto",
       "lbl": "Mariangela Couto",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -14415,6 +15084,7 @@ const D = {
       "cli": "O Grão",
       "lbl": "O Grão",
       "rec": 500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -14425,6 +15095,7 @@ const D = {
       "cli": "Actum",
       "lbl": "Actum",
       "rec": 1500.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -14435,6 +15106,7 @@ const D = {
       "cli": "O Grão",
       "lbl": "O Grão",
       "rec": 1200.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Gerson",
@@ -14445,6 +15117,7 @@ const D = {
       "cli": "O Grão",
       "lbl": "O Grão",
       "rec": 350.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Gerson",
@@ -14455,6 +15128,7 @@ const D = {
       "cli": "Gestão DS",
       "lbl": "Gestão DS",
       "rec": 4250.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -14465,6 +15139,7 @@ const D = {
       "cli": "Missoes Ambiental",
       "lbl": "Missoes Ambiental",
       "rec": 500.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -14475,6 +15150,7 @@ const D = {
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "rec": 13500.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -14485,6 +15161,7 @@ const D = {
       "cli": "O Grão",
       "lbl": "O Grão",
       "rec": 350.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -14495,6 +15172,7 @@ const D = {
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "rec": 2000.0,
+      "ativo": false,
       "ok": false,
       "area": "Empresarial",
       "resp": "Gerson",
@@ -14505,6 +15183,7 @@ const D = {
       "cli": "KS Arquitetos",
       "lbl": "KS Arquitetos",
       "rec": 350.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -14515,6 +15194,7 @@ const D = {
       "cli": "Quadra Engenharia",
       "lbl": "Quadra Engenharia",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Gerson",
@@ -14525,6 +15205,7 @@ const D = {
       "cli": "Quadra Engenharia",
       "lbl": "Quadra Engenharia",
       "rec": 20000.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Gerson",
@@ -14535,6 +15216,7 @@ const D = {
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
       "rec": 3000.0,
+      "ativo": false,
       "ok": false,
       "area": "PI, LGPD e Digital",
       "resp": "Rodrigo",
@@ -14545,6 +15227,7 @@ const D = {
       "cli": "Gestão DS",
       "lbl": "Gestão DS",
       "rec": 4000.0,
+      "ativo": false,
       "ok": false,
       "area": "Tributário",
       "resp": "Rodrigo",
@@ -14555,6 +15238,7 @@ const D = {
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "rec": 300.0,
+      "ativo": false,
       "ok": false,
       "area": "Trabalhista",
       "resp": "Gerson",
@@ -14565,6 +15249,7 @@ const D = {
       "cli": "Deck Beach",
       "lbl": "Deck Beach",
       "rec": 8000.0,
+      "ativo": false,
       "ok": false,
       "area": "Publico",
       "resp": "Felipe",
@@ -14575,6 +15260,7 @@ const D = {
       "cli": "Gabriel Zuazzani",
       "lbl": "Gabriel Zuazzani",
       "rec": 0.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Felipe",
@@ -14585,6 +15271,7 @@ const D = {
       "cli": "Patricia Durks",
       "lbl": "Patricia Durks",
       "rec": 6000.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -14595,6 +15282,7 @@ const D = {
       "cli": "Timwe",
       "lbl": "Timwe",
       "rec": 4396.0,
+      "ativo": false,
       "ok": false,
       "area": "Societário",
       "resp": "Felipe",
@@ -14605,6 +15293,7 @@ const D = {
       "cli": "Sérgio Piazza",
       "lbl": "Sérgio Piazza",
       "rec": 300.0,
+      "ativo": false,
       "ok": false,
       "area": "Imobiliário",
       "resp": "Rodrigo",
@@ -14616,6 +15305,7 @@ const D = {
       "cod": "4997",
       "cli": "Cordium",
       "lbl": "Mandado de Segurança Tributário — Receita Federal",
+      "ativo": true,
       "e": 0,
       "x": 24554.4,
       "resp": "Rodrigo",
@@ -14626,6 +15316,7 @@ const D = {
       "cod": "5002",
       "cli": "Cardiovita",
       "lbl": "Mandado de Segurança Tributário — Receita Federal",
+      "ativo": true,
       "e": 0,
       "x": 24554.4,
       "resp": "Rodrigo",
@@ -14636,6 +15327,7 @@ const D = {
       "cod": "4994",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Direito Público — Ministério Público SP",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14646,6 +15338,7 @@ const D = {
       "cod": "5000",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Cautelar — Cirion",
+      "ativo": true,
       "e": 15000.0,
       "x": 20000.0,
       "resp": "Felipe",
@@ -14656,6 +15349,7 @@ const D = {
       "cod": "4991",
       "cli": "Mint",
       "lbl": "Indenizatória — Banco do Brasil e Cielo",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Rodrigo",
@@ -14666,6 +15360,7 @@ const D = {
       "cod": "4983",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Maria Inês Nogueira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14676,6 +15371,7 @@ const D = {
       "cod": "4984",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Julio Cezar Perez",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14686,6 +15382,7 @@ const D = {
       "cod": "4981",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Cível — Ricardo Cezar de Oliveira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14696,6 +15393,7 @@ const D = {
       "cod": "4982",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Cível — Ana Paula da Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14706,6 +15404,7 @@ const D = {
       "cod": "4978",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Fernando Leandro Bordiak",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14716,6 +15415,7 @@ const D = {
       "cod": "4940",
       "cli": "G4 Educação",
       "lbl": "Defesa Indenizatória — CONTROLE CONTABIL DIGITAL LTDA",
+      "ativo": true,
       "e": 2431.5,
       "x": 0,
       "resp": "Equipe",
@@ -14726,6 +15426,7 @@ const D = {
       "cod": "4965",
       "cli": "Welucci",
       "lbl": "Defesa Trabalhista — Rogerio Rodrigues Coelho",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14736,6 +15437,7 @@ const D = {
       "cod": "4967",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Lucas Cunha Faria",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14746,6 +15448,7 @@ const D = {
       "cod": "4961",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Direito Público — Ministério Público",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14756,6 +15459,7 @@ const D = {
       "cod": "4908",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Obrigação de Fazer — Positivo Tecnologia",
+      "ativo": true,
       "e": 1000.0,
       "x": 0,
       "resp": "Equipe",
@@ -14766,6 +15470,7 @@ const D = {
       "cod": "4950",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Thiago Magalhaes dos Santos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14776,6 +15481,7 @@ const D = {
       "cod": "4951",
       "cli": "Banca do Holandês",
       "lbl": "Defesa Trabalhista — Glaucia Xavier Oliveira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14786,6 +15492,7 @@ const D = {
       "cod": "4952",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Helton Rodrigo Almeida Santos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14796,6 +15503,7 @@ const D = {
       "cod": "4953",
       "cli": "Welucci",
       "lbl": "Defesa Trabalhista — Gabriel Henrique da Silva Martins",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14806,6 +15514,7 @@ const D = {
       "cod": "4954",
       "cli": "Welucci",
       "lbl": "Defesa Trabalhista — JESSICA MICHAELA SOUZA DIAS OLIVEIRA",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14816,6 +15525,7 @@ const D = {
       "cod": "4836",
       "cli": "G4 Educação",
       "lbl": "Defesa Contratual — Alisson Kenedy dos Santos Vagmacker",
+      "ativo": true,
       "e": 2431.5,
       "x": 0,
       "resp": "Equipe",
@@ -14826,6 +15536,7 @@ const D = {
       "cod": "4936",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Luciene Scottini",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14836,6 +15547,7 @@ const D = {
       "cod": "4939",
       "cli": "Expert Integrado",
       "lbl": "Defesa Contratual — Centro de Formação de Condutores B Pinheiros",
+      "ativo": true,
       "e": 3242.0,
       "x": 3696.0,
       "resp": "Equipe",
@@ -14846,6 +15558,7 @@ const D = {
       "cod": "4946",
       "cli": "Welucci",
       "lbl": "Defesa Consumidor — Thais Souza Paes e Gabriel Marsilio Monte",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14856,6 +15569,7 @@ const D = {
       "cod": "4942",
       "cli": "Wine Locals",
       "lbl": "Alvará — Fernanda Paes Leme",
+      "ativo": true,
       "e": 3000.0,
       "x": 0,
       "resp": "Thomaz",
@@ -14866,6 +15580,7 @@ const D = {
       "cod": "4920",
       "cli": "Texian",
       "lbl": "High Ticket",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Yago",
@@ -14905,6 +15620,7 @@ const D = {
       "cod": "4905",
       "cli": "KS Arquitetos",
       "lbl": "Defesa Trabalhista — Matheus Queiroz da Silva",
+      "ativo": true,
       "e": 4500.0,
       "x": 0,
       "resp": "Equipe",
@@ -14915,6 +15631,7 @@ const D = {
       "cod": "4902",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Diogo Reis Souza",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14925,6 +15642,7 @@ const D = {
       "cod": "4903",
       "cli": "Brasil Paralelo",
       "lbl": "Ação de Direito Público — União Federal",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14935,6 +15653,7 @@ const D = {
       "cod": "4835",
       "cli": "G4 Educação",
       "lbl": "Defesa Contratual — Patricia Lopes de Azevedo",
+      "ativo": true,
       "e": 2431.5,
       "x": 0,
       "resp": "Equipe",
@@ -14945,6 +15664,7 @@ const D = {
       "cod": "4886",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Cobrança — Manoel Aparecido Lopes dos Santos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14955,6 +15675,7 @@ const D = {
       "cod": "4895",
       "cli": "Multi Solution",
       "lbl": "Cobrança — Shopping America Mall",
+      "ativo": true,
       "e": 0,
       "x": 14000.0,
       "resp": "Felipe",
@@ -14965,6 +15686,7 @@ const D = {
       "cod": "4874",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Flavio de Sousa Carvalho",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14975,6 +15697,7 @@ const D = {
       "cod": "4882",
       "cli": "LBF (Engenharia e Servicos)",
       "lbl": "Tutela Cautelar Antecedente — R&G Sistemas de Segurança",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -14985,6 +15708,7 @@ const D = {
       "cod": "4837",
       "cli": "G4 Educação",
       "lbl": "Defesa Rescisão Contratual — Duo Odontologia e Medicina",
+      "ativo": true,
       "e": 4863.0,
       "x": 0,
       "resp": "Equipe",
@@ -14995,6 +15719,7 @@ const D = {
       "cod": "4876",
       "cli": "Banca do Holandês",
       "lbl": "Defesa Trabalhista — Adriane Amaral dos Santos",
+      "ativo": true,
       "e": 3500.0,
       "x": 0,
       "resp": "Equipe",
@@ -15005,6 +15730,7 @@ const D = {
       "cod": "4877",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Rodrigo Ferreira de Jesus",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15015,6 +15741,7 @@ const D = {
       "cod": "4878",
       "cli": "Welucci",
       "lbl": "Defesa Cobrança — Cinthia Gemelgo Nascimento",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15025,6 +15752,7 @@ const D = {
       "cod": "4871",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Rodolfo Hazelamn Cunha",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15035,6 +15763,7 @@ const D = {
       "cod": "4872",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Raquel Antunes de Melo",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15045,6 +15774,7 @@ const D = {
       "cod": "4850",
       "cli": "M2T GASTRONOMIA E SERVICOS LTDA (300),Grupo TE2",
       "lbl": "Defesa Consumidor — Fernando Gabriel Pereiro",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15055,6 +15785,7 @@ const D = {
       "cod": "4847",
       "cli": "Creare",
       "lbl": "Defesa Trabalhista — Letycia Braun Teixeira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15065,6 +15796,7 @@ const D = {
       "cod": "4848",
       "cli": "Welucci",
       "lbl": "Defesa Consumidor — Marjorie Cruz de Victor",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15075,6 +15807,7 @@ const D = {
       "cod": "4839",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — José Soares Sobrinho",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15085,6 +15818,7 @@ const D = {
       "cod": "4840",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Paulo Fernando Santoro",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15095,6 +15829,7 @@ const D = {
       "cod": "4829",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Vinicius Costa Neves",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15105,6 +15840,7 @@ const D = {
       "cod": "4816",
       "cli": "Gabriel Rezende",
       "lbl": "Defesa Execução — JFRS",
+      "ativo": true,
       "e": 9000.0,
       "x": 28000.0,
       "resp": "Thomaz",
@@ -15115,6 +15851,7 @@ const D = {
       "cod": "4826",
       "cli": "Welucci",
       "lbl": "Defesa Consumidor — Raffael Novoa dos Santos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15125,6 +15862,7 @@ const D = {
       "cod": "4827",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — João Paulo de Barros Matos",
+      "ativo": true,
       "e": 4863.0,
       "x": 0,
       "resp": "Equipe",
@@ -15135,6 +15873,7 @@ const D = {
       "cod": "4828",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Trabalhista — Vanessa da Silva Goncalves",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15145,6 +15884,7 @@ const D = {
       "cod": "4815",
       "cli": "GC Engenharia",
       "lbl": "Defesa Cível — Nilson Xavier",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -15160,6 +15900,7 @@ const D = {
       "cod": "4810",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Cível — Fabiane Reis Amorim Vieira Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15170,6 +15911,7 @@ const D = {
       "cod": "4783",
       "cli": "Welucci",
       "lbl": "Defesa Trabalhista — Vinnicius Jose Batista Lima",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15180,6 +15922,7 @@ const D = {
       "cod": "4785",
       "cli": "Rodrigo Castilhos",
       "lbl": "Ação Indenizatória — Companhia Aérea",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -15190,6 +15933,7 @@ const D = {
       "cod": "4772",
       "cli": "Brasil Paralelo",
       "lbl": "Ação de Direito Público — MP/SP",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15200,6 +15944,7 @@ const D = {
       "cod": "4782",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Mike da Silva Fernandes",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15210,6 +15955,7 @@ const D = {
       "cod": "4737",
       "cli": "G4 Educação",
       "lbl": "Defesa Rescisão Contratual — Rebeca Vitoria Rocha da Silva",
+      "ativo": true,
       "e": 2431.5,
       "x": 0,
       "resp": "Equipe",
@@ -15220,6 +15966,7 @@ const D = {
       "cod": "4760",
       "cli": "Frass Incorporadora",
       "lbl": "Mandado de Segurança — Município de Porto Alegre",
+      "ativo": true,
       "e": 0,
       "x": 8570.69,
       "resp": "Equipe",
@@ -15230,6 +15977,7 @@ const D = {
       "cod": "4763",
       "cli": "Welucci",
       "lbl": "Defesa Cível — ALG Eventos e Locações",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15240,6 +15988,7 @@ const D = {
       "cod": "4770",
       "cli": "Andrei Sanson",
       "lbl": "Cobrança — Artêmio Augusto Fontana",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -15250,6 +15999,7 @@ const D = {
       "cod": "4771",
       "cli": "Andrei Sanson",
       "lbl": "Cobrança — Lenira Maria de Campos Rocha",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -15260,6 +16010,7 @@ const D = {
       "cod": "4812",
       "cli": "Lumens Atuarial",
       "lbl": "Ação Tributária — União",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Yago",
@@ -15270,6 +16021,7 @@ const D = {
       "cod": "4813",
       "cli": "Lumens Atuarial",
       "lbl": "Ação Tributária — União",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Yago",
@@ -15293,6 +16045,7 @@ const D = {
       "cod": "4814",
       "cli": "Lumens Atuarial",
       "lbl": "Impugnação Majoração Lucro Presumido — Receita Federal",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Yago",
@@ -15320,6 +16073,7 @@ const D = {
       "cod": "4761",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Cível — Parte Contrária Desconhecida",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15330,6 +16084,7 @@ const D = {
       "cod": "4762",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Cível — Paulo Augusto dos Reis Batista",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15340,6 +16095,7 @@ const D = {
       "cod": "4758",
       "cli": "Welucci",
       "lbl": "Defesa Consumidor — Silvio Luis Holzer",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15350,6 +16106,7 @@ const D = {
       "cod": "4748",
       "cli": "SK Balas",
       "lbl": "Defesa Trabalhista — Ana Paula Gomes da Costa",
+      "ativo": true,
       "e": 3500.0,
       "x": 0,
       "resp": "Equipe",
@@ -15360,6 +16117,7 @@ const D = {
       "cod": "4738",
       "cli": "Welucci",
       "lbl": "Defesa Cível — JJ Eventos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15370,6 +16128,7 @@ const D = {
       "cod": "4739",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Revisional Bancário — Miguel Elias Dognini",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15380,6 +16139,7 @@ const D = {
       "cod": "4742",
       "cli": "Brasil Paralelo",
       "lbl": "Ação Administrativa — MP/SP",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15390,6 +16150,7 @@ const D = {
       "cod": "4718",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cominatória/Indenizatória — B2B Solucoes em TI",
+      "ativo": true,
       "e": 2000.0,
       "x": 0,
       "resp": "Equipe",
@@ -15400,6 +16161,7 @@ const D = {
       "cod": "4729",
       "cli": "Expermed",
       "lbl": "Defesa Indenizatória — Michael Miranda de Souza",
+      "ativo": true,
       "e": 1621.0,
       "x": 0,
       "resp": "Equipe",
@@ -15410,6 +16172,7 @@ const D = {
       "cod": "4734",
       "cli": "Welucci",
       "lbl": "Defesa Cível — Biodiversite do Brasil",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15420,6 +16183,7 @@ const D = {
       "cod": "4725",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Merolly Dayane Santana Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15430,6 +16194,7 @@ const D = {
       "cod": "4726",
       "cli": "Happy House",
       "lbl": "Mandado de Segurança — União",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Felipe",
@@ -15440,6 +16205,7 @@ const D = {
       "cod": "4727",
       "cli": "Happy House",
       "lbl": "Mandado de Segurança — Receita Federal",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Felipe",
@@ -15450,6 +16216,7 @@ const D = {
       "cod": "4730",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Sonia Regina de Morais Prates",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15460,6 +16227,7 @@ const D = {
       "cod": "4731",
       "cli": "Expermed",
       "lbl": "Defesa Trabalhista — Claudia Conceição dos Santos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15470,6 +16238,7 @@ const D = {
       "cod": "4717",
       "cli": "Spectrun",
       "lbl": "Defesa Cível — Daniel Nobrega Mendes",
+      "ativo": true,
       "e": 3242.0,
       "x": 0,
       "resp": "Equipe",
@@ -15480,6 +16249,7 @@ const D = {
       "cod": "4714",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Produção Antecipada de Provas — [Parte Contrária]",
+      "ativo": true,
       "e": 30000.0,
       "x": 0,
       "resp": "Felipe",
@@ -15490,6 +16260,7 @@ const D = {
       "cod": "4716",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Trabalhista — Tais dos Santos da Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15500,6 +16271,7 @@ const D = {
       "cod": "4095",
       "cli": "Creare",
       "lbl": "Defesa Cível — Transportadora Paineiras",
+      "ativo": true,
       "e": 0,
       "x": 13131.0,
       "resp": "Equipe",
@@ -15510,6 +16282,7 @@ const D = {
       "cod": "4646",
       "cli": "Felipe Porfíro",
       "lbl": "Nunciação de Obra Nova — [parte contrária]",
+      "ativo": true,
       "e": 5500.0,
       "x": 12000.0,
       "resp": "Felipe",
@@ -15520,6 +16293,7 @@ const D = {
       "cod": "4706",
       "cli": "Oak's Burritos",
       "lbl": "Defesa Cobrança — SICOOB",
+      "ativo": true,
       "e": 5000.0,
       "x": 30586.91,
       "resp": "Equipe",
@@ -15530,6 +16304,7 @@ const D = {
       "cod": "4707",
       "cli": "Welucci",
       "lbl": "Defesa Trabalhista — MPT2",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15540,6 +16315,7 @@ const D = {
       "cod": "4618",
       "cli": "CELSO OVALLE",
       "lbl": "Recuperação de Investimento Imobiliário — Grupo STX",
+      "ativo": true,
       "e": 4500.0,
       "x": 60000.0,
       "resp": "Rodrigo",
@@ -15550,6 +16326,7 @@ const D = {
       "cod": "4699",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Darlla Layse Torres de Lima",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15560,6 +16337,7 @@ const D = {
       "cod": "4704",
       "cli": "O Patrimônio Bar",
       "lbl": "Defesa Trabalhista — Mauricio Ramos de Aguiar",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15570,6 +16348,7 @@ const D = {
       "cod": "4689",
       "cli": "Welucci",
       "lbl": "Defesa Cobrança — Luiz H M S de Araujo Ltda",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15580,6 +16359,7 @@ const D = {
       "cod": "4690",
       "cli": "Welucci",
       "lbl": "Defesa Execução de Título — SPARK PROJETOS & OBRAS LTDA",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15590,6 +16370,7 @@ const D = {
       "cod": "4694",
       "cli": "Hops Company",
       "lbl": "Mandado de Segurança — ANVISA",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Thomaz",
@@ -15600,6 +16381,7 @@ const D = {
       "cod": "4696",
       "cli": "Banca do Holandês,Armazem Trinta e Oito",
       "lbl": "Defesa Trabalhista — Paolo Jonathas Silva Verdun",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15610,6 +16392,7 @@ const D = {
       "cod": "4684",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Clementina Fernandas Backstronh e Aline Fernandes Backstron Rodrigues",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15620,6 +16403,7 @@ const D = {
       "cod": "4645",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Guilherme Cordeiro Franco",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15630,6 +16414,7 @@ const D = {
       "cod": "4641",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Ana Karolina Gisloti Antunes Ribeiro",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15640,6 +16425,7 @@ const D = {
       "cod": "4644",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Frandoloso Comercio de Materiais",
+      "ativo": true,
       "e": 3242.0,
       "x": 0,
       "resp": "Equipe",
@@ -15650,6 +16436,7 @@ const D = {
       "cod": "4610",
       "cli": "Kit Lanche Express",
       "lbl": "Cobrança c/c Indenizatória — Renata Luchesi Patrone",
+      "ativo": true,
       "e": 4500.0,
       "x": 3000.0,
       "resp": "Equipe",
@@ -15660,6 +16447,7 @@ const D = {
       "cod": "4631",
       "cli": "SK Balas",
       "lbl": "Defesa Trabalhista — Francielle Prado Oliveira",
+      "ativo": true,
       "e": 3500.0,
       "x": 0,
       "resp": "Equipe",
@@ -15670,6 +16458,7 @@ const D = {
       "cod": "4620",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Ricardo Fernandes Gomes",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15680,6 +16469,7 @@ const D = {
       "cod": "4622",
       "cli": "the 4am culture",
       "lbl": "Mandado de Segurança — Exclusão PIS/COFINS da Base de Cálculo",
+      "ativo": true,
       "e": 0.0,
       "x": 5000.0,
       "resp": "Yago",
@@ -15703,6 +16493,7 @@ const D = {
       "cod": "4623",
       "cli": "the 4am culture",
       "lbl": "Mandado de Segurança — IRPJ/CSLL Lucro Presumido",
+      "ativo": true,
       "e": 0.0,
       "x": 5000.0,
       "resp": "Yago",
@@ -15713,6 +16504,7 @@ const D = {
       "cod": "4339",
       "cli": "Dionísia",
       "lbl": "Defesa Trabalhista — Janaina de Freitas Souza",
+      "ativo": true,
       "e": 3500.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -15723,6 +16515,7 @@ const D = {
       "cod": "4607",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Cível — Editora Literatura Clássica Ltda.",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15733,6 +16526,7 @@ const D = {
       "cod": "4573",
       "cli": "WS Group",
       "lbl": "Execução de Confissão de Dívida — William Hesse",
+      "ativo": true,
       "e": 2500.0,
       "x": 48000.0,
       "resp": "Thomaz",
@@ -15743,6 +16537,7 @@ const D = {
       "cod": "4598",
       "cli": "Bernardo Roque de Pinho",
       "lbl": "Cobrança — FGTS Bloqueado",
+      "ativo": true,
       "e": 2500.0,
       "x": 5390.0,
       "resp": "Gerson",
@@ -15753,6 +16548,7 @@ const D = {
       "cod": "4599",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Marlon Ribeiro do Amaral Junior",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15763,6 +16559,7 @@ const D = {
       "cod": "4592",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Cível — Francisco Bini e Paulo Cesar Fae",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15773,6 +16570,7 @@ const D = {
       "cod": "4574",
       "cli": "Leads For You",
       "lbl": "Indenização por Violação de PI — Débora Vieira de Castro Teodoro",
+      "ativo": true,
       "e": 2500.0,
       "x": 2000.0,
       "resp": "Thomaz",
@@ -15783,6 +16581,7 @@ const D = {
       "cod": "4578",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Maria Clara David Cangussu Fernandes Ribeiro",
+      "ativo": true,
       "e": 4052.5,
       "x": 0,
       "resp": "Equipe",
@@ -15793,6 +16592,7 @@ const D = {
       "cod": "4589",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Monica Arantes de Oliveira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15803,6 +16603,7 @@ const D = {
       "cod": "4590",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Tereza Cristina da Motta",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15813,6 +16614,7 @@ const D = {
       "cod": "4421",
       "cli": "Leads For You",
       "lbl": "Ação Cível — Instagram",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Thomaz",
@@ -15823,6 +16625,7 @@ const D = {
       "cod": "4452",
       "cli": "GC Engenharia",
       "lbl": "Defesa Societária — REALPAR",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -15833,6 +16636,7 @@ const D = {
       "cod": "4552",
       "cli": "Gestão DS",
       "lbl": "Defesa Cível — SIMERS",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -15843,6 +16647,7 @@ const D = {
       "cod": "4572",
       "cli": "VANDERLEIA GOTTLIEB",
       "lbl": "Reintegração de Posse — Alienação Fiduciária",
+      "ativo": true,
       "e": 1500.0,
       "x": 15000.0,
       "resp": "Rodrigo",
@@ -15853,6 +16658,7 @@ const D = {
       "cod": "4577",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Maira Campos de Oliveira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15863,6 +16669,7 @@ const D = {
       "cod": "4579",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Diana Viana de Oliveira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15873,6 +16680,7 @@ const D = {
       "cod": "4580",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Vitor Gonçalves Guimarães",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15883,6 +16691,7 @@ const D = {
       "cod": "4581",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Ana Larissa Marques de Vilhena Cornelio",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15893,6 +16702,7 @@ const D = {
       "cod": "4557",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Helder Anatoli Gurgel Juarez",
+      "ativo": true,
       "e": 2431.5,
       "x": 0,
       "resp": "Equipe",
@@ -15903,6 +16713,7 @@ const D = {
       "cod": "4575",
       "cli": "RS Recicla",
       "lbl": "Defesa Trabalhista — Leonardo Rodrigues Quintana",
+      "ativo": true,
       "e": 2500.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -15913,6 +16724,7 @@ const D = {
       "cod": "4576",
       "cli": "Krystal Incorporadora",
       "lbl": "Ação Cível — STV Segurança, Tecnologia e Vigilância Patrimonial LTDA",
+      "ativo": true,
       "e": 3000.0,
       "x": 10000.0,
       "resp": "Equipe",
@@ -15923,6 +16735,7 @@ const D = {
       "cod": "4469",
       "cli": "Jose Ricardo Marques Paixão",
       "lbl": "Ações de Consumidor — Embracon Consórcios",
+      "ativo": true,
       "e": 3000.0,
       "x": 15000.0,
       "resp": "Rodrigo",
@@ -15933,6 +16746,7 @@ const D = {
       "cod": "4563",
       "cli": "Escola de Educação Infantil Projeto Pensar Ltda – ME",
       "lbl": "Defesa Trabalhista — Rosimeri Zanirati Nunes Ferreira",
+      "ativo": true,
       "e": 2500.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -15943,6 +16757,7 @@ const D = {
       "cod": "4564",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Eliana D Arc Pestana",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15953,6 +16768,7 @@ const D = {
       "cod": "4566",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Victor Hugo Nascimento",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15963,6 +16779,7 @@ const D = {
       "cod": "4569",
       "cli": "MOBYLOG TECNOLOGIA DA INFORMACAO LTDA (CREARE)",
       "lbl": "Defesa Trabalhista — Juan de Souza Santos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15973,6 +16790,7 @@ const D = {
       "cod": "4438",
       "cli": "Thanks Produções",
       "lbl": "Cobrança — R$ 250.000,00",
+      "ativo": true,
       "e": 1000.0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -15983,6 +16801,7 @@ const D = {
       "cod": "4562",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Thais Soares da Luz",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -15993,6 +16812,7 @@ const D = {
       "cod": "4559",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Hugo Fellipe Gomes da Silva",
+      "ativo": true,
       "e": 3242.0,
       "x": 0,
       "resp": "Equipe",
@@ -16003,6 +16823,7 @@ const D = {
       "cod": "4561",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Cleber dos Santos da Costa",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16013,6 +16834,7 @@ const D = {
       "cod": "4551",
       "cli": "Krystal Incorporadora",
       "lbl": "Defesa Cobrança — Clarissa Winkler Brufato",
+      "ativo": true,
       "e": 3000.0,
       "x": 7476.0,
       "resp": "Equipe",
@@ -16023,6 +16845,7 @@ const D = {
       "cod": "4524",
       "cli": "Expermed",
       "lbl": "Defesa Indenizatória — Danos Materiais e Morais",
+      "ativo": true,
       "e": 1621.0,
       "x": 0,
       "resp": "Equipe",
@@ -16033,6 +16856,7 @@ const D = {
       "cod": "4357",
       "cli": "Caroline Dias",
       "lbl": "Reclamação Trabalhista — Hospital Universitário Canoas",
+      "ativo": true,
       "e": 0,
       "x": 15000.0,
       "resp": "Gerson",
@@ -16043,6 +16867,7 @@ const D = {
       "cod": "4538",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Dilson Pereira Castelo",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16053,6 +16878,7 @@ const D = {
       "cod": "4541",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Marcelo Padilha",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16063,6 +16889,7 @@ const D = {
       "cod": "4529",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Domingos Assunção da Silva Neto",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16073,6 +16900,7 @@ const D = {
       "cod": "4539",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Fábio Damasceno",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16083,6 +16911,7 @@ const D = {
       "cod": "4496",
       "cli": "NTC Service",
       "lbl": "Defesa Trabalhista — Thammy Teixeira",
+      "ativo": true,
       "e": 2500.0,
       "x": 0,
       "resp": "Gerson",
@@ -16093,6 +16922,7 @@ const D = {
       "cod": "4520",
       "cli": "B4FUN",
       "lbl": "Defesa Cível — Rodrigo Franceschini Tavares",
+      "ativo": true,
       "e": 1166.0,
       "x": 7000.0,
       "resp": "Thomaz",
@@ -16103,6 +16933,7 @@ const D = {
       "cod": "4522",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Cleide Lucia Brito Paraiso de Souza",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16113,6 +16944,7 @@ const D = {
       "cod": "4515",
       "cli": "Ana Rosa Rodrigues Caldas Soares (Funcionária Brasil Paralelo)",
       "lbl": "Defesa Cível — Sociedade Empresária de Ensino Superior do Litoral Norte",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16123,6 +16955,7 @@ const D = {
       "cod": "4516",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Thiago Ferreira Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16133,6 +16966,7 @@ const D = {
       "cod": "4508",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Direito Público — Anderson Collavite Ribeiro",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16143,6 +16977,7 @@ const D = {
       "cod": "4501",
       "cli": "Brasil Paralelo",
       "lbl": "Ação Popular — TJSP 1052999-40.2026.8.26.0053",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16153,6 +16988,7 @@ const D = {
       "cod": "4504",
       "cli": "Creare",
       "lbl": "Defesa Trabalhista — Jeffrey de Andrade Teixeira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16163,6 +16999,7 @@ const D = {
       "cod": "4505",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Paulo Roberto de Lima Carvalho",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16173,6 +17010,7 @@ const D = {
       "cod": "4485",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Pedro Faustino da Paixão",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16183,6 +17021,7 @@ const D = {
       "cod": "4486",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — Fiscoplan Tecnologia Tributária",
+      "ativo": true,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -16193,6 +17032,7 @@ const D = {
       "cod": "4487",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Ana Julia Paes Liborio Freitas",
+      "ativo": true,
       "e": 3242.0,
       "x": 0,
       "resp": "Equipe",
@@ -16203,6 +17043,7 @@ const D = {
       "cod": "4483",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Thiago Mello Coimbra",
+      "ativo": true,
       "e": 3242.0,
       "x": 0,
       "resp": "Equipe",
@@ -16213,6 +17054,7 @@ const D = {
       "cod": "4464",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Eloi Americano de Freitas Neto",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16223,6 +17065,7 @@ const D = {
       "cod": "4480",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Wellington Vinicius Zorzetti",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16233,6 +17076,7 @@ const D = {
       "cod": "4459",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Claudete Maria Bezerra de Melo",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16243,6 +17087,7 @@ const D = {
       "cod": "4461",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Amanda Ruana e outros",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16253,6 +17098,7 @@ const D = {
       "cod": "4435",
       "cli": "the news",
       "lbl": "Mandado de Segurança — ISS/PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -16276,6 +17122,7 @@ const D = {
       "cod": "4463",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Luiza Helena Nogueira Feitosa",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16286,6 +17133,7 @@ const D = {
       "cod": "4471",
       "cli": "the news",
       "lbl": "Mandado de Segurança — PIS/COFINS (Tema 1.067)",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -16309,6 +17157,7 @@ const D = {
       "cod": "4472",
       "cli": "the news",
       "lbl": "MS — Exclusão PIS/COFINS IRPJ/CSLL Lucro Presumido",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -16319,6 +17168,7 @@ const D = {
       "cod": "4473",
       "cli": "the news",
       "lbl": "Mandado de Segurança — Lucro Presumido LC 224/2025",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -16329,6 +17179,7 @@ const D = {
       "cod": "4446",
       "cli": "LBF (Engenharia e Servicos)",
       "lbl": "Defesa Cível — Maria Elisabete Borba",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -16339,6 +17190,7 @@ const D = {
       "cod": "4440",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Vandrei Fernandes de Borba Martins",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16349,6 +17201,7 @@ const D = {
       "cod": "4441",
       "cli": "MOBYLOG TECNOLOGIA DA INFORMACAO LTDA (CREARE)",
       "lbl": "Defesa Trabalhista — Carlos Eduardo dos Santos Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16359,6 +17212,7 @@ const D = {
       "cod": "4439",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Thiago Andrey Dias Costa",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16369,6 +17223,7 @@ const D = {
       "cod": "4399",
       "cli": "Rafael Wassler",
       "lbl": "Dissolução Parcial Societária — GAMAN",
+      "ativo": true,
       "e": 4800.0,
       "x": 0,
       "resp": "Thomaz",
@@ -16379,6 +17234,7 @@ const D = {
       "cod": "3894",
       "cli": "Henrique Corso Ramos",
       "lbl": "Partilha de Bens",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -16389,6 +17245,7 @@ const D = {
       "cod": "4432",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Maria Jaqueline de Oliveira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16399,6 +17256,7 @@ const D = {
       "cod": "4433",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Kamila Tuany Leão Lima",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16409,6 +17267,7 @@ const D = {
       "cod": "4434",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Revisional e Indenizatória — 0810693-72.2025.8.19.0052",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16419,6 +17278,7 @@ const D = {
       "cod": "2926",
       "cli": "Air Fluide",
       "lbl": "Mandado de Segurança — PIS/COFINS Tema 1.067",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -16442,6 +17302,7 @@ const D = {
       "cod": "4422",
       "cli": "Ocupe Digital",
       "lbl": "Defesa Trabalhista — Mayra Dias Russo",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16452,6 +17313,7 @@ const D = {
       "cod": "4423",
       "cli": "Banca do Holandês",
       "lbl": "Defesa Trabalhista — Maria Eduarda Bueno Lima",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16462,6 +17324,7 @@ const D = {
       "cod": "4300",
       "cli": "MOBYLOG TECNOLOGIA DA INFORMACAO LTDA (CREARE)",
       "lbl": "Defesa Trabalhista — Anderson Murilo Machado Leite",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16472,6 +17335,7 @@ const D = {
       "cod": "4408",
       "cli": "Flowork",
       "lbl": "Defesa Trabalhista — Vitoria Silva Diehl",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16482,6 +17346,7 @@ const D = {
       "cod": "4409",
       "cli": "MOBYLOG TECNOLOGIA DA INFORMACAO LTDA (CREARE)",
       "lbl": "Defesa Trabalhista — Deise Fernandes Enoque",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16492,6 +17357,7 @@ const D = {
       "cod": "4410",
       "cli": "MOBYLOG TECNOLOGIA DA INFORMACAO LTDA (CREARE)",
       "lbl": "Defesa Trabalhista — Raphael Vinicius Nicola Montanari",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16502,6 +17368,7 @@ const D = {
       "cod": "4411",
       "cli": "MOBYLOG TECNOLOGIA DA INFORMACAO LTDA (CREARE)",
       "lbl": "Defesa Trabalhista — Maria Lucilia Ferreira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16512,6 +17379,7 @@ const D = {
       "cod": "4412",
       "cli": "MOBYLOG TECNOLOGIA DA INFORMACAO LTDA (CREARE)",
       "lbl": "Defesa Trabalhista — Murilo Vedoveli da Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16522,6 +17390,7 @@ const D = {
       "cod": "4413",
       "cli": "MOBYLOG TECNOLOGIA DA INFORMACAO LTDA (CREARE)",
       "lbl": "Defesa Trabalhista Mobylog - LOANE DELMONDES",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16532,6 +17401,7 @@ const D = {
       "cod": "4414",
       "cli": "MOBYLOG TECNOLOGIA DA INFORMACAO LTDA (CREARE)",
       "lbl": "Defesa Trabalhista — Nathalia Alves Florencio",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16542,6 +17412,7 @@ const D = {
       "cod": "4397",
       "cli": "Banca do Holandês",
       "lbl": "Defesa Trabalhista — Christian Giovanni Fraga Fernandes",
+      "ativo": true,
       "e": 0,
       "x": 20245.92,
       "resp": "Gerson",
@@ -16552,6 +17423,7 @@ const D = {
       "cod": "4405",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Cível — Tirreno Finanças e Negócios Ltda.",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16562,6 +17434,7 @@ const D = {
       "cod": "4368",
       "cli": "Rhello RH (Ecco Talent)",
       "lbl": "Defesa Trabalhista — Mariana Cordeiro de Lima",
+      "ativo": false,
       "e": 2500.0,
       "x": 1500.0,
       "resp": "Gerson",
@@ -16572,6 +17445,7 @@ const D = {
       "cod": "4406",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Marcia Regibna Carrijo Bretones",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16582,6 +17456,7 @@ const D = {
       "cod": "4358",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Evosolar Soluções Energéticas",
+      "ativo": true,
       "e": 2431.5,
       "x": 0,
       "resp": "Equipe",
@@ -16592,6 +17467,7 @@ const D = {
       "cod": "4415",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Sergio Luis da Costa",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16602,6 +17478,7 @@ const D = {
       "cod": "4367",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Jesus Carlos das Chagas Rosa",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16612,6 +17489,7 @@ const D = {
       "cod": "4294",
       "cli": "Ouvrage Medição e Saneamento",
       "lbl": "Defesa Trabalhista — Isaque Daniel Moreira Machado",
+      "ativo": true,
       "e": 2500.0,
       "x": 3000.0,
       "resp": "Equipe",
@@ -16622,6 +17500,7 @@ const D = {
       "cod": "4342",
       "cli": "Banca do Holandês",
       "lbl": "Defesa Trabalhista — Jose Lucas Santos dos Santos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16632,6 +17511,7 @@ const D = {
       "cod": "4343",
       "cli": "SK Balas",
       "lbl": "Defesa Trabalhista — Leticia Silveira da Luz",
+      "ativo": true,
       "e": 2500.0,
       "x": 3000.0,
       "resp": "Equipe",
@@ -16642,6 +17522,7 @@ const D = {
       "cod": "4244",
       "cli": "Flowork",
       "lbl": "Defesa Trabalhista — Renata de Mattos Colombes Alves",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Thomaz",
@@ -16652,6 +17533,7 @@ const D = {
       "cod": "4344",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Solange Batista da Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16662,6 +17544,7 @@ const D = {
       "cod": "3968",
       "cli": "Mesa",
       "lbl": "Mandado de Segurança — Perdcomp",
+      "ativo": true,
       "e": 0,
       "x": 35000.0,
       "resp": "Thomaz",
@@ -16672,6 +17555,7 @@ const D = {
       "cod": "4276",
       "cli": "Movarte",
       "lbl": "Cobrança — Locatária Inadimplente",
+      "ativo": true,
       "e": 1500.0,
       "x": 1800.0,
       "resp": "Thomaz",
@@ -16682,6 +17566,7 @@ const D = {
       "cod": "4310",
       "cli": "Leads For You",
       "lbl": "Cumprimento de Sentença — Paulo Henrique Martins Souza",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Thomaz",
@@ -16692,6 +17577,7 @@ const D = {
       "cod": "4360",
       "cli": "Brasil Paralelo",
       "lbl": "Ação de cobrança",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16702,6 +17588,7 @@ const D = {
       "cod": "4361",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Cível — Mercatto Serviços de Recuperação de Créditos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16712,6 +17599,7 @@ const D = {
       "cod": "4348",
       "cli": "LARCA PROMOTORA DE VENDAS LTDA",
       "lbl": "MS Exclusão ISS — PIS/COFINS (Tema 118)",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -16722,6 +17610,7 @@ const D = {
       "cod": "4349",
       "cli": "MC COBRANÇA E ANÁLISE DE CRÉDITO LTDA",
       "lbl": "MS — Exclusão ISS da Base PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -16732,6 +17621,7 @@ const D = {
       "cod": "4148",
       "cli": "Priscila da Graça Souza Lopes",
       "lbl": "Usucapião + Embargos de Terceiro — Fazenda Pública",
+      "ativo": true,
       "e": 12500.0,
       "x": 15.0,
       "resp": "Equipe",
@@ -16742,6 +17632,7 @@ const D = {
       "cod": "4296",
       "cli": "Santilva Viganigo da Silva",
       "lbl": "Reclamatória Trabalhista — ASM e Outros",
+      "ativo": true,
       "e": 1000.0,
       "x": 10000.0,
       "resp": "Equipe",
@@ -16752,6 +17643,7 @@ const D = {
       "cod": "4290",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Sebastião Batista Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16762,6 +17654,7 @@ const D = {
       "cod": "4292",
       "cli": "Brasil Paralelo",
       "lbl": "Alvará judicial crianças",
+      "ativo": false,
       "e": 20000.0,
       "x": 0,
       "resp": "Felipe",
@@ -16772,6 +17665,7 @@ const D = {
       "cod": "4277",
       "cli": "Modale",
       "lbl": "Mandado de Segurança — ISS/PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -16811,6 +17705,7 @@ const D = {
       "cod": "4283",
       "cli": "Modale",
       "lbl": "Mandado de Segurança — Exclusão PIS/COFINS (Tema 1.067)",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -16821,6 +17716,7 @@ const D = {
       "cod": "4269",
       "cli": "WBP",
       "lbl": "Mandado de Segurança — ISS/PIS/COFINS — Tema 118/STF",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Thomaz",
@@ -16831,6 +17727,7 @@ const D = {
       "cod": "4275",
       "cli": "Spectrun",
       "lbl": "Mandado de Segurança — Exclusão ISS da Base PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -16841,6 +17738,7 @@ const D = {
       "cod": "4265",
       "cli": "LAR COBRANÇA E ANÁLISE DE CRÉDITO LTDA",
       "lbl": "Mandado de Segurança — Exclusão ISS/PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -16851,6 +17749,7 @@ const D = {
       "cod": "4267",
       "cli": "RS Recicla",
       "lbl": "Mandado de Segurança — ISS/PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Felipe",
@@ -16861,6 +17760,7 @@ const D = {
       "cod": "4268",
       "cli": "Universo ABA",
       "lbl": "MS — Exclusão ISS da Base PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Felipe",
@@ -16871,6 +17771,7 @@ const D = {
       "cod": "4258",
       "cli": "Arqexpress",
       "lbl": "Ação Tributária — ISS/PIS/Cofins",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Thomaz",
@@ -16881,6 +17782,7 @@ const D = {
       "cod": "4250",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Waysllan Xavier de Oliveira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16891,6 +17793,7 @@ const D = {
       "cod": "4251",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Elizabete Cristine Oliveira de Melo",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -16901,6 +17804,7 @@ const D = {
       "cod": "4255",
       "cli": "Ernani Temp",
       "lbl": "Encerramento Processual",
+      "ativo": false,
       "e": 10000.0,
       "x": 0,
       "resp": "Felipe",
@@ -16911,6 +17815,7 @@ const D = {
       "cod": "4230",
       "cli": "Expermed",
       "lbl": "MS — PIS/COFINS Base de Cálculo — TEMA 1067/STF",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Felipe",
@@ -16930,6 +17835,7 @@ const D = {
       "cod": "4231",
       "cli": "Expermed",
       "lbl": "Mandado de Segurança — PIS/COFINS IRPJ/CSLL",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Felipe",
@@ -16953,6 +17859,7 @@ const D = {
       "cod": "4232",
       "cli": "Expermed",
       "lbl": "Mandado de Segurança — Lucro Presumido",
+      "ativo": true,
       "e": 4000.0,
       "x": 0,
       "resp": "Felipe",
@@ -16980,6 +17887,7 @@ const D = {
       "cod": "4640",
       "cli": "Expermed",
       "lbl": "MS — Exclusão ISS da Base PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Felipe",
@@ -16990,6 +17898,7 @@ const D = {
       "cod": "4222",
       "cli": "Bripaza",
       "lbl": "Mandado de Segurança — Lucro Presumido",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -17000,6 +17909,7 @@ const D = {
       "cod": "4652",
       "cli": "Fórmula Motors",
       "lbl": "Defesa Consumidor — Santesso Advogados",
+      "ativo": true,
       "e": 1621.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -17010,6 +17920,7 @@ const D = {
       "cod": "4202",
       "cli": "4C Digital",
       "lbl": "Mandado de Segurança — PIS/COFINS Exclusão Base Cálculo",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17020,6 +17931,7 @@ const D = {
       "cod": "4203",
       "cli": "4C Digital",
       "lbl": "Mandado de Segurança — Lucro Presumido",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17030,6 +17942,7 @@ const D = {
       "cod": "4204",
       "cli": "4C Digital",
       "lbl": "Mandado de Segurança — Exclusão PIS/COFINS IRPJ/CSLL",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17040,6 +17953,7 @@ const D = {
       "cod": "4389",
       "cli": "FOURC",
       "lbl": "Mandado de Segurança — PIS/COFINS Tema 1.067",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17067,6 +17981,7 @@ const D = {
       "cod": "4394",
       "cli": "FOURC",
       "lbl": "Mandado de Segurança — Lucro Presumido",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17086,6 +18001,7 @@ const D = {
       "cod": "4395",
       "cli": "FOURC",
       "lbl": "Mandado de Segurança — PIS/COFINS IRPJ/CSLL",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17113,6 +18029,7 @@ const D = {
       "cod": "4145",
       "cli": "Multi Solution",
       "lbl": "Mandado de Segurança — ISS/PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17123,6 +18040,7 @@ const D = {
       "cod": "4186",
       "cli": "Multi Solution",
       "lbl": "Mandado de Segurança — PIS/COFINS — Tema 1.067/STF",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17133,6 +18051,7 @@ const D = {
       "cod": "4187",
       "cli": "Multi Solution",
       "lbl": "Mandado de Segurança — PIS/COFINS IRPJ/CSLL",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17143,6 +18062,7 @@ const D = {
       "cod": "4188",
       "cli": "Connectors Hub",
       "lbl": "Mandado de Segurança — Exclusão ISS da Base PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17153,6 +18073,7 @@ const D = {
       "cod": "4189",
       "cli": "Connectors Hub",
       "lbl": "Mandado de Segurança — PIS/COFINS Base de Cálculo",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17163,6 +18084,7 @@ const D = {
       "cod": "4190",
       "cli": "Connectors Hub",
       "lbl": "Mandado de Segurança — PIS/COFINS/IRPJ/CSLL",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17173,6 +18095,7 @@ const D = {
       "cod": "4191",
       "cli": "Multi Design",
       "lbl": "Mandado de Segurança — Exclusão ISS da Base PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17183,6 +18106,7 @@ const D = {
       "cod": "4192",
       "cli": "Multi Design",
       "lbl": "Mandado de Segurança — PIS/COFINS Base de Cálculo",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17193,6 +18117,7 @@ const D = {
       "cod": "4193",
       "cli": "Multi Design",
       "lbl": "Mandado de Segurança — PIS/COFINS IRPJ/CSLL",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17203,6 +18128,7 @@ const D = {
       "cod": "4199",
       "cli": "4C Digital",
       "lbl": "Mandado de Segurança — Exclusão ISS da Base PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17213,6 +18139,7 @@ const D = {
       "cod": "4205",
       "cli": "Multi Solution",
       "lbl": "Mandado de Segurança — Lucro Presumido",
+      "ativo": true,
       "e": 3000.0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -17223,6 +18150,7 @@ const D = {
       "cod": "4165",
       "cli": "G4 Educação",
       "lbl": "Defesa Direito de Imagem — Rafael Barrin Borges",
+      "ativo": true,
       "e": 3000.0,
       "x": 0,
       "resp": "Equipe",
@@ -17233,6 +18161,7 @@ const D = {
       "cod": "4162",
       "cli": "Organica Digital",
       "lbl": "Mandado de Segurança — ISS/PIS/Cofins",
+      "ativo": true,
       "e": 0,
       "x": 20000.0,
       "resp": "Thomaz",
@@ -17243,6 +18172,7 @@ const D = {
       "cod": "4149",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Wagner Roberto Barbosa Santos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17253,6 +18183,7 @@ const D = {
       "cod": "4158",
       "cli": "\"R M N Cardoso e Cia (Meta Analisys)\n\"",
       "lbl": "Mandado de Segurança — ISS/PIS/Cofins",
+      "ativo": true,
       "e": 0,
       "x": 20000.0,
       "resp": "Thomaz",
@@ -17292,6 +18223,7 @@ const D = {
       "cod": "4119",
       "cli": "SVS PROMOCOES E EVENTOS LIMITADA",
       "lbl": "Mandado de Segurança — ISS/PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -17302,6 +18234,7 @@ const D = {
       "cod": "4121",
       "cli": "SVS PROMOCOES E EVENTOS LIMITADA",
       "lbl": "Mandado de Segurança — PIS/COFINS Tema 1.067",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -17312,6 +18245,7 @@ const D = {
       "cod": "4122",
       "cli": "SVS PROMOCOES E EVENTOS LIMITADA",
       "lbl": "Mandado de Segurança — Exclusão PIS/COFINS IRPJ/CSLL",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -17322,6 +18256,7 @@ const D = {
       "cod": "4123",
       "cli": "SVS PROMOCOES E EVENTOS LIMITADA",
       "lbl": "Mandado de Segurança — ISSQN",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -17337,6 +18272,7 @@ const D = {
       "cod": "4141",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Mario Sergio Suozzo de Abreu",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17347,6 +18283,7 @@ const D = {
       "cod": "4374",
       "cli": "SERVICE PROMOÇÕES E EVENTOS LTDA",
       "lbl": "Mandado de Segurança — ISS/PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -17357,6 +18294,7 @@ const D = {
       "cod": "4376",
       "cli": "SEVERAS PROMOCAO DE VENDA E RH LTDA",
       "lbl": "Mandado de Segurança — ISS/PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -17367,6 +18305,7 @@ const D = {
       "cod": "4377",
       "cli": "SERVICE PROMOÇÕES E EVENTOS LTDA",
       "lbl": "MS PIS/COFINS — Exclusão de Base de Cálculo",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -17377,6 +18316,7 @@ const D = {
       "cod": "4380",
       "cli": "SEVERAS PROMOCAO DE VENDA E RH LTDA",
       "lbl": "Mandado de Segurança — PIS/COFINS (Tema 1.067)",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -17387,6 +18327,7 @@ const D = {
       "cod": "4381",
       "cli": "SERVICE PROMOÇÕES E EVENTOS LTDA",
       "lbl": "Mandado de Segurança — PIS/COFINS IRPJ/CSLL",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -17418,6 +18359,7 @@ const D = {
       "cod": "4383",
       "cli": "SEVERAS PROMOCAO DE VENDA E RH LTDA",
       "lbl": "Mandado de Segurança — PIS/COFINS IRPJ/CSLL Lucro Presumido",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -17428,6 +18370,7 @@ const D = {
       "cod": "4384",
       "cli": "SERVICE PROMOÇÕES E EVENTOS LTDA",
       "lbl": "Mandado de Segurança — Exclusão ISSQN Repasses",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -17438,6 +18381,7 @@ const D = {
       "cod": "4385",
       "cli": "SEVERAS PROMOCAO DE VENDA E RH LTDA",
       "lbl": "Mandado de Segurança — ISSQN",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -17465,6 +18409,7 @@ const D = {
       "cod": "4080",
       "cli": "Gestão DS",
       "lbl": "Caso Mirela - TJAL",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -17475,6 +18420,7 @@ const D = {
       "cod": "4081",
       "cli": "Santilva Viganigo da Silva",
       "lbl": "Reclamatória Trabalhista — GAMP",
+      "ativo": true,
       "e": 1000.0,
       "x": 20000.0,
       "resp": "Gerson",
@@ -17485,6 +18431,7 @@ const D = {
       "cod": "4091",
       "cli": "Dionísia",
       "lbl": "Defesa Trabalhista — Rogério dos Santos Silveira",
+      "ativo": true,
       "e": 3000.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -17495,6 +18442,7 @@ const D = {
       "cod": "4092",
       "cli": "Dionísia",
       "lbl": "Defesa Trabalhista — Márcio André Fraporti",
+      "ativo": true,
       "e": 4500.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -17505,6 +18453,7 @@ const D = {
       "cod": "4094",
       "cli": "Modale",
       "lbl": "Defesa Trabalhista — Gleice Pereira Fernandes",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17515,6 +18464,7 @@ const D = {
       "cod": "3837",
       "cli": "Corso Consórcios",
       "lbl": "Execução Fiscal Federal — União",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -17525,6 +18475,7 @@ const D = {
       "cod": "4129",
       "cli": "Daricanela",
       "lbl": "Indenizatória Consumidor — STARTPN TECH LTDA",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Felipe",
@@ -17535,6 +18486,7 @@ const D = {
       "cod": "4104",
       "cli": "Tomás Lima",
       "lbl": "Cia áerea",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Felipe",
@@ -17545,6 +18497,7 @@ const D = {
       "cod": "4086",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Ação Cautelar e Declaratória — PARS e Hubspot",
+      "ativo": true,
       "e": 7500.0,
       "x": 48200.0,
       "resp": "Thomaz",
@@ -17555,6 +18508,7 @@ const D = {
       "cod": "4093",
       "cli": "",
       "lbl": "Exibitória — XP Investimentos",
+      "ativo": true,
       "e": 4554.0,
       "x": 0,
       "resp": "Equipe",
@@ -17565,6 +18519,7 @@ const D = {
       "cod": "4028",
       "cli": "Creare",
       "lbl": "Exibitória e Indenização — DSL",
+      "ativo": true,
       "e": 0,
       "x": 13300.0,
       "resp": "Thomaz",
@@ -17575,6 +18530,7 @@ const D = {
       "cod": "4041",
       "cli": "João Pedro Oliveira",
       "lbl": "Cobrança Consumidor — Hard Rock",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -17585,6 +18541,7 @@ const D = {
       "cod": "4074",
       "cli": "Rhello RH (Ecco Talent)",
       "lbl": "Defesa Tutela Antecipada — Glassdoor",
+      "ativo": false,
       "e": 5000.0,
       "x": 7500.0,
       "resp": "Equipe",
@@ -17595,6 +18552,7 @@ const D = {
       "cod": "4064",
       "cli": "Prime Clínica",
       "lbl": "Cobrança ISSQN — Município de Novo Hamburgo",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -17605,6 +18563,7 @@ const D = {
       "cod": "4065",
       "cli": "Prime Clínica",
       "lbl": "Cobrança ISSQN — Município de Gravataí",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -17615,6 +18574,7 @@ const D = {
       "cod": "4063",
       "cli": "Bar1",
       "lbl": "Defesa Consumidor — Raiana Sharon",
+      "ativo": true,
       "e": 1621.0,
       "x": 0,
       "resp": "Thomaz",
@@ -17625,6 +18585,7 @@ const D = {
       "cod": "4039",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Patrique dos Santos Coelho",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17635,6 +18596,7 @@ const D = {
       "cod": "4040",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Declaratória de Inexistência de Débito — Beatriz Silva Scola",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17645,6 +18607,7 @@ const D = {
       "cod": "4025",
       "cli": "Ampulheta",
       "lbl": "Ação de Consumidor — Itaú",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -17655,6 +18618,7 @@ const D = {
       "cod": "4036",
       "cli": "Rhello RH (Ecco Talent)",
       "lbl": "Defesa Trabalhista — Emílio Lins de Sá Vieira",
+      "ativo": false,
       "e": 2500.0,
       "x": 0,
       "resp": "Equipe",
@@ -17665,6 +18629,7 @@ const D = {
       "cod": "3991",
       "cli": "Flowork",
       "lbl": "Defesa Trabalhista — Celia Rodrigues Pereira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17675,6 +18640,7 @@ const D = {
       "cod": "4021",
       "cli": "Lucimar Oliveira",
       "lbl": "Impugnação Dívida Ativa — Procedimento Administrativo",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Felipe",
@@ -17685,6 +18651,7 @@ const D = {
       "cod": "3986",
       "cli": "Frass Incorporadora",
       "lbl": "Defesa Trabalhista — Julio Cesar Garcia",
+      "ativo": true,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -17695,6 +18662,7 @@ const D = {
       "cod": "4015",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Ilmara Rios Lima Fraga",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17705,6 +18673,7 @@ const D = {
       "cod": "4014",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Declaratória de Inexistência de Débito — Lidia Arce Pereira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17715,6 +18684,7 @@ const D = {
       "cod": "4011",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Vitor Angelo Fernandes",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17725,6 +18695,7 @@ const D = {
       "cod": "3990",
       "cli": "RS Recicla",
       "lbl": "Defesa Trabalhista — Eraldo Ferreira Escopo",
+      "ativo": false,
       "e": 2500.0,
       "x": 0,
       "resp": "Equipe",
@@ -17735,6 +18706,7 @@ const D = {
       "cod": "3980",
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "Defesa Trabalhista — Cassiana Muller Dias",
+      "ativo": true,
       "e": 3500.0,
       "x": 0,
       "resp": "Equipe",
@@ -17745,6 +18717,7 @@ const D = {
       "cod": "3985",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Mauricio Gomes Bahia dos Santos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17755,6 +18728,7 @@ const D = {
       "cod": "3984",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Trabalhista — Tais dos Santos da Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17765,6 +18739,7 @@ const D = {
       "cod": "3982",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Caio Rodrigues Galdeano",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17775,6 +18750,7 @@ const D = {
       "cod": "3983",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Vera Lucia Calixto Pires",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17785,6 +18761,7 @@ const D = {
       "cod": "3911",
       "cli": "IAGO MAZOCHI ABREU CARVALHO",
       "lbl": "Cobrança — Fundo de Investimento",
+      "ativo": true,
       "e": 10000.0,
       "x": 150000.0,
       "resp": "Gerson",
@@ -17795,6 +18772,7 @@ const D = {
       "cod": "3981",
       "cli": "Rômulo Gottlieb",
       "lbl": "Defesa Imobiliária — SICREDI",
+      "ativo": true,
       "e": 4554.0,
       "x": 0,
       "resp": "Equipe",
@@ -17805,6 +18783,7 @@ const D = {
       "cod": "3979",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Luiz Fernando Mattiello",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17815,6 +18794,7 @@ const D = {
       "cod": "3978",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Valrizete Roberto de Souza e Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17825,6 +18805,7 @@ const D = {
       "cod": "3977",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Raissa Caroline Gonçalves Figueiredo",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17835,6 +18816,7 @@ const D = {
       "cod": "3975",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Sergio Coelho Bitencourt",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17845,6 +18827,7 @@ const D = {
       "cod": "3850",
       "cli": "Bruno Saraiva",
       "lbl": "Ação Consumidor — RGE",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -17855,6 +18838,7 @@ const D = {
       "cod": "3898",
       "cli": "Escola de Educação Infantil Projeto Pensar Ltda – ME",
       "lbl": "Defesa Trabalhista — Janaina Aparecida Muniz Fraga",
+      "ativo": true,
       "e": 3000.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -17865,6 +18849,7 @@ const D = {
       "cod": "3897",
       "cli": "Laercio Alcione",
       "lbl": "Ação Revisional — Rodobens",
+      "ativo": true,
       "e": 2500.0,
       "x": 10000.0,
       "resp": "Equipe",
@@ -17875,6 +18860,7 @@ const D = {
       "cod": "3881",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Rosa Maria Cunha de Lima",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17885,6 +18871,7 @@ const D = {
       "cod": "3879",
       "cli": "Austral",
       "lbl": "Cobrança — Summit Internacional de Performance",
+      "ativo": true,
       "e": 1518.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -17895,6 +18882,7 @@ const D = {
       "cod": "3868",
       "cli": "Fabio Rech",
       "lbl": "Ações de Consumidor — Consórcio",
+      "ativo": true,
       "e": 4500.0,
       "x": 15000.0,
       "resp": "Rodrigo",
@@ -17905,6 +18893,7 @@ const D = {
       "cod": "3869",
       "cli": "Creare",
       "lbl": "Defesa Cível — Ecoelétrica Engenharia Sustentável",
+      "ativo": true,
       "e": 0,
       "x": 3500.0,
       "resp": "Equipe",
@@ -17915,6 +18904,7 @@ const D = {
       "cod": "3865",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — André Pereira Ramos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17925,6 +18915,7 @@ const D = {
       "cod": "3861",
       "cli": "Austral",
       "lbl": "Mandado de Segurança — PERSE",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Equipe",
@@ -17935,6 +18926,7 @@ const D = {
       "cod": "3848",
       "cli": "Mundo Verde (LSU EQUILIBRIO FUNCIONAL PRODUTOS NATURAIS LTDA)",
       "lbl": "Ação Renovatória de Locação — Mundo Verde",
+      "ativo": true,
       "e": 3000.0,
       "x": 0,
       "resp": "Felipe",
@@ -17945,6 +18937,7 @@ const D = {
       "cod": "3449",
       "cli": "Débora D'Armas",
       "lbl": "Cobrança — Infinita Incorporadora",
+      "ativo": false,
       "e": 1000.0,
       "x": 0,
       "resp": "Thomaz",
@@ -17955,6 +18948,7 @@ const D = {
       "cod": "3849",
       "cli": "Adapa Bio",
       "lbl": "Defesa Execução — SICREDI",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Felipe",
@@ -17965,6 +18959,7 @@ const D = {
       "cod": "3846",
       "cli": "Thanks Produções",
       "lbl": "Defesa Trabalhista — Wagner Gomes da Silva",
+      "ativo": true,
       "e": 0.0,
       "x": 0,
       "resp": "Gerson",
@@ -17975,6 +18970,7 @@ const D = {
       "cod": "3841",
       "cli": "Expermed",
       "lbl": "Defesa Cível — Patrícia da Cruz Cunha",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -17985,6 +18981,7 @@ const D = {
       "cod": "3843",
       "cli": "\"Rosa Maria Moraes\n\"",
       "lbl": "Defesa Trabalhista — Execução de Sentença",
+      "ativo": true,
       "e": 4900.0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -17995,6 +18992,7 @@ const D = {
       "cod": "4649",
       "cli": "Expermed",
       "lbl": "Defesa Cível — Bruna Leonardi",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18005,6 +19003,7 @@ const D = {
       "cod": "3819",
       "cli": "Norma Grendene",
       "lbl": "Cobrança de Corretagem — Vetro Imóveis",
+      "ativo": true,
       "e": 5000.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -18015,6 +19014,7 @@ const D = {
       "cod": "3829",
       "cli": "Portalsul",
       "lbl": "Defesa Trabalhista — Portalsul",
+      "ativo": false,
       "e": 700.0,
       "x": 0,
       "resp": "Equipe",
@@ -18025,6 +19025,7 @@ const D = {
       "cod": "3815",
       "cli": "Chama Venda Consultoria Comercial LTDA",
       "lbl": "Defesa Trabalhista — Ben Hur Lopes da Silva Oliveira",
+      "ativo": true,
       "e": 3000.0,
       "x": 2000.0,
       "resp": "Gerson",
@@ -18035,6 +19036,7 @@ const D = {
       "cod": "3822",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — OA Engenharia",
+      "ativo": false,
       "e": 2000.0,
       "x": 3000.0,
       "resp": "Equipe",
@@ -18045,6 +19047,7 @@ const D = {
       "cod": "3824",
       "cli": "Brasil Paralelo",
       "lbl": "Ação de Nulidade de Ato Administrativo — Contra Ponto",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18055,6 +19058,7 @@ const D = {
       "cod": "3823",
       "cli": "Efexis Marketing e Eventos (Grupo Austral)",
       "lbl": "Defesa PI — Manuela Alves Maciel",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18065,6 +19069,7 @@ const D = {
       "cod": "3790",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — GL Promotora e Consultoria",
+      "ativo": true,
       "e": 1200.0,
       "x": 0,
       "resp": "Equipe",
@@ -18075,6 +19080,7 @@ const D = {
       "cod": "3791",
       "cli": "O Patrimônio Bar",
       "lbl": "Defesa Trabalhista — Kemelly Natalha da Silva Vieira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18085,6 +19091,7 @@ const D = {
       "cod": "3793",
       "cli": "O Patrimônio Bar",
       "lbl": "Defesa Trabalhista — Chrystian Goncalves Araujo",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18095,6 +19102,7 @@ const D = {
       "cod": "3794",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Cybele Sisternas Di Pietro e Marcia Gottardi",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18105,6 +19113,7 @@ const D = {
       "cod": "3598",
       "cli": "TM Serviços Médicos Ltda",
       "lbl": "Mandado de Segurança — IRPJ e CSLL Hospitalares",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -18115,6 +19124,7 @@ const D = {
       "cod": "3761",
       "cli": "Sane",
       "lbl": "Acompanhamento Processual — SANE",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18125,6 +19135,7 @@ const D = {
       "cod": "3762",
       "cli": "Krystal Incorporadora",
       "lbl": "Mandado de Segurança — Suspensão de Exigibilidade Tributária",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18135,6 +19146,7 @@ const D = {
       "cod": "3764",
       "cli": "Rafael Beltrame",
       "lbl": "Ação Declaratória com Repetição de Indébito — Isenção de IR",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -18145,6 +19157,7 @@ const D = {
       "cod": "3765",
       "cli": "Brasil Paralelo",
       "lbl": "Autorização Audiovisual — Lorena Queiroz",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18155,6 +19168,7 @@ const D = {
       "cod": "3519",
       "cli": "Mesa",
       "lbl": "Ação Tributária — PERSE",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Bruno",
@@ -18165,6 +19179,7 @@ const D = {
       "cod": "3712",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Banco Bradesco",
+      "ativo": true,
       "e": 2277.0,
       "x": 0,
       "resp": "Equipe",
@@ -18175,6 +19190,7 @@ const D = {
       "cod": "3740",
       "cli": "Brasil Paralelo",
       "lbl": "Jurisdição Voluntária — Frank e Arthur Holt",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18185,6 +19201,7 @@ const D = {
       "cod": "3741",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Cobrança — KHELPDESK TECHNOLOGY LTDA",
+      "ativo": true,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -18195,6 +19212,7 @@ const D = {
       "cod": "3742",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Trabalhista — Alice Benati",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18205,6 +19223,7 @@ const D = {
       "cod": "3743",
       "cli": "Austral",
       "lbl": "Defesa Cobrança — Rap In Cena RT Gestão de Eventos Ltda",
+      "ativo": true,
       "e": 2000.0,
       "x": 1120.0,
       "resp": "Equipe",
@@ -18215,6 +19234,7 @@ const D = {
       "cod": "3708",
       "cli": "Brasil Paralelo",
       "lbl": "Jurisdição Voluntária — Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18225,6 +19245,7 @@ const D = {
       "cod": "3710",
       "cli": "Brasil Paralelo",
       "lbl": "Jurisdição Voluntária — Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18235,6 +19256,7 @@ const D = {
       "cod": "3711",
       "cli": "Brasil Paralelo",
       "lbl": "Jurisdição Voluntária — Lucas Schwanz",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18245,6 +19267,7 @@ const D = {
       "cod": "3713",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Sandra de Araújo Thomé",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18255,6 +19278,7 @@ const D = {
       "cod": "3714",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Cristina Ribeiro",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18265,6 +19289,7 @@ const D = {
       "cod": "3715",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Aparecida de Jesus Rocha Damario",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18275,6 +19300,7 @@ const D = {
       "cod": "3716",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Impugnação de Cumprimento de Sentença",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18285,6 +19311,7 @@ const D = {
       "cod": "3717",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Cobrança — Bitdinger Cobranças Extra-judiciais Ltda",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18295,6 +19322,7 @@ const D = {
       "cod": "3720",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Raphael Souza Rodrigues",
+      "ativo": true,
       "e": 1200.0,
       "x": 0,
       "resp": "Equipe",
@@ -18305,6 +19333,7 @@ const D = {
       "cod": "3599",
       "cli": "Gerson Belinaso",
       "lbl": "Gerson Belinaso",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18315,6 +19344,7 @@ const D = {
       "cod": "3671",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 3300.0,
       "x": 0,
       "resp": "Equipe",
@@ -18325,6 +19355,7 @@ const D = {
       "cod": "3661",
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
+      "ativo": false,
       "e": 6500.0,
       "x": 0,
       "resp": "Gerson",
@@ -18335,6 +19366,7 @@ const D = {
       "cod": "3668",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18345,6 +19377,7 @@ const D = {
       "cod": "3669",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18355,6 +19388,7 @@ const D = {
       "cod": "3670",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18365,6 +19399,7 @@ const D = {
       "cod": "3673",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18375,6 +19410,7 @@ const D = {
       "cod": "3674",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18385,6 +19421,7 @@ const D = {
       "cod": "3622",
       "cli": "Hops Company",
       "lbl": "Cobrança — Devedores",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Bruno",
@@ -18395,6 +19432,7 @@ const D = {
       "cod": "3641",
       "cli": "LBF (Engenharia e Servicos)",
       "lbl": "Defesa Consumidor — Luana Menezes",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -18405,6 +19443,7 @@ const D = {
       "cod": "3642",
       "cli": "KSC",
       "lbl": "Ações Tributárias — PERSE",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Bruno",
@@ -18415,6 +19454,7 @@ const D = {
       "cod": "3666",
       "cli": "Márcio Souza Lopes",
       "lbl": "Reclamatória Trabalhista — CJ Asfaltos LTDA",
+      "ativo": true,
       "e": 1500.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -18425,6 +19465,7 @@ const D = {
       "cod": "3592",
       "cli": "Fábio Scherbaum",
       "lbl": "Cobrança Extraconcursal — Paquetá",
+      "ativo": true,
       "e": 1518.0,
       "x": 400.0,
       "resp": "Equipe",
@@ -18435,6 +19476,7 @@ const D = {
       "cod": "3624",
       "cli": "Felipe Richter",
       "lbl": "Cobrança de Honorários Médicos — Polo Ativo",
+      "ativo": true,
       "e": 1518.0,
       "x": 3600.0,
       "resp": "Equipe",
@@ -18445,6 +19487,7 @@ const D = {
       "cod": "3600",
       "cli": "Expert Integrado",
       "lbl": "Expert Integrado",
+      "ativo": false,
       "e": 3000.0,
       "x": 0,
       "resp": "Gerson",
@@ -18455,6 +19498,7 @@ const D = {
       "cod": "3517",
       "cli": "Le Mentor",
       "lbl": "Ação Tributária — PERSE",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -18465,6 +19509,7 @@ const D = {
       "cod": "3559",
       "cli": "Diego dos Santos",
       "lbl": "Defesa Trabalhista — Joelma Aparecida Gonçalves",
+      "ativo": true,
       "e": 1200.0,
       "x": 0,
       "resp": "Equipe",
@@ -18475,6 +19520,7 @@ const D = {
       "cod": "3564",
       "cli": "Efexis Marketing e Eventos (Grupo Austral)",
       "lbl": "Ação Tributária — PERSE",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -18485,6 +19531,7 @@ const D = {
       "cod": "3565",
       "cli": "COOLTURE",
       "lbl": "Ação Tributária — PERSE",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -18495,6 +19542,7 @@ const D = {
       "cod": "3566",
       "cli": "Boske",
       "lbl": "Ação Tributária — PERSE",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -18505,6 +19553,7 @@ const D = {
       "cod": "3567",
       "cli": "Bar1",
       "lbl": "Ação Tributária PERSE — Sem Depósito Judicial",
+      "ativo": true,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -18515,6 +19564,7 @@ const D = {
       "cod": "3540",
       "cli": "Frass Incorporadora",
       "lbl": "Defesa Trabalhista — Wesley Neves dos Rezes",
+      "ativo": true,
       "e": 2000.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -18525,6 +19575,7 @@ const D = {
       "cod": "3542",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Marconi Alves de Lima de Flavis",
+      "ativo": true,
       "e": 3036.0,
       "x": 0,
       "resp": "Equipe",
@@ -18535,6 +19586,7 @@ const D = {
       "cod": "3545",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 7.0,
       "x": 0,
       "resp": "Equipe",
@@ -18545,6 +19597,7 @@ const D = {
       "cod": "3546",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18555,6 +19608,7 @@ const D = {
       "cod": "3547",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Ailton Ferreira Faria",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -18565,6 +19619,7 @@ const D = {
       "cod": "3548",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18575,6 +19630,7 @@ const D = {
       "cod": "3551",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Uarlei Balbino Soares",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -18585,6 +19641,7 @@ const D = {
       "cod": "3552",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Trabalhista — Priscila Leites Judes de Jesus",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18595,6 +19652,7 @@ const D = {
       "cod": "3593",
       "cli": "Márcio Furtado",
       "lbl": "Márcio Furtado",
+      "ativo": false,
       "e": 600.0,
       "x": 0,
       "resp": "Gerson",
@@ -18605,6 +19663,7 @@ const D = {
       "cod": "3209",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18615,6 +19674,7 @@ const D = {
       "cod": "3388",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 3036.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -18625,6 +19685,7 @@ const D = {
       "cod": "3396",
       "cli": "José Fontes",
       "lbl": "Ação EKT — Aguardando Cliente",
+      "ativo": true,
       "e": 10000.0,
       "x": 15000.0,
       "resp": "Equipe",
@@ -18635,6 +19696,7 @@ const D = {
       "cod": "3544",
       "cli": "Agência Combo",
       "lbl": "Agência Combo",
+      "ativo": false,
       "e": 700.0,
       "x": 0,
       "resp": "Equipe",
@@ -18645,6 +19707,7 @@ const D = {
       "cod": "3476",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Equipe",
@@ -18655,6 +19718,7 @@ const D = {
       "cod": "3477",
       "cli": "Frass Incorporadora",
       "lbl": "Extinção de Lançamento Tributário — Município",
+      "ativo": true,
       "e": 0,
       "x": 9000.0,
       "resp": "Equipe",
@@ -18665,6 +19729,7 @@ const D = {
       "cod": "3481",
       "cli": "Zappiello",
       "lbl": "Zappiello",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18675,6 +19740,7 @@ const D = {
       "cod": "3482",
       "cli": "Ampulheta",
       "lbl": "Execução Fiscal — Marcell Ferreira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18685,6 +19751,7 @@ const D = {
       "cod": "3483",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18695,6 +19762,7 @@ const D = {
       "cod": "3484",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18705,6 +19773,7 @@ const D = {
       "cod": "3485",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Mercatto Serviços de Recuperação de Créditos LTDA.",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18715,6 +19784,7 @@ const D = {
       "cod": "3488",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Jefson Carvalho Oliveira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18725,6 +19795,7 @@ const D = {
       "cod": "3424",
       "cli": "Açoduto",
       "lbl": "Açoduto",
+      "ativo": false,
       "e": 3500.0,
       "x": 0,
       "resp": "Bruno",
@@ -18735,6 +19806,7 @@ const D = {
       "cod": "3445",
       "cli": "Multi Solution",
       "lbl": "Dissolução Parcial de Sociedade",
+      "ativo": true,
       "e": 30000.0,
       "x": 30000.0,
       "resp": "Felipe",
@@ -18745,6 +19817,7 @@ const D = {
       "cod": "3464",
       "cli": "Austral",
       "lbl": "Defesa Direito Público — Rap in Cena",
+      "ativo": true,
       "e": 5000.0,
       "x": 18000.0,
       "resp": "Rodrigo",
@@ -18755,6 +19828,7 @@ const D = {
       "cod": "3486",
       "cli": "Raiza Krumberg",
       "lbl": "Indenizatória Consumidor — Falha em Serviço Arquitetônico",
+      "ativo": true,
       "e": 2500.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -18765,6 +19839,7 @@ const D = {
       "cod": "3489",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18775,6 +19850,7 @@ const D = {
       "cod": "3490",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Carlos Henrique Ribeiro Fernandes",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18785,6 +19861,7 @@ const D = {
       "cod": "3492",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18795,6 +19872,7 @@ const D = {
       "cod": "3493",
       "cli": "Lucas Ferrugem",
       "lbl": "Lucas Ferrugem",
+      "ativo": false,
       "e": 3036.0,
       "x": 0,
       "resp": "Equipe",
@@ -18805,6 +19883,7 @@ const D = {
       "cod": "3497",
       "cli": "Blue pay",
       "lbl": "Defesa Responsabilidade Subsidiária — Greice Kelly Sena Neres",
+      "ativo": true,
       "e": 1200.0,
       "x": 0,
       "resp": "Equipe",
@@ -18815,6 +19894,7 @@ const D = {
       "cod": "3498",
       "cli": "Blue pay",
       "lbl": "Defesa Responsabilidade Subsidiária — Jessica Mariane Lopes Moreira",
+      "ativo": true,
       "e": 1200.0,
       "x": 0,
       "resp": "Equipe",
@@ -18825,6 +19905,7 @@ const D = {
       "cod": "3499",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Andrio Brando de Oliveira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18835,6 +19916,7 @@ const D = {
       "cod": "3500",
       "cli": "\"Carol Bolina Industria\n\"",
       "lbl": "Defesa Trabalhista — Fabiana Leite Filomena Ribeiro",
+      "ativo": true,
       "e": 3500.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -18845,6 +19927,7 @@ const D = {
       "cod": "3503",
       "cli": "JLP Correias",
       "lbl": "Repetição de Indébito — União",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18855,6 +19938,7 @@ const D = {
       "cod": "3505",
       "cli": "Poleto Correias",
       "lbl": "Repetição de Indébito AFRMM — União",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18865,6 +19949,7 @@ const D = {
       "cod": "3507",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Fox Pneus Ltda",
+      "ativo": true,
       "e": 2277.0,
       "x": 0,
       "resp": "Equipe",
@@ -18875,6 +19960,7 @@ const D = {
       "cod": "3508",
       "cli": "COOLTURE",
       "lbl": "COOLTURE",
+      "ativo": false,
       "e": 0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -18885,6 +19971,7 @@ const D = {
       "cod": "3509",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18895,6 +19982,7 @@ const D = {
       "cod": "3511",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Flavio Ricardo Melo E Santos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18905,6 +19993,7 @@ const D = {
       "cod": "3512",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Trabalhista — Sergio Moacir Ferreira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18915,6 +20004,7 @@ const D = {
       "cod": "3513",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Trabalhista — Alexsander de Almeida da Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18925,6 +20015,7 @@ const D = {
       "cod": "3090",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 14000.0,
       "x": 10000.0,
       "resp": "Bruno",
@@ -18935,6 +20026,7 @@ const D = {
       "cod": "3502",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 1400.0,
       "x": 0,
       "resp": "Equipe",
@@ -18945,6 +20037,7 @@ const D = {
       "cod": "3382",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -18955,6 +20048,7 @@ const D = {
       "cod": "3384",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Responsabilidade Subsidiária",
+      "ativo": true,
       "e": 1200.0,
       "x": 0,
       "resp": "Equipe",
@@ -18965,6 +20059,7 @@ const D = {
       "cod": "3385",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — AVAASP",
+      "ativo": true,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -18975,6 +20070,7 @@ const D = {
       "cod": "3386",
       "cli": "Wine Locals",
       "lbl": "Defesa Consumidor — Gabriel Tavares de Santiago",
+      "ativo": true,
       "e": 1518.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -18985,6 +20081,7 @@ const D = {
       "cod": "3297",
       "cli": "Karim Miskulin",
       "lbl": "Karim Miskulin",
+      "ativo": false,
       "e": 2000.0,
       "x": 3000.0,
       "resp": "Gerson",
@@ -18995,6 +20092,7 @@ const D = {
       "cod": "3320",
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Gerson",
@@ -19005,6 +20103,7 @@ const D = {
       "cod": "3057",
       "cli": "Krystal Incorporadora",
       "lbl": "Despejo com Cobrança — Raphael Peron Zulini",
+      "ativo": true,
       "e": 3500.0,
       "x": 5000.0,
       "resp": "Thomaz",
@@ -19015,6 +20114,7 @@ const D = {
       "cod": "3172",
       "cli": "Rodrigo Camerim",
       "lbl": "Ação Cível — Concreteira",
+      "ativo": true,
       "e": 3000.0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -19025,6 +20125,7 @@ const D = {
       "cod": "3268",
       "cli": "Edison Marengo",
       "lbl": "Inventário — Exclusão de Herdeiro",
+      "ativo": true,
       "e": 500.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -19035,6 +20136,7 @@ const D = {
       "cod": "3361",
       "cli": "Le Bateau Ivre",
       "lbl": "Le Bateau Ivre",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Bruno",
@@ -19045,6 +20147,7 @@ const D = {
       "cod": "3369",
       "cli": "Fórmula Motors",
       "lbl": "Fórmula Motors",
+      "ativo": false,
       "e": 4000.0,
       "x": 0,
       "resp": "Gerson",
@@ -19055,6 +20158,7 @@ const D = {
       "cod": "3392",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 1518.0,
       "x": 990.01,
       "resp": "Equipe",
@@ -19065,6 +20169,7 @@ const D = {
       "cod": "3393",
       "cli": "YUOOL",
       "lbl": "Defesa Cível — Thiago Rodrigo Alves Carneiro",
+      "ativo": true,
       "e": 1518.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19075,6 +20180,7 @@ const D = {
       "cod": "3395",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19085,6 +20191,7 @@ const D = {
       "cod": "3398",
       "cli": "Libel Kitchen",
       "lbl": "Libel Kitchen",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19095,6 +20202,7 @@ const D = {
       "cod": "3399",
       "cli": "Canto Bar",
       "lbl": "Canto Bar",
+      "ativo": false,
       "e": 1518.0,
       "x": 0,
       "resp": "Equipe",
@@ -19105,6 +20213,7 @@ const D = {
       "cod": "3400",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 1518.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19115,6 +20224,7 @@ const D = {
       "cod": "3401",
       "cli": "Osmar/Lisiane Marcon",
       "lbl": "Defesa Execução — Rafael Xavier da Silva e Marilésia Xavier da Silva",
+      "ativo": true,
       "e": 7000.0,
       "x": 3000.0,
       "resp": "Equipe",
@@ -19125,6 +20235,7 @@ const D = {
       "cod": "3402",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19135,6 +20246,7 @@ const D = {
       "cod": "3403",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19145,6 +20257,7 @@ const D = {
       "cod": "3404",
       "cli": "Happy House",
       "lbl": "Defesa Trabalhista — Patricia Coelho",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19155,6 +20268,7 @@ const D = {
       "cod": "3405",
       "cli": "Gabriel Sgarbi",
       "lbl": "Cobrança de Corretagem — Johnny Melanina e CMA",
+      "ativo": true,
       "e": 0,
       "x": 20000.0,
       "resp": "Equipe",
@@ -19165,6 +20279,7 @@ const D = {
       "cod": "3411",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19175,6 +20290,7 @@ const D = {
       "cod": "3412",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 4500.0,
       "x": 0,
       "resp": "Equipe",
@@ -19185,6 +20301,7 @@ const D = {
       "cod": "3413",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Patrícia Diniz Souto",
+      "ativo": true,
       "e": 3036.0,
       "x": 0,
       "resp": "Equipe",
@@ -19195,6 +20312,7 @@ const D = {
       "cod": "3414",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Cobrança — 2D Informática",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -19205,6 +20323,7 @@ const D = {
       "cod": "3415",
       "cli": "Ouvrage Medição e Saneamento",
       "lbl": "Defesa Trabalhista — Paulo Roberto Rufino",
+      "ativo": true,
       "e": 3500.0,
       "x": 3000.0,
       "resp": "Equipe",
@@ -19215,6 +20334,7 @@ const D = {
       "cod": "3416",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 700.0,
       "x": 0,
       "resp": "Equipe",
@@ -19225,6 +20345,7 @@ const D = {
       "cod": "3417",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — Instituto Educacional Sêneca Ltda.",
+      "ativo": true,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -19235,6 +20356,7 @@ const D = {
       "cod": "3418",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19245,6 +20367,7 @@ const D = {
       "cod": "3419",
       "cli": "Libel Kitchen",
       "lbl": "Libel Kitchen",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19255,6 +20378,7 @@ const D = {
       "cod": "3420",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Trabalhista — Tatiane Melo Oliveira da Silva",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19265,6 +20389,7 @@ const D = {
       "cod": "3144",
       "cli": "André Paiva",
       "lbl": "Acompanhamento Inventário — Peticionamento",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -19275,6 +20400,7 @@ const D = {
       "cod": "3274",
       "cli": "Quater Comunicacao",
       "lbl": "Quater Comunicacao",
+      "ativo": false,
       "e": 2500.0,
       "x": 1000.0,
       "resp": "Gerson",
@@ -19285,6 +20411,7 @@ const D = {
       "cod": "3280",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 2277.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19295,6 +20422,7 @@ const D = {
       "cod": "2928",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 2277.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19305,6 +20433,7 @@ const D = {
       "cod": "3282",
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
+      "ativo": false,
       "e": 1518.0,
       "x": 0,
       "resp": "Equipe",
@@ -19315,6 +20444,7 @@ const D = {
       "cod": "3283",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Rafael Henrique Ramos",
+      "ativo": true,
       "e": 3036.0,
       "x": 0,
       "resp": "Equipe",
@@ -19325,6 +20455,7 @@ const D = {
       "cod": "3285",
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
+      "ativo": false,
       "e": 2277.0,
       "x": 0,
       "resp": "Equipe",
@@ -19335,6 +20466,7 @@ const D = {
       "cod": "3286",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Carlos Pereira Junior",
+      "ativo": true,
       "e": 1200.0,
       "x": 0,
       "resp": "Equipe",
@@ -19345,6 +20477,7 @@ const D = {
       "cod": "3287",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19355,6 +20488,7 @@ const D = {
       "cod": "3288",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19365,6 +20499,7 @@ const D = {
       "cod": "3289",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Nilson José da Silva",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19375,6 +20510,7 @@ const D = {
       "cod": "3291",
       "cli": "YUOOL",
       "lbl": "Defesa Trabalhista — Elias dos Anjos Fernandes",
+      "ativo": true,
       "e": 3500.0,
       "x": 0,
       "resp": "Equipe",
@@ -19385,6 +20521,7 @@ const D = {
       "cod": "3292",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19395,6 +20532,7 @@ const D = {
       "cod": "3293",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Trabalhista — Lucas Gomes Alves",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19405,6 +20543,7 @@ const D = {
       "cod": "2699",
       "cli": "Larca Capital",
       "lbl": "Larca Capital",
+      "ativo": false,
       "e": 5000.0,
       "x": 30000.0,
       "resp": "Gerson",
@@ -19415,6 +20554,7 @@ const D = {
       "cod": "3169",
       "cli": "Grupo TE2",
       "lbl": "Ação Tributária — Empresa FT2",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -19425,6 +20565,7 @@ const D = {
       "cod": "3199",
       "cli": "Grupo TE2",
       "lbl": "Ações Tributárias — M2T",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -19435,6 +20576,7 @@ const D = {
       "cod": "3200",
       "cli": "Grupo TE2",
       "lbl": "Tese Tributária — MT2SC",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -19445,6 +20587,7 @@ const D = {
       "cod": "3205",
       "cli": "Isabelle Nunes",
       "lbl": "Ação de Consumidor — Companhia Aérea",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19455,6 +20598,7 @@ const D = {
       "cod": "3206",
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
+      "ativo": false,
       "e": 2277.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19465,6 +20609,7 @@ const D = {
       "cod": "3207",
       "cli": "Tio Burger",
       "lbl": "Tio Burger",
+      "ativo": false,
       "e": 3036.0,
       "x": 0,
       "resp": "Equipe",
@@ -19475,6 +20620,7 @@ const D = {
       "cod": "3208",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19485,6 +20631,7 @@ const D = {
       "cod": "3210",
       "cli": "Vinícola Casa da Árvore",
       "lbl": "Vinícola Casa da Árvore",
+      "ativo": false,
       "e": 1000.0,
       "x": 0,
       "resp": "Equipe",
@@ -19495,6 +20642,7 @@ const D = {
       "cod": "3212",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 4500.0,
       "x": 0,
       "resp": "Equipe",
@@ -19505,6 +20653,7 @@ const D = {
       "cod": "3213",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Alan Carli de Deus da Silva",
+      "ativo": true,
       "e": 2277.0,
       "x": 0,
       "resp": "Equipe",
@@ -19515,6 +20664,7 @@ const D = {
       "cod": "3135",
       "cli": "Austral",
       "lbl": "Defesa Societária — Fabiano e Efexis",
+      "ativo": true,
       "e": 2875.0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -19525,6 +20675,7 @@ const D = {
       "cod": "3136",
       "cli": "Austral",
       "lbl": "Defesa Societária — Fabiano",
+      "ativo": true,
       "e": 2875.0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -19535,6 +20686,7 @@ const D = {
       "cod": "3137",
       "cli": "Austral",
       "lbl": "Defesa Societária — Pedro X Efexis e Urb Stage",
+      "ativo": true,
       "e": 2875.0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -19545,6 +20697,7 @@ const D = {
       "cod": "3138",
       "cli": "Austral",
       "lbl": "Defesa Societária — Pedro x Efexis e Coolture",
+      "ativo": true,
       "e": 2875.0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -19555,6 +20708,7 @@ const D = {
       "cod": "3145",
       "cli": "Leads For You",
       "lbl": "Ação Indenizatória — Leads For You",
+      "ativo": true,
       "e": 12000.0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -19565,6 +20719,7 @@ const D = {
       "cod": "3151",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19575,6 +20730,7 @@ const D = {
       "cod": "3159",
       "cli": "Libel Kitchen",
       "lbl": "Libel Kitchen",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19585,6 +20741,7 @@ const D = {
       "cod": "3160",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Trabalhista — Camila de Moraes Machado",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19595,6 +20752,7 @@ const D = {
       "cod": "3161",
       "cli": "YUOOL",
       "lbl": "YUOOL",
+      "ativo": false,
       "e": 600.0,
       "x": 0,
       "resp": "Equipe",
@@ -19605,6 +20763,7 @@ const D = {
       "cod": "3162",
       "cli": "Grupo Puro",
       "lbl": "Defesa Cobrança — Armazém Saudável Comercio De Alimentos Ltda",
+      "ativo": true,
       "e": 4500.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -19615,6 +20774,7 @@ const D = {
       "cod": "3185",
       "cli": "\"R M N Cardoso e Cia (Meta Analisys)\n\"",
       "lbl": "\"R M N Cardoso e Cia (Meta Analisys)\n\"",
+      "ativo": false,
       "e": 0,
       "x": 100000.0,
       "resp": "Bruno",
@@ -19625,6 +20785,7 @@ const D = {
       "cod": "3156",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — YBR Internet Eireli",
+      "ativo": true,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -19635,6 +20796,7 @@ const D = {
       "cod": "3088",
       "cli": "Flowork",
       "lbl": "Execução — Everest",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Thomaz",
@@ -19645,6 +20807,7 @@ const D = {
       "cod": "3073",
       "cli": "Açoduto",
       "lbl": "Cobrança — Detran/Banco do Nordeste",
+      "ativo": true,
       "e": 3000.0,
       "x": 3000.0,
       "resp": "Bruno",
@@ -19655,6 +20818,7 @@ const D = {
       "cod": "3036",
       "cli": "André Marquart",
       "lbl": "André Marquart",
+      "ativo": false,
       "e": 1000.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19665,6 +20829,7 @@ const D = {
       "cod": "3067",
       "cli": "Rodrigo de Oliveira (SC)",
       "lbl": "Rodrigo de Oliveira (SC)",
+      "ativo": false,
       "e": 5000.0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -19675,6 +20840,7 @@ const D = {
       "cod": "3068",
       "cli": "Rodrigo de Oliveira (SC)",
       "lbl": "Rodrigo de Oliveira (SC)",
+      "ativo": false,
       "e": 7500.0,
       "x": 50000.0,
       "resp": "Rodrigo",
@@ -19685,6 +20851,7 @@ const D = {
       "cod": "3153",
       "cli": "Wine Locals",
       "lbl": "Wine Locals",
+      "ativo": false,
       "e": 2277.0,
       "x": 0,
       "resp": "Equipe",
@@ -19695,6 +20862,7 @@ const D = {
       "cod": "3155",
       "cli": "O Patrimônio Bar",
       "lbl": "O Patrimônio Bar",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19705,6 +20873,7 @@ const D = {
       "cod": "2976",
       "cli": "SK Balas",
       "lbl": "Defesa Trabalhista — Kimberlly Bacco dos Santos",
+      "ativo": true,
       "e": 3500.0,
       "x": 2000.0,
       "resp": "Gerson",
@@ -19715,6 +20884,7 @@ const D = {
       "cod": "3034",
       "cli": "Ronaldo Gattiboni",
       "lbl": "Inventário Judicial Litigioso — Precatório Bernardina",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Equipe",
@@ -19725,6 +20895,7 @@ const D = {
       "cod": "3035",
       "cli": "Dionísia",
       "lbl": "Defesa Trabalhista — Tamires Daniele Marques dos Santo",
+      "ativo": true,
       "e": 3500.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19735,6 +20906,7 @@ const D = {
       "cod": "3039",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19745,6 +20917,7 @@ const D = {
       "cod": "3040",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19755,6 +20928,7 @@ const D = {
       "cod": "3041",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19765,6 +20939,7 @@ const D = {
       "cod": "3043",
       "cli": "Condomínio Albatroz",
       "lbl": "Cobrança — Beira Mar e Associados Negócios Imobiliários",
+      "ativo": true,
       "e": 2880.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -19775,6 +20950,7 @@ const D = {
       "cod": "3044",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19785,6 +20961,7 @@ const D = {
       "cod": "3047",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19795,6 +20972,7 @@ const D = {
       "cod": "3052",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19805,6 +20983,7 @@ const D = {
       "cod": "3053",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 1200.0,
       "x": 0,
       "resp": "Equipe",
@@ -19815,6 +20994,7 @@ const D = {
       "cod": "3058",
       "cli": "the news",
       "lbl": "Defesa Propriedade Intelectual — Poder 360",
+      "ativo": true,
       "e": 10000.0,
       "x": 30000.0,
       "resp": "Gerson",
@@ -19825,6 +21005,7 @@ const D = {
       "cod": "3061",
       "cli": "Blue pay",
       "lbl": "Defesa Trabalhista — Edipo Jehan Alves Ferreira",
+      "ativo": true,
       "e": 1200.0,
       "x": 0,
       "resp": "Gerson",
@@ -19835,6 +21016,7 @@ const D = {
       "cod": "3103",
       "cli": "\"Carol Bolina Industria\n\"",
       "lbl": "Defesa Trabalhista — Mellany",
+      "ativo": true,
       "e": 2500.0,
       "x": 5000.0,
       "resp": "Gerson",
@@ -19845,6 +21027,7 @@ const D = {
       "cod": "3105",
       "cli": "Hardstore",
       "lbl": "Hardstore",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19855,6 +21038,7 @@ const D = {
       "cod": "2978",
       "cli": "Vinicios Zimmer",
       "lbl": "Mensal Direito Público",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19865,6 +21049,7 @@ const D = {
       "cod": "2981",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 50000.0,
       "resp": "Gerson",
@@ -19875,6 +21060,7 @@ const D = {
       "cod": "3007",
       "cli": "Marcos Fontes",
       "lbl": "Marcos Fontes",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -19885,6 +21071,7 @@ const D = {
       "cod": "3008",
       "cli": "José Fontes",
       "lbl": "José Fontes",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -19895,6 +21082,7 @@ const D = {
       "cod": "3021",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 1200.0,
       "x": 0,
       "resp": "Equipe",
@@ -19905,6 +21093,7 @@ const D = {
       "cod": "3022",
       "cli": "WS Group",
       "lbl": "Defesa Trabalhista — Arryelle Stoekle",
+      "ativo": true,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -19915,6 +21104,7 @@ const D = {
       "cod": "3025",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -19925,6 +21115,7 @@ const D = {
       "cod": "3027",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19935,6 +21126,7 @@ const D = {
       "cod": "2961",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 1000.0,
       "x": 0,
       "resp": "Equipe",
@@ -19945,6 +21137,7 @@ const D = {
       "cod": "3002",
       "cli": "Flowork",
       "lbl": "Execução — Tonco2",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Thomaz",
@@ -19955,6 +21148,7 @@ const D = {
       "cod": "3029",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -19965,6 +21159,7 @@ const D = {
       "cod": "2553",
       "cli": "WBP",
       "lbl": "Ação Cível — Polishop",
+      "ativo": true,
       "e": 0,
       "x": 40000.0,
       "resp": "Equipe",
@@ -19975,6 +21170,7 @@ const D = {
       "cod": "2907",
       "cli": "YUOOL",
       "lbl": "Defesa Trabalhista — RT Thiago Moreira Marques",
+      "ativo": true,
       "e": 2100.0,
       "x": 2000.0,
       "resp": "Gerson",
@@ -19985,6 +21181,7 @@ const D = {
       "cod": "2929",
       "cli": "Banca do Holandês",
       "lbl": "Defesa Trabalhista — Brenno Adão Martins Junior",
+      "ativo": true,
       "e": 800.0,
       "x": 0,
       "resp": "Equipe",
@@ -19995,6 +21192,7 @@ const D = {
       "cod": "2930",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20005,6 +21203,7 @@ const D = {
       "cod": "2932",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Trabalhista — Daniela Anacleto Serra",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -20015,6 +21214,7 @@ const D = {
       "cod": "2933",
       "cli": "GC Engenharia",
       "lbl": "Defesa Trabalhista — Luis Fernando Feijo do Espírito Santo",
+      "ativo": true,
       "e": 2500.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -20025,6 +21225,7 @@ const D = {
       "cod": "2937",
       "cli": "Lucas Bilinski",
       "lbl": "Lucas Bilinski",
+      "ativo": false,
       "e": 200.0,
       "x": 0,
       "resp": "Equipe",
@@ -20035,6 +21236,7 @@ const D = {
       "cod": "2938",
       "cli": "Marcio de Souza Lopes e MLV",
       "lbl": "Marcio de Souza Lopes e MLV",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20045,6 +21247,7 @@ const D = {
       "cod": "2940",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 3300.0,
       "x": 0,
       "resp": "Equipe",
@@ -20055,6 +21258,7 @@ const D = {
       "cod": "2942",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20065,6 +21269,7 @@ const D = {
       "cod": "2943",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20075,6 +21280,7 @@ const D = {
       "cod": "2944",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20085,6 +21291,7 @@ const D = {
       "cod": "2945",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20095,6 +21302,7 @@ const D = {
       "cod": "2946",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20105,6 +21313,7 @@ const D = {
       "cod": "2947",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20115,6 +21324,7 @@ const D = {
       "cod": "2948",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20125,6 +21335,7 @@ const D = {
       "cod": "2949",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — RAMDL Educação LTDA.",
+      "ativo": true,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20135,6 +21346,7 @@ const D = {
       "cod": "2950",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20145,6 +21357,7 @@ const D = {
       "cod": "2951",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Ricardo Pinho Goncalves",
+      "ativo": true,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20155,6 +21368,7 @@ const D = {
       "cod": "2952",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20165,6 +21379,7 @@ const D = {
       "cod": "2953",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20175,6 +21390,7 @@ const D = {
       "cod": "2954",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Daniel Ribeiro da Silva",
+      "ativo": true,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20185,6 +21401,7 @@ const D = {
       "cod": "2955",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Regina Mara Mendes de Moraes Pastore",
+      "ativo": true,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20195,6 +21412,7 @@ const D = {
       "cod": "2956",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Matheus Henrique Cachator Cardoso",
+      "ativo": true,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20205,6 +21423,7 @@ const D = {
       "cod": "2957",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20215,6 +21434,7 @@ const D = {
       "cod": "2958",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 500.0,
       "resp": "Equipe",
@@ -20225,6 +21445,7 @@ const D = {
       "cod": "2838",
       "cli": "Spectrun",
       "lbl": "Spectrun",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Gerson",
@@ -20235,6 +21456,7 @@ const D = {
       "cod": "2841",
       "cli": "Austral",
       "lbl": "Austral",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Thomaz",
@@ -20245,6 +21467,7 @@ const D = {
       "cod": "2844",
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Gerson",
@@ -20255,6 +21478,7 @@ const D = {
       "cod": "2850",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 759.0,
       "x": 0,
       "resp": "Thomaz",
@@ -20265,6 +21489,7 @@ const D = {
       "cod": "2851",
       "cli": "\"R M N Cardoso e Cia (Meta Analisys)\n\"",
       "lbl": "Ação PIS/COFINS — Exportação de Serviços",
+      "ativo": true,
       "e": 0,
       "x": 100000.0,
       "resp": "Felipe",
@@ -20275,6 +21500,7 @@ const D = {
       "cod": "2768",
       "cli": "Grupo Puro",
       "lbl": "Contestação — M2L Gestão",
+      "ativo": true,
       "e": 7700.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -20285,6 +21511,7 @@ const D = {
       "cod": "2883",
       "cli": "Rui Oliveira",
       "lbl": "Ação Indenizatória Imobiliária — Ex-Locatário",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -20295,6 +21522,7 @@ const D = {
       "cod": "2889",
       "cli": "Hermes e Monteiro",
       "lbl": "Hermes e Monteiro",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20305,6 +21533,7 @@ const D = {
       "cod": "2890",
       "cli": "YUOOL",
       "lbl": "YUOOL",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20315,6 +21544,7 @@ const D = {
       "cod": "2893",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20325,6 +21555,7 @@ const D = {
       "cod": "2894",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Defesa Judicial — EDUARDO MARINHO SANT ANNA MACHADO",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20335,6 +21566,7 @@ const D = {
       "cod": "2708",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -20345,6 +21577,7 @@ const D = {
       "cod": "2769",
       "cli": "Grupo Puro",
       "lbl": "Contestação — Batel Alimentos",
+      "ativo": true,
       "e": 5000.0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -20355,6 +21588,7 @@ const D = {
       "cod": "2800",
       "cli": "Amorim",
       "lbl": "Amorim",
+      "ativo": false,
       "e": 2400.0,
       "x": 3000.0,
       "resp": "Equipe",
@@ -20365,6 +21599,7 @@ const D = {
       "cod": "2812",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Trabalhista — Sergio Moacir Ferreira",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20375,6 +21610,7 @@ const D = {
       "cod": "2813",
       "cli": "Márcio Furtado",
       "lbl": "Ação Civil Pública",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20385,6 +21621,7 @@ const D = {
       "cod": "2815",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Contestação",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20395,6 +21632,7 @@ const D = {
       "cod": "2816",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -20405,6 +21643,7 @@ const D = {
       "cod": "2817",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20415,6 +21654,7 @@ const D = {
       "cod": "2818",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20425,6 +21665,7 @@ const D = {
       "cod": "2819",
       "cli": "Bruno Faria Lopes",
       "lbl": "Bruno Faria Lopes",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20435,6 +21676,7 @@ const D = {
       "cod": "2820",
       "cli": "Creare",
       "lbl": "Defesa Trabalhista — Waldirene Comparsi Fioravanti",
+      "ativo": true,
       "e": 1412.0,
       "x": 0,
       "resp": "Equipe",
@@ -20445,6 +21687,7 @@ const D = {
       "cod": "2821",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20455,6 +21698,7 @@ const D = {
       "cod": "2822",
       "cli": "Rodrigo Camerim",
       "lbl": "Ação de Consumidor — CEEE",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -20465,6 +21709,7 @@ const D = {
       "cod": "2823",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20475,6 +21720,7 @@ const D = {
       "cod": "2827",
       "cli": "Marcel Van Hattem",
       "lbl": "Ação de Direito de Resposta — Indenização",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20485,6 +21731,7 @@ const D = {
       "cod": "2828",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 1400.0,
       "x": 0,
       "resp": "Equipe",
@@ -20495,6 +21742,7 @@ const D = {
       "cod": "2830",
       "cli": "Creare",
       "lbl": "Defesa Trabalhista — Carolina Knak",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20505,6 +21753,7 @@ const D = {
       "cod": "2831",
       "cli": "Brasil Paralelo",
       "lbl": "Defesa Consumidor — Paula Cristina de Souza Turmann",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20515,6 +21764,7 @@ const D = {
       "cod": "2832",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20525,6 +21775,7 @@ const D = {
       "cod": "2833",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20535,6 +21786,7 @@ const D = {
       "cod": "2834",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Cassiana Rufato",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20545,6 +21797,7 @@ const D = {
       "cod": "2836",
       "cli": "Mariane de Oliveira",
       "lbl": "Mariane de Oliveira",
+      "ativo": false,
       "e": 4554.0,
       "x": 6000.0,
       "resp": "Rodrigo",
@@ -20555,6 +21808,7 @@ const D = {
       "cod": "2620",
       "cli": "Origem Coffe",
       "lbl": "Defesa Cível — Porto Seguro",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Felipe",
@@ -20565,6 +21819,7 @@ const D = {
       "cod": "2763",
       "cli": "Osmar/Lisiane Marcon",
       "lbl": "Osmar/Lisiane Marcon",
+      "ativo": false,
       "e": 1518.0,
       "x": 2000.0,
       "resp": "Rodrigo",
@@ -20575,6 +21830,7 @@ const D = {
       "cod": "2788",
       "cli": "Camila Holzmann Miloni de Moraes",
       "lbl": "Camila Holzmann Miloni de Moraes",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Gerson",
@@ -20585,6 +21841,7 @@ const D = {
       "cod": "2456",
       "cli": "Contraste",
       "lbl": "Ação Tributária — Tese Clínica Médica",
+      "ativo": true,
       "e": 0,
       "x": 50000.0,
       "resp": "Gerson",
@@ -20595,6 +21852,7 @@ const D = {
       "cod": "2753",
       "cli": "Luciana Lecuona",
       "lbl": "Luciana Lecuona",
+      "ativo": false,
       "e": 0,
       "x": 677.66,
       "resp": "Equipe",
@@ -20605,6 +21863,7 @@ const D = {
       "cod": "2754",
       "cli": "Luciana Lecuona",
       "lbl": "Cobrança — Vithor Faraco",
+      "ativo": true,
       "e": 0,
       "x": 5712.0,
       "resp": "Equipe",
@@ -20615,6 +21874,7 @@ const D = {
       "cod": "2755",
       "cli": "G4 Educação",
       "lbl": "Defesa Trabalhista — Anderson Ariza Wasieleski",
+      "ativo": true,
       "e": 4236.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -20625,6 +21885,7 @@ const D = {
       "cod": "2683",
       "cli": "Modale",
       "lbl": "Cobrança — Execução de Contrato Hemp",
+      "ativo": true,
       "e": 8500.0,
       "x": 85500.0,
       "resp": "Thomaz",
@@ -20635,6 +21896,7 @@ const D = {
       "cod": "2706",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 1750.0,
       "x": 0,
       "resp": "Equipe",
@@ -20645,6 +21907,7 @@ const D = {
       "cod": "2707",
       "cli": "Banca do Holandês",
       "lbl": "Defesa Trabalhista — Brenda Bengua Hoernig",
+      "ativo": true,
       "e": 3500.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -20655,6 +21918,7 @@ const D = {
       "cod": "2825",
       "cli": "Rodrigo de Oliveira (SC)",
       "lbl": "Rodrigo de Oliveira (SC)",
+      "ativo": false,
       "e": 2000.0,
       "x": 6500.0,
       "resp": "Equipe",
@@ -20665,6 +21929,7 @@ const D = {
       "cod": "2657",
       "cli": "Libel Kitchen",
       "lbl": "Libel Kitchen",
+      "ativo": false,
       "e": 2118.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -20675,6 +21940,7 @@ const D = {
       "cod": "2658",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — Hyerdev",
+      "ativo": true,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -20685,6 +21951,7 @@ const D = {
       "cod": "2660",
       "cli": "Luciana Lecuona",
       "lbl": "Defesa Cobrança — Moinhos",
+      "ativo": true,
       "e": 1412.0,
       "x": 0,
       "resp": "Equipe",
@@ -20695,6 +21962,7 @@ const D = {
       "cod": "2662",
       "cli": "Dionísia",
       "lbl": "Defesa Trabalhista — Robson Daniel Cardoso Pereira",
+      "ativo": true,
       "e": 3500.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -20705,6 +21973,7 @@ const D = {
       "cod": "2663",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 1200.0,
       "x": 0,
       "resp": "Equipe",
@@ -20715,6 +21984,7 @@ const D = {
       "cod": "2667",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Trabalhista — Jeovana Mirela Dutra da Cruz",
+      "ativo": true,
       "e": 1200.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -20725,6 +21995,7 @@ const D = {
       "cod": "2669",
       "cli": "LHC Demolições",
       "lbl": "Defesa Trabalhista — Marcos",
+      "ativo": true,
       "e": 1500.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -20735,6 +22006,7 @@ const D = {
       "cod": "2671",
       "cli": "Hugo Oliveira",
       "lbl": "Hugo Oliveira",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Thomaz",
@@ -20745,6 +22017,7 @@ const D = {
       "cod": "2530",
       "cli": "Gabriela Neves (V4)",
       "lbl": "Gabriela Neves (V4)",
+      "ativo": false,
       "e": 2250.0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -20755,6 +22028,7 @@ const D = {
       "cod": "2573",
       "cli": "Luís Alberto Rocha",
       "lbl": "Inventário Judicial Consensual — IPE",
+      "ativo": true,
       "e": 0,
       "x": 80000.0,
       "resp": "Felipe",
@@ -20765,6 +22039,7 @@ const D = {
       "cod": "2567",
       "cli": "Tania Bortolato",
       "lbl": "Tania Bortolato",
+      "ativo": false,
       "e": 0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -20775,6 +22050,7 @@ const D = {
       "cod": "2585",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 3600.0,
       "x": 0,
       "resp": "Isabelle",
@@ -20785,6 +22061,7 @@ const D = {
       "cod": "2602",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 1200.0,
       "x": 0,
       "resp": "Isabelle",
@@ -20795,6 +22072,7 @@ const D = {
       "cod": "2603",
       "cli": "João Paulo Binatti",
       "lbl": "João Paulo Binatti",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -20805,6 +22083,7 @@ const D = {
       "cod": "2604",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Sociedade Magna de Benefícios Mútuos",
+      "ativo": true,
       "e": 2118.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -20815,6 +22094,7 @@ const D = {
       "cod": "2605",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 0,
       "resp": "Equipe",
@@ -20825,6 +22105,7 @@ const D = {
       "cod": "2607",
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
+      "ativo": false,
       "e": 2118.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -20835,6 +22116,7 @@ const D = {
       "cod": "2608",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Defesa Consumidor — Juliana Vieira e Antonio Alves da Silva",
+      "ativo": true,
       "e": 2824.0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -20845,6 +22127,7 @@ const D = {
       "cod": "2541",
       "cli": "Krystal Incorporadora",
       "lbl": "Krystal Incorporadora",
+      "ativo": false,
       "e": 1000.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -20855,6 +22138,7 @@ const D = {
       "cod": "2475",
       "cli": "LHC Demolições",
       "lbl": "LHC Demolições",
+      "ativo": false,
       "e": 2400.0,
       "x": 5000.0,
       "resp": "Gerson",
@@ -20865,6 +22149,7 @@ const D = {
       "cod": "2522",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 2400.0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -20875,6 +22160,7 @@ const D = {
       "cod": "2537",
       "cli": "Ercilda Luzia Souza",
       "lbl": "Ação Indenizatória — GUIDE",
+      "ativo": true,
       "e": 5600.0,
       "x": 120000.0,
       "resp": "Felipe",
@@ -20885,6 +22171,7 @@ const D = {
       "cod": "2546",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 700.0,
       "x": 0,
       "resp": "Isabelle",
@@ -20895,6 +22182,7 @@ const D = {
       "cod": "2549",
       "cli": "Gabriel Sgarbi",
       "lbl": "Acompanhamento Processual Judicial",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -20905,6 +22193,7 @@ const D = {
       "cod": "2550",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — MaisVoip Serviços de Telecomunicações Ltda",
+      "ativo": true,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -20915,6 +22204,7 @@ const D = {
       "cod": "2551",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — Mendes&Lopes Pesquisa",
+      "ativo": true,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -20925,6 +22215,7 @@ const D = {
       "cod": "2552",
       "cli": "HBT (Hbt Empreendimentos)",
       "lbl": "HBT (Hbt Empreendimentos)",
+      "ativo": false,
       "e": 4000.0,
       "x": 10000.0,
       "resp": "Equipe",
@@ -20935,6 +22226,7 @@ const D = {
       "cod": "2505",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 0,
       "x": 100000.0,
       "resp": "Bruno",
@@ -20945,6 +22237,7 @@ const D = {
       "cod": "2506",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 0,
       "x": 60000.0,
       "resp": "Bruno",
@@ -20955,6 +22248,7 @@ const D = {
       "cod": "2513",
       "cli": "Austral",
       "lbl": "Defesa Consumidor — Rap in Cena",
+      "ativo": true,
       "e": 1000.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -20965,6 +22259,7 @@ const D = {
       "cod": "2363",
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -20975,6 +22270,7 @@ const D = {
       "cod": "2495",
       "cli": "Leonardo Munhoz",
       "lbl": "Leonardo Munhoz",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Gerson",
@@ -20985,6 +22281,7 @@ const D = {
       "cod": "2442",
       "cli": "Origem Coffe",
       "lbl": "Origem Coffe",
+      "ativo": false,
       "e": 1500.0,
       "x": 1000.0,
       "resp": "Isabelle",
@@ -20995,6 +22292,7 @@ const D = {
       "cod": "2465",
       "cli": "Daiana",
       "lbl": "Ação Trabalhista — RLX",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -21005,6 +22303,7 @@ const D = {
       "cod": "2474",
       "cli": "G4 Educação",
       "lbl": "Defesa Consumidor — Bosco Medicina do Trabalho",
+      "ativo": true,
       "e": 2118.0,
       "x": 0,
       "resp": "Equipe",
@@ -21015,6 +22314,7 @@ const D = {
       "cod": "2479",
       "cli": "Perro Libre",
       "lbl": "Acompanhamento Judicial — Processos",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Bruno",
@@ -21030,6 +22330,7 @@ const D = {
       "cod": "2482",
       "cli": "Daricanela",
       "lbl": "Defesa Cível — Prestação de Contas",
+      "ativo": true,
       "e": 10500.0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -21040,6 +22341,7 @@ const D = {
       "cod": "2483",
       "cli": "Daricanela",
       "lbl": "Defesa Cível — Prestação de Contas",
+      "ativo": true,
       "e": 6800.0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -21050,6 +22352,7 @@ const D = {
       "cod": "2487",
       "cli": "Laercio Alcione",
       "lbl": "Ação Rodobens",
+      "ativo": true,
       "e": 0,
       "x": 600000.0,
       "resp": "Felipe",
@@ -21060,6 +22363,7 @@ const D = {
       "cod": "2494",
       "cli": "WS Group",
       "lbl": "WS Group",
+      "ativo": false,
       "e": 10000.0,
       "x": 35000.0,
       "resp": "Thomaz",
@@ -21070,6 +22374,7 @@ const D = {
       "cod": "2502",
       "cli": "Sandra Oliveira",
       "lbl": "Sandra Oliveira",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Rodrigo",
@@ -21080,6 +22385,7 @@ const D = {
       "cod": "2267",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Isabelle",
@@ -21090,6 +22396,7 @@ const D = {
       "cod": "2386",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 700.0,
       "x": 0,
       "resp": "Isabelle",
@@ -21100,6 +22407,7 @@ const D = {
       "cod": "2416",
       "cli": "Lucimar Oliveira",
       "lbl": "Lucimar Oliveira",
+      "ativo": false,
       "e": 4000.0,
       "x": 17600.0,
       "resp": "Felipe",
@@ -21110,6 +22418,7 @@ const D = {
       "cod": "2434",
       "cli": "YUOOL",
       "lbl": "Defesa Imobiliária — Vita Mall",
+      "ativo": true,
       "e": 4500.0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -21120,6 +22429,7 @@ const D = {
       "cod": "2453",
       "cli": "Lucimar Oliveira",
       "lbl": "Lucimar Oliveira",
+      "ativo": false,
       "e": 0,
       "x": 45000.0,
       "resp": "Felipe",
@@ -21130,6 +22440,7 @@ const D = {
       "cod": "2454",
       "cli": "Lucimar Oliveira",
       "lbl": "Defesa Execução Fiscal — Fazenda Pública",
+      "ativo": true,
       "e": 5000.0,
       "x": 90000.0,
       "resp": "Felipe",
@@ -21140,6 +22451,7 @@ const D = {
       "cod": "2455",
       "cli": "Rafael Beltrame",
       "lbl": "Cobrança — IPE",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -21150,6 +22462,7 @@ const D = {
       "cod": "2470",
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
+      "ativo": false,
       "e": 2118.0,
       "x": 0,
       "resp": "Equipe",
@@ -21160,6 +22473,7 @@ const D = {
       "cod": "2471",
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
+      "ativo": false,
       "e": 2824.0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -21170,6 +22484,7 @@ const D = {
       "cod": "2472",
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
+      "ativo": false,
       "e": 2824.0,
       "x": 0,
       "resp": "Equipe",
@@ -21180,6 +22495,7 @@ const D = {
       "cod": "2473",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 10800.0,
       "x": 31500.0,
       "resp": "Equipe",
@@ -21190,6 +22506,7 @@ const D = {
       "cod": "2320",
       "cli": "\"Dev.io (DEVIO SOFTWARES INTELIGENTES LTDA)\n\n\"",
       "lbl": "\"Dev.io (DEVIO SOFTWARES INTELIGENTES LTDA)\n\n\"",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -21200,6 +22517,7 @@ const D = {
       "cod": "2411",
       "cli": "HBT (Hbt Empreendimentos)",
       "lbl": "Defesa Trabalhista — Carlos Cristiano Ramires Anselmo",
+      "ativo": true,
       "e": 1000.0,
       "x": 0,
       "resp": "Isabelle",
@@ -21210,6 +22528,7 @@ const D = {
       "cod": "2412",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -21220,6 +22539,7 @@ const D = {
       "cod": "2417",
       "cli": "Eduardo Corte Real",
       "lbl": "Eduardo Corte Real",
+      "ativo": false,
       "e": 1412.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -21230,6 +22550,7 @@ const D = {
       "cod": "2426",
       "cli": "Expermed",
       "lbl": "Expermed",
+      "ativo": false,
       "e": 0,
       "x": 13000.0,
       "resp": "Bruno",
@@ -21240,6 +22561,7 @@ const D = {
       "cod": "2444",
       "cli": "Devaneio Do Velhaco",
       "lbl": "Devaneio Do Velhaco",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Bruno",
@@ -21250,6 +22572,7 @@ const D = {
       "cod": "4647",
       "cli": "Expermed",
       "lbl": "Execução — Sequoia",
+      "ativo": true,
       "e": 0,
       "x": 13000.0,
       "resp": "Bruno",
@@ -21260,6 +22583,7 @@ const D = {
       "cod": "2384",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 700.0,
       "x": 0,
       "resp": "Isabelle",
@@ -21270,6 +22594,7 @@ const D = {
       "cod": "2360",
       "cli": "\"BBT CENTRO (Rede Mais Saude?) \n\"",
       "lbl": "ISSQN — Tese STF",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -21280,6 +22605,7 @@ const D = {
       "cod": "2364",
       "cli": "S E T CENTRO",
       "lbl": "Ação ISSQN — Tese STF",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -21290,6 +22616,7 @@ const D = {
       "cod": "2365",
       "cli": "BITENCOURTE E PENHA",
       "lbl": "Ação ISSQN — Tese STF",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -21300,6 +22627,7 @@ const D = {
       "cod": "2366",
       "cli": "LABMAIS",
       "lbl": "Ação ISSQN — Tese STF",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -21310,6 +22638,7 @@ const D = {
       "cod": "2367",
       "cli": "CORPORATE",
       "lbl": "Ação ISSQN — Tese STF",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -21320,6 +22649,7 @@ const D = {
       "cod": "2368",
       "cli": "\"Rede Mais Saude (JOSEANE DOS SANTOS PENHA LTDA)\n\"",
       "lbl": "Ação ISSQN — Tese STF",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -21330,6 +22660,7 @@ const D = {
       "cod": "2379",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — TDSA",
+      "ativo": true,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -21340,6 +22671,7 @@ const D = {
       "cod": "2380",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 0,
       "resp": "Equipe",
@@ -21350,6 +22682,7 @@ const D = {
       "cod": "2381",
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
+      "ativo": false,
       "e": 1412.0,
       "x": 0,
       "resp": "Equipe",
@@ -21360,6 +22693,7 @@ const D = {
       "cod": "2321",
       "cli": "Diego Codagnone",
       "lbl": "Diego Codagnone",
+      "ativo": false,
       "e": 0,
       "x": 5000.0,
       "resp": "Carol",
@@ -21370,6 +22704,7 @@ const D = {
       "cod": "2338",
       "cli": "Canto Bar",
       "lbl": "Canto Bar",
+      "ativo": false,
       "e": 2400.0,
       "x": 5000.0,
       "resp": "Isabelle",
@@ -21380,6 +22715,7 @@ const D = {
       "cod": "2352",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 2400.0,
       "x": 0,
       "resp": "Isabelle",
@@ -21390,6 +22726,7 @@ const D = {
       "cod": "2301",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Cobrança — Lifes Creative",
+      "ativo": true,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -21400,6 +22737,7 @@ const D = {
       "cod": "2302",
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
+      "ativo": false,
       "e": 4500.0,
       "x": 0,
       "resp": "Equipe",
@@ -21410,6 +22748,7 @@ const D = {
       "cod": "2142",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 0,
       "resp": "Equipe",
@@ -21420,6 +22759,7 @@ const D = {
       "cod": "2258",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 0,
       "resp": "Equipe",
@@ -21430,6 +22770,7 @@ const D = {
       "cod": "2266",
       "cli": "José Fontes",
       "lbl": "Ação Possessória — Imóvel",
+      "ativo": true,
       "e": 4000.0,
       "x": 4000.0,
       "resp": "Rodrigo",
@@ -21440,6 +22781,7 @@ const D = {
       "cod": "2284",
       "cli": "André Marquart",
       "lbl": "André Marquart",
+      "ativo": false,
       "e": 4000.0,
       "x": 0,
       "resp": "Thomaz",
@@ -21450,6 +22792,7 @@ const D = {
       "cod": "2285",
       "cli": "Rui Oliveira",
       "lbl": "Rui Oliveira",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Rodrigo",
@@ -21460,6 +22803,7 @@ const D = {
       "cod": "2287",
       "cli": "Marc Turismo",
       "lbl": "Marc Turismo",
+      "ativo": false,
       "e": 3800.0,
       "x": 2000.0,
       "resp": "Rodrigo",
@@ -21470,6 +22814,7 @@ const D = {
       "cod": "2297",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 2000.0,
       "resp": "Bruno",
@@ -21480,6 +22825,7 @@ const D = {
       "cod": "2300",
       "cli": "Julia Vieira Piccaro",
       "lbl": "Reclamação Trabalhista — [Empregador]",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -21490,6 +22836,7 @@ const D = {
       "cod": "2259",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Equipe",
@@ -21500,6 +22847,7 @@ const D = {
       "cod": "2227",
       "cli": "Marcos Fontes",
       "lbl": "Defesa Trabalhista — IDPJ",
+      "ativo": true,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -21510,6 +22858,7 @@ const D = {
       "cod": "2255",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 0,
       "resp": "Equipe",
@@ -21520,6 +22869,7 @@ const D = {
       "cod": "2226",
       "cli": "Rui Oliveira",
       "lbl": "Rui Oliveira",
+      "ativo": false,
       "e": 7000.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -21530,6 +22880,7 @@ const D = {
       "cod": "2240",
       "cli": "Brasil Paralelo",
       "lbl": "Mandado de Segurança — PIS/Cofins Adquirentes",
+      "ativo": true,
       "e": 0,
       "x": 4000000.0,
       "resp": "Bruno",
@@ -21540,6 +22891,7 @@ const D = {
       "cod": "2108",
       "cli": "Spectrun",
       "lbl": "Resolução Contratual — Ploomes",
+      "ativo": true,
       "e": 9500.0,
       "x": 45000.0,
       "resp": "Thomaz",
@@ -21550,6 +22902,7 @@ const D = {
       "cod": "2143",
       "cli": "\"Pedro Ranieri\n\"",
       "lbl": "Retirada de Penhoras — Imóvel",
+      "ativo": true,
       "e": 1412.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -21560,6 +22913,7 @@ const D = {
       "cod": "2166",
       "cli": "Origem Coffe",
       "lbl": "Defesa Trabalhista — Shaiane Rafaela",
+      "ativo": true,
       "e": 1200.0,
       "x": 1000.0,
       "resp": "Gerson",
@@ -21570,6 +22924,7 @@ const D = {
       "cod": "2171",
       "cli": "Talo Serviços",
       "lbl": "Defesa Trabalhista — Pedro Pacheco",
+      "ativo": true,
       "e": 3600.0,
       "x": 14000.0,
       "resp": "Thomaz",
@@ -21580,6 +22935,7 @@ const D = {
       "cod": "2172",
       "cli": "Posto Essen",
       "lbl": "Posto Essen",
+      "ativo": false,
       "e": 0,
       "x": 73000.0,
       "resp": "Bruno",
@@ -21590,6 +22946,7 @@ const D = {
       "cod": "1833",
       "cli": "Mesa",
       "lbl": "Ação de Consumidor — CEEE",
+      "ativo": true,
       "e": 0,
       "x": 40000.0,
       "resp": "Felipe",
@@ -21600,6 +22957,7 @@ const D = {
       "cod": "2096",
       "cli": "Eduardo Wink",
       "lbl": "Ação Indenizatória — VOLTZ",
+      "ativo": true,
       "e": 1412.0,
       "x": 4000.0,
       "resp": "Rodrigo",
@@ -21610,6 +22968,7 @@ const D = {
       "cod": "2122",
       "cli": "Origem Coffe",
       "lbl": "Defesa Trabalhista — Cesar Mauro",
+      "ativo": true,
       "e": 1200.0,
       "x": 1000.0,
       "resp": "Gerson",
@@ -21620,6 +22979,7 @@ const D = {
       "cod": "2123",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Cobrança — Jaspi Sistemas de Informática LTDA",
+      "ativo": true,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Felipe",
@@ -21630,6 +22990,7 @@ const D = {
       "cod": "2124",
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
+      "ativo": false,
       "e": 1412.0,
       "x": 0,
       "resp": "Thomaz",
@@ -21640,6 +23001,7 @@ const D = {
       "cod": "2131",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -21650,6 +23012,7 @@ const D = {
       "cod": "2140",
       "cli": "Fórmula Motors",
       "lbl": "Defesa Consumidor — JEC Jovana Sgorla",
+      "ativo": true,
       "e": 1200.0,
       "x": 1200.0,
       "resp": "Rodrigo",
@@ -21660,6 +23023,7 @@ const D = {
       "cod": "2055",
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Ação INPI — Zenit",
+      "ativo": true,
       "e": 3900.0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -21670,6 +23034,7 @@ const D = {
       "cod": "2082",
       "cli": "Familiares Jose Fontes",
       "lbl": "Inventário Judicial Litigioso — Precatório Bernardina",
+      "ativo": true,
       "e": 0,
       "x": 100000.0,
       "resp": "Rodrigo",
@@ -21680,6 +23045,7 @@ const D = {
       "cod": "2089",
       "cli": "Amorim",
       "lbl": "Amorim",
+      "ativo": true,
       "e": 3000.0,
       "x": 3200.0,
       "resp": "Gerson",
@@ -21690,6 +23056,7 @@ const D = {
       "cod": "2090",
       "cli": "Amorim",
       "lbl": "Amorim",
+      "ativo": false,
       "e": 3000.0,
       "x": 3200.0,
       "resp": "Gerson",
@@ -21700,6 +23067,7 @@ const D = {
       "cod": "2105",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 0,
       "x": 30000.0,
       "resp": "Gerson",
@@ -21710,6 +23078,7 @@ const D = {
       "cod": "2113",
       "cli": "Familiares Jose Fontes",
       "lbl": "Defesa Cível — Negociação Imóvel Igreja",
+      "ativo": true,
       "e": 0,
       "x": 50000.0,
       "resp": "Rodrigo",
@@ -21720,6 +23089,7 @@ const D = {
       "cod": "1738",
       "cli": "Mateus Eirich",
       "lbl": "Reclamação Trabalhista — [Parte Contrária]",
+      "ativo": true,
       "e": 0,
       "x": 400000.0,
       "resp": "Felipe",
@@ -21730,6 +23100,7 @@ const D = {
       "cod": "1740",
       "cli": "João Vitor Eirich",
       "lbl": "João Vitor Eirich",
+      "ativo": false,
       "e": 0,
       "x": 27000.0,
       "resp": "Felipe",
@@ -21740,6 +23111,7 @@ const D = {
       "cod": "2060",
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
+      "ativo": false,
       "e": 15000.0,
       "x": 30000.0,
       "resp": "Gerson",
@@ -21750,6 +23122,7 @@ const D = {
       "cod": "2077",
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -21760,6 +23133,7 @@ const D = {
       "cod": "2078",
       "cli": "Oak's Burritos",
       "lbl": "Defesa Trabalhista — Sindicato",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Gerson",
@@ -21770,6 +23144,7 @@ const D = {
       "cod": "1706",
       "cli": "Ednaldo Colli",
       "lbl": "Ação Franquias Engenharia — Zanella",
+      "ativo": true,
       "e": 13000.0,
       "x": 100000.0,
       "resp": "Thomaz",
@@ -21780,6 +23155,7 @@ const D = {
       "cod": "2068",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 0,
       "x": 140.0,
       "resp": "Felipe",
@@ -21790,6 +23166,7 @@ const D = {
       "cod": "2071",
       "cli": "Flowork",
       "lbl": "Cobrança — Betina Mariante Cardoso",
+      "ativo": true,
       "e": 0,
       "x": 800.0,
       "resp": "Thomaz",
@@ -21800,6 +23177,7 @@ const D = {
       "cod": "2072",
       "cli": "Gabriel Eirich",
       "lbl": "Ação Trabalhista — Reclamante",
+      "ativo": true,
       "e": 0,
       "x": 35000.0,
       "resp": "Felipe",
@@ -21810,6 +23188,7 @@ const D = {
       "cod": "1596",
       "cli": "Jose Antonio (Jose Luiz Vieira)",
       "lbl": "Defesa Cível — Petrobras",
+      "ativo": true,
       "e": 40000.0,
       "x": 400000.0,
       "resp": "Rodrigo",
@@ -21820,6 +23199,7 @@ const D = {
       "cod": "2045",
       "cli": "Alberto Galbeno",
       "lbl": "Defesa Execução Bancária — Embargos de Penhora",
+      "ativo": true,
       "e": 7788.0,
       "x": 0,
       "resp": "Bruno",
@@ -21830,6 +23210,7 @@ const D = {
       "cod": "1808",
       "cli": "Tailor Nascimento",
       "lbl": "Inventário Judicial Litigioso — União Estável",
+      "ativo": true,
       "e": 10000.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -21840,6 +23221,7 @@ const D = {
       "cod": "2053",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Cobrança — ATLAS TECNOLOGIA E DESENVOLVIMENTO GERENCIAL LTDA.",
+      "ativo": true,
       "e": 2000.0,
       "x": 4000.0,
       "resp": "Felipe",
@@ -21850,6 +23232,7 @@ const D = {
       "cod": "2001",
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
+      "ativo": false,
       "e": 1412.0,
       "x": 0,
       "resp": "Gerson",
@@ -21860,6 +23243,7 @@ const D = {
       "cod": "2002",
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
+      "ativo": false,
       "e": 1412.0,
       "x": 0,
       "resp": "Gerson",
@@ -21870,6 +23254,7 @@ const D = {
       "cod": "2013",
       "cli": "Flowork",
       "lbl": "Cobrança — Camille Mota",
+      "ativo": true,
       "e": 0,
       "x": 1700.0,
       "resp": "Thomaz",
@@ -21880,6 +23265,7 @@ const D = {
       "cod": "1969",
       "cli": "Leme Construtora",
       "lbl": "Leme Construtora",
+      "ativo": false,
       "e": 3600.0,
       "x": 2000.0,
       "resp": "Gerson",
@@ -21890,6 +23276,7 @@ const D = {
       "cod": "1977",
       "cli": "Leme Construtora",
       "lbl": "Leme Construtora",
+      "ativo": false,
       "e": 3600.0,
       "x": 2000.0,
       "resp": "Gerson",
@@ -21900,6 +23287,7 @@ const D = {
       "cod": "1978",
       "cli": "Leme Construtora",
       "lbl": "Leme Construtora",
+      "ativo": false,
       "e": 3600.0,
       "x": 2000.0,
       "resp": "Gerson",
@@ -21910,6 +23298,7 @@ const D = {
       "cod": "2018",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 5000.0,
       "x": 5000.0,
       "resp": "Thomaz",
@@ -21920,6 +23309,7 @@ const D = {
       "cod": "2040",
       "cli": "Gabriel Dornelles",
       "lbl": "Ação de Consumidor — Companhia Aérea",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -21930,6 +23320,7 @@ const D = {
       "cod": "1996",
       "cli": "Rui Oliveira",
       "lbl": "Rui Oliveira",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -21940,6 +23331,7 @@ const D = {
       "cod": "1997",
       "cli": "Sandra Oliveira",
       "lbl": "Sandra Oliveira",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Rodrigo",
@@ -21950,6 +23342,7 @@ const D = {
       "cod": "1974",
       "cli": "Gabriela Neves (V4)",
       "lbl": "Defesa Trabalhista — Raimundo",
+      "ativo": true,
       "e": 2500.0,
       "x": 4000.0,
       "resp": "Gerson",
@@ -21960,6 +23353,7 @@ const D = {
       "cod": "1975",
       "cli": "Sucessão Telmo Ways",
       "lbl": "Sucessão Telmo Ways",
+      "ativo": false,
       "e": 3500.0,
       "x": 0,
       "resp": "Felipe",
@@ -21970,6 +23364,7 @@ const D = {
       "cod": "1979",
       "cli": "Thiago DBI",
       "lbl": "Thiago DBI",
+      "ativo": false,
       "e": 550.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -21980,6 +23375,7 @@ const D = {
       "cod": "1593",
       "cli": "Spectrun",
       "lbl": "Ação Tributária — Recuperação de Tributos sobre Doação",
+      "ativo": true,
       "e": 0,
       "x": 70000.0,
       "resp": "Bruno",
@@ -21990,6 +23386,7 @@ const D = {
       "cod": "1791",
       "cli": "HBT (Hbt Empreendimentos)",
       "lbl": "Ação Cível — Benter",
+      "ativo": true,
       "e": 4500.0,
       "x": 15000.0,
       "resp": "Rodrigo",
@@ -22000,6 +23397,7 @@ const D = {
       "cod": "1877",
       "cli": "José Fontes",
       "lbl": "Inventário Judicial Litigioso — Bernardina",
+      "ativo": true,
       "e": 0,
       "x": 50000.0,
       "resp": "Rodrigo",
@@ -22010,6 +23408,7 @@ const D = {
       "cod": "1939",
       "cli": "Banca do Holandês",
       "lbl": "Monitória — 5004779-50.2020.8.21.0001",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Thomaz",
@@ -22020,6 +23419,7 @@ const D = {
       "cod": "1938",
       "cli": "Felipe Richter",
       "lbl": "Reclamatória Trabalhista — Hospital",
+      "ativo": true,
       "e": 0,
       "x": 750000.0,
       "resp": "Gerson",
@@ -22030,6 +23430,7 @@ const D = {
       "cod": "1874",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -22040,6 +23441,7 @@ const D = {
       "cod": "1948",
       "cli": "Jimi IoT Brasil",
       "lbl": "Jimi IoT Brasil",
+      "ativo": false,
       "e": 1412.0,
       "x": 0,
       "resp": "Felipe",
@@ -22050,6 +23452,7 @@ const D = {
       "cod": "1846",
       "cli": "Gladis Piccini",
       "lbl": "Gladis Piccini",
+      "ativo": false,
       "e": 2500.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -22060,6 +23463,7 @@ const D = {
       "cod": "1882",
       "cli": "José Fontes",
       "lbl": "Defesa Cível — Copromat",
+      "ativo": true,
       "e": 500.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -22070,6 +23474,7 @@ const D = {
       "cod": "1909",
       "cli": "Nuttini",
       "lbl": "Nuttini",
+      "ativo": false,
       "e": 0,
       "x": 4500.0,
       "resp": "Gerson",
@@ -22080,6 +23485,7 @@ const D = {
       "cod": "1842",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Cobrança — Elo",
+      "ativo": true,
       "e": 2000.0,
       "x": 4000.0,
       "resp": "Felipe",
@@ -22090,6 +23496,7 @@ const D = {
       "cod": "1899",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Cobrança — Marcelo Esmeriz",
+      "ativo": true,
       "e": 2000.0,
       "x": 4000.0,
       "resp": "Felipe",
@@ -22100,6 +23507,7 @@ const D = {
       "cod": "1902",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 2000.0,
       "resp": "Rodrigo",
@@ -22110,6 +23518,7 @@ const D = {
       "cod": "1903",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 2000.0,
       "resp": "Rodrigo",
@@ -22120,6 +23529,7 @@ const D = {
       "cod": "1904",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 2000.0,
       "resp": "Rodrigo",
@@ -22130,6 +23540,7 @@ const D = {
       "cod": "1795",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -22140,6 +23551,7 @@ const D = {
       "cod": "1849",
       "cli": "Carlos Eduardo Drummond",
       "lbl": "Carlos Eduardo Drummond",
+      "ativo": false,
       "e": 30000.0,
       "x": 0,
       "resp": "Gerson",
@@ -22150,6 +23562,7 @@ const D = {
       "cod": "1851",
       "cli": "Carlos Eduardo Drummond",
       "lbl": "Carlos Eduardo Drummond",
+      "ativo": false,
       "e": 0,
       "x": 24000.0,
       "resp": "Gerson",
@@ -22160,6 +23573,7 @@ const D = {
       "cod": "1832",
       "cli": "Ioio Casa de Festas",
       "lbl": "Ioio Casa de Festas",
+      "ativo": false,
       "e": 1000.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -22170,6 +23584,7 @@ const D = {
       "cod": "1873",
       "cli": "Hug Engenharia",
       "lbl": "Nunciação de Obra",
+      "ativo": true,
       "e": 5000.0,
       "x": 0,
       "resp": "Bruno",
@@ -22180,6 +23595,7 @@ const D = {
       "cod": "1820",
       "cli": "Canto Bar",
       "lbl": "Canto Bar",
+      "ativo": false,
       "e": 1412.0,
       "x": 2000.0,
       "resp": "Rodrigo",
@@ -22190,6 +23606,7 @@ const D = {
       "cod": "1867",
       "cli": "Grupo TE2",
       "lbl": "Defesa Societária — SCP 300 SP",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Bruno",
@@ -22200,6 +23617,7 @@ const D = {
       "cod": "1858",
       "cli": "Fernando de Oliveira Martins",
       "lbl": "Defesa Execução — Embargos",
+      "ativo": true,
       "e": 8000.0,
       "x": 0,
       "resp": "Thomaz",
@@ -22210,6 +23628,7 @@ const D = {
       "cod": "1714",
       "cli": "Ramatiz Vilani",
       "lbl": "Ramatiz Vilani",
+      "ativo": false,
       "e": 0,
       "x": 20000.0,
       "resp": "Bruno",
@@ -22220,6 +23639,7 @@ const D = {
       "cod": "1809",
       "cli": "\"Twin Set\n\"",
       "lbl": "\"Twin Set\n\"",
+      "ativo": false,
       "e": 0,
       "x": 3500.0,
       "resp": "Felipe",
@@ -22230,6 +23650,7 @@ const D = {
       "cod": "1810",
       "cli": "\"Twin Set\n\"",
       "lbl": "Cobrança — Claudia Mello",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Felipe",
@@ -22240,6 +23661,7 @@ const D = {
       "cod": "1811",
       "cli": "\"Twin Set\n\"",
       "lbl": "\"Twin Set\n\"",
+      "ativo": false,
       "e": 0,
       "x": 14000.0,
       "resp": "Felipe",
@@ -22250,6 +23672,7 @@ const D = {
       "cod": "1841",
       "cli": "Paleta Atlantida",
       "lbl": "Defesa Cível — Pegoraro",
+      "ativo": true,
       "e": 5000.0,
       "x": 20000.0,
       "resp": "Rodrigo",
@@ -22260,6 +23683,7 @@ const D = {
       "cod": "1854",
       "cli": "Christian Bernsmuller",
       "lbl": "Christian Bernsmuller",
+      "ativo": false,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -22270,6 +23694,7 @@ const D = {
       "cod": "1720",
       "cli": "Tailor Nascimento",
       "lbl": "Inventário Judicial Litigioso",
+      "ativo": true,
       "e": 10000.0,
       "x": 126000.0,
       "resp": "Rodrigo",
@@ -22280,6 +23705,7 @@ const D = {
       "cod": "1745",
       "cli": "Paleta Atlantida",
       "lbl": "Paleta Atlantida",
+      "ativo": false,
       "e": 5000.0,
       "x": 15000.0,
       "resp": "Rodrigo",
@@ -22290,6 +23716,7 @@ const D = {
       "cod": "1782",
       "cli": "\"Jader Binatti\n\"",
       "lbl": "Ação Imobiliária — Levantamento de Gravames",
+      "ativo": true,
       "e": 36000.0,
       "x": 3000000.0,
       "resp": "Felipe",
@@ -22300,6 +23727,7 @@ const D = {
       "cod": "1845",
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
+      "ativo": false,
       "e": 1412.0,
       "x": 0,
       "resp": "Gerson",
@@ -22310,6 +23738,7 @@ const D = {
       "cod": "1759",
       "cli": "Roberto Bertó",
       "lbl": "Ação de Locação — [Identificar Parte Contrária]",
+      "ativo": true,
       "e": 5000.0,
       "x": 15000.0,
       "resp": "Rodrigo",
@@ -22320,6 +23749,7 @@ const D = {
       "cod": "1788",
       "cli": "Tomás Lima",
       "lbl": "Tomás Lima",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Rodrigo",
@@ -22330,6 +23760,7 @@ const D = {
       "cod": "1724",
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
+      "ativo": false,
       "e": 7060.0,
       "x": 0,
       "resp": "Gerson",
@@ -22340,6 +23771,7 @@ const D = {
       "cod": "1746",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -22350,6 +23782,7 @@ const D = {
       "cod": "1747",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 1000.0,
       "x": 0,
       "resp": "Gerson",
@@ -22360,6 +23793,7 @@ const D = {
       "cod": "1732",
       "cli": "Posto Essen",
       "lbl": "Posto Essen",
+      "ativo": false,
       "e": 1000.0,
       "x": 0,
       "resp": "Gerson",
@@ -22370,6 +23804,7 @@ const D = {
       "cod": "1736",
       "cli": "Renato Guerra",
       "lbl": "Renato Guerra",
+      "ativo": false,
       "e": 3000.0,
       "x": 0,
       "resp": "Thomaz",
@@ -22380,6 +23815,7 @@ const D = {
       "cod": "1749",
       "cli": "Flowork",
       "lbl": "Ação de PI — Correios",
+      "ativo": true,
       "e": 1000.0,
       "x": 0,
       "resp": "Thomaz",
@@ -22390,6 +23826,7 @@ const D = {
       "cod": "1768",
       "cli": "Credito Real",
       "lbl": "Credito Real",
+      "ativo": false,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -22400,6 +23837,7 @@ const D = {
       "cod": "1830",
       "cli": "Hops Company",
       "lbl": "Cobrança — Furto e Perda de Mercadoria em Depósito",
+      "ativo": true,
       "e": 0,
       "x": 44000.0,
       "resp": "Bruno",
@@ -22410,6 +23848,7 @@ const D = {
       "cod": "2317",
       "cli": "Beleza Bar",
       "lbl": "Beleza Bar",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -22420,6 +23859,7 @@ const D = {
       "cod": "1634",
       "cli": "Nicole Spolidoro",
       "lbl": "Nicole Spolidoro",
+      "ativo": false,
       "e": 5000.0,
       "x": 5000.0,
       "resp": "Gerson",
@@ -22430,6 +23870,7 @@ const D = {
       "cod": "1733",
       "cli": "Lilia Braga",
       "lbl": "Lilia Braga",
+      "ativo": false,
       "e": 16000.0,
       "x": 0,
       "resp": "Bruno",
@@ -22440,6 +23881,7 @@ const D = {
       "cod": "1664",
       "cli": "João Pedro Fritsch",
       "lbl": "João Pedro Fritsch",
+      "ativo": false,
       "e": 0,
       "x": 5000.0,
       "resp": "Gerson",
@@ -22450,6 +23892,7 @@ const D = {
       "cod": "1696",
       "cli": "Oak's Burritos",
       "lbl": "Defesa Trabalhista — Eduardo",
+      "ativo": true,
       "e": 2100.0,
       "x": 0,
       "resp": "Gerson",
@@ -22460,6 +23903,7 @@ const D = {
       "cod": "1697",
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
+      "ativo": false,
       "e": 2100.0,
       "x": 0,
       "resp": "Gerson",
@@ -22470,6 +23914,7 @@ const D = {
       "cod": "1700",
       "cli": "Libel Kitchen",
       "lbl": "Libel Kitchen",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Bruno",
@@ -22480,6 +23925,7 @@ const D = {
       "cod": "1707",
       "cli": "Terence BC",
       "lbl": "Terence BC",
+      "ativo": false,
       "e": 6000.0,
       "x": 6000.0,
       "resp": "Rodrigo",
@@ -22490,6 +23936,7 @@ const D = {
       "cod": "1717",
       "cli": "Grupo TE2",
       "lbl": "Grupo TE2",
+      "ativo": false,
       "e": 0,
       "x": 15000.0,
       "resp": "Bruno",
@@ -22500,6 +23947,7 @@ const D = {
       "cod": "1718",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Consumidor — Marla de Campos Galioti",
+      "ativo": true,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -22510,6 +23958,7 @@ const D = {
       "cod": "1725",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 0,
       "x": 500.0,
       "resp": "Gerson",
@@ -22520,6 +23969,7 @@ const D = {
       "cod": "1729",
       "cli": "Rodrigo de Oliveira (SC)",
       "lbl": "Rodrigo de Oliveira (SC)",
+      "ativo": false,
       "e": 2000.0,
       "x": 6500.0,
       "resp": "Rodrigo",
@@ -22530,6 +23980,7 @@ const D = {
       "cod": "1669",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 490.0,
       "x": 1500.0,
       "resp": "Gerson",
@@ -22540,6 +23991,7 @@ const D = {
       "cod": "1673",
       "cli": "Bequest Academy",
       "lbl": "Bequest Academy",
+      "ativo": false,
       "e": 2824.0,
       "x": 0,
       "resp": "Gerson",
@@ -22550,6 +24002,7 @@ const D = {
       "cod": "2177",
       "cli": "Ultrawifi",
       "lbl": "Ultrawifi",
+      "ativo": false,
       "e": 1500.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -22560,6 +24013,7 @@ const D = {
       "cod": "2318",
       "cli": "Canto Bar",
       "lbl": "Canto Bar",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -22570,6 +24024,7 @@ const D = {
       "cod": "1864",
       "cli": "José Fontes",
       "lbl": "Ação Demolitória — [Identificar parte contrária]",
+      "ativo": true,
       "e": 3300.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -22580,6 +24035,7 @@ const D = {
       "cod": "1638",
       "cli": "Eduardo Wink",
       "lbl": "Eduardo Wink",
+      "ativo": false,
       "e": 0,
       "x": 2000.0,
       "resp": "Gerson",
@@ -22590,6 +24046,7 @@ const D = {
       "cod": "1685",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 10000.0,
       "x": 150000.0,
       "resp": "Thomaz",
@@ -22600,6 +24057,7 @@ const D = {
       "cod": "1686",
       "cli": "Felipe Pedri",
       "lbl": "Felipe Pedri",
+      "ativo": false,
       "e": 10000.0,
       "x": 18000.0,
       "resp": "Felipe",
@@ -22610,6 +24068,7 @@ const D = {
       "cod": "1687",
       "cli": "Ultrawifi",
       "lbl": "Defesa Trabalhista — Roberto",
+      "ativo": true,
       "e": 8000.0,
       "x": 0,
       "resp": "Gerson",
@@ -22620,6 +24079,7 @@ const D = {
       "cod": "1695",
       "cli": "Adeli Fortunato",
       "lbl": "Adeli Fortunato",
+      "ativo": false,
       "e": 550.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -22630,6 +24090,7 @@ const D = {
       "cod": "1628",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 0,
       "x": 700.0,
       "resp": "Thomaz",
@@ -22640,6 +24101,7 @@ const D = {
       "cod": "1635",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 4000.0,
       "resp": "Thomaz",
@@ -22650,6 +24112,7 @@ const D = {
       "cod": "1639",
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
+      "ativo": false,
       "e": 2400.0,
       "x": 1000.0,
       "resp": "Gerson",
@@ -22660,6 +24123,7 @@ const D = {
       "cod": "1641",
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
+      "ativo": false,
       "e": 2400.0,
       "x": 3000.0,
       "resp": "Gerson",
@@ -22670,6 +24134,7 @@ const D = {
       "cod": "1644",
       "cli": "Austral",
       "lbl": "Cobrança — Silva",
+      "ativo": true,
       "e": 0,
       "x": 9000.0,
       "resp": "Rodrigo",
@@ -22680,6 +24145,7 @@ const D = {
       "cod": "1583",
       "cli": "Levis",
       "lbl": "Levis",
+      "ativo": false,
       "e": 10000.0,
       "x": 30000.0,
       "resp": "Felipe",
@@ -22690,6 +24156,7 @@ const D = {
       "cod": "1632",
       "cli": "Oak's Burritos",
       "lbl": "Reestruturação de Passivos — Blindagem Patrimonial",
+      "ativo": true,
       "e": 8000.0,
       "x": 20000.0,
       "resp": "Bruno",
@@ -22700,6 +24167,7 @@ const D = {
       "cod": "1625",
       "cli": "Fórmula Motors",
       "lbl": "Defesa Consumidor — Edegar",
+      "ativo": true,
       "e": 7000.0,
       "x": 20000.0,
       "resp": "Rodrigo",
@@ -22710,6 +24178,7 @@ const D = {
       "cod": "1624",
       "cli": "Flowork",
       "lbl": "Cobrança — Doonline",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Thomaz",
@@ -22720,6 +24189,7 @@ const D = {
       "cod": "1604",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 2000.0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -22730,6 +24200,7 @@ const D = {
       "cod": "1607",
       "cli": "Rudy Holtz",
       "lbl": "Ação de Consumidor — Cia Aérea",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Rodrigo",
@@ -22740,6 +24211,7 @@ const D = {
       "cod": "1609",
       "cli": "Mint",
       "lbl": "Mint",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -22750,6 +24222,7 @@ const D = {
       "cod": "1615",
       "cli": "Agência Combo",
       "lbl": "Agência Combo",
+      "ativo": false,
       "e": 3500.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -22760,6 +24233,7 @@ const D = {
       "cod": "1616",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 2000.0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -22770,6 +24244,7 @@ const D = {
       "cod": "1619",
       "cli": "Cyberweb Networks",
       "lbl": "Execução de Cobrança",
+      "ativo": true,
       "e": 0,
       "x": 18000.0,
       "resp": "Bruno",
@@ -22780,6 +24255,7 @@ const D = {
       "cod": "1584",
       "cli": "G40 (G4)",
       "lbl": "Ação Tributária — Tese Salários",
+      "ativo": true,
       "e": 0,
       "x": 83000.0,
       "resp": "Bruno",
@@ -22790,6 +24266,7 @@ const D = {
       "cod": "1590",
       "cli": "G4 Educação",
       "lbl": "Ação Tese Tributária — Salários",
+      "ativo": true,
       "e": 0,
       "x": 240000.0,
       "resp": "Bruno",
@@ -22800,6 +24277,7 @@ const D = {
       "cod": "1553",
       "cli": "Brasil Paralelo",
       "lbl": "Ação Tributária — PIS/Cofins",
+      "ativo": true,
       "e": 0,
       "x": 1500000.0,
       "resp": "Bruno",
@@ -22810,6 +24288,7 @@ const D = {
       "cod": "1580",
       "cli": "Origem Coffe",
       "lbl": "Origem Coffe",
+      "ativo": false,
       "e": 0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -22820,6 +24299,7 @@ const D = {
       "cod": "1574",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 0,
       "x": 30000.0,
       "resp": "Felipe",
@@ -22830,6 +24310,7 @@ const D = {
       "cod": "1562",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 3000.0,
       "x": 0,
       "resp": "Gerson",
@@ -22840,6 +24321,7 @@ const D = {
       "cod": "1567",
       "cli": "Renato Cirne Lima",
       "lbl": "Renato Cirne Lima",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -22850,6 +24332,7 @@ const D = {
       "cod": "1570",
       "cli": "Jorge Elias",
       "lbl": "Jorge Elias",
+      "ativo": false,
       "e": 0,
       "x": 5000.0,
       "resp": "Gerson",
@@ -22860,6 +24343,7 @@ const D = {
       "cod": "1559",
       "cli": "Fórmula Motors",
       "lbl": "Defesa Trabalhista — Diego Ribeiro Simão",
+      "ativo": true,
       "e": 3000.0,
       "x": 7000.0,
       "resp": "Gerson",
@@ -22870,6 +24354,7 @@ const D = {
       "cod": "1564",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 0,
       "x": 40000.0,
       "resp": "Thomaz",
@@ -22880,6 +24365,7 @@ const D = {
       "cod": "1565",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Thomaz",
@@ -22890,6 +24376,7 @@ const D = {
       "cod": "1518",
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
+      "ativo": false,
       "e": 4200.0,
       "x": 0,
       "resp": "Gerson",
@@ -22900,6 +24387,7 @@ const D = {
       "cod": "1535",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Cobrança — Caju",
+      "ativo": true,
       "e": 1800.0,
       "x": 1800.0,
       "resp": "Felipe",
@@ -22910,6 +24398,7 @@ const D = {
       "cod": "1556",
       "cli": "Okidoki",
       "lbl": "Okidoki",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -22920,6 +24409,7 @@ const D = {
       "cod": "1551",
       "cli": "Paulina Saraiva",
       "lbl": "Ação de Isenção Tributária",
+      "ativo": true,
       "e": 3000.0,
       "x": 60000.0,
       "resp": "Bruno",
@@ -22930,6 +24420,7 @@ const D = {
       "cod": "1554",
       "cli": "Rogério Nabinger",
       "lbl": "Rogério Nabinger",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Felipe",
@@ -22940,6 +24431,7 @@ const D = {
       "cod": "1520",
       "cli": "César Ferreira",
       "lbl": "César Ferreira",
+      "ativo": false,
       "e": 2000.0,
       "x": 6000.0,
       "resp": "Bruno",
@@ -22950,6 +24442,7 @@ const D = {
       "cod": "1229",
       "cli": "Hugo Oliveira",
       "lbl": "Hugo Oliveira",
+      "ativo": false,
       "e": 0,
       "x": 20000.0,
       "resp": "Thomaz",
@@ -22960,6 +24453,7 @@ const D = {
       "cod": "1530",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 4000.0,
       "x": 4000.0,
       "resp": "Thomaz",
@@ -22970,6 +24464,7 @@ const D = {
       "cod": "1534",
       "cli": "Angela Viana",
       "lbl": "Angela Viana",
+      "ativo": false,
       "e": 3000.0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -22980,6 +24475,7 @@ const D = {
       "cod": "1539",
       "cli": "Ivo Pires",
       "lbl": "Ivo Pires",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Rodrigo",
@@ -22990,6 +24486,7 @@ const D = {
       "cod": "1543",
       "cli": "Ramom Flores",
       "lbl": "Ramom Flores",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -23000,6 +24497,7 @@ const D = {
       "cod": "1514",
       "cli": "G4 Educação",
       "lbl": "G4 Educação",
+      "ativo": false,
       "e": 1000.0,
       "x": 0,
       "resp": "Gerson",
@@ -23010,6 +24508,7 @@ const D = {
       "cod": "1508",
       "cli": "Thiago Soares",
       "lbl": "Thiago Soares",
+      "ativo": false,
       "e": 1000.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -23020,6 +24519,7 @@ const D = {
       "cod": "1480",
       "cli": "YUOOL",
       "lbl": "Defesa Trabalhista — Fernanda",
+      "ativo": true,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Gerson",
@@ -23030,6 +24530,7 @@ const D = {
       "cod": "1506",
       "cli": "José Fontes",
       "lbl": "José Fontes",
+      "ativo": false,
       "e": 500.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -23040,6 +24541,7 @@ const D = {
       "cod": "1507",
       "cli": "Rui Oliveira",
       "lbl": "Defesa Cível — Ação em Andamento",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Rodrigo",
@@ -23050,6 +24552,7 @@ const D = {
       "cod": "1503",
       "cli": "Loucos e Santos",
       "lbl": "Loucos e Santos",
+      "ativo": false,
       "e": 1375.0,
       "x": 0,
       "resp": "Felipe",
@@ -23060,6 +24563,7 @@ const D = {
       "cod": "1493",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 0,
       "x": 15000.0,
       "resp": "Felipe",
@@ -23070,6 +24574,7 @@ const D = {
       "cod": "1471",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 0,
       "x": 120000.0,
       "resp": "Bruno",
@@ -23080,6 +24585,7 @@ const D = {
       "cod": "1474",
       "cli": "Flowork",
       "lbl": "Flowork",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Thomaz",
@@ -23090,6 +24596,7 @@ const D = {
       "cod": "1486",
       "cli": "Otávio Cadore",
       "lbl": "Otávio Cadore",
+      "ativo": false,
       "e": 0,
       "x": 2000.0,
       "resp": "Gerson",
@@ -23100,6 +24607,7 @@ const D = {
       "cod": "1490",
       "cli": "Flowork",
       "lbl": "Cobrança — Fohat",
+      "ativo": true,
       "e": 0,
       "x": 18000.0,
       "resp": "Thomaz",
@@ -23110,6 +24618,7 @@ const D = {
       "cod": "1468",
       "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "lbl": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "ativo": false,
       "e": 6000.0,
       "x": 0,
       "resp": "Thomaz",
@@ -23120,6 +24629,7 @@ const D = {
       "cod": "1469",
       "cli": "Lucas Bilinski",
       "lbl": "Ação de Consumidor — Apple",
+      "ativo": true,
       "e": 1600.0,
       "x": 5000.0,
       "resp": "Gerson",
@@ -23130,6 +24640,7 @@ const D = {
       "cod": "1472",
       "cli": "José Fontes",
       "lbl": "Defesa Trabalhista — Embargos à Penhora",
+      "ativo": true,
       "e": 3000.0,
       "x": 0,
       "resp": "Gerson",
@@ -23140,6 +24651,7 @@ const D = {
       "cod": "1464",
       "cli": "Creare",
       "lbl": "Defesa Cível — Ação Contínua",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Thomaz",
@@ -23150,6 +24662,7 @@ const D = {
       "cod": "1452",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 14000.0,
       "x": 0,
       "resp": "Gerson",
@@ -23160,6 +24673,7 @@ const D = {
       "cod": "1462",
       "cli": "Origem Coffe",
       "lbl": "Origem Coffe",
+      "ativo": false,
       "e": 1000.0,
       "x": 1600.0,
       "resp": "Gerson",
@@ -23170,6 +24684,7 @@ const D = {
       "cod": "1463",
       "cli": "Origem Coffe",
       "lbl": "Defesa Trabalhista — Laryssa",
+      "ativo": true,
       "e": 1000.0,
       "x": 1600.0,
       "resp": "Gerson",
@@ -23180,6 +24695,7 @@ const D = {
       "cod": "1457",
       "cli": "LBF (Engenharia e Servicos)",
       "lbl": "Sustação de Protesto e Declaratória",
+      "ativo": true,
       "e": 2700.0,
       "x": 15000.0,
       "resp": "Rodrigo",
@@ -23190,6 +24706,7 @@ const D = {
       "cod": "1454",
       "cli": "Globalnet",
       "lbl": "Globalnet",
+      "ativo": false,
       "e": 40000.0,
       "x": 150000.0,
       "resp": "Felipe",
@@ -23200,6 +24717,7 @@ const D = {
       "cod": "1451",
       "cli": "Expermed",
       "lbl": "Expermed",
+      "ativo": false,
       "e": 3000.0,
       "x": 0,
       "resp": "Gerson",
@@ -23210,6 +24728,7 @@ const D = {
       "cod": "1339",
       "cli": "Orulo",
       "lbl": "Orulo",
+      "ativo": false,
       "e": 5000.0,
       "x": 40000.0,
       "resp": "Felipe",
@@ -23220,6 +24739,7 @@ const D = {
       "cod": "1445",
       "cli": "Arlindo Camerin",
       "lbl": "Arlindo Camerin",
+      "ativo": false,
       "e": 1375.0,
       "x": 0,
       "resp": "Felipe",
@@ -23230,6 +24750,7 @@ const D = {
       "cod": "1435",
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
       "lbl": "Mercatto Serviços de Recuperação de Créditos LTDA.",
+      "ativo": false,
       "e": 1250.0,
       "x": 0,
       "resp": "Gerson",
@@ -23240,6 +24761,7 @@ const D = {
       "cod": "1441",
       "cli": "Francisco (sócio Urban)",
       "lbl": "Francisco (sócio Urban)",
+      "ativo": false,
       "e": 1500.0,
       "x": 0,
       "resp": "Gerson",
@@ -23250,6 +24772,7 @@ const D = {
       "cod": "1442",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 500.0,
       "x": 0,
       "resp": "Gerson",
@@ -23260,6 +24783,7 @@ const D = {
       "cod": "1402",
       "cli": "Simplifica Engenharia",
       "lbl": "Defesa Trabalhista — 0020259-26.2023.5.04.0017",
+      "ativo": true,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -23270,6 +24794,7 @@ const D = {
       "cod": "1413",
       "cli": "João Pedro Fritsch",
       "lbl": "João Pedro Fritsch",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -23280,6 +24805,7 @@ const D = {
       "cod": "1409",
       "cli": "Rodrigo de Oliveira (SC)",
       "lbl": "Rodrigo de Oliveira (SC)",
+      "ativo": false,
       "e": 6000.0,
       "x": 60000.0,
       "resp": "Rodrigo",
@@ -23290,6 +24816,7 @@ const D = {
       "cod": "1360",
       "cli": "Cia do Consorcio",
       "lbl": "Ação de PI — Google",
+      "ativo": true,
       "e": 3300.0,
       "x": 20000.0,
       "resp": "Rodrigo",
@@ -23300,6 +24827,7 @@ const D = {
       "cod": "1394",
       "cli": "Austral",
       "lbl": "Austral",
+      "ativo": false,
       "e": 5500.0,
       "x": 14500.0,
       "resp": "Rodrigo",
@@ -23310,6 +24838,7 @@ const D = {
       "cod": "1390",
       "cli": "Marcelo Korzenowski",
       "lbl": "Defesa Consórcio — Ação Cível",
+      "ativo": true,
       "e": 3000.0,
       "x": 3000.0,
       "resp": "Rodrigo",
@@ -23320,6 +24849,7 @@ const D = {
       "cod": "1391",
       "cli": "Marcio Silveira",
       "lbl": "Marcio Silveira",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Rodrigo",
@@ -23330,6 +24860,7 @@ const D = {
       "cod": "1312",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -23340,6 +24871,7 @@ const D = {
       "cod": "1387",
       "cli": "Agência Combo",
       "lbl": "Agência Combo",
+      "ativo": false,
       "e": 1000.0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -23350,6 +24882,7 @@ const D = {
       "cod": "1382",
       "cli": "Franciele Valcarenghi e Matheus de Amorim",
       "lbl": "Franciele Valcarenghi e Matheus de Amorim",
+      "ativo": false,
       "e": 3500.0,
       "x": 0,
       "resp": "Gerson",
@@ -23360,6 +24893,7 @@ const D = {
       "cod": "1372",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 500.0,
       "x": 0,
       "resp": "Gerson",
@@ -23370,6 +24904,7 @@ const D = {
       "cod": "1356",
       "cli": "Lucas Bilinski",
       "lbl": "Defesa Consumidor — Rescisão Imóvel",
+      "ativo": true,
       "e": 2000.0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -23380,6 +24915,7 @@ const D = {
       "cod": "1355",
       "cli": "Vinicius Garcia",
       "lbl": "Inventário Judicial Consensual — Mercedes",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -23390,6 +24926,7 @@ const D = {
       "cod": "1278",
       "cli": "Orulo",
       "lbl": "Orulo",
+      "ativo": false,
       "e": 4000.0,
       "x": 0,
       "resp": "Felipe",
@@ -23400,6 +24937,7 @@ const D = {
       "cod": "1334",
       "cli": "Edison Marengo",
       "lbl": "Defesa Cível — Petição",
+      "ativo": true,
       "e": 550.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -23410,6 +24948,7 @@ const D = {
       "cod": "1326",
       "cli": "Tiago Menna",
       "lbl": "Tiago Menna",
+      "ativo": false,
       "e": 4000.0,
       "x": 5000.0,
       "resp": "Bruno",
@@ -23420,6 +24959,7 @@ const D = {
       "cod": "1260",
       "cli": "Rappi Bank (Rappipay)",
       "lbl": "Rappi Bank (Rappipay)",
+      "ativo": false,
       "e": 1200.0,
       "x": 0,
       "resp": "Gerson",
@@ -23430,6 +24970,7 @@ const D = {
       "cod": "1296",
       "cli": "Eduardo Wink",
       "lbl": "Eduardo Wink",
+      "ativo": false,
       "e": 800.0,
       "x": 0,
       "resp": "Gerson",
@@ -23440,6 +24981,7 @@ const D = {
       "cod": "1271",
       "cli": "Banca do Holandês",
       "lbl": "Banca do Holandês",
+      "ativo": false,
       "e": 600.0,
       "x": 0,
       "resp": "Gerson",
@@ -23450,6 +24992,7 @@ const D = {
       "cod": "1323",
       "cli": "Mint",
       "lbl": "Mint",
+      "ativo": false,
       "e": 0,
       "x": 20000.0,
       "resp": "Rodrigo",
@@ -23460,6 +25003,7 @@ const D = {
       "cod": "1122",
       "cli": "José Fontes",
       "lbl": "Defesa Cível — Caso Imóvel Igreja",
+      "ativo": true,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -23470,6 +25014,7 @@ const D = {
       "cod": "1299",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -23480,6 +25025,7 @@ const D = {
       "cod": "1298",
       "cli": "Expermed",
       "lbl": "Expermed",
+      "ativo": false,
       "e": 0,
       "x": 14000.0,
       "resp": "Bruno",
@@ -23490,6 +25036,7 @@ const D = {
       "cod": "1290",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 2890.0,
       "resp": "Carlos",
@@ -23500,6 +25047,7 @@ const D = {
       "cod": "1180",
       "cli": "Fórmula Motors",
       "lbl": "Fórmula Motors",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Carlos",
@@ -23510,6 +25058,7 @@ const D = {
       "cod": "1252",
       "cli": "\"Gabriel Inti Brink Telleria\n\"",
       "lbl": "Defesa Trabalhista — Reclamante",
+      "ativo": true,
       "e": 3500.0,
       "x": 4500.0,
       "resp": "Gerson",
@@ -23520,6 +25069,7 @@ const D = {
       "cod": "1155",
       "cli": "Fórmula Motors",
       "lbl": "Defesa Consumidor — Santa Rosa",
+      "ativo": true,
       "e": 1500.0,
       "x": 0,
       "resp": "Carlos",
@@ -23530,6 +25080,7 @@ const D = {
       "cod": "1246",
       "cli": "Jhussara",
       "lbl": "Jhussara",
+      "ativo": false,
       "e": 0,
       "x": 30000.0,
       "resp": "Bruno",
@@ -23540,6 +25091,7 @@ const D = {
       "cod": "1247",
       "cli": "MR Tecnologia",
       "lbl": "MR Tecnologia",
+      "ativo": false,
       "e": 3000.0,
       "x": 6000.0,
       "resp": "Gerson",
@@ -23550,6 +25102,7 @@ const D = {
       "cod": "1249",
       "cli": "Bertuzzi",
       "lbl": "Bertuzzi",
+      "ativo": false,
       "e": 1302.0,
       "x": 0,
       "resp": "Felipe",
@@ -23560,6 +25113,7 @@ const D = {
       "cod": "1239",
       "cli": "Mix Natural",
       "lbl": "Mix Natural",
+      "ativo": false,
       "e": 2000.0,
       "x": 1500.0,
       "resp": "Gerson",
@@ -23570,6 +25124,7 @@ const D = {
       "cod": "1128",
       "cli": "LBF (Engenharia e Servicos)",
       "lbl": "Ação Societária — Darlan",
+      "ativo": true,
       "e": 0,
       "x": 50000.0,
       "resp": "Rodrigo",
@@ -23580,6 +25135,7 @@ const D = {
       "cod": "1192",
       "cli": "Marcio de Souza Lopes e MLV",
       "lbl": "Defesa Execução — Execução de Título",
+      "ativo": true,
       "e": 3750.0,
       "x": 0.0,
       "resp": "Carlos",
@@ -23590,6 +25146,7 @@ const D = {
       "cod": "1095",
       "cli": "Devaneio Do Velhaco",
       "lbl": "Devaneio Do Velhaco",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Bruno",
@@ -23600,6 +25157,7 @@ const D = {
       "cod": "1211",
       "cli": "Agência Combo",
       "lbl": "Agência Combo",
+      "ativo": false,
       "e": 1000.0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -23610,6 +25168,7 @@ const D = {
       "cod": "1094",
       "cli": "Devaneio Do Velhaco",
       "lbl": "Devaneio Do Velhaco",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Bruno",
@@ -23620,6 +25179,7 @@ const D = {
       "cod": "1148",
       "cli": "Henrique Viana",
       "lbl": "Henrique Viana",
+      "ativo": false,
       "e": 0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -23630,6 +25190,7 @@ const D = {
       "cod": "1191",
       "cli": "Pedro Azevedo",
       "lbl": "Pedro Azevedo",
+      "ativo": false,
       "e": 2500.0,
       "x": 3200.0,
       "resp": "Felipe",
@@ -23640,6 +25201,7 @@ const D = {
       "cod": "1187",
       "cli": "Patricia Durks",
       "lbl": "Patricia Durks",
+      "ativo": false,
       "e": 5000.0,
       "x": 20000.0,
       "resp": "Felipe",
@@ -23650,6 +25212,7 @@ const D = {
       "cod": "1216",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 2500.0,
       "resp": "Carlos",
@@ -23660,6 +25223,7 @@ const D = {
       "cod": "1200",
       "cli": "Flávia Dresch",
       "lbl": "Flávia Dresch",
+      "ativo": false,
       "e": 0,
       "x": 8000.0,
       "resp": "Felipe",
@@ -23670,6 +25234,7 @@ const D = {
       "cod": "970",
       "cli": "Laçador de Ofertas",
       "lbl": "Laçador de Ofertas",
+      "ativo": false,
       "e": 0,
       "x": 30000.0,
       "resp": "Bruno",
@@ -23680,6 +25245,7 @@ const D = {
       "cod": "1169",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 2500.0,
       "resp": "Carlos",
@@ -23690,6 +25256,7 @@ const D = {
       "cod": "1178",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 2500.0,
       "resp": "Carlos",
@@ -23700,6 +25267,7 @@ const D = {
       "cod": "1188",
       "cli": "Eduardo Wink",
       "lbl": "Eduardo Wink",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Carlos",
@@ -23710,6 +25278,7 @@ const D = {
       "cod": "1166",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -23720,6 +25289,7 @@ const D = {
       "cod": "1175",
       "cli": "Fórmula Motors",
       "lbl": "Fórmula Motors",
+      "ativo": false,
       "e": 1000.0,
       "x": 0,
       "resp": "Carlos",
@@ -23730,6 +25300,7 @@ const D = {
       "cod": "1157",
       "cli": "Austral",
       "lbl": "Austral",
+      "ativo": false,
       "e": 1212.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -23740,6 +25311,7 @@ const D = {
       "cod": "1151",
       "cli": "Bruna Ostermann",
       "lbl": "Reclamação Trabalhista — Empregador",
+      "ativo": true,
       "e": 0,
       "x": 100000.0,
       "resp": "Gerson",
@@ -23750,6 +25322,7 @@ const D = {
       "cod": "1163",
       "cli": "Valmir Fontes",
       "lbl": "Valmir Fontes",
+      "ativo": false,
       "e": 4000.0,
       "x": 6000.0,
       "resp": "Gerson",
@@ -23760,6 +25333,7 @@ const D = {
       "cod": "1152",
       "cli": "Gestão DS",
       "lbl": "Gestão DS",
+      "ativo": false,
       "e": 2500.0,
       "x": 0,
       "resp": "Gerson",
@@ -23770,6 +25344,7 @@ const D = {
       "cod": "61",
       "cli": "Creare",
       "lbl": "Ação Tributária — PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 300000.0,
       "resp": "Bruno",
@@ -23780,6 +25355,7 @@ const D = {
       "cod": "1090",
       "cli": "Patricia Durks",
       "lbl": "Patricia Durks",
+      "ativo": false,
       "e": 0,
       "x": 2100.0,
       "resp": "Bruno",
@@ -23790,6 +25366,7 @@ const D = {
       "cod": "1135",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 1000.0,
       "resp": "Carlos",
@@ -23800,6 +25377,7 @@ const D = {
       "cod": "1136",
       "cli": "STV",
       "lbl": "STV",
+      "ativo": false,
       "e": 1000.0,
       "x": 0,
       "resp": "Gerson",
@@ -23810,6 +25388,7 @@ const D = {
       "cod": "1125",
       "cli": "Banca do Holandês",
       "lbl": "Banca do Holandês",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -23820,6 +25399,7 @@ const D = {
       "cod": "1114",
       "cli": "Everlog",
       "lbl": "Everlog",
+      "ativo": false,
       "e": 1212.0,
       "x": 0,
       "resp": "Gerson",
@@ -23830,6 +25410,7 @@ const D = {
       "cod": "1110",
       "cli": "Fórmula Motors",
       "lbl": "Fórmula Motors",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -23840,6 +25421,7 @@ const D = {
       "cod": "1115",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — Viacel",
+      "ativo": true,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Felipe",
@@ -23850,6 +25432,7 @@ const D = {
       "cod": "1081",
       "cli": "Ercilda Luzia Souza",
       "lbl": "Ercilda Luzia Souza",
+      "ativo": false,
       "e": 3100.0,
       "x": 0,
       "resp": "Felipe",
@@ -23860,6 +25443,7 @@ const D = {
       "cod": "1112",
       "cli": "Eraldo Antonio Ramos da Silveira",
       "lbl": "Eraldo Antonio Ramos da Silveira",
+      "ativo": false,
       "e": 0,
       "x": 1750.0,
       "resp": "Gerson",
@@ -23870,6 +25454,7 @@ const D = {
       "cod": "1088",
       "cli": "HBT (Hbt Empreendimentos)",
       "lbl": "Ação ISS — HBT Empreendimentos",
+      "ativo": true,
       "e": 3000.0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -23880,6 +25465,7 @@ const D = {
       "cod": "1107",
       "cli": "Casa de Praia Surf Bar",
       "lbl": "Casa de Praia Surf Bar",
+      "ativo": false,
       "e": 5000.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -23890,6 +25476,7 @@ const D = {
       "cod": "1084",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 500.0,
       "x": 0,
       "resp": "Gerson",
@@ -23900,6 +25487,7 @@ const D = {
       "cod": "1098",
       "cli": "Providence Radiologia",
       "lbl": "Ação Tributária — Teses",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Rodrigo",
@@ -23910,6 +25498,7 @@ const D = {
       "cod": "1078",
       "cli": "Fábio Machado Bernardes",
       "lbl": "Fábio Machado Bernardes",
+      "ativo": false,
       "e": 500.0,
       "x": 0,
       "resp": "Gerson",
@@ -23920,6 +25509,7 @@ const D = {
       "cod": "1093",
       "cli": "Diego Tezzoni",
       "lbl": "Diego Tezzoni",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -23930,6 +25520,7 @@ const D = {
       "cod": "1070",
       "cli": "Douglas Schwember",
       "lbl": "Douglas Schwember",
+      "ativo": false,
       "e": 0,
       "x": 2000.0,
       "resp": "Carlos",
@@ -23940,6 +25531,7 @@ const D = {
       "cod": "1065",
       "cli": "Bruno Saraiva",
       "lbl": "Ação Indenizatória — XP",
+      "ativo": true,
       "e": 2000.0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -23950,6 +25542,7 @@ const D = {
       "cod": "961",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Felipe",
@@ -23960,6 +25553,7 @@ const D = {
       "cod": "1049",
       "cli": "Austral",
       "lbl": "Austral",
+      "ativo": false,
       "e": 2300.0,
       "x": 0,
       "resp": "Carlos",
@@ -23970,6 +25564,7 @@ const D = {
       "cod": "1063",
       "cli": "Bruno Saraiva",
       "lbl": "Bruno Saraiva",
+      "ativo": false,
       "e": 0,
       "x": 2100.0,
       "resp": "Felipe",
@@ -23980,6 +25575,7 @@ const D = {
       "cod": "831",
       "cli": "Norton Witeck",
       "lbl": "Norton Witeck",
+      "ativo": false,
       "e": 0,
       "x": 2100.0,
       "resp": "Carlos",
@@ -23990,6 +25586,7 @@ const D = {
       "cod": "906",
       "cli": "Giovanni Beninca de Farias",
       "lbl": "Giovanni Beninca de Farias",
+      "ativo": false,
       "e": 0,
       "x": 6000.0,
       "resp": "Felipe",
@@ -24000,6 +25597,7 @@ const D = {
       "cod": "929",
       "cli": "Expermed",
       "lbl": "Ação Tributária — Clínicas e Hospitais",
+      "ativo": true,
       "e": 0,
       "x": 630000.0,
       "resp": "Bruno",
@@ -24010,6 +25608,7 @@ const D = {
       "cod": "855",
       "cli": "Eat Kitchen",
       "lbl": "Eat Kitchen",
+      "ativo": false,
       "e": 0,
       "x": 1000.0,
       "resp": "Carlos",
@@ -24020,6 +25619,7 @@ const D = {
       "cod": "1037",
       "cli": "Felipe Marocco",
       "lbl": "Felipe Marocco",
+      "ativo": false,
       "e": 3500.0,
       "x": 0,
       "resp": "Carlos",
@@ -24030,6 +25630,7 @@ const D = {
       "cod": "963",
       "cli": "Safra Hortifruti",
       "lbl": "Safra Hortifruti",
+      "ativo": false,
       "e": 0,
       "x": 25000.0,
       "resp": "Bruno",
@@ -24040,6 +25641,7 @@ const D = {
       "cod": "1047",
       "cli": "Alice Calone",
       "lbl": "Alice Calone",
+      "ativo": false,
       "e": 12000.0,
       "x": 0,
       "resp": "Bruno",
@@ -24050,6 +25652,7 @@ const D = {
       "cod": "1046",
       "cli": "Marcela Figueiredo",
       "lbl": "Marcela Figueiredo",
+      "ativo": false,
       "e": 0,
       "x": 6000.0,
       "resp": "Bruno",
@@ -24060,6 +25663,7 @@ const D = {
       "cod": "1012",
       "cli": "Leci Brendler",
       "lbl": "Cobrança — Carla Hoerbe",
+      "ativo": true,
       "e": 0,
       "x": 300000.0,
       "resp": "Felipe",
@@ -24070,6 +25674,7 @@ const D = {
       "cod": "1030",
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
+      "ativo": false,
       "e": 350.0,
       "x": 0,
       "resp": "Gerson",
@@ -24080,6 +25685,7 @@ const D = {
       "cod": "928",
       "cli": "Betina Gschneitner",
       "lbl": "Ação Imobiliária — Direito Real",
+      "ativo": true,
       "e": 11700.0,
       "x": 60000.0,
       "resp": "Rodrigo",
@@ -24090,6 +25696,7 @@ const D = {
       "cod": "1015",
       "cli": "Pedro Lima Vieira",
       "lbl": "Pedro Lima Vieira",
+      "ativo": false,
       "e": 0,
       "x": 12000.0,
       "resp": "Bruno",
@@ -24100,6 +25707,7 @@ const D = {
       "cod": "1017",
       "cli": "Gerson Belinaso",
       "lbl": "Ação Pessoal — Gerson",
+      "ativo": true,
       "e": 0,
       "x": 900.0,
       "resp": "Gerson",
@@ -24110,6 +25718,7 @@ const D = {
       "cod": "1000",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 2500.0,
       "x": 0,
       "resp": "Gerson",
@@ -24120,6 +25729,7 @@ const D = {
       "cod": "1025",
       "cli": "Luis Veit",
       "lbl": "Luis Veit",
+      "ativo": false,
       "e": 0,
       "x": 1800.0,
       "resp": "Gerson",
@@ -24130,6 +25740,7 @@ const D = {
       "cod": "1006",
       "cli": "Daniela Baldin de Mello",
       "lbl": "Ação Trabalhista — Gamp",
+      "ativo": true,
       "e": 0,
       "x": 7000.0,
       "resp": "Gerson",
@@ -24140,6 +25751,7 @@ const D = {
       "cod": "974",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 2400.0,
       "resp": "Gerson",
@@ -24150,6 +25762,7 @@ const D = {
       "cod": "985",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 6500.0,
       "x": 0,
       "resp": "Gerson",
@@ -24160,6 +25773,7 @@ const D = {
       "cod": "987",
       "cli": "Paulo Garcia,GC Engenharia",
       "lbl": "Paulo Garcia,GC Engenharia",
+      "ativo": false,
       "e": 0,
       "x": 500.0,
       "resp": "Rodrigo",
@@ -24170,6 +25784,7 @@ const D = {
       "cod": "973",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 2400.0,
       "resp": "Gerson",
@@ -24180,6 +25795,7 @@ const D = {
       "cod": "841",
       "cli": "LBF (Engenharia e Servicos)",
       "lbl": "LBF (Engenharia e Servicos)",
+      "ativo": false,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -24190,6 +25806,7 @@ const D = {
       "cod": "935",
       "cli": "Vivian Raquel Lopes",
       "lbl": "Vivian Raquel Lopes",
+      "ativo": false,
       "e": 0,
       "x": 1500.0,
       "resp": "Carlos",
@@ -24200,6 +25817,7 @@ const D = {
       "cod": "975",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 3500.0,
       "x": 2400.0,
       "resp": "Gerson",
@@ -24210,6 +25828,7 @@ const D = {
       "cod": "996",
       "cli": "Jaqueline Meneghetti",
       "lbl": "Jaqueline Meneghetti",
+      "ativo": false,
       "e": 3000.0,
       "x": 0,
       "resp": "Gerson",
@@ -24220,6 +25839,7 @@ const D = {
       "cod": "998",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Bruno",
@@ -24230,6 +25850,7 @@ const D = {
       "cod": "986",
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
+      "ativo": false,
       "e": 500.0,
       "x": 0,
       "resp": "Gerson",
@@ -24240,6 +25861,7 @@ const D = {
       "cod": "842",
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
+      "ativo": false,
       "e": 1500.0,
       "x": 0,
       "resp": "Gerson",
@@ -24250,6 +25872,7 @@ const D = {
       "cod": "984",
       "cli": "Creare",
       "lbl": "Creare",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Thomaz",
@@ -24260,6 +25883,7 @@ const D = {
       "cod": "993",
       "cli": "Bertuzzi",
       "lbl": "Bertuzzi",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Felipe",
@@ -24270,6 +25894,7 @@ const D = {
       "cod": "977",
       "cli": "Lumens Atuarial",
       "lbl": "Ação de Marca — Registro",
+      "ativo": true,
       "e": 3000.0,
       "x": 2700.0,
       "resp": "Thomaz",
@@ -24280,6 +25905,7 @@ const D = {
       "cod": "934",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 2500.0,
       "x": 0,
       "resp": "Gerson",
@@ -24290,6 +25916,7 @@ const D = {
       "cod": "936",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 2500.0,
       "x": 0,
       "resp": "Gerson",
@@ -24300,6 +25927,7 @@ const D = {
       "cod": "723",
       "cli": "Leticia Roehrs",
       "lbl": "Leticia Roehrs",
+      "ativo": false,
       "e": 0,
       "x": 2500.0,
       "resp": "Carlos",
@@ -24310,6 +25938,7 @@ const D = {
       "cod": "931",
       "cli": "Thiago Lemos",
       "lbl": "Thiago Lemos",
+      "ativo": false,
       "e": 2500.0,
       "x": 2000.0,
       "resp": "Carlos",
@@ -24320,6 +25949,7 @@ const D = {
       "cod": "930",
       "cli": "Roister",
       "lbl": "Roister",
+      "ativo": false,
       "e": 0,
       "x": 15000.0,
       "resp": "Bruno",
@@ -24330,6 +25960,7 @@ const D = {
       "cod": "962",
       "cli": "Origem Coffe",
       "lbl": "Origem Coffe",
+      "ativo": false,
       "e": 800.0,
       "x": 0,
       "resp": "Gerson",
@@ -24340,6 +25971,7 @@ const D = {
       "cod": "644",
       "cli": "Caroline Dias",
       "lbl": "Cobrança — IPE",
+      "ativo": true,
       "e": 0,
       "x": 20000.0,
       "resp": "Carlos",
@@ -24350,6 +25982,7 @@ const D = {
       "cod": "917",
       "cli": "Bluts",
       "lbl": "Bluts",
+      "ativo": false,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Thomaz",
@@ -24360,6 +25993,7 @@ const D = {
       "cod": "951",
       "cli": "Portalsul",
       "lbl": "Portalsul",
+      "ativo": false,
       "e": 600.0,
       "x": 0,
       "resp": "Gerson",
@@ -24370,6 +26004,7 @@ const D = {
       "cod": "922",
       "cli": "Mircea Nascimento",
       "lbl": "Mircea Nascimento",
+      "ativo": false,
       "e": 1800.0,
       "x": 0,
       "resp": "Thomaz",
@@ -24380,6 +26015,7 @@ const D = {
       "cod": "869",
       "cli": "Karine Alves",
       "lbl": "Karine Alves",
+      "ativo": false,
       "e": 0,
       "x": 3750.0,
       "resp": "Gerson",
@@ -24390,6 +26026,7 @@ const D = {
       "cod": "913",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 6500.0,
       "x": 0,
       "resp": "Carlos",
@@ -24400,6 +26037,7 @@ const D = {
       "cod": "909",
       "cli": "Rodrigo Camerim",
       "lbl": "Rodrigo Camerim",
+      "ativo": false,
       "e": 2000.0,
       "x": 7000.0,
       "resp": "Felipe",
@@ -24410,6 +26048,7 @@ const D = {
       "cod": "912",
       "cli": "Camila Nicolao",
       "lbl": "Camila Nicolao",
+      "ativo": false,
       "e": 0,
       "x": 42000.0,
       "resp": "Gerson",
@@ -24420,6 +26059,7 @@ const D = {
       "cod": "911",
       "cli": "Eduardo Wink",
       "lbl": "Ação Trabalhista — Reclamante",
+      "ativo": true,
       "e": 0,
       "x": 42000.0,
       "resp": "Gerson",
@@ -24430,6 +26070,7 @@ const D = {
       "cod": "876",
       "cli": "Octavio Ferraz",
       "lbl": "Octavio Ferraz",
+      "ativo": false,
       "e": 0,
       "x": 3200.0,
       "resp": "Carlos",
@@ -24440,6 +26081,7 @@ const D = {
       "cod": "916",
       "cli": "Denise Macedo",
       "lbl": "Denise Macedo",
+      "ativo": false,
       "e": 0,
       "x": 5000.0,
       "resp": "Felipe",
@@ -24450,6 +26092,7 @@ const D = {
       "cod": "892",
       "cli": "Dorleas Fernando",
       "lbl": "Dorleas Fernando",
+      "ativo": false,
       "e": 3000.0,
       "x": 0,
       "resp": "Gerson",
@@ -24460,6 +26103,7 @@ const D = {
       "cod": "885",
       "cli": "Expermed",
       "lbl": "Recuperação ISSQN — Classificação de Atividade",
+      "ativo": true,
       "e": 0,
       "x": 780000.0,
       "resp": "Bruno",
@@ -24470,6 +26114,7 @@ const D = {
       "cod": "867",
       "cli": "Hermes e Monteiro",
       "lbl": "Hermes e Monteiro",
+      "ativo": false,
       "e": 9100.0,
       "x": 0,
       "resp": "Gerson",
@@ -24480,6 +26125,7 @@ const D = {
       "cod": "872",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 13000.0,
       "x": 0,
       "resp": "Gerson",
@@ -24490,6 +26136,7 @@ const D = {
       "cod": "856",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — Cassio Soares",
+      "ativo": true,
       "e": 2500.0,
       "x": 0,
       "resp": "Felipe",
@@ -24500,6 +26147,7 @@ const D = {
       "cod": "743",
       "cli": "Banca do Holandês",
       "lbl": "Banca do Holandês",
+      "ativo": false,
       "e": 48000.0,
       "x": 90000.0,
       "resp": "Bruno",
@@ -24510,6 +26158,7 @@ const D = {
       "cod": "824",
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Zenit (antigo Autoridade Fitness)",
+      "ativo": false,
       "e": 0,
       "x": 200000.0,
       "resp": "Rodrigo",
@@ -24520,6 +26169,7 @@ const D = {
       "cod": "830",
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -24530,6 +26180,7 @@ const D = {
       "cod": "827",
       "cli": "Kadane Nassif",
       "lbl": "Kadane Nassif",
+      "ativo": false,
       "e": 0,
       "x": 20000.0,
       "resp": "Gerson",
@@ -24540,6 +26191,7 @@ const D = {
       "cod": "791",
       "cli": "Jorge Amaral",
       "lbl": "Jorge Amaral",
+      "ativo": false,
       "e": 6900.0,
       "x": 0,
       "resp": "Carlos",
@@ -24550,6 +26202,7 @@ const D = {
       "cod": "801",
       "cli": "Luciane Giacomin",
       "lbl": "Luciane Giacomin",
+      "ativo": false,
       "e": 0,
       "x": 2400.0,
       "resp": "Thomaz",
@@ -24560,6 +26213,7 @@ const D = {
       "cod": "802",
       "cli": "Austral",
       "lbl": "Ação Societária — Fábio Cobalto",
+      "ativo": true,
       "e": 9000.0,
       "x": 20000.0,
       "resp": "Rodrigo",
@@ -24570,6 +26224,7 @@ const D = {
       "cod": "812",
       "cli": "Hug Engenharia",
       "lbl": "Hug Engenharia",
+      "ativo": false,
       "e": 3600.0,
       "x": 1000.0,
       "resp": "Gerson",
@@ -24580,6 +26235,7 @@ const D = {
       "cod": "778",
       "cli": "Claudia Miranda",
       "lbl": "Claudia Miranda",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -24590,6 +26246,7 @@ const D = {
       "cod": "800",
       "cli": "Eduardo Oliveira",
       "lbl": "Eduardo Oliveira",
+      "ativo": false,
       "e": 0,
       "x": 5000.0,
       "resp": "João",
@@ -24600,6 +26257,7 @@ const D = {
       "cod": "783",
       "cli": "Kayron",
       "lbl": "Kayron",
+      "ativo": false,
       "e": 4800.0,
       "x": 0,
       "resp": "Gerson",
@@ -24610,6 +26268,7 @@ const D = {
       "cod": "782",
       "cli": "STV",
       "lbl": "STV",
+      "ativo": false,
       "e": 4802.73,
       "x": 0,
       "resp": "Gerson",
@@ -24620,6 +26279,7 @@ const D = {
       "cod": "770",
       "cli": "Céu",
       "lbl": "Céu",
+      "ativo": false,
       "e": 3000.0,
       "x": 3000.0,
       "resp": "Gerson",
@@ -24630,6 +26290,7 @@ const D = {
       "cod": "767",
       "cli": "ProjeteBem",
       "lbl": "Defesa Trabalhista — Bianca",
+      "ativo": true,
       "e": 3000.0,
       "x": 15000.0,
       "resp": "Gerson",
@@ -24640,6 +26301,7 @@ const D = {
       "cod": "763",
       "cli": "Rafhael Ferreira Roberto",
       "lbl": "Rafhael Ferreira Roberto",
+      "ativo": false,
       "e": 8000.0,
       "x": 10000.0,
       "resp": "João",
@@ -24650,6 +26312,7 @@ const D = {
       "cod": "742",
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
+      "ativo": false,
       "e": 800.0,
       "x": 0,
       "resp": "Gerson",
@@ -24660,6 +26323,7 @@ const D = {
       "cod": "741",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 800.0,
       "x": 0,
       "resp": "Gerson",
@@ -24670,6 +26334,7 @@ const D = {
       "cod": "738",
       "cli": "Raquel Torunsky",
       "lbl": "Raquel Torunsky",
+      "ativo": false,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -24680,6 +26345,7 @@ const D = {
       "cod": "660",
       "cli": "Fernando Bianchi",
       "lbl": "Fernando Bianchi",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -24690,6 +26356,7 @@ const D = {
       "cod": "732",
       "cli": "Jorge Dalferth",
       "lbl": "Jorge Dalferth",
+      "ativo": false,
       "e": 0,
       "x": 6000.0,
       "resp": "Gerson",
@@ -24700,6 +26367,7 @@ const D = {
       "cod": "734",
       "cli": "Mariana Barth",
       "lbl": "Mariana Barth",
+      "ativo": false,
       "e": 0,
       "x": 6000.0,
       "resp": "Gerson",
@@ -24710,6 +26378,7 @@ const D = {
       "cod": "718",
       "cli": "Paulo Garcia,GC Engenharia",
       "lbl": "Paulo Garcia,GC Engenharia",
+      "ativo": false,
       "e": 0,
       "x": 500.0,
       "resp": "Rodrigo",
@@ -24720,6 +26389,7 @@ const D = {
       "cod": "733",
       "cli": "Debora Gotze",
       "lbl": "Defesa Trabalhista — Execução",
+      "ativo": true,
       "e": 0,
       "x": 7500.0,
       "resp": "Gerson",
@@ -24730,6 +26400,7 @@ const D = {
       "cod": "735",
       "cli": "Rafael Rech",
       "lbl": "Rafael Rech",
+      "ativo": false,
       "e": 0,
       "x": 6000.0,
       "resp": "Gerson",
@@ -24740,6 +26411,7 @@ const D = {
       "cod": "611",
       "cli": "Langer",
       "lbl": "Langer",
+      "ativo": false,
       "e": 1440.0,
       "x": 0,
       "resp": "Carlos",
@@ -24750,6 +26422,7 @@ const D = {
       "cod": "704",
       "cli": "Elemara Frantz",
       "lbl": "Defesa Trabalhista — Elemara Frantz",
+      "ativo": true,
       "e": 0,
       "x": 30000.0,
       "resp": "Rodrigo",
@@ -24760,6 +26433,7 @@ const D = {
       "cod": "643",
       "cli": "Eduardo Wink",
       "lbl": "Eduardo Wink",
+      "ativo": false,
       "e": 0,
       "x": 2500.0,
       "resp": "Carlos",
@@ -24770,6 +26444,7 @@ const D = {
       "cod": "710",
       "cli": "Mariana Barth",
       "lbl": "Mariana Barth",
+      "ativo": false,
       "e": 10000.0,
       "x": 0,
       "resp": "Bruno",
@@ -24780,6 +26455,7 @@ const D = {
       "cod": "700",
       "cli": "Guilherme Dihl Ferreira",
       "lbl": "Guilherme Dihl Ferreira",
+      "ativo": false,
       "e": 3000.0,
       "x": 0,
       "resp": "Bruno",
@@ -24790,6 +26466,7 @@ const D = {
       "cod": "699",
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
+      "ativo": false,
       "e": 1200.0,
       "x": 0,
       "resp": "Gerson",
@@ -24800,6 +26477,7 @@ const D = {
       "cod": "706",
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -24810,6 +26488,7 @@ const D = {
       "cod": "665",
       "cli": "Rafael Garcia,GC Engenharia",
       "lbl": "Rafael Garcia,GC Engenharia",
+      "ativo": false,
       "e": 0,
       "x": 400.0,
       "resp": "Rodrigo",
@@ -24820,6 +26499,7 @@ const D = {
       "cod": "668",
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
+      "ativo": false,
       "e": 2800.0,
       "x": 0,
       "resp": "Gerson",
@@ -24830,6 +26510,7 @@ const D = {
       "cod": "642",
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
+      "ativo": false,
       "e": 2800.0,
       "x": 0,
       "resp": "Gerson",
@@ -24840,6 +26521,7 @@ const D = {
       "cod": "676",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -24850,6 +26532,7 @@ const D = {
       "cod": "677",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -24860,6 +26543,7 @@ const D = {
       "cod": "672",
       "cli": "Luciane Reinaldo Colombo da Silva",
       "lbl": "Luciane Reinaldo Colombo da Silva",
+      "ativo": false,
       "e": 4500.0,
       "x": 0,
       "resp": "Thomaz",
@@ -24870,6 +26554,7 @@ const D = {
       "cod": "621",
       "cli": "Sabrina Chies",
       "lbl": "Sabrina Chies",
+      "ativo": false,
       "e": 2800.0,
       "x": 10000.0,
       "resp": "Carlos",
@@ -24880,6 +26565,7 @@ const D = {
       "cod": "670",
       "cli": "Simplifica Engenharia",
       "lbl": "Simplifica Engenharia",
+      "ativo": false,
       "e": 1500.0,
       "x": 0,
       "resp": "Gerson",
@@ -24890,6 +26576,7 @@ const D = {
       "cod": "495",
       "cli": "Marcondes Trindade",
       "lbl": "Marcondes Trindade",
+      "ativo": false,
       "e": 2000.0,
       "x": 4000.0,
       "resp": "Felipe",
@@ -24900,6 +26587,7 @@ const D = {
       "cod": "622",
       "cli": "Dilamar",
       "lbl": "Dilamar",
+      "ativo": false,
       "e": 0,
       "x": 1200.0,
       "resp": "Carlos",
@@ -24910,6 +26598,7 @@ const D = {
       "cod": "572",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — Coesa",
+      "ativo": true,
       "e": 3000.0,
       "x": 0,
       "resp": "Felipe",
@@ -24920,6 +26609,7 @@ const D = {
       "cod": "623",
       "cli": "Carlos Aragon",
       "lbl": "Carlos Aragon",
+      "ativo": false,
       "e": 0,
       "x": 1600.0,
       "resp": "Carlos",
@@ -24930,6 +26620,7 @@ const D = {
       "cod": "659",
       "cli": "Grupo RDW",
       "lbl": "Grupo RDW",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Bruno",
@@ -24940,6 +26631,7 @@ const D = {
       "cod": "657",
       "cli": "Kauai Padaratz",
       "lbl": "Kauai Padaratz",
+      "ativo": false,
       "e": 0,
       "x": 6000.0,
       "resp": "Bruno",
@@ -24950,6 +26642,7 @@ const D = {
       "cod": "658",
       "cli": "Grupo RDW",
       "lbl": "Grupo RDW",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Bruno",
@@ -24960,6 +26653,7 @@ const D = {
       "cod": "615",
       "cli": "Norton Witeck",
       "lbl": "Norton Witeck",
+      "ativo": false,
       "e": 0,
       "x": 2500.0,
       "resp": "Carlos",
@@ -24970,6 +26664,7 @@ const D = {
       "cod": "640",
       "cli": "Rafael Weber",
       "lbl": "Rafael Weber",
+      "ativo": false,
       "e": 3000.0,
       "x": 0,
       "resp": "Felipe",
@@ -24980,6 +26675,7 @@ const D = {
       "cod": "628",
       "cli": "João Carlos Reis",
       "lbl": "João Carlos Reis",
+      "ativo": false,
       "e": 2500.0,
       "x": 15000.0,
       "resp": "Rodrigo",
@@ -24990,6 +26686,7 @@ const D = {
       "cod": "627",
       "cli": "Bernardo Oliveira",
       "lbl": "Bernardo Oliveira",
+      "ativo": false,
       "e": 0,
       "x": 27000.0,
       "resp": "Felipe",
@@ -25000,6 +26697,7 @@ const D = {
       "cod": "603",
       "cli": "Daniel Schaeffer",
       "lbl": "Daniel Schaeffer",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Carlos",
@@ -25010,6 +26708,7 @@ const D = {
       "cod": "600",
       "cli": "Thaís Backes Gonçalves",
       "lbl": "Thaís Backes Gonçalves",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Carlos",
@@ -25020,6 +26719,7 @@ const D = {
       "cod": "597",
       "cli": "JLP Participações",
       "lbl": "JLP Participações",
+      "ativo": false,
       "e": 4200.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -25030,6 +26730,7 @@ const D = {
       "cod": "594",
       "cli": "Casa de Praia Surf Bar",
       "lbl": "Casa de Praia Surf Bar",
+      "ativo": false,
       "e": 7000.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -25040,6 +26741,7 @@ const D = {
       "cod": "593",
       "cli": "João Felipe Kayser Maciel",
       "lbl": "João Felipe Kayser Maciel",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Rodrigo",
@@ -25050,6 +26752,7 @@ const D = {
       "cod": "567",
       "cli": "ProjeteBem",
       "lbl": "Defesa Trabalhista — Yane",
+      "ativo": true,
       "e": 3000.0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -25060,6 +26763,7 @@ const D = {
       "cod": "564",
       "cli": "Quintal da Carne",
       "lbl": "Quintal da Carne",
+      "ativo": false,
       "e": 3400.0,
       "x": 0,
       "resp": "Gerson",
@@ -25070,6 +26774,7 @@ const D = {
       "cod": "562",
       "cli": "Oak's Burritos",
       "lbl": "Oak's Burritos",
+      "ativo": false,
       "e": 2000.0,
       "x": 10000.0,
       "resp": "Gerson",
@@ -25080,6 +26785,7 @@ const D = {
       "cod": "546",
       "cli": "Z Tráfego",
       "lbl": "Z Tráfego",
+      "ativo": false,
       "e": 2400.0,
       "x": 0,
       "resp": "Gerson",
@@ -25090,6 +26796,7 @@ const D = {
       "cod": "557",
       "cli": "Private Imóveis",
       "lbl": "Private Imóveis",
+      "ativo": false,
       "e": 9000.0,
       "x": 0,
       "resp": "Bruno",
@@ -25100,6 +26807,7 @@ const D = {
       "cod": "494",
       "cli": "Martina Mombelli",
       "lbl": "Martina Mombelli",
+      "ativo": false,
       "e": 0,
       "x": 2500.0,
       "resp": "Felipe",
@@ -25110,6 +26818,7 @@ const D = {
       "cod": "547",
       "cli": "Eduardo Bastos",
       "lbl": "Eduardo Bastos",
+      "ativo": false,
       "e": 0,
       "x": 12000.0,
       "resp": "Gerson",
@@ -25120,6 +26829,7 @@ const D = {
       "cod": "430",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Defesa Cível — Sala Solutions",
+      "ativo": true,
       "e": 3500.0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -25130,6 +26840,7 @@ const D = {
       "cod": "544",
       "cli": "Edevar",
       "lbl": "Edevar",
+      "ativo": false,
       "e": 750.0,
       "x": 0,
       "resp": "Gerson",
@@ -25140,6 +26851,7 @@ const D = {
       "cod": "536",
       "cli": "Elite Elevadores",
       "lbl": "Elite Elevadores",
+      "ativo": false,
       "e": 10500.0,
       "x": 35000.0,
       "resp": "Felipe",
@@ -25150,6 +26862,7 @@ const D = {
       "cod": "535",
       "cli": "Conradho Passeto",
       "lbl": "Conradho Passeto",
+      "ativo": false,
       "e": 0,
       "x": 1500.0,
       "resp": "Felipe",
@@ -25160,6 +26873,7 @@ const D = {
       "cod": "532",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -25170,6 +26884,7 @@ const D = {
       "cod": "530",
       "cli": "William Nihues",
       "lbl": "William Nihues",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Carlos",
@@ -25180,6 +26895,7 @@ const D = {
       "cod": "531",
       "cli": "Willian Barbosa",
       "lbl": "Willian Barbosa",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Carlos",
@@ -25190,6 +26906,7 @@ const D = {
       "cod": "500",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -25200,6 +26917,7 @@ const D = {
       "cod": "529",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -25210,6 +26928,7 @@ const D = {
       "cod": "506",
       "cli": "GALLAS & OKABAYASHI",
       "lbl": "GALLAS & OKABAYASHI",
+      "ativo": false,
       "e": 4000.0,
       "x": 12000.0,
       "resp": "Gerson",
@@ -25220,6 +26939,7 @@ const D = {
       "cod": "510",
       "cli": "Rafaela Pechansky",
       "lbl": "Defesa Judicial — Companhia aérea",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Bruno",
@@ -25230,6 +26950,7 @@ const D = {
       "cod": "505",
       "cli": "Urban Farmcy",
       "lbl": "Urban Farmcy",
+      "ativo": false,
       "e": 0,
       "x": 250000.0,
       "resp": "Bruno",
@@ -25240,6 +26961,7 @@ const D = {
       "cod": "497",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -25250,6 +26972,7 @@ const D = {
       "cod": "418",
       "cli": "Lucas Ferrugem",
       "lbl": "Lucas Ferrugem",
+      "ativo": false,
       "e": 0,
       "x": 5000.0,
       "resp": "Felipe",
@@ -25260,6 +26983,7 @@ const D = {
       "cod": "357",
       "cli": "Patricia Durks",
       "lbl": "Ação de Consumidor — Seguro de Vida",
+      "ativo": true,
       "e": 0,
       "x": 45000.0,
       "resp": "Bruno",
@@ -25270,6 +26994,7 @@ const D = {
       "cod": "473",
       "cli": "Xie Xie",
       "lbl": "Indenizatória de Ponto Comercial",
+      "ativo": true,
       "e": 15000.0,
       "x": 140000.0,
       "resp": "Bruno",
@@ -25280,6 +27005,7 @@ const D = {
       "cod": "482",
       "cli": "Rappi Bank (Rappipay)",
       "lbl": "Rappi Bank (Rappipay)",
+      "ativo": false,
       "e": 2300.0,
       "x": 0,
       "resp": "Gerson",
@@ -25290,6 +27016,7 @@ const D = {
       "cod": "467",
       "cli": "Bar De Gracia",
       "lbl": "Bar De Gracia",
+      "ativo": false,
       "e": 800.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -25300,6 +27027,7 @@ const D = {
       "cod": "464",
       "cli": "Luciane Giacomin",
       "lbl": "Luciane Giacomin",
+      "ativo": false,
       "e": 0,
       "x": 650.0,
       "resp": "Thomaz",
@@ -25310,6 +27038,7 @@ const D = {
       "cod": "465",
       "cli": "JLP Participações",
       "lbl": "JLP Participações",
+      "ativo": false,
       "e": 3000.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -25320,6 +27049,7 @@ const D = {
       "cod": "443",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 4000.0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -25330,6 +27060,7 @@ const D = {
       "cod": "448",
       "cli": "Origem Coffe",
       "lbl": "Origem Coffe",
+      "ativo": false,
       "e": 2500.0,
       "x": 13000.0,
       "resp": "Felipe",
@@ -25340,6 +27071,7 @@ const D = {
       "cod": "395",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 7000.0,
       "x": 50000.0,
       "resp": "Felipe",
@@ -25350,6 +27082,7 @@ const D = {
       "cod": "413",
       "cli": "Monique Fontes",
       "lbl": "Defesa Execução — DBCL",
+      "ativo": true,
       "e": 2500.0,
       "x": 20000.0,
       "resp": "Rodrigo",
@@ -25360,6 +27093,7 @@ const D = {
       "cod": "426",
       "cli": "Expermed",
       "lbl": "Expermed",
+      "ativo": false,
       "e": 0,
       "x": 75000.0,
       "resp": "Bruno",
@@ -25370,6 +27104,7 @@ const D = {
       "cod": "431",
       "cli": "Tiago Menna",
       "lbl": "Tiago Menna",
+      "ativo": false,
       "e": 4000.0,
       "x": 10000.0,
       "resp": "Bruno",
@@ -25380,6 +27115,7 @@ const D = {
       "cod": "428",
       "cli": "Adriane Kauer",
       "lbl": "Adriane Kauer",
+      "ativo": false,
       "e": 600.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -25390,6 +27126,7 @@ const D = {
       "cod": "396",
       "cli": "Brasil Paralelo",
       "lbl": "Brasil Paralelo",
+      "ativo": false,
       "e": 160000.0,
       "x": 0,
       "resp": "Felipe",
@@ -25400,6 +27137,7 @@ const D = {
       "cod": "424",
       "cli": "Jorge Sczepanik",
       "lbl": "Jorge Sczepanik",
+      "ativo": false,
       "e": 0,
       "x": 15000.0,
       "resp": "Bruno",
@@ -25410,6 +27148,7 @@ const D = {
       "cod": "419",
       "cli": "Percap",
       "lbl": "Cobrança — Polo Ativo",
+      "ativo": true,
       "e": 0,
       "x": 60000.0,
       "resp": "Rodrigo",
@@ -25441,6 +27180,7 @@ const D = {
       "cod": "416",
       "cli": "Cíntia Witeck",
       "lbl": "Cíntia Witeck",
+      "ativo": false,
       "e": 0,
       "x": 2000.0,
       "resp": "Gerson",
@@ -25451,6 +27191,7 @@ const D = {
       "cod": "397",
       "cli": "Flowork",
       "lbl": "Cobrança — Inadimplentes",
+      "ativo": true,
       "e": 0,
       "x": 20000.0,
       "resp": "Gerson",
@@ -25461,6 +27202,7 @@ const D = {
       "cod": "405",
       "cli": "Condomínio Murano",
       "lbl": "Condomínio Murano",
+      "ativo": false,
       "e": 1000.0,
       "x": 0,
       "resp": "Carlos",
@@ -25471,6 +27213,7 @@ const D = {
       "cod": "377",
       "cli": "Silvia Nely",
       "lbl": "Silvia Nely",
+      "ativo": false,
       "e": 3000.0,
       "x": 7000.0,
       "resp": "Carlos",
@@ -25481,6 +27224,7 @@ const D = {
       "cod": "350",
       "cli": "Rappi Bank (Rappipay)",
       "lbl": "Rappi Bank (Rappipay)",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Carlos",
@@ -25491,6 +27235,7 @@ const D = {
       "cod": "362",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -25501,6 +27246,7 @@ const D = {
       "cod": "363",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -25511,6 +27257,7 @@ const D = {
       "cod": "271",
       "cli": "HBT (Hbt Empreendimentos)",
       "lbl": "Ação Cível — Otis",
+      "ativo": true,
       "e": 2000.0,
       "x": 7000.0,
       "resp": "Rodrigo",
@@ -25521,6 +27268,7 @@ const D = {
       "cod": "264",
       "cli": "Creare",
       "lbl": "Creare",
+      "ativo": false,
       "e": 7000.0,
       "x": 7000.0,
       "resp": "Bruno",
@@ -25531,6 +27279,7 @@ const D = {
       "cod": "334",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Ação de Propriedade Intelectual — Umbler",
+      "ativo": true,
       "e": 2000.0,
       "x": 2000.0,
       "resp": "Felipe",
@@ -25541,6 +27290,7 @@ const D = {
       "cod": "278",
       "cli": "Austral",
       "lbl": "Defesa Societária — Ricardo Monteiro",
+      "ativo": true,
       "e": 9000.0,
       "x": 50000.0,
       "resp": "Rodrigo",
@@ -25551,6 +27301,7 @@ const D = {
       "cod": "118",
       "cli": "Gianise Bongiorni",
       "lbl": "Ação Trabalhista — Reclamante",
+      "ativo": true,
       "e": 0,
       "x": 60000.0,
       "resp": "Gerson",
@@ -25561,6 +27312,7 @@ const D = {
       "cod": "322",
       "cli": "Celso da Silva",
       "lbl": "Celso da Silva",
+      "ativo": false,
       "e": 4000.0,
       "x": 0,
       "resp": "Gerson",
@@ -25571,6 +27323,7 @@ const D = {
       "cod": "314",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -25581,6 +27334,7 @@ const D = {
       "cod": "231",
       "cli": "Frederico Holtz",
       "lbl": "Frederico Holtz",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Carlos",
@@ -25591,6 +27345,7 @@ const D = {
       "cod": "257",
       "cli": "Ênio José Viana",
       "lbl": "Ênio José Viana",
+      "ativo": false,
       "e": 0,
       "x": 0,
       "resp": "Bruno",
@@ -25601,6 +27356,7 @@ const D = {
       "cod": "185",
       "cli": "Jorge Zanette",
       "lbl": "Jorge Zanette",
+      "ativo": false,
       "e": 0,
       "x": 7000.0,
       "resp": "Carlos",
@@ -25611,6 +27367,7 @@ const D = {
       "cod": "304",
       "cli": "GC Engenharia",
       "lbl": "GC Engenharia",
+      "ativo": false,
       "e": 1800.0,
       "x": 0,
       "resp": "Gerson",
@@ -25621,6 +27378,7 @@ const D = {
       "cod": "244",
       "cli": "Matheus Mombelli",
       "lbl": "Ação Consumidor — Cia Aérea",
+      "ativo": true,
       "e": 0,
       "x": 1500.0,
       "resp": "Felipe",
@@ -25631,6 +27389,7 @@ const D = {
       "cod": "270",
       "cli": "Rudy Holtz",
       "lbl": "Rudy Holtz",
+      "ativo": false,
       "e": 0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -25641,6 +27400,7 @@ const D = {
       "cod": "276",
       "cli": "Rogério Queiroz",
       "lbl": "Rogério Queiroz",
+      "ativo": false,
       "e": 300.0,
       "x": 0,
       "resp": "Gerson",
@@ -25651,6 +27411,7 @@ const D = {
       "cod": "55",
       "cli": "Pedro Azevedo",
       "lbl": "Ação de Consumidor — Cia Aerea",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Felipe",
@@ -25661,6 +27422,7 @@ const D = {
       "cod": "266",
       "cli": "Elaine Matias",
       "lbl": "Elaine Matias",
+      "ativo": false,
       "e": 2000.0,
       "x": 9200.0,
       "resp": "Rodrigo",
@@ -25671,6 +27433,7 @@ const D = {
       "cod": "282",
       "cli": "Master RS",
       "lbl": "Master RS",
+      "ativo": false,
       "e": 20000.0,
       "x": 0,
       "resp": "Bruno",
@@ -25681,6 +27444,7 @@ const D = {
       "cod": "269",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Bruno",
@@ -25691,6 +27455,7 @@ const D = {
       "cod": "146",
       "cli": "Bluts",
       "lbl": "Bluts",
+      "ativo": false,
       "e": 4000.0,
       "x": 0,
       "resp": "Felipe",
@@ -25701,6 +27466,7 @@ const D = {
       "cod": "259",
       "cli": "GC Engenharia",
       "lbl": "GC Engenharia",
+      "ativo": false,
       "e": 1800.0,
       "x": 0,
       "resp": "Gerson",
@@ -25711,6 +27477,7 @@ const D = {
       "cod": "258",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -25721,6 +27488,7 @@ const D = {
       "cod": "243",
       "cli": "Carolina Pellegrini",
       "lbl": "Carolina Pellegrini",
+      "ativo": false,
       "e": 0,
       "x": 100000.0,
       "resp": "Gerson",
@@ -25731,6 +27499,7 @@ const D = {
       "cod": "246",
       "cli": "Vagina Sem Neura",
       "lbl": "Vagina Sem Neura",
+      "ativo": false,
       "e": 3000.0,
       "x": 5000.0,
       "resp": "Felipe",
@@ -25741,6 +27510,7 @@ const D = {
       "cod": "234",
       "cli": "Hugo Oliveira",
       "lbl": "Hugo Oliveira",
+      "ativo": false,
       "e": 0,
       "x": 40000.0,
       "resp": "Carlos",
@@ -25751,6 +27521,7 @@ const D = {
       "cod": "233",
       "cli": "Hugo Oliveira",
       "lbl": "Hugo Oliveira",
+      "ativo": false,
       "e": 0,
       "x": 40000.0,
       "resp": "Carlos",
@@ -25761,6 +27532,7 @@ const D = {
       "cod": "201",
       "cli": "Everlog",
       "lbl": "Ação Cível — A Definir",
+      "ativo": true,
       "e": 0,
       "x": 38000.0,
       "resp": "Carlos",
@@ -25771,6 +27543,7 @@ const D = {
       "cod": "227",
       "cli": "Daiane Cristina da Silva Cardoso",
       "lbl": "Daiane Cristina da Silva Cardoso",
+      "ativo": false,
       "e": 2100.0,
       "x": 0,
       "resp": "Gerson",
@@ -25781,6 +27554,7 @@ const D = {
       "cod": "216",
       "cli": "Simplifica Engenharia",
       "lbl": "Defesa Trabalhista — Reclamante",
+      "ativo": true,
       "e": 1500.0,
       "x": 0,
       "resp": "Gerson",
@@ -25791,6 +27565,7 @@ const D = {
       "cod": "210",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -25801,6 +27576,7 @@ const D = {
       "cod": "204",
       "cli": "Açoduto",
       "lbl": "Açoduto",
+      "ativo": false,
       "e": 0,
       "x": 40000.0,
       "resp": "Bruno",
@@ -25811,6 +27587,7 @@ const D = {
       "cod": "176",
       "cli": "Levis",
       "lbl": "Levis",
+      "ativo": false,
       "e": 3200.0,
       "x": 40000.0,
       "resp": "Felipe",
@@ -25821,6 +27598,7 @@ const D = {
       "cod": "200",
       "cli": "Missoes Ambiental",
       "lbl": "Missoes Ambiental",
+      "ativo": false,
       "e": 4800.0,
       "x": 20000.0,
       "resp": "Gerson",
@@ -25831,6 +27609,7 @@ const D = {
       "cod": "192",
       "cli": "Veronica Gandolfi",
       "lbl": "Defesa Demolitória — Veronica Gandolfi",
+      "ativo": true,
       "e": 2500.0,
       "x": 0,
       "resp": "Rodrigo",
@@ -25841,6 +27620,7 @@ const D = {
       "cod": "188",
       "cli": "Nespresso",
       "lbl": "Nespresso",
+      "ativo": false,
       "e": 2400.0,
       "x": 40000.0,
       "resp": "Felipe",
@@ -25851,6 +27631,7 @@ const D = {
       "cod": "180",
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
+      "ativo": false,
       "e": 2200.0,
       "x": 0,
       "resp": "Gerson",
@@ -25861,6 +27642,7 @@ const D = {
       "cod": "170",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -25871,6 +27653,7 @@ const D = {
       "cod": "123",
       "cli": "Jorge Zanette",
       "lbl": "Jorge Zanette",
+      "ativo": false,
       "e": 0,
       "x": 1500.0,
       "resp": "Carlos",
@@ -25881,6 +27664,7 @@ const D = {
       "cod": "161",
       "cli": "Micaela Blanco",
       "lbl": "Micaela Blanco",
+      "ativo": false,
       "e": 0,
       "x": 2000.0,
       "resp": "Carlos",
@@ -25891,6 +27675,7 @@ const D = {
       "cod": "128",
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -25901,6 +27686,7 @@ const D = {
       "cod": "155",
       "cli": "Garupa",
       "lbl": "Garupa",
+      "ativo": false,
       "e": 1700.0,
       "x": 0,
       "resp": "Gerson",
@@ -25911,6 +27697,7 @@ const D = {
       "cod": "149",
       "cli": "Loucos e Santos",
       "lbl": "Loucos e Santos",
+      "ativo": false,
       "e": 4000.0,
       "x": 40000.0,
       "resp": "Felipe",
@@ -25921,6 +27708,7 @@ const D = {
       "cod": "135",
       "cli": "Alice Mendes Thume",
       "lbl": "Ação Trabalhista — Reclamante",
+      "ativo": true,
       "e": 0,
       "x": 3000.0,
       "resp": "Gerson",
@@ -25931,6 +27719,7 @@ const D = {
       "cod": "127",
       "cli": "CRF",
       "lbl": "CRF",
+      "ativo": false,
       "e": 3000.0,
       "x": 0,
       "resp": "Gerson",
@@ -25941,6 +27730,7 @@ const D = {
       "cod": "122",
       "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
       "lbl": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
+      "ativo": false,
       "e": 1500.0,
       "x": 2000.0,
       "resp": "Gerson",
@@ -25951,6 +27741,7 @@ const D = {
       "cod": "120",
       "cli": "Urban Farmcy",
       "lbl": "Urban Farmcy",
+      "ativo": false,
       "e": 800.0,
       "x": 0,
       "resp": "Gerson",
@@ -25961,6 +27752,7 @@ const D = {
       "cod": "100",
       "cli": "Rafael Rech",
       "lbl": "Rafael Rech",
+      "ativo": false,
       "e": 4000.0,
       "x": 10000.0,
       "resp": "Felipe",
@@ -25971,6 +27763,7 @@ const D = {
       "cod": "111",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "\"Under\n\n\n\n\"",
+      "ativo": false,
       "e": 2000.0,
       "x": 5000.0,
       "resp": "Felipe",
@@ -25981,6 +27774,7 @@ const D = {
       "cod": "97",
       "cli": "Creare",
       "lbl": "Creare",
+      "ativo": false,
       "e": 0,
       "x": 200000.0,
       "resp": "Bruno",
@@ -25991,6 +27785,7 @@ const D = {
       "cod": "102",
       "cli": "\"Under\n\n\n\n\"",
       "lbl": "Cobrança — 25 Ações",
+      "ativo": true,
       "e": 7000.0,
       "x": 68000.0,
       "resp": "Felipe",
@@ -26001,6 +27796,7 @@ const D = {
       "cod": "109",
       "cli": "Globalnet",
       "lbl": "Globalnet",
+      "ativo": false,
       "e": 2000.0,
       "x": 0,
       "resp": "Gerson",
@@ -26011,6 +27807,7 @@ const D = {
       "cod": "103",
       "cli": "Stefano Mastronardi",
       "lbl": "Stefano Mastronardi",
+      "ativo": false,
       "e": 0,
       "x": 3000.0,
       "resp": "Bruno",
@@ -26021,6 +27818,7 @@ const D = {
       "cod": "267",
       "cli": "William Nihues",
       "lbl": "Ação de Consumidor — Restituição de Aluguel",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Gerson",
@@ -26031,6 +27829,7 @@ const D = {
       "cod": "77",
       "cli": "Giovanni Rodrigo Cruz Rossi",
       "lbl": "Giovanni Rodrigo Cruz Rossi",
+      "ativo": false,
       "e": 0,
       "x": 20000.0,
       "resp": "Rodrigo",
@@ -26041,6 +27840,7 @@ const D = {
       "cod": "117",
       "cli": "William Nihues",
       "lbl": "William Nihues",
+      "ativo": false,
       "e": 0,
       "x": 8000.0,
       "resp": "Gerson",
@@ -26051,6 +27851,7 @@ const D = {
       "cod": "105",
       "cli": "Willian Barbosa",
       "lbl": "Willian Barbosa",
+      "ativo": false,
       "e": 0,
       "x": 8000.0,
       "resp": "Gerson",
@@ -26061,6 +27862,7 @@ const D = {
       "cod": "126",
       "cli": "Hamilton de Mateo Costa",
       "lbl": "Hamilton de Mateo Costa",
+      "ativo": false,
       "e": 2000.0,
       "x": 20000.0,
       "resp": "Carlos",
@@ -26071,6 +27873,7 @@ const D = {
       "cod": "68",
       "cli": "Açoduto",
       "lbl": "Açoduto",
+      "ativo": false,
       "e": 0,
       "x": 5000.0,
       "resp": "Bruno",
@@ -26081,6 +27884,7 @@ const D = {
       "cod": "43",
       "cli": "Norton Witeck",
       "lbl": "Ação de Consumidor — Companhia Aérea",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Gerson",
@@ -26091,6 +27895,7 @@ const D = {
       "cod": "89",
       "cli": "Paulo Salles",
       "lbl": "Cobrança — Consumidor",
+      "ativo": true,
       "e": 6000.0,
       "x": 45000.0,
       "resp": "Rodrigo",
@@ -26101,6 +27906,7 @@ const D = {
       "cod": "87",
       "cli": "Jessica Bomzanini",
       "lbl": "Defesa Consumidor — Jessica Bomzanini",
+      "ativo": true,
       "e": 2500.0,
       "x": 9000.0,
       "resp": "Rodrigo",
@@ -26111,6 +27917,7 @@ const D = {
       "cod": "4636",
       "cli": "Mariana Barth",
       "lbl": "Defesa Trabalhista — Gamp",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Gerson",
@@ -26121,6 +27928,7 @@ const D = {
       "cod": "4637",
       "cli": "Creare",
       "lbl": "Ação Tributária — Polo Ativo",
+      "ativo": true,
       "e": 0,
       "x": 100000.0,
       "resp": "Bruno",
@@ -26131,6 +27939,7 @@ const D = {
       "cod": "4638",
       "cli": "Creare",
       "lbl": "Ação Tributária — Receita Federal",
+      "ativo": true,
       "e": 0,
       "x": 100000.0,
       "resp": "Bruno",
@@ -26141,6 +27950,7 @@ const D = {
       "cod": "4639",
       "cli": "Creare",
       "lbl": "Ação Tributária — Receita Federal",
+      "ativo": true,
       "e": 0,
       "x": 100000.0,
       "resp": "Bruno",
@@ -26151,6 +27961,7 @@ const D = {
       "cod": "4643",
       "cli": "André Marquart",
       "lbl": "Defesa Família — Ivo e Bernardo",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Gerson",
@@ -26161,6 +27972,7 @@ const D = {
       "cod": "4650",
       "cli": "HBT (Hbt Empreendimentos)",
       "lbl": "Ação Cível — Leandro Fonseca da Cunha",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -26171,6 +27983,7 @@ const D = {
       "cod": "4651",
       "cli": "HBT (Hbt Empreendimentos)",
       "lbl": "Defesa Cível — José Ricardo",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -26214,6 +28027,7 @@ const D = {
       "cod": "4653",
       "cli": "\"Twin Set\n\"",
       "lbl": "Cobrança — Anita Amalie Bauminger",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -26224,6 +28038,7 @@ const D = {
       "cod": "4654",
       "cli": "\"Twin Set\n\"",
       "lbl": "Cobrança — Renata de Carvalho Leite",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -26234,6 +28049,7 @@ const D = {
       "cod": "4655",
       "cli": "\"Twin Set\n\"",
       "lbl": "Revisional Imobiliário — Iguatemi",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Felipe",
@@ -26244,6 +28060,7 @@ const D = {
       "cod": "4656",
       "cli": "\"Twin Set\n\"",
       "lbl": "Cobrança — Maria Giacomolli",
+      "ativo": true,
       "e": 0,
       "x": 1000.0,
       "resp": "Equipe",
@@ -26254,6 +28071,7 @@ const D = {
       "cod": "4657",
       "cli": "Austral",
       "lbl": "Defesa Cobrança — Casa Naum Turquenitch",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -26264,6 +28082,7 @@ const D = {
       "cod": "4658",
       "cli": "Austral",
       "lbl": "Defesa Cível — Mariane e Selmar Peters",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -26274,6 +28093,7 @@ const D = {
       "cod": "4659",
       "cli": "Austral",
       "lbl": "Defesa Cível — More Music",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -26284,6 +28104,7 @@ const D = {
       "cod": "4661",
       "cli": "Ultrawifi",
       "lbl": "Defesa Cobrança — TERACOM",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -26294,6 +28115,7 @@ const D = {
       "cod": "4662",
       "cli": "Ultrawifi",
       "lbl": "Cobrança — Livetech",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -26304,6 +28126,7 @@ const D = {
       "cod": "4663",
       "cli": "Ultrawifi",
       "lbl": "Defesa Trabalhista — Everton",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -26314,6 +28137,7 @@ const D = {
       "cod": "4664",
       "cli": "Familiares Jose Fontes",
       "lbl": "Ação Cível — Clarice",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -26324,6 +28148,7 @@ const D = {
       "cod": "4665",
       "cli": "Grupo TE2",
       "lbl": "Mandado de Segurança Tributário — ITCMD",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -26334,6 +28159,7 @@ const D = {
       "cod": "4666",
       "cli": "Grupo TE2",
       "lbl": "Ações Tributárias — Teses M2T",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -26344,6 +28170,7 @@ const D = {
       "cod": "4667",
       "cli": "Grupo TE2",
       "lbl": "Ações Tributárias — FT2",
+      "ativo": true,
       "e": 0,
       "x": 5000.0,
       "resp": "Rodrigo",
@@ -26354,6 +28181,7 @@ const D = {
       "cod": "4669",
       "cli": "Brasil Paralelo",
       "lbl": "Ação Cível — CONDENCINE",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -26364,6 +28192,7 @@ const D = {
       "cod": "4670",
       "cli": "Brasil Paralelo",
       "lbl": "Ação Fiscal — Exclusão ISSQN Base PIS/COFINS",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -26374,6 +28203,7 @@ const D = {
       "cod": "4674",
       "cli": "Zenit (antigo Autoridade Fitness)",
       "lbl": "Defesa Trabalhista — Sergio Bertoluci",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -26384,6 +28214,7 @@ const D = {
       "cod": "4675",
       "cli": "WS Group",
       "lbl": "Cobrança — Atlantico Bar",
+      "ativo": true,
       "e": 0,
       "x": 10000.0,
       "resp": "Rodrigo",
@@ -26394,6 +28225,7 @@ const D = {
       "cod": "4676",
       "cli": "WS Group",
       "lbl": "Defesa Consumidor — Dinah Braga",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Rodrigo",
@@ -26404,6 +28236,7 @@ const D = {
       "cod": "4678",
       "cli": "WBP",
       "lbl": "Cobrança — Wilamis Brasil",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Gerson",
@@ -26414,6 +28247,7 @@ const D = {
       "cod": "4679",
       "cli": "WBP",
       "lbl": "Cobrança — Grupo Decole",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Gerson",
@@ -26424,6 +28258,7 @@ const D = {
       "cod": "4680",
       "cli": "Leads For You",
       "lbl": "Execução Fiscal — 1524400-20.2026.8.26.0090",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -26434,6 +28269,7 @@ const D = {
       "cod": "4681",
       "cli": "Leads For You",
       "lbl": "Cobrança — 5001443-85.2025.8.24.0031",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -26444,6 +28280,7 @@ const D = {
       "cod": "4682",
       "cli": "Leads For You",
       "lbl": "Cobrança — 4057597-73.2025.8.26.0100",
+      "ativo": true,
       "e": 0,
       "x": 2000.0,
       "resp": "Equipe",
@@ -26454,6 +28291,7 @@ const D = {
       "cod": "4683",
       "cli": "Rafael Weber",
       "lbl": "Ação Imobiliária — Sipavale",
+      "ativo": true,
       "e": 0,
       "x": 100000.0,
       "resp": "Felipe",
@@ -26464,6 +28302,7 @@ const D = {
       "cod": "4685",
       "cli": "Fábio Scherbaum",
       "lbl": "Cobrança — JEC 01390379720118210001",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Equipe",
@@ -26474,6 +28313,7 @@ const D = {
       "cod": "4686",
       "cli": "Fábio Scherbaum",
       "lbl": "Ação Trabalhista — KOCH",
+      "ativo": true,
       "e": 0,
       "x": 20000.0,
       "resp": "Equipe",
@@ -26484,6 +28324,7 @@ const D = {
       "cod": "4687",
       "cli": "Mundo Verde (LSU EQUILIBRIO FUNCIONAL PRODUTOS NATURAIS LTDA)",
       "lbl": "Ação Revisional — Iguatemi",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Felipe",
@@ -26494,6 +28335,7 @@ const D = {
       "cod": "4688",
       "cli": "CONAB",
       "lbl": "Ações Trabalhistas — Reclamantes",
+      "ativo": true,
       "e": 0,
       "x": 0,
       "resp": "Gerson",
@@ -26503,21 +28345,311 @@ const D = {
   ],
   "mensal": [
     {
-      "cli": "Happy House",
-      "resp": "Gerson",
+      "cli": "Austral",
+      "resp": "Rodrigo",
       "ativo": true,
-      "n_inc": 2,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 5.27,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 1443.33
+        },
+        "2024-08": {
+          "h": 15.75,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 3239.17
+        },
+        "2024-09": {
+          "h": 19.78,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 4340.0
+        },
+        "2024-10": {
+          "h": 14.45,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 5023.33
+        },
+        "2024-11": {
+          "h": 5.03,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 1087.5
+        },
+        "2024-12": {
+          "h": 13.2,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 1980.0
+        },
+        "2025-01": {
+          "h": 27.68,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 3705.83
+        },
+        "2025-02": {
+          "h": 13.97,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 2602.5
+        },
+        "2025-03": {
+          "h": 17.85,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 2750.83
+        },
+        "2025-04": {
+          "h": 31.95,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 6766.67
+        },
+        "2025-05": {
+          "h": 12.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 2474.17
+        },
+        "2025-06": {
+          "h": 10.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 3286.67
+        },
+        "2025-07": {
+          "h": 24.37,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 3442.5
+        },
+        "2025-08": {
+          "h": 15.8,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 2570.0
+        },
+        "2025-09": {
+          "h": 22.8,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 5352.5
+        },
+        "2025-10": {
+          "h": 7.88,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 1795.83
+        },
+        "2025-11": {
+          "h": 20.85,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 5022.5
+        },
+        "2025-12": {
+          "h": 3.7,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 473.33
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 6.17,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 1487.0
+        },
+        "2026-03": {
+          "h": 2.77,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 1512.0
+        },
+        "2026-04": {
+          "h": 15.25,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 5631.5
+        },
+        "2026-05": {
+          "h": 8.15,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 2295.0
+        },
+        "2026-06": {
+          "h": 15.74,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 3095.0
+        },
+        "2026-07": {
+          "h": 11.42,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 3286.0
+        },
+        "2026-08": {
+          "h": 9.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 2607.5
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "MamãeCompleta",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Creare",
+      "resp": "Bruno",
+      "ativo": true,
+      "n_inc": 5,
       "inc": [
         {
-          "cod": "4134",
-          "nm": "Planejamento Tributário — Ebook",
-          "tp": "Projeto consultivo",
+          "cod": "4847",
+          "nm": "Defesa Trabalhista — Letycia Braun Teixeira",
+          "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "3404",
-          "nm": "Defesa Trabalhista — Patricia Coelho",
+          "cod": "4095",
+          "nm": "Defesa Cível — Transportadora Paineiras",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4504",
+          "nm": "Defesa Trabalhista — Jeffrey de Andrade Teixeira",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3869",
+          "nm": "Defesa Cível — Ecoelétrica Engenharia Sustentável",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2830",
+          "nm": "Defesa Trabalhista — Carolina Knak",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
@@ -26528,580 +28660,397 @@ const D = {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
+          "r": 8105.0,
           "c": 0
         },
         "2024-02": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
+          "r": 8105.0,
           "c": 0
         },
         "2024-03": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
+          "r": 8105.0,
           "c": 0
         },
         "2024-04": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
+          "r": 8105.0,
           "c": 0
         },
         "2024-05": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
+          "r": 8105.0,
           "c": 0
         },
         "2024-06": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
+          "r": 8105.0,
           "c": 0
         },
         "2024-07": {
-          "h": 0,
+          "h": 0.25,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 0
+          "r": 8105.0,
+          "c": 37.5
         },
         "2024-08": {
-          "h": 0.27,
+          "h": 13.05,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 154.17
+          "r": 8105.0,
+          "c": 5835.0
         },
         "2024-09": {
-          "h": 0.57,
+          "h": 5.43,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 141.67
+          "r": 8105.0,
+          "c": 1965.83
         },
         "2024-10": {
-          "h": 3.9,
+          "h": 8.47,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 913.33
+          "r": 8105.0,
+          "c": 2612.5
         },
         "2024-11": {
-          "h": 1.2,
+          "h": 6.95,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 300.0
+          "r": 8105.0,
+          "c": 2781.67
         },
         "2024-12": {
-          "h": 1.45,
+          "h": 4.1,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 362.5
+          "r": 8105.0,
+          "c": 669.17
         },
         "2025-01": {
-          "h": 1.17,
+          "h": 9.63,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 258.33
+          "r": 8105.0,
+          "c": 1705.83
         },
         "2025-02": {
-          "h": 1.48,
+          "h": 3.48,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 322.5
+          "r": 8105.0,
+          "c": 488.33
         },
         "2025-03": {
-          "h": 0,
+          "h": 14.78,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 0
+          "r": 8105.0,
+          "c": 3410.83
         },
         "2025-04": {
-          "h": 2.68,
+          "h": 2.97,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 275.83
+          "r": 8105.0,
+          "c": 478.33
         },
         "2025-05": {
-          "h": 3.63,
+          "h": 16.95,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 450.0
+          "r": 8105.0,
+          "c": 2438.33
         },
         "2025-06": {
-          "h": 0.35,
+          "h": 2.37,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 35.0
+          "r": 8105.0,
+          "c": 561.67
         },
         "2025-07": {
-          "h": 0,
+          "h": 3.57,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 0
+          "r": 8105.0,
+          "c": 851.67
         },
         "2025-08": {
-          "h": 1.0,
+          "h": 4.03,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 250.0
+          "r": 8105.0,
+          "c": 992.5
         },
         "2025-09": {
-          "h": 0.5,
+          "h": 25.18,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 150.0
+          "r": 8105.0,
+          "c": 5526.67
         },
         "2025-10": {
-          "h": 0,
+          "h": 9.5,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 0
+          "r": 8105.0,
+          "c": 1865.83
         },
         "2025-11": {
-          "h": 0.5,
+          "h": 8.73,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 125.0
+          "r": 8105.0,
+          "c": 1708.33
         },
         "2025-12": {
-          "h": 2.47,
+          "h": 7.53,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 246.67
+          "r": 8105.0,
+          "c": 1024.17
         },
         "2026-01": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
+          "r": 8105.0,
           "c": 0
         },
         "2026-02": {
-          "h": 0,
+          "h": 1.06,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 0
+          "r": 8105.0,
+          "c": 209.5
         },
         "2026-03": {
-          "h": 0,
+          "h": 20.7,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 0
+          "r": 8105.0,
+          "c": 5319.5
         },
         "2026-04": {
-          "h": 0,
+          "h": 23.08,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 0
+          "r": 8105.0,
+          "c": 5922.0
         },
         "2026-05": {
-          "h": 3.18,
+          "h": 6.88,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 730.5
+          "r": 8105.0,
+          "c": 1570.5
         },
         "2026-06": {
-          "h": 2.85,
+          "h": 19.95,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 712.5
+          "r": 8105.0,
+          "c": 5053.0
         },
         "2026-07": {
-          "h": 9.95,
+          "h": 17.31,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 3920.0
+          "r": 8105.0,
+          "c": 3394.0
         },
         "2026-08": {
-          "h": 2.59,
+          "h": 5.06,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 713.0
+          "r": 8105.0,
+          "c": 746.0
         },
         "2026-09": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
+          "r": 8105.0,
           "c": 0
         },
         "2026-10": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
+          "r": 8105.0,
           "c": 0
         },
         "2026-11": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
+          "r": 8105.0,
           "c": 0
         },
         "2026-12": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
+          "r": 8105.0,
           "c": 0
         }
       }
     },
     {
-      "cli": "HBT (Hbt Empreendimentos)",
+      "cli": "Solid Arquitetura de Vidros",
       "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Dotkon",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Air Fluide",
-      "resp": "Felipe",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 0
-        },
-        "2024-08": {
-          "h": 7.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 2653.33
-        },
-        "2024-09": {
-          "h": 11.67,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 3295.0
-        },
-        "2024-10": {
-          "h": 0.22,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 58.33
-        },
-        "2024-11": {
-          "h": 5.82,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 2558.33
-        },
-        "2024-12": {
-          "h": 3.63,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 560.83
-        },
-        "2025-01": {
-          "h": 2.2,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 485.0
-        },
-        "2025-02": {
-          "h": 16.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 2784.17
-        },
-        "2025-03": {
-          "h": 7.33,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 1427.5
-        },
-        "2025-04": {
-          "h": 6.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 1429.17
-        },
-        "2025-05": {
-          "h": 1.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 210.0
-        },
-        "2025-06": {
-          "h": 5.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 1230.83
-        },
-        "2025-07": {
-          "h": 5.42,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 1458.33
-        },
-        "2025-08": {
-          "h": 6.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 1214.17
-        },
-        "2025-09": {
-          "h": 4.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 966.67
-        },
-        "2025-10": {
-          "h": 2.9,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 524.17
-        },
-        "2025-11": {
-          "h": 2.73,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 590.83
-        },
-        "2025-12": {
-          "h": 2.33,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 236.67
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 0.6,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 151.0
-        },
-        "2026-03": {
-          "h": 8.36,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2150.5
-        },
-        "2026-04": {
-          "h": 6.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1564.5
-        },
-        "2026-05": {
-          "h": 15.56,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 5840.0
-        },
-        "2026-06": {
-          "h": 4.04,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1119.5
-        },
-        "2026-07": {
-          "h": 14.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 3700.0
-        },
-        "2026-08": {
-          "h": 4.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1145.5
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "BAM Wellness",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Bsmart",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Langer",
-      "resp": "Rodrigo",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Bluts",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Incell",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Nexia Engenharia,Texian",
-      "resp": "Yago",
       "ativo": true,
       "n_inc": 0,
       "inc": [],
       "pm": {}
     },
     {
-      "cli": "Quater Comunicacao",
+      "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
       "resp": "Gerson",
       "ativo": false,
-      "n_inc": 0,
-      "inc": [],
+      "n_inc": 18,
+      "inc": [
+        {
+          "cod": "3546",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3548",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3483",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3484",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3382",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3411",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3418",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3287",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3288",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3208",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3047",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3029",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2942",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2943",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2944",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2893",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2894",
+          "nm": "Defesa Judicial — EDUARDO MARINHO SANT ANNA MACHADO",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2816",
+          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
       "pm": {}
     },
     {
@@ -27381,35 +29330,272 @@ const D = {
       }
     },
     {
-      "cli": "Banca do Holandês",
-      "resp": "Bruno",
+      "cli": "V4 Mendes (SP)",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "YUOOL",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "João Felipe Ribeiro",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Marcel Van Hattem",
+      "resp": "Gerson",
+      "ativo": true,
+      "n_inc": 1,
+      "inc": [
+        {
+          "cod": "2827",
+          "nm": "Ação de Direito de Resposta — Indenização",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2024-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2024-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2024-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2024-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2025-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2025-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2025-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2025-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2025-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2025-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2025-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2025-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2025-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2025-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2025-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2025-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2026-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2026-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2026-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2026-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2026-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2026-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 800.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Flowork",
+      "resp": "Gerson",
       "ativo": true,
       "n_inc": 4,
       "inc": [
         {
-          "cod": "4951",
-          "nm": "Defesa Trabalhista — Glaucia Xavier Oliveira",
+          "cod": "4408",
+          "nm": "Defesa Trabalhista — Vitoria Silva Diehl",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "4423",
-          "nm": "Defesa Trabalhista — Maria Eduarda Bueno Lima",
+          "cod": "4244",
+          "nm": "Defesa Trabalhista — Renata de Mattos Colombes Alves",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "4397",
-          "nm": "Defesa Trabalhista — Christian Giovanni Fraga Fernandes",
+          "cod": "3991",
+          "nm": "Defesa Trabalhista — Celia Rodrigues Pereira",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "4342",
-          "nm": "Defesa Trabalhista — Jose Lucas Santos dos Santos",
+          "cod": "3002",
+          "nm": "Execução — Tonco2",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
@@ -27420,255 +29606,2164 @@ const D = {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
+          "r": 8258.8,
           "c": 0
         },
         "2024-02": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
+          "r": 8258.8,
           "c": 0
         },
         "2024-03": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
+          "r": 8258.8,
           "c": 0
         },
         "2024-04": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
+          "r": 8258.8,
           "c": 0
         },
         "2024-05": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
+          "r": 8258.8,
           "c": 0
         },
         "2024-06": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
+          "r": 8258.8,
           "c": 0
         },
         "2024-07": {
-          "h": 1.6,
+          "h": 13.47,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 960.0
+          "r": 8258.8,
+          "c": 2003.33
         },
         "2024-08": {
-          "h": 9.32,
+          "h": 9.75,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 3084.17
+          "r": 8258.8,
+          "c": 1385.83
         },
         "2024-09": {
-          "h": 2.7,
+          "h": 8.78,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 480.83
+          "r": 8258.8,
+          "c": 1288.33
         },
         "2024-10": {
-          "h": 8.82,
+          "h": 31.53,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 1701.67
+          "r": 8258.8,
+          "c": 4718.33
         },
         "2024-11": {
-          "h": 9.83,
+          "h": 4.43,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 891.67
+          "r": 8258.8,
+          "c": 638.33
         },
         "2024-12": {
-          "h": 3.98,
+          "h": 15.58,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 1006.67
+          "r": 8258.8,
+          "c": 2337.5
         },
         "2025-01": {
-          "h": 6.62,
+          "h": 14.25,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 903.33
+          "r": 8258.8,
+          "c": 2230.0
         },
         "2025-02": {
-          "h": 4.47,
+          "h": 12.8,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 537.5
+          "r": 8258.8,
+          "c": 1957.5
         },
         "2025-03": {
-          "h": 9.07,
+          "h": 15.1,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 1201.67
+          "r": 8258.8,
+          "c": 3575.0
         },
         "2025-04": {
-          "h": 6.52,
+          "h": 35.03,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 1056.67
+          "r": 8258.8,
+          "c": 6580.83
         },
         "2025-05": {
-          "h": 14.62,
+          "h": 39.18,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 2020.0
+          "r": 8258.8,
+          "c": 7044.17
         },
         "2025-06": {
-          "h": 15.45,
+          "h": 64.43,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 2373.33
+          "r": 8258.8,
+          "c": 14766.67
         },
         "2025-07": {
-          "h": 14.87,
+          "h": 33.53,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 2280.83
+          "r": 8258.8,
+          "c": 6627.5
         },
         "2025-08": {
-          "h": 2.78,
+          "h": 25.3,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 377.5
+          "r": 8258.8,
+          "c": 5728.33
         },
         "2025-09": {
-          "h": 2.82,
+          "h": 23.68,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 462.5
+          "r": 8258.8,
+          "c": 4706.67
         },
         "2025-10": {
-          "h": 3.35,
+          "h": 7.52,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 433.33
+          "r": 8258.8,
+          "c": 1259.17
         },
         "2025-11": {
-          "h": 2.18,
+          "h": 7.32,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 318.33
+          "r": 8258.8,
+          "c": 1097.5
         },
         "2025-12": {
-          "h": 5.15,
+          "h": 20.93,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 1007.5
+          "r": 8258.8,
+          "c": 4116.67
         },
         "2026-01": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
+          "r": 8258.8,
           "c": 0
         },
         "2026-02": {
-          "h": 4.91,
+          "h": 10.64,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 496.0
+          "r": 8258.8,
+          "c": 1708.0
         },
         "2026-03": {
-          "h": 1.72,
+          "h": 19.23,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 131.0
+          "r": 8258.8,
+          "c": 3339.5
         },
         "2026-04": {
-          "h": 8.36,
+          "h": 17.07,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 556.0
+          "r": 7250.0,
+          "c": 2943.0
         },
         "2026-05": {
-          "h": 11.84,
+          "h": 9.0,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 2646.0
+          "r": 7250.0,
+          "c": 1350.0
         },
         "2026-06": {
-          "h": 1.25,
+          "h": 16.11,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 138.5
+          "r": 7250.0,
+          "c": 2647.5
         },
         "2026-07": {
-          "h": 6.38,
+          "h": 16.97,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 612.5
+          "r": 7250.0,
+          "c": 2216.5
         },
         "2026-08": {
-          "h": 2.26,
+          "h": 25.48,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
-          "c": 204.5
+          "r": 7250.0,
+          "c": 4404.5
         },
         "2026-09": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
+          "r": 7250.0,
           "c": 0
         },
         "2026-10": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
+          "r": 7250.0,
           "c": 0
         },
         "2026-11": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
+          "r": 7250.0,
           "c": 0
         },
         "2026-12": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5673.5,
+          "r": 7250.0,
           "c": 0
         }
       }
+    },
+    {
+      "cli": "Spectrun",
+      "resp": "Gerson",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 0
+        },
+        "2024-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 1.98,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 198.33
+        },
+        "2024-08": {
+          "h": 16.75,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 3159.17
+        },
+        "2024-09": {
+          "h": 8.85,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 2900.83
+        },
+        "2024-10": {
+          "h": 10.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 1544.17
+        },
+        "2024-11": {
+          "h": 8.53,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 895.83
+        },
+        "2024-12": {
+          "h": 3.95,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 397.5
+        },
+        "2025-01": {
+          "h": 18.03,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 2820.83
+        },
+        "2025-02": {
+          "h": 16.7,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 2613.33
+        },
+        "2025-03": {
+          "h": 11.32,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 1299.17
+        },
+        "2025-04": {
+          "h": 19.33,
+          "hp": 0,
+          "hi": 0,
+          "r": 6072.0,
+          "c": 4758.33
+        },
+        "2025-05": {
+          "h": 26.17,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 6670.83
+        },
+        "2025-06": {
+          "h": 7.3,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1669.17
+        },
+        "2025-07": {
+          "h": 5.23,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1125.83
+        },
+        "2025-08": {
+          "h": 11.4,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1880.83
+        },
+        "2025-09": {
+          "h": 9.27,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1381.67
+        },
+        "2025-10": {
+          "h": 9.82,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 2188.33
+        },
+        "2025-11": {
+          "h": 5.05,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1515.0
+        },
+        "2025-12": {
+          "h": 3.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 891.67
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 6.77,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1717.0
+        },
+        "2026-03": {
+          "h": 13.68,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 2388.0
+        },
+        "2026-04": {
+          "h": 15.97,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 3019.0
+        },
+        "2026-05": {
+          "h": 12.26,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 2686.0
+        },
+        "2026-06": {
+          "h": 15.36,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 3102.0
+        },
+        "2026-07": {
+          "h": 8.64,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1605.5
+        },
+        "2026-08": {
+          "h": 7.31,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1696.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Mahalo",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "\"Tradesign (DRAS COMERCIAL E REPRESENTACOES LTDA)\n\"",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Daricanela",
+      "resp": "Felipe",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-10": {
+          "h": 0.67,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 200.0
+        },
+        "2024-11": {
+          "h": 2.7,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 753.33
+        },
+        "2024-12": {
+          "h": 0.42,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 125.0
+        },
+        "2025-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2025-02": {
+          "h": 1.22,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 171.67
+        },
+        "2025-03": {
+          "h": 5.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 831.67
+        },
+        "2025-04": {
+          "h": 3.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 806.67
+        },
+        "2025-05": {
+          "h": 4.45,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 614.17
+        },
+        "2025-06": {
+          "h": 2.25,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 675.0
+        },
+        "2025-07": {
+          "h": 2.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 453.33
+        },
+        "2025-08": {
+          "h": 0.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 155.0
+        },
+        "2025-09": {
+          "h": 0.15,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 17.5
+        },
+        "2025-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2025-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2025-12": {
+          "h": 1.1,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 330.0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2431.5,
+          "c": 0
+        },
+        "2026-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2431.5,
+          "c": 0
+        },
+        "2026-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2431.5,
+          "c": 0
+        },
+        "2026-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2431.5,
+          "c": 0
+        },
+        "2026-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2431.5,
+          "c": 0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2431.5,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2431.5,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2431.5,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2431.5,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Contraste",
+      "resp": "Gerson",
+      "ativo": true,
+      "n_inc": 2,
+      "inc": [
+        {
+          "cod": "4174",
+          "nm": "Acordo de Sócios — Guilherme",
+          "tp": "Projeto consultivo",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4176",
+          "nm": "Planejamento Tributário — Reforma Fiscal",
+          "tp": "Projeto consultivo",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2024-10": {
+          "h": 18.73,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 9262.5
+        },
+        "2024-11": {
+          "h": 4.62,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 1036.67
+        },
+        "2024-12": {
+          "h": 5.75,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 735.0
+        },
+        "2025-01": {
+          "h": 5.93,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 1006.67
+        },
+        "2025-02": {
+          "h": 14.87,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 1609.17
+        },
+        "2025-03": {
+          "h": 5.45,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 500.83
+        },
+        "2025-04": {
+          "h": 25.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 3444.17
+        },
+        "2025-05": {
+          "h": 12.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 2632.5
+        },
+        "2025-06": {
+          "h": 6.67,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 1020.0
+        },
+        "2025-07": {
+          "h": 7.88,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 875.83
+        },
+        "2025-08": {
+          "h": 5.48,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 861.67
+        },
+        "2025-09": {
+          "h": 2.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 490.0
+        },
+        "2025-10": {
+          "h": 3.55,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 684.17
+        },
+        "2025-11": {
+          "h": 4.15,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 785.0
+        },
+        "2025-12": {
+          "h": 4.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 1255.0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 7.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 812.0
+        },
+        "2026-03": {
+          "h": 10.67,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 1628.0
+        },
+        "2026-04": {
+          "h": 2.89,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 722.5
+        },
+        "2026-05": {
+          "h": 3.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 947.0
+        },
+        "2026-06": {
+          "h": 0.14,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 14.0
+        },
+        "2026-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        },
+        "2026-08": {
+          "h": 3.0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 750.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Dionísia",
+      "resp": "Felipe",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-07": {
+          "h": 0.25,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 25.0
+        },
+        "2024-08": {
+          "h": 1.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 575.0
+        },
+        "2024-09": {
+          "h": 3.37,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 600.83
+        },
+        "2024-10": {
+          "h": 11.27,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 3255.83
+        },
+        "2024-11": {
+          "h": 9.38,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 2045.0
+        },
+        "2024-12": {
+          "h": 0.8,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 80.0
+        },
+        "2025-01": {
+          "h": 0.98,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 132.5
+        },
+        "2025-02": {
+          "h": 1.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 461.67
+        },
+        "2025-03": {
+          "h": 0.67,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 133.33
+        },
+        "2025-04": {
+          "h": 3.55,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 683.33
+        },
+        "2025-05": {
+          "h": 2.75,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 412.5
+        },
+        "2025-08": {
+          "h": 0.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 25.0
+        },
+        "2025-09": {
+          "h": 4.8,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 1205.0
+        },
+        "2025-12": {
+          "h": 0.8,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 80.0
+        },
+        "2026-02": {
+          "h": 6.8,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 768.5
+        },
+        "2026-03": {
+          "h": 8.97,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 1500.5
+        },
+        "2026-04": {
+          "h": 7.94,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 1852.5
+        },
+        "2026-05": {
+          "h": 2.66,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 272.0
+        },
+        "2026-06": {
+          "h": 0.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 20.0
+        }
+      }
+    },
+    {
+      "cli": "Akroz Telematics",
+      "resp": "Felipe",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Captable",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Roister",
+      "resp": "Bruno",
+      "ativo": false,
+      "n_inc": 11,
+      "inc": [
+        {
+          "cod": "3292",
+          "nm": "Roister",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3151",
+          "nm": "Roister",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3039",
+          "nm": "Roister",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3040",
+          "nm": "Roister",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3041",
+          "nm": "Roister",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3044",
+          "nm": "Roister",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3052",
+          "nm": "Roister",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3027",
+          "nm": "Roister",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2930",
+          "nm": "Roister",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2817",
+          "nm": "Roister",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2818",
+          "nm": "Roister",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {}
+    },
+    {
+      "cli": "ELO MEDICINA PERIOPERATORIA LTDA",
+      "resp": "Gerson",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2025-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2025-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2025-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2025-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "WBP",
+      "resp": "Gerson",
+      "ativo": true,
+      "n_inc": 1,
+      "inc": [
+        {
+          "cod": "4285",
+          "nm": "Planejamento Societário — Governança",
+          "tp": "Projeto consultivo",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2024-07": {
+          "h": 0.93,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 93.33
+        },
+        "2024-08": {
+          "h": 51.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 18001.67
+        },
+        "2024-09": {
+          "h": 21.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 4971.67
+        },
+        "2024-10": {
+          "h": 31.05,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 7085.0
+        },
+        "2024-11": {
+          "h": 21.28,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 5279.17
+        },
+        "2024-12": {
+          "h": 16.1,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 4347.5
+        },
+        "2025-01": {
+          "h": 32.2,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 6924.17
+        },
+        "2025-02": {
+          "h": 31.0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 5615.83
+        },
+        "2025-03": {
+          "h": 9.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 1225.0
+        },
+        "2025-04": {
+          "h": 14.78,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 2783.33
+        },
+        "2025-05": {
+          "h": 18.28,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 3330.83
+        },
+        "2025-06": {
+          "h": 21.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 4430.83
+        },
+        "2025-07": {
+          "h": 20.3,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 4050.0
+        },
+        "2025-08": {
+          "h": 17.17,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 3514.17
+        },
+        "2025-09": {
+          "h": 25.35,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 6533.33
+        },
+        "2025-10": {
+          "h": 40.0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 4857.5
+        },
+        "2025-11": {
+          "h": 23.23,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 2713.33
+        },
+        "2025-12": {
+          "h": 19.22,
+          "hp": 0,
+          "hi": 0,
+          "r": 6840.0,
+          "c": 2678.33
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 12.54,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 1682.5
+        },
+        "2026-03": {
+          "h": 26.61,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 5832.5
+        },
+        "2026-04": {
+          "h": 13.83,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 2666.0
+        },
+        "2026-05": {
+          "h": 8.44,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 1829.5
+        },
+        "2026-06": {
+          "h": 20.78,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 3494.5
+        },
+        "2026-07": {
+          "h": 5.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 995.5
+        },
+        "2026-08": {
+          "h": 5.4,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 1378.5
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Laçador de Ofertas",
+      "resp": "Felipe",
+      "ativo": false,
+      "n_inc": 5,
+      "inc": [
+        {
+          "cod": "3538",
+          "nm": "Defesa Tributária — Procedimento Administrativo",
+          "tp": "Avulso consultivo",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2821",
+          "nm": "Laçador de Ofertas",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2823",
+          "nm": "Laçador de Ofertas",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2832",
+          "nm": "Laçador de Ofertas",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "2833",
+          "nm": "Laçador de Ofertas",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {}
+    },
+    {
+      "cli": "Soveral Pires - Clinica Médica (Dr. Thael)",
+      "resp": "Carlos",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Bsmart",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "GC Engenharia",
+      "resp": "Rodrigo",
+      "ativo": true,
+      "n_inc": 2,
+      "inc": [
+        {
+          "cod": "4815",
+          "nm": "Defesa Cível — Nilson Xavier",
+          "tp": "Judicial",
+          "h": 1.1,
+          "c": 275.0
+        },
+        {
+          "cod": "4452",
+          "nm": "Defesa Societária — REALPAR",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2024-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 0
+        },
+        "2024-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 1.25,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 750.0
+        },
+        "2024-08": {
+          "h": 7.68,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 2908.33
+        },
+        "2024-09": {
+          "h": 11.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 6540.83
+        },
+        "2024-10": {
+          "h": 21.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 9575.0
+        },
+        "2024-11": {
+          "h": 14.38,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 5212.5
+        },
+        "2024-12": {
+          "h": 23.28,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 7196.67
+        },
+        "2025-01": {
+          "h": 31.03,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 11005.0
+        },
+        "2025-02": {
+          "h": 23.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 9920.0
+        },
+        "2025-03": {
+          "h": 14.48,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 4930.83
+        },
+        "2025-04": {
+          "h": 10.7,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 4033.33
+        },
+        "2025-05": {
+          "h": 33.05,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 10089.17
+        },
+        "2025-06": {
+          "h": 33.68,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 6266.67
+        },
+        "2025-07": {
+          "h": 11.88,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 1970.83
+        },
+        "2025-08": {
+          "h": 14.78,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 5539.17
+        },
+        "2025-09": {
+          "h": 17.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 7278.33
+        },
+        "2025-10": {
+          "h": 18.77,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 4818.33
+        },
+        "2025-11": {
+          "h": 8.35,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 4976.67
+        },
+        "2025-12": {
+          "h": 7.82,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 2681.67
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 7.68,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 2443.0
+        },
+        "2026-03": {
+          "h": 13.13,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 3449.5
+        },
+        "2026-04": {
+          "h": 3.46,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 1800.5
+        },
+        "2026-05": {
+          "h": 6.3,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 3780.0
+        },
+        "2026-06": {
+          "h": 7.75,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 4292.5
+        },
+        "2026-07": {
+          "h": 7.08,
+          "hp": 0.0,
+          "hi": 1.1,
+          "r": 7700.0,
+          "c": 3854.5
+        },
+        "2026-08": {
+          "h": 3.97,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 2162.5
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7700.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Zenit (antigo Autoridade Fitness)",
+      "resp": "Rodrigo",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2024-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2024-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2024-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2024-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2024-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2024-12": {
+          "h": 0.47,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 78.33
+        },
+        "2025-01": {
+          "h": 0.17,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 41.67
+        },
+        "2025-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2025-03": {
+          "h": 0.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 137.5
+        },
+        "2025-04": {
+          "h": 0.48,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 95.83
+        },
+        "2025-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2025-06": {
+          "h": 1.12,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 125.83
+        },
+        "2025-07": {
+          "h": 3.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 992.5
+        },
+        "2025-08": {
+          "h": 0.75,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 117.5
+        },
+        "2025-09": {
+          "h": 0.07,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 10.0
+        },
+        "2025-10": {
+          "h": 0.13,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 20.0
+        },
+        "2025-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2025-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 0.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 300.0
+        },
+        "2026-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2026-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2026-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2026-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2026-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2026-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1000.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Rhello RH (Ecco Talent)",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "\"Vext (Joao) - vesting (DUARTE E ALMEIDA IMOVEIS LTDA.)\n\"",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Lumens Atuarial",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Organismo Equity Crowdfunding",
+      "resp": "Felipe",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
     },
     {
       "cli": "\"Under\n\n\n\n\"",
@@ -27940,1248 +32035,250 @@ const D = {
       }
     },
     {
-      "cli": "Globalnet",
-      "resp": "Rodrigo",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Skin Pets",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Boss4u",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2026-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 0
-        },
-        "2026-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7294.5,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7294.5,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7294.5,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Fly 51",
+      "cli": "Ampulheta",
       "resp": "Rodrigo",
       "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2026-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6500.0,
-          "c": 0
+      "n_inc": 2,
+      "inc": [
+        {
+          "cod": "4025",
+          "nm": "Ação de Consumidor — Itaú",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
         },
-        "2026-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6500.0,
-          "c": 0
-        },
-        "2026-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6500.0,
-          "c": 0
-        },
-        "2026-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6500.0,
-          "c": 0
-        },
-        "2026-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6500.0,
-          "c": 0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6500.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6500.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6500.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6500.0,
-          "c": 0
+        {
+          "cod": "3482",
+          "nm": "Execução Fiscal — Marcell Ferreira",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
         }
-      }
-    },
-    {
-      "cli": "Fabio Haag Type",
-      "resp": "Felipe",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
+      ],
       "pm": {
-        "2025-06": {
-          "h": 0.43,
+        "2024-01": {
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 21.67
+          "r": 3242.0,
+          "c": 0
         },
-        "2025-07": {
-          "h": 10.22,
+        "2024-02": {
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 1448.33
+          "r": 3242.0,
+          "c": 0
         },
-        "2025-08": {
-          "h": 3.82,
+        "2024-03": {
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 544.17
+          "r": 3242.0,
+          "c": 0
         },
-        "2025-09": {
-          "h": 3.43,
+        "2024-04": {
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 343.33
+          "r": 3242.0,
+          "c": 0
         },
-        "2025-10": {
-          "h": 4.1,
+        "2024-05": {
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 615.0
+          "r": 3242.0,
+          "c": 0
         },
-        "2025-11": {
-          "h": 2.75,
+        "2024-06": {
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 275.0
+          "r": 3242.0,
+          "c": 0
         },
-        "2025-12": {
-          "h": 6.08,
+        "2024-07": {
+          "h": 4.17,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 898.33
+          "r": 3242.0,
+          "c": 750.0
         },
-        "2026-02": {
-          "h": 2.29,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 629.0
-        },
-        "2026-03": {
-          "h": 4.66,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 862.0
-        },
-        "2026-05": {
-          "h": 0.51,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 76.5
-        },
-        "2026-06": {
-          "h": 1.69,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 253.5
-        },
-        "2026-07": {
-          "h": 11.06,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 2749.0
-        }
-      }
-    },
-    {
-      "cli": "A Mentoria",
-      "resp": "Bruno",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
         "2024-08": {
-          "h": 3.22,
+          "h": 3.6,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
-          "c": 992.5
+          "r": 3242.0,
+          "c": 443.33
         },
         "2024-09": {
-          "h": 2.9,
+          "h": 7.03,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
-          "c": 1740.0
+          "r": 3242.0,
+          "c": 1378.33
         },
         "2024-10": {
-          "h": 14.47,
+          "h": 8.98,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
-          "c": 4190.0
+          "r": 3242.0,
+          "c": 3848.33
         },
         "2024-11": {
-          "h": 2.87,
+          "h": 1.18,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
-          "c": 1186.67
+          "r": 3242.0,
+          "c": 710.0
         },
         "2024-12": {
-          "h": 0.02,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
-          "c": 1.67
+          "r": 3242.0,
+          "c": 0
         },
         "2025-01": {
-          "h": 6.93,
+          "h": 0.25,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
-          "c": 1470.0
+          "c": 150.0
         },
         "2025-02": {
-          "h": 0.83,
+          "h": 0,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
-          "c": 83.33
+          "c": 0
         },
         "2025-03": {
-          "h": 11.73,
+          "h": 1.28,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
-          "c": 1280.0
+          "c": 636.67
         },
         "2025-04": {
-          "h": 5.52,
+          "h": 2.83,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
-          "c": 621.67
+          "c": 824.17
         },
         "2025-05": {
-          "h": 5.9,
+          "h": 6.33,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
-          "c": 1240.83
+          "c": 1776.67
         },
         "2025-06": {
-          "h": 6.38,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1155.0
-        },
-        "2025-07": {
-          "h": 10.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2429.17
-        },
-        "2025-08": {
-          "h": 0.27,
+          "h": 0.23,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
           "c": 59.17
         },
-        "2025-09": {
-          "h": 1.72,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 498.33
-        },
-        "2025-10": {
-          "h": 2.63,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 621.67
-        },
-        "2025-11": {
-          "h": 5.33,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1256.67
-        },
-        "2025-12": {
-          "h": 5.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 685.0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 3.52,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 593.0
-        },
-        "2026-03": {
-          "h": 22.56,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 5020.0
-        },
-        "2026-04": {
-          "h": 0.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 124.5
-        },
-        "2026-05": {
-          "h": 8.38,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2083.0
-        },
-        "2026-06": {
-          "h": 10.94,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2504.5
-        },
-        "2026-07": {
-          "h": 8.72,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2125.0
-        },
-        "2026-08": {
-          "h": 8.53,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1861.5
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "V4 Mendes (SP)",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Assoc. Mercado Público",
-      "resp": "Bruno",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Vitta",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Wine Locals",
-      "resp": "Bruno",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 7.7,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 770.0
-        },
-        "2024-08": {
-          "h": 22.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 2310.0
-        },
-        "2024-09": {
-          "h": 21.85,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 5333.33
-        },
-        "2024-10": {
-          "h": 29.22,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 4290.83
-        },
-        "2024-11": {
-          "h": 30.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 4628.33
-        },
-        "2024-12": {
-          "h": 23.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 2610.0
-        },
-        "2025-01": {
-          "h": 34.68,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 3686.67
-        },
-        "2025-02": {
-          "h": 45.23,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 4854.17
-        },
-        "2025-03": {
-          "h": 38.52,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 4324.17
-        },
-        "2025-04": {
-          "h": 35.93,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 4188.33
-        },
-        "2025-05": {
-          "h": 21.43,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 2208.33
-        },
-        "2025-06": {
-          "h": 31.95,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 3207.5
-        },
         "2025-07": {
-          "h": 46.43,
+          "h": 3.08,
           "hp": 0,
           "hi": 0,
-          "r": 7590.0,
-          "c": 4941.67
+          "r": 3242.0,
+          "c": 945.0
         },
         "2025-08": {
-          "h": 46.57,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 5116.67
-        },
-        "2025-09": {
-          "h": 49.85,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 5132.5
-        },
-        "2025-10": {
-          "h": 39.42,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 4185.83
-        },
-        "2025-11": {
-          "h": 40.27,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 4529.17
-        },
-        "2025-12": {
-          "h": 43.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 7590.0,
-          "c": 5438.33
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 36.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 5631.0
-        },
-        "2026-03": {
-          "h": 7.09,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 1155.5
-        },
-        "2026-04": {
-          "h": 6.07,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 910.5
-        },
-        "2026-05": {
-          "h": 2.93,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 631.5
-        },
-        "2026-06": {
-          "h": 9.59,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 1577.5
-        },
-        "2026-07": {
-          "h": 17.41,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 2969.0
-        },
-        "2026-08": {
-          "h": 34.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 7933.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Organismo Equity Crowdfunding",
-      "resp": "Felipe",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Expermed",
-      "resp": "Bruno",
-      "ativo": true,
-      "n_inc": 2,
-      "inc": [
-        {
-          "cod": "3841",
-          "nm": "Defesa Cível — Patrícia da Cruz Cunha",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4649",
-          "nm": "Defesa Cível — Bruna Leonardi",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 0.42,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 104.17
-        },
-        "2024-08": {
-          "h": 11.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 3134.17
-        },
-        "2024-09": {
-          "h": 1.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 325.0
-        },
-        "2024-10": {
-          "h": 8.37,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 2066.67
-        },
-        "2024-11": {
-          "h": 3.42,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 570.83
-        },
-        "2024-12": {
-          "h": 3.98,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 1404.17
-        },
-        "2025-01": {
-          "h": 9.35,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 1605.83
-        },
-        "2025-02": {
-          "h": 1.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 108.33
-        },
-        "2025-03": {
-          "h": 2.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 343.33
-        },
-        "2025-04": {
-          "h": 3.7,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 713.33
-        },
-        "2025-05": {
-          "h": 4.22,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 1185.0
-        },
-        "2025-06": {
-          "h": 7.05,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 1884.17
-        },
-        "2025-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 0
-        },
-        "2025-08": {
-          "h": 1.23,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 245.0
-        },
-        "2025-09": {
-          "h": 1.2,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 450.0
-        },
-        "2025-10": {
-          "h": 4.95,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 1841.67
-        },
-        "2025-11": {
-          "h": 1.33,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 400.0
-        },
-        "2025-12": {
-          "h": 6.95,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 1709.17
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 4.97,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 1398.0
-        },
-        "2026-03": {
-          "h": 7.44,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 1827.0
-        },
-        "2026-04": {
-          "h": 19.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 4910.0
-        },
-        "2026-05": {
-          "h": 9.95,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 2065.0
-        },
-        "2026-06": {
-          "h": 8.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 2042.5
-        },
-        "2026-07": {
-          "h": 12.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 1914.5
-        },
-        "2026-08": {
-          "h": 1.42,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 355.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4900.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Dois Vales",
-      "resp": "Bruno",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 15.65,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 5640.0
-        },
-        "2024-08": {
-          "h": 15.0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 5579.17
-        },
-        "2024-09": {
-          "h": 7.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 3723.33
-        },
-        "2024-10": {
-          "h": 6.67,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 1855.83
-        },
-        "2024-11": {
-          "h": 22.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 9260.0
-        },
-        "2024-12": {
-          "h": 30.68,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 11820.0
-        },
-        "2025-01": {
-          "h": 3.42,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 1618.33
-        },
-        "2025-02": {
-          "h": 8.43,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 3293.33
-        },
-        "2025-03": {
-          "h": 6.47,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 2721.67
-        },
-        "2025-04": {
-          "h": 1.37,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 516.67
-        },
-        "2025-05": {
-          "h": 2.35,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 587.5
-        },
-        "2025-06": {
-          "h": 13.27,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 4074.17
-        },
-        "2025-07": {
-          "h": 35.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 14006.67
-        },
-        "2025-08": {
-          "h": 12.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 3254.17
-        },
-        "2025-09": {
-          "h": 21.53,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 7147.5
-        },
-        "2025-10": {
-          "h": 15.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 5451.67
-        },
-        "2025-11": {
-          "h": 3.4,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 1043.33
-        },
-        "2025-12": {
-          "h": 11.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 2801.67
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 17.75,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 4521.0
-        },
-        "2026-03": {
-          "h": 25.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 6351.0
-        },
-        "2026-04": {
-          "h": 2.26,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 539.5
-        },
-        "2026-05": {
-          "h": 6.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 1887.5
-        },
-        "2026-06": {
-          "h": 10.9,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 3897.5
-        },
-        "2026-07": {
-          "h": 4.64,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 1825.0
-        },
-        "2026-08": {
-          "h": 7.15,
+          "h": 6.2,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
-          "c": 1787.5
+          "c": 910.83
+        },
+        "2025-09": {
+          "h": 1.0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 359.17
+        },
+        "2025-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2025-11": {
+          "h": 0.28,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 28.33
+        },
+        "2025-12": {
+          "h": 1.15,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 470.0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 6.46,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1998.5
+        },
+        "2026-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-04": {
+          "h": 0.15,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 15.0
+        },
+        "2026-05": {
+          "h": 16.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 5250.0
+        },
+        "2026-06": {
+          "h": 1.03,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 169.0
+        },
+        "2026-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-08": {
+          "h": 0.71,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 145.5
         },
         "2026-09": {
           "h": 0,
@@ -29214,873 +32311,70 @@ const D = {
       }
     },
     {
-      "cli": "\"Tradesign (DRAS COMERCIAL E REPRESENTACOES LTDA)\n\"",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Jimi IoT Brasil",
-      "resp": "Felipe",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 0.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 16.67
-        },
-        "2024-08": {
-          "h": 1.22,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 205.0
-        },
-        "2024-09": {
-          "h": 5.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 760.0
-        },
-        "2024-10": {
-          "h": 1.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 151.67
-        },
-        "2024-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 0
-        },
-        "2024-12": {
-          "h": 0.75,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 225.0
-        },
-        "2025-01": {
-          "h": 2.02,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 598.33
-        },
-        "2025-02": {
-          "h": 5.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 655.0
-        },
-        "2025-03": {
-          "h": 16.6,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 1628.33
-        },
-        "2025-04": {
-          "h": 2.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 278.33
-        },
-        "2025-05": {
-          "h": 3.98,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 519.17
-        },
-        "2025-06": {
-          "h": 6.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 1043.33
-        },
-        "2025-07": {
-          "h": 4.62,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 494.17
-        },
-        "2025-08": {
-          "h": 2.75,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 410.83
-        },
-        "2025-09": {
-          "h": 1.7,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 383.33
-        },
-        "2025-10": {
-          "h": 6.87,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 1186.67
-        },
-        "2025-11": {
-          "h": 9.57,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 1700.0
-        },
-        "2025-12": {
-          "h": 10.77,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 1833.33
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 0
-        },
-        "2026-03": {
-          "h": 17.19,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 4297.5
-        },
-        "2026-04": {
-          "h": 11.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 3050.0
-        },
-        "2026-05": {
-          "h": 15.09,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 3553.0
-        },
-        "2026-06": {
-          "h": 2.81,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 370.0
-        },
-        "2026-07": {
-          "h": 6.57,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 1642.5
-        },
-        "2026-08": {
-          "h": 5.77,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 1442.5
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4863.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "LBF (Engenharia e Servicos)",
-      "resp": "Rodrigo",
-      "ativo": true,
-      "n_inc": 3,
-      "inc": [
-        {
-          "cod": "4882",
-          "nm": "Tutela Cautelar Antecedente — R&G Sistemas de Segurança",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4446",
-          "nm": "Defesa Cível — Maria Elisabete Borba",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3641",
-          "nm": "Defesa Consumidor — Luana Menezes",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 0.33,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 200.0
-        },
-        "2024-08": {
-          "h": 3.47,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2080.0
-        },
-        "2024-09": {
-          "h": 0.57,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 340.0
-        },
-        "2024-10": {
-          "h": 1.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 950.0
-        },
-        "2024-11": {
-          "h": 1.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1100.0
-        },
-        "2024-12": {
-          "h": 6.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1380.83
-        },
-        "2025-01": {
-          "h": 0.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 8.33
-        },
-        "2025-02": {
-          "h": 1.27,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 760.0
-        },
-        "2025-03": {
-          "h": 0.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 8.33
-        },
-        "2025-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2025-05": {
-          "h": 0.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 50.0
-        },
-        "2025-06": {
-          "h": 0.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 387.5
-        },
-        "2025-07": {
-          "h": 15.65,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 3901.67
-        },
-        "2025-08": {
-          "h": 4.22,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 713.33
-        },
-        "2025-09": {
-          "h": 2.32,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 742.5
-        },
-        "2025-10": {
-          "h": 3.57,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1865.0
-        },
-        "2025-11": {
-          "h": 0.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 100.0
-        },
-        "2025-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 1.43,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 858.0
-        },
-        "2026-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-04": {
-          "h": 6.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2082.5
-        },
-        "2026-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-06": {
-          "h": 0.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 180.0
-        },
-        "2026-07": {
-          "h": 0.9,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 540.0
-        },
-        "2026-08": {
-          "h": 1.9,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 720.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Roister",
-      "resp": "Bruno",
-      "ativo": false,
-      "n_inc": 11,
-      "inc": [
-        {
-          "cod": "3292",
-          "nm": "Roister",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3151",
-          "nm": "Roister",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3039",
-          "nm": "Roister",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3040",
-          "nm": "Roister",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3041",
-          "nm": "Roister",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3044",
-          "nm": "Roister",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3052",
-          "nm": "Roister",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3027",
-          "nm": "Roister",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2930",
-          "nm": "Roister",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2817",
-          "nm": "Roister",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2818",
-          "nm": "Roister",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {}
-    },
-    {
-      "cli": "VS Holding",
-      "resp": "Rodrigo",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Penseira (PR1 MEDICINA E TECNOLOGIA LTDA.)",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "V4 Luna (Sinop MT)",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Marcel Van Hattem",
-      "resp": "Gerson",
+      "cli": "Texian",
+      "resp": "Yago",
       "ativo": true,
       "n_inc": 1,
       "inc": [
         {
-          "cod": "2827",
-          "nm": "Ação de Direito de Resposta — Indenização",
-          "tp": "Judicial",
+          "cod": "4919",
+          "nm": "Elaboração/Revisão Contrato — Rescisão Braskem",
+          "tp": "Projeto consultivo",
           "h": 0.0,
           "c": 0.0
         }
       ],
       "pm": {
-        "2024-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2024-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2024-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2024-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2025-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2025-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2025-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2025-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2025-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2025-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2025-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2025-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2025-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2025-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2025-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2025-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
         "2026-02": {
-          "h": 0,
+          "h": 193.24,
           "hp": 0,
           "hi": 0,
-          "r": 800.0,
-          "c": 0
+          "r": 0,
+          "c": 38130.5
         },
         "2026-03": {
-          "h": 0,
+          "h": 272.71,
           "hp": 0,
           "hi": 0,
-          "r": 800.0,
-          "c": 0
+          "r": 0,
+          "c": 60036.0
         },
         "2026-04": {
-          "h": 0,
+          "h": 330.13,
           "hp": 0,
           "hi": 0,
-          "r": 800.0,
-          "c": 0
+          "r": 0,
+          "c": 44843.0
         },
         "2026-05": {
-          "h": 0,
+          "h": 361.32,
           "hp": 0,
           "hi": 0,
-          "r": 800.0,
-          "c": 0
+          "r": 0,
+          "c": 38568.0
         },
         "2026-06": {
-          "h": 0,
+          "h": 451.63,
           "hp": 0,
           "hi": 0,
-          "r": 800.0,
-          "c": 0
+          "r": 0,
+          "c": 54836.0
         },
         "2026-07": {
-          "h": 0,
+          "h": 402.0,
           "hp": 0,
           "hi": 0,
-          "r": 800.0,
-          "c": 0
+          "r": 0,
+          "c": 82040.0
         },
         "2026-08": {
-          "h": 0,
+          "h": 197.37,
           "hp": 0,
           "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 800.0,
-          "c": 0
+          "r": 0,
+          "c": 44218.5
         }
       }
-    },
-    {
-      "cli": "Rhello RH (Ecco Talent)",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
     },
     {
       "cli": "Brasil Paralelo",
@@ -31066,511 +33360,11 @@ const D = {
       }
     },
     {
-      "cli": "Corso Consórcios",
+      "cli": "Langer",
       "resp": "Rodrigo",
-      "ativo": true,
-      "n_inc": 1,
-      "inc": [
-        {
-          "cod": "3837",
-          "nm": "Execução Fiscal Federal — União",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2025-06": {
-          "h": 9.13,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1896.67
-        },
-        "2025-07": {
-          "h": 3.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1182.5
-        },
-        "2025-08": {
-          "h": 3.45,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1055.0
-        },
-        "2025-09": {
-          "h": 4.72,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1438.33
-        },
-        "2025-10": {
-          "h": 4.9,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1566.67
-        },
-        "2025-11": {
-          "h": 3.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1850.0
-        },
-        "2025-12": {
-          "h": 1.82,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1090.0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 0.05,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 12.5
-        },
-        "2026-03": {
-          "h": 1.91,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 850.0
-        },
-        "2026-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        },
-        "2026-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        },
-        "2026-06": {
-          "h": 0.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 180.0
-        },
-        "2026-07": {
-          "h": 0.45,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 270.0
-        },
-        "2026-08": {
-          "h": 2.05,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 1230.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "RS Recicla",
-      "resp": "Felipe",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2025-02": {
-          "h": 4.25,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 455.83
-        },
-        "2025-03": {
-          "h": 0.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 30.0
-        },
-        "2025-04": {
-          "h": 11.87,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 1463.33
-        },
-        "2025-05": {
-          "h": 6.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 757.5
-        },
-        "2025-06": {
-          "h": 4.23,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 423.33
-        },
-        "2025-07": {
-          "h": 0.57,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 56.67
-        },
-        "2025-09": {
-          "h": 7.68,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 1305.0
-        },
-        "2025-10": {
-          "h": 2.97,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 710.0
-        },
-        "2025-11": {
-          "h": 0.32,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 41.67
-        },
-        "2025-12": {
-          "h": 1.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 118.33
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 5.62,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 1110.0
-        },
-        "2026-03": {
-          "h": 0.11,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 11.0
-        },
-        "2026-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2026-05": {
-          "h": 1.71,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 88.0
-        },
-        "2026-06": {
-          "h": 3.69,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 331.5
-        },
-        "2026-07": {
-          "h": 2.95,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 691.5
-        },
-        "2026-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2024-10": {
-          "h": 2.23,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 275.0
-        },
-        "2024-11": {
-          "h": 0.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 30.0
-        },
-        "2025-02": {
-          "h": 0.25,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 62.5
-        },
-        "2025-03": {
-          "h": 1.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 154.17
-        },
-        "2025-04": {
-          "h": 0.93,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 150.0
-        },
-        "2025-05": {
-          "h": 1.25,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 102.5
-        },
-        "2025-06": {
-          "h": 2.37,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 355.0
-        },
-        "2025-07": {
-          "h": 4.52,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 561.67
-        },
-        "2025-09": {
-          "h": 3.1,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 785.0
-        },
-        "2025-11": {
-          "h": 0.65,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 140.0
-        },
-        "2025-12": {
-          "h": 1.32,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 231.67
-        },
-        "2026-02": {
-          "h": 6.51,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 651.0
-        },
-        "2026-03": {
-          "h": 0.71,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 71.0
-        },
-        "2026-04": {
-          "h": 0.6,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 60.0
-        },
-        "2026-05": {
-          "h": 6.53,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 1478.0
-        },
-        "2026-06": {
-          "h": 2.09,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 438.5
-        },
-        "2026-07": {
-          "h": 3.93,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 543.0
-        },
-        "2026-08": {
-          "h": 5.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 515.0
-        }
-      }
-    },
-    {
-      "cli": "Lumens Atuarial",
-      "resp": "Gerson",
       "ativo": false,
       "n_inc": 0,
       "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Everlog",
-      "resp": "Felipe",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Oranggi Viagens",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 5,
-      "inc": [
-        {
-          "cod": "4594",
-          "nm": "Planejamento Tributário — Reestruturação Regime",
-          "tp": "Projeto consultivo",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4603",
-          "nm": "Planejamento Societário — Holding e Governança",
-          "tp": "Projeto consultivo",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4604",
-          "nm": "Planejamento Tributário — Dividendos e Proteção Patrimonial",
-          "tp": "Projeto consultivo",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4605",
-          "nm": "Partnership e Vesting — Retenção de Talentos",
-          "tp": "Projeto consultivo",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4606",
-          "nm": "Revisão Contratual e Compliance — LGPD",
-          "tp": "Projeto consultivo",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
       "pm": {}
     },
     {
@@ -31582,1006 +33376,29 @@ const D = {
       "pm": {}
     },
     {
-      "cli": "Grupo TE2",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 5,
-      "inc": [
-        {
-          "cod": "3169",
-          "nm": "Ação Tributária — Empresa FT2",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3199",
-          "nm": "Ações Tributárias — M2T",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3200",
-          "nm": "Tese Tributária — MT2SC",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "1867",
-          "nm": "Defesa Societária — SCP 300 SP",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4665",
-          "nm": "Mandado de Segurança Tributário — ITCMD",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-08": {
-          "h": 13.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 6855.83
-        },
-        "2024-09": {
-          "h": 16.12,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 7489.17
-        },
-        "2024-10": {
-          "h": 6.38,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 2144.17
-        },
-        "2024-11": {
-          "h": 14.35,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 6386.67
-        },
-        "2024-12": {
-          "h": 8.57,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 4460.0
-        },
-        "2025-01": {
-          "h": 1.4,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 140.0
-        },
-        "2025-02": {
-          "h": 2.88,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 1416.67
-        },
-        "2025-03": {
-          "h": 4.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 697.5
-        },
-        "2025-04": {
-          "h": 0.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 110.0
-        },
-        "2025-05": {
-          "h": 2.97,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 1037.5
-        },
-        "2025-06": {
-          "h": 3.37,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 830.83
-        },
-        "2025-07": {
-          "h": 3.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 571.67
-        },
-        "2025-08": {
-          "h": 10.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 4493.33
-        },
-        "2025-09": {
-          "h": 10.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 2040.0
-        },
-        "2025-10": {
-          "h": 9.72,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 2694.17
-        },
-        "2025-11": {
-          "h": 5.82,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 2348.33
-        },
-        "2025-12": {
-          "h": 0.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 90.0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 5.95,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 2685.0
-        },
-        "2026-03": {
-          "h": 0.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 8.0
-        },
-        "2026-04": {
-          "h": 6.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 3228.0
-        },
-        "2026-05": {
-          "h": 12.88,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 6825.0
-        },
-        "2026-06": {
-          "h": 4.55,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 2607.5
-        },
-        "2026-07": {
-          "h": 12.99,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 5515.0
-        },
-        "2026-08": {
-          "h": 5.7,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 2820.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Akroz Telematics",
-      "resp": "Felipe",
+      "cli": "VS Holding",
+      "resp": "Rodrigo",
       "ativo": false,
       "n_inc": 0,
       "inc": [],
       "pm": {}
     },
     {
-      "cli": "Krystal Incorporadora",
-      "resp": "Rodrigo",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2024-10": {
-          "h": 14.57,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 8740.0
-        },
-        "2024-11": {
-          "h": 10.62,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 5871.67
-        },
-        "2024-12": {
-          "h": 9.88,
-          "hp": 0,
-          "hi": 0,
-          "r": 4236.0,
-          "c": 4606.67
-        },
-        "2025-01": {
-          "h": 20.65,
-          "hp": 0,
-          "hi": 0,
-          "r": 4236.0,
-          "c": 9150.0
-        },
-        "2025-02": {
-          "h": 13.32,
-          "hp": 0,
-          "hi": 0,
-          "r": 4236.0,
-          "c": 6229.17
-        },
-        "2025-03": {
-          "h": 31.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 4236.0,
-          "c": 10300.0
-        },
-        "2025-04": {
-          "h": 50.25,
-          "hp": 0,
-          "hi": 0,
-          "r": 4236.0,
-          "c": 16412.5
-        },
-        "2025-05": {
-          "h": 21.97,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 7100.0
-        },
-        "2025-06": {
-          "h": 33.62,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 8235.83
-        },
-        "2025-07": {
-          "h": 26.77,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 6427.5
-        },
-        "2025-08": {
-          "h": 37.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 9479.17
-        },
-        "2025-09": {
-          "h": 45.22,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 16351.67
-        },
-        "2025-10": {
-          "h": 37.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 13329.17
-        },
-        "2025-11": {
-          "h": 35.27,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 8765.83
-        },
-        "2025-12": {
-          "h": 22.28,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 7395.0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 11.25,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 2172.5
-        },
-        "2026-03": {
-          "h": 23.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 6005.5
-        },
-        "2026-04": {
-          "h": 25.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 9384.0
-        },
-        "2026-05": {
-          "h": 46.8,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 18686.0
-        },
-        "2026-06": {
-          "h": 31.76,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 9991.0
-        },
-        "2026-07": {
-          "h": 20.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 6022.5
-        },
-        "2026-08": {
-          "h": 34.63,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 11029.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "JAVL+RC32 Participações",
-      "resp": "Rodrigo",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2024-12": {
-          "h": 3.63,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 545.0
-        },
-        "2025-01": {
-          "h": 1.7,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 255.0
-        },
-        "2025-02": {
-          "h": 3.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 1145.0
-        },
-        "2025-03": {
-          "h": 12.7,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 2850.0
-        },
-        "2025-04": {
-          "h": 22.38,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 6312.5
-        },
-        "2025-05": {
-          "h": 19.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 3841.67
-        },
-        "2025-06": {
-          "h": 23.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 4328.33
-        },
-        "2025-07": {
-          "h": 54.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 13169.17
-        },
-        "2025-08": {
-          "h": 23.95,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 3374.17
-        },
-        "2025-09": {
-          "h": 76.67,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 20284.17
-        },
-        "2025-10": {
-          "h": 8.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 5112.5
-        },
-        "2025-11": {
-          "h": 4.55,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 1375.0
-        },
-        "2025-12": {
-          "h": 13.87,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 2287.5
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 4.32,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 1269.0
-        },
-        "2026-03": {
-          "h": 0.59,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 88.5
-        },
-        "2026-04": {
-          "h": 1.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 780.0
-        },
-        "2026-05": {
-          "h": 3.12,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 768.0
-        },
-        "2026-06": {
-          "h": 2.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 1380.0
-        },
-        "2026-07": {
-          "h": 5.43,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 814.5
-        },
-        "2026-08": {
-          "h": 16.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 4384.5
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Flowork",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 4,
-      "inc": [
-        {
-          "cod": "4408",
-          "nm": "Defesa Trabalhista — Vitoria Silva Diehl",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4244",
-          "nm": "Defesa Trabalhista — Renata de Mattos Colombes Alves",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3991",
-          "nm": "Defesa Trabalhista — Celia Rodrigues Pereira",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3002",
-          "nm": "Execução — Tonco2",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 13.47,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 2003.33
-        },
-        "2024-08": {
-          "h": 9.75,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 1385.83
-        },
-        "2024-09": {
-          "h": 8.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 1288.33
-        },
-        "2024-10": {
-          "h": 31.53,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 4718.33
-        },
-        "2024-11": {
-          "h": 4.43,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 638.33
-        },
-        "2024-12": {
-          "h": 15.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 2337.5
-        },
-        "2025-01": {
-          "h": 14.25,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 2230.0
-        },
-        "2025-02": {
-          "h": 12.8,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 1957.5
-        },
-        "2025-03": {
-          "h": 15.1,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 3575.0
-        },
-        "2025-04": {
-          "h": 35.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 6580.83
-        },
-        "2025-05": {
-          "h": 39.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 7044.17
-        },
-        "2025-06": {
-          "h": 64.43,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 14766.67
-        },
-        "2025-07": {
-          "h": 33.53,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 6627.5
-        },
-        "2025-08": {
-          "h": 25.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 5728.33
-        },
-        "2025-09": {
-          "h": 23.68,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 4706.67
-        },
-        "2025-10": {
-          "h": 7.52,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 1259.17
-        },
-        "2025-11": {
-          "h": 7.32,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 1097.5
-        },
-        "2025-12": {
-          "h": 20.93,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 4116.67
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 10.64,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 1708.0
-        },
-        "2026-03": {
-          "h": 19.23,
-          "hp": 0,
-          "hi": 0,
-          "r": 8258.8,
-          "c": 3339.5
-        },
-        "2026-04": {
-          "h": 17.07,
-          "hp": 0,
-          "hi": 0,
-          "r": 7250.0,
-          "c": 2943.0
-        },
-        "2026-05": {
-          "h": 9.0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7250.0,
-          "c": 1350.0
-        },
-        "2026-06": {
-          "h": 16.11,
-          "hp": 0,
-          "hi": 0,
-          "r": 7250.0,
-          "c": 2647.5
-        },
-        "2026-07": {
-          "h": 16.97,
-          "hp": 0,
-          "hi": 0,
-          "r": 7250.0,
-          "c": 2216.5
-        },
-        "2026-08": {
-          "h": 25.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 7250.0,
-          "c": 4404.5
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7250.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7250.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7250.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7250.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Solid Arquitetura de Vidros",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Ampulheta",
+      "cli": "Prime Clínica",
       "resp": "Rodrigo",
       "ativo": true,
       "n_inc": 2,
       "inc": [
         {
-          "cod": "4025",
-          "nm": "Ação de Consumidor — Itaú",
+          "cod": "4064",
+          "nm": "Cobrança ISSQN — Município de Novo Hamburgo",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "3482",
-          "nm": "Execução Fiscal — Marcell Ferreira",
+          "cod": "4065",
+          "nm": "Cobrança ISSQN — Município de Gravataí",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
@@ -32592,169 +33409,169 @@ const D = {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
+          "r": 1518.0,
           "c": 0
         },
         "2024-02": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
+          "r": 1518.0,
           "c": 0
         },
         "2024-03": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
+          "r": 1518.0,
           "c": 0
         },
         "2024-04": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
+          "r": 1518.0,
           "c": 0
         },
         "2024-05": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
+          "r": 1518.0,
           "c": 0
         },
         "2024-06": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
+          "r": 1518.0,
           "c": 0
         },
         "2024-07": {
-          "h": 4.17,
+          "h": 6.83,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 750.0
+          "r": 1518.0,
+          "c": 1025.0
         },
         "2024-08": {
-          "h": 3.6,
+          "h": 6.85,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 443.33
+          "r": 1518.0,
+          "c": 962.5
         },
         "2024-09": {
-          "h": 7.03,
+          "h": 3.4,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 1378.33
+          "r": 1518.0,
+          "c": 1072.5
         },
         "2024-10": {
-          "h": 8.98,
+          "h": 1.77,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 3848.33
+          "r": 1518.0,
+          "c": 441.67
         },
         "2024-11": {
-          "h": 1.18,
+          "h": 4.15,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 710.0
+          "r": 1518.0,
+          "c": 1037.5
         },
         "2024-12": {
-          "h": 0,
+          "h": 0.53,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 0
+          "r": 1518.0,
+          "c": 133.33
         },
         "2025-01": {
-          "h": 0.25,
+          "h": 0.98,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 150.0
+          "r": 1518.0,
+          "c": 178.33
         },
         "2025-02": {
-          "h": 0,
+          "h": 1.65,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 0
+          "r": 1518.0,
+          "c": 172.5
         },
         "2025-03": {
-          "h": 1.28,
+          "h": 1.47,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 636.67
+          "r": 1518.0,
+          "c": 171.67
         },
         "2025-04": {
-          "h": 2.83,
+          "h": 4.38,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 824.17
+          "r": 1518.0,
+          "c": 1740.0
         },
         "2025-05": {
-          "h": 6.33,
+          "h": 4.85,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 1776.67
+          "r": 1518.0,
+          "c": 647.5
         },
         "2025-06": {
-          "h": 0.23,
+          "h": 13.62,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 59.17
+          "r": 1518.0,
+          "c": 2725.0
         },
         "2025-07": {
-          "h": 3.08,
+          "h": 3.95,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 945.0
+          "r": 1518.0,
+          "c": 617.5
         },
         "2025-08": {
-          "h": 6.2,
+          "h": 4.07,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 910.83
+          "r": 1518.0,
+          "c": 460.83
         },
         "2025-09": {
-          "h": 1.0,
+          "h": 7.52,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 359.17
+          "r": 1518.0,
+          "c": 881.67
         },
         "2025-10": {
-          "h": 0,
+          "h": 3.68,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 0
+          "r": 1518.0,
+          "c": 1026.67
         },
         "2025-11": {
-          "h": 0.28,
+          "h": 18.08,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 28.33
+          "r": 1518.0,
+          "c": 5523.33
         },
         "2025-12": {
-          "h": 1.15,
+          "h": 8.17,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 470.0
+          "r": 1518.0,
+          "c": 2113.33
         },
         "2026-01": {
           "h": 0,
@@ -32764,459 +33581,80 @@ const D = {
           "c": 0
         },
         "2026-02": {
-          "h": 6.46,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1998.5
-        },
-        "2026-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-04": {
           "h": 0.15,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
-          "c": 15.0
-        },
-        "2026-05": {
-          "h": 16.9,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 5250.0
-        },
-        "2026-06": {
-          "h": 1.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 169.0
-        },
-        "2026-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-08": {
-          "h": 0.71,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 145.5
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "TasteWay",
-      "resp": "Thomaz",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2026-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Organica Digital",
-      "resp": "Yago",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2026-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Sane",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 1,
-      "inc": [
-        {
-          "cod": "3761",
-          "nm": "Acompanhamento Processual — SANE",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {}
-    },
-    {
-      "cli": "Zenit (antigo Autoridade Fitness)",
-      "resp": "Rodrigo",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2024-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2024-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2024-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2024-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2024-12": {
-          "h": 0.47,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 78.33
-        },
-        "2025-01": {
-          "h": 0.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 41.67
-        },
-        "2025-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2025-03": {
-          "h": 0.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 137.5
-        },
-        "2025-04": {
-          "h": 0.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 95.83
-        },
-        "2025-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2025-06": {
-          "h": 1.12,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 125.83
-        },
-        "2025-07": {
-          "h": 3.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 992.5
-        },
-        "2025-08": {
-          "h": 0.75,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 117.5
-        },
-        "2025-09": {
-          "h": 0.07,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 10.0
-        },
-        "2025-10": {
-          "h": 0.13,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 20.0
-        },
-        "2025-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2025-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 0.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 1000.0,
-          "c": 300.0
+          "c": 37.5
         },
         "2026-03": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1000.0,
+          "r": 3242.0,
           "c": 0
         },
         "2026-04": {
-          "h": 0,
+          "h": 0.1,
           "hp": 0,
           "hi": 0,
-          "r": 1000.0,
-          "c": 0
+          "r": 3242.0,
+          "c": 60.0
         },
         "2026-05": {
-          "h": 0,
+          "h": 4.9,
           "hp": 0,
           "hi": 0,
-          "r": 1000.0,
-          "c": 0
+          "r": 3242.0,
+          "c": 1470.0
         },
         "2026-06": {
-          "h": 0,
+          "h": 8.07,
           "hp": 0,
           "hi": 0,
-          "r": 1000.0,
-          "c": 0
+          "r": 3242.0,
+          "c": 2017.5
         },
         "2026-07": {
-          "h": 0,
+          "h": 0.41,
           "hp": 0,
           "hi": 0,
-          "r": 1000.0,
-          "c": 0
+          "r": 3242.0,
+          "c": 172.5
         },
         "2026-08": {
-          "h": 0,
+          "h": 6.77,
           "hp": 0,
           "hi": 0,
-          "r": 1000.0,
-          "c": 0
+          "r": 3242.0,
+          "c": 1407.5
         },
         "2026-09": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1000.0,
+          "r": 3242.0,
           "c": 0
         },
         "2026-10": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1000.0,
+          "r": 3242.0,
           "c": 0
         },
         "2026-11": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1000.0,
+          "r": 3242.0,
           "c": 0
         },
         "2026-12": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1000.0,
+          "r": 3242.0,
           "c": 0
         }
       }
@@ -33230,111 +33668,482 @@ const D = {
       "pm": {}
     },
     {
-      "cli": "Vaitel",
-      "resp": "Gerson",
-      "ativo": false,
+      "cli": "Jimi IoT Brasil",
+      "resp": "Felipe",
+      "ativo": true,
       "n_inc": 0,
       "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "\"Carol Bolina Industria\n\"",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 1,
-      "inc": [
-        {
-          "cod": "4567",
-          "nm": "Procedimentos Administrativos — MPT4",
-          "tp": "Avulso consultivo",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
       "pm": {
-        "2025-09": {
-          "h": 3.08,
+        "2024-03": {
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 276.67
+          "r": 2500.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 0.17,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 16.67
+        },
+        "2024-08": {
+          "h": 1.22,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 205.0
+        },
+        "2024-09": {
+          "h": 5.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 760.0
+        },
+        "2024-10": {
+          "h": 1.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 151.67
+        },
+        "2024-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 0
+        },
+        "2024-12": {
+          "h": 0.75,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 225.0
+        },
+        "2025-01": {
+          "h": 2.02,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 598.33
+        },
+        "2025-02": {
+          "h": 5.15,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 655.0
+        },
+        "2025-03": {
+          "h": 16.6,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 1628.33
+        },
+        "2025-04": {
+          "h": 2.78,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 278.33
+        },
+        "2025-05": {
+          "h": 3.98,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 519.17
+        },
+        "2025-06": {
+          "h": 6.83,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 1043.33
+        },
+        "2025-07": {
+          "h": 4.62,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 494.17
+        },
+        "2025-08": {
+          "h": 2.75,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 410.83
+        },
+        "2025-09": {
+          "h": 1.7,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 383.33
         },
         "2025-10": {
-          "h": 4.73,
+          "h": 6.87,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 324.17
+          "r": 4863.0,
+          "c": 1186.67
         },
         "2025-11": {
-          "h": 10.82,
+          "h": 9.57,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 1390.83
+          "r": 4863.0,
+          "c": 1700.0
         },
         "2025-12": {
-          "h": 9.0,
+          "h": 10.77,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 2227.5
+          "r": 4863.0,
+          "c": 1833.33
         },
         "2026-01": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
+          "r": 4863.0,
           "c": 0
         },
         "2026-02": {
-          "h": 2.39,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 581.0
+          "r": 4863.0,
+          "c": 0
         },
         "2026-03": {
-          "h": 2.73,
+          "h": 17.19,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 300.0
+          "r": 4863.0,
+          "c": 4297.5
         },
         "2026-04": {
-          "h": 4.65,
+          "h": 11.92,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 409.5
+          "r": 4863.0,
+          "c": 3050.0
         },
         "2026-05": {
-          "h": 7.89,
+          "h": 15.09,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 2058.0
+          "r": 4863.0,
+          "c": 3553.0
         },
         "2026-06": {
-          "h": 7.68,
+          "h": 2.81,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 2017.0
+          "r": 4863.0,
+          "c": 370.0
         },
         "2026-07": {
-          "h": 1.64,
+          "h": 6.57,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 351.5
+          "r": 4863.0,
+          "c": 1642.5
         },
         "2026-08": {
-          "h": 1.64,
+          "h": 5.77,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 1442.5
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Dois Vales",
+      "resp": "Bruno",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2024-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 15.65,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 5640.0
+        },
+        "2024-08": {
+          "h": 15.0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 5579.17
+        },
+        "2024-09": {
+          "h": 7.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 3723.33
+        },
+        "2024-10": {
+          "h": 6.67,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 1855.83
+        },
+        "2024-11": {
+          "h": 22.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 9260.0
+        },
+        "2024-12": {
+          "h": 30.68,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 11820.0
+        },
+        "2025-01": {
+          "h": 3.42,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 1618.33
+        },
+        "2025-02": {
+          "h": 8.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 3293.33
+        },
+        "2025-03": {
+          "h": 6.47,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 2721.67
+        },
+        "2025-04": {
+          "h": 1.37,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 516.67
+        },
+        "2025-05": {
+          "h": 2.35,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 587.5
+        },
+        "2025-06": {
+          "h": 13.27,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 4074.17
+        },
+        "2025-07": {
+          "h": 35.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 14006.67
+        },
+        "2025-08": {
+          "h": 12.15,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 3254.17
+        },
+        "2025-09": {
+          "h": 21.53,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 7147.5
+        },
+        "2025-10": {
+          "h": 15.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 5451.67
+        },
+        "2025-11": {
+          "h": 3.4,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 1043.33
+        },
+        "2025-12": {
+          "h": 11.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 2801.67
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 17.75,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 4521.0
+        },
+        "2026-03": {
+          "h": 25.3,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 6351.0
+        },
+        "2026-04": {
+          "h": 2.26,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 539.5
+        },
+        "2026-05": {
+          "h": 6.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 1887.5
+        },
+        "2026-06": {
+          "h": 10.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 3897.5
+        },
+        "2026-07": {
+          "h": 4.64,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 1825.0
+        },
+        "2026-08": {
+          "h": 7.15,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
-          "c": 96.5
+          "c": 1787.5
         },
         "2026-09": {
           "h": 0,
@@ -33367,8 +34176,16 @@ const D = {
       }
     },
     {
-      "cli": "Sérgio Santana",
-      "resp": "Felipe",
+      "cli": "Quater Comunicacao",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Skin Pets",
+      "resp": "Gerson",
       "ativo": false,
       "n_inc": 0,
       "inc": [],
@@ -33434,28 +34251,62 @@ const D = {
       }
     },
     {
-      "cli": "Captable",
+      "cli": "Forigo Park Tur",
       "resp": "Gerson",
-      "ativo": false,
+      "ativo": true,
       "n_inc": 0,
       "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Sideraço",
-      "resp": "Bruno",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "YUOOL",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
+      "pm": {
+        "2026-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5500.0,
+          "c": 0
+        },
+        "2026-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5500.0,
+          "c": 0
+        },
+        "2026-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5500.0,
+          "c": 0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5500.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5500.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5500.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5500.0,
+          "c": 0
+        }
+      }
     },
     {
       "cli": "O Patrimônio Bar",
@@ -33748,7 +34599,15 @@ const D = {
       }
     },
     {
-      "cli": "Bequest Academy",
+      "cli": "Rappi Bank (Rappipay)",
+      "resp": "Carlos",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "MR Tecnologia",
       "resp": "Gerson",
       "ativo": false,
       "n_inc": 0,
@@ -33756,2146 +34615,12 @@ const D = {
       "pm": {}
     },
     {
-      "cli": "V4 Peretto (POA)",
+      "cli": "Hug Engenharia",
       "resp": "Gerson",
       "ativo": false,
       "n_inc": 0,
       "inc": [],
       "pm": {}
-    },
-    {
-      "cli": "Skeps",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "GC Engenharia",
-      "resp": "Rodrigo",
-      "ativo": true,
-      "n_inc": 2,
-      "inc": [
-        {
-          "cod": "4815",
-          "nm": "Defesa Cível — Nilson Xavier",
-          "tp": "Judicial",
-          "h": 1.1,
-          "c": 275.0
-        },
-        {
-          "cod": "4452",
-          "nm": "Defesa Societária — REALPAR",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 1.25,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 750.0
-        },
-        "2024-08": {
-          "h": 7.68,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 2908.33
-        },
-        "2024-09": {
-          "h": 11.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 6540.83
-        },
-        "2024-10": {
-          "h": 21.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 9575.0
-        },
-        "2024-11": {
-          "h": 14.38,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 5212.5
-        },
-        "2024-12": {
-          "h": 23.28,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 7196.67
-        },
-        "2025-01": {
-          "h": 31.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 11005.0
-        },
-        "2025-02": {
-          "h": 23.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 9920.0
-        },
-        "2025-03": {
-          "h": 14.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 4930.83
-        },
-        "2025-04": {
-          "h": 10.7,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 4033.33
-        },
-        "2025-05": {
-          "h": 33.05,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 10089.17
-        },
-        "2025-06": {
-          "h": 33.68,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 6266.67
-        },
-        "2025-07": {
-          "h": 11.88,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 1970.83
-        },
-        "2025-08": {
-          "h": 14.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 5539.17
-        },
-        "2025-09": {
-          "h": 17.52,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 7278.33
-        },
-        "2025-10": {
-          "h": 18.77,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 4818.33
-        },
-        "2025-11": {
-          "h": 8.35,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 4976.67
-        },
-        "2025-12": {
-          "h": 7.82,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 2681.67
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 7.68,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 2443.0
-        },
-        "2026-03": {
-          "h": 13.13,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 3449.5
-        },
-        "2026-04": {
-          "h": 3.46,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 1800.5
-        },
-        "2026-05": {
-          "h": 6.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 3780.0
-        },
-        "2026-06": {
-          "h": 7.75,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 4292.5
-        },
-        "2026-07": {
-          "h": 7.08,
-          "hp": 0.0,
-          "hi": 1.1,
-          "r": 7700.0,
-          "c": 3854.5
-        },
-        "2026-08": {
-          "h": 3.97,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 2162.5
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 7700.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Hops Company",
-      "resp": "Bruno",
-      "ativo": true,
-      "n_inc": 2,
-      "inc": [
-        {
-          "cod": "4694",
-          "nm": "Mandado de Segurança — ANVISA",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3622",
-          "nm": "Cobrança — Devedores",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2024-08": {
-          "h": 3.35,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 2010.0
-        },
-        "2024-09": {
-          "h": 1.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 1100.0
-        },
-        "2024-10": {
-          "h": 3.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 1278.33
-        },
-        "2024-11": {
-          "h": 1.38,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 830.0
-        },
-        "2024-12": {
-          "h": 2.73,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 915.83
-        },
-        "2025-01": {
-          "h": 0.85,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 212.5
-        },
-        "2025-02": {
-          "h": 1.12,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 111.67
-        },
-        "2025-03": {
-          "h": 5.53,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 1211.67
-        },
-        "2025-04": {
-          "h": 0.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 491.67
-        },
-        "2025-05": {
-          "h": 1.07,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 164.17
-        },
-        "2025-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2025-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2025-08": {
-          "h": 0.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 18.33
-        },
-        "2025-09": {
-          "h": 4.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 726.67
-        },
-        "2025-10": {
-          "h": 0.02,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 1.67
-        },
-        "2025-11": {
-          "h": 0.73,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 110.0
-        },
-        "2025-12": {
-          "h": 6.37,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 1456.67
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2026-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2026-04": {
-          "h": 1.0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 600.0
-        },
-        "2026-05": {
-          "h": 3.88,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 913.0
-        },
-        "2026-06": {
-          "h": 7.82,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 1359.5
-        },
-        "2026-07": {
-          "h": 0.02,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 2.0
-        },
-        "2026-08": {
-          "h": 0.79,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 108.5
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3000.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Baseworks.ai",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Rafael Beltrame",
-      "resp": "Rodrigo",
-      "ativo": true,
-      "n_inc": 1,
-      "inc": [
-        {
-          "cod": "3764",
-          "nm": "Ação Declaratória com Repetição de Indébito — Isenção de IR",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2024-08": {
-          "h": 0.38,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 38.33
-        },
-        "2024-09": {
-          "h": 0.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 20.83
-        },
-        "2024-10": {
-          "h": 0.43,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 260.0
-        },
-        "2024-11": {
-          "h": 3.8,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 1288.33
-        },
-        "2024-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2025-01": {
-          "h": 4.72,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 1179.17
-        },
-        "2025-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2025-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2025-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2025-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2025-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2025-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2025-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2025-09": {
-          "h": 1.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 280.83
-        },
-        "2025-10": {
-          "h": 0.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 67.5
-        },
-        "2025-11": {
-          "h": 1.72,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 351.67
-        },
-        "2025-12": {
-          "h": 1.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 418.33
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2026-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2026-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2026-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2026-06": {
-          "h": 2.06,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 106.5
-        },
-        "2026-07": {
-          "h": 0.29,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 14.5
-        },
-        "2026-08": {
-          "h": 3.73,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 208.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 400.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Eduardo Corte Real",
-      "resp": "Rodrigo",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Soma Auto Posto",
-      "resp": "Felipe",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "the news",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "João Felipe Ribeiro",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Austral",
-      "resp": "Rodrigo",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 5.27,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 1443.33
-        },
-        "2024-08": {
-          "h": 15.75,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 3239.17
-        },
-        "2024-09": {
-          "h": 19.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 4340.0
-        },
-        "2024-10": {
-          "h": 14.45,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 5023.33
-        },
-        "2024-11": {
-          "h": 5.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 1087.5
-        },
-        "2024-12": {
-          "h": 13.2,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 1980.0
-        },
-        "2025-01": {
-          "h": 27.68,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 3705.83
-        },
-        "2025-02": {
-          "h": 13.97,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 2602.5
-        },
-        "2025-03": {
-          "h": 17.85,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 2750.83
-        },
-        "2025-04": {
-          "h": 31.95,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 6766.67
-        },
-        "2025-05": {
-          "h": 12.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 2474.17
-        },
-        "2025-06": {
-          "h": 10.9,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 3286.67
-        },
-        "2025-07": {
-          "h": 24.37,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 3442.5
-        },
-        "2025-08": {
-          "h": 15.8,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 2570.0
-        },
-        "2025-09": {
-          "h": 22.8,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 5352.5
-        },
-        "2025-10": {
-          "h": 7.88,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 1795.83
-        },
-        "2025-11": {
-          "h": 20.85,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 5022.5
-        },
-        "2025-12": {
-          "h": 3.7,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 473.33
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 6.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 1487.0
-        },
-        "2026-03": {
-          "h": 2.77,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 1512.0
-        },
-        "2026-04": {
-          "h": 15.25,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 5631.5
-        },
-        "2026-05": {
-          "h": 8.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 2295.0
-        },
-        "2026-06": {
-          "h": 15.74,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 3095.0
-        },
-        "2026-07": {
-          "h": 11.42,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 3286.0
-        },
-        "2026-08": {
-          "h": 9.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 2607.5
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Blue pay",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 3,
-      "inc": [
-        {
-          "cod": "4950",
-          "nm": "Defesa Trabalhista — Thiago Magalhaes dos Santos",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4952",
-          "nm": "Defesa Trabalhista — Helton Rodrigo Almeida Santos",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3790",
-          "nm": "Defesa Trabalhista — GL Promotora e Consultoria",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2025-03": {
-          "h": 6.62,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1661.67
-        },
-        "2025-04": {
-          "h": 3.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 856.67
-        },
-        "2025-05": {
-          "h": 11.2,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1625.83
-        },
-        "2025-06": {
-          "h": 5.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1093.33
-        },
-        "2025-07": {
-          "h": 3.88,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 791.67
-        },
-        "2025-08": {
-          "h": 11.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2376.67
-        },
-        "2025-09": {
-          "h": 2.6,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 632.5
-        },
-        "2025-10": {
-          "h": 7.65,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2187.5
-        },
-        "2025-11": {
-          "h": 2.33,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 700.0
-        },
-        "2025-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 0.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 150.0
-        },
-        "2026-03": {
-          "h": 0.67,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 157.0
-        },
-        "2026-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-05": {
-          "h": 1.24,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 310.0
-        },
-        "2026-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-08": {
-          "h": 4.51,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 451.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "B Smart",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Libel Kitchen",
-      "resp": "Bruno",
-      "ativo": false,
-      "n_inc": 3,
-      "inc": [
-        {
-          "cod": "3398",
-          "nm": "Libel Kitchen",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3419",
-          "nm": "Libel Kitchen",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3159",
-          "nm": "Libel Kitchen",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {}
-    },
-    {
-      "cli": "Modale",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 3,
-      "inc": [
-        {
-          "cod": "4324",
-          "nm": "Vesting — Planejamento Societário",
-          "tp": "Projeto consultivo",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4094",
-          "nm": "Defesa Trabalhista — Gleice Pereira Fernandes",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4133",
-          "nm": "Tributário ebook",
-          "tp": "Projeto consultivo",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2024-08": {
-          "h": 1.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 720.83
-        },
-        "2024-09": {
-          "h": 10.07,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 2337.5
-        },
-        "2024-10": {
-          "h": 7.62,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 1812.5
-        },
-        "2024-11": {
-          "h": 19.32,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 9265.83
-        },
-        "2024-12": {
-          "h": 4.9,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 947.5
-        },
-        "2025-01": {
-          "h": 5.55,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 1280.83
-        },
-        "2025-02": {
-          "h": 7.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 1477.5
-        },
-        "2025-03": {
-          "h": 7.23,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 961.67
-        },
-        "2025-04": {
-          "h": 9.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 1446.67
-        },
-        "2025-05": {
-          "h": 10.05,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 2090.83
-        },
-        "2025-06": {
-          "h": 10.27,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 1847.5
-        },
-        "2025-07": {
-          "h": 3.9,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 705.0
-        },
-        "2025-08": {
-          "h": 8.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 2224.17
-        },
-        "2025-09": {
-          "h": 13.77,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 2522.5
-        },
-        "2025-10": {
-          "h": 8.2,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 1320.83
-        },
-        "2025-11": {
-          "h": 4.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 536.67
-        },
-        "2025-12": {
-          "h": 3.68,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 571.67
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 5.45,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 1235.0
-        },
-        "2026-03": {
-          "h": 2.29,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 374.0
-        },
-        "2026-04": {
-          "h": 13.76,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 3164.0
-        },
-        "2026-05": {
-          "h": 4.82,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 743.0
-        },
-        "2026-06": {
-          "h": 2.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 277.0
-        },
-        "2026-07": {
-          "h": 4.65,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 969.0
-        },
-        "2026-08": {
-          "h": 5.55,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 1035.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Contraste",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 2,
-      "inc": [
-        {
-          "cod": "4174",
-          "nm": "Acordo de Sócios — Guilherme",
-          "tp": "Projeto consultivo",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4176",
-          "nm": "Planejamento Tributário — Reforma Fiscal",
-          "tp": "Projeto consultivo",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2024-10": {
-          "h": 18.73,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 9262.5
-        },
-        "2024-11": {
-          "h": 4.62,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 1036.67
-        },
-        "2024-12": {
-          "h": 5.75,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 735.0
-        },
-        "2025-01": {
-          "h": 5.93,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 1006.67
-        },
-        "2025-02": {
-          "h": 14.87,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 1609.17
-        },
-        "2025-03": {
-          "h": 5.45,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 500.83
-        },
-        "2025-04": {
-          "h": 25.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 3444.17
-        },
-        "2025-05": {
-          "h": 12.52,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 2632.5
-        },
-        "2025-06": {
-          "h": 6.67,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 1020.0
-        },
-        "2025-07": {
-          "h": 7.88,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 875.83
-        },
-        "2025-08": {
-          "h": 5.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 861.67
-        },
-        "2025-09": {
-          "h": 2.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 490.0
-        },
-        "2025-10": {
-          "h": 3.55,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 684.17
-        },
-        "2025-11": {
-          "h": 4.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 785.0
-        },
-        "2025-12": {
-          "h": 4.52,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 1255.0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 7.52,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 812.0
-        },
-        "2026-03": {
-          "h": 10.67,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 1628.0
-        },
-        "2026-04": {
-          "h": 2.89,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 722.5
-        },
-        "2026-05": {
-          "h": 3.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 947.0
-        },
-        "2026-06": {
-          "h": 0.14,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 14.0
-        },
-        "2026-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        },
-        "2026-08": {
-          "h": 3.0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 750.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 4052.5,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "WBP",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 1,
-      "inc": [
-        {
-          "cod": "4285",
-          "nm": "Planejamento Societário — Governança",
-          "tp": "Projeto consultivo",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2024-07": {
-          "h": 0.93,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 93.33
-        },
-        "2024-08": {
-          "h": 51.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 18001.67
-        },
-        "2024-09": {
-          "h": 21.52,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 4971.67
-        },
-        "2024-10": {
-          "h": 31.05,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 7085.0
-        },
-        "2024-11": {
-          "h": 21.28,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 5279.17
-        },
-        "2024-12": {
-          "h": 16.1,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 4347.5
-        },
-        "2025-01": {
-          "h": 32.2,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 6924.17
-        },
-        "2025-02": {
-          "h": 31.0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 5615.83
-        },
-        "2025-03": {
-          "h": 9.43,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 1225.0
-        },
-        "2025-04": {
-          "h": 14.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 2783.33
-        },
-        "2025-05": {
-          "h": 18.28,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 3330.83
-        },
-        "2025-06": {
-          "h": 21.52,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 4430.83
-        },
-        "2025-07": {
-          "h": 20.3,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 4050.0
-        },
-        "2025-08": {
-          "h": 17.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 3514.17
-        },
-        "2025-09": {
-          "h": 25.35,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 6533.33
-        },
-        "2025-10": {
-          "h": 40.0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 4857.5
-        },
-        "2025-11": {
-          "h": 23.23,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 2713.33
-        },
-        "2025-12": {
-          "h": 19.22,
-          "hp": 0,
-          "hi": 0,
-          "r": 6840.0,
-          "c": 2678.33
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 12.54,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 1682.5
-        },
-        "2026-03": {
-          "h": 26.61,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 5832.5
-        },
-        "2026-04": {
-          "h": 13.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 2666.0
-        },
-        "2026-05": {
-          "h": 8.44,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 1829.5
-        },
-        "2026-06": {
-          "h": 20.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 3494.5
-        },
-        "2026-07": {
-          "h": 5.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 995.5
-        },
-        "2026-08": {
-          "h": 5.4,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 1378.5
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Multi Solution",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2025-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2025-05": {
-          "h": 18.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 4405.0
-        },
-        "2025-06": {
-          "h": 14.67,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2939.17
-        },
-        "2025-07": {
-          "h": 26.75,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 6935.0
-        },
-        "2025-08": {
-          "h": 13.02,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 3672.5
-        },
-        "2025-09": {
-          "h": 14.27,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2812.5
-        },
-        "2025-10": {
-          "h": 5.63,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1197.5
-        },
-        "2025-11": {
-          "h": 0.2,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 20.0
-        },
-        "2025-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 4.09,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1227.0
-        },
-        "2026-03": {
-          "h": 3.2,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 960.0
-        },
-        "2026-04": {
-          "h": 2.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 750.0
-        },
-        "2026-05": {
-          "h": 14.1,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 3525.0
-        },
-        "2026-06": {
-          "h": 2.79,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 797.5
-        },
-        "2026-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-08": {
-          "h": 0.52,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 88.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        }
-      }
     },
     {
       "cli": "Eat Kitchen",
@@ -35906,262 +34631,228 @@ const D = {
       "pm": {}
     },
     {
-      "cli": "the 4am culture",
+      "cli": "Bluts",
       "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Ouvrage Medição e Saneamento",
+      "resp": "Felipe",
       "ativo": true,
       "n_inc": 0,
       "inc": [],
       "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2277.0,
-          "c": 0
-        },
         "2024-07": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
+          "r": 1518.0,
           "c": 0
         },
         "2024-08": {
-          "h": 8.6,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
-          "c": 1217.5
+          "r": 1518.0,
+          "c": 0
         },
         "2024-09": {
-          "h": 0.98,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
-          "c": 147.5
+          "r": 1518.0,
+          "c": 0
         },
         "2024-10": {
-          "h": 5.55,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
-          "c": 1143.33
+          "r": 1518.0,
+          "c": 0
         },
         "2024-11": {
-          "h": 12.58,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
-          "c": 1395.83
+          "r": 1518.0,
+          "c": 0
         },
         "2024-12": {
-          "h": 6.02,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
-          "c": 695.0
+          "r": 1518.0,
+          "c": 0
         },
         "2025-01": {
-          "h": 14.58,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
-          "c": 1513.33
+          "r": 2431.5,
+          "c": 0
         },
         "2025-02": {
-          "h": 4.18,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2277.0,
-          "c": 460.83
+          "r": 2431.5,
+          "c": 0
         },
         "2025-03": {
-          "h": 8.88,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 1105.0
+          "r": 2431.5,
+          "c": 0
         },
         "2025-04": {
-          "h": 6.48,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 754.17
+          "r": 2431.5,
+          "c": 0
         },
         "2025-05": {
-          "h": 4.92,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 835.83
+          "r": 2431.5,
+          "c": 0
         },
         "2025-06": {
-          "h": 5.13,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 796.67
+          "r": 2431.5,
+          "c": 0
         },
         "2025-07": {
-          "h": 8.9,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 2016.67
+          "r": 2431.5,
+          "c": 0
         },
         "2025-08": {
-          "h": 9.77,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 2499.17
+          "r": 2431.5,
+          "c": 0
         },
         "2025-09": {
-          "h": 9.97,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 2596.67
+          "r": 2431.5,
+          "c": 0
         },
         "2025-10": {
-          "h": 4.43,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 630.0
+          "r": 2431.5,
+          "c": 0
         },
         "2025-11": {
-          "h": 7.78,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 1472.5
+          "r": 2431.5,
+          "c": 0
         },
         "2025-12": {
-          "h": 1.9,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 506.67
+          "r": 2431.5,
+          "c": 0
         },
         "2026-01": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
+          "r": 2431.5,
           "c": 0
         },
         "2026-02": {
-          "h": 2.7,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 675.0
+          "r": 2431.5,
+          "c": 0
         },
         "2026-03": {
-          "h": 6.45,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 1519.0
+          "r": 2431.5,
+          "c": 0
         },
         "2026-04": {
-          "h": 17.33,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 3853.0
+          "r": 2431.5,
+          "c": 0
         },
         "2026-05": {
-          "h": 16.42,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 3995.0
+          "r": 2431.5,
+          "c": 0
         },
         "2026-06": {
-          "h": 23.09,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 5645.0
+          "r": 2431.5,
+          "c": 0
         },
         "2026-07": {
-          "h": 5.74,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 1426.0
+          "r": 2431.5,
+          "c": 0
         },
         "2026-08": {
-          "h": 1.78,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
-          "c": 398.5
+          "r": 2431.5,
+          "c": 0
         },
         "2026-09": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
+          "r": 2431.5,
           "c": 0
         },
         "2026-10": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
+          "r": 2431.5,
           "c": 0
         },
         "2026-11": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
+          "r": 2431.5,
           "c": 0
         },
         "2026-12": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 4863.0,
+          "r": 2431.5,
           "c": 0
         }
       }
@@ -36175,154 +34866,331 @@ const D = {
       "pm": {}
     },
     {
-      "cli": "Dionísia",
-      "resp": "Felipe",
+      "cli": "Happy House",
+      "resp": "Gerson",
       "ativo": true,
-      "n_inc": 0,
-      "inc": [],
+      "n_inc": 2,
+      "inc": [
+        {
+          "cod": "4134",
+          "nm": "Planejamento Tributário — Ebook",
+          "tp": "Projeto consultivo",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3404",
+          "nm": "Defesa Trabalhista — Patricia Coelho",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
       "pm": {
-        "2024-07": {
-          "h": 0.25,
+        "2024-01": {
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 25.0
+          "r": 6484.0,
+          "c": 0
+        },
+        "2024-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
         },
         "2024-08": {
-          "h": 1.92,
+          "h": 0.27,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 575.0
+          "r": 6484.0,
+          "c": 154.17
         },
         "2024-09": {
-          "h": 3.37,
+          "h": 0.57,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 600.83
+          "r": 6484.0,
+          "c": 141.67
         },
         "2024-10": {
-          "h": 11.27,
+          "h": 3.9,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 3255.83
+          "r": 6484.0,
+          "c": 913.33
         },
         "2024-11": {
-          "h": 9.38,
+          "h": 1.2,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 2045.0
+          "r": 6484.0,
+          "c": 300.0
         },
         "2024-12": {
-          "h": 0.8,
+          "h": 1.45,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 80.0
+          "r": 6484.0,
+          "c": 362.5
         },
         "2025-01": {
-          "h": 0.98,
+          "h": 1.17,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 132.5
+          "r": 6484.0,
+          "c": 258.33
         },
         "2025-02": {
-          "h": 1.58,
+          "h": 1.48,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 461.67
+          "r": 6484.0,
+          "c": 322.5
         },
         "2025-03": {
-          "h": 0.67,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 133.33
+          "r": 6484.0,
+          "c": 0
         },
         "2025-04": {
-          "h": 3.55,
+          "h": 2.68,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 683.33
+          "r": 6484.0,
+          "c": 275.83
         },
         "2025-05": {
-          "h": 2.75,
+          "h": 3.63,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 412.5
+          "r": 6484.0,
+          "c": 450.0
+        },
+        "2025-06": {
+          "h": 0.35,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 35.0
+        },
+        "2025-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
         },
         "2025-08": {
-          "h": 0.08,
+          "h": 1.0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 25.0
+          "r": 6484.0,
+          "c": 250.0
         },
         "2025-09": {
-          "h": 4.8,
+          "h": 0.5,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 1205.0
+          "r": 6484.0,
+          "c": 150.0
+        },
+        "2025-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2025-11": {
+          "h": 0.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 125.0
         },
         "2025-12": {
-          "h": 0.8,
+          "h": 2.47,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 80.0
+          "r": 6484.0,
+          "c": 246.67
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
         },
         "2026-02": {
-          "h": 6.8,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 768.5
+          "r": 6484.0,
+          "c": 0
         },
         "2026-03": {
-          "h": 8.97,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 1500.5
+          "r": 6484.0,
+          "c": 0
         },
         "2026-04": {
-          "h": 7.94,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 1852.5
+          "r": 6484.0,
+          "c": 0
         },
         "2026-05": {
-          "h": 2.66,
+          "h": 3.18,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 272.0
+          "r": 6484.0,
+          "c": 730.5
         },
         "2026-06": {
-          "h": 0.08,
+          "h": 2.85,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 20.0
+          "r": 6484.0,
+          "c": 712.5
+        },
+        "2026-07": {
+          "h": 9.95,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 3920.0
+        },
+        "2026-08": {
+          "h": 2.59,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 713.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
         }
       }
     },
     {
-      "cli": "BRAZAH",
+      "cli": "\"Rede Mais Saude (JOSEANE DOS SANTOS PENHA LTDA)\n\"",
       "resp": "Gerson",
-      "ativo": false,
+      "ativo": true,
       "n_inc": 0,
       "inc": [],
-      "pm": {}
+      "pm": {
+        "2026-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 9726.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 12968.0,
+          "c": 0
+        }
+      }
     },
     {
       "cli": "Mercatto Serviços de Recuperação de Créditos LTDA.",
@@ -36825,8 +35693,878 @@ const D = {
       }
     },
     {
-      "cli": "Rappi Bank (Rappipay)",
-      "resp": "Carlos",
+      "cli": "Wine Locals",
+      "resp": "Bruno",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 0
+        },
+        "2024-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 7.7,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 770.0
+        },
+        "2024-08": {
+          "h": 22.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 2310.0
+        },
+        "2024-09": {
+          "h": 21.85,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 5333.33
+        },
+        "2024-10": {
+          "h": 29.22,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 4290.83
+        },
+        "2024-11": {
+          "h": 30.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 4628.33
+        },
+        "2024-12": {
+          "h": 23.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 2610.0
+        },
+        "2025-01": {
+          "h": 34.68,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 3686.67
+        },
+        "2025-02": {
+          "h": 45.23,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 4854.17
+        },
+        "2025-03": {
+          "h": 38.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 4324.17
+        },
+        "2025-04": {
+          "h": 35.93,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 4188.33
+        },
+        "2025-05": {
+          "h": 21.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 2208.33
+        },
+        "2025-06": {
+          "h": 31.95,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 3207.5
+        },
+        "2025-07": {
+          "h": 46.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 4941.67
+        },
+        "2025-08": {
+          "h": 46.57,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 5116.67
+        },
+        "2025-09": {
+          "h": 49.85,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 5132.5
+        },
+        "2025-10": {
+          "h": 39.42,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 4185.83
+        },
+        "2025-11": {
+          "h": 40.27,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 4529.17
+        },
+        "2025-12": {
+          "h": 43.03,
+          "hp": 0,
+          "hi": 0,
+          "r": 7590.0,
+          "c": 5438.33
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 36.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 5631.0
+        },
+        "2026-03": {
+          "h": 7.09,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 1155.5
+        },
+        "2026-04": {
+          "h": 6.07,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 910.5
+        },
+        "2026-05": {
+          "h": 2.93,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 631.5
+        },
+        "2026-06": {
+          "h": 9.59,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 1577.5
+        },
+        "2026-07": {
+          "h": 17.41,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 2969.0
+        },
+        "2026-08": {
+          "h": 34.48,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 7933.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Globalnet",
+      "resp": "Rodrigo",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "A Mentoria",
+      "resp": "Bruno",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-08": {
+          "h": 3.22,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 992.5
+        },
+        "2024-09": {
+          "h": 2.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 1740.0
+        },
+        "2024-10": {
+          "h": 14.47,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 4190.0
+        },
+        "2024-11": {
+          "h": 2.87,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 1186.67
+        },
+        "2024-12": {
+          "h": 0.02,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 1.67
+        },
+        "2025-01": {
+          "h": 6.93,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1470.0
+        },
+        "2025-02": {
+          "h": 0.83,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 83.33
+        },
+        "2025-03": {
+          "h": 11.73,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1280.0
+        },
+        "2025-04": {
+          "h": 5.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 621.67
+        },
+        "2025-05": {
+          "h": 5.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1240.83
+        },
+        "2025-06": {
+          "h": 6.38,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1155.0
+        },
+        "2025-07": {
+          "h": 10.78,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2429.17
+        },
+        "2025-08": {
+          "h": 0.27,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 59.17
+        },
+        "2025-09": {
+          "h": 1.72,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 498.33
+        },
+        "2025-10": {
+          "h": 2.63,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 621.67
+        },
+        "2025-11": {
+          "h": 5.33,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1256.67
+        },
+        "2025-12": {
+          "h": 5.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 685.0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 3.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 593.0
+        },
+        "2026-03": {
+          "h": 22.56,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 5020.0
+        },
+        "2026-04": {
+          "h": 0.83,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 124.5
+        },
+        "2026-05": {
+          "h": 8.38,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2083.0
+        },
+        "2026-06": {
+          "h": 10.94,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2504.5
+        },
+        "2026-07": {
+          "h": 8.72,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2125.0
+        },
+        "2026-08": {
+          "h": 8.53,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1861.5
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Blue pay",
+      "resp": "Gerson",
+      "ativo": true,
+      "n_inc": 3,
+      "inc": [
+        {
+          "cod": "4950",
+          "nm": "Defesa Trabalhista — Thiago Magalhaes dos Santos",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4952",
+          "nm": "Defesa Trabalhista — Helton Rodrigo Almeida Santos",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3790",
+          "nm": "Defesa Trabalhista — GL Promotora e Consultoria",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2025-03": {
+          "h": 6.62,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1661.67
+        },
+        "2025-04": {
+          "h": 3.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 856.67
+        },
+        "2025-05": {
+          "h": 11.2,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1625.83
+        },
+        "2025-06": {
+          "h": 5.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1093.33
+        },
+        "2025-07": {
+          "h": 3.88,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 791.67
+        },
+        "2025-08": {
+          "h": 11.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2376.67
+        },
+        "2025-09": {
+          "h": 2.6,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 632.5
+        },
+        "2025-10": {
+          "h": 7.65,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2187.5
+        },
+        "2025-11": {
+          "h": 2.33,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 700.0
+        },
+        "2025-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 0.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 150.0
+        },
+        "2026-03": {
+          "h": 0.67,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 157.0
+        },
+        "2026-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-05": {
+          "h": 1.24,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 310.0
+        },
+        "2026-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-08": {
+          "h": 4.51,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 451.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Sane",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 1,
+      "inc": [
+        {
+          "cod": "3761",
+          "nm": "Acompanhamento Processual — SANE",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {}
+    },
+    {
+      "cli": "Libel Kitchen",
+      "resp": "Bruno",
+      "ativo": false,
+      "n_inc": 3,
+      "inc": [
+        {
+          "cod": "3398",
+          "nm": "Libel Kitchen",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3419",
+          "nm": "Libel Kitchen",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3159",
+          "nm": "Libel Kitchen",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {}
+    },
+    {
+      "cli": "B Smart",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Corso Consórcios",
+      "resp": "Rodrigo",
+      "ativo": true,
+      "n_inc": 1,
+      "inc": [
+        {
+          "cod": "3837",
+          "nm": "Execução Fiscal Federal — União",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2025-06": {
+          "h": 9.13,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1896.67
+        },
+        "2025-07": {
+          "h": 3.48,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1182.5
+        },
+        "2025-08": {
+          "h": 3.45,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1055.0
+        },
+        "2025-09": {
+          "h": 4.72,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1438.33
+        },
+        "2025-10": {
+          "h": 4.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1566.67
+        },
+        "2025-11": {
+          "h": 3.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1850.0
+        },
+        "2025-12": {
+          "h": 1.82,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1090.0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 0.05,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 12.5
+        },
+        "2026-03": {
+          "h": 1.91,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 850.0
+        },
+        "2026-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        },
+        "2026-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        },
+        "2026-06": {
+          "h": 0.3,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 180.0
+        },
+        "2026-07": {
+          "h": 0.45,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 270.0
+        },
+        "2026-08": {
+          "h": 2.05,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 1230.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4052.5,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Assoc. Mercado Público",
+      "resp": "Bruno",
       "ativo": false,
       "n_inc": 0,
       "inc": [],
@@ -36841,7 +36579,7 @@ const D = {
       "pm": {}
     },
     {
-      "cli": "Mahalo",
+      "cli": "Sambô",
       "resp": "Gerson",
       "ativo": false,
       "n_inc": 0,
@@ -36849,245 +36587,180 @@ const D = {
       "pm": {}
     },
     {
-      "cli": "Gabriel Sgarbi",
-      "resp": "Equipe",
-      "ativo": true,
+      "cli": "V4 Colli (MT)",
+      "resp": "Gerson",
+      "ativo": false,
       "n_inc": 0,
       "inc": [],
       "pm": {}
     },
     {
-      "cli": "ELO MEDICINA PERIOPERATORIA LTDA",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2025-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2025-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2025-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2025-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Daricanela",
+      "cli": "Air Fluide",
       "resp": "Felipe",
       "ativo": true,
       "n_inc": 0,
       "inc": [],
       "pm": {
-        "2024-10": {
-          "h": 0.67,
+        "2024-02": {
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 200.0
+          "r": 2277.0,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 0
+        },
+        "2024-08": {
+          "h": 7.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 2653.33
+        },
+        "2024-09": {
+          "h": 11.67,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 3295.0
+        },
+        "2024-10": {
+          "h": 0.22,
+          "hp": 0,
+          "hi": 0,
+          "r": 2277.0,
+          "c": 58.33
         },
         "2024-11": {
-          "h": 2.7,
+          "h": 5.82,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 753.33
+          "r": 2277.0,
+          "c": 2558.33
         },
         "2024-12": {
-          "h": 0.42,
+          "h": 3.63,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 125.0
+          "r": 2277.0,
+          "c": 560.83
         },
         "2025-01": {
-          "h": 0,
+          "h": 2.2,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 0
+          "r": 2277.0,
+          "c": 485.0
         },
         "2025-02": {
-          "h": 1.22,
+          "h": 16.18,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 171.67
+          "r": 2277.0,
+          "c": 2784.17
         },
         "2025-03": {
-          "h": 5.43,
+          "h": 7.33,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 831.67
+          "r": 2277.0,
+          "c": 1427.5
         },
         "2025-04": {
-          "h": 3.43,
+          "h": 6.03,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 806.67
+          "r": 2277.0,
+          "c": 1429.17
         },
         "2025-05": {
-          "h": 4.45,
+          "h": 1.3,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 614.17
+          "r": 2277.0,
+          "c": 210.0
         },
         "2025-06": {
-          "h": 2.25,
+          "h": 5.17,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 675.0
+          "r": 2277.0,
+          "c": 1230.83
         },
         "2025-07": {
-          "h": 2.5,
+          "h": 5.42,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 453.33
+          "r": 2277.0,
+          "c": 1458.33
         },
         "2025-08": {
-          "h": 0.52,
+          "h": 6.17,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 155.0
+          "r": 2277.0,
+          "c": 1214.17
         },
         "2025-09": {
-          "h": 0.15,
+          "h": 4.92,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 17.5
+          "r": 2277.0,
+          "c": 966.67
         },
         "2025-10": {
-          "h": 0,
+          "h": 2.9,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 0
+          "r": 2277.0,
+          "c": 524.17
         },
         "2025-11": {
-          "h": 0,
+          "h": 2.73,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 0
+          "r": 2277.0,
+          "c": 590.83
         },
         "2025-12": {
-          "h": 1.1,
+          "h": 2.33,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 330.0
+          "r": 2277.0,
+          "c": 236.67
         },
         "2026-01": {
           "h": 0,
@@ -37097,155 +36770,1567 @@ const D = {
           "c": 0
         },
         "2026-02": {
-          "h": 0,
+          "h": 0.6,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
-          "c": 0
+          "c": 151.0
         },
         "2026-03": {
-          "h": 0,
+          "h": 8.36,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
-          "c": 0
+          "c": 2150.5
         },
         "2026-04": {
-          "h": 0,
+          "h": 6.83,
           "hp": 0,
           "hi": 0,
-          "r": 2431.5,
-          "c": 0
+          "r": 3242.0,
+          "c": 1564.5
         },
         "2026-05": {
-          "h": 0,
+          "h": 15.56,
           "hp": 0,
           "hi": 0,
-          "r": 2431.5,
-          "c": 0
+          "r": 3242.0,
+          "c": 5840.0
         },
         "2026-06": {
-          "h": 0,
+          "h": 4.04,
           "hp": 0,
           "hi": 0,
-          "r": 2431.5,
-          "c": 0
+          "r": 3242.0,
+          "c": 1119.5
         },
         "2026-07": {
-          "h": 0,
+          "h": 14.17,
           "hp": 0,
           "hi": 0,
-          "r": 2431.5,
-          "c": 0
+          "r": 3242.0,
+          "c": 3700.0
         },
         "2026-08": {
-          "h": 0,
+          "h": 4.78,
           "hp": 0,
           "hi": 0,
-          "r": 2431.5,
-          "c": 0
+          "r": 3242.0,
+          "c": 1145.5
         },
         "2026-09": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2431.5,
+          "r": 3242.0,
           "c": 0
         },
         "2026-10": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2431.5,
+          "r": 3242.0,
           "c": 0
         },
         "2026-11": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2431.5,
+          "r": 3242.0,
           "c": 0
         },
         "2026-12": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 2431.5,
+          "r": 3242.0,
           "c": 0
         }
       }
     },
     {
-      "cli": "Soveral Pires - Clinica Médica (Dr. Thael)",
-      "resp": "Carlos",
+      "cli": "V4 Alfradique",
+      "resp": "Gerson",
       "ativo": false,
       "n_inc": 0,
       "inc": [],
       "pm": {}
     },
     {
-      "cli": "Texian",
-      "resp": "Yago",
+      "cli": "Eduardo Corte Real",
+      "resp": "Rodrigo",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "BRAZAH",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "HBT (Hbt Empreendimentos)",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Leads For You",
+      "resp": "Gerson",
       "ativo": true,
-      "n_inc": 1,
+      "n_inc": 5,
       "inc": [
         {
-          "cod": "4919",
-          "nm": "Elaboração/Revisão Contrato — Rescisão Braskem",
-          "tp": "Projeto consultivo",
+          "cod": "4421",
+          "nm": "Ação Cível — Instagram",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4310",
+          "nm": "Cumprimento de Sentença — Paulo Henrique Martins Souza",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4680",
+          "nm": "Execução Fiscal — 1524400-20.2026.8.26.0090",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4681",
+          "nm": "Cobrança — 5001443-85.2025.8.24.0031",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4682",
+          "nm": "Cobrança — 4057597-73.2025.8.26.0100",
+          "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
         }
       ],
       "pm": {
-        "2026-02": {
-          "h": 193.24,
+        "2025-02": {
+          "h": 4.45,
           "hp": 0,
           "hi": 0,
           "r": 0,
-          "c": 38130.5
+          "c": 382.5
+        },
+        "2025-03": {
+          "h": 0.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 13.33
+        },
+        "2025-04": {
+          "h": 4.97,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1256.67
+        },
+        "2025-05": {
+          "h": 34.62,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 9992.5
+        },
+        "2025-06": {
+          "h": 0.88,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 195.0
+        },
+        "2025-07": {
+          "h": 0.83,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 208.33
+        },
+        "2025-08": {
+          "h": 11.05,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2095.0
+        },
+        "2025-09": {
+          "h": 0.47,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 85.83
+        },
+        "2025-10": {
+          "h": 4.0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1007.5
+        },
+        "2025-11": {
+          "h": 7.98,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1435.83
+        },
+        "2025-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 2.03,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 286.0
         },
         "2026-03": {
-          "h": 272.71,
+          "h": 2.09,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 60036.0
+          "r": 3242.0,
+          "c": 522.5
         },
         "2026-04": {
-          "h": 330.13,
+          "h": 10.33,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 44843.0
+          "r": 3242.0,
+          "c": 2597.5
         },
         "2026-05": {
-          "h": 361.32,
+          "h": 11.11,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 38568.0
+          "r": 3242.0,
+          "c": 2649.5
         },
         "2026-06": {
-          "h": 451.63,
+          "h": 14.59,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 54836.0
+          "r": 3242.0,
+          "c": 3647.5
         },
         "2026-07": {
-          "h": 402.0,
+          "h": 5.21,
           "hp": 0,
           "hi": 0,
-          "r": 0,
-          "c": 82040.0
+          "r": 3242.0,
+          "c": 1216.5
         },
         "2026-08": {
-          "h": 197.37,
+          "h": 4.99,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1070.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Master RS",
+      "resp": "Bruno",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Bequest Academy",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Penseira (PR1 MEDICINA E TECNOLOGIA LTDA.)",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Baseworks.ai",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Skeps",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "JAVL+RC32 Participações",
+      "resp": "Rodrigo",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-12": {
+          "h": 3.63,
           "hp": 0,
           "hi": 0,
           "r": 0,
-          "c": 44218.5
+          "c": 545.0
+        },
+        "2025-01": {
+          "h": 1.7,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 255.0
+        },
+        "2025-02": {
+          "h": 3.03,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 1145.0
+        },
+        "2025-03": {
+          "h": 12.7,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 2850.0
+        },
+        "2025-04": {
+          "h": 22.38,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 6312.5
+        },
+        "2025-05": {
+          "h": 19.83,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 3841.67
+        },
+        "2025-06": {
+          "h": 23.15,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 4328.33
+        },
+        "2025-07": {
+          "h": 54.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 13169.17
+        },
+        "2025-08": {
+          "h": 23.95,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 3374.17
+        },
+        "2025-09": {
+          "h": 76.67,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 20284.17
+        },
+        "2025-10": {
+          "h": 8.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 5112.5
+        },
+        "2025-11": {
+          "h": 4.55,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 1375.0
+        },
+        "2025-12": {
+          "h": 13.87,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 2287.5
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 4.32,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 1269.0
+        },
+        "2026-03": {
+          "h": 0.59,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 88.5
+        },
+        "2026-04": {
+          "h": 1.3,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 780.0
+        },
+        "2026-05": {
+          "h": 3.12,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 768.0
+        },
+        "2026-06": {
+          "h": 2.3,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 1380.0
+        },
+        "2026-07": {
+          "h": 5.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 814.5
+        },
+        "2026-08": {
+          "h": 16.03,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 4384.5
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "LBF (Engenharia e Servicos)",
+      "resp": "Rodrigo",
+      "ativo": true,
+      "n_inc": 3,
+      "inc": [
+        {
+          "cod": "4882",
+          "nm": "Tutela Cautelar Antecedente — R&G Sistemas de Segurança",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4446",
+          "nm": "Defesa Cível — Maria Elisabete Borba",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3641",
+          "nm": "Defesa Consumidor — Luana Menezes",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2024-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2024-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 0.33,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 200.0
+        },
+        "2024-08": {
+          "h": 3.47,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2080.0
+        },
+        "2024-09": {
+          "h": 0.57,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 340.0
+        },
+        "2024-10": {
+          "h": 1.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 950.0
+        },
+        "2024-11": {
+          "h": 1.83,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1100.0
+        },
+        "2024-12": {
+          "h": 6.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1380.83
+        },
+        "2025-01": {
+          "h": 0.03,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 8.33
+        },
+        "2025-02": {
+          "h": 1.27,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 760.0
+        },
+        "2025-03": {
+          "h": 0.03,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 8.33
+        },
+        "2025-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2025-05": {
+          "h": 0.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 50.0
+        },
+        "2025-06": {
+          "h": 0.83,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 387.5
+        },
+        "2025-07": {
+          "h": 15.65,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 3901.67
+        },
+        "2025-08": {
+          "h": 4.22,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 713.33
+        },
+        "2025-09": {
+          "h": 2.32,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 742.5
+        },
+        "2025-10": {
+          "h": 3.57,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1865.0
+        },
+        "2025-11": {
+          "h": 0.17,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 100.0
+        },
+        "2025-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 1.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 858.0
+        },
+        "2026-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-04": {
+          "h": 6.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2082.5
+        },
+        "2026-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-06": {
+          "h": 0.3,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 180.0
+        },
+        "2026-07": {
+          "h": 0.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 540.0
+        },
+        "2026-08": {
+          "h": 1.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 720.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "V4 Luna (Sinop MT)",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Incell",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Frass Incorporadora",
+      "resp": "Rodrigo",
+      "ativo": true,
+      "n_inc": 1,
+      "inc": [
+        {
+          "cod": "3477",
+          "nm": "Extinção de Lançamento Tributário — Município",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2024-11": {
+          "h": 10.67,
+          "hp": 0,
+          "hi": 0,
+          "r": 2800.0,
+          "c": 6067.5
+        },
+        "2024-12": {
+          "h": 0.23,
+          "hp": 0,
+          "hi": 0,
+          "r": 2800.0,
+          "c": 58.33
+        },
+        "2025-01": {
+          "h": 0.98,
+          "hp": 0,
+          "hi": 0,
+          "r": 2800.0,
+          "c": 590.0
+        },
+        "2025-02": {
+          "h": 9.22,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 2546.67
+        },
+        "2025-03": {
+          "h": 15.25,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 3975.83
+        },
+        "2025-04": {
+          "h": 3.32,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 1067.5
+        },
+        "2025-05": {
+          "h": 18.57,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 4975.83
+        },
+        "2025-06": {
+          "h": 8.85,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 1930.0
+        },
+        "2025-07": {
+          "h": 8.33,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 2302.5
+        },
+        "2025-08": {
+          "h": 7.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 1707.5
+        },
+        "2025-09": {
+          "h": 14.85,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 4184.17
+        },
+        "2025-10": {
+          "h": 4.57,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 1590.0
+        },
+        "2025-11": {
+          "h": 7.85,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 2673.33
+        },
+        "2025-12": {
+          "h": 16.75,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 5353.33
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 3.68,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 1135.5
+        },
+        "2026-03": {
+          "h": 8.94,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 2431.0
+        },
+        "2026-04": {
+          "h": 5.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 2447.5
+        },
+        "2026-05": {
+          "h": 0.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 337.5
+        },
+        "2026-06": {
+          "h": 8.33,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 3755.0
+        },
+        "2026-07": {
+          "h": 2.81,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 1465.5
+        },
+        "2026-08": {
+          "h": 0.6,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 360.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 2500.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Bertuzzi",
+      "resp": "Felipe",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Sideraço",
+      "resp": "Bruno",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Kruger construtora/incorporadora",
+      "resp": "Rodrigo",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-07": {
+          "h": 0.2,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 20.0
+        },
+        "2024-08": {
+          "h": 5.82,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 665.0
+        },
+        "2024-09": {
+          "h": 0.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 241.67
+        },
+        "2024-10": {
+          "h": 4.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 2660.0
+        },
+        "2024-11": {
+          "h": 3.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 1708.33
+        },
+        "2025-01": {
+          "h": 0.62,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 61.67
+        },
+        "2025-02": {
+          "h": 1.82,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 306.67
+        },
+        "2025-03": {
+          "h": 3.07,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 994.17
+        },
+        "2025-04": {
+          "h": 2.15,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 688.33
+        },
+        "2025-05": {
+          "h": 10.97,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 4585.0
+        },
+        "2025-06": {
+          "h": 0.8,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 345.83
+        },
+        "2025-07": {
+          "h": 14.88,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2496.67
+        },
+        "2025-08": {
+          "h": 16.32,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 3520.0
+        },
+        "2025-09": {
+          "h": 14.15,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 3815.0
+        },
+        "2025-10": {
+          "h": 5.37,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1306.67
+        },
+        "2025-11": {
+          "h": 19.1,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 6925.0
+        },
+        "2025-12": {
+          "h": 3.83,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1281.67
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 1.53,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 539.5
+        },
+        "2026-03": {
+          "h": 2.95,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1630.0
+        },
+        "2026-04": {
+          "h": 2.64,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 905.0
+        },
+        "2026-05": {
+          "h": 11.96,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 5930.0
+        },
+        "2026-06": {
+          "h": 1.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 900.0
+        },
+        "2026-07": {
+          "h": 0.6,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 360.0
+        },
+        "2026-08": {
+          "h": 0.15,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 90.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Randoncorp",
+      "resp": "Gerson",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Banca do Holandês",
+      "resp": "Bruno",
+      "ativo": true,
+      "n_inc": 4,
+      "inc": [
+        {
+          "cod": "4951",
+          "nm": "Defesa Trabalhista — Glaucia Xavier Oliveira",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4423",
+          "nm": "Defesa Trabalhista — Maria Eduarda Bueno Lima",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4397",
+          "nm": "Defesa Trabalhista — Christian Giovanni Fraga Fernandes",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4342",
+          "nm": "Defesa Trabalhista — Jose Lucas Santos dos Santos",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2024-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 0
+        },
+        "2024-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 1.6,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 960.0
+        },
+        "2024-08": {
+          "h": 9.32,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 3084.17
+        },
+        "2024-09": {
+          "h": 2.7,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 480.83
+        },
+        "2024-10": {
+          "h": 8.82,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 1701.67
+        },
+        "2024-11": {
+          "h": 9.83,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 891.67
+        },
+        "2024-12": {
+          "h": 3.98,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 1006.67
+        },
+        "2025-01": {
+          "h": 6.62,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 903.33
+        },
+        "2025-02": {
+          "h": 4.47,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 537.5
+        },
+        "2025-03": {
+          "h": 9.07,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 1201.67
+        },
+        "2025-04": {
+          "h": 6.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 1056.67
+        },
+        "2025-05": {
+          "h": 14.62,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 2020.0
+        },
+        "2025-06": {
+          "h": 15.45,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 2373.33
+        },
+        "2025-07": {
+          "h": 14.87,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 2280.83
+        },
+        "2025-08": {
+          "h": 2.78,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 377.5
+        },
+        "2025-09": {
+          "h": 2.82,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 462.5
+        },
+        "2025-10": {
+          "h": 3.35,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 433.33
+        },
+        "2025-11": {
+          "h": 2.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 318.33
+        },
+        "2025-12": {
+          "h": 5.15,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 1007.5
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 4.91,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 496.0
+        },
+        "2026-03": {
+          "h": 1.72,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 131.0
+        },
+        "2026-04": {
+          "h": 8.36,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 556.0
+        },
+        "2026-05": {
+          "h": 11.84,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 2646.0
+        },
+        "2026-06": {
+          "h": 1.25,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 138.5
+        },
+        "2026-07": {
+          "h": 6.38,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 612.5
+        },
+        "2026-08": {
+          "h": 2.26,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 204.5
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 5673.5,
+          "c": 0
         }
       }
     },
@@ -37407,60 +38492,8 @@ const D = {
       }
     },
     {
-      "cli": "Laçador de Ofertas",
-      "resp": "Felipe",
-      "ativo": false,
-      "n_inc": 5,
-      "inc": [
-        {
-          "cod": "3538",
-          "nm": "Defesa Tributária — Procedimento Administrativo",
-          "tp": "Avulso consultivo",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2821",
-          "nm": "Laçador de Ofertas",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2823",
-          "nm": "Laçador de Ofertas",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2832",
-          "nm": "Laçador de Ofertas",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2833",
-          "nm": "Laçador de Ofertas",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {}
-    },
-    {
-      "cli": "Hug Engenharia",
+      "cli": "the 4am culture",
       "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Family Office",
-      "resp": "Felipe",
       "ativo": true,
       "n_inc": 0,
       "inc": [],
@@ -37469,468 +38502,1025 @@ const D = {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
+          "r": 2277.0,
           "c": 0
         },
         "2024-02": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
+          "r": 2277.0,
           "c": 0
         },
         "2024-03": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
+          "r": 2277.0,
           "c": 0
         },
         "2024-04": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
+          "r": 2277.0,
           "c": 0
         },
         "2024-05": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
+          "r": 2277.0,
           "c": 0
         },
         "2024-06": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
+          "r": 2277.0,
           "c": 0
         },
         "2024-07": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
+          "r": 2277.0,
           "c": 0
         },
         "2024-08": {
-          "h": 0.5,
+          "h": 8.6,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
-          "c": 150.0
+          "r": 2277.0,
+          "c": 1217.5
         },
         "2024-09": {
-          "h": 2.45,
+          "h": 0.98,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
-          "c": 735.0
+          "r": 2277.0,
+          "c": 147.5
         },
         "2024-10": {
-          "h": 0.4,
+          "h": 5.55,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
-          "c": 120.0
+          "r": 2277.0,
+          "c": 1143.33
         },
         "2024-11": {
-          "h": 5.38,
+          "h": 12.58,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
-          "c": 1615.0
+          "r": 2277.0,
+          "c": 1395.83
         },
         "2024-12": {
-          "h": 1.38,
+          "h": 6.02,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
-          "c": 415.0
+          "r": 2277.0,
+          "c": 695.0
         },
         "2025-01": {
-          "h": 14.37,
+          "h": 14.58,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
-          "c": 2386.67
+          "r": 2277.0,
+          "c": 1513.33
         },
         "2025-02": {
-          "h": 0.17,
+          "h": 4.18,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
-          "c": 16.67
+          "r": 2277.0,
+          "c": 460.83
         },
         "2025-03": {
-          "h": 0,
+          "h": 8.88,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
-          "c": 0
+          "r": 4863.0,
+          "c": 1105.0
         },
         "2025-04": {
+          "h": 6.48,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 754.17
+        },
+        "2025-05": {
+          "h": 4.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 835.83
+        },
+        "2025-06": {
+          "h": 5.13,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 796.67
+        },
+        "2025-07": {
+          "h": 8.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 2016.67
+        },
+        "2025-08": {
+          "h": 9.77,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 2499.17
+        },
+        "2025-09": {
+          "h": 9.97,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 2596.67
+        },
+        "2025-10": {
           "h": 4.43,
           "hp": 0,
           "hi": 0,
-          "r": 3036.0,
-          "c": 620.0
-        },
-        "2025-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3036.0,
-          "c": 0
-        },
-        "2025-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2025-07": {
-          "h": 0.33,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 100.0
-        },
-        "2025-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2025-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 0
-        },
-        "2025-10": {
-          "h": 0.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 55.0
+          "r": 4863.0,
+          "c": 630.0
         },
         "2025-11": {
-          "h": 0,
+          "h": 7.78,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 0
+          "r": 4863.0,
+          "c": 1472.5
         },
         "2025-12": {
-          "h": 2.87,
+          "h": 1.9,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 286.67
+          "r": 4863.0,
+          "c": 506.67
         },
         "2026-01": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 4863.0,
           "c": 0
         },
         "2026-02": {
-          "h": 0,
+          "h": 2.7,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 0
+          "r": 4863.0,
+          "c": 675.0
         },
         "2026-03": {
+          "h": 6.45,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 1519.0
+        },
+        "2026-04": {
+          "h": 17.33,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 3853.0
+        },
+        "2026-05": {
+          "h": 16.42,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 3995.0
+        },
+        "2026-06": {
+          "h": 23.09,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 5645.0
+        },
+        "2026-07": {
+          "h": 5.74,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 1426.0
+        },
+        "2026-08": {
+          "h": 1.78,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 398.5
+        },
+        "2026-09": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 4863.0,
           "c": 0
         },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4863.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Krystal Incorporadora",
+      "resp": "Rodrigo",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-10": {
+          "h": 14.57,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 8740.0
+        },
+        "2024-11": {
+          "h": 10.62,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 5871.67
+        },
+        "2024-12": {
+          "h": 9.88,
+          "hp": 0,
+          "hi": 0,
+          "r": 4236.0,
+          "c": 4606.67
+        },
+        "2025-01": {
+          "h": 20.65,
+          "hp": 0,
+          "hi": 0,
+          "r": 4236.0,
+          "c": 9150.0
+        },
+        "2025-02": {
+          "h": 13.32,
+          "hp": 0,
+          "hi": 0,
+          "r": 4236.0,
+          "c": 6229.17
+        },
+        "2025-03": {
+          "h": 31.78,
+          "hp": 0,
+          "hi": 0,
+          "r": 4236.0,
+          "c": 10300.0
+        },
+        "2025-04": {
+          "h": 50.25,
+          "hp": 0,
+          "hi": 0,
+          "r": 4236.0,
+          "c": 16412.5
+        },
+        "2025-05": {
+          "h": 21.97,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 7100.0
+        },
+        "2025-06": {
+          "h": 33.62,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 8235.83
+        },
+        "2025-07": {
+          "h": 26.77,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 6427.5
+        },
+        "2025-08": {
+          "h": 37.83,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 9479.17
+        },
+        "2025-09": {
+          "h": 45.22,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 16351.67
+        },
+        "2025-10": {
+          "h": 37.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 13329.17
+        },
+        "2025-11": {
+          "h": 35.27,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 8765.83
+        },
+        "2025-12": {
+          "h": 22.28,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 7395.0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 11.25,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 2172.5
+        },
+        "2026-03": {
+          "h": 23.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 6005.5
+        },
+        "2026-04": {
+          "h": 25.17,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 9384.0
+        },
+        "2026-05": {
+          "h": 46.8,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 18686.0
+        },
+        "2026-06": {
+          "h": 31.76,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 9991.0
+        },
+        "2026-07": {
+          "h": 20.92,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 6022.5
+        },
+        "2026-08": {
+          "h": 34.63,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 11029.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 6484.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Posto Essen",
+      "resp": "Bruno",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Modale",
+      "resp": "Gerson",
+      "ativo": true,
+      "n_inc": 3,
+      "inc": [
+        {
+          "cod": "4324",
+          "nm": "Vesting — Planejamento Societário",
+          "tp": "Projeto consultivo",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4094",
+          "nm": "Defesa Trabalhista — Gleice Pereira Fernandes",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4133",
+          "nm": "Tributário ebook",
+          "tp": "Projeto consultivo",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2024-08": {
+          "h": 1.48,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 720.83
+        },
+        "2024-09": {
+          "h": 10.07,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 2337.5
+        },
+        "2024-10": {
+          "h": 7.62,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1812.5
+        },
+        "2024-11": {
+          "h": 19.32,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 9265.83
+        },
+        "2024-12": {
+          "h": 4.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 947.5
+        },
+        "2025-01": {
+          "h": 5.55,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1280.83
+        },
+        "2025-02": {
+          "h": 7.78,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1477.5
+        },
+        "2025-03": {
+          "h": 7.23,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 961.67
+        },
+        "2025-04": {
+          "h": 9.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1446.67
+        },
+        "2025-05": {
+          "h": 10.05,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 2090.83
+        },
+        "2025-06": {
+          "h": 10.27,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1847.5
+        },
+        "2025-07": {
+          "h": 3.9,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 705.0
+        },
+        "2025-08": {
+          "h": 8.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 2224.17
+        },
+        "2025-09": {
+          "h": 13.77,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 2522.5
+        },
+        "2025-10": {
+          "h": 8.2,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1320.83
+        },
+        "2025-11": {
+          "h": 4.48,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 536.67
+        },
+        "2025-12": {
+          "h": 3.68,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 571.67
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 5.45,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1235.0
+        },
+        "2026-03": {
+          "h": 2.29,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 374.0
+        },
+        "2026-04": {
+          "h": 13.76,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 3164.0
+        },
+        "2026-05": {
+          "h": 4.82,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 743.0
+        },
+        "2026-06": {
+          "h": 2.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 277.0
+        },
+        "2026-07": {
+          "h": 4.65,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 969.0
+        },
+        "2026-08": {
+          "h": 5.55,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 1035.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 8105.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "\"Carol Bolina Industria\n\"",
+      "resp": "Gerson",
+      "ativo": true,
+      "n_inc": 1,
+      "inc": [
+        {
+          "cod": "4567",
+          "nm": "Procedimentos Administrativos — MPT4",
+          "tp": "Avulso consultivo",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2025-09": {
+          "h": 3.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 276.67
+        },
+        "2025-10": {
+          "h": 4.73,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 324.17
+        },
+        "2025-11": {
+          "h": 10.82,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1390.83
+        },
+        "2025-12": {
+          "h": 9.0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2227.5
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 2.39,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 581.0
+        },
+        "2026-03": {
+          "h": 2.73,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 300.0
+        },
+        "2026-04": {
+          "h": 4.65,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 409.5
+        },
+        "2026-05": {
+          "h": 7.89,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2058.0
+        },
+        "2026-06": {
+          "h": 7.68,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2017.0
+        },
+        "2026-07": {
+          "h": 1.64,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 351.5
+        },
+        "2026-08": {
+          "h": 1.64,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 96.5
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Fly 51",
+      "resp": "Rodrigo",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
         "2026-04": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 6500.0,
           "c": 0
         },
         "2026-05": {
-          "h": 0.77,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 167.0
+          "r": 6500.0,
+          "c": 0
         },
         "2026-06": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 6500.0,
           "c": 0
         },
         "2026-07": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 6500.0,
           "c": 0
         },
         "2026-08": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 6500.0,
           "c": 0
         },
         "2026-09": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 6500.0,
           "c": 0
         },
         "2026-10": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 6500.0,
           "c": 0
         },
         "2026-11": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 6500.0,
           "c": 0
         },
         "2026-12": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 6500.0,
           "c": 0
         }
       }
     },
     {
-      "cli": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
+      "cli": "Vitta",
       "resp": "Gerson",
       "ativo": false,
-      "n_inc": 18,
-      "inc": [
-        {
-          "cod": "3546",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3548",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3483",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3484",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3382",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3411",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3418",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3287",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3288",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3208",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3047",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3029",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2942",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2943",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2944",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2893",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2894",
-          "nm": "Defesa Judicial — EDUARDO MARINHO SANT ANNA MACHADO",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "2816",
-          "nm": "Grupo Noma (NOMA SUSHI RESTAURANTE JURERE LTDA)",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
+      "n_inc": 0,
+      "inc": [],
       "pm": {}
     },
     {
-      "cli": "Produtora Ara",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 2,
-      "inc": [
-        {
-          "cod": "4879",
-          "nm": "Planejamento Tributário — Estrutura Tributária",
-          "tp": "Projeto consultivo",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4880",
-          "nm": "Planejamento Trabalhista — Planejamento Trabalhista",
-          "tp": "Projeto consultivo",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
+      "cli": "Soma Auto Posto",
+      "resp": "Felipe",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
       "pm": {}
     },
     {
-      "cli": "\"Rede Mais Saude (JOSEANE DOS SANTOS PENHA LTDA)\n\"",
+      "cli": "Casa de Alessa",
       "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Fabio Haag Type",
+      "resp": "Felipe",
       "ativo": true,
       "n_inc": 0,
       "inc": [],
       "pm": {
+        "2025-06": {
+          "h": 0.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 21.67
+        },
+        "2025-07": {
+          "h": 10.22,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 1448.33
+        },
+        "2025-08": {
+          "h": 3.82,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 544.17
+        },
+        "2025-09": {
+          "h": 3.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 343.33
+        },
+        "2025-10": {
+          "h": 4.1,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 615.0
+        },
+        "2025-11": {
+          "h": 2.75,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 275.0
+        },
+        "2025-12": {
+          "h": 6.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 898.33
+        },
+        "2026-02": {
+          "h": 2.29,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 629.0
+        },
+        "2026-03": {
+          "h": 4.66,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 862.0
+        },
+        "2026-05": {
+          "h": 0.51,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 76.5
+        },
+        "2026-06": {
+          "h": 1.69,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 253.5
+        },
         "2026-07": {
-          "h": 0,
+          "h": 11.06,
           "hp": 0,
           "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 6484.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 9726.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 12968.0,
-          "c": 0
+          "r": 0,
+          "c": 2749.0
         }
       }
     },
     {
-      "cli": "Spectrun",
+      "cli": "the news",
       "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Mint",
+      "resp": "Rodrigo",
       "ativo": true,
       "n_inc": 0,
       "inc": [],
@@ -37939,471 +39529,252 @@ const D = {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
+          "r": 3242.0,
           "c": 0
         },
         "2024-02": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
+          "r": 3242.0,
           "c": 0
         },
         "2024-03": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
+          "r": 3242.0,
           "c": 0
         },
         "2024-04": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
+          "r": 3242.0,
           "c": 0
         },
         "2024-05": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
+          "r": 3242.0,
           "c": 0
         },
         "2024-06": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
+          "r": 3242.0,
           "c": 0
         },
         "2024-07": {
-          "h": 1.98,
+          "h": 0.47,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
-          "c": 198.33
+          "r": 3242.0,
+          "c": 280.0
         },
         "2024-08": {
-          "h": 16.75,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
-          "c": 3159.17
+          "r": 3242.0,
+          "c": 0
         },
         "2024-09": {
-          "h": 8.85,
+          "h": 2.57,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
-          "c": 2900.83
+          "r": 3242.0,
+          "c": 1173.33
         },
         "2024-10": {
-          "h": 10.18,
+          "h": 4.63,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
-          "c": 1544.17
+          "r": 3242.0,
+          "c": 2780.0
         },
         "2024-11": {
-          "h": 8.53,
+          "h": 24.95,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
-          "c": 895.83
+          "r": 3242.0,
+          "c": 11820.0
         },
         "2024-12": {
-          "h": 3.95,
+          "h": 2.68,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
-          "c": 397.5
+          "r": 3242.0,
+          "c": 904.17
         },
         "2025-01": {
-          "h": 18.03,
+          "h": 4.97,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
-          "c": 2820.83
+          "r": 3242.0,
+          "c": 2892.5
         },
         "2025-02": {
-          "h": 16.7,
+          "h": 0.68,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
-          "c": 2613.33
+          "r": 3242.0,
+          "c": 68.33
         },
         "2025-03": {
-          "h": 11.32,
+          "h": 2.02,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
-          "c": 1299.17
+          "r": 3242.0,
+          "c": 1126.67
         },
         "2025-04": {
-          "h": 19.33,
+          "h": 5.42,
           "hp": 0,
           "hi": 0,
-          "r": 6072.0,
-          "c": 4758.33
+          "r": 3242.0,
+          "c": 1838.33
         },
         "2025-05": {
-          "h": 26.17,
+          "h": 7.38,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 6670.83
+          "r": 3242.0,
+          "c": 2816.67
         },
         "2025-06": {
-          "h": 7.3,
+          "h": 9.22,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1669.17
+          "r": 3242.0,
+          "c": 1613.33
         },
         "2025-07": {
-          "h": 5.23,
+          "h": 3.92,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1125.83
+          "r": 3242.0,
+          "c": 1714.17
         },
         "2025-08": {
-          "h": 11.4,
+          "h": 4.38,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1880.83
+          "r": 3242.0,
+          "c": 1289.17
         },
         "2025-09": {
-          "h": 9.27,
+          "h": 3.18,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1381.67
+          "r": 3242.0,
+          "c": 878.33
         },
         "2025-10": {
-          "h": 9.82,
+          "h": 1.4,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 2188.33
+          "r": 3242.0,
+          "c": 730.0
         },
         "2025-11": {
-          "h": 5.05,
+          "h": 7.03,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1515.0
+          "r": 3242.0,
+          "c": 3815.0
         },
         "2025-12": {
-          "h": 3.58,
+          "h": 2.48,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 891.67
+          "r": 3242.0,
+          "c": 1135.0
         },
         "2026-01": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3242.0,
           "c": 0
         },
         "2026-02": {
-          "h": 6.77,
+          "h": 0.93,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1717.0
+          "r": 3242.0,
+          "c": 282.0
         },
         "2026-03": {
-          "h": 13.68,
+          "h": 17.48,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 2388.0
+          "r": 3242.0,
+          "c": 4970.5
         },
         "2026-04": {
-          "h": 15.97,
+          "h": 10.15,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 3019.0
+          "r": 3242.0,
+          "c": 3167.5
         },
         "2026-05": {
-          "h": 12.26,
+          "h": 1.47,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 2686.0
+          "r": 3242.0,
+          "c": 542.5
         },
         "2026-06": {
-          "h": 15.36,
+          "h": 1.78,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 3102.0
+          "r": 3242.0,
+          "c": 1068.0
         },
         "2026-07": {
-          "h": 8.64,
+          "h": 0.65,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1605.5
+          "r": 3242.0,
+          "c": 390.0
         },
         "2026-08": {
-          "h": 7.31,
+          "h": 2.02,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1696.0
+          "r": 3242.0,
+          "c": 1012.5
         },
         "2026-09": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3242.0,
           "c": 0
         },
         "2026-10": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3242.0,
           "c": 0
         },
         "2026-11": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3242.0,
           "c": 0
         },
         "2026-12": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Ouvrage Medição e Saneamento",
-      "resp": "Felipe",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {
-        "2024-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 0
-        },
-        "2024-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 0
-        },
-        "2024-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 0
-        },
-        "2024-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 0
-        },
-        "2024-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 0
-        },
-        "2024-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 0
-        },
-        "2025-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2025-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2025-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2025-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2025-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2025-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2025-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2025-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2025-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2025-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2025-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2025-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2026-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2026-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2026-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2026-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2026-07": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2026-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2431.5,
+          "r": 3242.0,
           "c": 0
         }
       }
@@ -38670,663 +40041,204 @@ const D = {
       }
     },
     {
-      "cli": "Frass Incorporadora",
-      "resp": "Rodrigo",
+      "cli": "\"Acti Offices (ACTI - COMERCIO, SERVICOS E INDUSTRIA DE ROUPAS LTDA)\"",
+      "resp": "Gerson",
       "ativo": true,
-      "n_inc": 1,
-      "inc": [
-        {
-          "cod": "3477",
-          "nm": "Extinção de Lançamento Tributário — Município",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
+      "n_inc": 0,
+      "inc": [],
       "pm": {
+        "2024-10": {
+          "h": 2.23,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 275.0
+        },
         "2024-11": {
-          "h": 10.67,
+          "h": 0.3,
           "hp": 0,
           "hi": 0,
-          "r": 2800.0,
-          "c": 6067.5
-        },
-        "2024-12": {
-          "h": 0.23,
-          "hp": 0,
-          "hi": 0,
-          "r": 2800.0,
-          "c": 58.33
-        },
-        "2025-01": {
-          "h": 0.98,
-          "hp": 0,
-          "hi": 0,
-          "r": 2800.0,
-          "c": 590.0
+          "r": 0,
+          "c": 30.0
         },
         "2025-02": {
-          "h": 9.22,
+          "h": 0.25,
           "hp": 0,
           "hi": 0,
-          "r": 2500.0,
-          "c": 2546.67
+          "r": 0,
+          "c": 62.5
         },
         "2025-03": {
-          "h": 15.25,
+          "h": 1.17,
           "hp": 0,
           "hi": 0,
-          "r": 2500.0,
-          "c": 3975.83
+          "r": 0,
+          "c": 154.17
         },
         "2025-04": {
-          "h": 3.32,
+          "h": 0.93,
           "hp": 0,
           "hi": 0,
-          "r": 2500.0,
-          "c": 1067.5
+          "r": 0,
+          "c": 150.0
         },
         "2025-05": {
-          "h": 18.57,
+          "h": 1.25,
           "hp": 0,
           "hi": 0,
-          "r": 2500.0,
-          "c": 4975.83
+          "r": 0,
+          "c": 102.5
         },
         "2025-06": {
-          "h": 8.85,
+          "h": 2.37,
           "hp": 0,
           "hi": 0,
-          "r": 2500.0,
-          "c": 1930.0
+          "r": 0,
+          "c": 355.0
         },
         "2025-07": {
-          "h": 8.33,
+          "h": 4.52,
           "hp": 0,
           "hi": 0,
-          "r": 2500.0,
-          "c": 2302.5
-        },
-        "2025-08": {
-          "h": 7.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 1707.5
+          "r": 0,
+          "c": 561.67
         },
         "2025-09": {
-          "h": 14.85,
+          "h": 3.1,
           "hp": 0,
           "hi": 0,
-          "r": 2500.0,
-          "c": 4184.17
-        },
-        "2025-10": {
-          "h": 4.57,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 1590.0
+          "r": 0,
+          "c": 785.0
         },
         "2025-11": {
-          "h": 7.85,
+          "h": 0.65,
           "hp": 0,
           "hi": 0,
-          "r": 2500.0,
-          "c": 2673.33
+          "r": 0,
+          "c": 140.0
         },
         "2025-12": {
-          "h": 16.75,
+          "h": 1.32,
           "hp": 0,
           "hi": 0,
-          "r": 2500.0,
-          "c": 5353.33
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 0
+          "r": 0,
+          "c": 231.67
         },
         "2026-02": {
-          "h": 3.68,
+          "h": 6.51,
           "hp": 0,
           "hi": 0,
-          "r": 2500.0,
-          "c": 1135.5
+          "r": 0,
+          "c": 651.0
         },
         "2026-03": {
-          "h": 8.94,
+          "h": 0.71,
           "hp": 0,
           "hi": 0,
-          "r": 2500.0,
-          "c": 2431.0
+          "r": 0,
+          "c": 71.0
         },
         "2026-04": {
-          "h": 5.9,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 2447.5
-        },
-        "2026-05": {
-          "h": 0.9,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 337.5
-        },
-        "2026-06": {
-          "h": 8.33,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 3755.0
-        },
-        "2026-07": {
-          "h": 2.81,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 1465.5
-        },
-        "2026-08": {
           "h": 0.6,
           "hp": 0,
           "hi": 0,
-          "r": 2500.0,
-          "c": 360.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 2500.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Sambô",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Prime Clínica",
-      "resp": "Rodrigo",
-      "ativo": true,
-      "n_inc": 2,
-      "inc": [
-        {
-          "cod": "4064",
-          "nm": "Cobrança ISSQN — Município de Novo Hamburgo",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4065",
-          "nm": "Cobrança ISSQN — Município de Gravataí",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        }
-      ],
-      "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 6.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 1025.0
-        },
-        "2024-08": {
-          "h": 6.85,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 962.5
-        },
-        "2024-09": {
-          "h": 3.4,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 1072.5
-        },
-        "2024-10": {
-          "h": 1.77,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 441.67
-        },
-        "2024-11": {
-          "h": 4.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 1037.5
-        },
-        "2024-12": {
-          "h": 0.53,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 133.33
-        },
-        "2025-01": {
-          "h": 0.98,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 178.33
-        },
-        "2025-02": {
-          "h": 1.65,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 172.5
-        },
-        "2025-03": {
-          "h": 1.47,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 171.67
-        },
-        "2025-04": {
-          "h": 4.38,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 1740.0
-        },
-        "2025-05": {
-          "h": 4.85,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 647.5
-        },
-        "2025-06": {
-          "h": 13.62,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 2725.0
-        },
-        "2025-07": {
-          "h": 3.95,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 617.5
-        },
-        "2025-08": {
-          "h": 4.07,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 460.83
-        },
-        "2025-09": {
-          "h": 7.52,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 881.67
-        },
-        "2025-10": {
-          "h": 3.68,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 1026.67
-        },
-        "2025-11": {
-          "h": 18.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 5523.33
-        },
-        "2025-12": {
-          "h": 8.17,
-          "hp": 0,
-          "hi": 0,
-          "r": 1518.0,
-          "c": 2113.33
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 0.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 37.5
-        },
-        "2026-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-04": {
-          "h": 0.1,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
+          "r": 0,
           "c": 60.0
         },
         "2026-05": {
-          "h": 4.9,
+          "h": 6.53,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 1470.0
+          "r": 0,
+          "c": 1478.0
         },
         "2026-06": {
-          "h": 8.07,
+          "h": 2.09,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 2017.5
+          "r": 0,
+          "c": 438.5
         },
         "2026-07": {
-          "h": 0.41,
+          "h": 3.93,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 172.5
+          "r": 0,
+          "c": 543.0
         },
         "2026-08": {
-          "h": 6.77,
+          "h": 5.15,
           "hp": 0,
           "hi": 0,
-          "r": 3242.0,
-          "c": 1407.5
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
+          "r": 0,
+          "c": 515.0
         }
       }
     },
     {
-      "cli": "Leads For You",
+      "cli": "Oranggi Viagens",
       "resp": "Gerson",
       "ativo": true,
       "n_inc": 5,
       "inc": [
         {
-          "cod": "4421",
-          "nm": "Ação Cível — Instagram",
-          "tp": "Judicial",
+          "cod": "4594",
+          "nm": "Planejamento Tributário — Reestruturação Regime",
+          "tp": "Projeto consultivo",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "4310",
-          "nm": "Cumprimento de Sentença — Paulo Henrique Martins Souza",
-          "tp": "Judicial",
+          "cod": "4603",
+          "nm": "Planejamento Societário — Holding e Governança",
+          "tp": "Projeto consultivo",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "4680",
-          "nm": "Execução Fiscal — 1524400-20.2026.8.26.0090",
-          "tp": "Judicial",
+          "cod": "4604",
+          "nm": "Planejamento Tributário — Dividendos e Proteção Patrimonial",
+          "tp": "Projeto consultivo",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "4681",
-          "nm": "Cobrança — 5001443-85.2025.8.24.0031",
-          "tp": "Judicial",
+          "cod": "4605",
+          "nm": "Partnership e Vesting — Retenção de Talentos",
+          "tp": "Projeto consultivo",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "4682",
-          "nm": "Cobrança — 4057597-73.2025.8.26.0100",
-          "tp": "Judicial",
+          "cod": "4606",
+          "nm": "Revisão Contratual e Compliance — LGPD",
+          "tp": "Projeto consultivo",
           "h": 0.0,
           "c": 0.0
         }
       ],
+      "pm": {}
+    },
+    {
+      "cli": "TasteWay",
+      "resp": "Thomaz",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
       "pm": {
-        "2025-02": {
-          "h": 4.45,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 382.5
-        },
-        "2025-03": {
-          "h": 0.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 13.33
-        },
-        "2025-04": {
-          "h": 4.97,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1256.67
-        },
-        "2025-05": {
-          "h": 34.62,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 9992.5
-        },
-        "2025-06": {
-          "h": 0.88,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 195.0
-        },
-        "2025-07": {
-          "h": 0.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 208.33
-        },
-        "2025-08": {
-          "h": 11.05,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2095.0
-        },
-        "2025-09": {
-          "h": 0.47,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 85.83
-        },
-        "2025-10": {
-          "h": 4.0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1007.5
-        },
-        "2025-11": {
-          "h": 7.98,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1435.83
-        },
-        "2025-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 2.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 286.0
-        },
-        "2026-03": {
-          "h": 2.09,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 522.5
-        },
-        "2026-04": {
-          "h": 10.33,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2597.5
-        },
-        "2026-05": {
-          "h": 11.11,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2649.5
-        },
-        "2026-06": {
-          "h": 14.59,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 3647.5
-        },
         "2026-07": {
-          "h": 5.21,
+          "h": 0,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
-          "c": 1216.5
+          "c": 0
         },
         "2026-08": {
-          "h": 4.99,
+          "h": 0,
           "hp": 0,
           "hi": 0,
           "r": 3242.0,
-          "c": 1070.0
+          "c": 0
         },
         "2026-09": {
           "h": 0,
@@ -39359,334 +40271,521 @@ const D = {
       }
     },
     {
-      "cli": "\"Twin Set\n\"",
-      "resp": "Bruno",
+      "cli": "V4 Peretto (POA)",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Everlog",
+      "resp": "Felipe",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "RS Recicla",
+      "resp": "Felipe",
       "ativo": true,
       "n_inc": 0,
       "inc": [],
+      "pm": {
+        "2025-02": {
+          "h": 4.25,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 455.83
+        },
+        "2025-03": {
+          "h": 0.3,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 30.0
+        },
+        "2025-04": {
+          "h": 11.87,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 1463.33
+        },
+        "2025-05": {
+          "h": 6.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 757.5
+        },
+        "2025-06": {
+          "h": 4.23,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 423.33
+        },
+        "2025-07": {
+          "h": 0.57,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 56.67
+        },
+        "2025-09": {
+          "h": 7.68,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 1305.0
+        },
+        "2025-10": {
+          "h": 2.97,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 710.0
+        },
+        "2025-11": {
+          "h": 0.32,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 41.67
+        },
+        "2025-12": {
+          "h": 1.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 118.33
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 5.62,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 1110.0
+        },
+        "2026-03": {
+          "h": 0.11,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 11.0
+        },
+        "2026-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-05": {
+          "h": 1.71,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 88.0
+        },
+        "2026-06": {
+          "h": 3.69,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 331.5
+        },
+        "2026-07": {
+          "h": 2.95,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 691.5
+        },
+        "2026-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Hops Company",
+      "resp": "Bruno",
+      "ativo": true,
+      "n_inc": 2,
+      "inc": [
+        {
+          "cod": "4694",
+          "nm": "Mandado de Segurança — ANVISA",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3622",
+          "nm": "Cobrança — Devedores",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
       "pm": {
         "2024-01": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-02": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-03": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-04": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-05": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-06": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-07": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-08": {
-          "h": 4.52,
+          "h": 3.35,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 2376.67
+          "r": 3000.0,
+          "c": 2010.0
         },
         "2024-09": {
-          "h": 7.42,
+          "h": 1.83,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 2147.5
+          "r": 3000.0,
+          "c": 1100.0
         },
         "2024-10": {
-          "h": 1.72,
+          "h": 3.08,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 1030.0
+          "r": 3000.0,
+          "c": 1278.33
         },
         "2024-11": {
-          "h": 7.73,
+          "h": 1.38,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 4640.0
+          "r": 3000.0,
+          "c": 830.0
         },
         "2024-12": {
-          "h": 1.28,
+          "h": 2.73,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 669.17
+          "r": 3000.0,
+          "c": 915.83
         },
         "2025-01": {
-          "h": 0,
+          "h": 0.85,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 0
+          "r": 3000.0,
+          "c": 212.5
         },
         "2025-02": {
-          "h": 0,
+          "h": 1.12,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 0
+          "r": 3000.0,
+          "c": 111.67
         },
         "2025-03": {
-          "h": 0.27,
+          "h": 5.53,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 40.0
+          "r": 3000.0,
+          "c": 1211.67
         },
         "2025-04": {
-          "h": 0.38,
+          "h": 0.92,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 57.5
+          "r": 3000.0,
+          "c": 491.67
         },
         "2025-05": {
-          "h": 0.73,
+          "h": 1.07,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 110.0
+          "r": 3000.0,
+          "c": 164.17
         },
         "2025-06": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
         "2025-07": {
-          "h": 3.6,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 1118.33
+          "r": 3000.0,
+          "c": 0
         },
         "2025-08": {
-          "h": 0.82,
+          "h": 0.18,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 204.17
+          "r": 3000.0,
+          "c": 18.33
         },
         "2025-09": {
-          "h": 0,
+          "h": 4.18,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 0
+          "r": 3000.0,
+          "c": 726.67
         },
         "2025-10": {
-          "h": 0.52,
+          "h": 0.02,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 51.67
+          "r": 3000.0,
+          "c": 1.67
         },
         "2025-11": {
-          "h": 0,
+          "h": 0.73,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 0
+          "r": 3000.0,
+          "c": 110.0
         },
         "2025-12": {
-          "h": 0,
+          "h": 6.37,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 0
+          "r": 3000.0,
+          "c": 1456.67
         },
         "2026-01": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
         "2026-02": {
-          "h": 0.31,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 46.5
-        },
-        "2026-03": {
-          "h": 0.35,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 82.5
-        },
-        "2026-04": {
-          "h": 3.04,
-          "hp": 0,
-          "hi": 0,
-          "r": 1621.0,
-          "c": 604.0
-        },
-        "2026-05": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
-        "2026-06": {
-          "h": 1.5,
+        "2026-03": {
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 375.0
+          "r": 3000.0,
+          "c": 0
+        },
+        "2026-04": {
+          "h": 1.0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3000.0,
+          "c": 600.0
+        },
+        "2026-05": {
+          "h": 3.88,
+          "hp": 0,
+          "hi": 0,
+          "r": 3000.0,
+          "c": 913.0
+        },
+        "2026-06": {
+          "h": 7.82,
+          "hp": 0,
+          "hi": 0,
+          "r": 3000.0,
+          "c": 1359.5
         },
         "2026-07": {
-          "h": 14.52,
+          "h": 0.02,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 3321.0
+          "r": 3000.0,
+          "c": 2.0
         },
         "2026-08": {
-          "h": 1.38,
+          "h": 0.79,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
-          "c": 207.0
+          "r": 3000.0,
+          "c": 108.5
         },
         "2026-09": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
         "2026-10": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
         "2026-11": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         },
         "2026-12": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 1621.0,
+          "r": 3000.0,
           "c": 0
         }
       }
     },
     {
-      "cli": "Casa de Alessa",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Forigo Park Tur",
+      "cli": "Boss4u",
       "resp": "Gerson",
       "ativo": true,
       "n_inc": 0,
       "inc": [],
       "pm": {
-        "2026-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 5500.0,
-          "c": 0
-        },
         "2026-07": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5500.0,
+          "r": 4863.0,
           "c": 0
         },
         "2026-08": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5500.0,
+          "r": 4863.0,
           "c": 0
         },
         "2026-09": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5500.0,
+          "r": 4863.0,
           "c": 0
         },
         "2026-10": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5500.0,
+          "r": 7294.5,
           "c": 0
         },
         "2026-11": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5500.0,
+          "r": 7294.5,
           "c": 0
         },
         "2026-12": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 5500.0,
+          "r": 7294.5,
           "c": 0
         }
       }
     },
     {
-      "cli": "Cromatic",
+      "cli": "Sérgio Santana",
+      "resp": "Felipe",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Larca Capital",
       "resp": "Gerson",
       "ativo": false,
       "n_inc": 0,
@@ -39694,202 +40793,280 @@ const D = {
       "pm": {}
     },
     {
-      "cli": "\"Vext (Joao) - vesting (DUARTE E ALMEIDA IMOVEIS LTDA.)\n\"",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Arqexpress",
-      "resp": "Thomaz",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "V4 Colli (MT)",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Master RS",
-      "resp": "Bruno",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "MR Tecnologia",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Welucci",
+      "cli": "Expermed",
       "resp": "Gerson",
       "ativo": true,
-      "n_inc": 16,
+      "n_inc": 2,
       "inc": [
         {
-          "cod": "4965",
-          "nm": "Defesa Trabalhista — Rogerio Rodrigues Coelho",
+          "cod": "3841",
+          "nm": "Defesa Cível — Patrícia da Cruz Cunha",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "4953",
-          "nm": "Defesa Trabalhista — Gabriel Henrique da Silva Martins",
+          "cod": "4649",
+          "nm": "Defesa Cível — Bruna Leonardi",
           "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4954",
-          "nm": "Defesa Trabalhista — JESSICA MICHAELA SOUZA DIAS OLIVEIRA",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4946",
-          "nm": "Defesa Consumidor — Thais Souza Paes e Gabriel Marsilio Monte",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4878",
-          "nm": "Defesa Cobrança — Cinthia Gemelgo Nascimento",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4848",
-          "nm": "Defesa Consumidor — Marjorie Cruz de Victor",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4826",
-          "nm": "Defesa Consumidor — Raffael Novoa dos Santos",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4783",
-          "nm": "Defesa Trabalhista — Vinnicius Jose Batista Lima",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4763",
-          "nm": "Defesa Cível — ALG Eventos e Locações",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4758",
-          "nm": "Defesa Consumidor — Silvio Luis Holzer",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4738",
-          "nm": "Defesa Cível — JJ Eventos",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4734",
-          "nm": "Defesa Cível — Biodiversite do Brasil",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4707",
-          "nm": "Defesa Trabalhista — MPT2",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4689",
-          "nm": "Defesa Cobrança — Luiz H M S de Araujo Ltda",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "4690",
-          "nm": "Defesa Execução de Título — SPARK PROJETOS & OBRAS LTDA",
-          "tp": "Judicial",
-          "h": 0.0,
-          "c": 0.0
-        },
-        {
-          "cod": "3946",
-          "nm": "Vesting — Contrato de Parceria",
-          "tp": "Projeto consultivo",
           "h": 0.0,
           "c": 0.0
         }
       ],
       "pm": {
+        "2024-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 0
+        },
+        "2024-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 0.42,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 104.17
+        },
+        "2024-08": {
+          "h": 11.3,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 3134.17
+        },
+        "2024-09": {
+          "h": 1.17,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 325.0
+        },
+        "2024-10": {
+          "h": 8.37,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 2066.67
+        },
+        "2024-11": {
+          "h": 3.42,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 570.83
+        },
+        "2024-12": {
+          "h": 3.98,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 1404.17
+        },
+        "2025-01": {
+          "h": 9.35,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 1605.83
+        },
+        "2025-02": {
+          "h": 1.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 108.33
+        },
+        "2025-03": {
+          "h": 2.48,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 343.33
+        },
+        "2025-04": {
+          "h": 3.7,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 713.33
+        },
+        "2025-05": {
+          "h": 4.22,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 1185.0
+        },
+        "2025-06": {
+          "h": 7.05,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 1884.17
+        },
+        "2025-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 0
+        },
+        "2025-08": {
+          "h": 1.23,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 245.0
+        },
+        "2025-09": {
+          "h": 1.2,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 450.0
+        },
+        "2025-10": {
+          "h": 4.95,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 1841.67
+        },
+        "2025-11": {
+          "h": 1.33,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 400.0
+        },
+        "2025-12": {
+          "h": 6.95,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 1709.17
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 4.97,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 1398.0
+        },
+        "2026-03": {
+          "h": 7.44,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 1827.0
+        },
+        "2026-04": {
+          "h": 19.58,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 4910.0
+        },
+        "2026-05": {
+          "h": 9.95,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 2065.0
+        },
+        "2026-06": {
+          "h": 8.17,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 2042.5
+        },
+        "2026-07": {
+          "h": 12.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 1914.5
+        },
+        "2026-08": {
+          "h": 1.42,
+          "hp": 0,
+          "hi": 0,
+          "r": 4900.0,
+          "c": 355.0
+        },
         "2026-09": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 10000.0,
+          "r": 4900.0,
           "c": 0
         },
         "2026-10": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 10000.0,
+          "r": 4900.0,
           "c": 0
         },
         "2026-11": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 10000.0,
+          "r": 4900.0,
           "c": 0
         },
         "2026-12": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 10000.0,
+          "r": 4900.0,
           "c": 0
         }
       }
-    },
-    {
-      "cli": "MamãeCompleta",
-      "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
     },
     {
       "cli": "\"R M N Cardoso e Cia (Meta Analisys)\n\"",
@@ -40153,15 +41330,7 @@ const D = {
       }
     },
     {
-      "cli": "Randoncorp",
-      "resp": "Gerson",
-      "ativo": true,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "V4 Alfradique",
+      "cli": "Vaitel",
       "resp": "Gerson",
       "ativo": false,
       "n_inc": 0,
@@ -40169,216 +41338,12 @@ const D = {
       "pm": {}
     },
     {
-      "cli": "Kruger construtora/incorporadora",
-      "resp": "Rodrigo",
-      "ativo": true,
+      "cli": "V4 Saman (MG)",
+      "resp": "Gerson",
+      "ativo": false,
       "n_inc": 0,
       "inc": [],
-      "pm": {
-        "2024-07": {
-          "h": 0.2,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 20.0
-        },
-        "2024-08": {
-          "h": 5.82,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 665.0
-        },
-        "2024-09": {
-          "h": 0.58,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 241.67
-        },
-        "2024-10": {
-          "h": 4.43,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 2660.0
-        },
-        "2024-11": {
-          "h": 3.08,
-          "hp": 0,
-          "hi": 0,
-          "r": 0,
-          "c": 1708.33
-        },
-        "2025-01": {
-          "h": 0.62,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 61.67
-        },
-        "2025-02": {
-          "h": 1.82,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 306.67
-        },
-        "2025-03": {
-          "h": 3.07,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 994.17
-        },
-        "2025-04": {
-          "h": 2.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 688.33
-        },
-        "2025-05": {
-          "h": 10.97,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 4585.0
-        },
-        "2025-06": {
-          "h": 0.8,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 345.83
-        },
-        "2025-07": {
-          "h": 14.88,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2496.67
-        },
-        "2025-08": {
-          "h": 16.32,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 3520.0
-        },
-        "2025-09": {
-          "h": 14.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 3815.0
-        },
-        "2025-10": {
-          "h": 5.37,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1306.67
-        },
-        "2025-11": {
-          "h": 19.1,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 6925.0
-        },
-        "2025-12": {
-          "h": 3.83,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1281.67
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 1.53,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 539.5
-        },
-        "2026-03": {
-          "h": 2.95,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1630.0
-        },
-        "2026-04": {
-          "h": 2.64,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 905.0
-        },
-        "2026-05": {
-          "h": 11.96,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 5930.0
-        },
-        "2026-06": {
-          "h": 1.5,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 900.0
-        },
-        "2026-07": {
-          "h": 0.6,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 360.0
-        },
-        "2026-08": {
-          "h": 0.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 90.0
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        }
-      }
+      "pm": {}
     },
     {
       "cli": "IMCELER",
@@ -40440,327 +41405,50 @@ const D = {
       }
     },
     {
-      "cli": "Mint",
-      "resp": "Rodrigo",
+      "cli": "Nexia Engenharia,Texian",
+      "resp": "Yago",
       "ativo": true,
       "n_inc": 0,
       "inc": [],
-      "pm": {
-        "2024-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-02": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-03": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-04": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-05": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-06": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-07": {
-          "h": 0.47,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 280.0
-        },
-        "2024-08": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2024-09": {
-          "h": 2.57,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1173.33
-        },
-        "2024-10": {
-          "h": 4.63,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2780.0
-        },
-        "2024-11": {
-          "h": 24.95,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 11820.0
-        },
-        "2024-12": {
-          "h": 2.68,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 904.17
-        },
-        "2025-01": {
-          "h": 4.97,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2892.5
-        },
-        "2025-02": {
-          "h": 0.68,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 68.33
-        },
-        "2025-03": {
-          "h": 2.02,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1126.67
-        },
-        "2025-04": {
-          "h": 5.42,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1838.33
-        },
-        "2025-05": {
-          "h": 7.38,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 2816.67
-        },
-        "2025-06": {
-          "h": 9.22,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1613.33
-        },
-        "2025-07": {
-          "h": 3.92,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1714.17
-        },
-        "2025-08": {
-          "h": 4.38,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1289.17
-        },
-        "2025-09": {
-          "h": 3.18,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 878.33
-        },
-        "2025-10": {
-          "h": 1.4,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 730.0
-        },
-        "2025-11": {
-          "h": 7.03,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 3815.0
-        },
-        "2025-12": {
-          "h": 2.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1135.0
-        },
-        "2026-01": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-02": {
-          "h": 0.93,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 282.0
-        },
-        "2026-03": {
-          "h": 17.48,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 4970.5
-        },
-        "2026-04": {
-          "h": 10.15,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 3167.5
-        },
-        "2026-05": {
-          "h": 1.47,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 542.5
-        },
-        "2026-06": {
-          "h": 1.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1068.0
-        },
-        "2026-07": {
-          "h": 0.65,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 390.0
-        },
-        "2026-08": {
-          "h": 2.02,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 1012.5
-        },
-        "2026-09": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-10": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-11": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        },
-        "2026-12": {
-          "h": 0,
-          "hp": 0,
-          "hi": 0,
-          "r": 3242.0,
-          "c": 0
-        }
-      }
-    },
-    {
-      "cli": "Posto Essen",
-      "resp": "Bruno",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
       "pm": {}
     },
     {
-      "cli": "V4 Saman (MG)",
+      "cli": "Grupo TE2",
       "resp": "Gerson",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Bertuzzi",
-      "resp": "Felipe",
-      "ativo": false,
-      "n_inc": 0,
-      "inc": [],
-      "pm": {}
-    },
-    {
-      "cli": "Creare",
-      "resp": "Bruno",
       "ativo": true,
       "n_inc": 5,
       "inc": [
         {
-          "cod": "4847",
-          "nm": "Defesa Trabalhista — Letycia Braun Teixeira",
+          "cod": "3169",
+          "nm": "Ação Tributária — Empresa FT2",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "4095",
-          "nm": "Defesa Cível — Transportadora Paineiras",
+          "cod": "3199",
+          "nm": "Ações Tributárias — M2T",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "4504",
-          "nm": "Defesa Trabalhista — Jeffrey de Andrade Teixeira",
+          "cod": "3200",
+          "nm": "Tese Tributária — MT2SC",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "3869",
-          "nm": "Defesa Cível — Ecoelétrica Engenharia Sustentável",
+          "cod": "1867",
+          "nm": "Defesa Societária — SCP 300 SP",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
         },
         {
-          "cod": "2830",
-          "nm": "Defesa Trabalhista — Carolina Knak",
+          "cod": "4665",
+          "nm": "Mandado de Segurança Tributário — ITCMD",
           "tp": "Judicial",
           "h": 0.0,
           "c": 0.0
@@ -40771,260 +41459,1414 @@ const D = {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-02": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-03": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-04": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-05": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-06": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3000.0,
           "c": 0
         },
         "2024-07": {
-          "h": 0.25,
+          "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 37.5
+          "r": 3000.0,
+          "c": 0
         },
         "2024-08": {
-          "h": 13.05,
+          "h": 13.83,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 5835.0
+          "r": 3000.0,
+          "c": 6855.83
         },
         "2024-09": {
-          "h": 5.43,
+          "h": 16.12,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1965.83
+          "r": 3000.0,
+          "c": 7489.17
         },
         "2024-10": {
-          "h": 8.47,
+          "h": 6.38,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 2612.5
+          "r": 3000.0,
+          "c": 2144.17
         },
         "2024-11": {
-          "h": 6.95,
+          "h": 14.35,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 2781.67
+          "r": 3000.0,
+          "c": 6386.67
         },
         "2024-12": {
-          "h": 4.1,
+          "h": 8.57,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 669.17
+          "r": 3000.0,
+          "c": 4460.0
         },
         "2025-01": {
-          "h": 9.63,
+          "h": 1.4,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1705.83
+          "r": 3000.0,
+          "c": 140.0
         },
         "2025-02": {
-          "h": 3.48,
+          "h": 2.88,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 488.33
+          "r": 3000.0,
+          "c": 1416.67
         },
         "2025-03": {
-          "h": 14.78,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 3410.83
-        },
-        "2025-04": {
-          "h": 2.97,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 478.33
-        },
-        "2025-05": {
-          "h": 16.95,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 2438.33
-        },
-        "2025-06": {
-          "h": 2.37,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 561.67
-        },
-        "2025-07": {
-          "h": 3.57,
-          "hp": 0,
-          "hi": 0,
-          "r": 8105.0,
-          "c": 851.67
-        },
-        "2025-08": {
           "h": 4.03,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 992.5
+          "r": 3000.0,
+          "c": 697.5
+        },
+        "2025-04": {
+          "h": 0.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 3000.0,
+          "c": 110.0
+        },
+        "2025-05": {
+          "h": 2.97,
+          "hp": 0,
+          "hi": 0,
+          "r": 3000.0,
+          "c": 1037.5
+        },
+        "2025-06": {
+          "h": 3.37,
+          "hp": 0,
+          "hi": 0,
+          "r": 3000.0,
+          "c": 830.83
+        },
+        "2025-07": {
+          "h": 3.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 3000.0,
+          "c": 571.67
+        },
+        "2025-08": {
+          "h": 10.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 3000.0,
+          "c": 4493.33
         },
         "2025-09": {
-          "h": 25.18,
+          "h": 10.48,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 5526.67
+          "r": 3000.0,
+          "c": 2040.0
         },
         "2025-10": {
-          "h": 9.5,
+          "h": 9.72,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1865.83
+          "r": 3000.0,
+          "c": 2694.17
         },
         "2025-11": {
-          "h": 8.73,
+          "h": 5.82,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1708.33
+          "r": 3000.0,
+          "c": 2348.33
         },
         "2025-12": {
-          "h": 7.53,
+          "h": 0.15,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1024.17
+          "r": 3000.0,
+          "c": 90.0
         },
         "2026-01": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3000.0,
           "c": 0
         },
         "2026-02": {
-          "h": 1.06,
+          "h": 5.95,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 209.5
+          "r": 3000.0,
+          "c": 2685.0
         },
         "2026-03": {
-          "h": 20.7,
+          "h": 0.08,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 5319.5
+          "r": 3000.0,
+          "c": 8.0
         },
         "2026-04": {
-          "h": 23.08,
+          "h": 6.78,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 5922.0
+          "r": 3000.0,
+          "c": 3228.0
         },
         "2026-05": {
-          "h": 6.88,
+          "h": 12.88,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 1570.5
+          "r": 3000.0,
+          "c": 6825.0
         },
         "2026-06": {
-          "h": 19.95,
+          "h": 4.55,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 5053.0
+          "r": 3000.0,
+          "c": 2607.5
         },
         "2026-07": {
-          "h": 17.31,
+          "h": 12.99,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 3394.0
+          "r": 3000.0,
+          "c": 5515.0
         },
         "2026-08": {
-          "h": 5.06,
+          "h": 5.7,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
-          "c": 746.0
+          "r": 3000.0,
+          "c": 2820.0
         },
         "2026-09": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3000.0,
           "c": 0
         },
         "2026-10": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3000.0,
           "c": 0
         },
         "2026-11": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3000.0,
           "c": 0
         },
         "2026-12": {
           "h": 0,
           "hp": 0,
           "hi": 0,
-          "r": 8105.0,
+          "r": 3000.0,
           "c": 0
         }
       }
     },
     {
-      "cli": "Larca Capital",
+      "cli": "BAM Wellness",
       "resp": "Gerson",
       "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "\"Twin Set\n\"",
+      "resp": "Bruno",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2024-08": {
+          "h": 4.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 2376.67
+        },
+        "2024-09": {
+          "h": 7.42,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 2147.5
+        },
+        "2024-10": {
+          "h": 1.72,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 1030.0
+        },
+        "2024-11": {
+          "h": 7.73,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 4640.0
+        },
+        "2024-12": {
+          "h": 1.28,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 669.17
+        },
+        "2025-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2025-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2025-03": {
+          "h": 0.27,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 40.0
+        },
+        "2025-04": {
+          "h": 0.38,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 57.5
+        },
+        "2025-05": {
+          "h": 0.73,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 110.0
+        },
+        "2025-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2025-07": {
+          "h": 3.6,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 1118.33
+        },
+        "2025-08": {
+          "h": 0.82,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 204.17
+        },
+        "2025-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2025-10": {
+          "h": 0.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 51.67
+        },
+        "2025-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2025-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 0.31,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 46.5
+        },
+        "2026-03": {
+          "h": 0.35,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 82.5
+        },
+        "2026-04": {
+          "h": 3.04,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 604.0
+        },
+        "2026-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-06": {
+          "h": 1.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 375.0
+        },
+        "2026-07": {
+          "h": 14.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 3321.0
+        },
+        "2026-08": {
+          "h": 1.38,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 207.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Dotkon",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Cromatic",
+      "resp": "Gerson",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Produtora Ara",
+      "resp": "Gerson",
+      "ativo": true,
+      "n_inc": 2,
+      "inc": [
+        {
+          "cod": "4879",
+          "nm": "Planejamento Tributário — Estrutura Tributária",
+          "tp": "Projeto consultivo",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4880",
+          "nm": "Planejamento Trabalhista — Planejamento Trabalhista",
+          "tp": "Projeto consultivo",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {}
+    },
+    {
+      "cli": "Organica Digital",
+      "resp": "Yago",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2026-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Arqexpress",
+      "resp": "Thomaz",
+      "ativo": false,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {}
+    },
+    {
+      "cli": "Welucci",
+      "resp": "Gerson",
+      "ativo": true,
+      "n_inc": 16,
+      "inc": [
+        {
+          "cod": "4965",
+          "nm": "Defesa Trabalhista — Rogerio Rodrigues Coelho",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4953",
+          "nm": "Defesa Trabalhista — Gabriel Henrique da Silva Martins",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4954",
+          "nm": "Defesa Trabalhista — JESSICA MICHAELA SOUZA DIAS OLIVEIRA",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4946",
+          "nm": "Defesa Consumidor — Thais Souza Paes e Gabriel Marsilio Monte",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4878",
+          "nm": "Defesa Cobrança — Cinthia Gemelgo Nascimento",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4848",
+          "nm": "Defesa Consumidor — Marjorie Cruz de Victor",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4826",
+          "nm": "Defesa Consumidor — Raffael Novoa dos Santos",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4783",
+          "nm": "Defesa Trabalhista — Vinnicius Jose Batista Lima",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4763",
+          "nm": "Defesa Cível — ALG Eventos e Locações",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4758",
+          "nm": "Defesa Consumidor — Silvio Luis Holzer",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4738",
+          "nm": "Defesa Cível — JJ Eventos",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4734",
+          "nm": "Defesa Cível — Biodiversite do Brasil",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4707",
+          "nm": "Defesa Trabalhista — MPT2",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4689",
+          "nm": "Defesa Cobrança — Luiz H M S de Araujo Ltda",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "4690",
+          "nm": "Defesa Execução de Título — SPARK PROJETOS & OBRAS LTDA",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        },
+        {
+          "cod": "3946",
+          "nm": "Vesting — Contrato de Parceria",
+          "tp": "Projeto consultivo",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 10000.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 10000.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 10000.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 10000.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Rafael Beltrame",
+      "resp": "Rodrigo",
+      "ativo": true,
+      "n_inc": 1,
+      "inc": [
+        {
+          "cod": "3764",
+          "nm": "Ação Declaratória com Repetição de Indébito — Isenção de IR",
+          "tp": "Judicial",
+          "h": 0.0,
+          "c": 0.0
+        }
+      ],
+      "pm": {
+        "2024-08": {
+          "h": 0.38,
+          "hp": 0,
+          "hi": 0,
+          "r": 0,
+          "c": 38.33
+        },
+        "2024-09": {
+          "h": 0.08,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 20.83
+        },
+        "2024-10": {
+          "h": 0.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 260.0
+        },
+        "2024-11": {
+          "h": 3.8,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 1288.33
+        },
+        "2024-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2025-01": {
+          "h": 4.72,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 1179.17
+        },
+        "2025-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2025-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2025-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2025-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2025-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2025-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2025-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2025-09": {
+          "h": 1.03,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 280.83
+        },
+        "2025-10": {
+          "h": 0.3,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 67.5
+        },
+        "2025-11": {
+          "h": 1.72,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 351.67
+        },
+        "2025-12": {
+          "h": 1.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 418.33
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2026-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2026-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2026-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2026-06": {
+          "h": 2.06,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 106.5
+        },
+        "2026-07": {
+          "h": 0.29,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 14.5
+        },
+        "2026-08": {
+          "h": 3.73,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 208.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 400.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Family Office",
+      "resp": "Felipe",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2024-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 0
+        },
+        "2024-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 0
+        },
+        "2024-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 0
+        },
+        "2024-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 0
+        },
+        "2024-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 0
+        },
+        "2024-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 0
+        },
+        "2024-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 0
+        },
+        "2024-08": {
+          "h": 0.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 150.0
+        },
+        "2024-09": {
+          "h": 2.45,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 735.0
+        },
+        "2024-10": {
+          "h": 0.4,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 120.0
+        },
+        "2024-11": {
+          "h": 5.38,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 1615.0
+        },
+        "2024-12": {
+          "h": 1.38,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 415.0
+        },
+        "2025-01": {
+          "h": 14.37,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 2386.67
+        },
+        "2025-02": {
+          "h": 0.17,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 16.67
+        },
+        "2025-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 0
+        },
+        "2025-04": {
+          "h": 4.43,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 620.0
+        },
+        "2025-05": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3036.0,
+          "c": 0
+        },
+        "2025-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2025-07": {
+          "h": 0.33,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 100.0
+        },
+        "2025-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2025-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2025-10": {
+          "h": 0.18,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 55.0
+        },
+        "2025-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2025-12": {
+          "h": 2.87,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 286.67
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-03": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-05": {
+          "h": 0.77,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 167.0
+        },
+        "2026-06": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-08": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 1621.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Multi Solution",
+      "resp": "Gerson",
+      "ativo": true,
+      "n_inc": 0,
+      "inc": [],
+      "pm": {
+        "2025-04": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2025-05": {
+          "h": 18.48,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 4405.0
+        },
+        "2025-06": {
+          "h": 14.67,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2939.17
+        },
+        "2025-07": {
+          "h": 26.75,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 6935.0
+        },
+        "2025-08": {
+          "h": 13.02,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 3672.5
+        },
+        "2025-09": {
+          "h": 14.27,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 2812.5
+        },
+        "2025-10": {
+          "h": 5.63,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1197.5
+        },
+        "2025-11": {
+          "h": 0.2,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 20.0
+        },
+        "2025-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-01": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-02": {
+          "h": 4.09,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 1227.0
+        },
+        "2026-03": {
+          "h": 3.2,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 960.0
+        },
+        "2026-04": {
+          "h": 2.5,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 750.0
+        },
+        "2026-05": {
+          "h": 14.1,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 3525.0
+        },
+        "2026-06": {
+          "h": 2.79,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 797.5
+        },
+        "2026-07": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-08": {
+          "h": 0.52,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 88.0
+        },
+        "2026-09": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-10": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-11": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        },
+        "2026-12": {
+          "h": 0,
+          "hp": 0,
+          "hi": 0,
+          "r": 3242.0,
+          "c": 0
+        }
+      }
+    },
+    {
+      "cli": "Gabriel Sgarbi",
+      "resp": "Equipe",
+      "ativo": true,
       "n_inc": 0,
       "inc": [],
       "pm": {}
