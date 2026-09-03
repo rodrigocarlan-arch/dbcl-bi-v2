@@ -6,7 +6,7 @@
 /* ───────── ESTADO ───────── */
 const S = {
   screen: 'painel',
-  meses: [D.meses[D.meses.length-1]], // abre no mês mais recente
+  meses: [D.meta?.ultimo_mes_horas || D.meses[D.meses.length-1]], // abre no último mês com horas
   periodKind: 'month',
   carteira: 'ativos',              // inativos só aparecem sob escolha explícita
   rate: 'mensal',                  // custo | mensal | pontual
@@ -40,6 +40,7 @@ const fmt = v => v==null ? '—' : 'R$ ' + Math.round(v).toLocaleString('pt-BR')
 const fmtK = v => v==null ? '—' : (Math.abs(v)>=1000 ? 'R$ '+(v/1000).toFixed(0)+'k' : fmt(v));
 const fmtH = v => v==null ? '—' : v.toLocaleString('pt-BR',{maximumFractionDigits:1});
 const fmtP = v => v==null ? '—' : v.toFixed(1).replace('.',',')+'%';
+const fmtDate = iso => iso ? iso.slice(8,10)+'/'+iso.slice(5,7)+'/'+iso.slice(0,4) : '—';
 const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
 const cm = (v,inv) => v==null ? '' : (inv ? (v<0?'g':v>0?'r':'') : (v>0?'g':v<0?'r':''));
 
@@ -256,7 +257,8 @@ function setPeriodKind(kind){
   const groups=periodGroups(kind);
   PERIOD_GROUPS=Object.fromEntries(groups.map(group=>[group.key,group]));
   selector.innerHTML=groups.map(group=>`<option value="${group.key}">${group.label}</option>`).join('');
-  selector.value=groups[0].key;
+  const anchor=S.meses[S.meses.length-1] || D.meta?.ultimo_mes_horas;
+  selector.value=(groups.find(group=>group.months.includes(anchor)) || groups[0]).key;
   applyPeriodChoice();
 }
 function applyPeriodChoice(){
@@ -487,11 +489,14 @@ function renderMensalistas(){
     <div class="kc"><div class="kc-l">Margem</div><div class="kc-v ${recT-cusT>=0?'g':'r'}">${fmtK(recT-cusT)}</div><div class="kc-s">${recT>0?fmtP((recT-cusT)/recT*100):''}</div></div>
     <div class="kc click" onclick="S.mFilter='neg';renderMensalistas()"><div class="kc-l">Negativos / Sem receita</div><div class="kc-v ${negN>0?'r':'g'}">${negN} <span style="font-size:14px;color:var(--c3)">/ ${semN}</span></div></div>`;
 
-  // Rank chart (worst to best, com receita)
-  const wr = all.filter(m=>m._rec>0).sort((a,b)=>a._margem-b._margem);
-  mkChart('c-m-rank',{type:'bar',data:{labels:wr.map(m=>m.cli.slice(0,18)),datasets:[
-    {label:'Margem',data:wr.map(m=>m._margem),backgroundColor:wr.map(m=>m._margem<0?'#C0392B':'#0F6E56')}
-  ]},options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{callback:v=>'R$'+(v/1000)+'k'}}},onClick:(e,el)=>{if(el.length)openCliente(wr[el[0].index].cli);}}});
+  // Extremos legíveis: todos os clientes comprimiam e desalinhavam os nomes.
+  const elegiveis = all.filter(m=>m._rec>0).sort((a,b)=>a._margem-b._margem);
+  const extremos = [...new Map([...elegiveis.slice(0,10),...elegiveis.slice(-10)].map(m=>[m.cli,m])).values()]
+    .sort((a,b)=>a._margem-b._margem);
+  const rankLabel = nome => nome.length>35 ? nome.slice(0,34)+'…' : nome;
+  mkChart('c-m-rank',{type:'bar',data:{labels:extremos.map(m=>rankLabel(m.cli)),datasets:[
+    {label:'Margem',data:extremos.map(m=>m._margem),backgroundColor:extremos.map(m=>m._margem<0?'#C0392B':'#0F6E56')}
+  ]},options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{title:items=>extremos[items[0].dataIndex].cli,label:c=>`${fmt(c.raw)} de margem`}}},scales:{y:{ticks:{autoSkip:false}},x:{ticks:{callback:v=>'R$'+(v/1000)+'k'}}},onClick:(e,el)=>{if(el.length)openCliente(extremos[el[0].index].cli);}}});
 
   // Scatter
   const sc = all.filter(m=>m._rec>0||m._custo>0);
@@ -689,10 +694,16 @@ function openCliente(nome){
   const cd = D.cli_det[nome];
   const men = mensalCalc().find(m=>m.cli===nome);
   document.getElementById('ovc-title').textContent = nome;
-  document.getElementById('ovc-sub').textContent = men ? `Mensalista · resp. ${men.resp||'—'}` : 'Cliente';
-  let html = '';
+  const periodText=document.getElementById('period-note').textContent;
+  document.getElementById('ovc-sub').textContent = men ? `Mensalista · resp. ${men.resp||'—'} · ${periodText}` : `Cliente · ${periodText}`;
+  let html = `<div class="period-context"><b>Período analisado:</b> ${esc(periodText)}</div>`;
   const hSemCodigo = cd ? S.meses.reduce((s,m)=>s+(cd.pm_sem_codigo?.[m]||0),0) : 0;
-  const hServicos = cd ? cd.svcs.reduce((total,svc)=>total+S.meses.reduce((s,m)=>s+(svc.pm?.[m]||0),0),0) : 0;
+  const periodServices = cd ? cd.svcs.map(svc=>({
+    ...svc,
+    _ph:S.meses.reduce((s,m)=>s+(svc.pm?.[m]||0),0),
+    _pc:S.meses.reduce((s,m)=>s+(svc.pcm?.[m]||0),0),
+  })) : [];
+  const hServicos = periodServices.reduce((total,svc)=>total+svc._ph,0);
   const hCliente = hServicos + hSemCodigo;
   if(men){
     const hOutros = Math.max(0,hServicos-men._hb-men._hi);
@@ -704,12 +715,13 @@ function openCliente(nome){
     </div>
     <div class="panel"><div class="ph2"><span class="t">Evolução mensal</span></div><div class="pb"><div class="cw"><canvas id="c-ovc"></canvas></div></div></div>`;
   } else if(cd){
-    const custo = C(cd.c_tot);
+    const custo = C(periodServices.reduce((s,svc)=>s+svc._pc,0));
+    const receitaContratada = periodServices.reduce((s,svc)=>s+(svc.rec||0),0);
     html += `<div class="kg kg4">
-      <div class="kc"><div class="kc-l">Receita contratada</div><div class="kc-v">${fmtK(cd.rec_tot)}</div></div>
+      <div class="kc"><div class="kc-l">Receita contratada</div><div class="kc-v">${fmtK(receitaContratada)}</div></div>
       <div class="kc"><div class="kc-l">Custo (${S.rate})</div><div class="kc-v">${fmtK(custo)}</div></div>
-      <div class="kc"><div class="kc-l">Margem estimada</div><div class="kc-v ${cd.rec_tot-custo>=0?'g':'r'}">${fmtK(cd.rec_tot-custo)}</div></div>
-      <div class="kc"><div class="kc-l">Horas totais</div><div class="kc-v">${fmtH(cd.h_tot)}</div></div>
+      <div class="kc"><div class="kc-l">Saldo vs. custo do período</div><div class="kc-v ${receitaContratada-custo>=0?'g':'r'}">${fmtK(receitaContratada-custo)}</div></div>
+      <div class="kc"><div class="kc-l">Horas no período</div><div class="kc-v">${fmtH(hCliente)}</div></div>
     </div>`;
   }
   if(hSemCodigo>0){
@@ -717,20 +729,20 @@ function openCliente(nome){
   }
   // serviços
   if(cd && cd.svcs && cd.svcs.length){
-    const ativos = cd.svcs.filter(s=>s.ativo), baixados = cd.svcs.filter(s=>!s.ativo);
-    html += `<div class="panel"><div class="ph2"><span class="t">Serviços ativos</span><span class="s">${ativos.length}</span></div><div class="pb ow"><table class="t">
+    const ativos = periodServices.filter(s=>s.ativo), baixados = periodServices.filter(s=>!s.ativo);
+    html += `<div class="panel"><div class="ph2"><span class="t">Serviços ativos · no período</span><span class="s">${ativos.filter(s=>s._ph>0).length} com horas · ${ativos.length} ativos</span></div><div class="pb ow"><table class="t">
       <thead><tr><th>Serviço</th><th>Tipo</th><th class="r">Horas</th><th class="r">Custo</th></tr></thead><tbody>`+
-      (ativos.length?ativos.sort((a,b)=>b.h-a.h).map(s=>`<tr onclick="openServico('${s.cod}')"><td class="lk">${esc(s.nm)||'<i>cód. '+s.cod+'</i>'}${s.inc?' <span class="badge bg">incluso mensal</span>':''}</td><td><span class="badge bc">${s.tp||''}</span></td><td class="tr">${fmtH(s.h)}</td><td class="tr">${fmtK(C(s.c))}</td></tr>`).join(''):'<tr><td colspan="4" class="tm">Nenhum.</td></tr>')+'</tbody></table></div></div>';
+      (ativos.length?ativos.sort((a,b)=>b._ph-a._ph).map(s=>`<tr onclick="openServico('${s.cod}')"><td class="lk">${esc(s.nm)||'<i>cód. '+s.cod+'</i>'}${s.inc?' <span class="badge bg">incluso mensal</span>':''}</td><td><span class="badge bc">${s.tp||''}</span></td><td class="tr">${fmtH(s._ph)}</td><td class="tr">${fmtK(C(s._pc))}</td></tr>`).join(''):'<tr><td colspan="4" class="tm">Nenhum.</td></tr>')+'</tbody></table></div></div>';
     if(baixados.length){
       html += `<div class="panel"><div class="ph2"><span class="t">Histórico encerrado</span><span class="s">${baixados.length}</span></div><div class="pb ow"><table class="t"><tbody>`+
-        baixados.slice(0,30).map(s=>`<tr onclick="openServico('${s.cod}')"><td class="lk tm">${esc(s.nm)||'cód. '+s.cod}</td><td><span class="badge bc">${s.tp||''}</span></td><td class="tr tm">${fmtH(s.h)}h</td></tr>`).join('')+'</tbody></table></div></div>';
+        baixados.slice(0,30).map(s=>`<tr onclick="openServico('${s.cod}')"><td class="lk tm">${esc(s.nm)||'cód. '+s.cod}</td><td><span class="badge bc">${s.tp||''}</span></td><td class="tr tm">${fmtH(s._ph)}h</td></tr>`).join('')+'</tbody></table></div></div>';
     }
   }
   // inclusos detail for mensalista
   if(men && men.inc && men.inc.length){
-    const withH = men.inc.filter(i=>i.h>0);
+    const withH = periodServices.filter(i=>i.inc&&i._ph>0);
     if(withH.length) html += `<div class="panel"><div class="ph2"><span class="t">Serviços inclusos no mensal · com horas</span><span class="s">${withH.length} de ${men.inc.length}</span></div><div class="pb ow"><table class="t"><tbody>`+
-      withH.sort((a,b)=>b.h-a.h).map(i=>`<tr onclick="openServico('${i.cod}')"><td class="lk">${esc(i.nm)||'cód. '+i.cod}</td><td><span class="badge bg">${i.tp}</span></td><td class="tr">${fmtH(i.h)}h</td><td class="tr">${fmtK(C(i.c))}</td></tr>`).join('')+'</tbody></table></div></div>';
+      withH.sort((a,b)=>b._ph-a._ph).map(i=>`<tr onclick="openServico('${i.cod}')"><td class="lk">${esc(i.nm)||'cód. '+i.cod}</td><td><span class="badge bg">${i.tp}</span></td><td class="tr">${fmtH(i._ph)}h</td><td class="tr">${fmtK(C(i._pc))}</td></tr>`).join('')+'</tbody></table></div></div>';
   }
   document.getElementById('ovc-body').innerHTML = html || '<div class="note">Sem dados detalhados para este cliente no período.</div>';
   document.getElementById('ov-cliente').classList.add('open');
@@ -748,31 +760,47 @@ function openServico(cod){
   const sd = D.servicos_det[cod];
   if(!sd){ return; }
   const jud = judCalc().find(j=>j.cod===String(cod));
+  const periodText=document.getElementById('period-note').textContent;
   document.getElementById('ovs-title').textContent = sd.lbl || ('Serviço '+cod);
-  document.getElementById('ovs-sub').innerHTML = `${sd.tipo||''} · <span class="lk" style="color:#fff;text-decoration:underline;cursor:pointer" onclick="closeOv('servico');openCliente('${esc(sd.cli)}')">${esc(sd.cli)}</span> · cód. ${cod}${sd.ativo?'':' · BAIXADO'}${sd.incluso?' · incluso no mensal':''}`;
+  document.getElementById('ovs-sub').innerHTML = `${sd.tipo||''} · <span class="lk" style="color:#fff;text-decoration:underline;cursor:pointer" onclick="closeOv('servico');openCliente('${esc(sd.cli)}')">${esc(sd.cli)}</span> · cód. ${cod} · ${periodText}${sd.ativo?'':' · BAIXADO'}${sd.incluso?' · incluso no mensal':''}`;
   const h = sumPM(sd.pm,'h'), cRaw = sumPM(sd.pm,'c'), custo = C(cRaw);
-  let html = '';
+  const isMensal=['Mensal consultivo','Mensal judicial','Fixo renovação'].includes(sd.tipo);
+  const receitaPeriodo=sumPM(sd.pm,'r');
+  const receitaExibida=isMensal?receitaPeriodo:(sd.rec||0);
+  let html = `<div class="period-context"><b>Período analisado:</b> ${esc(periodText)}</div>`;
   if(jud){
     html += `<div class="kg kg4">
       <div class="kc"><div class="kc-l">Entrada</div><div class="kc-v">${fmtK(jud.e)}</div></div>
-      <div class="kc"><div class="kc-l">Custo acumulado</div><div class="kc-v">${fmtK(jud._ca)}</div></div>
+      <div class="kc"><div class="kc-l">Custo no período</div><div class="kc-v">${fmtK(jud._ca)}</div></div>
       <div class="kc"><div class="kc-l">Break-even de êxito</div><div class="kc-v ${jud._be>0?'a':'g'}">${jud._be>0?fmtK(jud._be):'coberto'}</div></div>
       <div class="kc"><div class="kc-l">Margem total estimada</div><div class="kc-v ${jud._mt>=0?'g':'r'}">${fmtK(jud._mt)}</div><div class="kc-s">êxito est. ${fmtK(jud.x)}</div></div>
     </div>`;
   } else {
-    const margem = (sd.rec||0) - custo;
+    const margem = receitaExibida - custo;
     html += `<div class="kg kg4">
-      <div class="kc"><div class="kc-l">Receita</div><div class="kc-v">${fmtK(sd.rec)}</div></div>
-      <div class="kc"><div class="kc-l">Custo (${S.rate})</div><div class="kc-v">${fmtK(custo)}</div></div>
-      <div class="kc"><div class="kc-l">Margem</div><div class="kc-v ${margem>=0?'g':'r'}">${fmtK(margem)}</div></div>
+      <div class="kc"><div class="kc-l">${isMensal?'Receita no período':'Receita contratada'}</div><div class="kc-v">${fmtK(receitaExibida)}</div></div>
+      <div class="kc"><div class="kc-l">Custo no período (${S.rate})</div><div class="kc-v">${fmtK(custo)}</div></div>
+      <div class="kc"><div class="kc-l">${isMensal?'Margem do período':'Saldo vs. custo do período'}</div><div class="kc-v ${margem>=0?'g':'r'}">${fmtK(margem)}</div></div>
       <div class="kc"><div class="kc-l">Horas no período</div><div class="kc-v">${fmtH(h)}</div></div>
     </div>`;
   }
   html += `<div class="panel"><div class="ph2"><span class="t">Evolução de horas e custo</span></div><div class="pb"><div class="cw"><canvas id="c-ovs"></canvas></div></div></div>`;
   if(sd.por_pessoa && sd.por_pessoa.length){
-    html += `<div class="panel"><div class="ph2"><span class="t">Quem trabalhou</span></div><div class="pb ow"><table class="t">
+    const pessoas=sd.por_pessoa.map(p=>({...p,
+      _ph:S.meses.reduce((s,m)=>s+(p.pm?.[m]||0),0),
+      _pc:S.meses.reduce((s,m)=>s+(p.pcm?.[m]||0),0),
+    })).filter(p=>p._ph>0).sort((a,b)=>b._ph-a._ph);
+    html += `<div class="panel"><div class="ph2"><span class="t">Quem trabalhou · no período</span><span class="s">${pessoas.length} pessoas · ${fmtH(pessoas.reduce((s,p)=>s+p._ph,0))}h</span></div><div class="pb ow"><table class="t">
       <thead><tr><th>Colaborador</th>${S.meses.map(m=>`<th class="r">${mLbl(m)}</th>`).join('')}<th class="r">Horas</th><th class="r">Custo</th></tr></thead><tbody>`+
-      sd.por_pessoa.sort((a,b)=>b.h-a.h).map(p=>`<tr onclick="closeOv('servico');openPessoa('${esc(p.adv)}')"><td class="lk">${esc(p.adv)}</td>${S.meses.map(m=>`<td class="tr tm">${fmtH(p.pm&&p.pm[m]?p.pm[m]:0)}</td>`).join('')}<td class="tr"><b>${fmtH(p.h)}</b></td><td class="tr">${fmtK(C(p.c))}</td></tr>`).join('')+'</tbody></table></div></div>';
+      pessoas.map(p=>`<tr onclick="closeOv('servico');openPessoa('${esc(p.adv)}')"><td class="lk">${esc(p.adv)}</td>${S.meses.map(m=>`<td class="tr tm">${fmtH(p.pm&&p.pm[m]?p.pm[m]:0)}</td>`).join('')}<td class="tr"><b>${fmtH(p._ph)}</b></td><td class="tr">${fmtK(C(p._pc))}</td></tr>`).join('')+`</tbody><tfoot><tr><th>Total</th>${S.meses.map(m=>`<th class="tr">${fmtH(sd.pm?.[m]?.h||0)}</th>`).join('')}<th class="tr">${fmtH(h)}</th><th class="tr">${fmtK(custo)}</th></tr></tfoot></table></div></div>`;
+  }
+  const lancamentos=(sd.lancamentos||[]).filter(l=>S.meses.includes(l.m));
+  if(lancamentos.length){
+    const hLanc=lancamentos.reduce((s,l)=>s+l.h,0), cLanc=lancamentos.reduce((s,l)=>s+l.c,0);
+    html += `<div class="panel"><div class="ph2"><span class="t">Atividades realizadas</span><span class="s">${lancamentos.length} lançamentos agrupados · ${fmtH(hLanc)}h</span></div><div class="pb ow"><table class="t">
+      <thead><tr><th>Data</th><th>Colaborador</th><th>Atividade</th><th class="r">Horas</th><th class="r">Custo</th></tr></thead><tbody>`+
+      lancamentos.map(l=>`<tr><td class="tm">${fmtDate(l.d)}</td><td>${esc(l.a)}</td><td>${esc(l.t)}</td><td class="tr"><b>${fmtH(l.h)}</b></td><td class="tr">${fmtK(C(l.c))}</td></tr>`).join('')+
+      `</tbody><tfoot><tr><th colspan="3">Total do período</th><th class="tr">${fmtH(hLanc)}</th><th class="tr">${fmtK(C(cLanc))}</th></tr></tfoot></table></div></div>`;
   }
   document.getElementById('ovs-body').innerHTML = html;
   document.getElementById('ov-servico').classList.add('open');

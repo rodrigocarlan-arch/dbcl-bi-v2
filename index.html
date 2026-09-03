@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>dbcl · Legal Ops BI</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-<script src="data.js?v=20260903-1"></script>
+<script src="data.js?v=20260903-5"></script>
 <style>
 :root{
   --g1:#003C28;--g2:#0F6E56;--g3:#1B8A6B;--g4:#D4EDE5;--bege:#FAF7EC;--neon:#CCFF00;--preto:#23282E;
@@ -102,7 +102,8 @@ button{font-family:inherit}
 .ph2 .t{font-size:13px;font-weight:600}.ph2 .s{font-size:11px;color:var(--c3)}
 .pb{padding:16px}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media(max-width:1100px){.g2{grid-template-columns:1fr}}
+.g2.rankwide{grid-template-columns:1.35fr .85fr}
+@media(max-width:1100px){.g2,.g2.rankwide{grid-template-columns:1fr}}
 .cw{position:relative;height:235px}.cw.t{height:320px}.cw.sm{height:170px}
 /* ───────── TABLES ───────── */
 .ow{overflow-x:auto}
@@ -137,6 +138,7 @@ table.t tbody tr:hover td{background:#f4f8f4}
 .grow td{background:var(--c1)!important;font-size:10px;font-weight:600;color:var(--c3)}
 /* ───────── NOTES / LEGEND ───────── */
 .note{font-size:11px;color:var(--c3);background:var(--c1);border-radius:6px;padding:8px 12px;margin-bottom:12px;border-left:3px solid var(--c2)}
+.period-context{font-size:12px;color:var(--g1);background:#eaf4ef;border:1px solid #cfe2d8;border-radius:8px;padding:9px 12px;margin-bottom:14px}
 .leg{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--c3);margin-bottom:10px}
 .le{display:flex;align-items:center;gap:4px}.ld{width:9px;height:9px;border-radius:2px;flex-shrink:0}
 .det{background:var(--c1);border-radius:var(--r);padding:12px 16px;display:none}
@@ -293,8 +295,8 @@ table.t tbody tr:hover td{background:#f4f8f4}
 <section class="screen" id="screen-mensalistas">
   <div class="ph"><div><h1>Mensalistas</h1><p>Receita × custo técnico · inclui horas de serviços inclusos no mensal</p></div></div>
   <div class="kg kg4" id="m-kpis"></div>
-  <div class="g2">
-    <div class="panel"><div class="ph2"><span class="t">Margem por cliente</span><span class="s">pior ao melhor</span></div><div class="pb"><div class="cw t"><canvas id="c-m-rank"></canvas></div></div></div>
+  <div class="g2 rankwide">
+    <div class="panel"><div class="ph2"><span class="t">10 piores e 10 melhores margens</span><span class="s">extremos do período</span></div><div class="pb"><div class="cw t"><canvas id="c-m-rank"></canvas></div></div></div>
     <div class="panel"><div class="ph2"><span class="t">Receita × custo</span><span class="s">tamanho = horas · cor = margem</span></div><div class="pb"><div class="cw t"><canvas id="c-m-scat"></canvas></div></div></div>
   </div>
   <div class="fb" id="m-filters"></div>
@@ -373,6 +375,6 @@ table.t tbody tr:hover td{background:#f4f8f4}
 <div class="overlay" id="ov-cliente"><div class="ov-header"><button class="ov-back" onclick="closeOv('cliente')">← Voltar</button><div><div class="ov-title" id="ovc-title"></div><div class="ov-sub" id="ovc-sub"></div></div></div><div class="ov-body" id="ovc-body"></div></div>
 <div class="overlay" id="ov-servico"><div class="ov-header"><button class="ov-back" onclick="closeOv('servico')">← Voltar</button><div><div class="ov-title" id="ovs-title"></div><div class="ov-sub" id="ovs-sub"></div></div></div><div class="ov-body" id="ovs-body"></div></div>
 
-<script src="app.js?v=20260903-1"></script>
+<script src="app.js?v=20260903-5"></script>
 </body>
 </html>
