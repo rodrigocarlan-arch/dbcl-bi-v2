@@ -97,11 +97,12 @@ Chart.defaults.plugins.legend.labels.boxWidth = 10;
 /* ───────── DADOS DERIVADOS (recalculados por período/tabela) ───────── */
 function mensalCalc(){
   return D.mensal.map(m => {
-    const h = sumPM(m.pm,'h'), hp = sumPM(m.pm,'hp'), hi = sumPM(m.pm,'hi');
+    const hb = sumPM(m.pm,'h'), hp = sumPM(m.pm,'hp'), hi = sumPM(m.pm,'hi');
+    const h = hb + hi;
     const cRaw = sumPM(m.pm,'c'), rec = sumPM(m.pm,'r');
     const custo = C(cRaw), margem = rec - custo;
     const mpct = rec>0 ? margem/rec*100 : null;
-    return {...m, _h:h,_hp:hp,_hi:hi,_cRaw:cRaw,_custo:custo,_rec:rec,_margem:margem,_mpct:mpct,_recM:rec/Math.max(1,S.meses.length)};
+    return {...m, _h:h,_hb:hb,_hp:hp,_hi:hi,_cRaw:cRaw,_custo:custo,_rec:rec,_margem:margem,_mpct:mpct,_recM:rec/Math.max(1,S.meses.length)};
   });
 }
 function lcCalc(){
@@ -508,7 +509,7 @@ function renderMensalistas(){
       <td class="lk">${esc(m.cli)}${m.n_inc>0?` <span class="badge bg">${m.n_inc} inc</span>`:''}</td>
       <td class="tm">${m.resp||''}</td>
       <td class="tr">${fmtK(m._recM)}</td><td class="tr">${fmtK(m._rec)}</td>
-      <td class="tr">${fmtH(m._h)}</td><td class="tr tm">${fmtH(m._hp)}</td><td class="tr tm">${fmtH(m._hi)}</td>
+      <td class="tr"><b>${fmtH(m._h)}</b></td><td class="tr tm">${fmtH(m._hb)}</td><td class="tr tm">${fmtH(m._hi)}</td>
       <td class="tr">${fmtK(m._custo)}</td>
       <td class="tr" style="font-weight:600;color:${m._margem<0?'var(--red)':'var(--g2)'}">${fmtK(m._margem)}</td>
       <td class="tr">${fmtP(m._mpct)}</td>
@@ -690,12 +691,16 @@ function openCliente(nome){
   document.getElementById('ovc-title').textContent = nome;
   document.getElementById('ovc-sub').textContent = men ? `Mensalista · resp. ${men.resp||'—'}` : 'Cliente';
   let html = '';
+  const hSemCodigo = cd ? S.meses.reduce((s,m)=>s+(cd.pm_sem_codigo?.[m]||0),0) : 0;
+  const hServicos = cd ? cd.svcs.reduce((total,svc)=>total+S.meses.reduce((s,m)=>s+(svc.pm?.[m]||0),0),0) : 0;
+  const hCliente = hServicos + hSemCodigo;
   if(men){
+    const hOutros = Math.max(0,hServicos-men._hb-men._hi);
     html += `<div class="kg kg4">
       <div class="kc"><div class="kc-l">Receita no período</div><div class="kc-v">${fmtK(men._rec)}</div></div>
-      <div class="kc"><div class="kc-l">Custo (${S.rate})</div><div class="kc-v">${fmtK(men._custo)}</div></div>
+      <div class="kc"><div class="kc-l">Custo do escopo (${S.rate})</div><div class="kc-v">${fmtK(men._custo)}</div></div>
       <div class="kc"><div class="kc-l">Margem</div><div class="kc-v ${men._margem>=0?'g':'r'}">${fmtK(men._margem)}</div><div class="kc-s">${fmtP(men._mpct)}</div></div>
-      <div class="kc"><div class="kc-l">Horas</div><div class="kc-v">${fmtH(men._h)}</div><div class="kc-s">${fmtH(men._hi)} em inclusos</div></div>
+      <div class="kc"><div class="kc-l">Horas do cliente</div><div class="kc-v">${fmtH(hCliente)}</div><div class="kc-s">${fmtH(men._hb)} mensal · ${fmtH(men._hi)} inclusos${hOutros?` · ${fmtH(hOutros)} outros`:''}${hSemCodigo?` · ${fmtH(hSemCodigo)} sem código`:''}</div></div>
     </div>
     <div class="panel"><div class="ph2"><span class="t">Evolução mensal</span></div><div class="pb"><div class="cw"><canvas id="c-ovc"></canvas></div></div></div>`;
   } else if(cd){
@@ -706,6 +711,9 @@ function openCliente(nome){
       <div class="kc"><div class="kc-l">Margem estimada</div><div class="kc-v ${cd.rec_tot-custo>=0?'g':'r'}">${fmtK(cd.rec_tot-custo)}</div></div>
       <div class="kc"><div class="kc-l">Horas totais</div><div class="kc-v">${fmtH(cd.h_tot)}</div></div>
     </div>`;
+  }
+  if(hSemCodigo>0){
+    html += `<div class="note">⚠ ${fmtH(hSemCodigo)}h no período vieram do Themis sem código de venda. Elas estão no total do cliente, mas não foram atribuídas silenciosamente a um serviço.</div>`;
   }
   // serviços
   if(cd && cd.svcs && cd.svcs.length){
@@ -730,7 +738,7 @@ function openCliente(nome){
     mkChart('c-ovc',{data:{labels:S.meses.map(mLbl),datasets:[
       {type:'bar',label:'Receita',data:S.meses.map(m=>men.pm[m]?men.pm[m].r||0:0),backgroundColor:'#0F6E56'},
       {type:'bar',label:'Custo',data:S.meses.map(m=>men.pm[m]?C(men.pm[m].c||0):0),backgroundColor:'#C0392B'},
-      {type:'line',label:'Horas',data:S.meses.map(m=>men.pm[m]?men.pm[m].h||0:0),borderColor:'#C47A00',yAxisID:'y2',tension:.3}
+      {type:'line',label:'Horas do cliente',data:S.meses.map(m=>(cd?.svcs||[]).reduce((s,svc)=>s+(svc.pm?.[m]||0),0)+(cd?.pm_sem_codigo?.[m]||0)),borderColor:'#C47A00',yAxisID:'y2',tension:.3}
     ]},options:{maintainAspectRatio:false,plugins:{legend:{position:'bottom'}},scales:{y:{ticks:{callback:v=>'R$'+(v/1000)+'k'}},y2:{position:'right',grid:{display:false}}}}});
   },50);
 }

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>dbcl · Legal Ops BI</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-<script src="data.js?v=20260902-3"></script>
+<script src="data.js?v=20260903-1"></script>
 <style>
 :root{
   --g1:#003C28;--g2:#0F6E56;--g3:#1B8A6B;--g4:#D4EDE5;--bege:#FAF7EC;--neon:#CCFF00;--preto:#23282E;
@@ -302,7 +302,7 @@ table.t tbody tr:hover td{background:#f4f8f4}
     <thead><tr>
       <th onclick="mSort('cli')">Cliente</th><th>Resp.</th>
       <th class="r" onclick="mSort('rec_m')">Rec./mês</th><th class="r" onclick="mSort('rec_tot')">Total</th>
-      <th class="r" onclick="mSort('h_tot')">H</th><th class="r">H.Jud</th><th class="r">H.Inc</th>
+      <th class="r" onclick="mSort('h_tot')">H escopo</th><th class="r">H mensal</th><th class="r">H inclusos</th>
       <th class="r" onclick="mSort('custo')">Custo</th><th class="r" onclick="mSort('margem')">Margem</th><th class="r" onclick="mSort('mpct')">%</th>
       <th>Tendência</th>
     </tr></thead>
@@ -373,6 +373,6 @@ table.t tbody tr:hover td{background:#f4f8f4}
 <div class="overlay" id="ov-cliente"><div class="ov-header"><button class="ov-back" onclick="closeOv('cliente')">← Voltar</button><div><div class="ov-title" id="ovc-title"></div><div class="ov-sub" id="ovc-sub"></div></div></div><div class="ov-body" id="ovc-body"></div></div>
 <div class="overlay" id="ov-servico"><div class="ov-header"><button class="ov-back" onclick="closeOv('servico')">← Voltar</button><div><div class="ov-title" id="ovs-title"></div><div class="ov-sub" id="ovs-sub"></div></div></div><div class="ov-body" id="ovs-body"></div></div>
 
-<script src="app.js?v=20260902-3"></script>
+<script src="app.js?v=20260903-1"></script>
 </body>
 </html>
