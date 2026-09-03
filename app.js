@@ -169,7 +169,7 @@ function buildAlerts(){
   const parados = lc.filter(p=>(p.rec||0)>=10000 && p._h===0);
   if(parados.length){
     const recPar = parados.reduce((s,p)=>s+p.rec,0);
-    alerts.push({sev:'g',ico:'💤',tit:`${parados.length} projetos vendidos (${fmtK(recPar)}) ainda sem nenhuma hora lançada`,act:`<b>Ação:</b> confirmar se já iniciaram — receita boa, mas execução parada pode virar problema de prazo`,go:()=>{S.prFilter='sem_h';go('projetos');}});
+    alerts.push({sev:'g',ico:'💤',tit:`${parados.length} projetos vendidos (${fmtK(recPar)}) sem horas no período selecionado`,act:`<b>Ação:</b> confirmar se já iniciaram — receita boa, mas execução parada pode virar problema de prazo`,go:()=>{S.prFilter='sem_h';go('projetos');}});
   }
   // 6. Mensalista saudável destaque (positivo)
   const top3 = men.filter(m=>m._rec>0&&m._mpct!=null&&m._mpct>40&&m._h>5).sort((a,b)=>b._margem-a._margem);
@@ -438,13 +438,13 @@ function renderHeatmap(){
 
 /* ───────── PESSOAS ───────── */
 function renderPessoas(){
-  const rows = hmCalc().filter(p=>p._tot>0.5 && p.ativo).sort((a,b)=>b._tot-a._tot);
+  const rows = hmCalc().filter(p=>p._tot>0.5 && p.ativo).sort((a,b)=>b._tot-a._tot).slice(0,15);
   mkChart('c-p-rank',{type:'bar',data:{labels:rows.map(p=>p.adv.split(' ')[0]+' '+(p.adv.split(' ')[1]||'').slice(0,1)+'.'),datasets:[
     {label:'Vermelho',data:rows.map(p=>p._h.v),backgroundColor:'#C0392B'},
     {label:'Amarelo',data:rows.map(p=>p._h.a),backgroundColor:'#C47A00'},
     {label:'Verde',data:rows.map(p=>p._h.g),backgroundColor:'#2E7D32'},
     {label:'Admin',data:rows.map(p=>p._h.adm),backgroundColor:'#546E7A'}
-  ]},options:{indexAxis:'y',maintainAspectRatio:false,scales:{x:{stacked:true},y:{stacked:true}},plugins:{legend:{position:'bottom'}},onClick:(e,el)=>{if(el.length)openPessoa(rows[el[0].index].adv);}}});
+  ]},options:{indexAxis:'y',maintainAspectRatio:false,scales:{x:{stacked:true},y:{stacked:true,ticks:{autoSkip:false}}},plugins:{legend:{position:'bottom'},tooltip:{callbacks:{title:items=>rows[items[0].dataIndex].adv}}},onClick:(e,el)=>{if(el.length)openPessoa(rows[el[0].index].adv);}}});
 
   const hVals = S.meses.map(m=>D.kpm[m]?D.kpm[m].h:0);
   const hcVals = S.meses.map(m=>D.kpm[m]?D.kpm[m].hc:0);
@@ -548,7 +548,7 @@ function renderProjetos(){
 
   const top = all.filter(p=>p._h>0).sort((a,b)=>b._margem-a._margem).slice(0,12);
   mkChart('c-pr-top',{type:'bar',data:{labels:top.map(p=>p.lbl.slice(0,20)),datasets:[{label:'Margem',data:top.map(p=>p._margem),backgroundColor:top.map(p=>p._margem<0?'#C0392B':'#0F6E56')}]},
-    options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{callback:v=>'R$'+(v/1000)+'k'}}},onClick:(e,el)=>{if(el.length)openServico(top[el[0].index].cod);}}});
+    options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{title:items=>top[items[0].dataIndex].lbl}}},scales:{y:{ticks:{autoSkip:false}},x:{ticks:{callback:v=>'R$'+(v/1000)+'k'}}},onClick:(e,el)=>{if(el.length)openServico(top[el[0].index].cod);}}});
 
   const sc = all.filter(p=>p._h>0);
   mkChart('c-pr-scat',{type:'bubble',data:{datasets:[{data:sc.map(p=>({x:p.rec||0,y:p._custo,r:Math.max(4,Math.min(16,Math.sqrt(Math.abs(p._margem))/20)),lbl:p.lbl,cli:p.cli})),
@@ -596,7 +596,7 @@ function renderJudicial(){
   mkChart('c-j-top',{type:'bar',data:{labels:top.map(j=>(j.cli+' · '+j.lbl).slice(0,24)),datasets:[
     {label:'Custo acum.',data:top.map(j=>j._ca),backgroundColor:'#C0392B'},
     {label:'Entrada',data:top.map(j=>j.e||0),backgroundColor:'#0F6E56'}
-  ]},options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{position:'bottom'}},scales:{x:{ticks:{callback:v=>'R$'+(v/1000)+'k'}}},onClick:(e,el)=>{if(el.length)openServico(top[el[0].index].cod);}}});
+  ]},options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{position:'bottom'},tooltip:{callbacks:{title:items=>`${top[items[0].dataIndex].cli} · ${top[items[0].dataIndex].lbl}`}}},scales:{y:{ticks:{autoSkip:false}},x:{ticks:{callback:v=>'R$'+(v/1000)+'k'}}},onClick:(e,el)=>{if(el.length)openServico(top[el[0].index].cod);}}});
 
   const stColor = {ok:'rgba(15,110,86,.6)',ganhar:'rgba(196,122,0,.65)',inviavel:'rgba(192,57,43,.65)'};
   mkChart('c-j-scat',{type:'scatter',data:{datasets:[{data:all.map(j=>({x:j.e||0,y:j._ca,lbl:j.lbl,cli:j.cli})),
@@ -650,6 +650,51 @@ function renderPortfolio(){
     (norec.length?norec.map(m=>`<tr onclick="openCliente('${esc(m.cli)}')"><td class="lk">${esc(m.cli)}</td><td class="tr">${fmtH(m._h)}</td><td class="tr" style="color:var(--amb);font-weight:600">${fmtK(m._custo)}</td></tr>`).join(''):'<tr><td colspan="3" class="tm">Nenhum.</td></tr>')+'</tbody>';
 }
 
+/* ───────── AUDITORIA DA BASE ───────── */
+function renderAuditoria(){
+  const au=D.meta?.auditoria||{}, cv=au.codigo_venda_themis||{}, crm=au.cadastro_crm||{};
+  const fonte=cv.horas_por_mes_fonte||{};
+  const mesesThemis=S.meses.filter(m=>fonte[m]!=null);
+  const hFonte=mesesThemis.reduce((s,m)=>s+(fonte[m]||0),0);
+  const hBi=mesesThemis.reduce((s,m)=>s+(D.kpm[m]?.h||0),0);
+  const hVinc=S.meses.reduce((s,m)=>s+Object.values(D.servicos_det).reduce((a,sv)=>a+(sv.pm?.[m]?.h||0),0),0);
+  const hEscritorio=S.meses.reduce((s,m)=>s+(D.kpm[m]?.h||0),0);
+  const hSem=Math.max(0,hEscritorio-hVinc);
+  const mensalSem=mensalCalc().filter(m=>m.ativo!==false&&m._rec===0).sort((a,b)=>b._h-a._h);
+  const pend=(cv.pendencias||[]);
+  const dif=Math.round((hBi-hFonte)*100)/100;
+  document.getElementById('au-kpis').innerHTML=`
+    <div class="kc"><div class="kc-l">Horas da fonte</div><div class="kc-v">${mesesThemis.length?fmtH(hFonte):'—'}</div><div class="kc-s">${mesesThemis.map(mLbl).join(', ')||'período sem Themis'}</div></div>
+    <div class="kc"><div class="kc-l">Horas publicadas no BI</div><div class="kc-v ${Math.abs(dif)<=.05?'g':'r'}">${mesesThemis.length?fmtH(hBi):'—'}</div><div class="kc-s">diferença: ${mesesThemis.length?fmtH(dif):'—'}h</div></div>
+    <div class="kc"><div class="kc-l">Horas vinculadas a serviços</div><div class="kc-v">${fmtH(hVinc)}</div><div class="kc-s">${hEscritorio?fmtP(hVinc/hEscritorio*100):'—'} do escritório no período</div></div>
+    <div class="kc"><div class="kc-l">Horas sem código CRM</div><div class="kc-v ${hSem>.05?'a':'g'}">${fmtH(hSem)}</div><div class="kc-s">não foram atribuídas a serviço por suposição</div></div>`;
+  document.getElementById('au-status').innerHTML=mesesThemis.length
+    ? (Math.abs(dif)<=.05?`<b>✓ Total conciliado:</b> a fonte e o BI fecham no período selecionado.`:`<b>⚠ Divergência de ${fmtH(Math.abs(dif))}h:</b> a publicação deve ser bloqueada até a correção.`)
+    : '<b>Informação:</b> o período selecionado pertence ao histórico Eleven; a conciliação Themis começa em 2026.';
+
+  const empty=(n,msg)=>`<tbody><tr><td colspan="${n}" class="tm">${msg}</td></tr></tbody>`;
+  document.getElementById('au-codigos').innerHTML=`<thead><tr><th>Código informado</th><th>Pasta</th><th>Cliente na origem</th><th class="r">Linhas</th><th class="r">Horas</th></tr></thead>`+
+    (pend.length?`<tbody>${pend.map(p=>`<tr><td>${!p.codigo||/^0+$/.test(p.codigo)?'<span class="badge br">vazio/000</span>':esc(p.codigo)}</td><td>${esc(p.pasta)||'—'}</td><td>${esc(p.cliente)}</td><td class="tr">${p.linhas}</td><td class="tr"><b>${fmtH(p.horas)}</b></td></tr>`).join('')}</tbody>`:empty(5,'Nenhum código pendente.'));
+  const duplicados=au.themis_alocacao?.duplicidades||[];
+  document.getElementById('au-duplicados').innerHTML=`<thead><tr><th>Data</th><th>Pessoa</th><th>Cliente</th><th>Descrição</th><th class="r">Horas</th></tr></thead>`+
+    (duplicados.length?`<tbody>${duplicados.map(r=>`<tr><td>${esc(r.data)}</td><td>${esc(r.pessoa)}</td><td>${esc(r.cliente)}</td><td>${esc(r.descricao)}</td><td class="tr"><b>${fmtH(r.horas)}</b></td></tr>`).join('')}</tbody>`:empty(5,'Nenhuma duplicidade potencial encontrada.'));
+  document.getElementById('au-mensal').innerHTML=`<thead><tr><th>Cliente</th><th class="r">Horas</th><th class="r">Receita</th></tr></thead>`+
+    (mensalSem.length?`<tbody>${mensalSem.map(m=>`<tr onclick="openCliente('${esc(m.cli)}')"><td class="lk">${esc(m.cli)}</td><td class="tr">${fmtH(m._h)}</td><td class="tr"><b>${fmtK(m._rec)}</b></td></tr>`).join('')}</tbody>`:empty(3,'Nenhum mensalista ativo sem valor no período.'));
+  const incompletos=crm.registros_incompletos||[];
+  document.getElementById('au-crm').innerHTML=`<thead><tr><th>Código</th><th>Cliente</th><th>Células vazias</th></tr></thead>`+
+    (incompletos.length?`<tbody>${incompletos.map(r=>`<tr ${D.servicos_det[r.codigo]?`onclick="openServico('${r.codigo}')"`:''}><td class="lk">${esc(r.codigo)}</td><td>${esc(r.cliente)||'—'}</td><td>${esc((r.campos||[]).join(', '))}</td></tr>`).join('')}</tbody>`:empty(3,'Nenhuma célula essencial vazia em contratos ativos.'));
+  const semValores=au.valores_pessoas?.registros||[];
+  document.getElementById('au-pessoas').innerHTML=`<thead><tr><th>Pessoa</th><th>Valores ausentes na origem</th></tr></thead>`+
+    (semValores.length?`<tbody>${semValores.map(r=>`<tr onclick="openPessoa('${esc(r.pessoa)}')"><td class="lk">${esc(r.pessoa)}</td><td>${esc((r.campos||[]).join(', '))}</td></tr>`).join('')}</tbody>`:empty(2,'Todos os valores de hora estão preenchidos.'));
+  const ambiguas=au.mapa_pastas?.registros_ambiguos||[];
+  document.getElementById('au-pastas').innerHTML=`<thead><tr><th>Pasta</th><th>Códigos encontrados</th></tr></thead>`+
+    (ambiguas.length?`<tbody>${ambiguas.map(r=>`<tr><td>${esc(r.pasta)}</td><td>${esc((r.codigos||[]).join(', '))}</td></tr>`).join('')}</tbody>`:empty(2,'Nenhuma pasta ambígua.'));
+
+  const issueCount=pend.length+duplicados.length+mensalSem.length+incompletos.length+semValores.length+ambiguas.length;
+  const badge=document.getElementById('sb-audit-n');
+  badge.textContent=issueCount;badge.style.display=issueCount?'':'none';
+}
+
 /* ───────── OVERLAY: PESSOA ───────── */
 function openPessoa(nome){
   const p = D.hm.find(x=>x.adv===nome);
@@ -666,16 +711,20 @@ function openPessoa(nome){
   </div>
   <div class="panel"><div class="ph2"><span class="t">Evolução mensal por sinaleira</span></div><div class="pb"><div class="cw"><canvas id="c-ovp"></canvas></div></div></div>`;
 
-  if(det && det.casos && det.casos.length){
-    const casos = det.casos.filter(c=>c.nm);
-    html += `<div class="panel"><div class="ph2"><span class="t">Casos e processos trabalhados</span><span class="s">${casos.length} itens · clique para abrir</span></div><div class="pb ow"><table class="t">
+  if(det){
+    const casos = (det.casos||[]).filter(c=>c.nm).map(c=>({...c,_ph:S.meses.reduce((s,m)=>s+(c.pm?.[m]||0),0)})).filter(c=>c._ph>0);
+    const hSemCodigo = S.meses.reduce((s,m)=>s+(det.pm_sem_codigo?.[m]||0),0);
+    const totalCasos = casos.reduce((s,c)=>s+c._ph,0)+hSemCodigo;
+    html += `<div class="panel"><div class="ph2"><span class="t">Casos e processos trabalhados</span><span class="s">${casos.length} itens no período · clique para abrir</span></div><div class="pb ow"><table class="t">
       <thead><tr><th>Caso</th><th>Cliente</th><th>Tipo</th>${S.meses.map(m=>`<th class="r">${mLbl(m)}</th>`).join('')}<th class="r">Total h</th></tr></thead><tbody>`+
-      casos.sort((a,b)=>b.h-a.h).map(c=>`<tr ${c.cod!=='0'?`onclick="openServico('${c.cod}')"`:''}>
-        <td class="${c.cod!=='0'?'lk':''}">${esc(c.nm)||'<i class="tm">interno/admin</i>'}</td>
+      casos.sort((a,b)=>b._ph-a._ph).map(c=>`<tr onclick="openServico('${c.cod}')">
+        <td class="lk">${esc(c.nm)}</td>
         <td><span class="lk" onclick="event.stopPropagation();openCliente('${esc(c.cli)}')">${esc(c.cli)}</span></td>
         <td><span class="badge bc">${c.tp||''}</span>${c.ativo===false&&c.tp?' <span class="badge br">baixado</span>':''}</td>
         ${S.meses.map(m=>`<td class="tr tm">${fmtH(c.pm&&c.pm[m]?c.pm[m]:0)}</td>`).join('')}
-        <td class="tr"><b>${fmtH(c.h)}</b></td></tr>`).join('')+'</tbody></table></div></div>';
+        <td class="tr"><b>${fmtH(c._ph)}</b></td></tr>`).join('')+
+      (hSemCodigo?`<tr><td><i class="tm">Atividades sem código de serviço</i></td><td></td><td><span class="badge ba">revisar origem</span></td>${S.meses.map(m=>`<td class="tr tm">${fmtH(det.pm_sem_codigo?.[m]||0)}</td>`).join('')}<td class="tr"><b>${fmtH(hSemCodigo)}</b></td></tr>`:'')+
+      `</tbody><tfoot><tr><th colspan="3">Total conciliado</th>${S.meses.map(m=>`<th class="tr">${fmtH(det.h_mes?.[m]?.h||0)}</th>`).join('')}<th class="tr">${fmtH(totalCasos)}</th></tr></tfoot></table></div></div>`;
   }
   document.getElementById('ovp-body').innerHTML = html;
   document.getElementById('ov-pessoa').classList.add('open');
@@ -835,6 +884,7 @@ function render(){
     case 'projetos': renderProjetos(); break;
     case 'judicial': renderJudicial(); break;
     case 'portfolio': renderPortfolio(); break;
+    case 'auditoria': renderAuditoria(); break;
   }
 }
 
@@ -842,3 +892,4 @@ function render(){
 buildPeriodBar();
 document.getElementById('sb-per').textContent = D.meta.periodo || '';
 buildSidebarLists();
+renderAuditoria();
