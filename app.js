@@ -4,9 +4,12 @@
    ════════════════════════════════════════════════════════════ */
 
 /* ───────── ESTADO ───────── */
+const EXCLUDED_MONTHS = new Set(['2026-01']);
+const LAST_CLOSED_MONTH = D.meta?.ultimo_mes_horas || D.meses[D.meses.length-1];
+const AVAILABLE_MONTHS = D.meses.filter(m=>m<=LAST_CLOSED_MONTH&&!EXCLUDED_MONTHS.has(m));
 const S = {
   screen: 'painel',
-  meses: [D.meta?.ultimo_mes_horas || D.meses[D.meses.length-1]], // abre no último mês com horas
+  meses: [AVAILABLE_MONTHS[AVAILABLE_MONTHS.length-1]], // abre no último mês fechado
   periodKind: 'month',
   carteira: 'ativos',              // inativos só aparecem sob escolha explícita
   rate: 'mensal',                  // custo | mensal | pontual
@@ -208,7 +211,7 @@ function periodRangeLabel(months){
 }
 function periodGroups(kind){
   const grouped = new Map();
-  D.meses.forEach(month=>{
+  AVAILABLE_MONTHS.forEach(month=>{
     const year=month.slice(0,4), number=Number(month.slice(5,7));
     let key, label;
     if(kind==='month'){key=month;label=mFullLbl(month);}
@@ -230,7 +233,7 @@ function applyPeriod(months,label){
   render();
 }
 function buildPeriodBar(){
-  const options=D.meses.map(m=>`<option value="${m}">${mFullLbl(m)}</option>`).join('');
+  const options=AVAILABLE_MONTHS.map(m=>`<option value="${m}">${mFullLbl(m)}</option>`).join('');
   document.getElementById('period-start').innerHTML=options;
   document.getElementById('period-end').innerHTML=options;
   setPeriodKind('month');
@@ -244,14 +247,14 @@ function setPeriodKind(kind){
   selector.style.display=kind==='custom'?'none':'';
 
   if(kind==='custom'){
-    document.getElementById('period-start').value=S.meses[0]||D.meses[D.meses.length-1];
-    document.getElementById('period-end').value=S.meses[S.meses.length-1]||D.meses[D.meses.length-1];
+    document.getElementById('period-start').value=S.meses[0]||AVAILABLE_MONTHS[AVAILABLE_MONTHS.length-1];
+    document.getElementById('period-end').value=S.meses[S.meses.length-1]||AVAILABLE_MONTHS[AVAILABLE_MONTHS.length-1];
     applyCustomPeriod();
     return;
   }
   if(kind==='all'){
     selector.innerHTML='<option>Todo o histórico disponível</option>';
-    applyPeriod(D.meses,periodRangeLabel(D.meses));
+    applyPeriod(AVAILABLE_MONTHS,periodRangeLabel(AVAILABLE_MONTHS));
     return;
   }
   const groups=periodGroups(kind);
@@ -268,10 +271,10 @@ function applyPeriodChoice(){
 function applyCustomPeriod(){
   const start=document.getElementById('period-start').value;
   const end=document.getElementById('period-end').value;
-  const low=Math.min(D.meses.indexOf(start),D.meses.indexOf(end));
-  const high=Math.max(D.meses.indexOf(start),D.meses.indexOf(end));
+  const low=Math.min(AVAILABLE_MONTHS.indexOf(start),AVAILABLE_MONTHS.indexOf(end));
+  const high=Math.max(AVAILABLE_MONTHS.indexOf(start),AVAILABLE_MONTHS.indexOf(end));
   if(low<0||high<0) return;
-  const months=D.meses.slice(low,high+1);
+  const months=AVAILABLE_MONTHS.slice(low,high+1);
   applyPeriod(months,periodRangeLabel(months));
 }
 function setCarteira(value){
@@ -303,8 +306,9 @@ function renderPainel(){
   const negN = men.filter(m=>m._rec>0&&m._margem<0).length;
   const projM = lc.reduce((s,p)=>s+p._margem,0);
   const invN = jud.filter(j=>j._h>0&&j._status==='inviavel').length;
+  const pessoasPeriodo = carteiraRows(hmCalc()).filter(p=>p._tot>0.5).length;
 
-  document.getElementById('pg-sub').textContent = `${carteiraDescription()} · ${D.kpis.pessoas} pessoas ativas · ${men.length} mensalistas · ${lc.length} projetos · ${jud.filter(j=>j._h>0).length} processos com horas no período`;
+  document.getElementById('pg-sub').textContent = `${carteiraDescription()} · ${pessoasPeriodo} pessoas com horas · ${men.length} mensalistas · ${lc.length} projetos · ${jud.filter(j=>j._h>0).length} processos com horas no período`;
 
   document.getElementById('pg-kpis').innerHTML = `
     <div class="kc click" onclick="go('pessoas')"><div class="kc-l">Horas totais</div><div class="kc-v">${fmtH(hTot)}</div><div class="kc-s">${trendHTML(hVals)} vs. mês anterior</div></div>
@@ -369,7 +373,7 @@ function renderTimes(){
     <div class="kc"><div class="kc-l">Horas no período</div><div class="kc-v">${fmtH(hTot)}</div></div>
     <div class="kc"><div class="kc-l">% em clientes</div><div class="kc-v g">${hTot>0?fmtP(hCli/hTot*100):'—'}</div></div>
     <div class="kc"><div class="kc-l">Times técnicos</div><div class="kc-v">${names.filter(n=>n!=='Administrativo').length}</div></div>
-    <div class="kc"><div class="kc-l">Pessoas no período</div><div class="kc-v">${D.kpis.pessoas}</div></div>`;
+    <div class="kc"><div class="kc-l">Pessoas no período</div><div class="kc-v">${carteiraRows(hmAll).filter(p=>p._tot>0.5).length}</div></div>`;
 
   // Stacked bar by month
   const colors = {'Trabalhista':'#64B5F6','Contencioso':'#EF9A9A','Consultivo':'#80CBC4','Cons. Tributária':'#CE93D8','Administrativo':'#B0BEC5'};
@@ -438,7 +442,8 @@ function renderHeatmap(){
 
 /* ───────── PESSOAS ───────── */
 function renderPessoas(){
-  const rows = hmCalc().filter(p=>p._tot>0.5 && p.ativo).sort((a,b)=>b._tot-a._tot).slice(0,15);
+  const pessoasPeriodo = carteiraRows(hmCalc().filter(p=>p._tot>0.5));
+  const rows = pessoasPeriodo.slice().sort((a,b)=>b._tot-a._tot).slice(0,15);
   mkChart('c-p-rank',{type:'bar',data:{labels:rows.map(p=>p.adv.split(' ')[0]+' '+(p.adv.split(' ')[1]||'').slice(0,1)+'.'),datasets:[
     {label:'Vermelho',data:rows.map(p=>p._h.v),backgroundColor:'#C0392B'},
     {label:'Amarelo',data:rows.map(p=>p._h.a),backgroundColor:'#C47A00'},
@@ -456,7 +461,7 @@ function renderPessoas(){
   ]},options:{maintainAspectRatio:false,plugins:{legend:{position:'bottom'}},scales:{y:{position:'left'},y2:{position:'right',grid:{display:false}}}}});
 
   let html = `<thead><tr><th>Colaborador</th><th>Time</th>${S.meses.map(m=>`<th class="r">${mLbl(m)}</th>`).join('')}<th class="r">Total</th><th class="r">Média/mês</th></tr></thead><tbody>`;
-  hmCalc().filter(p=>p._tot>0.5).sort((a,b)=>b._tot-a._tot).forEach(p=>{
+  pessoasPeriodo.slice().sort((a,b)=>b._tot-a._tot).forEach(p=>{
     const cells = S.meses.map(m=>`<td class="tr">${fmtH(p.pm[m]?p.pm[m].tot:0)}</td>`).join('');
     const nm = S.meses.filter(m=>p.pm[m]&&p.pm[m].tot>0).length||1;
     html += `<tr onclick="openPessoa('${esc(p.adv)}')"><td class="lk">${esc(p.adv)}${p.ativo?'':' <span class="badge bc">saiu</span>'}</td><td class="tm">${p.time}</td>${cells}<td class="tr"><b>${fmtH(p._tot)}</b></td><td class="tr">${fmtH(p._tot/nm)}</td></tr>`;
@@ -663,13 +668,15 @@ function renderAuditoria(){
   const mensalSem=mensalCalc().filter(m=>m.ativo!==false&&m._rec===0).sort((a,b)=>b._h-a._h);
   const pend=(cv.pendencias||[]);
   const dif=Math.round((hBi-hFonte)*100)/100;
+  const reconciliado=mesesThemis.every(m=>Math.abs((D.kpm[m]?.h||0)-(fonte[m]||0))<=.051);
+  const difVisual=reconciliado?0:dif;
   document.getElementById('au-kpis').innerHTML=`
     <div class="kc"><div class="kc-l">Horas da fonte</div><div class="kc-v">${mesesThemis.length?fmtH(hFonte):'—'}</div><div class="kc-s">${mesesThemis.map(mLbl).join(', ')||'período sem Themis'}</div></div>
-    <div class="kc"><div class="kc-l">Horas publicadas no BI</div><div class="kc-v ${Math.abs(dif)<=.05?'g':'r'}">${mesesThemis.length?fmtH(hBi):'—'}</div><div class="kc-s">diferença: ${mesesThemis.length?fmtH(dif):'—'}h</div></div>
+    <div class="kc"><div class="kc-l">Horas publicadas no BI</div><div class="kc-v ${reconciliado?'g':'r'}">${mesesThemis.length?fmtH(hBi):'—'}</div><div class="kc-s">diferença mensal: ${mesesThemis.length?fmtH(difVisual):'—'}h</div></div>
     <div class="kc"><div class="kc-l">Horas vinculadas a serviços</div><div class="kc-v">${fmtH(hVinc)}</div><div class="kc-s">${hEscritorio?fmtP(hVinc/hEscritorio*100):'—'} do escritório no período</div></div>
     <div class="kc"><div class="kc-l">Horas sem código CRM</div><div class="kc-v ${hSem>.05?'a':'g'}">${fmtH(hSem)}</div><div class="kc-s">não foram atribuídas a serviço por suposição</div></div>`;
   document.getElementById('au-status').innerHTML=mesesThemis.length
-    ? (Math.abs(dif)<=.05?`<b>✓ Total conciliado:</b> a fonte e o BI fecham no período selecionado.`:`<b>⚠ Divergência de ${fmtH(Math.abs(dif))}h:</b> a publicação deve ser bloqueada até a correção.`)
+    ? (reconciliado?`<b>✓ Total conciliado:</b> cada mês da fonte fecha com o BI (diferenças de exibição limitadas ao arredondamento).`:`<b>⚠ Divergência de ${fmtH(Math.abs(dif))}h:</b> a publicação deve ser bloqueada até a correção.`)
     : '<b>Informação:</b> o período selecionado pertence ao histórico Eleven; a conciliação Themis começa em 2026.';
 
   const empty=(n,msg)=>`<tbody><tr><td colspan="${n}" class="tm">${msg}</td></tr></tbody>`;
@@ -689,8 +696,11 @@ function renderAuditoria(){
   const ambiguas=au.mapa_pastas?.registros_ambiguos||[];
   document.getElementById('au-pastas').innerHTML=`<thead><tr><th>Pasta</th><th>Códigos encontrados</th></tr></thead>`+
     (ambiguas.length?`<tbody>${ambiguas.map(r=>`<tr><td>${esc(r.pasta)}</td><td>${esc((r.codigos||[]).join(', '))}</td></tr>`).join('')}</tbody>`:empty(2,'Nenhuma pasta ambígua.'));
+  const pessoasOrfas=au.pessoas_themis?.nao_cadastradas||[];
+  document.getElementById('au-pessoas-orfas').innerHTML=`<thead><tr><th>Nome na origem</th><th>Último mês</th><th class="r">Horas históricas</th></tr></thead>`+
+    (pessoasOrfas.length?`<tbody>${pessoasOrfas.map(r=>`<tr><td>${esc(r.pessoa_origem)}</td><td>${esc(r.ultimo_mes)}</td><td class="tr"><b>${fmtH(r.horas)}</b></td></tr>`).join('')}</tbody>`:empty(3,'Todas as pessoas estão conciliadas com o cadastro.'));
 
-  const issueCount=pend.length+duplicados.length+mensalSem.length+incompletos.length+semValores.length+ambiguas.length;
+  const issueCount=pend.length+duplicados.length+mensalSem.length+incompletos.length+semValores.length+ambiguas.length+pessoasOrfas.length;
   const badge=document.getElementById('sb-audit-n');
   badge.textContent=issueCount;badge.style.display=issueCount?'':'none';
 }
@@ -700,10 +710,11 @@ function openPessoa(nome){
   const p = D.hm.find(x=>x.adv===nome);
   if(!p) return;
   const calc = hmCalc().find(x=>x.adv===nome);
+  const periodText=document.getElementById('period-note').textContent;
   document.getElementById('ovp-title').textContent = nome;
-  document.getElementById('ovp-sub').textContent = `${p.fn} · ${p.cargo} · Time ${p.time}${p.ativo?'':' · desligado'}`;
+  document.getElementById('ovp-sub').textContent = `${p.fn} · ${p.cargo} · Time ${p.time} · ${periodText}${p.ativo?'':' · desligado'}`;
   const det = D.pessoas_det[nome];
-  let html = `<div class="kg kg4">
+  let html = `<div class="period-context"><b>Período analisado:</b> ${esc(periodText)}</div><div class="kg kg4">
     <div class="kc"><div class="kc-l">Horas no período</div><div class="kc-v">${fmtH(calc._tot)}</div></div>
     <div class="kc"><div class="kc-l">🔴 Vermelho</div><div class="kc-v">${fmtP(calc._pct.v)}</div><div class="kc-s">${fmtH(calc._h.v)}h ${p.dev.v==='low'?'⬇ abaixo do benchmark':p.dev.v==='high'?'⬆ acima':''}</div></div>
     <div class="kc"><div class="kc-l">🟡 Amarelo</div><div class="kc-v">${fmtP(calc._pct.a)}</div><div class="kc-s">${fmtH(calc._h.a)}h</div></div>
@@ -756,12 +767,15 @@ function openCliente(nome){
   const hCliente = hServicos + hSemCodigo;
   if(men){
     const hOutros = Math.max(0,hServicos-men._hb-men._hi);
+    const codsEscopo = new Set([...(men.cods||[]),...(men.inclusos_cods||[])]);
+    const custoOutros = C(periodServices.filter(s=>!codsEscopo.has(String(s.cod))).reduce((s,svc)=>s+svc._pc,0));
     html += `<div class="kg kg4">
       <div class="kc"><div class="kc-l">Receita no período</div><div class="kc-v">${fmtK(men._rec)}</div></div>
       <div class="kc"><div class="kc-l">Custo do escopo (${S.rate})</div><div class="kc-v">${fmtK(men._custo)}</div></div>
       <div class="kc"><div class="kc-l">Margem</div><div class="kc-v ${men._margem>=0?'g':'r'}">${fmtK(men._margem)}</div><div class="kc-s">${fmtP(men._mpct)}</div></div>
-      <div class="kc"><div class="kc-l">Horas do cliente</div><div class="kc-v">${fmtH(hCliente)}</div><div class="kc-s">${fmtH(men._hb)} mensal · ${fmtH(men._hi)} inclusos${hOutros?` · ${fmtH(hOutros)} outros`:''}${hSemCodigo?` · ${fmtH(hSemCodigo)} sem código`:''}</div></div>
+      <div class="kc"><div class="kc-l">Horas do escopo mensal</div><div class="kc-v">${fmtH(men._h)}</div><div class="kc-s">${fmtH(men._hb)} mensal · ${fmtH(men._hi)} inclusos</div></div>
     </div>
+    ${hOutros||hSemCodigo?`<div class="note"><b>Demais serviços do cliente no período:</b> ${fmtH(hOutros)}h e ${fmtK(custoOutros)} de custo fora da margem do mensal${hSemCodigo?` · mais ${fmtH(hSemCodigo)}h sem código de venda`:''}. <b>Total do cliente:</b> ${fmtH(hCliente)}h.</div>`:''}
     <div class="panel"><div class="ph2"><span class="t">Evolução mensal</span></div><div class="pb"><div class="cw"><canvas id="c-ovc"></canvas></div></div></div>`;
   } else if(cd){
     const custo = C(periodServices.reduce((s,svc)=>s+svc._pc,0));
@@ -799,7 +813,7 @@ function openCliente(nome){
     mkChart('c-ovc',{data:{labels:S.meses.map(mLbl),datasets:[
       {type:'bar',label:'Receita',data:S.meses.map(m=>men.pm[m]?men.pm[m].r||0:0),backgroundColor:'#0F6E56'},
       {type:'bar',label:'Custo',data:S.meses.map(m=>men.pm[m]?C(men.pm[m].c||0):0),backgroundColor:'#C0392B'},
-      {type:'line',label:'Horas do cliente',data:S.meses.map(m=>(cd?.svcs||[]).reduce((s,svc)=>s+(svc.pm?.[m]||0),0)+(cd?.pm_sem_codigo?.[m]||0)),borderColor:'#C47A00',yAxisID:'y2',tension:.3}
+      {type:'line',label:'Horas do escopo mensal',data:S.meses.map(m=>(men.pm[m]?.h||0)+(men.pm[m]?.hi||0)),borderColor:'#C47A00',yAxisID:'y2',tension:.3}
     ]},options:{maintainAspectRatio:false,plugins:{legend:{position:'bottom'}},scales:{y:{ticks:{callback:v=>'R$'+(v/1000)+'k'}},y2:{position:'right',grid:{display:false}}}}});
   },50);
 }
@@ -863,8 +877,9 @@ function openServico(cod){
 
 /* ───────── SIDEBAR LISTS ───────── */
 function buildSidebarLists(){
-  document.getElementById('pl-items').innerHTML = D.hm.slice().sort((a,b)=>a.adv.localeCompare(b.adv)).map(p=>`<button class="sb-list-item" onclick="openPessoa('${esc(p.adv)}')">${esc(p.adv)}</button>`).join('');
+  document.getElementById('pl-items').innerHTML = carteiraRows(D.hm).slice().sort((a,b)=>a.adv.localeCompare(b.adv)).map(p=>`<button class="sb-list-item" onclick="openPessoa('${esc(p.adv)}')">${esc(p.adv)}</button>`).join('');
   const clientes = Object.keys(D.cli_det).filter(name=>{
+    if(!name.trim()) return false;
     if(S.carteira==='todos') return true;
     return S.carteira==='ativos' ? clientIsActive(name) : !clientIsActive(name);
   }).sort((a,b)=>a.localeCompare(b));

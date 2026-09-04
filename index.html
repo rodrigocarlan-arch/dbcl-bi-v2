@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>dbcl · Legal Ops BI</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-<script src="data.js?v=20260903-6"></script>
+<script src="data.js?v=20260904-1"></script>
 <style>
 :root{
   --g1:#003C28;--g2:#0F6E56;--g3:#1B8A6B;--g4:#D4EDE5;--bege:#FAF7EC;--neon:#CCFF00;--preto:#23282E;
@@ -381,9 +381,10 @@ table.t tbody tr:hover td{background:#f4f8f4}
     <div class="panel"><div class="ph2"><span class="t">Células essenciais vazias no CRM</span><span class="s">somente contratos ativos</span></div><div class="pb ow"><table class="t" id="au-crm"></table></div></div>
   </div>
   <div class="g2">
-    <div class="panel"><div class="ph2"><span class="t">Valores de hora ausentes</span><span class="s">o BI sinaliza quando precisou usar padrão do cargo</span></div><div class="pb ow"><table class="t" id="au-pessoas"></table></div></div>
+    <div class="panel"><div class="ph2"><span class="t">Cargos sem valor de hora</span><span class="s">validação da tabela de referência por cargo</span></div><div class="pb ow"><table class="t" id="au-pessoas"></table></div></div>
     <div class="panel"><div class="ph2"><span class="t">Pastas ambíguas</span><span class="s">uma pasta associada a mais de um código</span></div><div class="pb ow"><table class="t" id="au-pastas"></table></div></div>
   </div>
+  <div class="panel"><div class="ph2"><span class="t">Pessoas do Themis sem cadastro correspondente</span><span class="s">não entram na carteira ativa até o nome ser conciliado</span></div><div class="pb ow"><table class="t" id="au-pessoas-orfas"></table></div></div>
 </section>
 
 </main>
@@ -393,6 +394,6 @@ table.t tbody tr:hover td{background:#f4f8f4}
 <div class="overlay" id="ov-cliente"><div class="ov-header"><button class="ov-back" onclick="closeOv('cliente')">← Voltar</button><div><div class="ov-title" id="ovc-title"></div><div class="ov-sub" id="ovc-sub"></div></div></div><div class="ov-body" id="ovc-body"></div></div>
 <div class="overlay" id="ov-servico"><div class="ov-header"><button class="ov-back" onclick="closeOv('servico')">← Voltar</button><div><div class="ov-title" id="ovs-title"></div><div class="ov-sub" id="ovs-sub"></div></div></div><div class="ov-body" id="ovs-body"></div></div>
 
-<script src="app.js?v=20260903-6"></script>
+<script src="app.js?v=20260904-1"></script>
 </body>
 </html>
